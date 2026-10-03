@@ -33,8 +33,14 @@ export function runAnnotate(documentDir: string, root: string): number {
   const { annotations, added } = annotatePassages(doc.source.data.passages, terms, existing);
   writeFileSync(
     join(repoRoot, file),
-    stringifyContent(OriginalTermsFile, { schema_version: 1, document: doc.source.data.document, annotations }),
+    stringifyContent(OriginalTermsFile, {
+      schema_version: 1,
+      document: doc.source.data.document,
+      annotations,
+    }),
   );
-  console.log(`${file}: ${added} annotation(s) added, ${annotations.length} in total, from ${terms.length} term(s).`);
+  console.log(
+    `${file}: ${added} annotation(s) added, ${annotations.length} in total, from ${terms.length} term(s).`,
+  );
   return 0;
 }

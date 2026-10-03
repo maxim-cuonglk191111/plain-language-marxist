@@ -41,8 +41,9 @@ pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
 
 ## Ceremony
 
-- **Until task 017 (deploy) is done:** nothing deploys, so direct commits to `main` are fine. Still run the code and review your own diff before committing.
-- **After task 017:** a push to `main` deploys. Use feature branches and the full flow from `../CLAUDE.md`.
+- **A push to `main` deploys** (task 017, `.github/workflows/deploy.yml`) once the remote and host secrets exist. Use feature branches and the full flow from `../CLAUDE.md`.
+- Deploy setup, host rules and rollback: [DEPLOYMENT.md](DEPLOYMENT.md). Both Cloudflare Pages (`apps/web/public/_headers`) and Vercel (`apps/web/public/vercel.json`) are supported; change both together.
+- Preview the export as Cloudflare serves it: `pnpm exec wrangler pages dev apps/web/out --port 8788`. On Windows, stopping the terminal can leave `workerd` holding the port, so kill it before restarting.
 
 ## Design reference
 

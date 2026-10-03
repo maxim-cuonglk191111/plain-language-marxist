@@ -16,3 +16,5 @@ e2e/fixture-repo/
 e2e/.build/
 test-results/
 playwright-report/
+.wrangler/
+release/

@@ -32,4 +32,4 @@ export function getTerm(slug: string): DataTerm {
   return DataTerm.parse(read(`terms/${slug}.json`));
 }
 
-export const siteUrl = () => process.env.PLM_SITE_URL ?? "http://localhost:3000";
+export const siteUrl = () => process.env.PLM_SITE_URL || "http://localhost:3000";

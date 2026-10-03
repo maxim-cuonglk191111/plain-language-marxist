@@ -12,7 +12,7 @@ The guiding rule is: **simplify the vocabulary, not the argument.** The original
 
 ## Status
 
-Early development (milestone M0). Nothing is deployed yet.
+Early development (milestone M1). Nothing is deployed yet; see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ## Documentation
 

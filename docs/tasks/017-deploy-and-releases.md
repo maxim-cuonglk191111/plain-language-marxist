@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Blocked |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -28,3 +28,20 @@ Deploy automatically on merge, with every release recoverable from public artifa
 - A merge to `main` deploys automatically.
 - Redeploying an older release artifact restores that version.
 - A rebuild on a clean machine, following only DEPLOYMENT.md, succeeds.
+
+## What was done (2026-10-04)
+- **Hosts: both Cloudflare Pages and Vercel** (maintainer's decision). The domain is still open (SDD §18) and is set through the `PLM_SITE_URL` repository variable.
+- **`.github/workflows/deploy.yml`:**
+  - validate, test, build, then deploy to each host whose token is configured;
+  - production on push to `main`, previews on PRs;
+  - on `main`, also publishes a GitHub release.
+- **Host config:**
+  - `apps/web/public/_headers` (Cloudflare) and `apps/web/public/vercel.json` (Vercel) set the same rules: security headers, an immutable cache for `/_next/static`, a 5-minute cache and CORS for `/data`, and HTML for `.htm`. `vercel.json` also turns on `trailingSlash`.
+  - Verified with `wrangler pages dev`: every header applied; `/vocabulary` → 308 `/vocabulary/`; `ch01.htm` served as HTML; unknown paths → 404.
+- **`scripts/release.mjs`:** packs `site.tar.gz`, `content.tar.gz`, `manifest.json` and `checksums.txt` into `release/`. The release name comes from the commit (`2026.10.04-59b0286`). Checksums verified with `sha256sum -c`.
+- **Fix:** an unset `PLM_SITE_URL` (Actions passes `""`) crashed the build in `new URL("")`; it now falls back to localhost.
+- `DEPLOYMENT.md` written; repo `CLAUDE.md` ceremony switched to feature branches.
+
+## Not verified (needs the maintainer)
+- **The real deploys.** They need a GitHub remote, a Cloudflare Pages project and/or a Vercel project, and the secrets listed in DEPLOYMENT.md. Until then the first two acceptance points cannot be checked against a real host.
+- **The `vercel.json` rules.** Checked only against Vercel's docs; there is no local Vercel run.

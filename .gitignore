@@ -35,3 +35,7 @@ next-env.d.ts
 e2e/.build/
 test-results/
 playwright-report/
+
+# Release artifacts (scripts/release.mjs) and Wrangler local state
+release/
+.wrangler/

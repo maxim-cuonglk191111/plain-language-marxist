@@ -1,0 +1,68 @@
+name: Deploy
+
+# Builds the static site and deploys it to Cloudflare Pages and/or Vercel, whichever
+# has credentials configured (DEPLOYMENT.md). Pushes to main deploy to production and
+# publish a release; pull requests from this repository get preview deployments.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      PLM_SITE_URL: ${{ vars.PLM_SITE_URL }}
+      CF_PAGES_PROJECT: ${{ vars.CF_PAGES_PROJECT || 'plain-language-marxist' }}
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+      PRODUCTION: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm plm validate
+      - run: pnpm test
+      - run: pnpm build:site
+
+      - name: Deploy to Cloudflare Pages
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        env:
+          # Branch names are author-controlled: pass them via env, never inline in the script.
+          BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: >
+          pnpm exec wrangler pages deploy apps/web/out
+          --project-name="$CF_PAGES_PROJECT"
+          --branch="$BRANCH"
+          --commit-hash="$GITHUB_SHA"
+
+      - name: Deploy to Vercel
+        if: env.VERCEL_TOKEN != ''
+        run: |
+          if [ "$PRODUCTION" = "true" ]; then prod="--prod"; else prod=""; fi
+          pnpm dlx vercel@62.2.0 deploy apps/web/out --yes --token="$VERCEL_TOKEN" $prod
+
+      - name: Publish release artifacts
+        if: env.PRODUCTION == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          release=$(node scripts/release.mjs | tail -1)
+          # A re-run of the same commit keeps the release it already published.
+          gh release view "$release" > /dev/null 2>&1 ||
+          gh release create "$release" release/* --title "$release" --notes "Site and content at $GITHUB_SHA. Verify with checksums.txt; redeploy site.tar.gz to roll back (DEPLOYMENT.md)."

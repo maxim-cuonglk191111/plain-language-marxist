@@ -1,0 +1,74 @@
+{
+  "title": "PLM rendering file",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1
+    },
+    "document": {
+      "type": "string",
+      "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+$"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}$"
+    },
+    "register": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+    },
+    "renderings": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^p\\d{5}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "covers": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^p\\d{5}$"
+            }
+          },
+          "based_on": {
+            "type": "string",
+            "pattern": "^sha256:[0-9a-f]{64}$"
+          },
+          "revision": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "ai_assisted": {
+            "type": "boolean"
+          },
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "covers",
+          "based_on",
+          "revision",
+          "ai_assisted",
+          "text"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "document",
+    "language",
+    "register",
+    "renderings"
+  ],
+  "additionalProperties": false
+}

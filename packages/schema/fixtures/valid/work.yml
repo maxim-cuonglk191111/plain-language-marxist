@@ -1,0 +1,15 @@
+schema_version: 1
+id: work:marx:1848:communist-manifesto
+title: Manifesto of the Communist Party
+authors: [marx, engels]
+year: 1848
+translation:
+  translator: Samuel Moore
+  year: 1888
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: Published 1848; Moore translation 1888. Authors and translator died before 1955.
+  verified_by: maintainer
+  verified_at: 2026-10-03
+documents: [ch01, ch02, ch03, ch04]

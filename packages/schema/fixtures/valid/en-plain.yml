@@ -1,0 +1,18 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:5555555555555555555555555555555555555555555555555555555555555555
+    revision: 1
+    ai_assisted: false
+    text: I. The {Bourgeoisie} and the Working Class<fn ref="1"/>
+  p00002:
+    covers: [p00002]
+    based_on: sha256:6666666666666666666666666666666666666666666666666666666666666666
+    revision: 2
+    ai_assisted: true
+    text: |
+      All history up to now<fn ref="2"/> has been the history of class struggles.

@@ -1,0 +1,102 @@
+{
+  "title": "PLM explanations file",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1
+    },
+    "document": {
+      "type": "string",
+      "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+$"
+    },
+    "explanations": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "pattern": "^e\\d{3,}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "explanation",
+              "historical_context",
+              "interpretation",
+              "commentary",
+              "translation_note"
+            ]
+          },
+          "targets": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^p\\d{5}$"
+            }
+          },
+          "text": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "author": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "publication": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "year": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "accessed_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                }
+              },
+              "required": [
+                "title"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "ai_assisted": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "kind",
+          "targets",
+          "text",
+          "ai_assisted"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "document",
+    "explanations"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,24 @@
+schema_version: 1
+term: bourgeoisie
+aliases: [bourgeois class]
+original:
+  sg: bourgeoisie
+  adj: bourgeois
+definition:
+  short: The class that owns the means of production and employs wage labour.
+renderings:
+  capitalist-class:
+    forms:
+      sg: capitalist class
+      adj: capitalist
+    reason: Immediately understandable to contemporary readers.
+    limitation: Foregrounds the economic sense more than the historical term.
+  bourgeoisie:
+    forms:
+      sg: bourgeoisie
+      adj: bourgeois
+    reason: Keeps the original term.
+default: capitalist-class
+scoped_defaults:
+  - scope: work:engels:1880:socialism-utopian-scientific
+    rendering: bourgeoisie

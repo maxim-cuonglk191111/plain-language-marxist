@@ -1,0 +1,110 @@
+{
+  "title": "PLM governance file",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 1
+    },
+    "bootstrap_mode": {
+      "type": "boolean"
+    },
+    "min_account_age_days": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "maintainers": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$"
+      }
+    },
+    "reviewers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9](?:[A-Za-z0-9]|-(?=[A-Za-z0-9])){0,38}$"
+      }
+    },
+    "rules": {
+      "type": "object",
+      "propertyNames": {
+        "type": "string",
+        "enum": [
+          "RENDERING",
+          "TERM_ALTERNATIVE",
+          "TERM_DEFAULT",
+          "EXPLANATION",
+          "ORIGINAL_TERMS",
+          "METADATA",
+          "SOURCE_UPDATE",
+          "NEW_WORK"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "any_of": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "role": {
+                  "type": "string",
+                  "enum": [
+                    "trusted_contributor",
+                    "reviewer",
+                    "maintainer"
+                  ]
+                },
+                "count": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "role",
+                "count"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "min_open_days": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          }
+        },
+        "required": [
+          "any_of"
+        ],
+        "additionalProperties": false
+      },
+      "required": [
+        "RENDERING",
+        "TERM_ALTERNATIVE",
+        "TERM_DEFAULT",
+        "EXPLANATION",
+        "ORIGINAL_TERMS",
+        "METADATA",
+        "SOURCE_UPDATE",
+        "NEW_WORK"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "bootstrap_mode",
+    "min_account_age_days",
+    "maintainers",
+    "reviewers",
+    "rules"
+  ],
+  "additionalProperties": false
+}

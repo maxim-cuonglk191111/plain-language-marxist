@@ -3,3 +3,4 @@ LICENSE
 LICENSE-CONTENT
 docs/
 *.md
+packages/schema/json-schema/

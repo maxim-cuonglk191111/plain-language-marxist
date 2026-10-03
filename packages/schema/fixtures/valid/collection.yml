@@ -1,0 +1,8 @@
+schema_version: 1
+kind: reading_path
+id: foundations
+title: Foundation texts
+items:
+  - work:marx:1848:communist-manifesto
+  - document:engels:1880:socialism-utopian-scientific:ch01
+rationale: A suggested starting point. Short texts first, then longer theory; other orders are equally valid.

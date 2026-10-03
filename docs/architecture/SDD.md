@@ -134,7 +134,7 @@ docs/                      architecture/, editorial/, contribution/, tasks/
 
 ## 5. Content Model
 
-All content files start with `schema_version`. Any schema change bumps the version and ships with a migration in `plm migrate` in the same commit.
+Full field definitions: `packages/schema` (Zod) and `docs/architecture/layout-markup.md`. All content files start with `schema_version`. Any schema change bumps the version and ships with a migration in `plm migrate` in the same commit.
 
 ### 5.1 File layout
 
@@ -175,7 +175,7 @@ authors: [marx, engels]
 year: 1848
 translation: { translator: Samuel Moore, year: 1888 }
 rights:
-  status: PUBLIC_DOMAIN      # PUBLIC_DOMAIN | CC_BY | CC_BY_SA | PERMISSION_GRANTED
+  status: PUBLIC_DOMAIN      # UNVERIFIED (written by import, not publishable) | PUBLIC_DOMAIN | CC_BY | CC_BY_SA | PERMISSION_GRANTED | BLOCKED
   attribution: Marxists Internet Archive
   notes: "…"
   verified_by: "@maintainer"
@@ -197,7 +197,7 @@ source:
   parser: { name: mia, version: 1.0.0 }
 passages:
   - id: p00017
-    type: paragraph           # heading | paragraph | blockquote | list_item | footnote | …
+    type: paragraph           # heading (+ level 1–6) | paragraph | blockquote | list_item | footnote (+ label) | table | caption
     text: "The history of all hitherto existing society is the history of class struggles."
     hash: sha256:…            # of normalized text (markup excluded)
     state: active             # active | tombstoned
@@ -278,7 +278,7 @@ These annotations are anchored to text, not to character offsets, so people can 
 schema_version: 1
 explanations:
   e001:
-    kind: historical_context    # explanation | historical_context | interpretation | commentary
+    kind: historical_context    # explanation | historical_context | interpretation | commentary | translation_note
     targets: [p00017]
     text: "…"
     sources: [{ title: "…", author: "…", year: 1999, url: "…" }]

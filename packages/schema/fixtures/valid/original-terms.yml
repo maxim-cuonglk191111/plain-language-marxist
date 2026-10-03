@@ -1,0 +1,11 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+annotations:
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00003
+    term: means-of-production
+    match: means of social production
+    occurrence: 1

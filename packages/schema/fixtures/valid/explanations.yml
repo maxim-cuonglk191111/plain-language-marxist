@@ -1,0 +1,12 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+explanations:
+  e001:
+    kind: translation_note
+    targets: [p00002]
+    text: Engels added the footnote "That is, all written history" to the 1888 English edition, after research into prehistoric societies.
+    sources:
+      - title: Manifesto of the Communist Party, English edition of 1888
+        author: Frederick Engels (ed.)
+        year: 1888
+    ai_assisted: false

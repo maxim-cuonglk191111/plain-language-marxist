@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |

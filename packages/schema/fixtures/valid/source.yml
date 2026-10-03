@@ -1,0 +1,36 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+title: I. Bourgeois and Proletarians
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch01.htm
+  retrieved_at: 2026-10-03
+  snapshot: ingestion/snapshots/marx/1848/communist-manifesto/ch01/2026-10-03.html
+  snapshot_hash: sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+  parser:
+    name: mia
+    version: 1.0.0
+passages:
+  - id: p00001
+    type: heading
+    level: 2
+    text: I. Bourgeois and Proletarians<fn ref="1"/>
+    hash: sha256:1111111111111111111111111111111111111111111111111111111111111111
+    state: active
+  - id: p00002
+    type: paragraph
+    text: The history of all hitherto existing society<fn ref="2"/> is the history of class struggles.
+    hash: sha256:2222222222222222222222222222222222222222222222222222222222222222
+    state: active
+  - id: p00003
+    type: footnote
+    label: "1"
+    text: By bourgeoisie is meant the class of modern Capitalists, owners of the means of social production and employers of wage labour.
+    hash: sha256:3333333333333333333333333333333333333333333333333333333333333333
+    state: active
+  - id: p00004
+    type: footnote
+    label: "2"
+    text: That is, all <i>written</i> history.
+    hash: sha256:4444444444444444444444444444444444444444444444444444444444444444
+    state: active

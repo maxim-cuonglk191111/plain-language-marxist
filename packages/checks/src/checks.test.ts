@@ -136,6 +136,24 @@ describe("checkRenderings: warnings", () => {
     expect(codes(input)).toContain(expected);
   });
 
+  it("compares capitalized tokens capitalized, so {Bourgeoisie} counts as the name Bourgeoisie", () => {
+    const local = {
+      passages: [
+        {
+          id: "p00001",
+          state: "active" as const,
+          text: "two great classes directly facing each other: Bourgeoisie and Proletariat.",
+        },
+      ],
+      vocabulary,
+    };
+    const parsed = parseExchange(
+      "=== p00001\ntwo great classes facing each other: {Bourgeoisie} and Proletariat.",
+    );
+    if (!parsed.ok) throw new Error(parsed.error.message);
+    expect(checkRenderings(parsed.entries, local).map((f) => f.code)).not.toContain("names");
+  });
+
   it("does not mistake a dash that restructures the original for a gloss", () => {
     const local = {
       passages: [

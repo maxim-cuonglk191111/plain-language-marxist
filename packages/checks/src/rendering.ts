@@ -27,7 +27,9 @@ function comparable(text: string, vocabulary: Vocabulary): string {
     .map((s) => {
       if (s.kind === "text") return s.value;
       const term: TermFile | undefined = vocabulary.get(s.term);
-      return (term && formFor(term, "original", s.form)) ?? s.term;
+      const word = (term && formFor(term, "original", s.form)) ?? s.term;
+      // {Term} is capitalized in the output, so compare it capitalized (e.g. for the names check).
+      return s.capitalize ? word.charAt(0).toUpperCase() + word.slice(1) : word;
     })
     .join("");
   return plain(joined);

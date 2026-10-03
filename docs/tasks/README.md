@@ -20,7 +20,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | Open |
 | [013](013-plm-build-static-data.md) | `plm build`: static data contract v1 | M1 | Done |
 | [014](014-web-reader.md) | Web reader: routes, modes, layout rendering | M1 | Done |
-| [015](015-term-cards-and-vocabulary.md) | Term cards, terminology preference, explanations, vocabulary pages | M1 | Open |
+| [015](015-term-cards-and-vocabulary.md) | Term cards, terminology preference, explanations, vocabulary pages | M1 | Done |
 | [016](016-preferences-search-a11y.md) | Reader preferences, search, accessibility pass | M1 | Open |
 | [017](017-deploy-and-releases.md) | Deploy pipeline, release artifacts, DEPLOYMENT.md | M1 | Open |
 | [018](018-drift-and-link-checks.md) | Source drift and link-check scheduled jobs | M1 | Open |

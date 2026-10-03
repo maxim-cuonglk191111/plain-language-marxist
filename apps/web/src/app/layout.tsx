@@ -25,6 +25,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <a href="/" className="site-name">
             Plain Language Marxist
           </a>
+          <nav aria-label="Site">
+            <a href="/vocabulary/">Vocabulary</a>
+          </nav>
         </header>
         <main id="main">{children}</main>
         <footer className="site-footer">

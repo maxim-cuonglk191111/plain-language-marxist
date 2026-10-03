@@ -7,7 +7,7 @@
   "type": "module",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && node scripts/htm-paths.mjs",
+    "build": "next build && node scripts/finalize-export.mjs",
     "typecheck": "next typegen && tsc --noEmit -p ."
   },
   "dependencies": {

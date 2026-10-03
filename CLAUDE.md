@@ -28,7 +28,7 @@ pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
 
 **MIA access from this machine:** www.marxists.org resolves to ::1 here, so the fetch guard refuses it. Use `--via wayback`.
 
-**Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the view mode. Use plain <a> links, never next/link: the .htm rename step drops the RSC payloads that client navigation would need.
+**Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the view mode. Use plain <a> links, never next/link: apps/web/scripts/finalize-export.mjs drops the RSC payloads that client navigation would need, renames ch01.htm.html to ch01.htm, moves other pages to dir/index.html, and copies dist/data/v1 into the site.
 
 **Parser changes:** regenerate the golden files with `UPDATE_GOLDEN=1 pnpm test`, review the diff, and bump `MiaAdapter.version`.
 

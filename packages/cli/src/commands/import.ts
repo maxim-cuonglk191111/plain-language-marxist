@@ -69,14 +69,14 @@ export function deriveLocation(
   return author && year && slug && doc ? { author, year, slug, doc } : null;
 }
 
-function loadSources(root: string): SourceEntry[] {
+export function loadSources(root: string): SourceEntry[] {
   const file = join(root, "config/sources.yml");
   if (!existsSync(file))
     throw new Error("config/sources.yml not found; plm import needs a source allowlist");
   return SourcesConfig.parse(parseYaml(readFileSync(file, "utf8"))).sources;
 }
 
-async function fetchSource(
+export async function fetchSource(
   url: URL,
   entry: SourceEntry,
   via: "direct" | "wayback",

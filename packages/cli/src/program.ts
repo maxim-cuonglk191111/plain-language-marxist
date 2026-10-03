@@ -1,9 +1,11 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { appendFileSync, readFileSync, writeFileSync } from "node:fs";
 import { Command } from "commander";
 import { runAnnotate } from "./commands/annotate.ts";
 import { runBuild } from "./commands/build.ts";
 import { runApply, runPrompt } from "./commands/draft.ts";
+import { driftReport, runDiffSource } from "./commands/drift.ts";
 import { runImport } from "./commands/import.ts";
+import { checkLinks, linksReport } from "./commands/links.ts";
 import { runMigrate } from "./commands/migrate.ts";
 import { runValidate, type ValidateCliOptions } from "./commands/validate.ts";
 
@@ -123,6 +125,41 @@ export function buildProgram(): Command {
     .option("--out <dir>", "output directory", "dist")
     .action((opts: { root: string; out: string }) => {
       process.exitCode = runBuild(opts);
+    });
+
+  program
+    .command("diff-source")
+    .description("Re-fetch every source and report drift; never changes content")
+    .option("--root <dir>", "repository root", ".")
+    .option("--via <mode>", "direct or wayback (default: from config/sources.yml)")
+    .option("--only <dir>", "limit to one work or document directory")
+    .option("--report <file>", "also write a Markdown report (for an issue body)")
+    .action(async (opts: { root: string; via?: string; only?: string; report?: string }) => {
+      const results = await runDiffSource({
+        root: opts.root,
+        ...(opts.via === "direct" || opts.via === "wayback" ? { via: opts.via } : {}),
+        ...(opts.only ? { only: opts.only } : {}),
+      });
+      for (const r of results)
+        console.log(`${r.status.padEnd(18)} ${r.document}${r.detail ? ` — ${r.detail}` : ""}`);
+      const changed = results.filter((r) => r.status !== "UNCHANGED").length;
+      if (opts.report) writeFileSync(opts.report, driftReport(results));
+      if (process.env["GITHUB_OUTPUT"])
+        appendFileSync(process.env["GITHUB_OUTPUT"], `changed=${changed}\n`);
+    });
+
+  program
+    .command("check-links")
+    .description("Check links in the built site (internal always, external with --external)")
+    .option("--site <dir>", "built site directory", "apps/web/out")
+    .option("--external", "also fetch external https:// links")
+    .option("--report <file>", "also write a Markdown report")
+    .action(async (opts: { site: string; external?: boolean; report?: string }) => {
+      const result = await checkLinks({ site: opts.site, external: Boolean(opts.external) });
+      for (const b of result.broken) console.log(`broken  ${b.page}  ${b.href}  (${b.reason})`);
+      console.log(`${result.checked} links checked; ${result.broken.length} broken.`);
+      if (opts.report) writeFileSync(opts.report, linksReport(result));
+      process.exitCode = result.broken.length ? 1 : 0;
     });
 
   program

@@ -23,7 +23,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [015](015-term-cards-and-vocabulary.md) | Term cards, terminology preference, explanations, vocabulary pages | M1 | Done |
 | [016](016-preferences-search-a11y.md) | Reader preferences, search, accessibility pass | M1 | Done |
 | [017](017-deploy-and-releases.md) | Deploy pipeline, release artifacts, DEPLOYMENT.md | M1 | Open |
-| [018](018-drift-and-link-checks.md) | Source drift and link-check scheduled jobs | M1 | Open |
+| [018](018-drift-and-link-checks.md) | Source drift and link-check scheduled jobs | M1 | Done |
 | [019](019-m1-e2e-tests.md) | M1 end-to-end test suite | M1 | Done |
 | [020](020-pre-launch-outreach.md) | Pre-launch outreach and first reviewers | M1 | Open |
 

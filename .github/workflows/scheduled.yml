@@ -1,0 +1,63 @@
+name: Scheduled checks
+
+# Weekly source-drift and link checks (SDD §7.4, §14.2). They never modify
+# content: they open (or update) an issue for a maintainer to act on.
+on:
+  schedule:
+    - cron: "17 4 * * 1" # Mondays 04:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  drift:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - id: drift
+        run: pnpm plm diff-source --report drift.md
+      - if: steps.drift.outputs.changed != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create source-drift --color d93f0b --description "The source text changed" --force
+          number=$(gh issue list --label source-drift --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file drift.md
+          else
+            gh issue create --title "Source drift detected" --label source-drift --body-file drift.md
+          fi
+
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build:site
+      - id: links
+        run: pnpm plm check-links --site apps/web/out --external --report links.md
+        continue-on-error: true
+      - if: steps.links.outcome == 'failure'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create broken-links --color fbca04 --description "Broken links in the built site" --force
+          number=$(gh issue list --label broken-links --state open --json number --jq '.[0].number')
+          if [ -n "$number" ]; then
+            gh issue edit "$number" --body-file links.md
+          else
+            gh issue create --title "Broken links found" --label broken-links --body-file links.md
+          fi

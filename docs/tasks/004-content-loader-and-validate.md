@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -32,3 +32,8 @@
 - A fixture work passes.
 - For each invariant, a fixture that breaks it fails with a clear message.
 - The writer round-trips: load → write reproduces the file byte for byte.
+
+## Notes (on completion)
+- Passage-ID reuse is checked within a file (duplicates) and through tombstones (a tombstoned passage can't be covered or annotated). An ID that is **deleted outright** and later reassigned can only be caught by comparing against Git history. That belongs with `plm import` (task 008), which must never drop a passage and must tombstone it instead.
+- Term-token checks plug in through `ValidateOptions.checkRenderingText` (task 010).
+- External links are not checked here; that is the scheduled link check (task 018).

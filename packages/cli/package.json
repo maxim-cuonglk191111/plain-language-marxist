@@ -10,6 +10,7 @@
   },
   "exports": "./src/program.ts",
   "dependencies": {
+    "@plm/content": "workspace:^",
     "@plm/schema": "workspace:^",
     "commander": "^15.0.0",
     "tsx": "^4.23.15",

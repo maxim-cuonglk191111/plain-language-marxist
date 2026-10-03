@@ -5,5 +5,10 @@
   "description": "Load, validate and write content files",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "exports": "./src/index.ts"
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@plm/schema": "workspace:^",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
+  }
 }

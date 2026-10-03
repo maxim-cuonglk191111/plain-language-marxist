@@ -1,4 +1,4 @@
-import { cpSync, existsSync, mkdtempSync, readFileSync } from "node:fs";
+import { cpSync, existsSync, mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { validate } from "@plm/content";
@@ -8,11 +8,12 @@ import { runApply, runPrompt } from "./draft.ts";
 const repoRoot = new URL("../../../../", import.meta.url);
 const DOC = "content/works/marx/1848/communist-manifesto/ch01";
 
-/** A copy of the real Ch. I content and editorial docs. */
+/** A copy of the real Ch. I content and editorial docs, with no renderings yet. */
 function tempRepo(): string {
   const root = mkdtempSync(join(tmpdir(), "plm-draft-"));
   for (const dir of ["content", "docs/editorial"])
     cpSync(new URL(dir, repoRoot), join(root, dir), { recursive: true });
+  rmSync(join(root, DOC, "en-plain.yml"), { force: true });
   return root;
 }
 

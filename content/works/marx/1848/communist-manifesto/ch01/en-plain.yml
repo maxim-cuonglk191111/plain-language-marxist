@@ -1,0 +1,95 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:d6a8e7c645e0bd7c5ed6aa32cbad743b15c7a89b7fb317cd8b2a2f39aa248db1
+    revision: 1
+    ai_assisted: true
+    text: Manifesto of the Communist Party
+  p00002:
+    covers: [p00002]
+    based_on: sha256:270372207396296a862ecbb6b791ad93a1e36398ea50b00b3168a0a293ee8642
+    revision: 1
+    ai_assisted: true
+    text: "A spectre is haunting Europe — the spectre of communism. All the powers of old Europe have joined in a holy alliance to cast out this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police spies."
+  p00003:
+    covers: [p00003]
+    based_on: sha256:9e7adb74c8c4f0e4d9ceff2ec9cfdba01a73065d500234e6b426639f1107273b
+    revision: 1
+    ai_assisted: true
+    text: Where is the opposition party that has not been denounced as communist by its opponents in power? Where is the opposition that has not thrown the damning label of communism back at the more advanced opposition parties, as well as at its reactionary enemies?
+  p00004:
+    covers: [p00004]
+    based_on: sha256:43d35db71ed7819ee45158cb26a85dc8979551f57006f6461f5da72ef3247541
+    revision: 1
+    ai_assisted: true
+    text: "Two things follow from this fact:"
+  p00005:
+    covers: [p00005]
+    based_on: sha256:909a1fe2c1d82bceefcddade1fd9e9dcd1dff9ab8923d6885db236c6571ba1db
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>I. Communism is already recognised by all European powers as a power in its own right.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:54907fb6f5566f902dcff84e953b9afca1143c5aa3f0db701d04e376b8a519a3
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>II. It is high time that Communists openly, in front of the whole world, published their views, their aims, their tendencies, and answered this fairy tale of the Spectre of Communism with a manifesto of the party itself.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:fa9c749b10981c8775c374345b1672c75d74fe68a4bbcbe67975c27da0f6cdf8
+    revision: 1
+    ai_assisted: true
+    text: For this purpose, Communists of various nationalities have met in London and drafted the following manifesto, to be published in the English, French, German, Italian, Flemish and Danish languages.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:02c9fdf027d3a8fbf0bdad98591c9700aacf420cf0423a05377ffaaabf116f58
+    revision: 1
+    ai_assisted: true
+    text: Chapter I. {Bourgeoisie} and {Proletariat}<fn ref="1"/>
+  p00009:
+    covers: [p00009]
+    based_on: sha256:d63e2e18431592545f3addcaa1a9163d50673c6080f1cfcb1cf2355e1a2221c8
+    revision: 1
+    ai_assisted: true
+    text: The history of all society up to now<fn ref="2"/> is the history of class struggles.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:0780e416e6272b36b3267bf2f3ef91561f6669092d8959cd89f3a7995d4c3a4d
+    revision: 1
+    ai_assisted: true
+    text: Free man and slave, patrician and plebeian, lord and serf, guild-master<fn ref="3"/> and journeyman — in a word, oppressor and oppressed — stood in constant opposition to one another. They carried on an unbroken fight, now hidden, now open, a fight that each time ended either in a revolutionary reshaping of society as a whole, or in the common ruin of the classes in conflict.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:29e723e0a66814d5156f45e7dbc5ca75e8f6f7cf886ddbdc41b236ac52dece6f
+    revision: 1
+    ai_assisted: true
+    text: In the earlier periods of history, we find almost everywhere a complicated arrangement of society into different orders, a many-layered ranking of social positions. In ancient Rome we have patricians, knights, plebeians, slaves; in the Middle Ages, feudal lords, vassals, guild-masters, journeymen, apprentices, serfs; and within almost all of these classes, again, lower sub-ranks.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:3be3fd7e6ad13a65c52f4a70afc71bf3aefc936db03dc4d5ad629ab73adb2ea1
+    revision: 1
+    ai_assisted: true
+    text: The modern {bourgeoisie:adj} society that has grown out of the ruins of feudal society has not done away with {class-antagonism:pl}. It has only set up new classes, new conditions of oppression, new forms of struggle in place of the old ones.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:958182076c58a3161f7e40995b3cf2136f7a1437bcfbfd8610cd9381b51d740c
+    revision: 1
+    ai_assisted: true
+    text: "Our period, the period of the {bourgeoisie}, has, however, this distinctive feature: it has simplified {class-antagonism:pl}. Society as a whole is splitting more and more into two great hostile camps, into two great classes directly facing each other — {Bourgeoisie} and {Proletariat}."
+  p00014:
+    covers: [p00014]
+    based_on: sha256:02b2700b7a464c3034f5c0b2c07c813c1f9b95b8bd9ae8c708b439accd3153b8
+    revision: 1
+    ai_assisted: true
+    text: From the serfs of the Middle Ages came the chartered burghers of the earliest towns. From these burghers the first elements of the {bourgeoisie} developed.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:6303470435d50b126ae09baa0a04b5526e89659837346cb78ea52beba6ea9cf2
+    revision: 1
+    ai_assisted: true
+    text: The discovery of America and the sailing around the Cape opened up new ground for the rising {bourgeoisie}. The East-Indian and Chinese markets, the colonisation of America, trade with the colonies, the increase in the means of exchange and in commodities generally, gave commerce, shipping and industry a push never known before, and with it gave the revolutionary element in the crumbling feudal society a rapid development.

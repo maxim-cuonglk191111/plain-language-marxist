@@ -1,3 +1,4 @@
+import { readFileSync } from "node:fs";
 import { describe, expect, it } from "vitest";
 import { basedOnHash } from "./hash.ts";
 import { PATHS, writeFixture, type FixtureData } from "./test-fixture.ts";
@@ -199,6 +200,20 @@ describe("validate: file problems carry line numbers", () => {
     const issue = validate(root).find((i) => i.code === "schema/invalid");
     expect(issue?.message).toContain("passages.2.id");
     expect(issue?.line).toBeGreaterThan(1);
+  });
+
+  it("validates governance.yml when present", () => {
+    const ok = writeFixture(undefined, {
+      "governance.yml": readFileSync(new URL("../../../governance.yml", import.meta.url), "utf8"),
+    });
+    expect(validate(ok)).toEqual([]);
+
+    const broken = writeFixture(undefined, {
+      "governance.yml":
+        "schema_version: 1\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
+    });
+    const issue = validate(broken).find((i) => i.file === "governance.yml");
+    expect(issue?.message).toContain("rules.RENDERING");
   });
 
   it("reports misplaced and misnamed files", () => {

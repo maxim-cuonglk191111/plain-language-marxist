@@ -1,0 +1,5 @@
+# Changes to originals, work metadata/rights and governance need a maintainer (GOVERNANCE.md).
+/content/works/**/source.yml @maxim-cuonglk191111
+/content/works/**/work.yml @maxim-cuonglk191111
+/governance.yml @maxim-cuonglk191111
+/.github/CODEOWNERS @maxim-cuonglk191111

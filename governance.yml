@@ -1,0 +1,24 @@
+schema_version: 1
+# While true, one maintainer approval satisfies any rule. Turn off once there are at least 3 reviewers (GOVERNANCE.md).
+bootstrap_mode: true
+min_account_age_days: 30
+maintainers: [maxim-cuonglk191111]
+reviewers: []
+rules:
+  RENDERING:
+    any_of: [{role: trusted_contributor, count: 2}, {role: reviewer, count: 1}]
+  EXPLANATION:
+    any_of: [{role: trusted_contributor, count: 2}, {role: reviewer, count: 1}]
+  ORIGINAL_TERMS:
+    any_of: [{role: trusted_contributor, count: 2}, {role: reviewer, count: 1}]
+  METADATA:
+    any_of: [{role: trusted_contributor, count: 2}, {role: reviewer, count: 1}]
+  TERM_ALTERNATIVE:
+    any_of: [{role: reviewer, count: 1}]
+  TERM_DEFAULT:
+    any_of: [{role: reviewer, count: 2}, {role: maintainer, count: 1}]
+    min_open_days: 7
+  SOURCE_UPDATE:
+    any_of: [{role: maintainer, count: 1}]
+  NEW_WORK:
+    any_of: [{role: maintainer, count: 1}]

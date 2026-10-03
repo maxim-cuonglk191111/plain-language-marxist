@@ -4,3 +4,8 @@ LICENSE-CONTENT
 docs/
 *.md
 packages/schema/json-schema/
+# Content YAML is formatted by the plm writer, not Prettier.
+content/
+ingestion/
+governance.yml
+packages/*/fixtures/

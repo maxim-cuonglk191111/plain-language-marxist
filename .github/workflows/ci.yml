@@ -23,4 +23,6 @@ jobs:
       - run: pnpm format:check
       - run: pnpm typecheck
       - run: pnpm test
+      - run: pnpm plm migrate
+      - run: pnpm plm validate
       - run: pnpm audit --audit-level high

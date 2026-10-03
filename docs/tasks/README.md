@@ -11,7 +11,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [003](003-content-schemas-v1.md) | Content schemas v1 (persisted shapes) | M0 | Done |
 | [004](004-content-loader-and-validate.md) | Content loader and `plm validate` | M0 | Done |
 | [005](005-editorial-style-guide.md) | Editorial style guide for the plain register | M0 | Open |
-| [006](006-governance.md) | Governance file and GOVERNANCE.md | M0 | Open |
+| [006](006-governance.md) | Governance file and GOVERNANCE.md | M0 | Done |
 | [007](007-mia-markup-survey.md) | MIA markup survey and parser fixtures | M1 | Open |
 | [008](008-mia-adapter-and-import.md) | MIA source adapter and `plm import` | M1 | Open |
 | [009](009-import-manifesto-ch01.md) | Import Communist Manifesto Chapter I | M1 | Open |

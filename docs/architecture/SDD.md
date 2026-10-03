@@ -5,7 +5,7 @@
 | **Version** | 1.2 |
 | **Status** | Draft — under review |
 | **Date** | 2026-10-03 |
-| **Supersedes** | `SDD.md` v1.0 (root of repo) |
+| **Supersedes** | `SDD.md` v1.0 (removed from the repo root; kept in Git history, commit 28ab4cc) |
 
 ---
 

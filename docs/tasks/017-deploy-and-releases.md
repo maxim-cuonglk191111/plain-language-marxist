@@ -46,6 +46,11 @@ Deploy automatically on merge, with every release recoverable from public artifa
 - **Clean rebuild from DEPLOYMENT.md only.** A fresh `git clone` followed by the documented steps (install, `plm validate`, `PLM_SITE_URL=… build:site`, `release.mjs`) succeeded. The base URL appears in the canonical links.
 - **Rollback from an artifact.** I downloaded the release files, verified `checksums.txt`, unpacked `site.tar.gz` into an empty folder and served it with `wrangler pages dev`. It served the expected release (`manifest.json` release `2026.10.04-3b32ceb`), the Ch. I text, and the same headers and redirects.
 
+## Cloudflare Pages is live (2026-10-04)
+- Direct upload at the maintainer's request: **https://plain-language-marxist.pages.dev** (release `2026.10.04-7de07d6`). Headers, `.htm` HTML, the 308 trailing-slash redirect and 404s were all verified on the live site.
+- The CI command (`pnpm exec wrangler pages deploy apps/web/out …` from the repo root) was verified as a preview deployment, `ci-check.plain-language-marxist.pages.dev`.
+- **Wrangler gotcha:** `pages project create` without `--force` creates a Worker instead (see DEPLOYMENT.md). A stray Worker `plain-language-marxist` containing only two scratch test files was created this way and still needs to be deleted.
+
 ## Not verified (needs the maintainer)
-- **The real deploys.** They need a GitHub remote, a Cloudflare Pages project and/or a Vercel project, and the secrets listed in DEPLOYMENT.md. Until then the first two acceptance points cannot be checked against a real host.
+- **The automatic deploys.** They need a GitHub remote, a Cloudflare Pages project and/or a Vercel project, and the secrets listed in DEPLOYMENT.md. Until then the first two acceptance points cannot be checked against a real host.
 - **The `vercel.json` rules.** Checked only against Vercel's docs; there is no local Vercel run.

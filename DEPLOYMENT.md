@@ -35,7 +35,11 @@ A host is skipped when its token is not configured, so you can run one host or b
 
 ### Cloudflare Pages
 
-1. Create a Pages project with **Direct Upload** (no Git integration; CI uploads the built folder): `pnpm exec wrangler pages project create plain-language-marxist --production-branch main`.
+1. Create a Pages project with **Direct Upload** (no Git integration; CI uploads the built folder). Run this once, from an **empty directory** outside the repo:
+   ```bash
+   npx wrangler pages project create plain-language-marxist --production-branch main --force
+   ```
+   Since Wrangler 4.14x, `pages project create` without `--force` silently creates a *Worker* and uploads whatever static folder it auto-detects in the current directory. At the repo root it refuses to run ("workspace root"). Once the project exists, `wrangler pages deploy` targets Pages normally and works from the repo root, so CI needs no `--force`.
 2. Create an API token with the **Cloudflare Pages: Edit** permission.
 3. Add repository secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`.
 4. If the project has a different name, set repository variable `CF_PAGES_PROJECT`.

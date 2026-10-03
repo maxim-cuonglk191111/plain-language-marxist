@@ -1,0 +1,338 @@
+/* Reader styles. Long-form reading first (SDD §12): text > navigation > terms > community. */
+:root {
+  --bg: #fdfcf8;
+  --fg: #1d1b16;
+  --muted: #6b665a;
+  --rule: #e4e0d5;
+  --accent: #8a1c1c;
+  --highlight: #fbf0c9;
+  --notice: #f3efe3;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --measure: 38rem;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #171612;
+    --fg: #ebe7dc;
+    --muted: #a39d8f;
+    --rule: #34312a;
+    --accent: #e28b7b;
+    --highlight: #3d3620;
+    --notice: #24221c;
+    color-scheme: dark;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 1.0625rem/1.65 var(--sans);
+}
+
+a {
+  color: var(--accent);
+}
+
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+}
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+  background: var(--bg);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+}
+
+.site-header,
+.site-footer,
+main {
+  padding: 0 1rem;
+}
+.site-header {
+  border-bottom: 1px solid var(--rule);
+  padding-block: 0.75rem;
+}
+.site-name {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--fg);
+}
+.site-footer {
+  border-top: 1px solid var(--rule);
+  margin-top: 4rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.home {
+  max-width: var(--measure);
+  margin: 2rem auto;
+}
+.lede {
+  font-size: 1.15rem;
+}
+.library,
+.library ul {
+  list-style: none;
+  padding: 0;
+}
+.byline,
+.coverage {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* ---------- Reader ---------- */
+.reader {
+  max-width: 76rem;
+  margin: 0 auto;
+}
+.reader-header {
+  max-width: var(--measure);
+  margin: 2rem auto 1.5rem;
+}
+.work-title {
+  margin: 0;
+  color: var(--muted);
+  font-variant: small-caps;
+  letter-spacing: 0.04em;
+}
+.reader-header h1 {
+  margin: 0.25rem 0 0.5rem;
+  font-family: var(--serif);
+  line-height: 1.2;
+}
+.attribution {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.mode-switch {
+  display: inline-flex;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.mode-switch button {
+  font: inherit;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.9rem;
+  border: 0;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+.mode-switch button + button {
+  border-left: 1px solid var(--rule);
+}
+.mode-switch button[aria-pressed="true"] {
+  background: var(--fg);
+  color: var(--bg);
+}
+
+/* Layers must be impossible to confuse (SDD §12): serif Original, sans Plain English, labels. */
+.layer-original {
+  font-family: var(--serif);
+}
+.layer-plain {
+  font-family: var(--sans);
+}
+.layer-label {
+  display: none;
+  font: 600 0.7rem/1 var(--sans);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.columns-head {
+  display: none;
+}
+
+.rows {
+  display: grid;
+}
+.row {
+  display: grid;
+  gap: 0 3rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  scroll-margin-top: 1rem;
+}
+.row:target,
+.row:has(> .anchor:target) {
+  background: var(--highlight);
+}
+.anchor {
+  display: block;
+  scroll-margin-top: 1rem;
+}
+.block {
+  margin: 0 0 1rem;
+}
+.heading {
+  font-family: var(--serif);
+  line-height: 1.25;
+  margin-top: 1.5rem;
+}
+.layer-plain .heading {
+  font-family: var(--sans);
+}
+.footnote {
+  font-size: 0.9rem;
+}
+.footnote-label {
+  font-weight: 600;
+}
+.separator {
+  text-align: center;
+  letter-spacing: 0.5em;
+}
+.small-caps {
+  font-variant: small-caps;
+}
+.indent-1 {
+  display: inline-block;
+  width: 2em;
+}
+.fn-ref a {
+  text-decoration: none;
+  padding: 0 0.1em;
+}
+.notice {
+  font: 0.85rem/1.4 var(--sans);
+  color: var(--muted);
+  background: var(--notice);
+  border-radius: 0.375rem;
+  padding: 0.4rem 0.6rem;
+}
+.table-wrap {
+  overflow-x: auto;
+}
+table {
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  margin: 0 auto;
+}
+td,
+th {
+  border: 1px solid var(--rule);
+  padding: 0.2rem 0.5rem;
+  vertical-align: top;
+}
+
+/* Default with no JavaScript (no data-view): both layers, stacked, each labelled. */
+html:not([data-view]) .layer-label {
+  display: block;
+}
+
+/* Plain English mode; untranslated rows fall back to the original, marked as such. */
+html[data-view="plain"] .row {
+  max-width: var(--measure);
+  margin: 0 auto;
+  width: 100%;
+}
+html[data-view="plain"] .row:not(.untranslated) .col-original,
+html[data-view="plain"] .row.untranslated .notice.missing {
+  display: none;
+}
+html[data-view="plain"] .row.untranslated .col-original {
+  border-left: 3px solid var(--rule);
+  padding-left: 0.75rem;
+}
+html[data-view="plain"] .row.untranslated .col-original .layer-label {
+  display: block;
+}
+html[data-view="plain"] .row.untranslated .col-original .layer-label::after {
+  content: " — no plain English yet";
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+/* In a run of untranslated rows, say "no plain English yet" once, at the start of the run. */
+html[data-view="plain"] .row.untranslated + .row.untranslated .col-original .layer-label {
+  display: none;
+}
+html[data-view="parallel"] .row.untranslated + .row.untranslated .col-plain,
+html:not([data-view]) .row.untranslated + .row.untranslated .col-plain {
+  display: none;
+}
+
+/* Original mode. */
+html[data-view="original"] .row {
+  max-width: var(--measure);
+  margin: 0 auto;
+  width: 100%;
+}
+html[data-view="original"] .col-plain {
+  display: none;
+}
+
+/* Parallel mode: two aligned columns per row on wide screens. */
+@media (min-width: 60rem) {
+  html[data-view="parallel"] .columns-head,
+  html:not([data-view]) .columns-head {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 3rem;
+    padding: 0 0.5rem 0.5rem;
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--rule);
+    font: 600 0.75rem/1.5 var(--sans);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    z-index: 1;
+  }
+  html[data-view="parallel"] .row,
+  html:not([data-view]) .row {
+    grid-template-columns: 1fr 1fr;
+  }
+  html:not([data-view]) .layer-label {
+    display: none;
+  }
+}
+@media (max-width: 59.99rem) {
+  html[data-view="parallel"] .layer-label {
+    display: block;
+  }
+  html[data-view="parallel"] .col-original {
+    margin-bottom: 0.75rem;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* The mode switch needs JavaScript; without it the page shows both layers. */
+html:not([data-view]) .mode-switch {
+  display: none;
+}
+
+/* Keep deep-link targets clear of the sticky column header in parallel mode. */
+html[data-view="parallel"] .row,
+html[data-view="parallel"] .anchor {
+  scroll-margin-top: 3rem;
+}

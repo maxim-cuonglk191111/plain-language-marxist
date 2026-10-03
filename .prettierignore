@@ -9,3 +9,6 @@ content/
 ingestion/
 governance.yml
 packages/*/fixtures/
+.next/
+out/
+next-env.d.ts

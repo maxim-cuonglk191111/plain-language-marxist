@@ -735,7 +735,7 @@ A mirror serves a release's `site.tar.gz` as-is, after checking it against `chec
 | Item | Notes |
 |---|---|
 | Domain | Not chosen. It does not block work because the base URL is configuration |
-| `.htm` paths on static hosts | Verify early in M1 that the chosen host serves `…/ch01.htm` as HTML; otherwise add a build step to rename the files |
+| `.htm` paths on static hosts | Resolved (task 014). The export step renames `ch01.htm.html` to `ch01.htm`, so every static host serves the source-shaped URL as HTML |
 | Plain register undefined | §8.6 gives the rules but no target reading level or style. Task 005 defines it before any rendering is written |
 | Original is a translation | The English Original is Moore's 1888 translation, so PLM modernizes a translation. German terms go in explanations. Task 005 documents this, and task 020 covers it in the FAQ |
 | MIA markup variety | MIA's HTML differs between works and eras. Collect fixtures from several works at the start of M1 and check that the layout markup (§5.3) can represent them before freezing the parser |

@@ -6,7 +6,11 @@ import { buildData, formatReport } from "@plm/content";
 export function gitRelease(root: string): { release: string; commit: string } {
   try {
     const git = (...args: string[]) =>
-      execFileSync("git", args, { cwd: root, encoding: "utf8" }).trim();
+      execFileSync("git", args, {
+        cwd: root,
+        encoding: "utf8",
+        stdio: ["ignore", "pipe", "ignore"],
+      }).trim();
     const commit = git("rev-parse", "HEAD");
     const date = git("log", "-1", "--format=%cs").replace(/-/g, ".");
     const dirty = git("status", "--porcelain", "--", "content", "governance.yml") !== "";

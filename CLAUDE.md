@@ -16,6 +16,8 @@ pnpm format           # Prettier (write); CI runs `pnpm format:check`
 pnpm typecheck        # tsc --noEmit across packages
 pnpm plm validate     # content invariants (CI runs this)
 pnpm plm build        # validate, then write the static data contract to dist/data/v1/
+pnpm build:site       # plm build + static reader export to apps/web/out/
+python -m http.server 4173 --directory apps/web/out   # preview (serves .htm as HTML)
 pnpm plm import <url> --via wayback   # import a source; see config/sources.yml
 pnpm plm annotate <document-dir>      # mark vocabulary terms in the original text
 pnpm plm prompt <document-dir> --next 15        # Copy-for-LLM prompt
@@ -25,6 +27,8 @@ pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
 **Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.
 
 **MIA access from this machine:** www.marxists.org resolves to ::1 here, so the fetch guard refuses it. Use `--via wayback`.
+
+**Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the view mode. Use plain <a> links, never next/link: the .htm rename step drops the RSC payloads that client navigation would need.
 
 **Parser changes:** regenerate the golden files with `UPDATE_GOLDEN=1 pnpm test`, review the diff, and bump `MiaAdapter.version`.
 

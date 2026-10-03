@@ -12,13 +12,15 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && pnpm --filter @plm/web typecheck",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm plm migrate && pnpm plm validate && pnpm plm build"
+    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm plm migrate && pnpm plm validate && pnpm plm build && pnpm --filter @plm/web build",
+    "build:site": "pnpm plm build && pnpm --filter @plm/web build"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.63.0",
     "@types/node": "^26.6.4",
     "eslint": "^10.12.0",
     "prettier": "^3.9.9",

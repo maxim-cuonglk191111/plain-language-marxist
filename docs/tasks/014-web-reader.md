@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -44,3 +44,12 @@ The core reading experience, as a fully static Next.js export (SDD §10.1, §12)
 - Deep links work.
 - Original and Plain English work with JavaScript disabled.
 - Lighthouse LCP is under 2.5 s on the deployed preview.
+
+## Notes (on completion)
+- **Static Next.js 16 export.** Pages are server-rendered from `dist/data/v1` at build time.
+- **One grid row per rendering.** The original passages a rendering covers sit beside it, so Parallel mode lines up by passage with no scroll syncing. Multi-passage renderings get one anchor per covered passage.
+- **Modes.** `data-view` on `<html>` is set before first paint by an inline script, from `?view=`, then the remembered choice, then `plain`. Without JavaScript the page shows both layers (parallel on wide screens, stacked on narrow ones) and the mode switch is hidden.
+- **Plain mode.** Untranslated runs fall back to the original, labelled once per run ("Original — no plain English yet").
+- **`.htm` paths.** Next exports `ch01.htm.html` plus RSC payloads. `scripts/htm-paths.mjs` drops the payloads (the reader uses plain links) and renames the page to `ch01.htm`, which a local server delivers as `text/html`.
+- **Verified in Chromium (Playwright).** All three modes work. Deep links `#p00009` scroll and highlight in every mode. There are no console errors. The page works without JavaScript and in a mobile viewport. **LCP is 1.1 s** with simulated slow 4G and 4× CPU slowdown, measured locally with PerformanceObserver. A Lighthouse run on the deployed preview is still due with task 017.
+- CI and `pnpm check` now build the reader.

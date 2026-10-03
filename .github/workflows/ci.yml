@@ -26,4 +26,5 @@ jobs:
       - run: pnpm plm migrate
       - run: pnpm plm validate
       - run: pnpm plm build
+      - run: pnpm --filter @plm/web build
       - run: pnpm audit --audit-level high

@@ -11,6 +11,7 @@ The reader should come away knowing what the text *says*, in the authors' own vo
 ## 1. Who we write for
 
 - **A general adult reader with no background in Marxism or 19th-century English.** As a target, aim for about US grade 8–10 reading level, roughly a quality newspaper. This is guidance, not a score to hit.
+- **Many readers are politically young:** new to Marxism and its vocabulary. Keep the critical Marxist terms (mode of production, means of production, capital…) and explain them in term cards and explanations, in short sentences and common words. Never replace them with looser everyday words.
 - **Many readers are not native English speakers.** Prefer common words and straightforward word order, even where an idiom would sound smoother to a native ear.
 - **Readers can always check the original.** Plain English is a reading aid placed next to the source, never a replacement for it.
 

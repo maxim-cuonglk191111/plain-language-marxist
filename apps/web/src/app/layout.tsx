@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { VIEW_BOOT_SCRIPT } from "../components/ModeSwitch";
+import { ReaderSettings } from "../components/ReaderSettings";
 import { siteUrl } from "../lib/data";
+import { BOOT_SCRIPT } from "../lib/prefs";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,7 +16,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: VIEW_BOOT_SCRIPT }} />
+        <script dangerouslySetInnerHTML={{ __html: BOOT_SCRIPT }} />
       </head>
       <body>
         <a className="skip-link" href="#main">
@@ -27,6 +28,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </a>
           <nav aria-label="Site">
             <a href="/vocabulary/">Vocabulary</a>
+            <a href="/search/">Search</a>
+            <a href="/bookmarks/">Bookmarks</a>
+            <ReaderSettings />
           </nav>
         </header>
         <main id="main">{children}</main>

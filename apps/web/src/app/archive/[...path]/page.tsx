@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { ModeSwitch } from "../../../components/ModeSwitch";
+import { ReadingAids } from "../../../components/ReadingAids";
 import { TermCards } from "../../../components/TermCards";
 import { allDocuments, findDocument, getDocument, getTerm } from "../../../lib/data";
 import { buildRows, footnoteTargets } from "../../../lib/rows";
@@ -77,6 +78,8 @@ export default async function DocumentPage(props: Props) {
         </div>
       </header>
 
+      <ReadingAids path={doc.path} title={`${entry.work.title}: ${doc.title}`} />
+
       <div className="columns-head" aria-hidden="true">
         <span className="col-original">Original</span>
         <span className="col-plain">Plain English</span>
@@ -91,6 +94,15 @@ export default async function DocumentPage(props: Props) {
               {rest.map((id) => (
                 <span key={id} id={id} className="anchor" />
               ))}
+              <button
+                type="button"
+                className="bookmark"
+                data-passage={first}
+                aria-pressed="false"
+                hidden
+              >
+                <span className="visually-hidden">Bookmark passage {first}</span>
+              </button>
               <div className="col-original layer-original" lang="en">
                 <span className="layer-label">Original</span>
                 {row.originals.map((p) => (

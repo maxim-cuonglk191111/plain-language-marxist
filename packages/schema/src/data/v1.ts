@@ -146,3 +146,26 @@ export const DataManifest = z.strictObject({
   files: z.record(z.string(), Sha256),
 });
 export type DataManifest = z.infer<typeof DataManifest>;
+
+/**
+ * search.json: compact plain-text entries for client-side search, labelled by
+ * layer so results can say where a match is (SDD §10.3). Added to v1 as a new
+ * file, so existing clients are unaffected.
+ */
+export const DataSearch = z.strictObject({
+  version: z.literal(1),
+  release: z.string(),
+  documents: z.array(z.strictObject({ path: z.string(), title: z.string(), work: z.string() })),
+  entries: z.array(
+    z.strictObject({
+      /** Index into documents; -1 for vocabulary entries. */
+      d: z.number().int(),
+      /** Passage id (or term slug for vocabulary). */
+      p: z.string(),
+      /** Layer: o = original, p = plain English, e = explanation, v = vocabulary. */
+      l: z.enum(["o", "p", "e", "v"]),
+      t: z.string(),
+    }),
+  ),
+});
+export type DataSearch = z.infer<typeof DataSearch>;

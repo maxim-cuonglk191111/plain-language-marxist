@@ -1,7 +1,7 @@
 import { mkdtempSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, relative } from "node:path";
-import { DataDocument, DataIndex, DataManifest, DataTerm } from "@plm/schema";
+import { DataDocument, DataIndex, DataManifest, DataSearch, DataTerm } from "@plm/schema";
 import { describe, expect, it } from "vitest";
 import { buildData, documentDataPath } from "./build.ts";
 import { fileHash } from "./hash.ts";
@@ -48,6 +48,10 @@ describe("plm build", () => {
 
     const term = DataTerm.parse(read("terms/bourgeoisie.json"));
     expect(term.renderings.find((r) => r.key === "capitalist-class")?.usage).toBe(1);
+
+    const search = DataSearch.parse(read("search.json"));
+    expect(new Set(search.entries.map((e) => e.l))).toEqual(new Set(["o", "p", "e", "v"]));
+    expect(search.entries).toContainEqual({ d: 0, p: "p00001", l: "p", t: "I. The Capitalist class and the Working Class" });
 
     const manifest = DataManifest.parse(read("manifest.json"));
     expect(manifest.counts).toEqual({ works: 1, documents: 1, passages: 5, renderings: 3, terms: 1 });

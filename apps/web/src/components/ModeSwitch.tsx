@@ -51,6 +51,3 @@ export function ModeSwitch() {
     </div>
   );
 }
-
-/** Runs before first paint (inlined in <head>) so the chosen mode never flashes. */
-export const VIEW_BOOT_SCRIPT = `(function(){try{var v=new URLSearchParams(location.search).get("view");if(v!=="plain"&&v!=="original"&&v!=="parallel"){v=localStorage.getItem("${STORAGE_KEY}")}if(v!=="plain"&&v!=="original"&&v!=="parallel"){v="plain"}document.documentElement.dataset.view=v}catch(e){document.documentElement.dataset.view="plain"}})();`;

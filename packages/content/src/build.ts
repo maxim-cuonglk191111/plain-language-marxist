@@ -4,12 +4,13 @@ import {
   DataDocument,
   DataIndex,
   DataManifest,
+  DataSearch,
   DataTerm,
   SCHEMA_VERSION,
   type TermFile,
 } from "@plm/schema";
 import { renderTokens, usageCounts } from "@plm/terms";
-import { basedOnHash, fileHash } from "./hash.ts";
+import { basedOnHash, fileHash, plainText } from "./hash.ts";
 import type { Issue } from "./issues.ts";
 import { loadRepository, type LoadedWork } from "./load.ts";
 import { publicPath } from "./paths.ts";
@@ -52,6 +53,7 @@ export function buildData(options: BuildOptions): BuildResult {
 
   const usageTexts: { text: string; workId: string; authors: string[] }[] = [];
   const index: DataIndex = { version: 1, release: options.release, works: [], collections: [], terms: [] };
+  const search: DataSearch = { version: 1, release: options.release, documents: [], entries: [] };
   let passageCount = 0;
   let renderingCount = 0;
 
@@ -133,6 +135,12 @@ export function buildData(options: BuildOptions): BuildResult {
           ai_assisted: e.ai_assisted,
         })),
       };
+      const d = search.documents.push({ path: document.path, title: source.title, work: w.title }) - 1;
+      for (const p of document.passages) search.entries.push({ d, p: p.id, l: "o", t: plainText(p.text) ?? "" });
+      for (const r of renderings["en-plain"] ?? []) {
+        search.entries.push({ d, p: r.covers[0] ?? "", l: "p", t: plainText(r.text) ?? "" });
+      }
+      for (const e of document.explanations) search.entries.push({ d, p: e.targets[0] ?? "", l: "e", t: plainText(e.text) ?? "" });
       const dataPath = documentDataPath(source.source.url);
       files.set(dataPath, json(DataDocument.parse(document)));
       passageCount += active.length;
@@ -171,6 +179,7 @@ export function buildData(options: BuildOptions): BuildResult {
         usage: usage.get(slug)?.get(key) ?? 0,
       })),
     };
+    search.entries.push({ d: -1, p: slug, l: "v", t: `${t.original["sg"] ?? slug}: ${t.definition.short}` });
     const path = `terms/${slug}.json`;
     files.set(path, json(DataTerm.parse(term)));
     index.terms.push({ term: slug, data: path });
@@ -188,6 +197,7 @@ export function buildData(options: BuildOptions): BuildResult {
     });
   }
   files.set("index.json", json(DataIndex.parse(index)));
+  files.set("search.json", json(DataSearch.parse(search)));
 
   const manifest: DataManifest = {
     version: 1,

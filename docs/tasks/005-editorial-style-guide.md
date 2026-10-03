@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | In progress |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -39,3 +39,4 @@ Also write `docs/editorial/llm-prompt.md`: the prompt template that `plm prompt`
 - Every original quoted in the examples was checked against Moore's 1888 text.
 - The prompt embeds the core rules by extracting the `core-rules` block from STYLE.md, so the two cannot drift apart.
 - **Remaining for acceptance:** the maintainer reviews the draft, and one person unfamiliar with the project tries the guide on a new paragraph.
+- **2026-10-04:** the maintainer approved the guide.

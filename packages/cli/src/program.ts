@@ -6,6 +6,7 @@ import { runApply, runPrompt } from "./commands/draft.ts";
 import { driftReport, runDiffSource } from "./commands/drift.ts";
 import { runImport } from "./commands/import.ts";
 import { checkLinks, linksReport } from "./commands/links.ts";
+import { parseCheck, printParseCheck } from "./commands/parsecheck.ts";
 import { runMigrate } from "./commands/migrate.ts";
 import { runValidate, type ValidateCliOptions } from "./commands/validate.ts";
 
@@ -23,10 +24,18 @@ export function buildProgram(): Command {
     .option("--via <mode>", "direct or wayback (default: from config/sources.yml)")
     .option("--root <dir>", "repository root", ".")
     .option("-y, --yes", "write without asking")
+    .option("--force", "import even if the parse checks report errors")
     .action(
       async (
         url: string,
-        opts: { work?: string; doc?: string; via?: string; root: string; yes?: boolean },
+        opts: {
+          work?: string;
+          doc?: string;
+          via?: string;
+          root: string;
+          yes?: boolean;
+          force?: boolean;
+        },
       ) => {
         if (opts.via !== undefined && opts.via !== "direct" && opts.via !== "wayback") {
           throw new Error("--via must be direct or wayback");
@@ -38,6 +47,7 @@ export function buildProgram(): Command {
           ...(opts.doc ? { doc: opts.doc } : {}),
           ...(opts.via ? { via: opts.via as "direct" | "wayback" } : {}),
           ...(opts.yes ? { yes: true } : {}),
+          ...(opts.force ? { force: true } : {}),
         });
         process.exitCode = result ? 0 : 1;
       },
@@ -161,6 +171,32 @@ export function buildProgram(): Command {
       if (opts.report) writeFileSync(opts.report, linksReport(result));
       process.exitCode = result.broken.length ? 1 : 0;
     });
+
+  program
+    .command("parse-check")
+    .description("Parse one source page and report problems, without writing content")
+    .argument("<url>", "source URL (also selects the adapter)")
+    .option("--file <path>", "parse a saved HTML file instead of fetching")
+    .option("--via <mode>", "direct or wayback (default: from config/sources.yml)")
+    .option("--save-fixture <name>", "save the page as a parser fixture with a provenance stub")
+    .option("--show <n>", "print the first N blocks", "25")
+    .option("--root <dir>", "repository root", ".")
+    .action(
+      async (
+        url: string,
+        opts: { file?: string; via?: string; saveFixture?: string; show: string; root: string },
+      ) => {
+        const result = await parseCheck({
+          root: opts.root,
+          url,
+          ...(opts.file ? { file: opts.file } : {}),
+          ...(opts.via === "direct" || opts.via === "wayback" ? { via: opts.via } : {}),
+          ...(opts.saveFixture ? { saveFixture: opts.saveFixture } : {}),
+        });
+        printParseCheck(result, Number(opts.show));
+        process.exitCode = result.findings.some((f) => f.level === "error") ? 1 : 0;
+      },
+    );
 
   program
     .command("validate")

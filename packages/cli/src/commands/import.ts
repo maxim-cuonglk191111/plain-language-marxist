@@ -12,6 +12,8 @@ import {
   DEFAULT_POLICY,
   FetchRefused,
   adapterFor,
+  inspectDocument,
+  missingText,
   isWaybackSnapshotOf,
   safeFetch,
   waybackRawUrl,
@@ -41,6 +43,8 @@ export type ImportOptions = {
   doc?: string;
   via?: "direct" | "wayback";
   yes?: boolean;
+  /** Import even if the parse checks report errors. */
+  force?: boolean;
   /** For tests: today's date. */
   today?: string;
 };
@@ -155,6 +159,7 @@ export async function runImport(
     if (!result.ok) throw new Error(`${sourceFile} is invalid; fix it before re-importing`);
     existing = result.data;
   }
+  const findings = inspectDocument(parsed);
   const { passages, summary } = mergePassages(existing?.passages, parsed.blocks);
 
   log(`Source:    ${url.href}${fetched.via ? `\nVia:       ${fetched.via}` : ""}`);
@@ -168,6 +173,22 @@ export async function runImport(
   );
   for (const [k, v] of Object.entries(parsed.metadata)) log(`Metadata:  ${k}: ${v.slice(0, 160)}`);
   for (const w of parsed.warnings) log(`Warning:   ${w}`);
+  const missing = missingText(fetched.body, parsed);
+  log(
+    `Not kept:  ${missing.missingWords} of ${missing.sourceWords} source words; longest: ${
+      missing.runs
+        .slice(0, 3)
+        .map((r) => `"${r.slice(0, 60)}…"`)
+        .join(", ") || "none"
+    }`,
+  );
+  for (const f of findings) log(`${f.level === "error" ? "Error:  " : "Check:  "}   ${f.message}`);
+  if (findings.some((f) => f.level === "error") && !options.force) {
+    log(
+      "The parse checks found errors, so nothing was written. Investigate with plm parse-check (docs/architecture/parser-guide.md), or pass --force.",
+    );
+    return null;
+  }
 
   if (!options.yes && !(await confirm("Write these files?"))) {
     log("Nothing written. (Re-run with --yes to skip the prompt, e.g. in CI.)");

@@ -140,6 +140,7 @@
     "Sheet Music": "The International. Marching Song of the Revolutionary Proletariat; Source: Sheet Music Collection (University of Illinois at Chicago); Published: by Labor News Co., 45 Rose St., New York City (S.L.P.), 1911."
   },
   "warnings": [
+    "dropped 6 block(s) after the notes section, e.g. \"Debout! les damnés de la terreDebout! les forçats de la faim\", \"Интернационал\", \"Lyrics: A. Kots\"; check none is text",
     "dropped image(s)",
     "text alignment (center) is not preserved",
     "unwrapped layout table(s) and read their cells as text"

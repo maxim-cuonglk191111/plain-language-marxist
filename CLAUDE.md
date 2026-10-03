@@ -29,11 +29,13 @@ pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
 
 **Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.
 
-**MIA access from this machine:** www.marxists.org resolves to ::1 here, so the fetch guard refuses it. Use `--via wayback`.
+**MIA access from this machine:** www.marxists.org resolves to ::1 here (Vietnam blocks it), so the fetch guard refuses it. Use `--via wayback`, or set `PLM_PROXY=http://127.0.0.1:<port>` (your VPN client's HTTP proxy) and use `--via direct`.
+
+**New kinds of source page:** follow docs/architecture/parser-guide.md. Run `pnpm plm parse-check <url> --via wayback` first, and read every "Not kept" line.
 
 **Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the view mode. Use plain <a> links, never next/link: apps/web/scripts/finalize-export.mjs drops the RSC payloads that client navigation would need, renames ch01.htm.html to ch01.htm, moves other pages to dir/index.html, and copies dist/data/v1 into the site.
 
-**Parser changes:** regenerate the golden files with `UPDATE_GOLDEN=1 pnpm test`, review the diff, and bump `MiaAdapter.version`.
+**Parser changes:** regenerate the golden files with `UPDATE_GOLDEN=1 pnpm test`, review **both** `*.golden.json` and `*.dropped.txt` diffs (text appearing in .dropped.txt is newly lost), and bump `MiaAdapter.version`.
 
 **TypeScript** is pinned to `~6.0`, because typescript-eslint does not support TypeScript 7 yet.
 

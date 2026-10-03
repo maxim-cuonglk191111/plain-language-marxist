@@ -16,7 +16,7 @@
     },
     {
       "type": "paragraph",
-      "text": "It has been already suggested that manufacture centralises property in the hands of the few. It requires large capital with which to erect the colossal establishments that ruin the petty trading bourgeoisie and with which to press into its service the forces of Nature, so driving the hand-labour of the independent workman out of the market. The division of labour, the application of water and especially steam, and the application of machinery, are the three great levers with which manufacture, since the middle of the last century, has been busy putting the world out of joint. Manufacture, on a small scale, created the middle-class; on a large scale, it created the working-class, and raised the elect of the middle-class to the throne, but only to overthrow them the more surely when the time comes. Meanwhile, it is an undenied and easily explained fact that the numerous petty middle-class of the \"good old times\" has been annihilated by manufacture, and resolved into rich capitalists on the one hand and poor workers on the other. <sup>[2]</sup>"
+      "text": "It has been already suggested that manufacture centralises property in the hands of the few. It requires large capital with which to erect the colossal establishments that ruin the petty trading bourgeoisie and with which to press into its service the forces of Nature, so driving the hand-labour of the independent workman out of the market. The division of labour, the application of water and especially steam, and the application of machinery, are the three great levers with which manufacture, since the middle of the last century, has been busy putting the world out of joint. Manufacture, on a small scale, created the middle-class; on a large scale, it created the working-class, and raised the elect of the middle-class to the throne, but only to overthrow them the more surely when the time comes. Meanwhile, it is an undenied and easily explained fact that the numerous petty middle-class of the \"good old times\" has been annihilated by manufacture, and resolved into rich capitalists on the one hand and poor workers on the other. <fn ref=\"2\"/>"
     },
     {
       "type": "paragraph",
@@ -31,13 +31,9 @@
       "text": "But in these towns the proletarians are the infinite majority, and how they fare, what influence the great town exercises upon them, we have now to investigate."
     },
     {
-      "type": "heading",
-      "level": 3,
-      "text": "NOTES"
-    },
-    {
-      "type": "paragraph",
-      "text": "2. Compare on this point my \"Outlines of a Critique of Political Economy\" in the <i>Deutsch-Französische Jahrbücher.</i> In this essay \"free competition\" is the starting-point; but industry is only the practice of free competition and the latter is only the principle on which industry is based.-- <i>Note by Engels.</i> Return to Text"
+      "type": "footnote",
+      "label": "2",
+      "text": "Compare on this point my \"Outlines of a Critique of Political Economy\" in the <i>Deutsch-Französische Jahrbücher.</i> In this essay \"free competition\" is the starting-point; but industry is only the practice of free competition and the latter is only the principle on which industry is based.-- <i>Note by Engels.</i> Return to Text"
     }
   ],
   "metadata": {},

@@ -1,6 +1,8 @@
 import { lookup as dnsLookup } from "node:dns";
+import { request as httpRequest, type ClientRequest, type IncomingMessage } from "node:http";
 import { request } from "node:https";
 import { BlockList, isIP, type LookupFunction } from "node:net";
+import { connect as tlsConnect } from "node:tls";
 import { brotliDecompressSync, gunzipSync, inflateSync } from "node:zlib";
 
 /**
@@ -119,52 +121,57 @@ export type TransportResponse = {
 };
 export type Transport = (url: URL, policy: FetchPolicy) => Promise<TransportResponse>;
 
+const HEADERS = {
+  "user-agent": "plain-language-marxist-importer/0.1",
+  "accept-encoding": "gzip, br, deflate",
+};
+
+/** Reads a response with a byte cap, decompressing gzip/br/deflate. */
+function readResponse(
+  req: ClientRequest,
+  res: IncomingMessage,
+  policy: FetchPolicy,
+  resolve: (r: TransportResponse) => void,
+  reject: (e: unknown) => void,
+): void {
+  const chunks: Buffer[] = [];
+  let size = 0;
+  res.on("data", (chunk: Buffer) => {
+    size += chunk.length;
+    if (size > policy.maxBytes) {
+      req.destroy(new FetchRefused(`response larger than ${policy.maxBytes} bytes`));
+      return;
+    }
+    chunks.push(chunk);
+  });
+  res.on("end", () => {
+    let body: Buffer = Buffer.concat(chunks);
+    const encoding = String(res.headers["content-encoding"] ?? "").toLowerCase();
+    try {
+      if (encoding === "gzip") body = gunzipSync(body);
+      else if (encoding === "br") body = brotliDecompressSync(body);
+      else if (encoding === "deflate") body = inflateSync(body);
+    } catch (e) {
+      reject(e);
+      return;
+    }
+    if (body.length > policy.maxBytes) {
+      reject(new FetchRefused(`response larger than ${policy.maxBytes} bytes`));
+      return;
+    }
+    const headers: Record<string, string | undefined> = {};
+    for (const [k, v] of Object.entries(res.headers))
+      headers[k] = Array.isArray(v) ? v.join(", ") : v;
+    resolve({ status: res.statusCode ?? 0, headers, body: new Uint8Array(body) });
+  });
+  res.on("error", reject);
+}
+
 /** HTTPS transport using the guarded lookup, a byte cap and a timeout; never follows redirects itself. */
 export const httpsTransport: Transport = (url, policy) =>
   new Promise((resolve, reject) => {
-    const req = request(
-      url,
-      {
-        method: "GET",
-        lookup: guardedLookup(),
-        headers: {
-          "user-agent": "plain-language-marxist-importer/0.1",
-          "accept-encoding": "gzip, br, deflate",
-        },
-      },
-      (res) => {
-        const chunks: Buffer[] = [];
-        let size = 0;
-        res.on("data", (chunk: Buffer) => {
-          size += chunk.length;
-          if (size > policy.maxBytes) {
-            req.destroy(new FetchRefused(`response larger than ${policy.maxBytes} bytes`));
-            return;
-          }
-          chunks.push(chunk);
-        });
-        res.on("end", () => {
-          let body: Buffer = Buffer.concat(chunks);
-          const encoding = String(res.headers["content-encoding"] ?? "").toLowerCase();
-          try {
-            if (encoding === "gzip") body = gunzipSync(body);
-            else if (encoding === "br") body = brotliDecompressSync(body);
-            else if (encoding === "deflate") body = inflateSync(body);
-          } catch (e) {
-            reject(e);
-            return;
-          }
-          if (body.length > policy.maxBytes) {
-            reject(new FetchRefused(`response larger than ${policy.maxBytes} bytes`));
-            return;
-          }
-          const headers: Record<string, string | undefined> = {};
-          for (const [k, v] of Object.entries(res.headers))
-            headers[k] = Array.isArray(v) ? v.join(", ") : v;
-          resolve({ status: res.statusCode ?? 0, headers, body: new Uint8Array(body) });
-        });
-        res.on("error", reject);
-      },
+    const req = request(url, { method: "GET", lookup: guardedLookup(), headers: HEADERS }, (res) =>
+      readResponse(req, res, policy, resolve, reject),
     );
     req.setTimeout(policy.timeoutMs, () =>
       req.destroy(new FetchRefused(`timed out after ${policy.timeoutMs} ms`)),
@@ -173,11 +180,77 @@ export const httpsTransport: Transport = (url, policy) =>
     req.end();
   });
 
+/**
+ * HTTPS through an HTTP CONNECT proxy you control, such as a VPN client's local port
+ * (Clash, v2rayN…), for networks where the source site is blocked. The proxy only sees an
+ * encrypted tunnel: TLS is negotiated end to end with the real host, and the certificate is
+ * verified as usual. DNS is resolved by the proxy, so the private-address guard does not
+ * apply to the target; the host allowlist and per-hop URL checks still do.
+ */
+export function proxyTransport(proxy: string): Transport {
+  const p = new URL(proxy);
+  if (p.protocol !== "http:")
+    throw new FetchRefused("PLM_PROXY must be an http:// proxy that supports CONNECT");
+  const auth = p.username
+    ? {
+        "proxy-authorization": `Basic ${Buffer.from(`${decodeURIComponent(p.username)}:${decodeURIComponent(p.password)}`).toString("base64")}`,
+      }
+    : {};
+  return (url, policy) =>
+    new Promise((resolve, reject) => {
+      const target = `${url.hostname}:${url.port || 443}`;
+      const connect = httpRequest({
+        host: p.hostname,
+        port: Number(p.port || 80),
+        method: "CONNECT",
+        path: target,
+        headers: { host: target, ...auth },
+      });
+      connect.setTimeout(policy.timeoutMs, () =>
+        connect.destroy(new FetchRefused(`proxy timed out after ${policy.timeoutMs} ms`)),
+      );
+      connect.on("connect", (res, socket) => {
+        if (res.statusCode !== 200) {
+          socket.destroy();
+          reject(new FetchRefused(`proxy refused CONNECT to ${target}: HTTP ${res.statusCode}`));
+          return;
+        }
+        const tlsSocket = tlsConnect({ socket, servername: url.hostname });
+        const req = request(
+          url,
+          // Without an agent Node would derive the Host header's port wrongly, and servers
+          // echo it into redirects (Wayback answered with web.archive.org:80). Set it explicitly.
+          {
+            method: "GET",
+            headers: { ...HEADERS, host: url.host },
+            createConnection: () => tlsSocket,
+          },
+          (r) => readResponse(req, r, policy, resolve, reject),
+        );
+        req.setTimeout(policy.timeoutMs, () =>
+          req.destroy(new FetchRefused(`timed out after ${policy.timeoutMs} ms`)),
+        );
+        req.on("error", reject);
+        req.end();
+      });
+      connect.on("error", (e) =>
+        reject(new FetchRefused(`cannot reach proxy ${p.host}: ${e.message}`)),
+      );
+      connect.end();
+    });
+}
+
+/** The transport to use by default: through PLM_PROXY when set, otherwise direct. */
+export function defaultTransport(): Transport {
+  const proxy = process.env["PLM_PROXY"];
+  return proxy ? proxyTransport(proxy) : httpsTransport;
+}
+
 /** Fetches an allowlisted URL, re-validating every redirect hop. Returns the final URL and bytes. */
 export async function safeFetch(
   raw: string,
   policy: FetchPolicy,
-  transport: Transport = httpsTransport,
+  transport: Transport = defaultTransport(),
 ): Promise<{ url: string; body: Uint8Array }> {
   let url = checkUrl(raw, policy);
   for (let hop = 0; hop <= policy.maxRedirects; hop++) {

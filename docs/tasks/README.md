@@ -10,7 +10,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [002](002-monorepo-toolchain-and-ci.md) | Monorepo toolchain and CI skeleton | M0 | Done |
 | [003](003-content-schemas-v1.md) | Content schemas v1 (persisted shapes) | M0 | Done |
 | [004](004-content-loader-and-validate.md) | Content loader and `plm validate` | M0 | Done |
-| [005](005-editorial-style-guide.md) | Editorial style guide for the plain register | M0 | In progress |
+| [005](005-editorial-style-guide.md) | Editorial style guide for the plain register | M0 | Done |
 | [006](006-governance.md) | Governance file and GOVERNANCE.md | M0 | Done |
 | [007](007-mia-markup-survey.md) | MIA markup survey and parser fixtures | M1 | Done |
 | [008](008-mia-adapter-and-import.md) | MIA source adapter and `plm import` | M1 | Done |
@@ -26,5 +26,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [018](018-drift-and-link-checks.md) | Source drift and link-check scheduled jobs | M1 | Done |
 | [019](019-m1-e2e-tests.md) | M1 end-to-end test suite | M1 | Done |
 | [020](020-pre-launch-outreach.md) | Pre-launch outreach and first reviewers | M1 | Open |
+| [021](021-parser-hardening.md) | Parser hardening: independent loss detection, broad survey, proxy | M1 | Done |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

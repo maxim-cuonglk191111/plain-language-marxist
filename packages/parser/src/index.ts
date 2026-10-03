@@ -4,6 +4,8 @@ import type { SourceAdapter } from "./types.ts";
 
 export * from "./decode.ts";
 export * from "./fetch.ts";
+export * from "./coverage.ts";
+export * from "./inspect.ts";
 export * from "./types.ts";
 export { MiaAdapter };
 

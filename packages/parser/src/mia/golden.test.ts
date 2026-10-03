@@ -1,6 +1,7 @@
 import { readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { parseLayout } from "@plm/schema";
 import { describe, expect, it } from "vitest";
+import { missingText } from "../coverage.ts";
 import { MiaAdapter } from "./adapter.ts";
 
 // Golden files: fixtures/mia/<name>.golden.json. After an intended parser change,
@@ -24,6 +25,24 @@ describe("MIA adapter golden files", () => {
   it.each(fixtures)("%s matches its golden output", (file) => {
     const actual = `${JSON.stringify(parseFixture(file), null, 2)}\n`;
     const golden = new URL(file.replace(/\.html$/, ".golden.json"), dir);
+    if (process.env.UPDATE_GOLDEN) writeFileSync(golden, actual);
+    expect(actual).toBe(readFileSync(golden, "utf8"));
+  });
+});
+
+// What the parser does NOT keep, from an independent comparison with the raw page. Any change
+// to what is dropped shows up in review as a diff of these files (parser-guide.md).
+describe("MIA adapter dropped-text golden files", () => {
+  it.each(fixtures)("%s drops only what its .dropped.txt records", (file) => {
+    const bytes = readFileSync(new URL(file, dir));
+    const m = missingText(bytes, parseFixture(file));
+    const lines = [
+      `${m.missingWords} of ${m.sourceWords} source words not kept`,
+      "",
+      ...m.runs.map((r) => `- ${r}`),
+    ];
+    const actual = `${lines.join("\n")}\n`;
+    const golden = new URL(file.replace(/\.html$/, ".dropped.txt"), dir);
     if (process.env.UPDATE_GOLDEN) writeFileSync(golden, actual);
     expect(actual).toBe(readFileSync(golden, "utf8"));
   });
@@ -78,7 +97,7 @@ describe("MIA adapter invariants", () => {
     expect(doc.blocks.some((b) => b.text.includes("top-down system of appointing officials"))).toBe(
       false,
     );
-    expect(doc.warnings).toContain("dropped 30 editorial note(s) and their references");
+    expect(doc.warnings).toContain("dropped 15 editorial note(s) and their references");
   });
 
   it("keeps statistics tables with spans and decodes ISO-8859-1 (Capital ch. 25)", () => {

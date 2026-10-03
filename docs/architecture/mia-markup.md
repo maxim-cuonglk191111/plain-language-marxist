@@ -1,5 +1,7 @@
 # MIA Markup Survey
 
+> The living catalogue of patterns, and the workflow for new pages, is in [parser-guide.md](parser-guide.md). This file records the first survey (task 007).
+
 The findings from task 007, and the parsing rules that `MiaAdapter` (task 008) implements. Fixtures and their provenance are in `packages/parser/fixtures/mia/`.
 
 ## Sample

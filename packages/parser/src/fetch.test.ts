@@ -208,3 +208,31 @@ describe("decodeHtml", () => {
     expect(decodeHtml(new TextEncoder().encode('<meta charset="utf-8">½'))).toContain("½");
   });
 });
+
+describe("proxyTransport", () => {
+  it("tunnels with HTTP CONNECT to the target host and reports a refusal", async () => {
+    const { createServer } = await import("node:http");
+    const seen: string[] = [];
+    const proxy = createServer();
+    proxy.on("connect", (req, socket) => {
+      seen.push(req.url ?? "");
+      socket.end("HTTP/1.1 403 Forbidden\r\n\r\n");
+    });
+    await new Promise<void>((r) => proxy.listen(0, "127.0.0.1", r));
+    const port = (proxy.address() as { port: number }).port;
+    const { proxyTransport } = await import("./fetch.ts");
+    await expect(
+      proxyTransport(`http://127.0.0.1:${port}`)(new URL("https://www.marxists.org/a.htm"), policy),
+    ).rejects.toThrow("proxy refused CONNECT to www.marxists.org:443: HTTP 403");
+    expect(seen).toEqual(["www.marxists.org:443"]);
+    proxy.close();
+  });
+
+  it("explains an unreachable proxy and rejects non-http proxy URLs", async () => {
+    const { proxyTransport } = await import("./fetch.ts");
+    await expect(
+      proxyTransport("http://127.0.0.1:9")(new URL("https://www.marxists.org/"), policy),
+    ).rejects.toThrow("cannot reach proxy 127.0.0.1:9");
+    expect(() => proxyTransport("socks5://127.0.0.1:1080")).toThrow("must be an http:// proxy");
+  });
+});

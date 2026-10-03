@@ -93,3 +93,93 @@ renderings:
     revision: 1
     ai_assisted: true
     text: The discovery of America and the sailing around the Cape opened up new ground for the rising {bourgeoisie}. The East-Indian and Chinese markets, the colonisation of America, trade with the colonies, the increase in the means of exchange and in commodities generally, gave commerce, shipping and industry a push never known before, and with it gave the revolutionary element in the crumbling feudal society a rapid development.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:7eb06f63bb058a2dd89bf0f643602a4ac382f5cc33bdf6e28d9c9b44e8be3624
+    revision: 1
+    ai_assisted: true
+    text: The feudal system of industry, in which closed guilds held a monopoly of industrial production, was no longer enough for the growing needs of the new markets. The manufacturing system took its place. The guild-masters were pushed aside by the manufacturing middle class; the division of labour between the different corporate guilds disappeared in the face of the division of labour within each single workshop.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:ec1fe89fe54a980e5be195287376bbe6e39d855d1922cda7cf19f153a12a8f49
+    revision: 1
+    ai_assisted: true
+    text: Meanwhile the markets kept growing and demand kept rising. Even manufacture was no longer enough. Then steam and machinery revolutionised industrial production. The place of manufacture was taken by the giant, Modern Industry; the place of the industrial middle class was taken by industrial millionaires, the leaders of whole industrial armies, the modern {bourgeoisie}.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:d0023e9889dd36faa143462d02ce133de8d645a4699646425dc54d36c3c47e1b
+    revision: 1
+    ai_assisted: true
+    text: Modern industry has established the world market, for which the discovery of America prepared the way. This market has given an immense development to commerce, to shipping, to communication by land. This development has in turn pushed industry to expand; and in proportion as industry, commerce, shipping and railways expanded, in the same proportion the {bourgeoisie} developed, increased its capital, and pushed into the background every class handed down from the Middle Ages.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:77018034ed4bafce7d64829926abb152a10ec22d84c149d2c5cb07c02ebad67c
+    revision: 1
+    ai_assisted: true
+    text: We see, therefore, how the modern {bourgeoisie} is itself the product of a long course of development, of a series of revolutions in the modes of production and of exchange.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:1cb2139ca69d78b99d67d7497a2336d6ecdba9c3156f514c8801c84fdeb3c4ef
+    revision: 1
+    ai_assisted: true
+    text: 'Each step in the development of the {bourgeoisie} was accompanied by a matching political advance of that class. It was an oppressed class under the rule of the feudal nobility; an armed and self-governing association in the medieval commune<fn ref="4"/>: here an independent urban republic (as in Italy and Germany), there the taxable “third estate” of the monarchy (as in France); afterwards, in the period of manufacture proper, it served either the semi-feudal or the absolute monarchy as a counterweight against the nobility, and was in fact the cornerstone of the great monarchies in general. Since the establishment of Modern Industry and of the world market, the {bourgeoisie} has at last conquered for itself exclusive political rule in the modern representative State. The executive of the modern state is only a committee for managing the common affairs of the whole {bourgeoisie}.'
+  p00021:
+    covers: [p00021]
+    based_on: sha256:fd8bc9c7bccf8fc48942fdf0e0a56fa31f5870c15f0ded8756459abff94cd897
+    revision: 1
+    ai_assisted: true
+    text: Historically, the {bourgeoisie} has played a most revolutionary role.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:98b29afe4e68e44400f0e84285c084a691c85278413d196dc2695a5b43ecc585
+    revision: 1
+    ai_assisted: true
+    text: Wherever the {bourgeoisie} has gained the upper hand, it has put an end to all feudal, patriarchal, idyllic relations. It has mercilessly torn apart the varied feudal ties that bound man to his “natural superiors”, and has left no other bond between man and man than naked self-interest, than unfeeling “cash payment”. It has drowned the most heavenly ecstasies of religious passion, of chivalrous enthusiasm, of narrow-minded sentimentality, in the icy water of selfish calculation. It has reduced personal worth to exchange value, and in place of the countless chartered freedoms that could not be taken away, it has set up that single, unscrupulous freedom — Free Trade. In one word, for exploitation veiled by religious and political illusions, it has substituted naked, shameless, direct, brutal exploitation.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:a35a6ddb130205ec4f99fc5b2c92aff1921ef813547b20aa5c00625502af2c88
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie} has stripped the halo from every occupation that was until now honoured and looked up to with reverent awe. It has turned the doctor, the lawyer, the priest, the poet, the scientist into its paid wage labourers.
+  p00024:
+    covers: [p00024]
+    based_on: sha256:fd14ca99ef87c8c7ce8aed58a2a0b23a5bf2af011aae9dc0477c640e79ec4c9c
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie} has torn away the sentimental veil from the family, and has reduced the family relationship to a mere money relationship.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:4a8d0c0a21a55426ec3419e7fe45fdffca7ab1d2191a861d79ae0656cfac1549
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie} has revealed how it came about that the brutal show of vigour in the Middle Ages, which reactionaries admire so much, found its fitting counterpart in the laziest idleness. It has been the first to show what human activity can achieve. It has accomplished wonders far greater than Egyptian pyramids, Roman aqueducts and Gothic cathedrals; it has carried out expeditions that put in the shade all earlier Exoduses of nations and crusades.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:a2f8c5dc3257aa13d645785abfe9098413bf20d2f929269242af36f6a64cc2a0
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie} cannot exist without constantly revolutionising the instruments of production, and so the relations of production, and with them all the relations of society. Keeping the old modes of production unchanged was, on the contrary, the first condition of existence for all earlier industrial classes. Constant revolutionising of production, unbroken disturbance of all social conditions, endless uncertainty and unrest distinguish the {bourgeoisie:adj} era from all earlier ones. All fixed, fast-frozen relations, with their train of ancient and revered prejudices and opinions, are swept away; all newly formed ones become outdated before they can harden. All that is solid melts into air, all that is holy is profaned, and man is at last forced to face with sober senses his real conditions of life, and his relations with his kind.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:20c3f8f8b144da6e5a4361f3606e1c2e9519240e4e117b7867cb88de8adab344
+    revision: 1
+    ai_assisted: true
+    text: The need for a constantly expanding market for its products chases the {bourgeoisie} over the whole surface of the globe. It must nestle everywhere, settle everywhere, make connections everywhere.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:43de34b5103d56cc9963058b02aef5f5bc2acee7510edeb40703e120c1d56292
+    revision: 1
+    ai_assisted: true
+    text: Through its exploitation of the world market, the {bourgeoisie} has given a cosmopolitan character to production and consumption in every country. To the great annoyance of reactionaries, it has pulled out from under the feet of industry the national ground on which it stood. All old-established national industries have been destroyed or are being destroyed every day. They are pushed out by new industries, whose introduction becomes a life-and-death question for all civilised nations — by industries that no longer process local raw material, but raw material brought from the remotest regions; industries whose products are consumed not only at home, but in every part of the globe. In place of the old needs, satisfied by the country's own production, we find new needs, which require the products of distant lands and climates to satisfy them. In place of the old local and national isolation and self-sufficiency, we have exchange in every direction, the universal interdependence of nations. And as in material production, so also in intellectual production. The intellectual creations of individual nations become common property. National one-sidedness and narrow-mindedness become more and more impossible, and from the many national and local literatures there arises a world literature.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:20e697bf141b81c8404bee434d809875f7e1c12cccea95ebe9e0185b2bb23cba
+    revision: 1
+    ai_assisted: true
+    text: Through the rapid improvement of all instruments of production, through the immensely easier means of communication, the {bourgeoisie} draws all nations, even the most barbarian, into civilisation. The cheap prices of commodities are the heavy artillery with which it batters down all Chinese walls, with which it forces the barbarians' intensely stubborn hatred of foreigners to surrender. It compels all nations, on pain of extinction, to adopt the {bourgeoisie:adj} mode of production; it compels them to introduce what it calls civilisation into their midst, that is, to become {bourgeoisie:adj} themselves. In one word, it creates a world after its own image.
+  p00030:
+    covers: [p00030]
+    based_on: sha256:bf7912623f70a5ba71e5f60abc6693dac6e5911e90937dee9753578fe0bc7f76
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie} has subjected the countryside to the rule of the towns. It has created enormous cities, has greatly increased the urban population compared with the rural, and has thus rescued a considerable part of the population from the idiocy of rural life. Just as it has made the countryside dependent on the towns, so it has made barbarian and semi-barbarian countries dependent on the civilised ones, peasant nations on {bourgeoisie:adj} nations, the East on the West.

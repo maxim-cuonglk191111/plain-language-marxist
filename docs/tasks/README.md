@@ -16,7 +16,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [008](008-mia-adapter-and-import.md) | MIA source adapter and `plm import` | M1 | Done |
 | [009](009-import-manifesto-ch01.md) | Import Communist Manifesto Chapter I | M1 | Done |
 | [010](010-term-system.md) | Term system: tokens, resolver, vocabulary | M1 | Done |
-| [011](011-checks-and-prompt-apply.md) | Structural checks, exchange format, `plm prompt` / `plm apply` | M1 | Open |
+| [011](011-checks-and-prompt-apply.md) | Structural checks, exchange format, `plm prompt` / `plm apply` | M1 | Done |
 | [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | Open |
 | [013](013-plm-build-static-data.md) | `plm build`: static data contract v1 | M1 | Open |
 | [014](014-web-reader.md) | Web reader: routes, modes, layout rendering | M1 | Open |

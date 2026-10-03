@@ -8,6 +8,7 @@ pnpm 9 is pinned via `packageManager`. If a different global pnpm is installed, 
 
 ```bash
 pnpm install          # install workspace dependencies
+pnpm check            # everything CI runs, stops at the first failure: run before every commit
 pnpm plm --help       # run the CLI (TypeScript runs directly via tsx, no build step)
 pnpm test             # Vitest, all packages
 pnpm lint             # ESLint
@@ -16,6 +17,8 @@ pnpm typecheck        # tsc --noEmit across packages
 pnpm plm validate     # content invariants (CI runs this)
 pnpm plm import <url> --via wayback   # import a source; see config/sources.yml
 pnpm plm annotate <document-dir>      # mark vocabulary terms in the original text
+pnpm plm prompt <document-dir> --next 15        # Copy-for-LLM prompt
+pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
 ```
 
 **Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.

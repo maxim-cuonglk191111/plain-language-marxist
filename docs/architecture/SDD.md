@@ -448,7 +448,7 @@ These checks run live in the editor, on paste, on submit (server-side again) and
 | Level | Checks |
 |---|---|
 | **Error** (blocks submit) | Unknown/duplicate/non-contiguous passage IDs; overlapping coverage; empty text; unknown term or form in a token; disallowed markup; covered passage tombstoned |
-| **Warning** (shown to reviewers) | Numbers differ from the original; negation/modal words lost (*not, never, only, except, unless, because, therefore, however, although*); quotation count changed; capitalized names missing; length ratio outside 0.5–2.5; question became a statement; authorial distancing ("Marx and Engels argue/call/say…"); inline definitions (an em-dash or "meaning…" gloss right after a known term); added framing sentences ("In other words…", "This was an important step…") |
+| **Warning** (shown to reviewers) | Footnote markers differ; numbers differ from the original; negation/modal words lost (*not, never, only, except, unless, because, therefore, however, although*); quotation count changed; capitalized names missing; length ratio outside 0.5–2.0; question became a statement; authorial distancing ("Marx and Engels argue/call/say…"); inline definitions (a dash, parenthesis or "meaning…" after a known term that introduces words the original lacks); added framing sentences ("In other words…", "This was an important step…") |
 
 Warnings don't block submission, but each one stays visible next to the passage throughout review.
 

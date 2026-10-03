@@ -1,2 +1,4 @@
-// Structural checks shared by CLI, editor and API (runtime-agnostic). Implemented in later tasks (see docs/tasks/).
-export {};
+// Structural checks shared by CLI, editor and API (runtime-agnostic).
+export * from "./exchange.ts";
+export * from "./prompt.ts";
+export * from "./rendering.ts";

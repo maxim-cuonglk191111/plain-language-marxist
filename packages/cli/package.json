@@ -10,6 +10,7 @@
   },
   "exports": "./src/program.ts",
   "dependencies": {
+    "@plm/checks": "workspace:^",
     "@plm/content": "workspace:^",
     "@plm/parser": "workspace:^",
     "@plm/schema": "workspace:^",

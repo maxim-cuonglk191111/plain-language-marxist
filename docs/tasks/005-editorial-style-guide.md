@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -33,3 +33,9 @@ Also write `docs/editorial/llm-prompt.md`: the prompt template that `plm prompt`
 ## Acceptance
 - Someone unfamiliar with the project can apply the guide to a new paragraph. Check this with one volunteer, or by re-reading it yourself after a break.
 - The prompt template quotes the guide's rules word for word.
+
+## Progress
+- Drafted `docs/editorial/STYLE.md` (target reader, 12 core rules, change/keep tables, voice and gloss rules, term tokens, coverage, translation note, AI and copyright rules, 4 worked examples, 2 counter-examples, review checklist) and `docs/editorial/llm-prompt.md`.
+- Every original quoted in the examples was checked against Moore's 1888 text.
+- The prompt embeds the core rules by extracting the `core-rules` block from STYLE.md, so the two cannot drift apart.
+- **Remaining for acceptance:** the maintainer reviews the draft, and one person unfamiliar with the project tries the guide on a new paragraph.

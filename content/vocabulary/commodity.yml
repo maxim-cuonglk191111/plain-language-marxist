@@ -1,0 +1,14 @@
+schema_version: 1
+term: commodity
+original:
+  sg: commodity
+  pl: commodities
+definition:
+  short: A good or service produced in order to be sold or exchanged, not for the producer's own use.
+renderings:
+  keep:
+    forms:
+      sg: commodity
+      pl: commodities
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

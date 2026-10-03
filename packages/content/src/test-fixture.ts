@@ -85,7 +85,7 @@ export function fixtureData() {
       language: "en",
       register: "plain",
       renderings: {
-        p00001: rendering(["p00001"], "I. The Capitalist Class and the Working Class"),
+        p00001: rendering(["p00001"], "I. The {Bourgeoisie} and the Working Class"),
         p00002: rendering(
           ["p00002", "p00003"],
           'All history up to now<fn ref="1"/> has been the history of class struggles.\n\nFree person and slave, oppressor and oppressed.\n',

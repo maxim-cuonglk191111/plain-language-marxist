@@ -5,5 +5,8 @@
   "description": "Term token parser and resolver",
   "license": "AGPL-3.0-only",
   "type": "module",
-  "exports": "./src/index.ts"
+  "exports": "./src/index.ts",
+  "dependencies": {
+    "@plm/schema": "workspace:^"
+  }
 }

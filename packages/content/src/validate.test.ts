@@ -117,6 +117,8 @@ const CASES: Case[] = [
         '<a href="/archive/marx/works/1848/x.htm">x</a>'),
     "error link/unknown-path",
   ],
+  ["unknown term token", (d) => (d[PATHS.rendering].renderings.p00005.text = "The {proletariat} rises."), "error term/token"],
+  ["undeclared term form", (d) => (d[PATHS.rendering].renderings.p00005.text = "The {bourgeoisie:pl}."), "error term/token"],
   // annotations and explanations
   [
     "annotation term without vocabulary file",
@@ -126,6 +128,11 @@ const CASES: Case[] = [
   [
     "annotation match not found",
     (d) => (d[PATHS.terms].annotations[0].match = "bourgeoisie"),
+    "error annotation/no-match",
+  ],
+  [
+    "annotation matching only inside a longer word",
+    (d) => (d[PATHS.terms].annotations[0].match = "bourgeoi"),
     "error annotation/no-match",
   ],
   [

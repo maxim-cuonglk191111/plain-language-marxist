@@ -1,0 +1,13 @@
+schema_version: 1
+term: modern-industry
+aliases: [modern industry]
+original:
+  sg: Modern Industry
+definition:
+  short: "Large-scale industry driven by machinery and steam power: the factory system that replaced manufacture."
+renderings:
+  keep:
+    forms:
+      sg: Modern Industry
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

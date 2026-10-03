@@ -1,0 +1,19 @@
+schema_version: 1
+term: guild-master
+original:
+  sg: guild-master
+  pl: guild-masters
+definition:
+  short: A full member of a guild, a master within, not a head of a guild.
+  long: Engels's own explanation, added to the 1888 English edition. A guild was an association of craftsmen in one trade that controlled who could practise it.
+  sources:
+    - title: Manifesto of the Communist Party, English edition, note by Engels
+      author: Frederick Engels
+      year: 1888
+renderings:
+  keep:
+    forms:
+      sg: guild-master
+      pl: guild-masters
+    reason: Historical term with no exact modern equivalent. Kept as written; the term card explains it.
+default: keep

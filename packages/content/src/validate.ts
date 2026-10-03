@@ -5,6 +5,7 @@ import {
   type LayoutNode,
   type Passage,
 } from "@plm/schema";
+import { checkTokens } from "@plm/terms";
 import { basedOnHash, passageHash, plainText } from "./hash.ts";
 import type { Issue, Severity } from "./issues.ts";
 import {
@@ -40,10 +41,16 @@ function layoutNodes(text: string): LayoutNode[] {
   return result.ok ? result.nodes : [];
 }
 
-function countOccurrences(haystack: string, needle: string): number {
+/** Whole-word occurrences, so "bourgeois" never matches inside "bourgeoisie". */
+const WORD_CHAR = /[\p{L}\p{N}]/u;
+
+export function countWholeWords(haystack: string, needle: string): number {
   let count = 0;
-  for (let i = haystack.indexOf(needle); i !== -1; i = haystack.indexOf(needle, i + needle.length))
-    count++;
+  for (let i = haystack.indexOf(needle); i !== -1; i = haystack.indexOf(needle, i + 1)) {
+    const before = haystack[i - 1] ?? "";
+    const after = haystack[i + needle.length] ?? "";
+    if (!WORD_CHAR.test(before) && !WORD_CHAR.test(after)) count++;
+  }
   return count;
 }
 
@@ -59,6 +66,8 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
       message,
     });
   };
+
+  const vocabulary = new Map([...repo.terms].map(([slug, t]) => [slug, t.data]));
 
   // Index of public document paths → passages, for internal link checks.
   const documentsByPath = new Map<string, Set<string>>();
@@ -335,6 +344,9 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
         }
         checkFootnotes(r.text, file, [...path, "text"]);
         checkLinks(r.text, file, [...path, "text"]);
+        for (const t of checkTokens(r.text, vocabulary)) {
+          report("error", "term/token", file, [...path, "text"], `term token at character ${t.offset}: ${t.message}`);
+        }
         for (const extra of options.checkRenderingText?.(r.text, repo) ?? []) {
           report(extra.severity, extra.code, file, [...path, "text"], extra.message);
         }
@@ -372,7 +384,7 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
           );
           return;
         }
-        const found = countOccurrences(plainText(p.text) ?? "", a.match);
+        const found = countWholeWords(plainText(p.text) ?? "", a.match);
         if (found < a.occurrence) {
           report(
             "error",

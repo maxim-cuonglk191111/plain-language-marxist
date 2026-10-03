@@ -63,6 +63,9 @@ importers:
       '@plm/schema':
         specifier: workspace:^
         version: link:../schema
+      '@plm/terms':
+        specifier: workspace:^
+        version: link:../terms
       yaml:
         specifier: ^2.9.1
         version: 2.9.1
@@ -98,7 +101,11 @@ importers:
         specifier: ^2.9.1
         version: 2.9.1
 
-  packages/terms: {}
+  packages/terms:
+    dependencies:
+      '@plm/schema':
+        specifier: workspace:^
+        version: link:../schema
 
 packages:
 

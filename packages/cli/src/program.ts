@@ -1,4 +1,5 @@
 import { Command } from "commander";
+import { runAnnotate } from "./commands/annotate.ts";
 import { runImport } from "./commands/import.ts";
 import { runMigrate } from "./commands/migrate.ts";
 import { runValidate, type ValidateCliOptions } from "./commands/validate.ts";
@@ -36,6 +37,15 @@ export function buildProgram(): Command {
         process.exitCode = result ? 0 : 1;
       },
     );
+
+  program
+    .command("annotate")
+    .description("Mark whole-word occurrences of vocabulary terms in a document's original text")
+    .argument("<document-dir>", "e.g. content/works/marx/1848/communist-manifesto/ch01")
+    .option("--root <dir>", "repository root", ".")
+    .action((documentDir: string, opts: { root: string }) => {
+      process.exitCode = runAnnotate(documentDir, opts.root);
+    });
 
   program
     .command("validate")

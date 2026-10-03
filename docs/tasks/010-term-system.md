@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -39,3 +39,11 @@ Implement the term system from SDD §6 in `packages/terms`.
 ## Acceptance
 - Unit tests cover every token form, the resolution order and capitalization.
 - The Ch. I vocabulary and annotations pass validation.
+
+## Notes (on completion)
+- `packages/terms` contains the token parser, resolver (pin → reader preference → work/author default → global default, with `original` as a preference), `renderTokens`, `checkTokens` and `usageCounts`. It is runtime-agnostic, so the reader can use it in the browser.
+- `plm validate` now checks every token in every rendering (`term/token`).
+- Annotation matching is now **whole-word**, so "bourgeois" no longer matches inside "bourgeoisie".
+- New `plm annotate <document-dir>` marks whole-word occurrences of each term's original forms and aliases, longest match first, and keeps any existing hand-made annotations.
+- Vocabulary for Ch. I: 15 terms. Three have a modern default (bourgeoisie → capitalist class, proletariat → working class, class antagonism → class conflict). The other twelve are kept as written and explained on the card. Engels's 1888 notes supply the definitions of bourgeoisie, proletariat and guild-master, with citations.
+- 172 annotations in Ch. I. With 84 of them on "bourgeoisie", highlighting may feel busy; task 015 includes a highlight-visibility setting.

@@ -15,6 +15,7 @@ pnpm format           # Prettier (write); CI runs `pnpm format:check`
 pnpm typecheck        # tsc --noEmit across packages
 pnpm plm validate     # content invariants (CI runs this)
 pnpm plm import <url> --via wayback   # import a source; see config/sources.yml
+pnpm plm annotate <document-dir>      # mark vocabulary terms in the original text
 ```
 
 **Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.

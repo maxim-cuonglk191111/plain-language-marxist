@@ -1,0 +1,13 @@
+schema_version: 1
+term: manufacture
+original:
+  sg: manufacture
+definition:
+  short: Production in workshops by hand, with the work divided among many workers, before machinery took over.
+  long: In Marx and Engels this is a historical stage, between guild handicraft and Modern Industry. It does not mean factories with machines, and never the assembly line.
+renderings:
+  keep:
+    forms:
+      sg: manufacture
+    reason: Kept as written, because the historical meaning differs from today's general sense; the term card explains it.
+default: keep

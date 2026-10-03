@@ -1,0 +1,13 @@
+schema_version: 1
+term: capital
+original:
+  sg: capital
+definition:
+  short: Wealth used to produce more wealth, above all money invested in production that employs wage labour.
+  long: "For Marx, capital is not simply money or machines: it is wealth functioning in a process that yields more value than was put in."
+renderings:
+  keep:
+    forms:
+      sg: capital
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

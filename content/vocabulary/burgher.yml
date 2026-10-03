@@ -1,0 +1,15 @@
+schema_version: 1
+term: burgher
+aliases: [burgess, burgesses]
+original:
+  sg: burgher
+  pl: burghers
+definition:
+  short: A citizen of a medieval town, holding the rights granted by the town's charter, usually a merchant or master craftsman.
+renderings:
+  keep:
+    forms:
+      sg: burgher
+      pl: burghers
+    reason: Historical term with no exact modern equivalent. Kept as written; the term card explains it.
+default: keep

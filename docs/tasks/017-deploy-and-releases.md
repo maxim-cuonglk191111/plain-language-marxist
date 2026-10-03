@@ -49,7 +49,7 @@ Deploy automatically on merge, with every release recoverable from public artifa
 ## Cloudflare Pages is live (2026-10-04)
 - Direct upload at the maintainer's request: **https://plain-language-marxist.pages.dev** (release `2026.10.04-7de07d6`). Headers, `.htm` HTML, the 308 trailing-slash redirect and 404s were all verified on the live site.
 - The CI command (`pnpm exec wrangler pages deploy apps/web/out …` from the repo root) was verified as a preview deployment, `ci-check.plain-language-marxist.pages.dev`.
-- **Wrangler gotcha:** `pages project create` without `--force` creates a Worker instead (see DEPLOYMENT.md). A stray Worker `plain-language-marxist` containing only two scratch test files was created this way and still needs to be deleted.
+- **Wrangler gotcha:** `pages project create` without `--force` creates a Worker instead (see DEPLOYMENT.md). A stray Worker `plain-language-marxist` containing only two scratch test files was created this way and was deleted the same day (its URL now returns Cloudflare error 1042).
 
 ## Not verified (needs the maintainer)
 - **The automatic deploys.** They need a GitHub remote, a Cloudflare Pages project and/or a Vercel project, and the secrets listed in DEPLOYMENT.md. Until then the first two acceptance points cannot be checked against a real host.

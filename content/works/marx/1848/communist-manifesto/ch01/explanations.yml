@@ -1,0 +1,28 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+explanations:
+  e001:
+    kind: translation_note
+    targets: [p00017]
+    text: The source here reads "Even manufacturer no longer sufficed". Moore's 1888 translation has "manufacture", the system of hand production in workshops, which is what the sentence is about. The Plain English follows "manufacture".
+    ai_assisted: true
+  e002:
+    kind: translation_note
+    targets: [p00034]
+    text: The source here reads "a social and political constitution adapted in it". Moore's 1888 translation has "adapted to it". The Plain English follows "adapted to it".
+    ai_assisted: true
+  e003:
+    kind: translation_note
+    targets: [p00035]
+    text: The source here reads "the conditions for the existence of the bourgeois and of its rule". Moore's 1888 translation has "the bourgeoisie". The Plain English follows "the bourgeoisie", as "its rule" requires.
+    ai_assisted: true
+  e004:
+    kind: translation_note
+    targets: [p00055]
+    text: The source here reads "modern industry labour". Moore's 1888 translation has "modern industrial labour". The Plain English follows "industrial labour".
+    ai_assisted: true
+  e005:
+    kind: translation_note
+    targets: [p00060]
+    text: The source here reads "instead of rising with the process of industry". Moore's 1888 translation has "the progress of industry". The Plain English follows "progress".
+    ai_assisted: true

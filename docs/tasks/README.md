@@ -14,7 +14,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [006](006-governance.md) | Governance file and GOVERNANCE.md | M0 | Done |
 | [007](007-mia-markup-survey.md) | MIA markup survey and parser fixtures | M1 | Done |
 | [008](008-mia-adapter-and-import.md) | MIA source adapter and `plm import` | M1 | Done |
-| [009](009-import-manifesto-ch01.md) | Import Communist Manifesto Chapter I | M1 | Open |
+| [009](009-import-manifesto-ch01.md) | Import Communist Manifesto Chapter I | M1 | Done |
 | [010](010-term-system.md) | Term system: tokens, resolver, vocabulary | M1 | Open |
 | [011](011-checks-and-prompt-apply.md) | Structural checks, exchange format, `plm prompt` / `plm apply` | M1 | Open |
 | [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | Open |

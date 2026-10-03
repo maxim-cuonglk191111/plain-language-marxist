@@ -17,6 +17,7 @@ pnpm typecheck        # tsc --noEmit across packages
 pnpm plm validate     # content invariants (CI runs this)
 pnpm plm build        # validate, then write the static data contract to dist/data/v1/
 pnpm build:site       # plm build + static reader export to apps/web/out/
+pnpm e2e              # Playwright + axe against a built fixture site (run after web changes)
 python -m http.server 4173 --directory apps/web/out   # preview (serves .htm as HTML)
 pnpm plm import <url> --via wayback   # import a source; see config/sources.yml
 pnpm plm annotate <document-dir>      # mark vocabulary terms in the original text

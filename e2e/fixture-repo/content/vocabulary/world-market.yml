@@ -1,0 +1,13 @@
+schema_version: 1
+term: world-market
+aliases: [world-market]
+original:
+  sg: world market
+definition:
+  short: A market spanning the whole world, in which goods, raw materials and capital move across borders.
+renderings:
+  keep:
+    forms:
+      sg: world market
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

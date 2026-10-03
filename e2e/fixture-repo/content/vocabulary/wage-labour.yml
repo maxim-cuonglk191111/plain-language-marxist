@@ -1,0 +1,13 @@
+schema_version: 1
+term: wage-labour
+aliases: [wage-labour]
+original:
+  sg: wage labour
+definition:
+  short: Work done for a wage by people who own no means of production and so must sell their ability to work.
+renderings:
+  keep:
+    forms:
+      sg: wage labour
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

@@ -1,0 +1,13 @@
+schema_version: 1
+term: means-of-production
+aliases: [means of social production]
+original:
+  sg: means of production
+definition:
+  short: "The things needed to produce goods: land, raw materials, tools, machines and buildings."
+renderings:
+  keep:
+    forms:
+      sg: means of production
+    reason: Still current English. Kept as written; the term card explains it.
+default: keep

@@ -1,0 +1,26 @@
+schema_version: 1
+term: bourgeoisie
+original:
+  sg: bourgeoisie
+  adj: bourgeois
+definition:
+  short: The class of modern capitalists, owners of the means of social production and employers of wage labour.
+  long: Engels's own definition, added to the 1888 English edition. In the Manifesto the word names a class defined by what it owns and by employing others for wages, not a general word for the well-off.
+  sources:
+    - title: Manifesto of the Communist Party, English edition, note by Engels
+      author: Frederick Engels
+      year: 1888
+renderings:
+  capitalist-class:
+    forms:
+      sg: capitalist class
+      adj: capitalist
+    reason: Makes the class reference immediately understandable to contemporary readers.
+    limitation: Foregrounds ownership of capital; the historical term also carries the class's origin in the medieval towns.
+  bourgeoisie:
+    forms:
+      sg: bourgeoisie
+      adj: bourgeois
+    reason: Keeps the original term, which is still used in English.
+    limitation: Many readers know it only as a loose word for the middle class.
+default: capitalist-class

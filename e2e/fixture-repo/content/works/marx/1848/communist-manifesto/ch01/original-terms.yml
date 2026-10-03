@@ -1,0 +1,691 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+annotations:
+  - passage: p00008
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00008
+    term: proletariat
+    match: Proletarians
+    occurrence: 1
+  - passage: p00010
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00010
+    term: guild-master
+    match: guild-master
+    occurrence: 1
+  - passage: p00010
+    term: journeyman
+    match: journeyman
+    occurrence: 1
+  - passage: p00011
+    term: guild-master
+    match: guild-masters
+    occurrence: 1
+  - passage: p00011
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00011
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00012
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00012
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00013
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00013
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00013
+    term: bourgeoisie
+    match: Bourgeoisie
+    occurrence: 1
+  - passage: p00013
+    term: proletariat
+    match: Proletariat
+    occurrence: 1
+  - passage: p00014
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00014
+    term: burgher
+    match: burghers
+    occurrence: 1
+  - passage: p00014
+    term: burgher
+    match: burgesses
+    occurrence: 1
+  - passage: p00014
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00015
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: guild-master
+    match: guild-masters
+    occurrence: 1
+  - passage: p00017
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00017
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00017
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00018
+    term: modern-industry
+    match: Modern industry
+    occurrence: 1
+  - passage: p00018
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00018
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00019
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00020
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00020
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00020
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00020
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00020
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00021
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00022
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00023
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00024
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00025
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00027
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00028
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00028
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00029
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00029
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00029
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00029
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00030
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00030
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00031
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00031
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00031
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00032
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00033
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00033
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00033
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00034
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00035
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 5
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 6
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 7
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00036
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00036
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00037
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00037
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00038
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00038
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00038
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00038
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00038
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00039
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00039
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00040
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00040
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00040
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00040
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00041
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00042
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00043
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00043
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00043
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00043
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00044
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00045
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00045
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00046
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00046
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00046
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00046
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00046
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00047
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00047
+    term: burgher
+    match: burghers
+    occurrence: 1
+  - passage: p00047
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00048
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00048
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00049
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00049
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 4
+  - passage: p00049
+    term: proletariat
+    match: proletariat
+    occurrence: 3
+  - passage: p00049
+    term: proletariat
+    match: proletariat
+    occurrence: 4
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 5
+  - passage: p00050
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00050
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00051
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00051
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00051
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00051
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00052
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00052
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00052
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00052
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00053
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00053
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00053
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00054
+    term: lumpenproletariat
+    match: lumpenproletariat
+    occurrence: 1
+  - passage: p00054
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00055
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00055
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00055
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00055
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00055
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00055
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00055
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00056
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00057
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00057
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00058
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00058
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00058
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00058
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00059
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00059
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00059
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00060
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00060
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00060
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00060
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00060
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00061
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00061
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00061
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00061
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00061
+    term: wage-labour
+    match: Wage-labour
+    occurrence: 1
+  - passage: p00061
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00061
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00061
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00061
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00061
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00062
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00062
+    term: means-of-production
+    match: means of social production
+    occurrence: 1
+  - passage: p00062
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00062
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00062
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00064
+    term: guild-master
+    match: Guild-master
+    occurrence: 1
+  - passage: p00065
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1

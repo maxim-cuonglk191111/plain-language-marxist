@@ -30,3 +30,8 @@ Thumbs.db
 .next/
 out/
 next-env.d.ts
+
+# End-to-end tests
+e2e/.build/
+test-results/
+playwright-report/

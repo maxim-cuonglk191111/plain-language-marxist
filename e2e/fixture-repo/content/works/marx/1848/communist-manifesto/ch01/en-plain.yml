@@ -1,0 +1,35 @@
+schema_version: 1
+document: document:marx:1848:communist-manifesto:ch01
+language: en
+register: plain
+renderings:
+  p00009:
+    covers: [p00009]
+    based_on: sha256:d63e2e18431592545f3addcaa1a9163d50673c6080f1cfcb1cf2355e1a2221c8
+    revision: 2
+    ai_assisted: true
+    text: The history of all society up to now<fn ref="2"/> is the history of class struggles.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:0780e416e6272b36b3267bf2f3ef91561f6669092d8959cd89f3a7995d4c3a4d
+    revision: 2
+    ai_assisted: true
+    text: |
+      Freeman and slave, patrician and plebeian, lord and serf, guild-master<fn ref="3"/> and journeyman — in a word, oppressor and oppressed — stood in constant opposition to one another. They carried on an uninterrupted fight, sometimes hidden, sometimes open.
+
+      Each time, that fight ended either in a revolutionary rebuilding of society as a whole, or in the common ruin of the classes in conflict.
+  p00011:
+    covers: [p00011, p00012]
+    based_on: sha256:acae7cbf31df2886acfd48030740fd502ebe3e90d044ddb19c58a1a274a60b0b
+    revision: 1
+    ai_assisted: true
+    text: |
+      In earlier periods of history we find, almost everywhere, society arranged into various orders, with many grades of social rank. In ancient Rome we have patricians, knights, plebeians, slaves; in the Middle Ages, feudal lords, vassals, guild-masters, journeymen, apprentices, serfs; and within almost all of these classes, further subordinate grades.
+
+      Modern {bourgeoisie:adj} society, which grew out of the ruins of feudal society, has not done away with {class-antagonism:pl}. It has only set up new classes, new conditions of oppression and new forms of struggle in place of the old ones.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:958182076c58a3161f7e40995b3cf2136f7a1437bcfbfd8610cd9381b51d740c
+    revision: 1
+    ai_assisted: true
+    text: "Our era, the era of the {bourgeoisie}, has one distinctive feature: it has simplified {class-antagonism:pl}. Society as a whole is splitting more and more into two great hostile camps, into two great classes directly facing each other — {Bourgeoisie} and {Proletariat}."

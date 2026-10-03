@@ -1,0 +1,13 @@
+schema_version: 1
+term: lumpenproletariat
+original:
+  sg: lumpenproletariat
+definition:
+  short: Marx and Engels's term for the declassed poor outside regular wage labour, whom they saw as politically unreliable.
+  long: The bracketed word is an insertion by the transcribers next to Moore's "dangerous class"; it is the term used in the German text.
+renderings:
+  keep:
+    forms:
+      sg: lumpenproletariat
+    reason: Historical term with no exact modern equivalent. Kept as written; the term card explains it.
+default: keep

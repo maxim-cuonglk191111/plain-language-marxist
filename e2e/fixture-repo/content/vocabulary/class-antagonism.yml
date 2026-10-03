@@ -1,0 +1,20 @@
+schema_version: 1
+term: class-antagonism
+original:
+  sg: class antagonism
+  pl: class antagonisms
+definition:
+  short: Opposed and conflicting interests between social classes, open or hidden.
+renderings:
+  class-conflict:
+    forms:
+      sg: class conflict
+      pl: class conflicts
+    reason: Common modern wording for the same idea.
+    limitation: '"Antagonism" stresses a built-in opposition of interests, not only open conflict.'
+  class-antagonism:
+    forms:
+      sg: class antagonism
+      pl: class antagonisms
+    reason: Keeps the original term.
+default: class-conflict

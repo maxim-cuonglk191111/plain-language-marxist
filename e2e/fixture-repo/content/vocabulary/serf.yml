@@ -1,0 +1,14 @@
+schema_version: 1
+term: serf
+original:
+  sg: serf
+  pl: serfs
+definition:
+  short: A peasant legally bound to a lord's land, owing the lord labour or dues, and not free to leave.
+renderings:
+  keep:
+    forms:
+      sg: serf
+      pl: serfs
+    reason: 'Kept as written: "peasant" would lose the legal unfreedom that defines a serf.'
+default: keep

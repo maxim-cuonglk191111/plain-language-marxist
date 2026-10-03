@@ -1,0 +1,14 @@
+schema_version: 1
+term: journeyman
+original:
+  sg: journeyman
+  pl: journeymen
+definition:
+  short: A trained craftsman who worked for a guild-master for wages but had not yet become a master himself.
+renderings:
+  keep:
+    forms:
+      sg: journeyman
+      pl: journeymen
+    reason: Historical term with no exact modern equivalent. Kept as written; the term card explains it.
+default: keep

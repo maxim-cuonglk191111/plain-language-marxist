@@ -4,7 +4,20 @@ These conventions extend `../CLAUDE.md`. Where the two overlap, this file wins.
 
 ## Commands
 
-No toolchain yet. Task 002 adds the commands here.
+pnpm 9 is pinned via `packageManager`. If a different global pnpm is installed, use `corepack pnpm`.
+
+```bash
+pnpm install          # install workspace dependencies
+pnpm plm --help       # run the CLI (TypeScript runs directly via tsx, no build step)
+pnpm test             # Vitest, all packages
+pnpm lint             # ESLint
+pnpm format           # Prettier (write); CI runs `pnpm format:check`
+pnpm typecheck        # tsc --noEmit across packages
+```
+
+**Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.
+
+**TypeScript** is pinned to `~6.0`, because typescript-eslint does not support TypeScript 7 yet.
 
 ## Ceremony
 

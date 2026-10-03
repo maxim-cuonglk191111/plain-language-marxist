@@ -1,0 +1,9 @@
+{
+  "name": "@plm/checks",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Structural checks shared by CLI, editor and API (runtime-agnostic)",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./src/index.ts"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "@plm/content",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Load, validate and write content files",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./src/index.ts"
+}

@@ -7,7 +7,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | # | Task | Milestone | Status |
 |---|---|---|---|
 | [001](001-initialize-repository.md) | Initialize repository and retire SDD v1.0 | M0 | Done |
-| [002](002-monorepo-toolchain-and-ci.md) | Monorepo toolchain and CI skeleton | M0 | Open |
+| [002](002-monorepo-toolchain-and-ci.md) | Monorepo toolchain and CI skeleton | M0 | Done |
 | [003](003-content-schemas-v1.md) | Content schemas v1 (persisted shapes) | M0 | Open |
 | [004](004-content-loader-and-validate.md) | Content loader and `plm validate` | M0 | Open |
 | [005](005-editorial-style-guide.md) | Editorial style guide for the plain register | M0 | Open |

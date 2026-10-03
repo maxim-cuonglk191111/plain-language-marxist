@@ -1,0 +1,16 @@
+{
+  "name": "@plm/cli",
+  "version": "0.0.0",
+  "private": true,
+  "description": "plm — Plain Language Marxist command-line tool",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "bin": {
+    "plm": "./bin/plm.mjs"
+  },
+  "exports": "./src/program.ts",
+  "dependencies": {
+    "commander": "^15.0.0",
+    "tsx": "^4.23.15"
+  }
+}

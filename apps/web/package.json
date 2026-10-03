@@ -1,0 +1,8 @@
+{
+  "name": "@plm/web",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Static reader and contributor UI (Next.js, task 014)",
+  "license": "AGPL-3.0-only",
+  "type": "module"
+}

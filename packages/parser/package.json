@@ -1,0 +1,9 @@
+{
+  "name": "@plm/parser",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Source adapters (MIA, ...) with fixtures and golden files",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./src/index.ts"
+}

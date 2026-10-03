@@ -1,0 +1,9 @@
+{
+  "name": "@plm/terms",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Term token parser and resolver",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": "./src/index.ts"
+}

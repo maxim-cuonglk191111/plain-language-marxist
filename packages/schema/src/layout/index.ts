@@ -1,6 +1,7 @@
 // Layout markup v1 — see docs/architecture/layout-markup.md.
 
-export type ContainerTag = "i" | "b" | "sc";
+export type ContainerTag = "i" | "b" | "sc" | "sup" | "sub";
+export type CellTag = "td" | "th";
 
 export type LayoutNode =
   | { type: "text"; value: string }
@@ -8,7 +9,9 @@ export type LayoutNode =
   | { type: "a"; href: string; children: LayoutNode[] }
   | { type: "br" }
   | { type: "indent"; level: number }
-  | { type: "fn"; ref: string };
+  | { type: "fn"; ref: string }
+  | { type: "tr"; children: LayoutNode[] }
+  | { type: CellTag; colspan?: number; rowspan?: number; children: LayoutNode[] };
 
 export type LayoutResult =
   { ok: true; nodes: LayoutNode[] } | { ok: false; error: { message: string; offset: number } };
@@ -19,6 +22,7 @@ const ATTR = /\s+([a-z]+)="([^"]*)"/g;
 const ENTITY = /&(amp|lt|gt|quot);/y;
 const HREF = /^(https:\/\/\S+|\/\S*)$/;
 const FN_REF = /^[^\s"<>&]{1,8}$/;
+const SPAN = /^[1-9]\d?$/;
 
 type Frame = { node: Extract<LayoutNode, { children: LayoutNode[] }>; offset: number };
 
@@ -35,7 +39,13 @@ function decodeAttr(raw: string): string {
   return raw.replace(/&(amp|lt|gt|quot);/g, (_, name: string) => ENTITIES[name] ?? "");
 }
 
-function readAttrs(raw: string, offset: number, allowed: readonly string[]): Map<string, string> {
+function readAttrs(
+  raw: string,
+  offset: number,
+  required: readonly string[],
+  optional: readonly string[] = [],
+): Map<string, string> {
+  const allowed = [...required, ...optional];
   const attrs = new Map<string, string>();
   for (const [, name, value] of raw.matchAll(ATTR)) {
     if (!name || value === undefined) continue;
@@ -43,7 +53,7 @@ function readAttrs(raw: string, offset: number, allowed: readonly string[]): Map
     if (attrs.has(name)) throw new ParseError(`duplicate attribute "${name}"`, offset);
     attrs.set(name, decodeAttr(value));
   }
-  for (const name of allowed) {
+  for (const name of required) {
     if (!attrs.has(name)) throw new ParseError(`missing required attribute "${name}"`, offset);
   }
   return attrs;
@@ -56,8 +66,14 @@ export function parseLayout(text: string): LayoutResult {
   let pos = 0;
 
   const current = (): LayoutNode[] => stack.at(-1)?.node.children ?? root;
+  const inRow = () => stack.at(-1)?.node.type === "tr";
   const flush = () => {
-    if (buffer) current().push({ type: "text", value: buffer });
+    if (buffer && inRow()) {
+      // Whitespace between cells is formatting; any other text must sit in a cell.
+      if (buffer.trim()) throw new ParseError("text inside <tr> must be in a <td> or <th>", pos);
+    } else if (buffer) {
+      current().push({ type: "text", value: buffer });
+    }
     buffer = "";
   };
   const atLineStart = () => {
@@ -102,10 +118,16 @@ export function parseLayout(text: string): LayoutResult {
         continue;
       }
 
+      if (inRow() && name !== "td" && name !== "th") {
+        throw new ParseError(`only <td> or <th> can appear inside <tr>, not <${name}>`, tagOffset);
+      }
+
       switch (name) {
         case "i":
         case "b":
-        case "sc": {
+        case "sc":
+        case "sup":
+        case "sub": {
           if (selfClosing) throw new ParseError(`<${name}> cannot be self-closing`, tagOffset);
           readAttrs(rawAttrs, tagOffset, []);
           flush();
@@ -159,6 +181,35 @@ export function parseLayout(text: string): LayoutResult {
           current().push({ type: "fn", ref });
           break;
         }
+        case "tr": {
+          if (selfClosing) throw new ParseError("<tr> cannot be self-closing", tagOffset);
+          readAttrs(rawAttrs, tagOffset, []);
+          flush();
+          if (stack.length > 0) {
+            throw new ParseError("<tr> is only allowed at the top level of a table", tagOffset);
+          }
+          const node: LayoutNode = { type: "tr", children: [] };
+          root.push(node);
+          stack.push({ node, offset: tagOffset });
+          break;
+        }
+        case "td":
+        case "th": {
+          if (selfClosing) throw new ParseError(`<${name}> cannot be self-closing`, tagOffset);
+          if (!inRow()) throw new ParseError(`<${name}> must be directly inside <tr>`, tagOffset);
+          const attrs = readAttrs(rawAttrs, tagOffset, [], ["colspan", "rowspan"]);
+          flush();
+          const node: Extract<LayoutNode, { type: CellTag }> = { type: name, children: [] };
+          for (const key of ["colspan", "rowspan"] as const) {
+            const value = attrs.get(key);
+            if (value === undefined) continue;
+            if (!SPAN.test(value)) throw new ParseError(`${key} must be 1–99`, tagOffset);
+            node[key] = Number(value);
+          }
+          current().push(node);
+          stack.push({ node, offset: tagOffset });
+          break;
+        }
         default:
           throw new ParseError(`tag <${name}> is not allowed`, tagOffset);
       }
@@ -187,7 +238,16 @@ export function serializeLayout(nodes: readonly LayoutNode[]): string {
         case "i":
         case "b":
         case "sc":
+        case "sup":
+        case "sub":
+        case "tr":
           return `<${node.type}>${serializeLayout(node.children)}</${node.type}>`;
+        case "td":
+        case "th": {
+          const colspan = node.colspan === undefined ? "" : ` colspan="${node.colspan}"`;
+          const rowspan = node.rowspan === undefined ? "" : ` rowspan="${node.rowspan}"`;
+          return `<${node.type}${colspan}${rowspan}>${serializeLayout(node.children)}</${node.type}>`;
+        }
         case "a":
           return `<a href="${escapeAttr(node.href)}">${serializeLayout(node.children)}</a>`;
         case "br":
@@ -212,6 +272,10 @@ function plainParts(nodes: readonly LayoutNode[]): string {
         case "indent":
         case "fn":
           return "";
+        case "tr":
+        case "td":
+        case "th":
+          return ` ${plainParts(node.children)} `;
         default:
           return plainParts(node.children);
       }

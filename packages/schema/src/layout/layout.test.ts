@@ -50,6 +50,35 @@ describe("parseLayout", () => {
     ]);
   });
 
+  it("parses superscript, subscript and table rows with spanning cells", () => {
+    expect(parse("M<sup>1</sup> and H<sub>2</sub>O")).toEqual([
+      { type: "text", value: "M" },
+      { type: "sup", children: [{ type: "text", value: "1" }] },
+      { type: "text", value: " and H" },
+      { type: "sub", children: [{ type: "text", value: "2" }] },
+      { type: "text", value: "O" },
+    ]);
+    const table =
+      '<tr>\n  <th colspan="2">Year</th>\n</tr><tr><td rowspan="2">£<br/>s.</td><td>4</td></tr>';
+    expect(parse(table)).toEqual([
+      {
+        type: "tr",
+        children: [{ type: "th", colspan: 2, children: [{ type: "text", value: "Year" }] }],
+      },
+      {
+        type: "tr",
+        children: [
+          {
+            type: "td",
+            rowspan: 2,
+            children: [{ type: "text", value: "£" }, { type: "br" }, { type: "text", value: "s." }],
+          },
+          { type: "td", children: [{ type: "text", value: "4" }] },
+        ],
+      },
+    ]);
+  });
+
   it("decodes the four entities and keeps a bare & literal", () => {
     expect(parse("&lt;a&gt; &amp; &quot;q&quot; &c.")).toEqual([
       { type: "text", value: '<a> & "q" &c.' },
@@ -72,6 +101,12 @@ describe("parseLayout", () => {
     ['text <indent level="1"/>', "<indent/> is only allowed at the start of a line"],
     ['<i><indent level="1"/></i>', "<indent/> is only allowed at the start of a line"],
     ['<fn ref=""/>', 'invalid footnote ref ""'],
+    ["<td>x</td>", "<td> must be directly inside <tr>"],
+    ["<tr>x<td>y</td></tr>", "text inside <tr> must be in a <td> or <th>"],
+    ["<tr><i>x</i></tr>", "only <td> or <th> can appear inside <tr>, not <i>"],
+    ["<i><tr><td>x</td></tr></i>", "<tr> is only allowed at the top level of a table"],
+    ['<tr><td colspan="0">x</td></tr>', "colspan must be 1–99"],
+    ['<tr><td align="center">x</td></tr>', 'attribute "align" is not allowed'],
   ])("rejects %s", (text, message) => {
     expect(errorOf(text)).toBe(message);
   });
@@ -90,6 +125,7 @@ describe("serializeLayout", () => {
     'Dear Sir,<br/><indent level="1"/>I have received your letter &amp; enclosure.',
     '<sc>Chapter</sc> I. <a href="https://www.marxists.org/a?b=1&amp;c=2">link</a> &lt;x&gt;',
     "&c. and bare & ampersands",
+    'x<sup>2</sup><tr><th colspan="2">Year</th></tr><tr><td rowspan="3">a</td><td>b</td></tr>',
   ];
 
   it.each(samples)("round-trips parse → serialize → parse: %s", (text) => {
@@ -112,6 +148,12 @@ describe("toPlainText", () => {
 
   it("is unchanged by layout-only edits", () => {
     expect(toPlainText(parse("one two"))).toBe(toPlainText(parse("<i>one</i><br/>two")));
+  });
+
+  it("separates table cells with spaces", () => {
+    expect(
+      toPlainText(parse("<tr><td>1</td><td>coat</td></tr><tr><td>10</td><td>lbs</td></tr>")),
+    ).toBe("1 coat 10 lbs");
   });
 
   it("normalizes to NFC", () => {

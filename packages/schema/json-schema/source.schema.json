@@ -87,7 +87,8 @@
               "list_item",
               "footnote",
               "table",
-              "caption"
+              "caption",
+              "separator"
             ]
           },
           "level": {

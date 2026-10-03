@@ -3,3 +3,7 @@
 *.jpg binary
 *.ico binary
 *.woff2 binary
+
+# Source snapshots and parser fixtures are byte-exact; never normalize them.
+packages/parser/fixtures/** -text
+ingestion/snapshots/** -text

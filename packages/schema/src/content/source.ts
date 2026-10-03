@@ -1,4 +1,5 @@
 import { z } from "zod";
+import { parseLayout } from "../layout/index.ts";
 import {
   DocumentId,
   HttpsUrl,
@@ -19,6 +20,8 @@ export const PassageType = z.enum([
   "footnote",
   "table",
   "caption",
+  /** A section break such as "* * *". */
+  "separator",
 ]);
 
 export const Passage = z
@@ -52,6 +55,17 @@ export const Passage = z
         path: ["label"],
         message: "label is only allowed on footnotes",
       });
+    }
+    const layout = parseLayout(p.text);
+    if (layout.ok) {
+      const rows = layout.nodes.filter((n) => n.type === "tr").length;
+      const other = layout.nodes.some((n) => n.type !== "tr" && !(n.type === "text" && !n.value.trim()));
+      if (p.type === "table" && (rows === 0 || other)) {
+        ctx.addIssue({ code: "custom", path: ["text"], message: "table text must consist only of <tr> rows" });
+      }
+      if (p.type !== "table" && rows > 0) {
+        ctx.addIssue({ code: "custom", path: ["text"], message: "<tr> rows are only allowed in table passages" });
+      }
     }
     if (p.state === "active" && p.text.trim() === "") {
       ctx.addIssue({ code: "custom", path: ["text"], message: "active passages need text" });

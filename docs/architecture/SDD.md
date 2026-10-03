@@ -197,7 +197,7 @@ source:
   parser: { name: mia, version: 1.0.0 }
 passages:
   - id: p00017
-    type: paragraph           # heading (+ level 1–6) | paragraph | blockquote | list_item | footnote (+ label) | table | caption
+    type: paragraph           # heading (+ level 1–6) | paragraph | blockquote | list_item | footnote (+ label) | table | caption | separator
     text: "The history of all hitherto existing society is the history of class struggles."
     hash: sha256:…            # of normalized text (markup excluded)
     state: active             # active | tombstoned

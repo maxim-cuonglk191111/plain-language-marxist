@@ -64,14 +64,16 @@ The findings from task 007, and the parsing rules that `MiaAdapter` (task 008) i
 | `p.indentb`, or `p` with a `margin-left` style | `paragraph`, text prefixed with `<indent level="1"/>` |
 | `p.quoteb`, `p.quote`, `p` directly inside a non-wrapper `blockquote` | `blockquote` |
 | `li` | `list_item` |
-| `table` | `table`. Nested tables are flattened to their innermost rows, with a warning |
+| `table` with inline cells | `table`. A `<caption>` becomes a `caption` passage just before it |
+| `table` whose cells hold blocks (paragraphs, headings, tables) | Page layout, not data: the cells are read as ordinary content, with a warning |
 | `p.pagenoted` / `p.pagenotec` (verse) | `paragraph` with `<br/>` lines |
 | footnote body | `footnote` with `label`, appended after the main text in note order |
 
 ### Things the layout markup does not preserve (accepted)
 - **Text alignment** (`text-align: center`, `<center>`). The parser warns about it but keeps no alignment.
 - **Exact indentation amounts** (`margin-left: 20%`). Any indentation becomes level 1.
-- **The bracket shape of the value-form equations in *Capital* Ch. 1.** These are nested layout tables. They are flattened to rows, and the right-hand cell becomes its own paragraph. Revisit if readers find it confusing.
+- **The bracket shape of the value-form equations in *Capital* Ch. 1.** The outer table is layout: the inner data table is kept as a table and the right-hand cell becomes its own paragraph. Revisit if readers find it confusing.
+- **Tables of contents** (`p.toc`, `p.index`, or paragraphs that are mostly in-page links) are navigation and are dropped.
 
 ### Transcription quirks
 MIA's text is the Original even where it differs from print. For example, *Manifesto* Ch. I has "Even manufacturer no longer sufficed" where Moore 1888 has "manufacture". Such cases are handled with a `translation_note` explanation (STYLE.md §10). The parser never corrects text.

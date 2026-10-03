@@ -1,0 +1,9 @@
+# Hosts that `plm import` may fetch from (SDD §7.3). Nothing else can be fetched.
+#   via:      direct  - fetch the source host itself
+#             wayback - fetch the closest Internet Archive raw snapshot (original bytes)
+#   fallback: used only if a direct fetch fails with a network error (never on a refusal)
+sources:
+  - host: www.marxists.org
+    adapter: mia
+    via: direct
+    fallback: wayback

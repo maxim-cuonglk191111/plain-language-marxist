@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -41,3 +41,10 @@ Turn an MIA URL into a `source.yml`, a snapshot and a `work.yml` stub (SDD §7).
 - All golden tests pass.
 - Importing the *Manifesto* Ch. I fixture gives files that pass `plm validate`, apart from the rights check.
 - SSRF unit tests cover private IPs, redirects to private IPs, and non-HTTPS schemes.
+
+## Notes (on completion)
+- **Verified end to end over the network.** Running `plm import https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch01.htm --via wayback` wrote 65 passages, a byte-exact snapshot and a work stub. `plm validate` then reports only `rights/unverified`.
+- On this machine, www.marxists.org resolves to `::1`. The fetch guard refuses it, and by design a refusal never falls back to Wayback. Use `--via wayback` here. The `direct` mode plus Wayback fallback is for network errors only.
+- `source.via` (an optional field) records the snapshot URL actually fetched. No content existed yet, so `schema_version` stays 1.
+- Re-import keeps passage IDs. Unchanged text keeps its ID, removed text is tombstoned, and new text gets the next free ID with `derived_from`. This closes the ID-reuse gap noted in task 004.
+- Found and fixed along the way: Node's `TextDecoder("windows-1252")` decodes 0x80–0x9F as Latin-1, so cp1252 is now decoded by hand.

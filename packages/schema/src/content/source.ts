@@ -82,6 +82,8 @@ export const SourceFile = z
       provider: Slug,
       url: HttpsUrl,
       retrieved_at: IsoDate,
+      /** The URL actually fetched when it differs from `url`, e.g. a Wayback Machine raw snapshot. */
+      via: HttpsUrl.optional(),
       snapshot: z.string().min(1),
       snapshot_hash: Sha256,
       parser: z.strictObject({

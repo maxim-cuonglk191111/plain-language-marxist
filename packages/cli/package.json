@@ -11,9 +11,11 @@
   "exports": "./src/program.ts",
   "dependencies": {
     "@plm/content": "workspace:^",
+    "@plm/parser": "workspace:^",
     "@plm/schema": "workspace:^",
     "commander": "^15.0.0",
     "tsx": "^4.23.15",
-    "yaml": "^2.9.1"
+    "yaml": "^2.9.1",
+    "zod": "^4.6.5"
   }
 }

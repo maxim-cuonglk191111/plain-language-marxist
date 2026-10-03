@@ -21,6 +21,6 @@ export function basedOnHash(passageHashes: readonly string[]): string {
   return sha256(passageHashes.join("\n"));
 }
 
-export function fileHash(content: string | Buffer): string {
+export function fileHash(content: string | Uint8Array): string {
   return `sha256:${createHash("sha256").update(content).digest("hex")}`;
 }

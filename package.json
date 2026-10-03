@@ -15,7 +15,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm plm migrate && pnpm plm validate"
+    "check": "pnpm lint && pnpm format:check && pnpm typecheck && pnpm test && pnpm plm migrate && pnpm plm validate && pnpm plm build"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",

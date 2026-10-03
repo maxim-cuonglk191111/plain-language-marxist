@@ -18,7 +18,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [010](010-term-system.md) | Term system: tokens, resolver, vocabulary | M1 | Done |
 | [011](011-checks-and-prompt-apply.md) | Structural checks, exchange format, `plm prompt` / `plm apply` | M1 | Done |
 | [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | Open |
-| [013](013-plm-build-static-data.md) | `plm build`: static data contract v1 | M1 | Open |
+| [013](013-plm-build-static-data.md) | `plm build`: static data contract v1 | M1 | Done |
 | [014](014-web-reader.md) | Web reader: routes, modes, layout rendering | M1 | Open |
 | [015](015-term-cards-and-vocabulary.md) | Term cards, terminology preference, explanations, vocabulary pages | M1 | Open |
 | [016](016-preferences-search-a11y.md) | Reader preferences, search, accessibility pass | M1 | Open |

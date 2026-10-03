@@ -17,6 +17,7 @@ export * from "./content/rendering.ts";
 export * from "./content/source.ts";
 export * from "./content/vocabulary.ts";
 export * from "./content/work.ts";
+export * from "./data/v1.ts";
 export * from "./layout/index.ts";
 
 /** Every content file schema, keyed by the name used for its exported JSON Schema. */

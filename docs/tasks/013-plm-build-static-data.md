@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -31,3 +31,9 @@ Generate `/data/v1/` from the content files. These JSON files are the public rea
 ## Acceptance
 - The output validates against the contract schemas.
 - The determinism test passes.
+
+## Notes (on completion)
+- The contract schemas live in `packages/schema/src/data/v1.ts` (`DataIndex`, `DataDocument`, `DataTerm`, `DataManifest`). Every file is parsed against its schema before it is written.
+- The release ID comes from the content commit (`YYYY.MM.DD-shortsha`, plus `-dirty` for uncommitted content changes), never from the wall clock, so builds are reproducible. A test builds twice and compares every byte.
+- Works whose rights are BLOCKED are left out. Tombstoned passages are omitted from the document JSON. Renderings carry `text_raw` (tokens) and `text` (default wording), plus a `stale` flag.
+- Real run on the repo: 1 work, 65 passages, 15 terms, 18 files. CI and `pnpm check` now run `plm build`.

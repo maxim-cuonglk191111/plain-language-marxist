@@ -1,6 +1,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { Command } from "commander";
 import { runAnnotate } from "./commands/annotate.ts";
+import { runBuild } from "./commands/build.ts";
 import { runApply, runPrompt } from "./commands/draft.ts";
 import { runImport } from "./commands/import.ts";
 import { runMigrate } from "./commands/migrate.ts";
@@ -114,6 +115,15 @@ export function buildProgram(): Command {
         });
       },
     );
+
+  program
+    .command("build")
+    .description("Validate, then generate the static data contract (data/v1) for the reader")
+    .option("--root <dir>", "repository root", ".")
+    .option("--out <dir>", "output directory", "dist")
+    .action((opts: { root: string; out: string }) => {
+      process.exitCode = runBuild(opts);
+    });
 
   program
     .command("validate")

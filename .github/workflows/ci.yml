@@ -25,4 +25,5 @@ jobs:
       - run: pnpm test
       - run: pnpm plm migrate
       - run: pnpm plm validate
+      - run: pnpm plm build
       - run: pnpm audit --audit-level high

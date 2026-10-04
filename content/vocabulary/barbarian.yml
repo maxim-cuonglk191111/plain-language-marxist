@@ -1,0 +1,27 @@
+schema_version: 2
+term: barbarian
+aliases: [semi-barbarian, barbarism]
+original:
+  adj: barbarian
+  pl: barbarians
+definition:
+  short: In 19th-century European writing, a word for peoples seen as less developed in industry and trade. The Manifesto uses the language of its time.
+  long: |-
+    Writers of the 1840s often divided the world into “civilised” and “barbarian” peoples. By “civilised” they mostly meant societies with modern industry and trade, like Britain or France.
+
+    The Manifesto uses these words, but not innocently. It says the bourgeoisie forces other nations to adopt its ways “on pain of extinction”, and it speaks of “what it calls civilisation”.
+
+    It also finds “barbarism” inside modern society: in a crisis, society is “put back into a state of momentary barbarism”.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00029
+  text: draws all, even the most barbarian, nations into civilisation
+not_to_confuse: It is not a judgement on how good or cruel a people is. It is a 19th-century ranking by industry and trade, which the Manifesto partly questions.
+related: [bourgeoisie, world-market]
+renderings:
+  keep:
+    forms:
+      adj: barbarian
+      pl: barbarians
+    reason: A core term, kept as written. The term card explains it.
+default: keep

@@ -1,0 +1,29 @@
+schema_version: 2
+term: revolution
+aliases: [revolutionise, revolutionised, revolutionising]
+original:
+  sg: revolution
+  pl: revolutions
+  adj: revolutionary
+definition:
+  short: A deep change in how a society produces and who holds power in it. In the Manifesto it means turning the old order upside down.
+  long: |-
+    Today many people hear “revolution” and think only of an armed uprising against a government. The Manifesto uses the word more widely.
+
+    It speaks of revolutions in production: steam and machinery “revolutionised industrial production”. It calls the bourgeoisie “most revolutionary” because it overturned the feudal order and keeps changing everything it touches.
+
+    A political revolution, where one class takes power from another, is part of this. For Marx and Engels it grows out of the deeper change in how people produce.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00026
+  text: Constant revolutionising of production
+not_to_confuse: It does not only mean overthrowing a government by force. A “revolutionary” class or invention is one that turns the old order upside down.
+related: [class-struggle, mode-of-production, reactionary, conservative]
+renderings:
+  keep:
+    forms:
+      sg: revolution
+      pl: revolutions
+      adj: revolutionary
+    reason: A core term, kept as written. The term card explains it.
+default: keep

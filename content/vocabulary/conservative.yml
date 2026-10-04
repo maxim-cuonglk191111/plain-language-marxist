@@ -1,0 +1,22 @@
+schema_version: 2
+term: conservative
+original:
+  adj: conservative
+definition:
+  short: Wanting to keep things as they are now.
+  long: |-
+    In the Manifesto, “conservative” sits between “revolutionary” and “reactionary”. A revolutionary class pushes society forward. A conservative class tries to keep the present order. A reactionary class tries to turn it back.
+
+    The lower middle class is called “not revolutionary, but conservative”, because it fights to save its own place in society.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00053
+  text: They are therefore not revolutionary, but conservative.
+not_to_confuse: It does not mean a particular modern party, such as the Conservative Party in Britain. It means wanting to keep the present order.
+related: [revolution, reactionary, petty-bourgeoisie]
+renderings:
+  keep:
+    forms:
+      adj: conservative
+    reason: A core term, kept as written. The term card explains it.
+default: keep

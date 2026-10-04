@@ -1,0 +1,29 @@
+schema_version: 2
+term: communism
+aliases: [communistic]
+original:
+  sg: communism
+  adj: communist
+  pl: communists
+definition:
+  short: A movement, and the society it aims for. In that society the means of production are owned in common, so no class lives from the work of another.
+  long: |-
+    Many readers think first of the states that called themselves communist in the 20th century. Those came much later. In 1848 “communist” was the name of a small, international movement of workers and writers.
+
+    The Manifesto was written for one such group, the Communist League. In Chapter I, “communism” is mostly the name that rulers used to frighten people: the “spectre” of the opening line.
+
+    What the communists themselves want is set out in Chapter II.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00002
+  text: the spectre of communism
+not_to_confuse: In 1848 it did not mean a government or a state. It meant a movement and its aims.
+related: [class-struggle, proletariat, party]
+renderings:
+  keep:
+    forms:
+      sg: communism
+      adj: communist
+      pl: communists
+    reason: A core term, kept as written. The term card explains it.
+default: keep

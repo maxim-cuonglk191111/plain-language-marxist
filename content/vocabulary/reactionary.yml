@@ -1,0 +1,27 @@
+schema_version: 2
+term: reactionary
+aliases: [reactionists]
+original:
+  adj: reactionary
+  pl: reactionaries
+definition:
+  short: Trying to turn society back to an earlier stage. A reactionary class wants to undo changes that have already happened.
+  long: |-
+    In politics today, “reactionary” is often used as an insult for any opponent. The Manifesto uses it in an exact sense: wanting to go backwards.
+
+    So the small shopkeepers and peasants are called reactionary, “for they try to roll back the wheel of history”. They want to return to a world of small property that big industry has destroyed.
+
+    Its opposite in the Manifesto is “revolutionary”: pushing society forward into a new stage.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00053
+  text: they are reactionary, for they try to roll back the wheel of history
+not_to_confuse: It is not just a word for people you dislike, or for anyone on the political right. It means wanting to turn history back.
+related: [revolution, conservative, petty-bourgeoisie]
+renderings:
+  keep:
+    forms:
+      adj: reactionary
+      pl: reactionaries
+    reason: A core term, kept as written. The term card explains it.
+default: keep

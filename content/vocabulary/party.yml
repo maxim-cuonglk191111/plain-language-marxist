@@ -1,0 +1,24 @@
+schema_version: 2
+term: party
+original:
+  sg: party
+  pl: parties
+definition:
+  short: A group of people who share political aims. In the Manifesto it does not have to be a formal organisation with members and elections.
+  long: |-
+    Today a “party” usually means an organisation that stands in elections. In 1848 the word was used more widely, for any side or tendency in politics.
+
+    When the Manifesto speaks of workers organising “into a political party”, it means a class that acts together in politics. The “Communist Party” of the title was the communist movement as a whole, not one fixed organisation.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00048
+  text: into a class, and, consequently into a political party
+not_to_confuse: It is not only an election party with a leader and membership cards. It can mean a whole political side or movement.
+related: [communism, class-struggle, proletariat]
+renderings:
+  keep:
+    forms:
+      sg: party
+      pl: parties
+    reason: A core term, kept as written. The term card explains it.
+default: keep

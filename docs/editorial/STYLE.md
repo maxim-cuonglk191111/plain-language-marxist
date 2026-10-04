@@ -43,6 +43,10 @@ The "Copy for LLM" prompt (`plm prompt`) embeds the block below word for word. E
 | Long periodic sentences | One sentence with four clauses joined by semicolons | Several sentences, same order, same connectors |
 | Stacked abstractions | "the revolutionary reconstitution of society at large" | "a revolutionary rebuilding of society as a whole" |
 | Victorian spelling | mediaeval, world-market | medieval, world market (spelling only, never wording) |
+| Literary set phrases | "under the yoke of feudal absolutism", "nay more", "in the face of", "lie in ambush", "superincumbent strata" | "under the rule of all-powerful feudal kings", "what is more", "faced with", "hide, waiting to strike", "the layers above" |
+| Rare or literary words | spectre, idyllic, appendage, pauper, despotism | ghost, peaceful, attachment, very poor person, tyranny |
+
+**Test for every phrase:** would a reader with intermediate English (about CEFR B1–B2) know it without a dictionary? If not, say it in common words. Keep the image or the claim; change only the words.
 
 **Don't change what is already clear.** Some sentences in the Manifesto are simple, and their Plain English may be almost identical. That is correct. Change for clarity, never for its own sake.
 
@@ -204,10 +208,10 @@ Term cards (`content/vocabulary/*.yml`) and explanations are where a reader lear
 
 ### How much context to give (task 025)
 
-The reader calls this layer **Context**: it helps a newcomer follow the argument. It is not a second rendering, and not a verdict on the text.
+The reader calls this layer **Context**: background a newcomer needs and cannot get from the text. It is not a second rendering, and not a verdict on the text.
 
-- **One explanation per section** (`kind: explanation`, targets = every passage of the section). Write 3–6 short sentences on what this part argues and how it connects to the last part. Do not retell the paragraphs; the Plain English does that.
-- **A passage note only where a newcomer would get stuck.** Ask: *would a careful newcomer, reading the Plain English, get stuck here for lack of outside knowledge?* People, events and background images qualify (`kind: historical_context`); terms do not, because they have cards. As a rough guide, one note per 4–6 paragraphs, never one per paragraph. If every paragraph seems to need a note, fix the Plain English instead.
+- **No section summaries.** They were tried in task 025 and dropped at the maintainer's review: a summary of several paragraphs reads like a generic digest, and the reader cannot see what it covers. The Plain English already does the work of making each paragraph clear.
+- **A passage note only where a newcomer would get stuck.** Ask: *would a careful newcomer, reading the Plain English, get stuck here for lack of outside knowledge?* People, events and background images qualify (`kind: historical_context`); terms do not, because they have cards. Words a modern reader is likely to misread (revolutionary, reactionary, party, communism…) also get cards, not notes. As a rough guide, one note per 4–6 paragraphs, never one per paragraph. If every paragraph seems to need a note, fix the Plain English instead.
 - **Translation notes** (`kind: translation_note`) are about the source text. The reader shows them beside the Original as "Text note", not in Context.
 - **Do not list weaknesses of the Plain English.** The Original is always one click away, and term cards state each wording's limitation. The one exception: when an original sentence can honestly be read two ways, add a translation note saying which reading the Plain English follows.
 - **Plain English sentences stay at 35 words or fewer** (`plm` warns above that). Split long sentences and keep every clause and link word.

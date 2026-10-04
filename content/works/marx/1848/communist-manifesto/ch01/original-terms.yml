@@ -1,6 +1,58 @@
 schema_version: 2
 document: document:marx:1848:communist-manifesto:ch01
 annotations:
+  - passage: p00001
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00001
+    term: party
+    match: Party
+    occurrence: 1
+  - passage: p00002
+    term: communism
+    match: communism
+    occurrence: 1
+  - passage: p00003
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00003
+    term: communism
+    match: communistic
+    occurrence: 1
+  - passage: p00003
+    term: communism
+    match: communism
+    occurrence: 1
+  - passage: p00003
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00003
+    term: reactionary
+    match: reactionary
+    occurrence: 1
+  - passage: p00005
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00006
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00006
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00006
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00007
+    term: communism
+    match: Communists
+    occurrence: 1
   - passage: p00008
     term: bourgeoisie
     match: Bourgeois
@@ -32,6 +84,10 @@ annotations:
   - passage: p00010
     term: journeyman
     match: journeyman
+    occurrence: 1
+  - passage: p00010
+    term: revolution
+    match: revolutionary
     occurrence: 1
   - passage: p00011
     term: patrician
@@ -118,6 +174,10 @@ annotations:
     match: commodities
     occurrence: 1
   - passage: p00015
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00015
     term: feudalism
     match: feudal
     occurrence: 1
@@ -137,6 +197,10 @@ annotations:
     term: division-of-labour
     match: division of labour
     occurrence: 2
+  - passage: p00017
+    term: revolution
+    match: revolutionised
+    occurrence: 1
   - passage: p00017
     term: manufacture
     match: manufacture
@@ -168,6 +232,10 @@ annotations:
   - passage: p00019
     term: bourgeoisie
     match: bourgeoisie
+    occurrence: 1
+  - passage: p00019
+    term: revolution
+    match: revolutions
     occurrence: 1
   - passage: p00019
     term: mode-of-production
@@ -205,6 +273,10 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00021
+    term: revolution
+    match: revolutionary
+    occurrence: 1
   - passage: p00022
     term: bourgeoisie
     match: bourgeoisie
@@ -221,6 +293,14 @@ annotations:
     term: exchange-value
     match: exchange value
     occurrence: 1
+  - passage: p00022
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00022
+    term: exploitation
+    match: exploitation
+    occurrence: 2
   - passage: p00023
     term: bourgeoisie
     match: bourgeoisie
@@ -233,9 +313,17 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00025
+    term: reactionary
+    match: reactionaries
+    occurrence: 1
   - passage: p00026
     term: bourgeoisie
     match: bourgeoisie
+    occurrence: 1
+  - passage: p00026
+    term: revolution
+    match: revolutionising
     occurrence: 1
   - passage: p00026
     term: instruments-of-production
@@ -250,6 +338,10 @@ annotations:
     match: modes of production
     occurrence: 1
   - passage: p00026
+    term: revolution
+    match: revolutionising
+    occurrence: 2
+  - passage: p00026
     term: bourgeoisie
     match: bourgeois
     occurrence: 1
@@ -262,8 +354,16 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00028
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00028
     term: world-market
     match: world market
+    occurrence: 1
+  - passage: p00028
+    term: reactionary
+    match: Reactionists
     occurrence: 1
   - passage: p00029
     term: bourgeoisie
@@ -274,8 +374,16 @@ annotations:
     match: instruments of production
     occurrence: 1
   - passage: p00029
+    term: barbarian
+    match: barbarian
+    occurrence: 1
+  - passage: p00029
     term: commodity
     match: commodities
+    occurrence: 1
+  - passage: p00029
+    term: barbarian
+    match: barbarians
     occurrence: 1
   - passage: p00029
     term: bourgeoisie
@@ -292,6 +400,14 @@ annotations:
   - passage: p00030
     term: bourgeoisie
     match: bourgeoisie
+    occurrence: 1
+  - passage: p00030
+    term: barbarian
+    match: barbarian
+    occurrence: 1
+  - passage: p00030
+    term: barbarian
+    match: semi-barbarian
     occurrence: 1
   - passage: p00030
     term: bourgeoisie
@@ -402,6 +518,10 @@ annotations:
     match: over-production
     occurrence: 1
   - passage: p00035
+    term: barbarian
+    match: barbarism
+    occurrence: 1
+  - passage: p00035
     term: means-of-subsistence
     match: means of subsistence
     occurrence: 1
@@ -437,6 +557,10 @@ annotations:
     term: productive-forces
     match: productive forces
     occurrence: 4
+  - passage: p00035
+    term: exploitation
+    match: exploitation
+    occurrence: 1
   - passage: p00036
     term: bourgeoisie
     match: bourgeoisie
@@ -518,6 +642,10 @@ annotations:
     match: modern industry
     occurrence: 1
   - passage: p00042
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00042
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
@@ -548,6 +676,10 @@ annotations:
   - passage: p00044
     term: bourgeoisie
     match: bourgeois
+    occurrence: 1
+  - passage: p00044
+    term: exploitation
+    match: exploits
     occurrence: 1
   - passage: p00044
     term: bourgeoisie
@@ -630,6 +762,10 @@ annotations:
     match: proletarians
     occurrence: 1
   - passage: p00048
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00048
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
@@ -682,6 +818,10 @@ annotations:
     match: class struggle
     occurrence: 1
   - passage: p00051
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00051
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
@@ -706,6 +846,10 @@ annotations:
     match: proletariat
     occurrence: 1
   - passage: p00052
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00052
     term: modern-industry
     match: Modern Industry
     occurrence: 1
@@ -722,6 +866,22 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00053
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00053
+    term: conservative
+    match: conservative
+    occurrence: 1
+  - passage: p00053
+    term: reactionary
+    match: reactionary
+    occurrence: 1
+  - passage: p00053
+    term: revolution
+    match: revolutionary
+    occurrence: 2
+  - passage: p00053
     term: proletariat
     match: proletariat
     occurrence: 1
@@ -736,6 +896,14 @@ annotations:
   - passage: p00054
     term: proletariat
     match: proletarian
+    occurrence: 1
+  - passage: p00054
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00054
+    term: reactionary
+    match: reactionary
     occurrence: 1
   - passage: p00055
     term: proletariat
@@ -814,6 +982,10 @@ annotations:
     match: proletariat
     occurrence: 1
   - passage: p00059
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00059
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
@@ -870,6 +1042,10 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00061
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00061
     term: modern-industry
     match: Modern Industry
     occurrence: 1
@@ -908,6 +1084,10 @@ annotations:
   - passage: p00062
     term: labour-power
     match: labour power
+    occurrence: 1
+  - passage: p00063
+    term: communism
+    match: communistic
     occurrence: 1
   - passage: p00064
     term: guild-master

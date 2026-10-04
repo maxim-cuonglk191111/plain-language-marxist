@@ -17,14 +17,6 @@ type Props = { params: Promise<{ path: string[] }> };
 type Passage = DataDocument["passages"][number];
 type Explanation = DataDocument["explanations"][number];
 
-const KIND_LABEL: Record<string, string> = {
-  explanation: "Explanation",
-  historical_context: "Historical context",
-  interpretation: "Interpretation",
-  commentary: "Commentary",
-  translation_note: "Translation note",
-};
-
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -57,8 +49,17 @@ export default async function DocumentPage(props: Props) {
   // When every rendering is AI-assisted, say so once at the top instead of under each paragraph.
   const rendered = rows.flatMap((r) => (r.rendering ? [r.rendering] : []));
   const allAiAssisted = rendered.length > 0 && rendered.every((r) => r.ai_assisted);
-  const explanationsFor = (ids: string[]) =>
-    doc.explanations.filter((e) => e.targets.some((t) => ids.includes(t)));
+  // Each explanation shows once, at the first row it targets (a section explanation
+  // targets every passage of its section). Translation notes go with the Original.
+  const atRow = new Map<string, { context: Explanation[]; text: Explanation[] }>();
+  for (const e of doc.explanations) {
+    const row = rows.find((r) => r.ids.some((id) => e.targets.includes(id)));
+    const key = row?.ids[0];
+    if (!key) continue;
+    const slot = atRow.get(key) ?? { context: [], text: [] };
+    (e.kind === "translation_note" ? slot.text : slot.context).push(e);
+    atRow.set(key, slot);
+  }
 
   return (
     <article className="reader">
@@ -107,7 +108,7 @@ export default async function DocumentPage(props: Props) {
       <div className="rows">
         {rows.map((row) => {
           const [first, ...rest] = row.ids;
-          const explanations = explanationsFor(row.ids);
+          const notes = atRow.get(first ?? "");
           return (
             <section key={first} id={first} className={row.rendering ? "row" : "row untranslated"}>
               {rest.map((id) => (
@@ -158,8 +159,9 @@ export default async function DocumentPage(props: Props) {
                     terms={{ kind: "annotations", annotations: p.annotations }}
                   />
                 ))}
+                <TextNotes notes={notes?.text ?? []} footnotes={footnotes} />
               </div>
-              <Explain explanations={explanations} footnotes={footnotes} />
+              <Explain explanations={notes?.context ?? []} footnotes={footnotes} />
             </section>
           );
         })}
@@ -168,10 +170,58 @@ export default async function DocumentPage(props: Props) {
   );
 }
 
+/** How each kind is labelled in the reader (task 025: the layer is "Context"). */
+function kindLabel(e: Explanation): string {
+  switch (e.kind) {
+    case "explanation":
+      return e.targets.length > 1 ? "About this section" : "Note";
+    case "historical_context":
+      return "Background";
+    case "interpretation":
+      return "Interpretation";
+    case "commentary":
+      return "Commentary";
+    case "translation_note":
+      return "Text note";
+    default:
+      return e.kind;
+  }
+}
+
+function ExplanationBody({
+  e,
+  footnotes,
+}: {
+  e: Explanation;
+  footnotes: ReadonlyMap<string, string>;
+}) {
+  return (
+    <>
+      {e.text
+        .trim()
+        .split(/\n\s*\n/)
+        .map((p, i) => (
+          <p key={i}>
+            <LayoutText text={p} footnotes={footnotes} />
+          </p>
+        ))}
+      {e.sources.length > 0 && (
+        <ul className="sources">
+          {e.sources.map((s, i) => (
+            <li key={i}>
+              {[s["author"], s["title"], s["publication"], s["year"]].filter(Boolean).join(", ")}
+            </li>
+          ))}
+        </ul>
+      )}
+    </>
+  );
+}
+
 /**
- * The Explanation layer for one row: its explanations, labelled by kind. The
- * cell is always rendered, empty when the passage has none, so the columns of
- * every row line up.
+ * The Context layer for one row: section explanations (shown once, at the
+ * section's first row), background and notes. The cell is always rendered,
+ * empty when the row has none, so the columns of every row line up.
  */
 function Explain({
   explanations,
@@ -180,33 +230,48 @@ function Explain({
   explanations: Explanation[];
   footnotes: ReadonlyMap<string, string>;
 }) {
-  if (explanations.length === 0) return <div className="col-explain layer-explain empty" />;
+  if (explanations.length === 0) return <div className="col-context layer-context empty" />;
   return (
-    <div className="col-explain layer-explain">
-      <span className="layer-label">Explanation</span>
+    <div className="col-context layer-context">
+      <span className="layer-label">Context</span>
       {explanations.map((e) => (
-        <div key={e.id} className="explanation">
+        <div
+          key={e.id}
+          className={e.targets.length > 1 ? "explanation section-explanation" : "explanation"}
+        >
           <p className="explanation-kind">
-            {KIND_LABEL[e.kind] ?? e.kind}
+            {kindLabel(e)}
             {e.ai_assisted ? " · AI-assisted" : ""}
           </p>
-          <p>
-            <LayoutText text={e.text} footnotes={footnotes} />
-          </p>
-          {e.sources.length > 0 && (
-            <ul className="sources">
-              {e.sources.map((s, i) => (
-                <li key={i}>
-                  {[s["author"], s["title"], s["publication"], s["year"]]
-                    .filter(Boolean)
-                    .join(", ")}
-                </li>
-              ))}
-            </ul>
-          )}
+          <ExplanationBody e={e} footnotes={footnotes} />
         </div>
       ))}
     </div>
+  );
+}
+
+/**
+ * Translation notes are about the source text, not the ideas, so they sit with
+ * the Original as a small note that opens on demand (task 025).
+ */
+function TextNotes({
+  notes,
+  footnotes,
+}: {
+  notes: Explanation[];
+  footnotes: ReadonlyMap<string, string>;
+}) {
+  if (notes.length === 0) return null;
+  return (
+    <details className="text-note">
+      <summary>Text note</summary>
+      {notes.map((e) => (
+        <div key={e.id}>
+          <ExplanationBody e={e} footnotes={footnotes} />
+          {e.ai_assisted && <p className="muted">AI-assisted</p>}
+        </div>
+      ))}
+    </details>
   );
 }
 

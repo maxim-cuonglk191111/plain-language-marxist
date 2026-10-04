@@ -431,6 +431,16 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
         });
         checkFootnotes(e.text, explanations, ["explanations", key, "text"]);
         checkLinks(e.text, explanations, ["explanations", key, "text"]);
+        // STYLE §15 applies to explanations as to term cards: short sentences.
+        const long = longSentences(plainText(e.text) ?? e.text);
+        if (long.length > 0)
+          report(
+            "warning",
+            "explanation/long-sentence",
+            explanations,
+            ["explanations", key, "text"],
+            `${long.length} sentence(s) over ${MAX_SENTENCE_WORDS} words; split them`,
+          );
       }
     }
   }

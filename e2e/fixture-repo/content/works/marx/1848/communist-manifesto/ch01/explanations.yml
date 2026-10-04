@@ -10,3 +10,13 @@ explanations:
         author: Frederick Engels (ed.)
         year: 1888
     ai_assisted: false
+  e002:
+    kind: explanation
+    targets: [p00009, p00010, p00011, p00012, p00013]
+    text: This section makes the chapter's first big claim. All written history is a history of fights between classes. Today those fights are becoming one fight between two classes.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00013]
+    text: In 1848 most people in Europe still worked on the land. Factory workers were a small but fast-growing group.
+    ai_assisted: true

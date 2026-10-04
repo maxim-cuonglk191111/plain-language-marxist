@@ -285,6 +285,7 @@ explanations:
     ai_assisted: false
 ```
 
+- The reader labels this layer **Context** (task 025). A section explanation (`kind: explanation` targeting several passages) shows once, at the section's first row. `translation_note` entries show beside the Original as "Text note", not in the Context layer. Policy: docs/editorial/STYLE.md §15.
 - Collections are `{id, title, description, documents[], maintainers[]}`.
 - Reading paths are `{id, title, items[], rationale}`. They are shown as "suggested", never "correct".
 - Traditions such as left communism are collections, not code paths.

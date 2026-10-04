@@ -11,7 +11,7 @@ const PAGES = [
   ],
   [
     "reader (three layers)",
-    "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain,original,explain",
+    "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain,original,context",
   ],
   ["reader (original)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=original"],
   ["vocabulary", "/vocabulary/"],

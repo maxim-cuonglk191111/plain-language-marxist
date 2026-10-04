@@ -128,6 +128,11 @@ describe("checkRenderings: warnings", () => {
       "warning question",
     ],
     [
+      "a sentence too long for readers learning English",
+      "=== p00017\nFrom the serfs of the Middle Ages came the chartered burghers of the earliest towns, and from these burghers, who lived in the towns and held their charters, the first elements of the {bourgeoisie} slowly developed over many long years.",
+      "warning long-sentence",
+    ],
+    [
       "missing name",
       "=== p00017\nFrom the serfs of the medieval period came the chartered burghers of the first towns. From them came the first elements of the {bourgeoisie}.",
       "warning names",

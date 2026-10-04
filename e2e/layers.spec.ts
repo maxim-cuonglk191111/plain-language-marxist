@@ -1,4 +1,4 @@
-// Task 023: three switchable layers (Plain English | Original | Explanation),
+// Task 023: three switchable layers (Plain English | Original | Context),
 // never fewer than one; columns on wide screens, rows on phones.
 import { expect, test, type Page } from "@playwright/test";
 
@@ -8,7 +8,7 @@ const toggle = (page: Page, name: string) =>
 const visible = (page: Page, id: string) => ({
   plain: page.locator(`#${id} > .col-plain`),
   original: page.locator(`#${id} > .col-original`),
-  explain: page.locator(`#${id} > .col-explain`),
+  context: page.locator(`#${id} > .col-context`),
 });
 
 async function inViewport(page: Page, selector: string): Promise<boolean> {
@@ -29,20 +29,20 @@ test("defaults to Plain English only; toggles add and remove layers and are reme
   await expect(row.original).toBeHidden();
 
   await toggle(page, "Original").click();
-  await toggle(page, "Explanation").click();
-  await expect(html).toHaveAttribute("data-layers", "plain original explain");
+  await toggle(page, "Context").click();
+  await expect(html).toHaveAttribute("data-layers", "plain original context");
   await expect(html).toHaveAttribute("data-cols", "3");
   await expect(page).toHaveURL(
-    /[?&]layers=plain%2Coriginal%2Cexplain|layers=plain,original,explain/,
+    /[?&]layers=plain%2Coriginal%2Ccontext|layers=plain,original,context/,
   );
   await expect(row.original).toBeVisible();
-  await expect(row.explain).toContainText("Translation note");
+  await expect(row.context).toContainText("About this section");
 
   await toggle(page, "Plain English").click();
   await expect(row.plain).toBeHidden();
 
   await page.goto(DOC); // remembered without the query
-  await expect(html).toHaveAttribute("data-layers", "original explain");
+  await expect(html).toHaveAttribute("data-layers", "original context");
 });
 
 test("the last visible layer cannot be turned off", async ({ page }) => {
@@ -67,7 +67,7 @@ for (const [view, layers] of [
   });
 }
 
-for (const layers of ["plain", "plain,original", "plain,original,explain", "explain"]) {
+for (const layers of ["plain", "plain,original", "plain,original,context", "context"]) {
   test(`deep link #p00013 lands on its row with layers=${layers}`, async ({ page }) => {
     await page.goto(`${DOC}?layers=${layers}#p00013`);
     await expect.poll(() => inViewport(page, "#p00013")).toBe(true);
@@ -86,17 +86,17 @@ for (const layers of ["plain", "plain,original", "plain,original,explain", "expl
 
 test("three layers sit side by side on a wide screen, rows line up", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
-  await page.goto(`${DOC}?layers=plain,original,explain#p00011`);
+  await page.goto(`${DOC}?layers=plain,original,context#p00011`);
   // Measured in one go: smooth scrolling may still be moving the page.
   const cells = await page.locator("#p00011").evaluate((row) =>
-    [".col-plain", ".col-original", ".col-explain"].map((s) => {
+    [".col-plain", ".col-original", ".col-context"].map((s) => {
       const r = (row.querySelector(`:scope > ${s}`) as HTMLElement).getBoundingClientRect();
       return { x: r.x, y: r.y };
     }),
   );
   const [p, o, e] = cells;
   expect(p && o && e && Math.abs(p.y - o.y) < 2 && Math.abs(o.y - e.y) < 2).toBe(true);
-  // Plain | Original | Explanation, left to right. The row's second passage is a
+  // Plain | Original | Context, left to right. The row's second passage is a
   // deep-link target, not a grid cell, so Plain English starts at the left.
   expect(p && o && e && p.x < o.x && o.x < e.x && p.x < 100).toBe(true);
 });
@@ -109,12 +109,12 @@ test("an untranslated passage falls back to the original when it is hidden", asy
 });
 
 test("@mobile layers stack as rows in the same order, labelled", async ({ page }) => {
-  await page.goto(`${DOC}?layers=plain,original,explain#p00009`);
+  await page.goto(`${DOC}?layers=plain,original,context#p00009`);
   const row = visible(page, "p00009");
   const boxes = await Promise.all([
     row.plain.boundingBox(),
     row.original.boundingBox(),
-    row.explain.boundingBox(),
+    row.context.boundingBox(),
   ]);
   const [p, o, e] = boxes;
   expect(p && o && e && p.y < o.y && o.y < e.y).toBe(true);
@@ -129,7 +129,15 @@ test.describe("without JavaScript", () => {
     const row = visible(page, "p00009");
     await expect(row.plain).toBeVisible();
     await expect(row.original).toBeVisible();
-    await expect(row.explain).toBeVisible();
+    await expect(row.context).toBeVisible();
     await expect(page.locator(".layer-switch")).toBeHidden();
   });
+});
+
+test("old links naming the layer 'explain' open the Context layer", async ({ page }) => {
+  await page.goto(`${DOC}?layers=plain,explain`);
+  await expect(page.locator("html")).toHaveAttribute("data-layers", "plain context");
+  await expect(
+    page.locator(".layer-switch").getByRole("button", { name: "Context", exact: true }),
+  ).toHaveAttribute("aria-pressed", "true");
 });

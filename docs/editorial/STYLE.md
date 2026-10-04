@@ -201,3 +201,13 @@ Term cards (`content/vocabulary/*.yml`) and explanations are where a reader lear
   - `definition.long` is two to five short paragraphs, separated by blank lines;
   - `sources` cite Engels's notes and similar where they are used.
 - **No hedging and no taking sides.** Where readings really differ, say so in `long` and attribute each one.
+
+### How much context to give (task 025)
+
+The reader calls this layer **Context**: it helps a newcomer follow the argument. It is not a second rendering, and not a verdict on the text.
+
+- **One explanation per section** (`kind: explanation`, targets = every passage of the section). Write 3–6 short sentences on what this part argues and how it connects to the last part. Do not retell the paragraphs; the Plain English does that.
+- **A passage note only where a newcomer would get stuck.** Ask: *would a careful newcomer, reading the Plain English, get stuck here for lack of outside knowledge?* People, events and background images qualify (`kind: historical_context`); terms do not, because they have cards. As a rough guide, one note per 4–6 paragraphs, never one per paragraph. If every paragraph seems to need a note, fix the Plain English instead.
+- **Translation notes** (`kind: translation_note`) are about the source text. The reader shows them beside the Original as "Text note", not in Context.
+- **Do not list weaknesses of the Plain English.** The Original is always one click away, and term cards state each wording's limitation. The one exception: when an original sentence can honestly be read two ways, add a translation note saying which reading the Plain English follows.
+- **Plain English sentences stay at 35 words or fewer** (`plm` warns above that). Split long sentences and keep every clause and link word.

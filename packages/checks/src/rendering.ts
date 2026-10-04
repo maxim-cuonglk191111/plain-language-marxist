@@ -53,6 +53,14 @@ const LOGIC_WORDS = [
 // Reporting the text instead of speaking in its voice. Only flagged when the original does not do it too.
 const DISTANCING =
   /\b(?:marx|engels|the authors?|the manifesto)\b(?:\s+and\s+(?:marx|engels))?\s+(?:argues?|says?|claims?|calls?|believes?|describes?|writes?|suggests?|thinks?|means?|makes?\s+(?:a|an|the)\b)|\bthey\s+(?:argue|claim|believe|suggest|contend)\b/i;
+/**
+ * Plain English sentences longer than this are hard for readers learning
+ * English (task 025). Split them; never drop a clause to get under it.
+ */
+export const MAX_SENTENCE_WORDS = 35;
+const sentences = (text: string) => text.split(/(?<=[.!?])\s+/).filter((s) => s.trim());
+const wordCount = (s: string) => s.split(/\s+/).filter(Boolean).length;
+
 /** Rendering length relative to the original above which it is probably explaining, not rendering. */
 const MAX_LENGTH_RATIO = 2;
 const FRAMING =
@@ -203,6 +211,15 @@ export function checkRenderings(entries: readonly ExchangeEntry[], ctx: CheckCon
         "length",
         covers,
         `length is ${ratio.toFixed(1)}× the original (aim for about 0.8–1.5×)`,
+      );
+    }
+    const longest = sentences(rendered).reduce((max, s) => Math.max(max, wordCount(s)), 0);
+    if (longest > MAX_SENTENCE_WORDS) {
+      add(
+        "warning",
+        "long-sentence",
+        covers,
+        `a sentence has ${longest} words; split sentences over ${MAX_SENTENCE_WORDS} words, keeping every clause (task 025)`,
       );
     }
     if (original.includes("?") && !rendered.includes("?"))

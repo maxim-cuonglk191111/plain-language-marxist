@@ -5,10 +5,10 @@ import MiniSearch from "minisearch";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { termPattern } from "../lib/search";
 
-const LAYER = { o: "Original", p: "Plain English", e: "Explanation", v: "Vocabulary" } as const;
+const LAYER = { o: "Original", p: "Plain English", e: "Context", v: "Vocabulary" } as const;
 type Entry = DataSearch["entries"][number] & { id: number };
 /** A result opens the reader with the layer it was found in (task 023). */
-const SEARCH_LAYERS: Record<string, string> = { o: "original", p: "plain", e: "plain,explain" };
+const SEARCH_LAYERS: Record<string, string> = { o: "original", p: "plain", e: "plain,context" };
 
 const SNIPPET = 220;
 

@@ -86,7 +86,7 @@ test("'Original terms' swaps the Plain English wording only", async ({ page }) =
   expect(await original.innerText()).toBe(originalBefore);
 });
 
-test("term cards explain the term for newcomers", async ({ page }) => {
+test("term cards context the term for newcomers", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
   await page.locator("#p00013 .layer-original button.term").first().click();
   const card = page.getByRole("dialog");
@@ -109,9 +109,23 @@ test("kept terms in Plain English open cards and keep their wording", async ({ p
   await expect(page.getByRole("dialog")).toContainText("bound to a lord");
 });
 
-test("the Explanation layer shows a passage's explanations", async ({ page }) => {
-  await page.goto(`${DOC}?layers=explain#p00009`);
-  await expect(page.locator("#p00009 .layer-explain")).toContainText("Translation note");
+test("the Context layer shows a section explanation once, at the section's first row", async ({
+  page,
+}) => {
+  await page.goto(`${DOC}?layers=context#p00009`);
+  await expect(page.locator("#p00009 .layer-context")).toContainText("About this section");
+  await expect(page.locator(".layer-context .section-explanation")).toHaveCount(1);
+  await expect(page.locator("#p00013 .layer-context")).toContainText("Background");
+});
+
+test("translation notes sit with the Original, not in the Context layer", async ({ page }) => {
+  await page.goto(`${DOC}?layers=original#p00009`);
+  const note = page.locator("#p00009 .layer-original .text-note");
+  await note.locator("summary").click();
+  await expect(note).toContainText("That is, all written history");
+  await expect(page.locator("#p00009 .layer-context")).not.toContainText(
+    "That is, all written history",
+  );
 });
 
 test("vocabulary and search pages work", async ({ page }) => {
@@ -134,7 +148,7 @@ test.describe("without JavaScript", () => {
     );
     await expect(page.locator("#p00013 .layer-plain")).toContainText("capitalist class");
     await expect(page.locator(".layer-switch")).toBeHidden();
-    await expect(page.locator("#p00009 .layer-explain")).toContainText("Translation note");
+    await expect(page.locator("#p00009 .layer-context")).toContainText("About this section");
   });
 });
 

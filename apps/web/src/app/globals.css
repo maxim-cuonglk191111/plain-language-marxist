@@ -2017,3 +2017,34 @@ html:not([data-numbers="off"]):not([data-numbers="on"]):not([data-cols="1"]) .ro
   user-select: none;
   pointer-events: none;
 }
+
+/* ---------- Where a term appears (task 032 B) ---------- */
+.appears details {
+  margin: 0.4rem 0;
+}
+.appears summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+.appears-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4rem 0 0.8rem;
+}
+.appears-list li {
+  border-top: 1px solid var(--rule);
+  padding: 0.45rem 0;
+  font-size: 0.95rem;
+}
+.appears-list mark {
+  background: var(--highlight-strong);
+  color: var(--fg);
+  border-radius: 0.15em;
+  padding: 0 0.1em;
+}
+.appears-original {
+  font-family: var(--serif);
+}
+.term-card-more {
+  margin-top: 0.4rem;
+}

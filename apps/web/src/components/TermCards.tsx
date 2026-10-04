@@ -73,9 +73,12 @@ function positionFor(opener: HTMLElement, below?: Card): Card["position"] {
 export function TermCards({
   terms,
   context,
+  counts = {},
 }: {
   terms: DataTerm[];
   context: { workId: string; authors: string[] };
+  /** How often each term is marked in the texts (task 032 B concordance). */
+  counts?: Readonly<Record<string, number>>;
 }) {
   const [loaded, setLoaded] = useState<ReadonlyMap<string, DataTerm>>(
     () => new Map(terms.map((t) => [t.term, t])),
@@ -305,6 +308,7 @@ export function TermCards({
               choice={choiceFor(card.term)}
               inPlain={card.inPlain}
               full={stack.length >= MAX_CARDS}
+              appears={counts[card.term.term]}
               onChoose={(choice) =>
                 update({ ...prefs, perTerm: { ...prefs.perTerm, [card.term.term]: choice } })
               }
@@ -332,12 +336,14 @@ function TermCardBody({
   choice,
   inPlain,
   full,
+  appears,
   onChoose,
 }: {
   term: DataTerm;
   choice: TermChoice;
   inPlain: boolean;
   full: boolean;
+  appears: number | undefined;
   onChoose: (choice: TermChoice) => void;
 }) {
   const shown = term.renderings.find((r) => r.key === choice);
@@ -385,7 +391,17 @@ function TermCardBody({
           ))}
         </fieldset>
       )}
-      <a href={`/vocabulary/${term.term}/`}>More about this term</a>
+      <p className="term-card-more">
+        <a href={`/vocabulary/${term.term}/`}>More about this term</a>
+        {appears ? (
+          <>
+            {" · "}
+            <a href={`/vocabulary/${term.term}/#appears`}>
+              Appears {appears} {appears === 1 ? "time" : "times"} in the texts →
+            </a>
+          </>
+        ) : null}
+      </p>
     </>
   );
 }

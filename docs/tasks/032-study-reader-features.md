@@ -101,6 +101,13 @@ A → B → E (M1), then C and D with M3 content. Separate PRs. Each updates "Do
 
 ## Done
 
+### Part B — Where a term appears (2026-10-05)
+- **Term page:** a "Where this term appears (N)" section (`#appears`), grouped by work and chapter, with counts for each layer. Each line gives the reference ("Manifesto I.13"), a layer tag, about 70 characters each side with the word marked, and a link to `<chapter>?layers=<layer>&hl=<word>#<passage>`, so the passage opens in that layer with the word highlighted. Chapters with more than 30 lines in total start folded (`<details>`). Plain English lines are labelled as our version.
+- **Term card:** "More about this term · Appears N times in the texts →" links to that section.
+- **Same matching as the reader.** The term-mark matchers moved from `LayoutText` to `lib/termmarks.ts` (annotation ranges, kept-word surfaces, `findKept`), and `lib/concordance.ts` uses them too. Plain English tokens are wrapped in private-use markers before layout markup is removed, so their positions survive. An e2e test counts the "bourgeoisie" marks a reader sees in all four chapters (both layers) and checks the term page shows exactly that number.
+- **Built at build time** from the documents already loaded; the data contract is unchanged.
+- Test hardening on the way: two older tests (read-aloud start position, keyboard passage actions) now wait for the deep-link scroll or the page scripts, which made them flaky under load.
+
 ### Part A — Passage numbers and references (2026-10-05)
 - **Schema v3:** `work.yml` gains an optional `short_title` (one or two capitalised words; the Manifesto's is "Manifesto"). `plm migrate` step 2→3 restamps every content file, as task 022 did for v2; the JSON Schemas are regenerated. The data contract gains an optional `short_title` on works (backward-compatible).
 - **Format** (`apps/web/src/lib/reference.ts`, unit-tested): "Manifesto II.17". The chapter number is written as its heading writes it (Roman for the Manifesto); the passage number is the number in the ID. Rows covering several passages read "I.11–12".

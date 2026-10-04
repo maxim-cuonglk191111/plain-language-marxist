@@ -13,6 +13,7 @@ import { SearchHighlight } from "../../../components/SearchHighlight";
 import { TermCards } from "../../../components/TermCards";
 import { TocDrawer } from "../../../components/TocDrawer";
 import { WorkPage } from "../../../components/WorkPage";
+import { concordance } from "../../../lib/concordance";
 import { allDocuments, findDocument, getDocument, getIndex, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
 import {
@@ -158,6 +159,9 @@ function DocumentPage({
           <TermCards
             terms={terms}
             context={{ workId: entry.work.id, authors: entry.work.authors }}
+            counts={Object.fromEntries(
+              [...concordance(RENDERING)].map(([term, list]) => [term, list.length]),
+            )}
           />
         </div>
         {/* Without JavaScript, the contents; with it, the drawer in the reader bar replaces this. */}

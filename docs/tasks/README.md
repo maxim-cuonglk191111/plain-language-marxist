@@ -32,5 +32,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [024](024-nested-term-cards.md) | Clickable terms inside term cards (nested cards, up to 5) | M1 | Done |
 | [025](025-explanation-layer-policy.md) | Explanation layer: what it is for, how much to explain, and a plain-language review | M1 | In progress |
 | [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | In progress |
+| [027](027-quality-and-consistency-pass-ch01.md) | Quality, consistency and plain-language polish for Manifesto Chapter I | M1 | Done |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

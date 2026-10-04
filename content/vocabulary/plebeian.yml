@@ -5,7 +5,10 @@ original:
   pl: plebeians
 definition:
   short: An ordinary free citizen of ancient Rome, not from the noble patrician families.
-  long: "The plebeians were most of Rome’s citizens: farmers, craftsmen and traders. For centuries they fought the patricians for political rights."
+  long: |-
+    Pronounced plih-BEE-uhn (/plɪˈbiːən/).
+
+    The plebeians were most of Rome’s citizens: farmers, craftsmen and traders. For centuries they fought the patricians for political rights.
 example:
   document: document:marx:1848:communist-manifesto:ch01
   passage: p00011

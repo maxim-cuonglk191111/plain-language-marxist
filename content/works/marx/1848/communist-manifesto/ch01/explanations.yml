@@ -2,31 +2,6 @@ schema_version: 2
 document: document:marx:1848:communist-manifesto:ch01
 explanations:
   e001:
-    kind: translation_note
-    targets: [p00017]
-    text: The source here reads "Even manufacturer no longer sufficed". Moore's 1888 translation has "manufacture", the system of hand production in workshops, which is what the sentence is about. The Plain English follows "manufacture".
-    ai_assisted: true
-  e002:
-    kind: translation_note
-    targets: [p00034]
-    text: The source here reads "a social and political constitution adapted in it". Moore's 1888 translation has "adapted to it". The Plain English follows "adapted to it".
-    ai_assisted: true
-  e003:
-    kind: translation_note
-    targets: [p00035]
-    text: The source here reads "the conditions for the existence of the bourgeois and of its rule". Moore's 1888 translation has "the bourgeoisie". The Plain English follows "the bourgeoisie", as "its rule" requires.
-    ai_assisted: true
-  e004:
-    kind: translation_note
-    targets: [p00055]
-    text: The source here reads "modern industry labour". Moore's 1888 translation has "modern industrial labour". The Plain English follows "industrial labour".
-    ai_assisted: true
-  e005:
-    kind: translation_note
-    targets: [p00060]
-    text: The source here reads "instead of rising with the process of industry". Moore's 1888 translation has "the progress of industry". The Plain English follows "progress".
-    ai_assisted: true
-  e014:
     kind: historical_context
     targets: [p00002]
     text: |-
@@ -34,33 +9,83 @@ explanations:
 
       The “German police spies” were agents who watched communist exiles living abroad.
     ai_assisted: true
-  e015:
+  e002:
+    kind: translation_note
+    targets: [p00002]
+    text: Moore's 1888 translation uses “spectre”. The Plain English uses the common word “ghost”. In 1848, European rulers treated communism as a frightening shadow hanging over them.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00010]
+    text: These pairs span three historical eras. They contrast ancient slave societies, medieval feudalism, and modern capitalism.
+    ai_assisted: true
+  e004:
     kind: historical_context
     targets: [p00015]
     text: The Cape is the Cape of Good Hope, at the southern tip of Africa. Portuguese sailors first sailed around it in 1488. This opened a sea route from Europe to India and China.
     ai_assisted: true
-  e016:
+  e005:
+    kind: translation_note
+    targets: [p00017]
+    text: The source here reads "Even manufacturer no longer sufficed". Moore's 1888 translation has "manufacture", the system of hand production in workshops, which is what the sentence is about. The Plain English follows "manufacture".
+    ai_assisted: true
+  e006:
+    kind: historical_context
+    targets: [p00020]
+    text: In France before the 1789 Revolution, society was divided into three “estates” or orders. The clergy was the First Estate. The nobility was the Second Estate. The Third Estate was everyone else, including peasants, workers and the rising bourgeoisie.
+    ai_assisted: true
+  e007:
     kind: historical_context
     targets: [p00025]
     text: The Exodus is the Bible story of the people of Israel leaving Egypt. The crusades were wars fought by European armies in the Middle East between 1096 and 1291.
     ai_assisted: true
-  e017:
+  e008:
     kind: historical_context
     targets: [p00029]
     text: The image recalls the Great Wall of China and China’s limits on foreign trade. In the Opium War of 1839–1842, Britain forced China to open its ports.
     ai_assisted: true
-  e018:
+  e009:
+    kind: translation_note
+    targets: [p00030]
+    text: Moore translates the German word “Idiotismus” as “idiocy”. In German at the time, the word could also mean the isolation of private life, from the Greek idiōtēs, a private person. Some scholars read it that way here. The Plain English follows Moore.
+    ai_assisted: true
+  e010:
+    kind: translation_note
+    targets: [p00034]
+    text: The source here reads "a social and political constitution adapted in it". Moore's 1888 translation has "adapted to it". The Plain English follows "adapted to it".
+    ai_assisted: true
+  e011:
+    kind: translation_note
+    targets: [p00035]
+    text: The source here reads "the conditions for the existence of the bourgeois and of its rule". Moore's 1888 translation has "the bourgeoisie". The Plain English follows "the bourgeoisie", as "its rule" requires.
+    ai_assisted: true
+  e012:
     kind: historical_context
     targets: [p00046]
     text: In Britain, workers’ “combinations” were against the law until 1824. After that, trade unions grew quickly, although strikes were still often punished.
     ai_assisted: true
-  e019:
+  e013:
     kind: historical_context
     targets: [p00048]
     text: The Ten Hours Act was passed by the British Parliament in 1847. It limited the working day of women and young people in textile mills to ten hours. Many landowners in Parliament supported it, partly in a quarrel with the factory owners.
     ai_assisted: true
-  e020:
+  e014:
     kind: translation_note
-    targets: [p00030]
-    text: Moore translates the German word “Idiotismus” as “idiocy”. In German at the time, the word could also mean the isolation of private life, from the Greek idiōtēs, a private person. Some scholars read it that way here. The Plain English follows Moore.
+    targets: [p00054]
+    text: The source adds "[lumpenproletariat]" in square brackets next to Moore's "dangerous class". This was the German word Marx and Engels used. The Plain English renders it with a term card.
+    ai_assisted: true
+  e015:
+    kind: translation_note
+    targets: [p00055]
+    text: The source here reads "modern industry labour". Moore's 1888 translation has "modern industrial labour". The Plain English follows "industrial labour".
+    ai_assisted: true
+  e016:
+    kind: translation_note
+    targets: [p00060]
+    text: The source here reads "instead of rising with the process of industry". Moore's 1888 translation has "the progress of industry". The Plain English follows "progress".
+    ai_assisted: true
+  e017:
+    kind: historical_context
+    targets: [p00063]
+    text: A “gens” (plural “gentes”) was a clan whose members traced their descent from a common ancestor. Lewis Henry Morgan studied this kinship system in indigenous North American nations. He showed that early societies governed themselves through these clans without a state or private property.
     ai_assisted: true

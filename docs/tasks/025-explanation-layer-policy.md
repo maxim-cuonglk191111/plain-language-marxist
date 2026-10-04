@@ -53,7 +53,9 @@ The layer exists to help readers **understand** (SDD §1, §5.7): historical con
   - Add a `plm` check warning for Plain English sentences over 35 words, so new drafts are caught.
 - **Term cards** already meet STYLE §15 (task 022) and are waiting for an audience read.
 
-## Proposed sections for Ch. I
+## Proposed sections for Ch. I *(historical draft — dropped)*
+
+> **Note (2026-10-04 maintainer review):** Section summaries were initially drafted below, but were dropped because they duplicated the Plain English layer and read like generic AI summaries. The Context layer now provides selective passage background notes only.
 
 | # | Passages | Section | What the explanation covers |
 |---|---|---|---|

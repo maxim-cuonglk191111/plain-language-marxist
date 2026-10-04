@@ -84,9 +84,9 @@ renderings:
   p00014:
     covers: [p00014]
     based_on: sha256:02b2700b7a464c3034f5c0b2c07c813c1f9b95b8bd9ae8c708b439accd3153b8
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: From the serfs of the Middle Ages came the burghers of the earliest towns, who held rights granted by charter. From these burghers grew the first beginnings of the {bourgeoisie}.
+    text: From the serfs of the Middle Ages came the chartered burghers of the earliest towns. From these burghers grew the first beginnings of the {bourgeoisie}.
   p00015:
     covers: [p00015]
     based_on: sha256:6303470435d50b126ae09baa0a04b5526e89659837346cb78ea52beba6ea9cf2
@@ -327,9 +327,9 @@ renderings:
   p00054:
     covers: [p00054]
     based_on: sha256:38c6e7f06f337872cb9eb11c348e634383cd2d108ab0eccb71ea3af05bfd8758
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: The “dangerous class”, [<i>lumpenproletariat</i>] the social scum, is that passively rotting mass thrown off by the lowest layers of the old society. Here and there it may be swept into the movement by a revolution of the {proletariat}. Its conditions of life, however, prepare it far more for the role of a bribed tool of reactionary plotting.
+    text: The “dangerous class”, the {lumpenproletariat}, the social scum, is that passively rotting mass thrown off by the lowest layers of the old society. Here and there it may be swept into the movement by a revolution of the {proletariat}. Its conditions of life, however, prepare it far more for the role of a bribed tool of reactionary plotting.
   p00055:
     covers: [p00055]
     based_on: sha256:0919211468f6969598fa8ceeffe939396462ea4089a2e80116f08a0b5e27ddf4
@@ -375,12 +375,12 @@ renderings:
   p00062:
     covers: [p00062]
     based_on: sha256:30eabc1d1730430ee129a4427f8313f5a4fbaab3e5f5ae471aae3025f717630c
-    revision: 1
+    revision: 2
     ai_assisted: true
     text: |
-      By bourgeoisie is meant the class of modern capitalists, owners of the means of social production and employers of wage labour.
+      By bourgeoisie is meant the class of modern capitalists: the owners of the means of social production and employers of wage labour.
 
-      By proletariat, the class of modern wage labourers who, having no means of production of their own, are reduced to selling their labour power in order to live. [Engels, 1888 English edition]
+      By proletariat is meant the class of modern wage labourers. Having no means of production of their own, they are reduced to selling their labour power in order to live. [Engels, 1888 English edition]
   p00063:
     covers: [p00063]
     based_on: sha256:6cec295564193ee8b2499facc3f69ffac3cb015a31bff720d76928b5586ee4aa

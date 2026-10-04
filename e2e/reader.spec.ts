@@ -61,7 +61,7 @@ test("a deep link to the second passage of a multi-passage rendering reaches its
 
 test("term cards open from both layers", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
-  await page.locator("#p00013 .layer-plain button.term:not([data-kept])").first().click();
+  await page.locator("#p00013 .layer-plain a.term:not([data-kept])").first().click();
   const card = page.getByRole("dialog");
   await expect(card).toContainText("bourgeoisie");
   await expect(card).toContainText("Why this wording?");
@@ -69,7 +69,7 @@ test("term cards open from both layers", async ({ page }) => {
   await page.keyboard.press("Escape");
   await expect(card).toBeHidden();
 
-  await page.locator("#p00013 .layer-original button.term").first().focus();
+  await page.locator("#p00013 .layer-original a.term").first().focus();
   await page.keyboard.press("Enter");
   await expect(page.getByRole("dialog")).toContainText("bourgeoisie");
 });
@@ -88,19 +88,19 @@ test("'Original terms' swaps the Plain English wording only", async ({ page }) =
 
 test("term cards context the term for newcomers", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
-  await page.locator("#p00013 .layer-original button.term").first().click();
+  await page.locator("#p00013 .layer-original a.term").first().click();
   const card = page.getByRole("dialog");
   await expect(card).toContainText("Common mix-up");
   await expect(card.locator(".term-example blockquote")).toBeVisible();
   // In a card, related terms open nested cards (task 024).
-  await expect(card.locator(".term-related button[data-term-link]").first()).toBeVisible();
+  await expect(card.locator(".term-related a[data-term-link]").first()).toBeVisible();
   await card.getByText("Read more").click();
   await expect(card.locator(".term-more p").first()).toBeVisible();
 });
 
 test("kept terms in Plain English open cards and keep their wording", async ({ page }) => {
   await page.goto(`${DOC}?view=plain#p00010`);
-  const serf = page.locator('#p00010 .layer-plain button.term[data-term="serf"]');
+  const serf = page.locator('#p00010 .layer-plain a.term[data-term="serf"]');
   await expect(serf).toHaveText("serf");
   await expect(serf).toHaveAttribute("data-kept", "1");
   await page.getByRole("button", { name: "Original terms" }).click();
@@ -154,7 +154,7 @@ test.describe("without JavaScript", () => {
 
 test("@mobile the reader and term card work on a phone", async ({ page }) => {
   await page.goto(`${DOC}?view=plain#p00013`);
-  await page.locator("#p00013 .layer-plain button.term:not([data-kept])").first().click();
+  await page.locator("#p00013 .layer-plain a.term:not([data-kept])").first().click();
   const card = page.getByRole("dialog");
   await expect(card).toBeVisible();
   const box = await card.boundingBox();

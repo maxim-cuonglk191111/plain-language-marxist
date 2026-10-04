@@ -11,7 +11,7 @@ async function openNested(page: Page): Promise<string> {
   const open = await cards(page).evaluateAll((els) =>
     els.map((el) => el.getAttribute("aria-label")?.split(": ").pop() ?? ""),
   );
-  const links = top(page).locator("button.term-link:not(:disabled):visible");
+  const links = top(page).locator("a.term-link:visible");
   const count = await links.count();
   for (let i = 0; i < count; i++) {
     const link = links.nth(i);
@@ -35,7 +35,7 @@ async function clickOutside(page: Page) {
 
 async function openFirstCard(page: Page) {
   await page.goto(`${DOC}?view=original#p00013`);
-  await page.locator("#p00013 .layer-original button.term").first().click();
+  await page.locator("#p00013 .layer-original a.term").first().click();
   await expect(cards(page)).toHaveCount(1);
 }
 
@@ -62,7 +62,7 @@ test("at most 5 cards; the fifth card's terms are not clickable; 5 clicks close 
   await openFirstCard(page);
   for (let i = 2; i <= 5; i++) await openNested(page);
   await expect(cards(page)).toHaveCount(5);
-  await expect(top(page).locator("button.term-link:not(:disabled)")).toHaveCount(0);
+  await expect(top(page).locator("a.term-link")).toHaveCount(0);
   await expect(top(page)).toContainText("Close a card to open more");
 
   for (let left = 4; left >= 0; left--) {
@@ -94,7 +94,7 @@ test("the trail returns to an earlier card, and an open term is not opened twice
 
   // A link back to a term already in the stack closes down to it instead of opening a copy.
   await openNested(page);
-  const back = top(page).locator("button.term-link:visible", { hasText: firstName ?? "" });
+  const back = top(page).locator("a.term-link:visible", { hasText: firstName ?? "" });
   if ((await back.count()) > 0) {
     await back.first().click();
     await expect(cards(page)).toHaveCount(1);
@@ -119,7 +119,7 @@ test("@mobile nested cards stack as bottom sheets; tapping outside closes one", 
   page,
 }) => {
   await page.goto(`${DOC}?view=original#p00013`);
-  await page.locator("#p00013 .layer-original button.term").first().click();
+  await page.locator("#p00013 .layer-original a.term").first().click();
   await openNested(page);
   await expect(cards(page)).toHaveCount(2);
   const box = await top(page).boundingBox();

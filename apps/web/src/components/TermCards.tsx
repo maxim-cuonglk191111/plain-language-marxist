@@ -169,9 +169,11 @@ export function TermCards({
     if (el?.isConnected) el.focus();
   }, [stack]);
 
-  // Term buttons in the text open a fresh card; term links inside the top card open a nested one.
+  // Term marks in the text open a fresh card; term links inside the top card open a nested one.
+  // Marks are links (task 026): a modified or middle click still opens the vocabulary page.
   useEffect(() => {
     const onClick = async (e: MouseEvent) => {
+      if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
       const target = e.target as HTMLElement | null;
       const link = target?.closest<HTMLElement>("[data-term-link]");
       if (link && topRef.current?.contains(link)) {
@@ -193,14 +195,15 @@ export function TermCards({
         ]);
         return;
       }
-      const button = target?.closest<HTMLElement>("button.term[data-term]");
+      const button = target?.closest<HTMLElement>("a.term[data-term]");
       if (!button) return;
+      const term = loaded.get(button.dataset["term"] ?? "");
+      if (!term) return; // no card data: let the link open the vocabulary page
+      e.preventDefault();
       if (closedByPointer.current) {
         closedByPointer.current = false;
         if (stackRef.current.length > 0) return; // that click only closed one of several cards
       }
-      const term = loaded.get(button.dataset["term"] ?? "");
-      if (!term) return;
       setStack([
         {
           term,

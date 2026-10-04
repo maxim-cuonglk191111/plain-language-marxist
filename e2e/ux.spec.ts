@@ -40,9 +40,9 @@ test("search marks the words it matched, and the reader highlights them on arriv
 
 test("an open card dims the page and the cards below it", async ({ page }) => {
   await page.goto(`${DOC}?layers=original#p00013`);
-  await page.locator("#p00013 .layer-original button.term").first().click();
+  await page.locator("#p00013 .layer-original a.term").first().click();
   await expect(page.locator(".term-backdrop")).toBeVisible();
-  await page.getByRole("dialog").locator("button.term-link:visible").first().click();
+  await page.getByRole("dialog").locator("a.term-link:visible").first().click();
   await expect(page.getByRole("dialog")).toHaveCount(2);
   const filter = await page
     .getByRole("dialog")

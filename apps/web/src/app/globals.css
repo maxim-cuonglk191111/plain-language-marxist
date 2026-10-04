@@ -473,13 +473,10 @@ html:not([data-layers]) .term-pref {
 }
 
 /* ---------- Terms (SDD §12): subtle dotted underline, still selectable text ---------- */
-button.term {
-  font: inherit;
+/* Marks are links, not buttons, so page translators keep sentences whole (task 026). */
+a.term,
+a.term:visited {
   color: inherit;
-  background: none;
-  border: 0;
-  padding: 0;
-  margin: 0;
   cursor: help;
   text-decoration: underline dotted;
   text-decoration-color: var(--muted);
@@ -487,7 +484,7 @@ button.term {
   user-select: text;
   -webkit-user-select: text;
 }
-button.term:hover {
+a.term:hover {
   text-decoration-color: var(--accent);
 }
 
@@ -564,21 +561,18 @@ button.term:hover {
   margin: 0 0 0.6rem;
 }
 /* Terms inside a card open a nested card (task 024). */
-.term-link {
-  font: inherit;
+.term-link,
+.term-link:visited {
   color: inherit;
-  background: none;
-  border: 0;
-  padding: 0;
   cursor: pointer;
   text-decoration: underline dotted;
   text-decoration-color: var(--muted);
   text-underline-offset: 0.2em;
 }
-.term-link:hover:not(:disabled) {
+.term-link:hover:not(.term-link-off) {
   text-decoration-color: var(--accent);
 }
-.term-link:disabled {
+.term-link-off {
   cursor: default;
   text-decoration: none;
 }
@@ -704,7 +698,7 @@ html[data-size="xl"] {
 html[data-leading="relaxed"] body {
   line-height: 1.9;
 }
-html[data-terms="off"] button.term {
+html[data-terms="off"] a.term {
   text-decoration: none;
   cursor: inherit;
 }

@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -37,3 +37,22 @@ Readers whose first language is not English often turn on the browser's page tra
 - With Chrome's "Translate to Vietnamese" on a phone, a paragraph with terms translates as one sentence. Spaces around terms are kept, with no "Cáigiai cấp tư bảnđã" fragments. Checked by hand on the deployed preview, with a before/after screenshot here.
 - Automated check (e2e): no term mark in the text is a `<button>`, every paragraph's text keeps a space on each side of each term (`innerText` reads as one sentence), and a term link opens its card with JS and navigates to `/vocabulary/<term>/` without JS.
 - Cards, nested cards (task 024), "Original terms", keyboard use and axe all still pass.
+
+## Progress (2026-10-04)
+**Built.** The last step is a manual check by the maintainer: Chrome's "Translate to Vietnamese" on a phone, against the preview.
+
+- **Term marks are now inline links.** This covers Original annotations, Plain English tokens and kept terms (`LayoutText`), and term links in cards and related terms (`TermDetails`).
+  - Each mark is `<a class="term" href="/vocabulary/<term>/" aria-haspopup="dialog">`.
+  - In the fifth card of a stack, mentioned terms are plain text, since a link cannot be disabled.
+  - Inside a link from the source, terms are left unmarked, because links cannot nest.
+- **`TermCards`:**
+  - It opens the card on a plain click.
+  - Ctrl/Cmd, Shift or middle click opens the vocabulary page as a normal link.
+  - Without JavaScript, every mark opens its vocabulary page.
+- **Same look:** the dotted underline is unchanged. Link colour and visited colour are overridden.
+- **e2e** (`translate.spec.ts`):
+  - no buttons inside text blocks;
+  - every mark keeps the spaces of its sentence (neighbouring text ends or starts with a space or punctuation);
+  - links open cards with JS and vocabulary pages without.
+
+  All other suites were updated to the link selectors, and 64 tests pass.

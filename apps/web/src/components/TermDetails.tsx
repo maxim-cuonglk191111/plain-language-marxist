@@ -26,6 +26,38 @@ function paragraphs(text: string): { text: string; start: number }[] {
   return out;
 }
 
+/**
+ * A term mentioned in a card. Always an inline link, never a button, so page
+ * translators keep the sentence whole (task 026). In a card, TermCards opens a
+ * nested card on click; in the last card allowed it is plain text.
+ */
+function CardLink({
+  term,
+  mode,
+  children,
+}: {
+  term: string;
+  mode: TermLinkMode;
+  children: ReactNode;
+}) {
+  if (mode.kind === "card" && mode.full)
+    return (
+      <span className="term-link term-link-off" title="Close a card to open more">
+        {children}
+      </span>
+    );
+  return (
+    <a
+      href={`/vocabulary/${term}/`}
+      className={mode.kind === "card" ? "term-link" : undefined}
+      data-term-link={mode.kind === "card" ? term : undefined}
+      aria-haspopup={mode.kind === "card" ? "dialog" : undefined}
+    >
+      {children}
+    </a>
+  );
+}
+
 /** A piece of card text with its term links; `offset` is where it starts in the field. */
 function MarkedText({
   text,
@@ -48,22 +80,9 @@ function MarkedText({
     parts.push(text.slice(at, s));
     const word = text.slice(s, e);
     parts.push(
-      mode.kind === "page" ? (
-        <a key={s} href={`/vocabulary/${l.term}/`}>
-          {word}
-        </a>
-      ) : (
-        <button
-          key={s}
-          type="button"
-          className="term-link"
-          data-term-link={l.term}
-          disabled={mode.full}
-          title={mode.full ? "Close a card to open more" : undefined}
-        >
-          {word}
-        </button>
-      ),
+      <CardLink key={s} term={l.term} mode={mode}>
+        {word}
+      </CardLink>,
     );
     at = e;
   }
@@ -100,20 +119,11 @@ export function TermDetails({
         </p>
       ))
     : [];
-  const related = (r: { term: string; name: string }) =>
-    mode.kind === "page" ? (
-      <a href={`/vocabulary/${r.term}/`}>{r.name}</a>
-    ) : (
-      <button
-        type="button"
-        className="term-link"
-        data-term-link={r.term}
-        disabled={mode.full}
-        title={mode.full ? "Close a card to open more" : undefined}
-      >
-        {r.name}
-      </button>
-    );
+  const related = (r: { term: string; name: string }) => (
+    <CardLink term={r.term} mode={mode}>
+      {r.name}
+    </CardLink>
+  );
   return (
     <>
       {term.not_to_confuse && (

@@ -61,10 +61,12 @@ export function LayoutText({
       : [];
   let offset = 0;
 
-  const renderText = (value: string, key: number): ReactNode => {
+  // Inside a link from the source, terms are not marked: links cannot nest.
+  const renderText = (value: string, key: number, inLink: boolean): ReactNode => {
     const start = offset;
     offset += value.length;
-    if (terms.kind === "tokens") return renderTokens(value, key, terms);
+    if (terms.kind === "tokens") return renderTokens(value, key, terms, inLink);
+    if (inLink) return value;
     const inside = ranges.filter((r) => r.start >= start && r.end <= start + value.length);
     if (inside.length === 0) return value;
     const parts: ReactNode[] = [];
@@ -72,9 +74,9 @@ export function LayoutText({
     for (const r of inside) {
       parts.push(value.slice(at, r.start - start));
       parts.push(
-        <button key={`${key}-${r.start}`} type="button" className="term" data-term={r.term}>
+        <TermMark key={`${key}-${r.start}`} term={r.term}>
           {value.slice(r.start - start, r.end - start)}
-        </button>,
+        </TermMark>,
       );
       at = r.end - start;
     }
@@ -83,7 +85,7 @@ export function LayoutText({
   };
 
   const isTable = parsed.nodes.some((n) => n.type === "tr");
-  const children = renderNodes(parsed.nodes, footnotes, renderText);
+  const children = renderNodes(parsed.nodes, footnotes, renderText, false);
   return isTable ? (
     <div className="table-wrap">
       <table>
@@ -92,6 +94,43 @@ export function LayoutText({
     </div>
   ) : (
     <>{children}</>
+  );
+}
+
+/**
+ * A marked term. It is an inline link, not a button: page translators (Chrome,
+ * Safari, Edge) translate a button apart from its sentence and drop the spaces
+ * around it, while a link stays part of the sentence (task 026). With JavaScript
+ * TermCards opens the card instead; without it the link opens the vocabulary page.
+ */
+function TermMark({
+  term,
+  kept,
+  form,
+  cap,
+  pin,
+  children,
+}: {
+  term: string;
+  kept?: boolean;
+  form?: string | undefined;
+  cap?: boolean;
+  pin?: string | undefined;
+  children: ReactNode;
+}) {
+  return (
+    <a
+      className="term"
+      href={`/vocabulary/${term}/`}
+      aria-haspopup="dialog"
+      data-term={term}
+      data-kept={kept ? "1" : undefined}
+      data-form={form}
+      data-cap={cap ? "1" : undefined}
+      data-pin={pin}
+    >
+      {children}
+    </a>
   );
 }
 
@@ -138,15 +177,9 @@ function markKept(value: string, key: string, surfaces: readonly Surface[]): Rea
   for (const r of found) {
     parts.push(value.slice(at, r.start));
     parts.push(
-      <button
-        key={`${key}-${r.start}`}
-        type="button"
-        className="term"
-        data-term={r.term}
-        data-kept="1"
-      >
+      <TermMark key={`${key}-${r.start}`} term={r.term} kept>
         {value.slice(r.start, r.end)}
-      </button>,
+      </TermMark>,
     );
     at = r.end;
   }
@@ -158,29 +191,23 @@ function renderTokens(
   value: string,
   key: number,
   terms: Extract<TermMarking, { kind: "tokens" }>,
+  plain = false,
 ): ReactNode {
   const parsed = parseTokens(value);
   if (!parsed.ok) return value;
   const surfaces = keptSurfaces(terms.vocabulary);
   return parsed.segments.map((s, i) => {
-    if (s.kind === "text") return markKept(s.value, `${key}-${i}`, surfaces);
+    if (s.kind === "text") return plain ? s.value : markKept(s.value, `${key}-${i}`, surfaces);
     const term = terms.vocabulary.get(s.term);
     const word = term
       ? formFor(term, resolveChoice(term, terms.context, s.pin), s.form)
       : undefined;
     const shown = word === undefined ? s.raw : s.capitalize ? capitalizeFirst(word) : word;
+    if (plain) return shown;
     return (
-      <button
-        key={`${key}-${i}`}
-        type="button"
-        className="term"
-        data-term={s.term}
-        data-form={s.form}
-        data-cap={s.capitalize ? "1" : undefined}
-        data-pin={s.pin}
-      >
+      <TermMark key={`${key}-${i}`} term={s.term} form={s.form} cap={s.capitalize} pin={s.pin}>
         {shown}
-      </button>
+      </TermMark>
     );
   });
 }
@@ -188,13 +215,15 @@ function renderTokens(
 function renderNodes(
   nodes: readonly LayoutNode[],
   footnotes: ReadonlyMap<string, string>,
-  renderText: (value: string, key: number) => ReactNode,
+  renderText: (value: string, key: number, inLink: boolean) => ReactNode,
+  inLink: boolean,
 ): ReactNode[] {
-  const inner = (list: readonly LayoutNode[]) => renderNodes(list, footnotes, renderText);
+  const inner = (list: readonly LayoutNode[], link = inLink) =>
+    renderNodes(list, footnotes, renderText, link);
   return nodes.map((node, i) => {
     switch (node.type) {
       case "text":
-        return renderText(node.value, i);
+        return renderText(node.value, i, inLink);
       case "i":
         return <i key={i}>{inner(node.children)}</i>;
       case "b":
@@ -212,7 +241,7 @@ function renderNodes(
       case "a":
         return (
           <a key={i} href={node.href}>
-            {inner(node.children)}
+            {inner(node.children, true)}
           </a>
         );
       case "br":

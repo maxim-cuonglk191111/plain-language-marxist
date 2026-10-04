@@ -38,7 +38,21 @@ Complete, reviewed Plain English for Ch. I. This chapter is the project's first 
 
 The Moore readings come from the drafter's knowledge of the 1888 text. **Check them against a scan before publishing.**
 
+**Plainer vocabulary (2026-10-04).** The maintainer asked whether not knowing "spectre" meant their English was weak. It does not: the word is rare and literary. A pass over the drafts replaced words that readers learning English would need a dictionary for, while keeping every image and claim. STYLE rule 9 was updated to match.
+
+| Passage | Before | After |
+|---|---|---|
+| p00002, p00006 | spectre, cast out | ghost, drive out |
+| p00022 | idyllic, ecstasies, chivalrous, unscrupulous, veiled, substituted | peaceful old, joys, knightly, heartless, hidden, put in place of |
+| p00023 | reverent awe | deep respect |
+| p00028 | cosmopolitan, interdependence | worldwide, dependence of all nations on each other |
+| p00032 | canalisation, an inkling | turning rivers into canals, suspected |
+| p00039 | appendage, knack, repulsive, toil | attachment, skill, unpleasant, hard work |
+| p00040 | despotism, embittering | tyranny, bitter |
+| p00060 | pauper, pauperism, antagonism | sinks into extreme poverty, poverty, opposition |
+
 **Check warnings left, each explained:**
+- **p00006 `names`, "Spectre".** Capitalised in the source as part of "the Spectre of Communism", but not a name; now "the Ghost of Communism".
 - **p00028 `names`, "Reactionists".** This is a capitalised common noun, not a name; it is rendered as "reactionaries".
 - **p00038 `gloss`.** "the {bourgeoisie}, that is, capital" is the source's own "i.e., capital", not an added definition.
 

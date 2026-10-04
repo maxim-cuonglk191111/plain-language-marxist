@@ -12,9 +12,9 @@ renderings:
   p00002:
     covers: [p00002]
     based_on: sha256:270372207396296a862ecbb6b791ad93a1e36398ea50b00b3168a0a293ee8642
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: "A spectre is haunting Europe — the spectre of communism. All the powers of old Europe have joined in a holy alliance to cast out this spectre: Pope and Tsar, Metternich and Guizot, French Radicals and German police spies."
+    text: "A ghost is haunting Europe — the ghost of communism. All the powers of old Europe have joined in a holy alliance to drive out this ghost: Pope and Tsar, Metternich and Guizot, French Radicals and German police spies."
   p00003:
     covers: [p00003]
     based_on: sha256:9e7adb74c8c4f0e4d9ceff2ec9cfdba01a73065d500234e6b426639f1107273b
@@ -36,9 +36,9 @@ renderings:
   p00006:
     covers: [p00006]
     based_on: sha256:54907fb6f5566f902dcff84e953b9afca1143c5aa3f0db701d04e376b8a519a3
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: <indent level="1"/>II. It is high time that Communists openly, in front of the whole world, published their views, their aims, their tendencies, and answered this fairy tale of the Spectre of Communism with a manifesto of the party itself.
+    text: <indent level="1"/>II. It is high time that Communists openly, in front of the whole world, published their views, their aims, their tendencies, and answered this fairy tale of the Ghost of Communism with a manifesto of the party itself.
   p00007:
     covers: [p00007]
     based_on: sha256:fa9c749b10981c8775c374345b1672c75d74fe68a4bbcbe67975c27da0f6cdf8
@@ -132,15 +132,15 @@ renderings:
   p00022:
     covers: [p00022]
     based_on: sha256:98b29afe4e68e44400f0e84285c084a691c85278413d196dc2695a5b43ecc585
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Wherever the {bourgeoisie} has gained the upper hand, it has put an end to all feudal, patriarchal, idyllic relations. It has mercilessly torn apart the varied feudal ties that bound man to his “natural superiors”, and has left no other bond between man and man than naked self-interest, than unfeeling “cash payment”. It has drowned the most heavenly ecstasies of religious passion, of chivalrous enthusiasm, of narrow-minded sentimentality, in the icy water of selfish calculation. It has reduced personal worth to exchange value, and in place of the countless chartered freedoms that could not be taken away, it has set up that single, unscrupulous freedom — Free Trade. In one word, for exploitation veiled by religious and political illusions, it has substituted naked, shameless, direct, brutal exploitation.
+    text: Wherever the {bourgeoisie} has gained the upper hand, it has put an end to all feudal, patriarchal, peaceful old relations. It has mercilessly torn apart the varied feudal ties that bound man to his “natural superiors”, and has left no other bond between man and man than naked self-interest, than unfeeling “cash payment”. It has drowned the most heavenly joys of religious passion, of knightly enthusiasm, of narrow-minded sentimentality, in the icy water of selfish calculation. It has reduced personal worth to exchange value, and in place of the countless chartered freedoms that could not be taken away, it has set up that single, heartless freedom — Free Trade. In one word, in place of exploitation hidden by religious and political illusions, it has put naked, shameless, direct, brutal exploitation.
   p00023:
     covers: [p00023]
     based_on: sha256:a35a6ddb130205ec4f99fc5b2c92aff1921ef813547b20aa5c00625502af2c88
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The {bourgeoisie} has stripped the halo from every occupation that was until now honoured and looked up to with reverent awe. It has turned the doctor, the lawyer, the priest, the poet, the scientist into its paid wage labourers.
+    text: The {bourgeoisie} has stripped the halo from every occupation that was until now honoured and looked up to with deep respect. It has turned the doctor, the lawyer, the priest, the poet, the scientist into its paid wage labourers.
   p00024:
     covers: [p00024]
     based_on: sha256:fd14ca99ef87c8c7ce8aed58a2a0b23a5bf2af011aae9dc0477c640e79ec4c9c
@@ -168,9 +168,9 @@ renderings:
   p00028:
     covers: [p00028]
     based_on: sha256:43de34b5103d56cc9963058b02aef5f5bc2acee7510edeb40703e120c1d56292
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Through its exploitation of the world market, the {bourgeoisie} has given a cosmopolitan character to production and consumption in every country. To the great annoyance of reactionaries, it has pulled out from under the feet of industry the national ground on which it stood. All old-established national industries have been destroyed or are being destroyed every day. They are pushed out by new industries, whose introduction becomes a life-and-death question for all civilised nations — by industries that no longer process local raw material, but raw material brought from the remotest regions; industries whose products are consumed not only at home, but in every part of the globe. In place of the old needs, satisfied by the country's own production, we find new needs, which require the products of distant lands and climates to satisfy them. In place of the old local and national isolation and self-sufficiency, we have exchange in every direction, the universal interdependence of nations. And as in material production, so also in intellectual production. The intellectual creations of individual nations become common property. National one-sidedness and narrow-mindedness become more and more impossible, and from the many national and local literatures there arises a world literature.
+    text: Through its exploitation of the world market, the {bourgeoisie} has given production and consumption in every country a worldwide character. To the great annoyance of reactionaries, it has pulled out from under the feet of industry the national ground on which it stood. All old-established national industries have been destroyed or are being destroyed every day. They are pushed out by new industries, whose introduction becomes a life-and-death question for all civilised nations — by industries that no longer use local raw material, but raw material brought from the most distant regions; industries whose products are used not only at home, but in every part of the globe. In place of the old needs, satisfied by the country's own production, we find new needs, which require the products of distant lands and climates to satisfy them. In place of the old local and national isolation and self-sufficiency, we have trade and contact in every direction, the dependence of all nations on each other. And as in material production, so also in intellectual production. The intellectual creations of individual nations become common property. National one-sidedness and narrow-mindedness become more and more impossible, and from the many national and local literatures there arises a world literature.
   p00029:
     covers: [p00029]
     based_on: sha256:20e697bf141b81c8404bee434d809875f7e1c12cccea95ebe9e0185b2bb23cba
@@ -192,9 +192,9 @@ renderings:
   p00032:
     covers: [p00032]
     based_on: sha256:bc1429c6de01cb1da34446735b69881e46fec2f2daa786613e4defff76cc965a
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: During its rule of barely one hundred years, the {bourgeoisie} has created more massive and more colossal productive forces than all preceding generations together. Subjection of Nature's forces to man, machinery, application of chemistry to industry and agriculture, steam navigation, railways, electric telegraphs, clearing of whole continents for farming, canalisation of rivers, whole populations conjured out of the ground — what earlier century had even an inkling that such productive forces slept in the lap of social labour?
+    text: During its rule of barely one hundred years, the {bourgeoisie} has created more massive and more colossal productive forces than all earlier generations together. Bringing Nature's forces under human control, machinery, the use of chemistry in industry and farming, steamships, railways, electric telegraphs, the clearing of whole continents for farming, the turning of rivers into canals, whole populations conjured out of the ground — what earlier century even suspected that such productive forces lay sleeping in the lap of social labour?
   p00033:
     covers: [p00033]
     based_on: sha256:4efcb6b4fb797c07758e0e9fd717e9fafc7835a9bc21f17a923d83b6162458ec
@@ -237,15 +237,15 @@ renderings:
   p00039:
     covers: [p00039]
     based_on: sha256:23c001e71bac6f8badf8c99ec7b84bef8c0bacfdc19abf601ed05abe9ec97756
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Because of the extensive use of machinery and the division of labour, the work of the {proletariat:pl} has lost all individual character, and therefore all charm for the worker. He becomes an appendage of the machine, and only the most simple, most monotonous and most easily learned knack is required of him. Hence the cost of producing a worker is limited almost entirely to the means of subsistence he needs to keep himself alive and to have offspring. But the price of a commodity, and therefore also of labour, is equal to its cost of production. Therefore, in proportion as the work becomes more repulsive, the wage decreases. What is more, in proportion as the use of machinery and the division of labour increases, in the same proportion the burden of toil also increases, whether by lengthening the working hours, by increasing the work demanded in a given time, or by speeding up the machinery, etc.
+    text: Because of the extensive use of machinery and the division of labour, the work of the {proletariat:pl} has lost all individual character, and therefore all charm for the worker. He becomes a mere attachment to the machine, and only the most simple, most monotonous and most easily learned skill is required of him. Hence the cost of producing a worker is limited almost entirely to the means of subsistence he needs to keep himself alive and to have children. But the price of a commodity, and therefore also of labour, is equal to its cost of production. Therefore, the more unpleasant the work becomes, the lower the wage. What is more, in proportion as the use of machinery and the division of labour increases, in the same proportion the burden of hard work also increases, whether by lengthening the working hours, by increasing the work demanded in a given time, or by speeding up the machinery, etc.
   p00040:
     covers: [p00040]
     based_on: sha256:3d1b747a3c8bf5c958029347f77e3cfb44a07dbf0c77f085bf79505a8773b9f5
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Modern Industry has turned the little workshop of the patriarchal master into the great factory of the industrial capitalist. Masses of labourers, crowded into the factory, are organised like soldiers. As privates of the industrial army they are placed under the command of a complete hierarchy of officers and sergeants. They are not only slaves of the {bourgeoisie:adj} class and of the {bourgeoisie:adj} State; they are enslaved every day and every hour by the machine, by the supervisor, and above all by the individual {bourgeoisie:adj} manufacturer himself. The more openly this despotism proclaims gain to be its end and aim, the more petty, the more hateful and the more embittering it is.
+    text: Modern Industry has turned the little workshop of the patriarchal master into the great factory of the industrial capitalist. Masses of labourers, crowded into the factory, are organised like soldiers. As privates of the industrial army they are placed under the command of a complete hierarchy of officers and sergeants. They are not only slaves of the {bourgeoisie:adj} class and of the {bourgeoisie:adj} State; they are enslaved every day and every hour by the machine, by the supervisor, and above all by the individual {bourgeoisie:adj} manufacturer himself. The more openly this tyranny declares profit to be its end and aim, the more petty, the more hateful and the more bitter it is.
   p00041:
     covers: [p00041]
     based_on: sha256:89358997778b0926c37c3f2932b4e5a14d1029d4e1c82cd747f8eab4b6c542b9
@@ -363,9 +363,9 @@ renderings:
   p00060:
     covers: [p00060]
     based_on: sha256:79a60f9ac9227870015d4f97f00046ddc6227326d5d5c171ba99e5d18e62a4b5
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Up to now, every form of society has been based, as we have already seen, on the antagonism of oppressing and oppressed classes. But in order to oppress a class, certain conditions must be guaranteed to it under which it can at least continue its slavish existence. The serf, in the period of serfdom, raised himself to membership of the commune, just as the petty bourgeois, under the yoke of feudal absolutism, managed to develop into a member of the {bourgeoisie}. The modern labourer, on the contrary, instead of rising with the progress of industry, sinks deeper and deeper below the conditions of existence of his own class. He becomes a pauper, and pauperism develops more rapidly than population and wealth. And here it becomes clear that the {bourgeoisie} is no longer fit to be the ruling class in society, and to impose its conditions of existence on society as an overriding law. It is unfit to rule because it is incapable of guaranteeing an existence to its slave within his slavery, because it cannot help letting him sink into such a state that it has to feed him, instead of being fed by him. Society can no longer live under this {bourgeoisie}; in other words, its existence is no longer compatible with society.
+    text: Up to now, every form of society has been based, as we have already seen, on the opposition between oppressing and oppressed classes. But in order to oppress a class, certain conditions must be guaranteed to it under which it can at least continue its slavish existence. The serf, in the period of serfdom, raised himself to membership of the commune, just as the petty bourgeois, under the yoke of feudal absolutism, managed to develop into a member of the {bourgeoisie}. The modern labourer, on the contrary, instead of rising with the progress of industry, sinks deeper and deeper below the conditions of existence of his own class. He sinks into extreme poverty, and poverty grows faster than population and wealth. And here it becomes clear that the {bourgeoisie} is no longer fit to be the ruling class in society, and to impose its conditions of existence on society as an overriding law. It is unfit to rule because it is unable to guarantee an existence to its slave within his slavery, because it cannot help letting him sink into such a state that it has to feed him, instead of being fed by him. Society can no longer live under this {bourgeoisie}; in other words, its existence is no longer compatible with society.
   p00061:
     covers: [p00061]
     based_on: sha256:846bea4b370ad03e4c30ed5233319ab180790ce4a42647d397f6d14ee8be6ad3

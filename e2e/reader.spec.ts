@@ -59,20 +59,6 @@ test("a deep link to the second passage of a multi-passage rendering reaches its
   await expect(page.locator("#p00011")).toContainText("Modern capitalist society");
 });
 
-test("the mode switch changes what is shown and remembers the choice", async ({ page }) => {
-  await page.goto(DOC);
-  await expect(page.locator("html")).toHaveAttribute("data-view", "plain");
-  await page.getByRole("button", { name: "Parallel" }).click();
-  await expect(page.locator("html")).toHaveAttribute("data-view", "parallel");
-  await expect(page).toHaveURL(/\?view=parallel/);
-  await expect(page.locator("#p00009 .layer-original")).toBeVisible();
-  await expect(page.locator("#p00009 .layer-plain")).toBeVisible();
-  await page.getByRole("button", { name: "Original", exact: true }).click();
-  await expect(page.locator("#p00009 .layer-plain")).toBeHidden();
-  await page.goto(DOC);
-  await expect(page.locator("html")).toHaveAttribute("data-view", "original");
-});
-
 test("term cards open from both layers", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
   await page.locator("#p00013 .layer-plain button.term:not([data-kept])").first().click();
@@ -123,10 +109,9 @@ test("kept terms in Plain English open cards and keep their wording", async ({ p
   await expect(page.getByRole("dialog")).toContainText("bound to a lord");
 });
 
-test("the explanation panel opens", async ({ page }) => {
-  await page.goto(`${DOC}?view=plain#p00009`);
-  await page.locator("#p00009 .explain summary").click();
-  await expect(page.locator("#p00009 .explain")).toContainText("Translation note");
+test("the Explanation layer shows a passage's explanations", async ({ page }) => {
+  await page.goto(`${DOC}?layers=explain#p00009`);
+  await expect(page.locator("#p00009 .layer-explain")).toContainText("Translation note");
 });
 
 test("vocabulary and search pages work", async ({ page }) => {
@@ -148,7 +133,8 @@ test.describe("without JavaScript", () => {
       "The history of all society up to now",
     );
     await expect(page.locator("#p00013 .layer-plain")).toContainText("capitalist class");
-    await expect(page.locator(".mode-switch")).toBeHidden();
+    await expect(page.locator(".layer-switch")).toBeHidden();
+    await expect(page.locator("#p00009 .layer-explain")).toContainText("Translation note");
   });
 });
 

@@ -536,9 +536,9 @@ When a contribution reaches `APPROVED`:
 ### 10.1 Reader URLs
 
 - Reader URLs mirror the source path: `/archive/marx/works/1848/communist-manifesto/ch01.htm`.
-- View mode is client state (`?view=original|plain|parallel`). The canonical link is the bare path.
+- Which layers show is client state: `?layers=plain,original,explain`, any non-empty combination (task 023, changed at the maintainer's request). The old `?view=plain|original|parallel` links still open the matching layers. The canonical link is the bare path.
 - Each passage renders as `<section id="p00017">`, so `ch01.htm#p00017` deep-links to it in every mode.
-- In Plain English mode, a link to a passage that sits inside a multi-passage rendering scrolls to that rendering and highlights it. Parallel mode scrolls both columns.
+- A link to a passage that sits inside a multi-passage rendering scrolls to that row and highlights it, in every layer combination.
 - Source anchors (MIA's `#015`) are not supported. A link carrying one opens the document at the top.
 - Every page links "View original source" to the source page and shows visible MIA attribution. PLM never presents itself as an MIA project.
 
@@ -596,7 +596,7 @@ Base path `/api/v1`. It is Zod-validated, publishes OpenAPI at `/api/openapi.jso
 
 | Area | Requirement |
 |---|---|
-| Modes | Original, Plain English, Parallel. Parallel scroll is synced by passage. A rendering that covers several passages lines up with the whole group |
+| Layers | Plain English, Original and Explanation, each switched on or off, never all off (task 023). Desktop shows the layers that are on as aligned columns (two up to 75rem, three above; below 60rem they stack as rows). A rendering that covers several passages lines up with the whole group. Without JavaScript all layers show |
 | Layer distinction | Distinct typography and labels for Original, Plain English and Explanation |
 | Missing / stale | "Plain English not yet available — Suggest one". A stale rendering shows "Source changed since this was written" |
 | Term highlights | Subtle dotted underline on a `<button>`. Tap or click opens the card. Long-press keeps native text selection |
@@ -696,7 +696,7 @@ A mirror serves a release's `site.tar.gz` as-is, after checking it against `chec
 ### 16.2 MVP acceptance test
 
 1. Open the PLM version of Chapter I. The Original matches the source's layout, and `#p00017` deep-links to the right passage in every mode.
-2. Switch between Original, Plain English and Parallel.
+2. Switch the Plain English, Original and Explanation layers on and off.
 3. Open a term card and see the definition, alternatives and usage counts. Switch to "Original terms" and see the Plain English update while the original stays the same.
 4. Sign in and click "Suggest modernization" on an untranslated passage.
 5. Use "Copy for LLM", paste the result back, fix the reported warnings and submit.

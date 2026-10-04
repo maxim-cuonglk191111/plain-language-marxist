@@ -6,6 +6,8 @@ import { useEffect, useMemo, useState } from "react";
 
 const LAYER = { o: "Original", p: "Plain English", e: "Explanation", v: "Vocabulary" } as const;
 type Entry = DataSearch["entries"][number] & { id: number };
+/** A result opens the reader with the layer it was found in (task 023). */
+const SEARCH_LAYERS: Record<string, string> = { o: "original", p: "plain", e: "plain,explain" };
 
 /** Client-side search over /data/v1/search.json, with every result labelled by layer (SDD §10.3). */
 export function Search() {
@@ -71,7 +73,7 @@ export function Search() {
           const href =
             e.l === "v"
               ? `/vocabulary/${e.p}/`
-              : `${doc?.path ?? "/"}?view=${e.l === "o" ? "original" : "plain"}#${e.p}`;
+              : `${doc?.path ?? "/"}?layers=${SEARCH_LAYERS[e.l] ?? "plain"}#${e.p}`;
           return (
             <li key={r.id}>
               <span className={`layer-tag layer-${e.l}`}>{LAYER[e.l]}</span>{" "}

@@ -2,6 +2,8 @@
 // Every access is wrapped, because storage can be unavailable (private mode,
 // blocked site data); the reader then simply uses defaults.
 
+import { LAYERS_BOOT } from "./layers";
+
 export type ReaderPrefs = {
   theme: "system" | "light" | "dark";
   size: "s" | "m" | "l" | "xl";
@@ -52,4 +54,4 @@ export type Bookmark = { path: string; title: string; passage: string; snippet: 
  * Inlined in <head> so the reading mode and preferences apply before first
  * paint (no flash). Kept dependency-free and defensive.
  */
-export const BOOT_SCRIPT = `(function(){var d=document.documentElement;try{var v=new URLSearchParams(location.search).get("view");var ok=function(x){return x==="plain"||x==="original"||x==="parallel"};if(!ok(v)){v=localStorage.getItem("plm:view")}d.dataset.view=ok(v)?v:"plain";var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");if(p.theme==="light"||p.theme==="dark"){d.dataset.theme=p.theme}d.dataset.size=p.size||"m";d.dataset.leading=p.leading||"normal";d.dataset.terms=p.terms||"on"}catch(e){d.dataset.view="plain"}})();`;
+export const BOOT_SCRIPT = `(function(){var d=document.documentElement;try{${LAYERS_BOOT}var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}");if(p.theme==="light"||p.theme==="dark"){d.dataset.theme=p.theme}d.dataset.size=p.size||"m";d.dataset.leading=p.leading||"normal";d.dataset.terms=p.terms||"on"}catch(e){d.dataset.layers="plain";d.dataset.cols="1"}})();`;

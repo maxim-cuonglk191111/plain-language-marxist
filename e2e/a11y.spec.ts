@@ -4,9 +4,16 @@ import { expect, test } from "@playwright/test";
 
 const PAGES = [
   ["home", "/"],
-  ["reader (plain)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?view=plain"],
-  ["reader (parallel)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?view=parallel"],
-  ["reader (original)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?view=original"],
+  ["reader (plain)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain"],
+  [
+    "reader (two layers)",
+    "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain,original",
+  ],
+  [
+    "reader (three layers)",
+    "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain,original,explain",
+  ],
+  ["reader (original)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=original"],
   ["vocabulary", "/vocabulary/"],
   ["term page", "/vocabulary/bourgeoisie/"],
   ["search", "/search/?q=class"],

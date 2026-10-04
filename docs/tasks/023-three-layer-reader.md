@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -65,3 +65,34 @@ This is the maintainer's request (2026-10-04). It replaces the current three-way
 - Old `?view=` links open in the matching layout.
 - The reader still works without JavaScript, and axe reports no violations.
 - `pnpm check` and `pnpm e2e` pass.
+
+## Done (2026-10-04)
+- **Layer toggles.** `LayerSwitch` replaces the old three-way mode switch: three `aria-pressed` toggles in a sticky bar. The last layer that is on is `aria-disabled`, with the description "At least one layer stays visible", and clicking it does nothing.
+- **State.** `data-layers` and `data-cols` on `<html>`, set before first paint by the boot script (`lib/layers.ts`, `LAYERS_BOOT`). It is read from, in order:
+  1. `?layers=`;
+  2. the old `?view=` (plain → Plain English; original → Original; parallel → Plain English and Original);
+  3. `localStorage` `plm:layers`;
+  4. the old `plm:view`.
+
+  The default is Plain English only. Search results open with the layer the match was found in.
+- **Layout.** In DOM order: Plain English, Original, Explanation, so screen readers read them the same way.
+  - **Below 60rem:** the layers stack inside each passage, each labelled.
+  - **60–75rem:** up to two columns. With all three on, the Explanation runs full width under the other two. **This is the decision on the open question** (option a in this range, option b below 60rem).
+  - **75rem and up:** three columns.
+  - Column heads sit in the sticky bar, and rows line up, including multi-passage renderings.
+- **Explanation column.** Explanations move out of the old `<details>` into their own cell, labelled by kind. The cell is empty and takes no space in stacked layouts when a passage has none.
+- **No text silently disappears.** With Plain English on and the Original off, an untranslated passage shows its original, labelled "no plain English yet", once per run.
+- **Deep links** clear the sticky bar (`scroll-margin-top`).
+- **Bug fixed along the way:** the hidden deep-link anchors of multi-passage rows were grid items and took a column cell, pushing Plain English into the second column. This also affected the old Parallel mode. They are now positioned out of the flow.
+- **No-JS:** all three layers show and there are no toggles.
+- **SDD** §10.1 and the reader table, and the repo `CLAUDE.md`, are updated.
+- **e2e** (`layers.spec.ts`):
+  - defaults, toggling and remembering;
+  - the last layer stays on;
+  - old `?view=` links;
+  - deep links with 1, 2, 3 layers and with Explanation alone;
+  - three aligned columns at 1280px;
+  - the untranslated fallback;
+  - mobile row order;
+  - no-JS;
+  - axe on each distinct layout.

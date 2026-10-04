@@ -28,7 +28,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [020](020-pre-launch-outreach.md) | Pre-launch outreach and first reviewers | M1 | Open |
 | [021](021-parser-hardening.md) | Parser hardening: independent loss detection, broad survey, proxy | M1 | Done |
 | [022](022-term-cards-for-newcomers.md) | Term cards that really explain Marxist terms, in simple language | M1 | In progress |
-| [023](023-three-layer-reader.md) | Reader with three switchable layers: Plain English, Original, Explanation | M1 | Open |
+| [023](023-three-layer-reader.md) | Reader with three switchable layers: Plain English, Original, Explanation | M1 | Done |
 | [024](024-nested-term-cards.md) | Clickable terms inside term cards (nested cards, up to 5) | M1 | Done |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

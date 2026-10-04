@@ -3,10 +3,11 @@ import type { ResolveContext } from "@plm/terms";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
-import { ModeSwitch } from "../../../components/ModeSwitch";
+import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadingAids } from "../../../components/ReadingAids";
 import { TermCards } from "../../../components/TermCards";
 import { allDocuments, findDocument, getDocument, getTerm } from "../../../lib/data";
+import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
 import { buildRows, footnoteTargets } from "../../../lib/rows";
 import { termsUsed, toTermFile } from "../../../lib/terms";
 
@@ -70,7 +71,6 @@ export default async function DocumentPage(props: Props) {
           </a>
         </p>
         <div className="reader-controls">
-          <ModeSwitch />
           <TermCards
             terms={terms}
             context={{ workId: entry.work.id, authors: entry.work.authors }}
@@ -80,9 +80,16 @@ export default async function DocumentPage(props: Props) {
 
       <ReadingAids path={doc.path} title={`${entry.work.title}: ${doc.title}`} />
 
-      <div className="columns-head" aria-hidden="true">
-        <span className="col-original">Original</span>
-        <span className="col-plain">Plain English</span>
+      {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
+      <div className="reader-bar">
+        <LayerSwitch />
+        <div className="columns-head" aria-hidden="true">
+          {LAYERS.map((l) => (
+            <span key={l} className={`col-${l}`}>
+              {LAYER_LABEL[l]}
+            </span>
+          ))}
+        </div>
       </div>
 
       <div className="rows">
@@ -103,17 +110,6 @@ export default async function DocumentPage(props: Props) {
               >
                 <span className="visually-hidden">Bookmark passage {first}</span>
               </button>
-              <div className="col-original layer-original" lang="en">
-                <span className="layer-label">Original</span>
-                {row.originals.map((p) => (
-                  <Block
-                    key={p.id}
-                    passage={p}
-                    footnotes={footnotes}
-                    terms={{ kind: "annotations", annotations: p.annotations }}
-                  />
-                ))}
-              </div>
               <div className="col-plain layer-plain">
                 <span className="layer-label">Plain English</span>
                 {row.rendering ? (
@@ -138,9 +134,18 @@ export default async function DocumentPage(props: Props) {
                   </p>
                 )}
               </div>
-              {explanations.length > 0 && (
-                <Explain explanations={explanations} footnotes={footnotes} />
-              )}
+              <div className="col-original layer-original" lang="en">
+                <span className="layer-label">Original</span>
+                {row.originals.map((p) => (
+                  <Block
+                    key={p.id}
+                    passage={p}
+                    footnotes={footnotes}
+                    terms={{ kind: "annotations", annotations: p.annotations }}
+                  />
+                ))}
+              </div>
+              <Explain explanations={explanations} footnotes={footnotes} />
             </section>
           );
         })}
@@ -149,7 +154,11 @@ export default async function DocumentPage(props: Props) {
   );
 }
 
-/** Per-passage explanations, labelled by kind. <details> works without JavaScript. */
+/**
+ * The Explanation layer for one row: its explanations, labelled by kind. The
+ * cell is always rendered, empty when the passage has none, so the columns of
+ * every row line up.
+ */
 function Explain({
   explanations,
   footnotes,
@@ -157,9 +166,10 @@ function Explain({
   explanations: Explanation[];
   footnotes: ReadonlyMap<string, string>;
 }) {
+  if (explanations.length === 0) return <div className="col-explain layer-explain empty" />;
   return (
-    <details className="explain">
-      <summary>Explain</summary>
+    <div className="col-explain layer-explain">
+      <span className="layer-label">Explanation</span>
       {explanations.map((e) => (
         <div key={e.id} className="explanation">
           <p className="explanation-kind">
@@ -182,7 +192,7 @@ function Explain({
           )}
         </div>
       ))}
-    </details>
+    </div>
   );
 }
 

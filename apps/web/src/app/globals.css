@@ -122,30 +122,6 @@ main {
   font-size: 0.9rem;
 }
 
-.mode-switch {
-  display: inline-flex;
-  border: 1px solid var(--rule);
-  border-radius: 0.5rem;
-  overflow: hidden;
-  margin-top: 0.5rem;
-}
-.mode-switch button {
-  font: inherit;
-  font-size: 0.9rem;
-  padding: 0.4rem 0.9rem;
-  border: 0;
-  background: transparent;
-  color: var(--fg);
-  cursor: pointer;
-}
-.mode-switch button + button {
-  border-left: 1px solid var(--rule);
-}
-.mode-switch button[aria-pressed="true"] {
-  background: var(--fg);
-  color: var(--bg);
-}
-
 /* Layers must be impossible to confuse (SDD §12): serif Original, sans Plain English, labels. */
 .layer-original {
   font-family: var(--serif);
@@ -180,9 +156,14 @@ main {
 .row:has(> .anchor:target) {
   background: var(--highlight);
 }
+/* Deep-link targets for the later passages of a multi-passage row. Out of the grid
+   flow, so they never take a column cell; positioned at the top of the row. */
 .anchor {
-  display: block;
-  scroll-margin-top: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
 }
 .block {
   margin: 0 0 1rem;
@@ -238,85 +219,194 @@ th {
   vertical-align: top;
 }
 
-/* Default with no JavaScript (no data-view): both layers, stacked, each labelled. */
-html:not([data-view]) .layer-label {
-  display: block;
-}
-
-/* Plain English mode; untranslated rows fall back to the original, marked as such. */
-html[data-view="plain"] .row {
-  max-width: var(--measure);
-  margin: 0 auto;
-  width: 100%;
-}
-html[data-view="plain"] .row:not(.untranslated) .col-original,
-html[data-view="plain"] .row.untranslated .notice.missing {
+/* ---------- Layers (task 023): Plain English | Original | Explanation ----------
+ * <html data-layers="plain original" data-cols="2"> says which layers are on.
+ * Without JavaScript neither is set: every layer shows, labelled.
+ * Below 60rem the layers stack as rows inside each passage; from 60rem they are
+ * columns, at most two up to 75rem (a third layer, the Explanation, then runs
+ * full width under the other two), and three from 75rem.
+ */
+html[data-layers]:not([data-layers~="plain"]) .col-plain,
+html[data-layers]:not([data-layers~="original"]) .col-original,
+html[data-layers]:not([data-layers~="explain"]) .col-explain {
   display: none;
 }
-html[data-view="plain"] .row.untranslated .col-original {
+
+/* Plain English without the Original: an untranslated row shows its original
+   instead, marked as such, so no text silently disappears. */
+html[data-layers~="plain"]:not([data-layers~="original"]) .row.untranslated .col-plain {
+  display: none;
+}
+html[data-layers~="plain"]:not([data-layers~="original"]) .row.untranslated .col-original {
+  display: block;
   border-left: 3px solid var(--rule);
   padding-left: 0.75rem;
 }
-html[data-view="plain"] .row.untranslated .col-original .layer-label {
+html[data-layers~="plain"]:not([data-layers~="original"])
+  .row.untranslated
+  .col-original
+  .layer-label {
   display: block;
 }
-html[data-view="plain"] .row.untranslated .col-original .layer-label::after {
+html[data-layers~="plain"]:not([data-layers~="original"])
+  .row.untranslated
+  .col-original
+  .layer-label::after {
   content: " — no plain English yet";
   text-transform: none;
   letter-spacing: 0;
 }
-
-/* In a run of untranslated rows, say "no plain English yet" once, at the start of the run. */
-html[data-view="plain"] .row.untranslated + .row.untranslated .col-original .layer-label {
+/* In a run of untranslated rows, say so once, at the start of the run. */
+html[data-layers~="plain"]:not([data-layers~="original"])
+  .row.untranslated
+  + .row.untranslated
+  .col-original
+  .layer-label {
   display: none;
 }
-html[data-view="parallel"] .row.untranslated + .row.untranslated .col-plain,
-html:not([data-view]) .row.untranslated + .row.untranslated .col-plain {
+html:not([data-layers]) .row.untranslated + .row.untranslated .col-plain,
+html[data-layers~="plain"][data-layers~="original"]
+  .row.untranslated
+  + .row.untranslated
+  .col-plain {
   display: none;
 }
 
-/* Original mode. */
-html[data-view="original"] .row {
+/* One layer: a single reading column. */
+html[data-cols="1"] .row {
   max-width: var(--measure);
   margin: 0 auto;
   width: 100%;
 }
-html[data-view="original"] .col-plain {
+/* An empty explanation cell takes no room when layers stack. */
+.col-explain.empty {
+  min-height: 0;
+}
+html[data-cols="1"] .col-explain.empty {
   display: none;
 }
 
-/* Parallel mode: two aligned columns per row on wide screens. */
+/* The sticky bar: layer toggles, plus column heads when layers sit side by side. */
+.reader-bar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: var(--bg);
+  padding: 0.4rem 0.5rem;
+  border-bottom: 1px solid var(--rule);
+  margin-bottom: 0.75rem;
+}
+html:not([data-layers]) .reader-bar {
+  position: static;
+}
+.layer-switch {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.4rem;
+}
+.layer-switch button {
+  font: 0.9rem/1.2 var(--sans);
+  padding: 0.35rem 0.85rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+.layer-switch button[aria-pressed="true"] {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+}
+.layer-switch button[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+/* The toggles need JavaScript; without it the page shows every layer. */
+html:not([data-layers]) .layer-switch {
+  display: none;
+}
+.columns-head {
+  display: none;
+}
+
+/* Stacked (narrow screens, or no JS): label each layer when more than one shows. */
+html:not([data-layers]) .layer-label,
+html[data-cols="2"] .layer-label,
+html[data-cols="3"] .layer-label {
+  display: block;
+}
+.row > .col-plain,
+.row > .col-original {
+  margin-bottom: 0.25rem;
+}
+.layer-explain {
+  font: 0.92rem/1.55 var(--sans);
+}
+
 @media (min-width: 60rem) {
-  html[data-view="parallel"] .columns-head,
-  html:not([data-view]) .columns-head {
+  html:not([data-layers]) .row,
+  html[data-cols="2"] .row,
+  html[data-cols="3"] .row {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* A third layer runs full width under the other two. */
+  html:not([data-layers]) .row > .col-explain,
+  html[data-cols="3"] .row > .col-explain {
+    grid-column: 1 / -1;
+  }
+  html:not([data-layers]) .columns-head,
+  html[data-cols="2"] .columns-head,
+  html[data-cols="3"] .columns-head {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0 3rem;
-    padding: 0 0.5rem 0.5rem;
-    position: sticky;
-    top: 0;
-    background: var(--bg);
-    border-bottom: 1px solid var(--rule);
+    padding: 0.5rem 0.5rem 0;
     font: 600 0.75rem/1.5 var(--sans);
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: var(--muted);
-    z-index: 1;
   }
-  html[data-view="parallel"] .row,
-  html:not([data-view]) .row {
-    grid-template-columns: 1fr 1fr;
-  }
-  html:not([data-view]) .layer-label {
+  html:not([data-layers]) .columns-head .col-explain,
+  html[data-cols="3"] .columns-head .col-explain {
     display: none;
   }
-}
-@media (max-width: 59.99rem) {
-  html[data-view="parallel"] .layer-label {
+  /* Side by side, the column heads replace the per-cell labels... */
+  html:not([data-layers]) .row > .col-plain .layer-label,
+  html:not([data-layers]) .row > .col-original .layer-label,
+  html[data-cols="2"] .row > div:not(.col-explain) .layer-label,
+  html[data-cols="2"] .col-explain .layer-label,
+  html[data-cols="3"] .row > .col-plain .layer-label,
+  html[data-cols="3"] .row > .col-original .layer-label {
+    display: none;
+  }
+  /* ...but an untranslated row's fallback original keeps its notice. */
+  html[data-layers~="plain"]:not([data-layers~="original"])
+    .row.untranslated
+    .col-original
+    .layer-label {
     display: block;
   }
-  html[data-view="parallel"] .col-original {
-    margin-bottom: 0.75rem;
+}
+@media (min-width: 75rem) {
+  html:not([data-layers]) .row,
+  html[data-cols="3"] .row,
+  html:not([data-layers]) .columns-head,
+  html[data-cols="3"] .columns-head {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  html:not([data-layers]) .row > .col-explain,
+  html[data-cols="3"] .row > .col-explain {
+    grid-column: auto;
+  }
+  html:not([data-layers]) .columns-head .col-explain,
+  html[data-cols="3"] .columns-head .col-explain {
+    display: block;
+  }
+  html:not([data-layers]) .row > .col-explain .layer-label,
+  html[data-cols="3"] .row > .col-explain .layer-label {
+    display: none;
   }
 }
 
@@ -326,15 +416,16 @@ html[data-view="original"] .col-plain {
   }
 }
 
-/* The mode switch needs JavaScript; without it the page shows both layers. */
-html:not([data-view]) .mode-switch {
-  display: none;
+/* Keep deep-link targets clear of the sticky bar. */
+.row,
+.anchor {
+  scroll-margin-top: 4rem;
 }
-
-/* Keep deep-link targets clear of the sticky column header in parallel mode. */
-html[data-view="parallel"] .row,
-html[data-view="parallel"] .anchor {
-  scroll-margin-top: 3rem;
+@media (min-width: 60rem) {
+  html:not([data-cols="1"]) .row,
+  html:not([data-cols="1"]) .anchor {
+    scroll-margin-top: 5.5rem;
+  }
 }
 
 /* ---------- Header nav ---------- */
@@ -354,9 +445,6 @@ html[data-view="parallel"] .anchor {
   gap: 0.75rem;
   align-items: center;
   margin-top: 0.5rem;
-}
-.reader-controls .mode-switch {
-  margin-top: 0;
 }
 .term-pref {
   display: inline-flex;
@@ -378,7 +466,7 @@ html[data-view="parallel"] .anchor {
   background: var(--fg);
   color: var(--bg);
 }
-html:not([data-view]) .term-pref {
+html:not([data-layers]) .term-pref {
   display: none;
 }
 
@@ -534,17 +622,6 @@ button.term:hover {
 }
 
 /* ---------- Explanations and badges ---------- */
-.explain {
-  grid-column: 1 / -1;
-  margin: 0 0 1rem;
-  font: 0.92rem/1.55 var(--sans);
-}
-.explain summary {
-  cursor: pointer;
-  color: var(--accent);
-  font-weight: 600;
-  width: max-content;
-}
 .explanation {
   border-left: 3px solid var(--accent);
   padding: 0.25rem 0 0.25rem 0.75rem;
@@ -647,7 +724,7 @@ html[data-terms="off"] button.term {
   text-decoration: underline;
   cursor: pointer;
 }
-html:not([data-view]) .settings {
+html:not([data-layers]) .settings {
   display: none;
 }
 .settings-panel {

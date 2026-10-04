@@ -473,6 +473,43 @@ button.term:hover {
 .term-more {
   margin: 0 0 0.6rem;
 }
+/* Terms inside a card open a nested card (task 024). */
+.term-link {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline dotted;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 0.2em;
+}
+.term-link:hover:not(:disabled) {
+  text-decoration-color: var(--accent);
+}
+.term-link:disabled {
+  cursor: default;
+  text-decoration: none;
+}
+.term-trail {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 0 1.5rem 0.4rem 0;
+}
+.term-trail button {
+  font: inherit;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* Cards below the top one stay opaque, so page text never shows through the stack. */
+.term-card[inert] {
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 0.12);
+}
 .term-more summary {
   cursor: pointer;
   color: var(--accent);

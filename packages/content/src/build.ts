@@ -10,6 +10,7 @@ import {
   type TermFile,
 } from "@plm/schema";
 import { renderTokens, usageCounts } from "@plm/terms";
+import { findTermRanges, termSurfaces } from "./annotate.ts";
 import { basedOnHash, fileHash, plainText } from "./hash.ts";
 import type { Issue } from "./issues.ts";
 import { loadRepository, type LoadedWork } from "./load.ts";
@@ -167,6 +168,20 @@ export function buildData(options: BuildOptions): BuildResult {
     return { example: { text, passage, title: doc.title, href: `${doc.path}#${passage}` } };
   };
 
+  const surfaces = termSurfaces(vocabulary.values());
+  const linksFor = (t: TermFile): Pick<DataTerm, "links"> => {
+    const skip = new Set([t.term]);
+    const fields = [
+      ["short", t.definition.short],
+      ["not_to_confuse", t.not_to_confuse],
+      ["long", t.definition.long],
+    ] as const;
+    const links = fields.flatMap(([field, text]) =>
+      text ? findTermRanges(text, surfaces, { skip, firstOnly: true }).map((r) => ({ field, ...r })) : [],
+    );
+    return links.length ? { links } : {};
+  };
+
   const usage = usageCounts(usageTexts, vocabulary);
   for (const [slug, t] of [...vocabulary].sort(([a], [b]) => a.localeCompare(b))) {
     const term: DataTerm = {
@@ -180,6 +195,7 @@ export function buildData(options: BuildOptions): BuildResult {
         sources: (t.definition.sources ?? []) as Record<string, string | number>[],
       },
       ...exampleFor(t),
+      ...linksFor(t),
       ...(t.not_to_confuse ? { not_to_confuse: t.not_to_confuse } : {}),
       related: (t.related ?? []).flatMap((r) => {
         const other = vocabulary.get(r);

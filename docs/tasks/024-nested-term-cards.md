@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -56,3 +56,18 @@ A term card explains a term with other terms. For example, *capital* mentions *w
 - Each click outside, or each Escape, closes exactly one card. Focus always lands on a sensible element.
 - Works with keyboard only, on mobile, and (as links) without JavaScript; axe reports no violations.
 - `pnpm check` and `pnpm e2e` pass.
+
+## Done (2026-10-04)
+- **Links in card text.** `plm build` marks other terms in each card's short text, "common mix-up" line and long text. Only the first mention of each term per card is marked, and never the card's own term. These are stored as optional `links` (character ranges) in data contract v1. The matching is shared with `plm annotate` (`termSurfaces`, `findTermRanges`); a skipped term still claims its text, so "bourgeois" inside "petty bourgeois" is not marked.
+- **Reader** (`TermCards`), up to `MAX_CARDS = 5`:
+  - Clicking a term link or related term inside the top card opens a nested card, offset on desktop and as a bottom sheet on phones. A term not on the page is fetched from `/data/v1/terms/<slug>.json`.
+  - A click outside the top card, or Escape, closes **one** card. ✕ closes that card and everything above it.
+  - In the fifth card the links are disabled, with the hint "Close a card to open more".
+  - A link to a term already open closes back to that card, so there are no loops. The trail on the top card goes back to any earlier card.
+  - Focus returns to the link that opened the closed card, and finally to the term in the text. Lower cards are `inert`; each card is labelled "Term card n of m: …"; a live region announces changes.
+  - With one card open, clicking another term in the text replaces it. With several open, that click only closes one.
+- **Vocabulary pages** show the same terms as plain links, which also work without JavaScript.
+- **Tests:**
+  - unit tests for `findTermRanges`;
+  - e2e: nesting, one level per outside click, the 5-card limit and 5 clicks to close, Escape and focus, trail and no loops, vocabulary links (with and without JS), mobile bottom sheets;
+  - axe with three cards open.

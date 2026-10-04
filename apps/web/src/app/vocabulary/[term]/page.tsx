@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { TermDetails } from "../../../components/TermDetails";
+import { TermDetails, TermShort } from "../../../components/TermDetails";
 import { getIndex, getTerm } from "../../../lib/data";
 
 type Props = { params: Promise<{ term: string }> };
@@ -34,7 +34,9 @@ export default async function TermPage(props: Props) {
         <a href="/vocabulary/">Vocabulary</a>
       </p>
       <h1>{name}</h1>
-      <p className="lede">{term.definition.short}</p>
+      <p className="lede">
+        <TermShort term={term} mode={{ kind: "page" }} />
+      </p>
       <TermDetails term={term} open />
 
       {term.definition.sources.length > 0 && (

@@ -4,10 +4,13 @@ import type { DataTerm } from "@plm/schema";
 import { formFor, resolveChoice, type ResolveContext, type TermChoice } from "@plm/terms";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toTermFile } from "../lib/terms";
-import { TermDetails } from "./TermDetails";
+import { TermDetails, TermShort } from "./TermDetails";
 
 const STORAGE_KEY = "plm:terms";
 type Preferences = { all?: "original"; perTerm: Record<string, TermChoice> };
+
+/** Cards can nest this deep (task 024); terms in the last card are not clickable. */
+export const MAX_CARDS = 5;
 
 function loadPreferences(): Preferences {
   try {
@@ -29,14 +32,43 @@ function savePreferences(p: Preferences) {
 }
 
 const capitalizeFirst = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+const nameOf = (t: DataTerm) => t.original["sg"] ?? t.term;
 
-type Open = { term: DataTerm; button: HTMLElement; inPlain: boolean };
+/** One open card: its term, the element that opened it (focus returns there), and where it sits. */
+type Card = {
+  term: DataTerm;
+  opener: HTMLElement;
+  inPlain: boolean;
+  position: { top: number; left: number };
+};
+
+const CARD_WIDTH = 352;
+const NEST_OFFSET = 24;
+
+/** Next to the opener on wide screens; CSS turns cards into stacked bottom sheets on phones. */
+function positionFor(opener: HTMLElement, below?: Card): Card["position"] {
+  const maxLeft = window.scrollX + document.documentElement.clientWidth - CARD_WIDTH - 8;
+  if (below) {
+    return {
+      top: below.position.top + NEST_OFFSET,
+      left: Math.max(8, Math.min(below.position.left + NEST_OFFSET, maxLeft)),
+    };
+  }
+  const r = opener.getBoundingClientRect();
+  return {
+    top: r.bottom + window.scrollY + 8,
+    left: Math.max(8, Math.min(r.left + window.scrollX, maxLeft)),
+  };
+}
 
 /**
  * Term cards and terminology preference (SDD §6.3, §12). Server-rendered term
  * buttons show the project default; this component re-resolves the Plain
  * English ones from the reader's local preference and opens a card on click.
  * The Original is never changed.
+ *
+ * Terms inside a card open a nested card on top (task 024), up to MAX_CARDS.
+ * A click outside the top card, or Escape, closes one card at a time.
  */
 export function TermCards({
   terms,
@@ -45,11 +77,24 @@ export function TermCards({
   terms: DataTerm[];
   context: { workId: string; authors: string[] };
 }) {
-  const byTerm = useMemo(() => new Map(terms.map((t) => [t.term, t])), [terms]);
-  const files = useMemo(() => new Map(terms.map((t) => [t.term, toTermFile(t)])), [terms]);
+  const [loaded, setLoaded] = useState<ReadonlyMap<string, DataTerm>>(
+    () => new Map(terms.map((t) => [t.term, t])),
+  );
+  const files = useMemo(
+    () => new Map([...loaded.values()].map((t) => [t.term, toTermFile(t)])),
+    [loaded],
+  );
   const [prefs, setPrefs] = useState<Preferences>({ perTerm: {} });
-  const [open, setOpen] = useState<Open | null>(null);
-  const cardRef = useRef<HTMLDivElement>(null);
+  const [stack, setStack] = useState<Card[]>([]);
+  const stackRef = useRef<Card[]>([]);
+  stackRef.current = stack;
+  const topRef = useRef<HTMLDivElement>(null);
+  /** Set when a pointerdown outside closed a card, so the click that follows does not reopen one. */
+  const closedByPointer = useRef(false);
+  /** Where focus goes after the next render. */
+  const focusNext = useRef<HTMLElement | null>(null);
+  /** Stack depth at the last render, to focus only newly opened cards. */
+  const depth = useRef(0);
 
   const resolveContext = useCallback(
     (p: Preferences): ResolveContext => ({
@@ -92,33 +137,99 @@ export function TermCards({
     apply(p);
   };
 
-  // One delegated listener for every term button on the page.
+  /** A term's card data: from the page, or fetched from the public data files on demand. */
+  const termData = useCallback(
+    async (slug: string): Promise<DataTerm | undefined> => {
+      const known = loaded.get(slug);
+      if (known) return known;
+      try {
+        const res = await fetch(`/data/v1/terms/${slug}.json`);
+        if (!res.ok) return undefined;
+        const term = (await res.json()) as DataTerm;
+        setLoaded((m) => new Map(m).set(slug, term));
+        return term;
+      } catch {
+        return undefined;
+      }
+    },
+    [loaded],
+  );
+
+  /** Closes the cards from `index` up; focus returns to the element that opened card `index`. */
+  const closeFrom = useCallback((index: number) => {
+    const current = stackRef.current;
+    focusNext.current = current[index]?.opener ?? null;
+    setStack(current.slice(0, index));
+  }, []);
+
+  // Focus moves after the render that removes the cards: until then the card below is inert.
   useEffect(() => {
-    const onClick = (e: MouseEvent) => {
-      const button = (e.target as HTMLElement | null)?.closest<HTMLElement>(
-        "button.term[data-term]",
-      );
+    const el = focusNext.current;
+    focusNext.current = null;
+    if (el?.isConnected) el.focus();
+  }, [stack]);
+
+  // Term buttons in the text open a fresh card; term links inside the top card open a nested one.
+  useEffect(() => {
+    const onClick = async (e: MouseEvent) => {
+      const target = e.target as HTMLElement | null;
+      const link = target?.closest<HTMLElement>("[data-term-link]");
+      if (link && topRef.current?.contains(link)) {
+        e.preventDefault();
+        const slug = link.dataset["termLink"] ?? "";
+        const current = stackRef.current;
+        const already = current.findIndex((c) => c.term.term === slug);
+        if (already !== -1) {
+          // No loops: return to the card that is already open.
+          setStack(current.slice(0, already + 1));
+          return;
+        }
+        if (current.length >= MAX_CARDS) return;
+        const term = await termData(slug);
+        if (!term) return;
+        setStack((s) => [
+          ...s,
+          { term, opener: link, inPlain: false, position: positionFor(link, s.at(-1)) },
+        ]);
+        return;
+      }
+      const button = target?.closest<HTMLElement>("button.term[data-term]");
       if (!button) return;
-      const term = byTerm.get(button.dataset["term"] ?? "");
+      if (closedByPointer.current) {
+        closedByPointer.current = false;
+        if (stackRef.current.length > 0) return; // that click only closed one of several cards
+      }
+      const term = loaded.get(button.dataset["term"] ?? "");
       if (!term) return;
-      setOpen({ term, button, inPlain: Boolean(button.closest(".layer-plain")) });
+      setStack([
+        {
+          term,
+          opener: button,
+          inPlain: Boolean(button.closest(".layer-plain")),
+          position: positionFor(button),
+        },
+      ]);
     };
     document.addEventListener("click", onClick);
     return () => document.removeEventListener("click", onClick);
-  }, [byTerm]);
+  }, [loaded, termData]);
 
-  // Focus the card when it opens; Escape or a click outside closes it and returns focus.
+  // Focus a newly opened card; Escape or a pointerdown outside the top card closes exactly one.
   useEffect(() => {
-    if (!open) return;
-    cardRef.current?.focus();
-    const close = () => {
-      setOpen(null);
-      open.button.focus();
+    if (stack.length > depth.current) topRef.current?.focus();
+    depth.current = stack.length;
+    if (stack.length === 0) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "Escape") return;
+      e.preventDefault();
+      closeFrom(stackRef.current.length - 1);
     };
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && close();
     const onPointer = (e: PointerEvent) => {
       const target = e.target as Node;
-      if (!cardRef.current?.contains(target) && !open.button.contains(target)) setOpen(null);
+      const top = stackRef.current.at(-1);
+      if (topRef.current?.contains(target) || top?.opener.contains(target)) return;
+      closedByPointer.current = true;
+      closeFrom(stackRef.current.length - 1);
     };
     document.addEventListener("keydown", onKey);
     document.addEventListener("pointerdown", onPointer);
@@ -126,26 +237,9 @@ export function TermCards({
       document.removeEventListener("keydown", onKey);
       document.removeEventListener("pointerdown", onPointer);
     };
-  }, [open]);
+  }, [stack.length, closeFrom]);
 
-  // Position next to the button on wide screens; CSS turns it into a bottom sheet on narrow ones.
-  const [position, setPosition] = useState<{ top: number; left: number } | null>(null);
-  useEffect(() => {
-    if (!open) return;
-    const r = open.button.getBoundingClientRect();
-    const width = 352;
-    setPosition({
-      top: r.bottom + window.scrollY + 8,
-      left: Math.max(
-        8,
-        Math.min(
-          r.left + window.scrollX,
-          window.scrollX + document.documentElement.clientWidth - width - 8,
-        ),
-      ),
-    });
-  }, [open]);
-
+  const top = stack.at(-1);
   const choiceFor = (t: DataTerm): TermChoice => {
     const file = files.get(t.term);
     return file ? resolveChoice(file, resolveContext(prefs)) : t.default;
@@ -171,33 +265,56 @@ export function TermCards({
         </button>
       </div>
 
-      {open && (
-        <div
-          ref={cardRef}
-          className="term-card"
-          role="dialog"
-          aria-label={`Term: ${open.term.original["sg"] ?? open.term.term}`}
-          tabIndex={-1}
-          style={position ? { top: position.top, left: position.left } : undefined}
-        >
-          <TermCardBody
-            term={open.term}
-            choice={choiceFor(open.term)}
-            inPlain={open.inPlain}
-            onChoose={(choice) =>
-              update({ ...prefs, perTerm: { ...prefs.perTerm, [open.term.term]: choice } })
-            }
-          />
-          <button
-            type="button"
-            className="term-card-close"
-            onClick={() => setOpen(null)}
-            aria-label="Close"
+      {stack.map((card, i) => {
+        const isTop = i === stack.length - 1;
+        return (
+          <div
+            key={`${i}-${card.term.term}`}
+            ref={isTop ? topRef : undefined}
+            className="term-card"
+            data-level={i + 1}
+            role="dialog"
+            aria-label={`Term card ${i + 1} of ${stack.length}: ${nameOf(card.term)}`}
+            tabIndex={-1}
+            inert={!isTop}
+            style={{ top: card.position.top, left: card.position.left, zIndex: 20 + i }}
           >
-            ×
-          </button>
-        </div>
-      )}
+            {isTop && stack.length > 1 && (
+              <nav className="term-trail" aria-label="Cards opened">
+                {stack.slice(0, -1).map((c, j) => (
+                  <span key={j}>
+                    <button type="button" onClick={() => closeFrom(j + 1)}>
+                      {nameOf(c.term)}
+                    </button>
+                    {" › "}
+                  </span>
+                ))}
+                <span aria-current="true">{nameOf(card.term)}</span>
+              </nav>
+            )}
+            <TermCardBody
+              term={card.term}
+              choice={choiceFor(card.term)}
+              inPlain={card.inPlain}
+              full={stack.length >= MAX_CARDS}
+              onChoose={(choice) =>
+                update({ ...prefs, perTerm: { ...prefs.perTerm, [card.term.term]: choice } })
+              }
+            />
+            <button
+              type="button"
+              className="term-card-close"
+              onClick={() => closeFrom(i)}
+              aria-label={i === 0 ? "Close" : "Close this card and the cards above it"}
+            >
+              ×
+            </button>
+          </div>
+        );
+      })}
+      <p className="visually-hidden" aria-live="polite">
+        {top ? `Term card ${stack.length} open: ${nameOf(top.term)}` : ""}
+      </p>
     </>
   );
 }
@@ -206,16 +323,19 @@ function TermCardBody({
   term,
   choice,
   inPlain,
+  full,
   onChoose,
 }: {
   term: DataTerm;
   choice: TermChoice;
   inPlain: boolean;
+  full: boolean;
   onChoose: (choice: TermChoice) => void;
 }) {
   const shown = term.renderings.find((r) => r.key === choice);
-  const original = term.original["sg"] ?? term.term;
+  const original = nameOf(term);
   const choosable = term.renderings.length > 1;
+  const mode = { kind: "card", full } as const;
   return (
     <>
       <p className="term-card-name">{original}</p>
@@ -225,8 +345,10 @@ function TermCardBody({
           <strong>{choice === "original" ? original : (shown?.forms["sg"] ?? choice)}</strong>
         </p>
       )}
-      <p>{term.definition.short}</p>
-      <TermDetails term={term} />
+      <p>
+        <TermShort term={term} mode={mode} />
+      </p>
+      <TermDetails term={term} mode={mode} />
       {inPlain && shown && choosable && (
         <div className="term-card-why">
           <p className="term-card-label">Why this wording?</p>

@@ -121,6 +121,20 @@ export const DataTerm = z.strictObject({
     .optional(),
   not_to_confuse: z.string().optional(),
   related: z.array(z.strictObject({ term: z.string(), name: z.string() })).optional(),
+  /**
+   * Other terms mentioned in the card's text (task 024): character ranges into
+   * definition.short, not_to_confuse or definition.long, first mention only.
+   */
+  links: z
+    .array(
+      z.strictObject({
+        field: z.enum(["short", "not_to_confuse", "long"]),
+        start: z.number().int(),
+        end: z.number().int(),
+        term: z.string(),
+      }),
+    )
+    .optional(),
   default: z.string(),
   scoped_defaults: z.array(z.strictObject({ scope: z.string(), rendering: z.string() })),
   renderings: z.array(

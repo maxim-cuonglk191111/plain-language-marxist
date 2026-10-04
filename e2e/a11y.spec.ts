@@ -40,3 +40,17 @@ test("an open term card has no serious accessibility violations", async ({ page 
       .map((v) => v.id),
   ).toEqual([]);
 });
+
+test("a stack of nested term cards has no serious accessibility violations", async ({ page }) => {
+  await page.goto("/archive/marx/works/1848/communist-manifesto/ch01.htm?view=original#p00013");
+  await page.locator("#p00013 .layer-original button.term").first().click();
+  await page.getByRole("dialog").last().locator("button.term-link:visible").first().click();
+  await page.getByRole("dialog").last().locator("button.term-link:visible").first().click();
+  await expect(page.getByRole("dialog")).toHaveCount(3);
+  const results = await new AxeBuilder({ page }).include(".term-card").analyze();
+  expect(
+    results.violations
+      .filter((v) => v.impact === "serious" || v.impact === "critical")
+      .map((v) => `${v.id}: ${v.help}`),
+  ).toEqual([]);
+});

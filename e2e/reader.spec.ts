@@ -106,7 +106,8 @@ test("term cards explain the term for newcomers", async ({ page }) => {
   const card = page.getByRole("dialog");
   await expect(card).toContainText("Common mix-up");
   await expect(card.locator(".term-example blockquote")).toBeVisible();
-  await expect(card.locator(".term-related a").first()).toHaveAttribute("href", /^\/vocabulary\//);
+  // In a card, related terms open nested cards (task 024).
+  await expect(card.locator(".term-related button[data-term-link]").first()).toBeVisible();
   await card.getByText("Read more").click();
   await expect(card.locator(".term-more p").first()).toBeVisible();
 });

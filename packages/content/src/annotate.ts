@@ -15,6 +15,54 @@ function wholeWordOffsets(text: string, needle: string): number[] {
   return out;
 }
 
+export type TermSurface = { term: string; match: string };
+
+/** Every word or phrase that names a term (forms and aliases, also capitalised), longest first. */
+export function termSurfaces(terms: Iterable<TermFile>): TermSurface[] {
+  const surfaces: TermSurface[] = [];
+  for (const term of terms) {
+    const words = new Set([...Object.values(term.original), ...(term.aliases ?? [])]);
+    for (const w of words) {
+      surfaces.push({ term: term.term, match: w });
+      if (capitalizeFirst(w) !== w) surfaces.push({ term: term.term, match: capitalizeFirst(w) });
+    }
+  }
+  return surfaces.sort((a, b) => b.match.length - a.match.length);
+}
+
+export type TermRange = { start: number; end: number; term: string };
+
+/**
+ * Whole-word term ranges in a plain string, without overlaps (longer matches
+ * win). Terms in `skip` are not marked; with `firstOnly`, each term is marked
+ * once and added to `skip`, so a card links a term at its first mention only.
+ */
+export function findTermRanges(
+  text: string,
+  surfaces: readonly TermSurface[],
+  options: { skip?: Set<string>; firstOnly?: boolean } = {},
+): TermRange[] {
+  const skip = options.skip ?? new Set<string>();
+  // Skipped terms still claim their text, so "bourgeois" inside a skipped
+  // "petty bourgeois" is not marked as a term of its own.
+  const found: TermRange[] = [];
+  for (const s of surfaces) {
+    for (const at of wholeWordOffsets(text, s.match)) {
+      const end = at + s.match.length;
+      if (found.some((r) => at < r.end && end > r.start)) continue;
+      found.push({ start: at, end, term: s.term });
+    }
+  }
+  found.sort((a, b) => a.start - b.start);
+  const kept: TermRange[] = [];
+  for (const r of found) {
+    if (skip.has(r.term)) continue;
+    if (options.firstOnly) skip.add(r.term);
+    kept.push(r);
+  }
+  return kept;
+}
+
 /**
  * Annotates whole-word occurrences of every term's original forms and aliases
  * in a document's active passages (SDD §5.5). Existing annotations are kept
@@ -26,15 +74,7 @@ export function annotatePassages(
   terms: readonly TermFile[],
   existing: readonly Annotation[] = [],
 ): { annotations: Annotation[]; added: number } {
-  const surfaces: { term: string; match: string }[] = [];
-  for (const term of terms) {
-    const words = new Set([...Object.values(term.original), ...(term.aliases ?? [])]);
-    for (const w of words) {
-      surfaces.push({ term: term.term, match: w });
-      if (capitalizeFirst(w) !== w) surfaces.push({ term: term.term, match: capitalizeFirst(w) });
-    }
-  }
-  surfaces.sort((a, b) => b.match.length - a.match.length);
+  const surfaces = termSurfaces(terms);
 
   const key = (a: Annotation) => `${a.passage}|${a.match}|${a.occurrence}`;
   const seen = new Set(existing.map(key));

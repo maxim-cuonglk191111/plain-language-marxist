@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -81,3 +81,21 @@ The layer exists to help readers **understand** (SDD §1, §5.7): historical con
 - Translation notes appear beside the Original, not in the Explanation column.
 - No Plain English sentence is over 40 words; any over 35 are flagged and justified.
 - `pnpm check` and `pnpm e2e` pass, and a reader from the target audience has tried the chapter.
+
+## Progress (2026-10-04)
+**Built.** What is still open: the maintainer's review of the AI-assisted context, and a try-out with a reader from the target audience.
+
+- **Name.** At the maintainer's suggestion, the layer is now called **Context** in the reader: "Explanation" promised something the layer is not. Data files keep their names (`explanations.yml`, `kind: explanation`), so nothing needed migrating. Old `?layers=explain` links still work.
+- **Reader** (on `main`):
+  - A section explanation shows once, labelled "About this section", with a light background.
+  - `historical_context` is labelled "Background".
+  - Translation notes sit beside the Original as a "Text note" that opens on demand.
+- **Checks:**
+  - `plm` warns on Plain English sentences over 35 words (`long-sentence`);
+  - `plm validate` warns on explanation sentences over 25 words.
+  - STYLE §15 gained "How much context to give".
+- **Content** (on the `content/manifesto-ch01-render` branch, all marked AI-assisted):
+  - **8 section explanations**, following the table above.
+  - **6 background notes**: Pope and Tsar, Metternich and Guizot (p00002); the Cape (p00015); Exodus and crusades (p00025); "Chinese walls" and the Opium War (p00029); combinations and trade unions (p00046); the Ten Hours Act (p00048). **Check the dates and facts.**
+  - **1 new text note** (p00030), on "idiocy" of rural life, the double reading of Idiotismus. This is the only use of the "two readings" exception.
+  - **Plain English:** all 28 passages with a sentence over 35 words were split. The longest sentence drops from 76 words to 35, with every clause and link word kept.

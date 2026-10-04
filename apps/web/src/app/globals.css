@@ -425,15 +425,17 @@ html[data-cols="3"] .layer-label {
   }
 }
 
-/* Keep deep-link targets clear of the sticky bar. */
+/* Keep deep-link targets clear of the sticky bar. With JavaScript the bar reports its
+   real height as --bar-h (it grows with text size, the progress line and the player);
+   the fallbacks cover the first jump to a #passage, which happens before scripts run. */
 .row,
 .anchor {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: calc(var(--bar-h, 5.25rem) + 0.5rem);
 }
 @media (min-width: 60rem) {
   html:not([data-cols="1"]) .row,
   html:not([data-cols="1"]) .anchor {
-    scroll-margin-top: 5.5rem;
+    scroll-margin-top: calc(var(--bar-h, 7rem) + 0.5rem);
   }
 }
 
@@ -2047,4 +2049,36 @@ html:not([data-numbers="off"]):not([data-numbers="on"]):not([data-cols="1"]) .ro
 }
 .term-card-more {
   margin-top: 0.4rem;
+}
+
+/* ---------- Quote cards (task 032 E) ---------- */
+.quote-dialog {
+  width: min(30rem, calc(100vw - 1.5rem));
+}
+.quote-canvas {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+.quote-options {
+  border: 0;
+  padding: 0;
+  margin: 0 0 0.6rem;
+}
+.quote-options legend {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.quote-options label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-right: 0.9rem;
+}
+.dialog-actions button.primary {
+  background: var(--fg);
+  color: var(--bg);
 }

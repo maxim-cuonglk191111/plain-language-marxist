@@ -35,6 +35,22 @@ const LAYER_NAME: Record<ListenLayer, string> = {
 
 type Pos = { row: number; sentence: number };
 
+/**
+ * Where listening starts: the passage the address points to (#p00009), if it
+ * is on screen, since that is what the reader opened; otherwise the first
+ * passage visible under the reader bar.
+ */
+function startRow(): number {
+  const rows = readerRows();
+  const target = location.hash
+    ? document.getElementById(decodeURIComponent(location.hash.slice(1)))?.closest(".row")
+    : null;
+  const i = target ? rows.indexOf(target as HTMLElement) : -1;
+  const box = target?.getBoundingClientRect();
+  if (i >= 0 && box && box.bottom > 0 && box.top < window.innerHeight) return i;
+  return firstVisibleRow(rows);
+}
+
 const highlights = () =>
   (globalThis.CSS as unknown as { highlights?: Map<string, unknown> })?.highlights;
 
@@ -168,8 +184,7 @@ export function ReadAloud({ next }: { next: string | null }) {
     (from?: Pos) => {
       speechSynthesis.cancel();
       run.current++;
-      const rows = readerRows();
-      const start = from ?? pos.current ?? { row: firstVisibleRow(rows), sentence: 0 };
+      const start = from ?? pos.current ?? { row: startRow(), sentence: 0 };
       live.current.playing = true;
       setPlaying(true);
       setStatus("");
@@ -197,6 +212,9 @@ export function ReadAloud({ next }: { next: string | null }) {
     const chosen = l ?? shown.find((x) => x !== "context") ?? shown[0] ?? "plain";
     // Also set now: a play() scheduled right after must not read the old layer.
     live.current.layer = chosen;
+    // Start where the reader is now: the player adds a row to the sticky bar, which
+    // would otherwise cover a short passage and make Play start at the next one.
+    pos.current ??= { row: startRow(), sentence: 0 };
     setLayer(chosen);
     setOpen(true);
   }, []);
@@ -245,6 +263,7 @@ export function ReadAloud({ next }: { next: string | null }) {
             stop();
             clearMarks();
             setOpen(false);
+            pos.current = null; // next time, start from wherever the reader is then
           } else openWith();
         }}
       >
@@ -271,7 +290,8 @@ export function ReadAloud({ next }: { next: string | null }) {
               value={layer}
               onChange={(e) => {
                 stop();
-                pos.current = null;
+                // The same passage, from its start, in the newly chosen layer.
+                if (pos.current) pos.current = { row: pos.current.row, sentence: 0 };
                 setLayer(e.target.value as ListenLayer);
               }}
             >

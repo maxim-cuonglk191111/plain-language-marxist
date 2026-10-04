@@ -2,7 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 import { readHistory } from "../lib/history";
-import { isTyping, readingLine } from "../lib/position";
+import { readingLine } from "../lib/position";
+import { onShortcut } from "./Shortcuts";
 
 export type TocChapter = {
   path: string;
@@ -56,16 +57,8 @@ export function TocDrawer({
   };
   const close = () => dialog.current?.close();
 
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key !== "t" || isTyping(e) || dialog.current?.open) return;
-      if (document.querySelector(".term-card, dialog[open]")) return;
-      e.preventDefault();
-      open();
-    };
-    document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
-  });
+  // "t" (the shortcuts component decides when keys apply).
+  useEffect(() => onShortcut("toc", open));
 
   return (
     <>

@@ -58,7 +58,7 @@ describe("BOOT_SCRIPT", () => {
     ["pre-031 prefs", '{"theme":"dark","size":"xl","leading":"relaxed","terms":"off"}'],
     [
       "every new field",
-      '{"theme":"sepia","font":"dyslexic","size":24,"leading":"loose","width":"narrow","margins":"large","para":"indented","align":"justify","wpm":300,"terms":"on"}',
+      '{"theme":"sepia","font":"dyslexic","size":24,"leading":"loose","width":"narrow","margins":"large","para":"indented","align":"justify","wpm":300,"terms":"on","focus":"on","aid":"ruler","screen":"on","shortcuts":"off"}',
     ],
     ["unknown values", '{"theme":"neon","font":"comic","size":99,"width":"huge"}'],
     ["not an object", "7"],

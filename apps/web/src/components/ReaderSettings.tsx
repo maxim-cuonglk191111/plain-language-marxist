@@ -1,7 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { onShortcut } from "./Shortcuts";
 import {
+  AIDS,
   ALIGNS,
   DEFAULT_PREFS,
   FONTS,
@@ -9,15 +11,14 @@ import {
   MARGINS,
   PARAS,
   PREFS_EVENT,
-  PREFS_KEY,
   SIZE_MAX,
   SIZE_MIN,
   THEMES,
   WIDTHS,
   WPMS,
-  applyPrefs,
+  SWITCH,
   readPrefs,
-  writeJson,
+  savePrefs,
   type ReaderPrefs,
 } from "../lib/prefs";
 
@@ -71,6 +72,24 @@ const CHOICES: Choice[] = [
     options: labels(WPMS, ["150", "200", "250", "300"]),
   },
   { key: "terms", label: "Term underlines", options: { on: "Show", off: "Hide" } },
+  {
+    key: "aid",
+    label: "Reading aid",
+    hint: "Paragraph focus dims all but the passage you are reading; the ruler is a band that follows the pointer.",
+    options: labels(AIDS, ["None", "Paragraph focus", "Reading ruler"]),
+  },
+  {
+    key: "screen",
+    label: "Keep screen on",
+    hint: "While a chapter is open. Only in browsers that support it.",
+    options: labels(SWITCH, ["Off", "On"]),
+  },
+  {
+    key: "shortcuts",
+    label: "Keyboard shortcuts",
+    hint: "Single keys such as t and f. Press ? to list them.",
+    options: labels(SWITCH, ["Off", "On"]),
+  },
 ];
 
 /** Site-wide reading preferences (SDD §12, task 031 B), kept in this browser only. */
@@ -111,12 +130,31 @@ export function ReaderSettings() {
 
   const save = (next: ReaderPrefs) => {
     setPrefs(next);
-    writeJson(PREFS_KEY, next);
-    applyPrefs(next);
-    window.dispatchEvent(new Event(PREFS_EVENT));
+    savePrefs(next);
   };
-  const set = (key: keyof ReaderPrefs, value: string) =>
-    save({ ...prefs, [key]: key === "wpm" ? Number(value) : value } as ReaderPrefs);
+  /** Changes one setting on top of what is stored now: other controls (focus mode) also write prefs. */
+  const set = (key: keyof ReaderPrefs, value: string | number) =>
+    save({
+      ...readPrefs(),
+      [key]: key === "wpm" || key === "size" ? Number(value) : value,
+    } as ReaderPrefs);
+
+  // Keep in step when another control changes a preference.
+  useEffect(() => {
+    const sync = () => setPrefs(readPrefs());
+    window.addEventListener(PREFS_EVENT, sync);
+    return () => window.removeEventListener(PREFS_EVENT, sync);
+  }, []);
+
+  // "s" opens the panel and moves into it.
+  useEffect(
+    () =>
+      onShortcut("settings", () => {
+        setOpen(true);
+        window.setTimeout(() => panel.current?.querySelector<HTMLElement>("input")?.focus(), 0);
+      }),
+    [],
+  );
 
   return (
     <div className="settings">
@@ -167,11 +205,11 @@ export function ReaderSettings() {
               max={SIZE_MAX}
               step={1}
               value={prefs.size}
-              onChange={(e) => save({ ...prefs, size: Number(e.target.value) })}
+              onChange={(e) => set("size", e.target.value)}
             />
           </div>
 
-          {CHOICES.map((c) => (
+          {CHOICES.filter((c) => c.key !== "screen" || "wakeLock" in navigator).map((c) => (
             <fieldset key={c.key} aria-describedby={c.hint ? `pref-${c.key}-hint` : undefined}>
               <legend>{c.label}</legend>
               <div className="choices">

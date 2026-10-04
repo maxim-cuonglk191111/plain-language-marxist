@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | In progress |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -253,6 +253,16 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 - `pnpm check` and `pnpm e2e` pass. SDD §12 is updated.
 
 ## Done
+
+All parts are in (A, B+F, D with C3, E, C). Reader JS for the whole task: +15.0 KB gzipped (175.5 → 190.5 KB), against a 40 KB budget. No third-party requests (e2e checks the network log). 117 e2e tests pass.
+
+### Part C — Focused reading (2026-10-04)
+- **Focus mode** (C1): a button in the reader bar, or `f`. It hides the site header, the chapter header (except the AI-assisted notice, which stays) and the footer. The reader bar stays, and its button reads "Exit focus mode" while on. Stored as `focus` in `plm:prefs` and applied before first paint, so it carries across chapters.
+- **Reading aids** (C4), in Settings, off by default. *Paragraph focus* fades every passage but the one at the reading line (no transition under reduced motion). The *reading ruler* is a band about two lines tall that follows the mouse, sits at the reading line on touch screens, and moves to the passage after `j`/`k`. It never blocks clicks.
+- **Keep screen on** (C5): a screen wake lock while the page is visible, taken again on return and released when switched off. The setting is only offered where `navigator.wakeLock` exists.
+- **Shortcuts** (C6): one site-wide handler (`components/Shortcuts.tsx`); the components that own each feature listen for its event, so `t` and `h` moved there from TocDrawer and Annotations. It ignores keys while typing, with modifiers, or with a dialog or term card open. `?` lists the keys. "Keyboard shortcuts: Off" in Settings stops them all (SC 2.1.4).
+- **Prefs:** `focus`, `aid`, `screen` and `shortcuts` were added (read with defaults; the boot-script parity test covers them). Settings now change one field on top of what is stored, because the focus button also writes prefs. The last saved prefs are kept in memory, so with storage blocked a change still applies to the page.
+- C2 (paged mode) was dropped, see "Direction". C3 (Compare) shipped with Part D.
 
 ### Part E — Read aloud (2026-10-04)
 - **Player:** a "Listen" button in the reader bar opens a row with: layer (Plain English / Original / Context; the first text layer shown is chosen to start), previous passage / play-pause / next passage, speed (0.75–2×), voice, and "Continue to next chapter". "Listen from here" is also in the passage actions. Hidden unless `speechSynthesis.speak` and `SpeechSynthesisUtterance` both exist.

@@ -3,6 +3,7 @@ import type { ResolveContext } from "@plm/terms";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Annotations } from "../../../components/Annotations";
+import { FocusToggle, ReaderExtras } from "../../../components/FocusedReading";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadAloud } from "../../../components/ReadAloud";
@@ -159,6 +160,7 @@ function DocumentPage({
       <ReadingAids path={doc.path} />
       <SearchHighlight />
       <Annotations path={doc.path} meta={meta} cite={cite} />
+      <ReaderExtras />
 
       {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
       <div className="reader-bar">
@@ -171,6 +173,7 @@ function DocumentPage({
           />
           <LayerSwitch />
           <ReadAloud next={next?.path ?? null} />
+          <FocusToggle />
         </div>
         <ReadingProgress
           path={doc.path}

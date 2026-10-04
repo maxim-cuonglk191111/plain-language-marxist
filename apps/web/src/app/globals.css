@@ -1885,3 +1885,68 @@ body:has(.passage-bar) .toast {
     max-width: 9.5rem;
   }
 }
+
+/* ---------- Focused reading (task 031 C) ---------- */
+/* Focus mode: only the text and the reader bar. The AI-assisted note stays (SDD §12 badges). */
+html[data-focus="on"] .site-header,
+html[data-focus="on"] .site-footer,
+html[data-focus="on"] .reader-header > :not(.ai-note),
+html[data-focus="on"] .resume {
+  display: none;
+}
+html[data-focus="on"] .reader-header {
+  margin: 0.75rem auto 0.5rem;
+}
+html[data-focus="on"] .ai-note {
+  margin: 0;
+}
+.focus-button[aria-pressed="true"] {
+  background: var(--fg);
+  color: var(--bg);
+  border-color: var(--fg);
+}
+
+/* Paragraph focus: every passage but the one at the reading line fades back. */
+html[data-aid="paragraph"] .rows > .row:not([data-current], [data-selected], [data-reading]) {
+  opacity: 0.38;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html[data-aid="paragraph"] .rows > .row {
+    transition: opacity 0.2s;
+  }
+}
+
+/* Reading ruler: a band about two lines tall, over the text but never blocking clicks. */
+.reading-ruler {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: calc(2 * var(--leading) * 1rem);
+  z-index: 2;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--highlight) 45%, transparent);
+  border-block: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+}
+
+/* Shortcut list. */
+.shortcuts {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.shortcuts th,
+.shortcuts td {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  padding: 0.35rem 0.5rem 0.35rem 0;
+  text-align: left;
+  font-weight: 400;
+}
+kbd {
+  font: 600 0.85em/1 var(--sans);
+  padding: 0.15rem 0.4rem;
+  border: 1px solid var(--rule);
+  border-bottom-width: 2px;
+  border-radius: 0.3rem;
+}

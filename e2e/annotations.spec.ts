@@ -71,6 +71,7 @@ test("tapping a passage opens its actions; a passage highlight survives reload",
 
 test("the passage actions work from the keyboard", async ({ page }) => {
   await page.goto(`${both}#p00013`);
+  await ready(page); // the buttons work once the reader's scripts are running
   const button = page.locator("#p00013 button.row-actions");
   await button.focus();
   await page.keyboard.press("Enter");

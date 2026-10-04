@@ -77,6 +77,12 @@ const spoken = (page: Page) =>
   page.evaluate(() => (window as unknown as { __spoken: Spoken[] }).__spoken);
 const player = (page: Page) => page.getByRole("region", { name: "Read aloud" });
 
+/** Play starts at the first passage in view: wait until the deep link has scrolled there. */
+const settled = (page: Page, id: string) =>
+  expect
+    .poll(() => page.locator(`#${id}`).evaluate((el) => Math.round(el.getBoundingClientRect().top)))
+    .toBeLessThan(220);
+
 test("the player is hidden where the browser cannot speak", async ({ page }) => {
   await page.addInitScript(() =>
     Object.defineProperty(window, "speechSynthesis", { value: undefined, configurable: true }),
@@ -90,6 +96,7 @@ test("reads Plain English a sentence at a time, following along", async ({ page 
   // Slow enough that the first sentence is still being "read" when checked, even under load.
   await fakeSpeech(page, 1500);
   await page.goto(`${DOC}?layers=plain#p00009`);
+  await settled(page, "p00009");
   await page.getByRole("button", { name: "Listen" }).click();
   await expect(player(page).getByLabel("Read")).toHaveValue("plain");
   expect(
@@ -128,6 +135,7 @@ test("reads Plain English a sentence at a time, following along", async ({ page 
 test("the reader chooses the layer, and layers are never mixed", async ({ page }) => {
   await fakeSpeech(page);
   await page.goto(`${DOC}?layers=plain,original#p00009`);
+  await settled(page, "p00009");
   await page.getByRole("button", { name: "Listen" }).click();
   await player(page).getByLabel("Read").selectOption("original");
   await player(page).getByRole("button", { name: "Play" }).click();
@@ -159,6 +167,7 @@ test("an untranslated passage is skipped in Plain English, not read in the Origi
 test("previous/next passage, speed and voice", async ({ page }) => {
   await fakeSpeech(page, 2000);
   await page.goto(`${DOC}?layers=plain#p00009`);
+  await settled(page, "p00009");
   await page.getByRole("button", { name: "Listen" }).click();
   const voice = player(page).getByLabel("Voice");
   // English first, voices on this device first, online voices labelled.

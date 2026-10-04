@@ -102,6 +102,21 @@ export function ReadingProgress({
     // meta is a fresh object each render but describes the same chapter as path.
   }, [path]);
 
+  // Tell the CSS how tall the sticky bar is, so passages jumped to are never under it.
+  useEffect(() => {
+    const bar = document.querySelector<HTMLElement>(".reader-bar");
+    if (!bar) return;
+    const html = document.documentElement;
+    const set = () => html.style.setProperty("--bar-h", `${Math.ceil(bar.offsetHeight)}px`);
+    set();
+    const observer = new ResizeObserver(set);
+    observer.observe(bar);
+    return () => {
+      observer.disconnect();
+      html.style.removeProperty("--bar-h");
+    };
+  }, []);
+
   if (!state) return null;
   return (
     <div className="reader-progress">

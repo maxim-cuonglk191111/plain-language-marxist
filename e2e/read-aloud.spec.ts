@@ -80,8 +80,16 @@ const player = (page: Page) => page.getByRole("region", { name: "Read aloud" });
 /** Play starts at the first passage in view: wait until the deep link has scrolled there. */
 const settled = (page: Page, id: string) =>
   expect
-    .poll(() => page.locator(`#${id}`).evaluate((el) => Math.round(el.getBoundingClientRect().top)))
-    .toBeLessThan(220);
+    .poll(() =>
+      // Near the top AND no longer moving: a smooth scroll passes the line on its way.
+      page.locator(`#${id}`).evaluate(async (el) => {
+        const a = el.getBoundingClientRect().top;
+        await new Promise((r) => setTimeout(r, 150));
+        const b = el.getBoundingClientRect().top;
+        return Math.abs(a - b) < 1 && b < 220;
+      }),
+    )
+    .toBe(true);
 
 test("the player is hidden where the browser cannot speak", async ({ page }) => {
   await page.addInitScript(() =>

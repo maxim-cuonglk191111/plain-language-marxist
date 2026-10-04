@@ -26,6 +26,7 @@ import { readerRows, rowAtLine } from "../lib/position";
 import { formatRange, formatRef } from "../lib/reference";
 import { canSpeak } from "../lib/speech";
 import { LISTEN_EVENT } from "./ReadAloud";
+import { QuoteCard, type QuoteRequest } from "./QuoteCard";
 import { onShortcut } from "./Shortcuts";
 
 export const TOAST_EVENT = "plm:toast";
@@ -110,6 +111,7 @@ export function Annotations({
     draft: string;
   } | null>(null);
   const [compare, setCompare] = useState<string | null>(null);
+  const [quote, setQuote] = useState<QuoteRequest | null>(null);
   const [speech, setSpeech] = useState(false);
   useEffect(() => setSpeech(canSpeak()), []);
   const bar = useRef<HTMLDivElement>(null);
@@ -548,7 +550,7 @@ export function Annotations({
   // Escape closes the bar or toolbar.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape" && (selected.length || text) && !noteFor && !compare) {
+      if (e.key === "Escape" && (selected.length || text) && !noteFor && !compare && !quote) {
         setSelected([]);
         setText(null);
         opener.current?.focus();
@@ -658,6 +660,19 @@ export function Annotations({
           >
             Share
           </button>
+          <button
+            type="button"
+            onClick={() => {
+              setQuote({
+                quotes: { [text.layer]: text.shown },
+                reference: formatRef(prefix, text.passage),
+              });
+              document.getSelection()?.removeAllRanges();
+              setText(null);
+            }}
+          >
+            Quote card
+          </button>
           {editing && (
             <button type="button" onClick={() => deleteText(editing.id)}>
               Delete
@@ -707,6 +722,23 @@ export function Annotations({
               }}
             >
               Share
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                const ordered = [...selected].sort();
+                const words = (l: MarkLayer) =>
+                  ordered
+                    .map((p) => passageText(p, l))
+                    .filter(Boolean)
+                    .join("\n\n");
+                setQuote({
+                  quotes: { plain: words("plain"), original: words("original") },
+                  reference: formatRange(prefix, ordered),
+                });
+              }}
+            >
+              Quote card
             </button>
             {selected.length === 1 && (
               <>
@@ -785,6 +817,8 @@ export function Annotations({
           </div>
         </form>
       </dialog>
+
+      <QuoteCard request={quote} meta={cite} onClose={() => setQuote(null)} />
 
       <dialog
         ref={compareDialog}

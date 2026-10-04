@@ -101,6 +101,16 @@ A → B → E (M1), then C and D with M3 content. Separate PRs. Each updates "Do
 
 ## Done
 
+### Part E — Quote cards (2026-10-05)
+- "Quote card" in the passage actions (the passage's words; a choice of layer when both have text) and in the selected-words toolbar (that layer only). A dialog shows the card, with Style (Light / Sepia / Dark, starting from the reader's theme), **Download image** (`manifesto-I-13.png`) and **Share** (Web Share with the file, only where `navigator.canShare({ files })` says yes).
+- **Drawn in the browser** on a 1080 × 1080 canvas (`lib/quotecard.ts`): a label ("ORIGINAL TEXT" / "PLAIN ENGLISH VERSION"), the reference, the quote in the layer's face (book serif for the Original), the source and the site's address. The quote takes the largest size that fits (64 down to 30 px). If it still does not fit, it is cut at a word with "…" and the alt text says "(shortened on the card)". Layout is pure and unit-tested.
+- **Honest labels:** a Plain English card says "Plain English version by Plain Language Marxist, not the original wording. Based on …"; an Original card names the translator.
+- **Accessibility:** the canvas is `role="img"` with the full text of the card as its label, and that text goes along when sharing. The dialog's contents render only while it is open.
+- **Fixed on the way** (found by a flaky test):
+  - The sticky reader bar covered the top 10–12 px of a passage reached by a link, since task 031 A made the bar taller. The bar now publishes its height as `--bar-h` (ResizeObserver), and passages keep that much room (with larger CSS fallbacks for the first jump, before scripts run).
+  - Read aloud could start one passage early or late: opening the player made the bar taller. It now starts from the passage in the address if that is on screen, otherwise the first one in view, fixed when the player opens. Changing the layer restarts the same passage, and closing the player forgets the place.
+- Task 032's M1 parts (A, B, E) are done. C (reading paths) and D (cross-references) wait for M3 content.
+
 ### Part B — Where a term appears (2026-10-05)
 - **Term page:** a "Where this term appears (N)" section (`#appears`), grouped by work and chapter, with counts for each layer. Each line gives the reference ("Manifesto I.13"), a layer tag, about 70 characters each side with the word marked, and a link to `<chapter>?layers=<layer>&hl=<word>#<passage>`, so the passage opens in that layer with the word highlighted. Chapters with more than 30 lines in total start folded (`<details>`). Plain English lines are labelled as our version.
 - **Term card:** "More about this term · Appears N times in the texts →" links to that section.

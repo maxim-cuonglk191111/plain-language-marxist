@@ -260,3 +260,20 @@ describe("hard words", () => {
     expect(() => parseHardWords({})).toThrow(/list/);
   });
 });
+
+describe("framing", () => {
+  const summing: SourcePassage[] = [
+    { id: "p00030", state: "active", text: "In one word, it creates a world after its own image." },
+  ];
+  const run = (text: string) => {
+    const parsed = parseExchange(text);
+    if (!parsed.ok) throw new Error(parsed.error.message);
+    return checkRenderings(parsed.entries, { passages: summing, vocabulary }).map((f) => f.code);
+  };
+
+  it('accepts "in short" where the original says "In one word"', () => {
+    expect(run("=== p00030\nIn short, it creates a world in its own image.")).not.toContain(
+      "framing",
+    );
+  });
+});

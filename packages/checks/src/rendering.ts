@@ -66,6 +66,8 @@ const wordCount = (s: string) => s.split(/\s+/).filter(Boolean).length;
 const MAX_LENGTH_RATIO = 2;
 const FRAMING =
   /\b(?:in other words|to put it simply|simply put|in short|basically|this (?:was|is) an important)\b/i;
+/** The original's own summing-up ("In one word"), which "in short" renders, not frames. */
+const SUMMING_UP = /\bin (?:one|a) word\b/i;
 const QUOTES = /[“”"]/g;
 
 function countWord(text: string, word: string): number {
@@ -244,7 +246,7 @@ export function checkRenderings(entries: readonly ExchangeEntry[], ctx: CheckCon
         'reports the text ("Marx and Engels argue…") instead of keeping the authors\' voice',
       );
     }
-    if (FRAMING.test(rendered) && !FRAMING.test(original))
+    if (FRAMING.test(rendered) && !FRAMING.test(original) && !SUMMING_UP.test(original))
       add("warning", "framing", covers, "adds a framing or commentary sentence");
     // A gloss is a term followed by a dash, parenthesis or "meaning…" that introduces words the
     // original does not have. Dashes that only restructure the original sentence are fine.

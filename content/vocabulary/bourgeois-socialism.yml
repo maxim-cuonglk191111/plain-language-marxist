@@ -1,0 +1,24 @@
+schema_version: 2
+term: bourgeois-socialism
+original:
+  sg: bourgeois socialism
+definition:
+  short: The desire by well-meaning reformers to cure social miseries through charity or administrative fixes, while keeping capitalism and private property intact.
+  long: |-
+    Marx and Engels used this term for reformers, philanthropists, and economists who wanted to improve society without abolishing capitalism.
+
+    They wanted the benefits of modern industry without its strikes, poverty, and class conflict. In Marx's words, they wished for “a bourgeoisie without a proletariat”.
+
+    Pierre-Joseph Proudhon was cited as an example. For Marx, these schemes aimed to pacify workers so capitalism could run more smoothly.
+example:
+  document: document:marx:1848:communist-manifesto:ch03
+  passage: p00041
+  text: Conservative or Bourgeois Socialism
+not_to_confuse: Bourgeois socialism does not seek to end exploitation. It seeks reforms that preserve the capitalist system.
+related: [bourgeoisie, proletariat, capital, private-property]
+renderings:
+  keep:
+    forms:
+      sg: bourgeois socialism
+    reason: Term used in Chapter III. The term card explains it.
+default: keep

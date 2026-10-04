@@ -34,7 +34,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | In progress |
 | [027](027-quality-and-consistency-pass-ch01.md) | Quality, consistency and plain-language polish for Manifesto Chapter I | M1 | Done |
 | [028](028-manifesto-ch02.md) | Manifesto Chapter II: Import, vocabulary, Plain English rendering and explanations | M1 | Done |
-| [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Open |
+| [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Done |
 | [030](030-manifesto-ch04-and-complete-work.md) | Manifesto Chapter IV: Tactical Alliances, Closing Slogan, and Complete Work Release | M1 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

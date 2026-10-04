@@ -1,0 +1,24 @@
+schema_version: 2
+term: true-socialism
+original:
+  sg: True Socialism
+definition:
+  short: A 1840s German literary movement that translated French socialist ideas into abstract philosophical jargon, opposing both the bourgeoisie and workers' revolution.
+  long: |-
+    In the 1840s, German writers read French socialist works. France already had a powerful capitalist class, but Germany was still ruled by feudal monarchs.
+
+    Writers like Karl Grün stripped French ideas of their concrete political context. They replaced real class struggle with abstract German philosophy about “Human Nature”.
+
+    German governments used this movement to oppose the rising liberal bourgeoisie, while suppressing real workers' revolts.
+example:
+  document: document:marx:1848:communist-manifesto:ch03
+  passage: p00029
+  text: dubbed “Philosophy of Action”, “True Socialism”
+not_to_confuse: “True Socialism” was not genuine socialism. It was an intellectual parody that served reactionary German governments.
+related: [bourgeoisie, proletariat, class-struggle, reactionary]
+renderings:
+  keep:
+    forms:
+      sg: True Socialism
+    reason: Historical tendency analyzed in Chapter III. The term card explains it.
+default: keep

@@ -1,0 +1,24 @@
+schema_version: 2
+term: feudal-socialism
+original:
+  sg: feudal socialism
+definition:
+  short: Aristocratic opposition to capitalism that used socialist phrases to attack the bourgeoisie, while secretly hoping to restore feudal rule.
+  long: |-
+    After the revolutions of 1789 and 1830, French and English aristocrats lost direct political power to the bourgeoisie.
+
+    Unable to defeat the capitalists politically, they launched a literary attack. They pretended to champion the working class against factory owners.
+
+    Marx and Engels called this feudal socialism. Its true aim was not to liberate workers, but to restore the old feudal order.
+example:
+  document: document:marx:1848:communist-manifesto:ch03
+  passage: p00006
+  text: In this way arose feudal Socialism
+not_to_confuse: Feudal socialism was not a workers' movement. It was an attempt by the landed nobility to regain its lost privileges.
+related: [bourgeoisie, proletariat, feudalism, reactionary]
+renderings:
+  keep:
+    forms:
+      sg: feudal socialism
+    reason: Historical term used in the text. The term card explains it.
+default: keep

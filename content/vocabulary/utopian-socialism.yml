@@ -1,0 +1,25 @@
+schema_version: 2
+term: utopian-socialism
+aliases: [critical-utopian socialism]
+original:
+  sg: utopian socialism
+definition:
+  short: Early 19th-century socialism that imagined ideal future societies, but rejected politics and working-class struggle.
+  long: |-
+    Before modern industry produced an organized working class, early socialist thinkers designed blueprint models of ideal cooperative societies.
+
+    Henri de Saint-Simon, Charles Fourier, and Robert Owen criticized capitalism's cruelty with brilliant insight. However, they did not believe workers could free themselves.
+
+    Instead, they appealed to wealthy patrons and rulers to fund experimental model colonies. Marx and Engels praised their critique, but argued that liberation requires working-class struggle.
+example:
+  document: document:marx:1848:communist-manifesto:ch03
+  passage: p00050
+  text: Critical-Utopian Socialism and Communism
+not_to_confuse: Utopian socialists were not reactionaries. They were pioneers whose early theories lacked the developed material conditions of modern industry.
+related: [proletariat, class-struggle, modern-industry, communism]
+renderings:
+  keep:
+    forms:
+      sg: utopian socialism
+    reason: Standard historical term. The term card explains it.
+default: keep

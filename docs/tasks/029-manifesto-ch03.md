@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
-| **Owner** | Unassigned |
+| **Owner** | Claude |
 | **Severity** | High |
 | **Milestone** | M1 |
 | **Depends on** | 028 |
@@ -51,8 +51,8 @@ Chapter III is historically and intellectually the most challenging chapter in t
 - Sentences $\le$ 25 words.
 
 ## Acceptance Criteria
-- [ ] Ch. III imported and verified.
-- [ ] Faction term cards created and validated.
-- [ ] Satirical and theoretical passages rendered clearly without losing the sharpness of the critique.
-- [ ] Context layer clarifies all historical references.
-- [ ] `pnpm check` and `pnpm e2e` pass cleanly.
+- [x] Ch. III imported and verified.
+- [x] Faction term cards created and validated.
+- [x] Satirical and theoretical passages rendered clearly without losing the sharpness of the critique.
+- [x] Context layer clarifies all historical references.
+- [x] `pnpm check` and `pnpm e2e` pass cleanly.

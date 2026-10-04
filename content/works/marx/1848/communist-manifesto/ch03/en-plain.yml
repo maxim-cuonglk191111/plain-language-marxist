@@ -1,0 +1,582 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch03
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:fae8f6fe0d973ba46c9e336a78cc1c26d709ec393cf066039b993c2129a7a576
+    revision: 2
+    ai_assisted: true
+    text: Chapter III. Socialist and Communist Literature
+  p00002:
+    covers: [p00002]
+    based_on: sha256:3f9fc1abc86a2fb19ee7a831196f8176fc71a59671a610d9ae7b22fbd5806bf1
+    revision: 2
+    ai_assisted: true
+    text: 1. {Reactionary:adj} Socialism
+  p00003:
+    covers: [p00003]
+    based_on: sha256:9e5b9a4b02cd5da0a5d7b6327a3f39980bdcffa3c22394db0bce6a927440e348
+    revision: 2
+    ai_assisted: true
+    text: A. {Feudal-socialism}
+  p00004:
+    covers: [p00004]
+    based_on: sha256:e447d9c703d1716c4131ee91504211e76bd73fb5f64b164ed4a266990c675028
+    revision: 2
+    ai_assisted: true
+    text: |
+      Because of their historical position, the French and English aristocracies took up writing pamphlets against modern {bourgeoisie:adj} society.
+
+      In the French Revolution of July 1830 and the British reform movement<fn ref="A"/>, they were defeated once again by the hateful rising capitalists.
+
+      After that, serious political struggle was completely out of the question. Only a battle in literature remained possible. Even in literature, the old slogans of the restoration period were no longer possible.<fn ref="1"/>
+  p00005:
+    covers: [p00005]
+    based_on: sha256:11502b9ca976ace0948d216b47f83cc9386686f40a8ad932edd7fcb5a91974f3
+    revision: 2
+    ai_assisted: true
+    text: |
+      To gain sympathy, the aristocracy had to pretend to forget its own interests. It drafted its accusations against the {bourgeoisie} solely in the name of the exploited working class.
+
+      In this way, the nobility took revenge by mocking their new masters in satire and whispering dark predictions of coming disaster into their ears.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:7a74b66ebdf6c7c23b7716e388f5a523833c846e41141201e8acd4082ba6f24e
+    revision: 2
+    ai_assisted: true
+    text: |
+      In this way arose {feudal-socialism}: half mourning, half satire; half echo of the past, half threat of the future.
+
+      At times its sharp and witty attacks struck the {bourgeoisie} to the core. Yet its effect was always ridiculous, because it could never understand the course of modern history.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:a9a630cda8f1a4b55a073f7e78d16afccd04e5bca111f2993d6e8c75ceb05848
+    revision: 2
+    ai_assisted: true
+    text: |
+      To rally the people to their side, the aristocrats waved the {proletariat:adj} begging bag as their banner.
+
+      Whenever the people followed them, however, they spotted the old feudal coats of arms on the aristocrats' backsides, and ran away laughing loudly.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:1d34219f0f766f008a7f4dabc749eab2cd02b57c42839a765ca84b39935f28c9
+    revision: 2
+    ai_assisted: true
+    text: A section of the French Legitimists and the “Young England” group put on this performance.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:67e39f723f741c06b111fb03ac792e68601853ee0fa2261d0a08ffef7a7ab77e
+    revision: 2
+    ai_assisted: true
+    text: |
+      The feudal lords boast that their way of exploitation was different from that of the {bourgeoisie}. They forget that they exploited people under completely different conditions that are now out of date.
+
+      They point out that under their rule the modern {proletariat} never existed. They forget that the modern {bourgeoisie} is the necessary child of their own feudal society.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:2c244da7e3a779609d357fd05f3142fa7ed3539fdbc57979a502a42dbbdedec7
+    revision: 2
+    ai_assisted: true
+    text: |
+      Besides, they hardly hide the {reactionary:adj} nature of their criticism.
+
+      Their main charge against the {bourgeoisie} is that its rule creates a class destined to tear up the old social order by its roots.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:9cf29a0af331072a9134788b47ac9bb78c4cbec982a3c700689f2cd3333cf9ea
+    revision: 2
+    ai_assisted: true
+    text: They criticize the {bourgeoisie} not so much for creating a {proletariat}, but for creating a <i>{revolution:adj}</i> {proletariat}.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:6fc1d8dd46a7313e437d9a6e29021b9643bddecd78c0cc1e9b1ee5992d98aff6
+    revision: 2
+    ai_assisted: true
+    text: |
+      In political practice, therefore, they join in all repressive measures against the working class.
+
+      In daily life, despite their grand phrases, they stoop to pick up the golden apples dropped from industry. They trade truth, love, and honor for business in wool, beet sugar, and potato alcohol.<fn ref="2"/>
+  p00013:
+    covers: [p00013]
+    based_on: sha256:15b40a1e53436ee0649b84ec6a22b5fb54d7fe34d1325de846cfa3051a1557be
+    revision: 2
+    ai_assisted: true
+    text: Just as the priest has always walked hand in hand with the landlord, so Christian socialism walked hand in hand with {feudal-socialism}.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:d4b383669298d4f774d33c6dcf6d1b7df4be06b7ca525d801efc0175d390af85
+    revision: 2
+    ai_assisted: true
+    text: |
+      Nothing is easier than to give Christian self-denial a socialist colour.
+
+      Has Christianity not spoken out against {private-property}, marriage, and the State? Has it not preached charity and poverty, celibacy, monastery life, and the Church instead?
+
+      Christian socialism is merely the holy water the priest uses to bless the bitterness of the aristocrat.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:4bb911df2915082e775314f097c6b0d8709e69e3be25eada2b029da3873b2b21
+    revision: 2
+    ai_assisted: true
+    text: B. {Petty-bourgeois-socialism}
+  p00016:
+    covers: [p00016]
+    based_on: sha256:2ac903ffdc9ae7e0196ba74c587cc0b278b6428d0f9140d904911b4e945f6fe3
+    revision: 2
+    ai_assisted: true
+    text: |
+      The feudal aristocracy was not the only class ruined by the {bourgeoisie}. It was not the only class whose conditions of life perished in modern {bourgeoisie:adj} society.
+
+      Medieval town dwellers and small peasant owners came before the modern {bourgeoisie}. In less developed countries, these two classes still linger alongside the rising {bourgeoisie}.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:899dd90f9d3cf14449074e2c0c9607d565e31ec3eca3390e58a3c118bdad9b3a
+    revision: 2
+    ai_assisted: true
+    text: |
+      In fully developed countries, a new {petty-bourgeoisie} has formed, swinging between {proletariat} and {bourgeoisie}, and constantly renewing itself.
+
+      Competition constantly pushes its members down into the {proletariat}.
+
+      As {modern-industry} grows, they see the day coming when they will disappear as an independent part of society. In factories, farms, and shops, managers and employees will replace them.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:dd5f39f9ed5f2a8a6b8aaa63ac5a9755c92676f7f2c8ea949c2e8c3601435a51
+    revision: 2
+    ai_assisted: true
+    text: |
+      In countries like France, where peasants made up more than half the population, writers opposing the {bourgeoisie} naturally used the standard of peasants and small shopkeepers to defend the working class.
+
+      Thus arose {petty-bourgeois-socialism}. Sismondi was the head of this school, not only in France but also in England.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:ac5ae965fe05121b68ab5b795252390b5b6d145728f7525ca309afb648834d14
+    revision: 2
+    ai_assisted: true
+    text: |
+      This school of socialism dissected the contradictions of modern production with great skill. It exposed the false excuses of economists.
+
+      It proved the destructive effects of machines and the {division-of-labour}, the concentration of {capital} and land, {over-production}, and economic crises.
+
+      It highlighted the ruin of small farmers, the misery of the {proletariat}, chaotic production, extreme inequality, cutthroat trade wars between nations, and the breaking up of old family ties.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:183465fa95557548c35fd7988bedfc764351f8c8011aecab0b0af7a81ade81d4
+    revision: 2
+    ai_assisted: true
+    text: |
+      In its positive goals, however, this socialism wants to restore old {means-of-production} and old property relations.
+
+      Or it tries to squeeze modern production back inside the old property relations that modern production had to break open.
+
+      In either case, it is both {reactionary:adj} and utopian.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:544c368f7e03c6cd3ee06f3493d8fcb96cb9ca403a56d875641c95a90dd7f39b
+    revision: 2
+    ai_assisted: true
+    text: "Its final words are: guild workshops for industry, and traditional family relations in agriculture."
+  p00022:
+    covers: [p00022]
+    based_on: sha256:dbd479b92e2b3483c73aaefe9f6a7378290240aa68fb30aeaeedb1264ce52951
+    revision: 2
+    ai_assisted: true
+    text: In the end, when hard historical facts cleared away all self-deception, this form of socialism ended in a miserable fit of despair.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:90434b456fecaeccfd386498c8d7ade9401d3b43487f31bbce497d963813d119
+    revision: 2
+    ai_assisted: true
+    text: C. German or “{True-socialism}”
+  p00024:
+    covers: [p00024]
+    based_on: sha256:4d87fd4ad3d66cdf364ad3c1d4b8275cb3087064d58f399619e3329139f49616
+    revision: 2
+    ai_assisted: true
+    text: |
+      French socialist and communist literature arose under a ruling {bourgeoisie} as an expression of the struggle against it.
+
+      This literature arrived in Germany just as the German {bourgeoisie} was beginning its fight against feudal absolute monarchy.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:dc2a62b201faf38624020ae2f683204e994079b8d0035948d41c9c4f3f1b90cf
+    revision: 2
+    ai_assisted: true
+    text: |
+      German philosophers, amateur thinkers, and writers eagerly grabbed this literature. They forgot that while the writings crossed the border, French social conditions did not travel with them.
+
+      In contact with German conditions, this French literature lost all practical meaning and became purely literary.
+
+      To German philosophers of the eighteenth century, the demands of the first French {Revolution} were only demands of “Practical Reason” in general. The will of the revolutionary French {bourgeoisie} became, in their eyes, the laws of pure human Will.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:b025cd98eeb9be36b493f15d8aca30d32bfef093c0b44383cc2228f623100d43
+    revision: 2
+    ai_assisted: true
+    text: |
+      The work of these German writers consisted only in fitting the new French ideas to their old philosophical thinking.
+
+      Or rather, they took French ideas without giving up their own philosophical viewpoint.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:3a63a46b775f0c173784d567a7d512c7d1391d386bfbe1a21416bfb75a3e2998
+    revision: 2
+    ai_assisted: true
+    text: "They took over these ideas in the way one takes over a foreign language: through translation."
+  p00028:
+    covers: [p00028]
+    based_on: sha256:89576b3c8f0032256f6945965528254361b2f2d05a9d1261837c14ef20e64827
+    revision: 2
+    ai_assisted: true
+    text: |
+      Medieval monks wrote silly lives of Catholic Saints over ancient classical manuscripts.
+
+      German writers reversed this process with non-religious French literature. They wrote philosophical nonsense beneath the French original.
+
+      Beneath French criticisms of money, they wrote “Alienation of Humanity.” Beneath French criticisms of the capitalist state, they wrote “Dethronement of the General Category,” and so on.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:daea239ab83978952d5b84ea42757d0988907337316525112482877808943084
+    revision: 2
+    ai_assisted: true
+    text: "They gave fancy names to this combination of philosophy and French criticism: “Philosophy of Action,” “{True-socialism},” “German Science of Socialism,” and “Philosophical Foundation of Socialism.”"
+  p00030:
+    covers: [p00030]
+    based_on: sha256:d426464d99d2959dceb364361c414a67a949a42da0e34509d33935cc140d34c6
+    revision: 2
+    ai_assisted: true
+    text: |
+      French socialist literature was thus completely stripped of its strength.
+
+      In German hands, it stopped expressing the struggle of one class against another. The German writer proudly thought he had overcome “French one-sidedness.”
+
+      He believed he represented the demands of Truth rather than real human needs. He represented the interests of Human Nature rather than the {proletariat}: Man in general, who belongs to no class and lives only in philosophical fantasy.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:b825a1bb4ff36fe4818ab11bd4aa5136d64a9b6b48fd1f4db81ecc610bc469ae
+    revision: 2
+    ai_assisted: true
+    text: This German socialism took its schoolboy exercises so solemnly, and praised its cheap stock of ideas like a circus vendor. Gradually, it lost its innocent academic tone.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:c676768bc94d0c41782fac72b8350fbc560150694c84493efb16c3560bcb4b57
+    revision: 2
+    ai_assisted: true
+    text: The struggle of the Germans, and especially the Prussian {bourgeoisie}, against feudal aristocrats and the monarchy — the liberal movement — grew much more serious.
+  p00033:
+    covers: [p00033]
+    based_on: sha256:79e14fda973c99da94c0bb971c485b850bde97380bc2c43b2219cb45c41cc0c1
+    revision: 2
+    ai_assisted: true
+    text: |
+      This gave “{True-socialism}” the chance it had waited for: to oppose the liberal movement with socialist demands.
+
+      It hurled traditional curses against representative government, against {bourgeoisie:adj} competition, free press, and legal equality. It preached to the masses that they had nothing to gain from this {bourgeoisie:adj} movement.
+
+      German socialism conveniently forgot that French socialist criticism had presupposed modern {bourgeoisie:adj} society — the very thing Germans were still fighting to achieve.
+  p00034:
+    covers: [p00034]
+    based_on: sha256:503cfe7c16a3a7d08a291aa1c28a83ceb7575ac97ce43cc8cb5e88fe68f5c2bc
+    revision: 2
+    ai_assisted: true
+    text: To absolute monarchies, with their priests, professors, landlords, and officials, this socialism served as a welcome scarecrow against the threatening {bourgeoisie}.
+  p00035:
+    covers: [p00035]
+    based_on: sha256:0d5c16a66c06748eeee86d02cae17b4e4d29d65d7855057f9a574ef03305e8c1
+    revision: 2
+    ai_assisted: true
+    text: It offered a sweet finish after the bitter pills of whips and bullets that these same rulers used against German workers' uprisings.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:d9ec8b44d34047c0fa2481c654e6f222cd77c073bf6365b78c38022230d05405
+    revision: 2
+    ai_assisted: true
+    text: |
+      While “{True-socialism}” served rulers against the {bourgeoisie}, it directly defended a {reactionary:adj} interest: the narrow-minded German Philistines.
+
+      In Germany, the {petty-bourgeoisie:adj} class, a relic of the sixteenth century, was the real social foundation of the existing order.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:a508668c6386b4fc172babe4d900be6955e964b5b3fa1ca7f7525b387defb468
+    revision: 2
+    ai_assisted: true
+    text: |
+      To preserve this class was to preserve the existing order in Germany.
+
+      Rule by the {bourgeoisie} threatened it with destruction: both from concentrated {capital} and from a rising {revolution:adj} {proletariat}.
+
+      “{True-socialism}” seemed to kill both birds with one stone. It spread like an epidemic.
+  p00038:
+    covers: [p00038]
+    based_on: sha256:03d70c726ff0cab4ef972ea62334faf40f8aaa602502f14c1bcb175c8a8cd9e2
+    revision: 2
+    ai_assisted: true
+    text: |
+      The German socialists wrapped their bony “eternal truths” in a robe of philosophical cobwebs, fancy rhetoric, and sentimental nonsense.
+
+      This robe wonderfully increased the sale of their books among such an audience.
+  p00039:
+    covers: [p00039]
+    based_on: sha256:e23e8d173fe9135b462ca3f0f28c3c325cb21c171e6843618f5cdd3337d9526f
+    revision: 2
+    ai_assisted: true
+    text: German socialism recognized more and more that its true mission was to be the loud-mouthed champion of this narrow-minded {petty-bourgeoisie}.
+  p00040:
+    covers: [p00040]
+    based_on: sha256:e4e306d50e11e37fa51bc3a9d734c41371654e02cdfdf57b454de12d947dedc6
+    revision: 2
+    ai_assisted: true
+    text: |
+      It proclaimed the German nation to be the model nation, and the German small shopkeeper to be the ideal human being.
+
+      It gave every petty cruelty of this model man a hidden, higher socialist meaning.
+
+      It even opposed the “brutally destructive” direction of {Communism}, and boasted of its contempt for all {class-struggle:pl}. Almost all socialist writings circulating in Germany in 1847 belong to this corrupt literature.<fn ref="3"/>
+  p00041:
+    covers: [p00041]
+    based_on: sha256:5a6f73936c98006215c442ce29641702b2419e7b86e7598bd0929d0694759b09
+    revision: 2
+    ai_assisted: true
+    text: 2. {Conservative:adj} or {Bourgeois-socialism}
+  p00042:
+    covers: [p00042]
+    based_on: sha256:86dfc57ad744765f5225b0ca7be84d0af4f3619c5c298e47d70410adb06cc64c
+    revision: 2
+    ai_assisted: true
+    text: A section of the {bourgeoisie} wants to fix social problems in order to ensure that {bourgeoisie:adj} society survives.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:faa35cebdb7fb9b3db61b0783426207a434b6f85969e697921ae4092be8014cf
+    revision: 2
+    ai_assisted: true
+    text: |
+      This group includes economists, philanthropists, humanitarians, charity organizers, animal welfare activists, anti-alcohol campaigners, and small-time reformers of every kind.
+
+      This form of socialism has even been developed into complete systems.
+  p00044:
+    covers: [p00044]
+    based_on: sha256:ccd1faf4d9fee3b5410e2f28fe5efe5a1e3798d12403dbd8308e276b7bd0356d
+    revision: 2
+    ai_assisted: true
+    text: We may cite Proudhon’s <i>Philosophy of Poverty</i> as an example of this school.
+  p00045:
+    covers: [p00045]
+    based_on: sha256:d9f8008f4f1e2e6b4de8ae052968a0fba07e33355a2d6d47a3785460612a3462
+    revision: 2
+    ai_assisted: true
+    text: |
+      These socialist capitalists want all the advantages of modern social conditions without the struggles and dangers that necessarily come from them.
+
+      They desire the existing state of society, minus its {revolution:adj} and breaking-down elements. They wish for a {bourgeoisie} without a {proletariat}.
+
+      The {bourgeoisie} naturally thinks that the world in which it rules is the best of all worlds. {Bourgeois-socialism} develops this comfortable idea into more or less complete systems.
+
+      It demands that the {proletariat} carry out such a system and march straight into this social New Jerusalem. In reality, it demands only that the {proletariat} remain within existing society, but cast away all its bitter hatred toward the {bourgeoisie}.
+  p00046:
+    covers: [p00046]
+    based_on: sha256:421b1b4e9cd1ff66d272ee4e4f851545b448762dc7d6a719482e0d79f463290f
+    revision: 2
+    ai_assisted: true
+    text: |
+      A second, more practical version of this socialism tries to turn workers away from {revolution:adj} movements.
+
+      It claims that no mere political reform, but only economic improvements, could benefit them.
+
+      By economic improvements, however, it in no way understands abolishing {bourgeoisie:adj} {relations-of-production}. It means administrative reforms that leave {capital} and {wage-labour} untouched, merely lessening the cost and simplifying the administrative work of {bourgeoisie:adj} government.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:b3237acc723663ddbf1be92388b70346380b0f3c530018939429c824e841d1ae
+    revision: 2
+    ai_assisted: true
+    text: "{Bourgeois-socialism} achieves its true meaning only when it becomes a mere figure of speech."
+  p00048:
+    covers: [p00048]
+    based_on: sha256:b8b2876e09b42bff2be781e9225f542a70ff9bd123109e91ca87d7aae24c477c
+    revision: 2
+    ai_assisted: true
+    text: |
+      Free trade: for the benefit of the working class. Protective duties: for the benefit of the working class. Prison reform: for the benefit of the working class.
+
+      This is the final and only serious word of {bourgeois-socialism}.
+  p00049:
+    covers: [p00049]
+    based_on: sha256:daed0eaa31ffc994f036ef83d871d5a8d022898b34c446f6b4ff0b9ebc1aa77d
+    revision: 2
+    ai_assisted: true
+    text: "It can be summed up in one sentence: the capitalist is a capitalist — for the benefit of the working class."
+  p00050:
+    covers: [p00050]
+    based_on: sha256:427bec0b78db80c7657034e6f663301bac91a5d0908253eff44822adf278d149
+    revision: 2
+    ai_assisted: true
+    text: 3. Critical-{Utopian-socialism} and {Communism}
+  p00051:
+    covers: [p00051]
+    based_on: sha256:6e96e70880c5b419242416e0301edb1342581ed41d1d33165acdd8cf6dbe0eee
+    revision: 2
+    ai_assisted: true
+    text: We do not refer here to the literature that voiced the demands of the {proletariat} in modern revolutions, such as the writings of Babeuf.
+  p00052:
+    covers: [p00052]
+    based_on: sha256:d5549f112d56e06b684ebb115050ca2c44d572fcc24c5103a88906148a90d799
+    revision: 2
+    ai_assisted: true
+    text: |
+      The earliest direct attempts of the {proletariat} to achieve its aims took place when feudal society was being overthrown.
+
+      They inevitably failed because the {proletariat} was still undeveloped, and the economic conditions for its liberation had not yet been created by the {bourgeoisie:adj} era.
+
+      The literature of these first movements preached extreme self-denial and crude social equality.
+  p00053:
+    covers: [p00053]
+    based_on: sha256:0bd25cf362e12a717905ac209fa55800818ec8d8c836ff20fa71b85ff63ab82b
+    revision: 2
+    ai_assisted: true
+    text: |
+      The socialist and communist systems of Saint-Simon, Fourier, Owen, and others arose in the early period of the struggle between {proletariat} and {bourgeoisie}.
+
+      We described this undeveloped stage above (see Section 1: {Bourgeoisie:persons} and {Proletariat:pl}).
+  p00054:
+    covers: [p00054]
+    based_on: sha256:0f1aa00fd702a8f97f85cf593a3f49771355d008787e4ecd32acc226214c2f97
+    revision: 2
+    ai_assisted: true
+    text: |
+      The founders of these systems saw {class-antagonism:pl} and the decay of existing society.
+
+      However, the young {proletariat} appeared to them as a class without historical initiative or any independent political movement.
+  p00055:
+    covers: [p00055]
+    based_on: sha256:913406e9dd54204283cd584148f9d27e04855610fa401c2021db029a8e879088
+    revision: 2
+    ai_assisted: true
+    text: |
+      Because {class-antagonism:pl} develop alongside industry, the economic conditions for liberating the {proletariat} did not yet exist.
+
+      They therefore looked for a new social science and new social laws to create those conditions.
+  p00056:
+    covers: [p00056]
+    based_on: sha256:4df0c72bfbba3fd3558e5f5ff2d7b042344717fd07737227bd1490411bb2cb0d
+    revision: 2
+    ai_assisted: true
+    text: |
+      They replaced historical action with personal invention, real conditions of freedom with imaginary ones, and workers' class organization with their own social blueprints.
+
+      For them, future history became merely advertising and testing their social plans.
+  p00057:
+    covers: [p00057]
+    based_on: sha256:62a5fa218b4aaeed3bd5f0ee040bf6f0ec50cca3252fe363713e8ccb4914b876
+    revision: 2
+    ai_assisted: true
+    text: |
+      In designing their plans, they cared mainly for workers as the class that suffered most.
+
+      To them, the {proletariat} existed only as a suffering class, not as an active political force.
+  p00058:
+    covers: [p00058]
+    based_on: sha256:ed5d10357ec20a1e4a6d0156097bb1a1f80d7aa00e1d9c6190d566faf425242e
+    revision: 2
+    ai_assisted: true
+    text: |
+      Because the {class-struggle} was still undeveloped, these socialists considered themselves far superior to all class conflicts.
+
+      They wanted to improve the condition of every member of society, even the most favoured.
+
+      Therefore, they regularly appealed to society as a whole, without class distinction, and by preference to the ruling class. For once people understood their system, how could they fail to see in it the best possible plan for the best possible state of society?
+  p00059:
+    covers: [p00059]
+    based_on: sha256:ede29fd9dd8e2d62ca4e5f71079f3be352ff247f88c5bb49f0ae225944c38d50
+    revision: 2
+    ai_assisted: true
+    text: |
+      Therefore, they rejected all political and especially all {revolution:adj} action.
+
+      They wished to attain their ends by peaceful means, and by setting a model example to open the way for their new social Gospel.
+  p00060:
+    covers: [p00060]
+    based_on: sha256:fcb10af74f27e9cfdc84eaafa438c49188f2bac73177f3340385d5b06ed05b8f
+    revision: 2
+    ai_assisted: true
+    text: These imaginary pictures of future society reflected the first instinctive desires of the young {proletariat} for a complete rebuilding of society.
+  p00061:
+    covers: [p00061]
+    based_on: sha256:e2ee838a07d2e6ca73df20b9e3d8ab197f39c4f3c4ccf4d2e3985e8992cc1308
+    revision: 2
+    ai_assisted: true
+    text: |
+      Yet these socialist writings also contained real critique. They attacked every principle of existing society, providing valuable material to educate the working class.
+
+      They proposed ending the divide between town and country, abolishing the family, ending private business for individual profit, and abolishing the wage system.
+
+      All these proposals pointed solely toward ending {class-antagonism:pl}. But because those antagonisms were only beginning to take shape, these ideas were purely of a Utopian character.
+  p00062:
+    covers: [p00062]
+    based_on: sha256:e09022e5a19c28a1f8b2527772644cfd0274ee21c9a8e3af9075997dc79fd660
+    revision: 2
+    ai_assisted: true
+    text: |
+      The importance of critical-{utopian-socialism} and {Communism} is in inverse proportion to historical development.
+
+      As the modern {class-struggle} develops and takes definite shape, this fantastic standing apart from the fight, and these fantastic attacks upon it, lose all practical value and theoretical justification.
+
+      Therefore, although the founders of these systems were in many respects revolutionary, their followers have in every case formed mere {reactionary:adj} sects.
+
+      They hold fast to the original views of their masters, in opposition to the progressive historical development of the {proletariat}. They therefore consistently try to deaden the {class-struggle} and reconcile {class-antagonism:pl}.
+
+      They still dream of carrying out their social Utopias through experiments: founding isolated “phalansteres”, establishing “Home Colonies”, or setting up a “Little Icaria”<fn ref="4"/> — miniature pocket editions of the New Jerusalem.
+
+      To build all these castles in the air, they must appeal to the feelings and pockets of the {bourgeoisie}.
+
+      Step by step, they sink into the category of the {reactionary:adj} or {conservative:adj} socialists described above, differing from them only by more systematic pedantry and superstitious faith in the miracles of their social science.
+  p00063:
+    covers: [p00063]
+    based_on: sha256:675f2497ad58bb65c0956053171775398194c871f75b183640104d706bafef4a
+    revision: 2
+    ai_assisted: true
+    text: They therefore strongly oppose all political action by the working class, believing it can only come from a lack of faith in the new Gospel.
+  p00064:
+    covers: [p00064]
+    based_on: sha256:b1932ee00a32f2c947a25d61806436247548dcf992f327c9b91b392fcf58ecea
+    revision: 2
+    ai_assisted: true
+    text: The followers of Owen in England and Fourier in France oppose the Chartists and the <i>Réformistes</i>.
+  p00065:
+    covers: [p00065]
+    based_on: sha256:df6ae8806c72d67926189d7b8e7799fb732995052f94e734d8abc30ee74918c0
+    revision: 2
+    ai_assisted: true
+    text: This refers not to the English Restoration (1660–1689), but to the French Restoration (1814–1830). [Note by Engels to the English edition of 1888.]
+  p00066:
+    covers: [p00066]
+    based_on: sha256:b9313e819a5b55f0fb2b43e7b7143025142eec50d4569be59bf405132d8c4d71
+    revision: 2
+    ai_assisted: true
+    text: |
+      This applies mainly to Germany. There, the landed nobility manage large estates through stewards, and run beet sugar factories and potato distilleries.
+
+      The wealthier British aristocracy did not do this openly yet. But they made up for falling rents by lending their names to promoters of shady financial companies. [Note by Engels to the English edition of 1888.]
+  p00067:
+    covers: [p00067]
+    based_on: sha256:b88bf6c5c3d6b9fed9353bddc8d2e33b1d008c8afa242a439e203b7f737cd132
+    revision: 2
+    ai_assisted: true
+    text: The {revolution:adj} storm of 1848 swept away this shabby tendency and cured its leaders of dabbling in socialism. The chief representative of this school was Karl Grün. [Note by Engels to the German edition of 1890.]
+  p00068:
+    covers: [p00068]
+    based_on: sha256:9178cb5c2112e8fbd7247035614274d76a212a5168b0e0fbd87b02a7b9c05c77
+    revision: 2
+    ai_assisted: true
+    text: <i>Phalanstères</i> were socialist colonies planned by Charles Fourier. <i>Icaria</i> was the name given by Étienne Cabet to his imaginary utopia and later to his American colony. [Note by Engels to the English edition of 1888.]<br/><br/>“Home Colonies” were what Robert Owen called his model societies. <i>Phalanstères</i> were the grand communal buildings planned by Fourier. <i>Icaria</i> was Cabet's imaginary land. [Note by Engels to the German edition of 1890.]
+  p00069:
+    covers: [p00069]
+    based_on: sha256:9d861a0bb8813ab120930c861dc83766dc9f12c09c8e45119943bb30189bef08
+    revision: 2
+    ai_assisted: true
+    text: |
+      This refers to the movement for electoral reform passed by the British House of Commons in 1831 and endorsed by the House of Lords in June 1832 under pressure from the working class.
+
+      The reform broke the political monopoly of the landed and financial aristocracy, opening Parliament to representatives of the industrial {bourgeoisie}.
+
+      However, despite promises, neither workers nor the {petty-bourgeoisie:adj} small owners were granted voting rights.

@@ -1,0 +1,24 @@
+schema_version: 2
+term: petty-bourgeois-socialism
+original:
+  sg: petty-bourgeois socialism
+definition:
+  short: A socialist current reflecting small shopkeepers and peasants ruined by large-scale industry, seeking to restore older, smaller forms of property.
+  long: |-
+    As modern industry developed, small artisans and peasants were steadily ruined by competition.
+
+    Swiss economist Simonde de Sismondi led a socialist school defending these intermediate classes. Sismondi sharply exposed the miseries of industrial capitalism, including overproduction and extreme inequality.
+
+    However, his positive program looked backwards. He wanted to restore medieval guild workshops and traditional family farming.
+example:
+  document: document:marx:1848:communist-manifesto:ch03
+  passage: p00018
+  text: Thus arose petty-bourgeois Socialism
+not_to_confuse: This current criticized capitalism's cruelty, but its solution was nostalgic. It wanted to turn back the clock to pre-industrial production.
+related: [petty-bourgeoisie, division-of-labour, over-production, modern-industry]
+renderings:
+  keep:
+    forms:
+      sg: petty-bourgeois socialism
+    reason: Historical term used in the text. The term card explains it.
+default: keep

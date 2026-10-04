@@ -1,0 +1,39 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch03
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00008]
+    text: |-
+      The French Legitimists supported the older royal Bourbon dynasty. “Young England” was a group of British Tory aristocrats who romanticized medieval feudal relations.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00018]
+    text: |-
+      Jean-Charles Sismondi was a Swiss economist. He was among the first to criticize the destructive social effects of modern industrial machinery and competition.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00028]
+    text: |-
+      German writers used abstract terms from philosopher G.W.F. Hegel. Marx mocks how they attached grand philosophical jargon to concrete French political writings.
+    ai_assisted: true
+  e004:
+    kind: historical_context
+    targets: [p00044]
+    text: |-
+      Pierre-Joseph Proudhon was an influential French socialist thinker. In 1847, Marx published The Poverty of Philosophy to refute Proudhon's economic theories.
+    ai_assisted: true
+  e005:
+    kind: historical_context
+    targets: [p00053]
+    text: |-
+      Saint-Simon, Fourier, and Owen were pioneering early European socialists. They wrote before large modern trade unions and mass working-class parties existed.
+    ai_assisted: true
+  e006:
+    kind: historical_context
+    targets: [p00064]
+    text: |-
+      The Chartists were a British mass political movement demanding the right to vote. The Réformistes were French democratic socialists active in 1848.
+    ai_assisted: true

@@ -22,9 +22,10 @@ import { withSource, type CitationMeta } from "../lib/citation";
 import type { ChapterMeta } from "../lib/history";
 import { currentLayers } from "../lib/layers";
 import { fromRange, layerText, toRange } from "../lib/layertext";
-import { isTyping } from "../lib/position";
+import { readerRows, rowAtLine } from "../lib/position";
 import { canSpeak } from "../lib/speech";
 import { LISTEN_EVENT } from "./ReadAloud";
+import { onShortcut } from "./Shortcuts";
 
 export const TOAST_EVENT = "plm:toast";
 export const toast = (message: string) =>
@@ -540,26 +541,55 @@ export function Annotations({
     if (!compare && d?.open) d.close();
   }, [compare]);
 
-  // Escape closes the bar or toolbar; "h" highlights the selected words.
+  // Escape closes the bar or toolbar.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape" && (selected.length || text) && !noteFor && !compare) {
         setSelected([]);
         setText(null);
         opener.current?.focus();
-        return;
-      }
-      if (e.key === "h" && !isTyping(e)) {
-        const t = readSelection();
-        if (t) {
-          e.preventDefault();
-          markText(t, "yellow");
-          toast("Highlighted.");
-        }
       }
     };
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
+  });
+  // "h" highlights the selected words; "b" bookmarks the passage at the reading line.
+  useEffect(() => {
+    const offH = onShortcut("highlight", () => {
+      const t = readSelection();
+      if (!t) return toast("Select some words first, then press h.");
+      markText(t, "yellow");
+      toast("Highlighted.");
+    });
+    const offB = onShortcut("bookmark", () => {
+      const rows = readerRows();
+      const row = rows[rowAtLine(rows).index];
+      if (!row) return;
+      const id = bookmarkId(path, row.id);
+      const on = items.some((a) => a.id === id);
+      const now = Date.now();
+      commit((list) =>
+        on
+          ? list.filter((a) => a.id !== id)
+          : [
+              ...list,
+              {
+                id,
+                kind: "bookmark",
+                scope: "passage",
+                ...base(row.id),
+                snippet: snippetOf(row.id),
+                created: now,
+                updated: now,
+              },
+            ],
+      );
+      toast(on ? "Bookmark removed." : `Passage ${Number(row.id.replace(/D/g, ""))} bookmarked.`);
+    });
+    return () => {
+      offH();
+      offB();
+    };
   });
 
   // Only while the bar is open: the layers live on <html>, which the server render has not got.

@@ -87,7 +87,8 @@ test("the player is hidden where the browser cannot speak", async ({ page }) => 
 });
 
 test("reads Plain English a sentence at a time, following along", async ({ page }) => {
-  await fakeSpeech(page, 400);
+  // Slow enough that the first sentence is still being "read" when checked, even under load.
+  await fakeSpeech(page, 1500);
   await page.goto(`${DOC}?layers=plain#p00009`);
   await page.getByRole("button", { name: "Listen" }).click();
   await expect(player(page).getByLabel("Read")).toHaveValue("plain");
@@ -119,7 +120,7 @@ test("reads Plain English a sentence at a time, following along", async ({ page 
   await expect.poll(async () => (await spoken(page)).length).toBeGreaterThan(1);
   await player(page).getByRole("button", { name: "Pause" }).click();
   const count = (await spoken(page)).length;
-  await page.waitForTimeout(900);
+  await page.waitForTimeout(2000);
   expect((await spoken(page)).length).toBe(count);
   await expect(player(page).getByRole("button", { name: "Play" })).toBeVisible();
 });

@@ -36,7 +36,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [028](028-manifesto-ch02.md) | Manifesto Chapter II: Import, vocabulary, Plain English rendering and explanations | M1 | Done |
 | [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Done |
 | [030](030-manifesto-ch04-and-complete-work.md) | Manifesto Chapter IV: Tactical Alliances, Closing Slogan, and Complete Work Release | M1 | Done |
-| [031](031-ebook-reader-experience.md) | E-book reader experience: navigation, appearance, immersive reading, highlights, read-aloud | M1 | In progress |
+| [031](031-ebook-reader-experience.md) | E-book reader experience: navigation, appearance, immersive reading, highlights, read-aloud | M1 | Done |
 | [032](032-study-reader-features.md) | Study reader features from Bible apps: passage references, concordance, reading paths, quote cards | M1/M3 | Open |
 | [033](033-german-original-layer.md) | Optional German original layer, switched on in Settings | M3 | Open |
 

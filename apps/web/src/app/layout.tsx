@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { ReaderSettings } from "../components/ReaderSettings";
+import { Shortcuts } from "../components/Shortcuts";
 import { siteUrl } from "../lib/data";
 import { BOOT_SCRIPT } from "../lib/prefs";
 import "./globals.css";
@@ -34,6 +35,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </nav>
         </header>
         <main id="main">{children}</main>
+        <Shortcuts />
         <footer className="site-footer">
           <p>
             Plain English and explanations:{" "}

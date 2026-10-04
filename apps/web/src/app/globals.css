@@ -1798,3 +1798,90 @@ button.row-actions::before {
 body:has(.passage-bar) .toast {
   bottom: 8.5rem;
 }
+
+/* ---------- Read aloud (task 031 E) ---------- */
+.listen-player {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  margin-top: 0.4rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+  font: 0.85rem/1.3 var(--sans);
+}
+.listen-player select {
+  font: inherit;
+  max-width: 14rem;
+  padding: 0.15rem 0.3rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.35rem;
+  background: var(--bg);
+  color: var(--fg);
+}
+.listen-controls {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+.listen-controls button {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 1px solid var(--rule);
+  border-radius: 50%;
+  background: transparent;
+  color: var(--fg);
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+.listen-controls .listen-play {
+  background: var(--fg);
+  color: var(--bg);
+}
+.listen-note,
+.listen-status {
+  flex-basis: 100%;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+.listen-status:empty {
+  display: none;
+}
+.row[data-reading] {
+  background: var(--highlight);
+}
+/* The bar's own buttons: icon and word; on phones the icon alone (the word stays for screen readers). */
+.reader-bar-main {
+  flex-wrap: wrap;
+}
+.toc-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+.bar-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  flex: none;
+}
+.listen-player {
+  flex-basis: 100%;
+  order: 10;
+}
+@media (max-width: 30rem) {
+  .reader-bar-main .toc-button {
+    padding: 0.35rem 0.5rem;
+  }
+  .reader-bar-main .bar-text {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+  .listen-player select {
+    max-width: 9.5rem;
+  }
+}

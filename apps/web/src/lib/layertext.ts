@@ -8,7 +8,15 @@ const SKIP = ".layer-label, .badge, .notice, .text-note, .row-tools";
 type Segment = { start: number; text: string; node?: Text; el?: HTMLElement };
 export type LayerText = { text: string; segments: Segment[] };
 
-export function layerText(cell: Element): LayerText {
+/** Also left out when reading aloud: footnote numbers and source lists (task 031 E). */
+export const SPEECH_SKIP = ".fn-ref, .sources, .footnote-label";
+
+/**
+ * `extraSkip` is for reading aloud only. Highlights must keep calling this without it:
+ * their stored quotes were taken from the text as defined above.
+ */
+export function layerText(cell: Element, extraSkip?: string): LayerText {
+  const skip = extraSkip ? `${SKIP}, ${extraSkip}` : SKIP;
   const segments: Segment[] = [];
   let text = "";
   const push = (seg: Omit<Segment, "start">) => {
@@ -20,7 +28,7 @@ export function layerText(cell: Element): LayerText {
       if (child.nodeType === Node.TEXT_NODE) {
         push({ node: child as Text, text: child.nodeValue ?? "" });
       } else if (child instanceof HTMLElement) {
-        if (child.matches(SKIP)) continue;
+        if (child.matches(skip)) continue;
         const def = child.dataset["default"];
         if (child.matches("a.term") && def !== undefined && def !== child.textContent) {
           push({ el: child, text: def });

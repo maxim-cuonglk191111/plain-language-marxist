@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -163,18 +163,19 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 4. **Export / import.**
    - Export all annotations as **Markdown** (readable, with citations) and **JSON** (the versioned shape).
    - Import JSON merges by ID, so storage can be backed up or moved between browsers. This matters because `localStorage` can be cleared.
-5. **Copy with citation.** Copies the selection followed by the citation, e.g.:
+5. **Copy with source.** Copies the selected text, then a line that says where it comes from, so a quote pasted into a chat, essay or post can be traced. For example:
 
-   > "…" — Marx & Engels, *Manifesto of the Communist Party* (1848), ch. I, trans. Moore (1888). Plain Language Marxist, <passage URL>
+   > "The history of all hitherto existing society is the history of class struggles."
+   > — Marx & Engels, *Manifesto of the Communist Party* (1848), Chapter I, trans. Samuel Moore (1888). Original text. https://…/ch01.htm#p00002
 
-   - Selections from Plain English add "(plain-English rendering by PLM, not the original text)".
-   - Copying from the Original uses the source attribution.
+   - A quote from Plain English says **"Plain English version by Plain Language Marxist, not the original wording"**, so nobody mistakes our wording for Marx's.
+   - Ordinary copy (Ctrl+C) is never changed; the source line is added only by this button.
 6. **Share.** Uses the Web Share API where available, and otherwise copies the link.
 
 ## Part E — Read aloud
 
 - **Engine.** Reads the chapter with the browser's built-in Web Speech API (`speechSynthesis`). There is no server and no added cost.
-- **What it reads.** The **first visible layer** by default (normally Plain English), switchable to the Original. Explanations are never read in the middle of text.
+- **What it reads.** The reader chooses: **Plain English**, **Original**, or **Context** (explanations only), in the player. The first visible layer is selected to start with. Layers are never mixed in one reading.
 - **Controls.** A small player in the reader bar:
   - play/pause;
   - previous/next passage;
@@ -218,13 +219,22 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 - **Unit tests:** the text-quote anchoring (exact match, shifted text, quote gone), the time-left estimate, and the prefs/annotations migrations.
 
 ## Delivery
-Parts A–E are independent and can ship as separate PRs in this order: A → B → C → D → E. Each PR updates the "Done" notes below and runs `pnpm check` and `pnpm e2e`. If a part grows too large, split it into its own task and link it here.
+Parts A–F are independent and can ship as separate PRs in this order: A → B (with F) → C → D → E. Each PR updates the "Done" notes below and runs `pnpm check` and `pnpm e2e`. If a part grows too large, split it into its own task and link it here.
 
-## Open questions for the maintainer
-1. **Default mode:** Scroll (current) or Pages? *Proposed: Scroll.* Pages is opt-in and single-layer only.
-2. **Fonts:** is Atkinson Hyperlegible enough, or should OpenDyslexic also ship? Each adds about 30–60 KB, fetched only when chosen.
-3. **Read-aloud default layer:** Plain English, or whichever layer is first on screen? *Proposed: first visible layer.*
-4. **Citation format:** is the example in D5 right? Should Plain English quotes be discouraged for citation altogether?
+## Part F — Telling Plain English and Original apart when stacked
+
+When Plain English and the Original are both on and stacked (phones, and below 60rem), a quick glance does not show which block is which. The small uppercase labels are easy to miss. Context already stands out (accent rule) and does not change.
+
+- Give the Original a **subtle, quiet distinction** that does not break the reading flow: a faint paper-tone background, a hairline rule on the left, and slightly muted text. Plain English stays on the page background, so it reads as the main text.
+- It must work in every theme (Part B), keep AA contrast, and not apply when only one layer is on (nothing to tell apart).
+- Side-by-side columns already separate the layers by position and keep their current look.
+
+## Decisions (maintainer, 2026-10-04)
+1. **Default mode: Scroll.** Pages is an opt-in for single-layer reading.
+2. **Fonts:** ship both **Atkinson Hyperlegible** and **OpenDyslexic**, each fetched only when chosen.
+3. **Read-aloud:** the reader chooses the layer to listen to (Part E).
+4. **Citation:** the maintainer asked what it meant. It is the "Copy with source" button in D5, now explained there in plain words. Plain English quotes are allowed, but are always labelled as our version.
+5. **Stacked layers on mobile** need a subtle distinction (Part F).
 
 ## Acceptance
 - From any chapter, a reader can reach the TOC, the work page and the previous/next chapter, with and without JS.

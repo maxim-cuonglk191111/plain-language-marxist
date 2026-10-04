@@ -11,6 +11,11 @@
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --measure: 38rem;
+  /* Reader choices (task 031 B), set by data attributes on <html>. */
+  --plain-font: var(--sans);
+  --reading-measure: var(--measure);
+  --margin: 1rem;
+  --leading: 1.65;
   color-scheme: light;
 }
 
@@ -36,7 +41,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font: 1.0625rem/1.65 var(--sans);
+  font: 1.0625rem / var(--leading) var(--sans);
 }
 
 a {
@@ -61,9 +66,11 @@ a {
 }
 
 .site-header,
-.site-footer,
-main {
+.site-footer {
   padding: 0 1rem;
+}
+main {
+  padding: 0 var(--margin);
 }
 .site-header {
   border-bottom: 1px solid var(--rule);
@@ -129,7 +136,7 @@ main {
   font-family: var(--serif);
 }
 .layer-plain {
-  font-family: var(--sans);
+  font-family: var(--plain-font);
 }
 .layer-label {
   display: none;
@@ -176,7 +183,7 @@ main {
   margin-top: 1.5rem;
 }
 .layer-plain .heading {
-  font-family: var(--sans);
+  font-family: var(--plain-font);
 }
 .footnote {
   font-size: 0.9rem;
@@ -276,7 +283,7 @@ html[data-layers~="plain"][data-layers~="original"]
 
 /* One layer: a single reading column. */
 html[data-cols="1"] .row {
-  max-width: var(--measure);
+  max-width: var(--reading-measure);
   margin: 0 auto;
   width: 100%;
 }
@@ -344,7 +351,7 @@ html[data-cols="3"] .layer-label {
   margin-bottom: 0.25rem;
 }
 .layer-context {
-  font: 0.92rem/1.55 var(--sans);
+  font: 0.92rem/1.55 var(--plain-font);
 }
 
 @media (min-width: 60rem) {
@@ -686,17 +693,42 @@ a.term:hover {
     color-scheme: light;
   }
 }
-html[data-size="s"] {
-  font-size: 93.75%;
+/* Task 031 B: two more themes, chosen explicitly (never from the system setting). */
+:root[data-theme="sepia"] {
+  --bg: #f4ecd8;
+  --fg: #33291a;
+  --muted: #65553c;
+  --rule: #dccca8;
+  --accent: #842511;
+  --highlight: #ead7a3;
+  --highlight-strong: #dbb553;
+  --notice: #ebdfc1;
+  color-scheme: light;
 }
-html[data-size="l"] {
-  font-size: 112.5%;
+:root[data-theme="black"] {
+  --bg: #000;
+  --fg: #e6e3da;
+  --muted: #a6a094;
+  --rule: #2e2c28;
+  --accent: #f0a090;
+  --highlight: #352e14;
+  --highlight-strong: #6b520c;
+  --notice: #141310;
+  color-scheme: dark;
 }
-html[data-size="xl"] {
-  font-size: 125%;
+/* Text size: --text-size px (task 031 B; replaced the four named sizes). The whole
+   interface scales with it, as before, so controls stay in proportion to the text. */
+html {
+  font-size: calc(var(--text-size, 17) / 17 * 100%);
 }
-html[data-leading="relaxed"] body {
-  line-height: 1.9;
+html[data-leading="compact"] {
+  --leading: 1.45;
+}
+html[data-leading="relaxed"] {
+  --leading: 1.9;
+}
+html[data-leading="loose"] {
+  --leading: 2.15;
 }
 html[data-terms="off"] a.term {
   text-decoration: none;
@@ -1263,4 +1295,221 @@ html[data-layers] .toc-inline {
     font-size: 0.82rem;
     padding: 0.3rem 0.55rem;
   }
+}
+
+/* ---------- Appearance (task 031 B) ---------- */
+/* Self-hosted (OFL). Browsers fetch a face only when text uses it, so these load
+   only for readers who choose them. OpenDyslexic files are upstream, unmodified
+   (its licence reserves the name for unmodified versions). */
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible/atkinson-hyperlegible-latin-400-normal.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible/atkinson-hyperlegible-latin-400-italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible/atkinson-hyperlegible-latin-700-normal.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Atkinson Hyperlegible";
+  src: url("/fonts/atkinson-hyperlegible/atkinson-hyperlegible-latin-700-italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic/OpenDyslexic-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic/OpenDyslexic-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic/OpenDyslexic-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("/fonts/opendyslexic/OpenDyslexic-BoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+html[data-font="serif"] {
+  --plain-font: var(--serif);
+}
+html[data-font="atkinson"] {
+  --plain-font: "Atkinson Hyperlegible", var(--sans);
+}
+html[data-font="dyslexic"] {
+  --plain-font: "OpenDyslexic", var(--sans);
+}
+
+html[data-width="narrow"] {
+  --reading-measure: 30rem;
+}
+html[data-width="wide"] {
+  --reading-measure: 46rem;
+}
+html[data-margins="small"] {
+  --margin: 0.5rem;
+}
+html[data-margins="large"] {
+  --margin: 2rem;
+}
+@media (min-width: 60rem) {
+  html[data-margins="large"] {
+    --margin: 3rem;
+  }
+}
+
+/* Book-style paragraphs: no gap, first lines indented, except after a heading. Only
+   with one layer, where the rows read as one continuous text. */
+html[data-cols="1"][data-para="indented"] .rows > .row {
+  padding-block: 0;
+}
+html[data-cols="1"][data-para="indented"] .rows p.block:not(.footnote, .separator, .caption) {
+  margin-bottom: 0;
+  text-indent: 1.5em;
+}
+html[data-cols="1"][data-para="indented"] .rows > .row:has(.heading) + .row p.block:first-of-type {
+  text-indent: 0;
+}
+html[data-cols="1"][data-para="indented"] .rows .heading {
+  margin-bottom: 0.75rem;
+}
+
+html[data-align="justify"] .rows p.block:not(.separator, .caption),
+html[data-align="justify"] .rows blockquote.block {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* ---------- Part F: the Original, stacked under Plain English ----------
+   On narrow screens two layers stack inside each passage, and the small labels are
+   easy to miss. The Original gets a quiet paper tone, a hairline rule and slightly
+   softer text; Plain English stays on the page background as the main text. The
+   colours derive from each theme's own tokens, so all five themes get it. */
+:root {
+  --source-bg: color-mix(in srgb, var(--notice) 70%, var(--bg));
+  --source-fg: color-mix(in srgb, var(--fg) 86%, var(--bg));
+  --source-rule: color-mix(in srgb, var(--muted) 45%, var(--bg));
+}
+@media (max-width: 59.99rem) {
+  html:not([data-layers]) .row > .col-original,
+  html[data-layers~="plain"][data-layers~="original"] .row > .col-original {
+    background: var(--source-bg);
+    color: var(--source-fg);
+    border-left: 2px solid var(--source-rule);
+    border-radius: 0 0.375rem 0.375rem 0;
+    padding: 0.5rem 0.75rem 0.05rem;
+    margin-bottom: 0.75rem;
+  }
+}
+
+/* ---------- Settings panel (task 031 B) ---------- */
+.settings-panel {
+  width: min(22rem, calc(100vw - 2rem));
+  max-height: calc(100dvh - 5rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  line-height: 1.4;
+}
+@media (max-width: 40rem) {
+  .settings-panel {
+    position: fixed;
+    top: 3.25rem;
+    left: 1rem;
+    right: 1rem;
+    width: auto;
+  }
+}
+.settings-preview {
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.75rem;
+  max-height: 11rem;
+  overflow: hidden;
+  line-height: var(--leading);
+}
+.settings-preview .layer-label {
+  display: block;
+}
+.settings-preview .block {
+  margin: 0 0 0.5rem;
+  font-size: 1.0625rem;
+}
+.settings-preview .layer-original {
+  background: var(--source-bg);
+  color: var(--source-fg);
+  border-left: 2px solid var(--source-rule);
+  padding: 0.4rem 0.6rem 0.05rem;
+}
+.settings-size {
+  margin-bottom: 0.6rem;
+}
+.settings-size label {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin: 0;
+}
+.settings-size output {
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+  color: var(--muted);
+}
+.settings-size input {
+  width: 100%;
+  accent-color: var(--accent);
+}
+.settings-panel .choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.75rem;
+}
+.settings-panel .choices label {
+  margin: 0;
+}
+.settings-hint {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.settings-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  margin: 0.5rem 0 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.6rem;
 }

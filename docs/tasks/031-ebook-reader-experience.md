@@ -254,6 +254,16 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 
 ## Done
 
+### Parts B and F — Appearance; telling stacked layers apart (2026-10-04)
+- **Settings:** theme (adds Sepia and Black), font, a 14–28 px size slider, four line spacings, line width, margins, paragraph style, alignment, reading speed, and term underlines. A live preview sits at the top (our real Ch. I opening in both layers), with **Reset to defaults** at the bottom.
+- **Stored shape:** `plm:prefs` gains fields only. Everything is read through `normalizePrefs`, so old prefs still load, and the old sizes s/m/l/xl map to 16/17/19/21 px. `BOOT_SCRIPT` applies everything before first paint; a unit test runs it against `applyPrefs` on old, new and broken prefs. e2e checks the attributes are already on `<html>` before `<body>` exists.
+- **Font decision (B, "record the decision here"):** the chosen font applies to Plain English **and Context**, because a reader who needs OpenDyslexic needs it for the explanations too. The **Original always keeps the book serif**. If a reader also picks Book serif for Plain English, the layers are still told apart by the column heads (side by side) or by the Part F style plus labels (stacked).
+- **Fonts:** self-hosted under `apps/web/public/fonts/`, each with its OFL licence. Browsers fetch a face only when text uses it (checked in e2e). Atkinson Hyperlegible is the Fontsource Latin subset (no Reserved Font Name). OpenDyslexic is the upstream woff2, **unmodified**: its licence reserves the name for unmodified versions, so a subset would have to be renamed. It is about 100 KB per style, but only for readers who choose it.
+- **Line width** is in rem (Narrow 30, Medium 38 = the old width, Wide 46; about 55/70/85 characters) rather than ch, so the default look does not change. Width, book-style paragraphs and the measure apply with one layer only. Justified text uses `hyphens: auto`.
+- **Contrast:** all pairs (text, muted, accent, highlight, notice, Part F tones) are 4.7:1 or better in all five themes. Part F colours are mixed from each theme's own tokens (`color-mix`), so new themes get them automatically. axe runs on four explicit themes, with the settings panel open, and on the Part F view.
+- **Part F:** below 60rem, with Plain English and the Original both on (or no JS), the Original gets a faint paper tone, a 2px rule and slightly softer text. It is not applied with one layer or side by side.
+- Reader JS for the task so far: +4.0 KB gzipped.
+
 ### Part A — Navigation and structure (2026-10-04)
 - **Work page** at the work's folder path, from the same `archive/[...path]` route (finalize-export turns it into `…/communist-manifesto/index.html`). `work.yml` has no description field, so none is shown; adding one would be a schema change and is left for when a work needs it. Reading times are for the Plain English (the Original where it is missing) at 200 wpm.
 - **TOC:** a modal `<dialog>` drawer (native focus containment and Escape; a backdrop click closes it; focus returns to the button). Without JS, a `<details>` "Contents" list in the chapter header. Chapter names come from each chapter's "Chapter II. …" heading, since document titles are source page titles.

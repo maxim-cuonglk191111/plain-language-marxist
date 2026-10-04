@@ -34,7 +34,7 @@ pnpm plm review <document-dir>                    # all checks over existing Pla
 
 **New kinds of source page:** follow docs/architecture/parser-guide.md. Run `pnpm plm parse-check <url> --via wayback` first, and read every "Not kept" line.
 
-**Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the layers (task 023: data-layers / data-cols on <html>, set before first paint by BOOT_SCRIPT in lib/prefs.ts and lib/layers.ts). Use plain <a> links, never next/link: apps/web/scripts/finalize-export.mjs drops the RSC payloads that client navigation would need, renames ch01.htm.html to ch01.htm, moves other pages to dir/index.html, and copies dist/data/v1 into the site.
+**Reader:** a static Next.js export. Pages are server-rendered at build time from dist/data/v1, so they work without JavaScript; JS only switches the layers and applies reader prefs (data-layers / data-cols, data-theme / data-font / data-width … and the --text-size variable on <html>, set before first paint by BOOT_SCRIPT in lib/prefs.ts and lib/layers.ts). BOOT_SCRIPT must set exactly what applyPrefs(normalizePrefs(…)) sets; lib/prefs.test.ts runs both and compares, so add any new pref to both. Use plain <a> links, never next/link: apps/web/scripts/finalize-export.mjs drops the RSC payloads that client navigation would need, renames ch01.htm.html to ch01.htm, moves other pages to dir/index.html, and copies dist/data/v1 into the site.
 
 **Parser changes:** regenerate the golden files with `UPDATE_GOLDEN=1 pnpm test`, review **both** `*.golden.json` and `*.dropped.txt` diffs (text appearing in .dropped.txt is newly lost), and bump `MiaAdapter.version`.
 

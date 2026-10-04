@@ -65,3 +65,14 @@ The Moore readings come from the drafter's knowledge of the 1888 text. **Check t
 **Still open for this task:**
 - Maintainer review against SDD §9.3, ideally with a second reader.
 - Historical-context explanations (for example Metternich and Guizot, the ten-hours' bill), which are not drafted yet.
+
+**Full plain-language pass (2026-10-04).** The maintainer found the draft still full of Victorian phrasing, for example "under the yoke of feudal absolutism". A full reread against the test *"would a reader with intermediate English (B1–B2) need a dictionary?"* rewrote 44 passages. Every claim, image and link word was kept. Examples of what changed:
+- "under the yoke of feudal absolutism" → "under the rule of all-powerful feudal kings";
+- "in proportion as… in the same proportion" → "the more…, the more…";
+- "put in the shade" → "far greater than";
+- "set upon by" → "attack him";
+- "fresh elements of enlightenment" → "new knowledge";
+- "lie in ambush" → "hide, waiting to strike";
+- "on pain of extinction" → "under threat of dying out".
+
+To stop this recurring, docs/editorial/hard-words.yml lists such words and phrases. `plm apply` and `plm review` warn on them, and the LLM prompt tells the drafter to avoid them. `pnpm plm review` on Ch. I now reports only the three explained exceptions (p00006 "Spectre", p00028 "Reactionists", p00038 "that is, capital").

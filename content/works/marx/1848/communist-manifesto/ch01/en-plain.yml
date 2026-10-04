@@ -18,9 +18,9 @@ renderings:
   p00003:
     covers: [p00003]
     based_on: sha256:9e7adb74c8c4f0e4d9ceff2ec9cfdba01a73065d500234e6b426639f1107273b
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Where is the opposition party that has not been denounced as communist by its opponents in power? Where is the opposition that has not thrown the damning label of communism back at the more advanced opposition parties, as well as at its reactionary enemies?
+    text: Which opposition party has not been accused of being communist by its opponents in power? Which opposition party has not thrown the charge of communism back at the more advanced opposition parties, as well as at its reactionary enemies?
   p00004:
     covers: [p00004]
     based_on: sha256:43d35db71ed7819ee45158cb26a85dc8979551f57006f6461f5da72ef3247541
@@ -30,15 +30,15 @@ renderings:
   p00005:
     covers: [p00005]
     based_on: sha256:909a1fe2c1d82bceefcddade1fd9e9dcd1dff9ab8923d6885db236c6571ba1db
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: <indent level="1"/>I. Communism is already recognised by all European powers as a power in its own right.
+    text: <indent level="1"/>I. All European powers already accept that communism is itself a power.
   p00006:
     covers: [p00006]
     based_on: sha256:54907fb6f5566f902dcff84e953b9afca1143c5aa3f0db701d04e376b8a519a3
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: <indent level="1"/>II. It is high time that Communists openly, in front of the whole world, published their views, their aims and their tendencies. They should answer this fairy tale of the Ghost of Communism with a manifesto of the party itself.
+    text: <indent level="1"/>II. It is high time that Communists openly, in front of the whole world, made known their views, their aims and the direction they want to take. They should answer this fairy tale of the Ghost of Communism with a manifesto of the party itself.
   p00007:
     covers: [p00007]
     based_on: sha256:fa9c749b10981c8775c374345b1672c75d74fe68a4bbcbe67975c27da0f6cdf8
@@ -60,15 +60,15 @@ renderings:
   p00010:
     covers: [p00010]
     based_on: sha256:0780e416e6272b36b3267bf2f3ef91561f6669092d8959cd89f3a7995d4c3a4d
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: Free man and slave, patrician and plebeian, lord and serf, guild-master<fn ref="3"/> and journeyman — in a word, oppressor and oppressed — stood in constant opposition to one another. They carried on an unbroken fight, now hidden, now open. Each time, this fight ended either in a revolutionary reshaping of society as a whole, or in the common ruin of the classes in conflict.
+    text: Free man and slave, patrician and plebeian, lord and serf, guild-master<fn ref="3"/> and journeyman — in a word, oppressor and oppressed — stood in constant opposition to one another. They carried on an unbroken fight, sometimes hidden, sometimes open. Each time, this fight ended either in a revolutionary rebuilding of the whole of society, or in the ruin of both fighting classes.
   p00011:
     covers: [p00011]
     based_on: sha256:29e723e0a66814d5156f45e7dbc5ca75e8f6f7cf886ddbdc41b236ac52dece6f
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: In the earlier periods of history, we find almost everywhere a complicated arrangement of society into different orders, a many-layered ranking of social positions. In ancient Rome we have patricians, knights, plebeians, slaves; in the Middle Ages, feudal lords, vassals, guild-masters, journeymen, apprentices, serfs; and within almost all of these classes, again, lower sub-ranks.
+    text: In earlier periods of history we find, almost everywhere, society divided into different ranks, with many levels of social position. In ancient Rome we have patricians, knights, plebeians and slaves. In the Middle Ages we have feudal lords, vassals, guild-masters, journeymen, apprentices and serfs. And within almost all of these classes there are again smaller ranks.
   p00012:
     covers: [p00012]
     based_on: sha256:3be3fd7e6ad13a65c52f4a70afc71bf3aefc936db03dc4d5ad629ab73adb2ea1
@@ -78,27 +78,27 @@ renderings:
   p00013:
     covers: [p00013]
     based_on: sha256:958182076c58a3161f7e40995b3cf2136f7a1437bcfbfd8610cd9381b51d740c
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: "Our period, the period of the {bourgeoisie}, has, however, this distinctive feature: it has simplified {class-antagonism:pl}. Society as a whole is splitting more and more into two great hostile camps, into two great classes directly facing each other — {Bourgeoisie} and {Proletariat}."
+    text: "Our period, the period of the {bourgeoisie}, has one special feature, however: it has simplified {class-antagonism:pl}. Society as a whole is splitting more and more into two great hostile camps, into two great classes directly facing each other — {Bourgeoisie} and {Proletariat}."
   p00014:
     covers: [p00014]
     based_on: sha256:02b2700b7a464c3034f5c0b2c07c813c1f9b95b8bd9ae8c708b439accd3153b8
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: From the serfs of the Middle Ages came the chartered burghers of the earliest towns. From these burghers the first elements of the {bourgeoisie} developed.
+    text: From the serfs of the Middle Ages came the burghers of the earliest towns, who held rights granted by charter. From these burghers grew the first beginnings of the {bourgeoisie}.
   p00015:
     covers: [p00015]
     based_on: sha256:6303470435d50b126ae09baa0a04b5526e89659837346cb78ea52beba6ea9cf2
-    revision: 2
+    revision: 4
     ai_assisted: true
-    text: The discovery of America and the sailing around the Cape opened up new ground for the rising {bourgeoisie}. The East-Indian and Chinese markets, the colonisation of America, trade with the colonies, and the increase in the means of exchange and in commodities generally gave commerce, shipping and industry a push never known before. In this way they also gave the revolutionary element in the crumbling feudal society a rapid development.
+    text: The discovery of America and the sea route around the Cape opened up new ground for the rising {bourgeoisie}. The East-Indian and Chinese markets, the colonisation of America and trade with the colonies all played a part. So did the growth of the means of exchange and of commodities in general. Together they gave trade, shipping and industry a push never known before. In this way they also helped the revolutionary forces inside the crumbling feudal society to grow fast.
   p00016:
     covers: [p00016]
     based_on: sha256:7eb06f63bb058a2dd89bf0f643602a4ac382f5cc33bdf6e28d9c9b44e8be3624
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The feudal system of industry, in which closed guilds held a monopoly of industrial production, was no longer enough for the growing needs of the new markets. The manufacturing system took its place. The guild-masters were pushed aside by the manufacturing middle class; the division of labour between the different corporate guilds disappeared in the face of the division of labour within each single workshop.
+    text: In the feudal system of industry, closed guilds had all industrial production in their hands. This system could no longer meet the growing needs of the new markets. The manufacturing system took its place. The guild-masters were pushed aside by the manufacturing middle class. The division of labour between the different guilds gave way to the division of labour inside each single workshop.
   p00017:
     covers: [p00017]
     based_on: sha256:ec1fe89fe54a980e5be195287376bbe6e39d855d1922cda7cf19f153a12a8f49
@@ -108,9 +108,9 @@ renderings:
   p00018:
     covers: [p00018]
     based_on: sha256:d0023e9889dd36faa143462d02ce133de8d645a4699646425dc54d36c3c47e1b
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: Modern industry has established the world market, for which the discovery of America prepared the way. This market has given an immense development to commerce, to shipping, to communication by land. This development has in turn pushed industry to expand. And in proportion as industry, commerce, shipping and railways expanded, the {bourgeoisie} developed in the same proportion. It increased its capital and pushed into the background every class handed down from the Middle Ages.
+    text: Modern industry has created the world market, which the discovery of America had prepared. This market has made trade, shipping and transport by land grow enormously. This growth in turn pushed industry to expand. The more industry, trade, shipping and railways expanded, the more the {bourgeoisie} grew. It increased its capital and pushed aside every class left over from the Middle Ages.
   p00019:
     covers: [p00019]
     based_on: sha256:77018034ed4bafce7d64829926abb152a10ec22d84c149d2c5cb07c02ebad67c
@@ -120,9 +120,9 @@ renderings:
   p00020:
     covers: [p00020]
     based_on: sha256:1cb2139ca69d78b99d67d7497a2336d6ecdba9c3156f514c8801c84fdeb3c4ef
-    revision: 2
+    revision: 4
     ai_assisted: true
-    text: 'Each step in the development of the {bourgeoisie} was accompanied by a matching political advance of that class. It was an oppressed class under the rule of the feudal nobility. In the medieval commune<fn ref="4"/> it was an armed and self-governing association: here an independent urban republic (as in Italy and Germany), there the taxable “third estate” of the monarchy (as in France). Afterwards, in the period of manufacture proper, it served either the semi-feudal or the absolute monarchy as a counterweight against the nobility. In fact, it was the cornerstone of the great monarchies in general. Since the establishment of Modern Industry and of the world market, the {bourgeoisie} has at last conquered for itself exclusive political rule in the modern representative State. The executive of the modern state is only a committee for managing the common affairs of the whole {bourgeoisie}.'
+    text: 'Each step in the development of the {bourgeoisie} brought that class a matching step forward in politics. It was an oppressed class under the rule of the feudal nobility. In the medieval commune<fn ref="4"/> it was an armed, self-governing association: here an independent city republic (as in Italy and Germany), there the taxpaying “third estate” of the monarchy (as in France). Later, in the actual period of manufacture, it served either the half-feudal or the absolute monarchy as a counterweight to the nobility. In fact, it was the cornerstone of the great monarchies in general. Since Modern Industry and the world market were established, the {bourgeoisie} has at last won sole political power for itself in the modern representative State. The government of the modern state is only a committee for managing the shared business of the whole {bourgeoisie}.'
   p00021:
     covers: [p00021]
     based_on: sha256:fd8bc9c7bccf8fc48942fdf0e0a56fa31f5870c15f0ded8756459abff94cd897
@@ -132,9 +132,9 @@ renderings:
   p00022:
     covers: [p00022]
     based_on: sha256:98b29afe4e68e44400f0e84285c084a691c85278413d196dc2695a5b43ecc585
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: Wherever the {bourgeoisie} has gained the upper hand, it has put an end to all feudal, patriarchal, peaceful old relations. It has mercilessly torn apart the varied feudal ties that bound man to his “natural superiors”, and has left no other bond between man and man than naked self-interest, than unfeeling “cash payment”. It has drowned the most heavenly joys of religious passion, of knightly enthusiasm, of narrow-minded sentimentality, in the icy water of selfish calculation. It has reduced personal worth to exchange value, and in place of the countless chartered freedoms that could not be taken away, it has set up that single, heartless freedom — Free Trade. In one word, in place of exploitation hidden by religious and political illusions, it has put naked, shameless, direct, brutal exploitation.
+    text: Wherever the {bourgeoisie} has won power, it has put an end to all feudal, family-based, peaceful old relations. It has mercilessly torn apart the many feudal ties that bound people to their “natural superiors”. It has left no other bond between one person and another than naked self-interest, than unfeeling “cash payment”. It has drowned the most heavenly joys of religious passion, of knightly enthusiasm, of narrow-minded tender feelings, in the icy water of selfish calculation. It has turned a person's worth into exchange value. In place of the countless freedoms that had been granted by charter and could not be taken away, it has set up one single, heartless freedom — Free Trade. In short, in place of exploitation hidden by religious and political illusions, it has put naked, shameless, direct, brutal exploitation.
   p00023:
     covers: [p00023]
     based_on: sha256:a35a6ddb130205ec4f99fc5b2c92aff1921ef813547b20aa5c00625502af2c88
@@ -150,33 +150,33 @@ renderings:
   p00025:
     covers: [p00025]
     based_on: sha256:4a8d0c0a21a55426ec3419e7fe45fdffca7ab1d2191a861d79ae0656cfac1549
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The {bourgeoisie} has revealed how it came about that the brutal show of vigour in the Middle Ages, which reactionaries admire so much, found its fitting counterpart in the laziest idleness. It has been the first to show what human activity can achieve. It has accomplished wonders far greater than Egyptian pyramids, Roman aqueducts and Gothic cathedrals; it has carried out expeditions that put in the shade all earlier Exoduses of nations and crusades.
+    text: The {bourgeoisie} has shown how the brutal displays of strength in the Middle Ages, which reactionaries admire so much, went together with the laziest idleness. It has been the first to show what human activity can achieve. It has done wonders far greater than the Egyptian pyramids, Roman aqueducts and Gothic cathedrals. It has carried out expeditions far greater than all the earlier Exoduses of nations and the crusades.
   p00026:
     covers: [p00026]
     based_on: sha256:a2f8c5dc3257aa13d645785abfe9098413bf20d2f929269242af36f6a64cc2a0
-    revision: 1
+    revision: 3
     ai_assisted: true
-    text: The {bourgeoisie} cannot exist without constantly revolutionising the instruments of production, and so the relations of production, and with them all the relations of society. Keeping the old modes of production unchanged was, on the contrary, the first condition of existence for all earlier industrial classes. Constant revolutionising of production, unbroken disturbance of all social conditions, endless uncertainty and unrest distinguish the {bourgeoisie:adj} era from all earlier ones. All fixed, fast-frozen relations, with their train of ancient and revered prejudices and opinions, are swept away; all newly formed ones become outdated before they can harden. All that is solid melts into air, all that is holy is profaned, and man is at last forced to face with sober senses his real conditions of life, and his relations with his kind.
+    text: The {bourgeoisie} cannot exist without constantly revolutionising the instruments of production, and so the relations of production, and with them all the relations of society. All earlier industrial classes, on the contrary, needed above all to keep the old modes of production unchanged. Constant revolutionising of production, endless disturbance of all social conditions, never-ending uncertainty and unrest mark out the {bourgeoisie:adj} era from all earlier ones. All fixed, frozen relations are swept away, together with the old, respected prejudices and opinions that came with them. All new ones become out of date before they can set. All that is solid melts into air, all that is holy is stripped of its holiness. People are at last forced to face, with clear eyes, the real conditions of their lives and their relations with each other.
   p00027:
     covers: [p00027]
     based_on: sha256:20c3f8f8b144da6e5a4361f3606e1c2e9519240e4e117b7867cb88de8adab344
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The need for a constantly expanding market for its products chases the {bourgeoisie} over the whole surface of the globe. It must nestle everywhere, settle everywhere, make connections everywhere.
+    text: The need for an ever-growing market for its products chases the {bourgeoisie} over the whole surface of the globe. It must make itself at home everywhere, settle everywhere, make connections everywhere.
   p00028:
     covers: [p00028]
     based_on: sha256:43de34b5103d56cc9963058b02aef5f5bc2acee7510edeb40703e120c1d56292
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: Through its exploitation of the world market, the {bourgeoisie} has given production and consumption in every country a worldwide character. To the great annoyance of reactionaries, it has pulled out from under the feet of industry the national ground on which it stood. All old-established national industries have been destroyed or are being destroyed every day. They are pushed out by new industries, whose introduction becomes a life-and-death question for all civilised nations. These new industries no longer use local raw material, but raw material brought from the most distant regions. Their products are used not only at home, but in every part of the globe. In place of the old needs, satisfied by the country's own production, we find new needs, which require the products of distant lands and climates to satisfy them. In place of the old local and national isolation and self-sufficiency, we have trade and contact in every direction, the dependence of all nations on each other. And as in material production, so also in intellectual production. The intellectual creations of individual nations become common property. National one-sidedness and narrow-mindedness become more and more impossible, and from the many national and local literatures there arises a world literature.
+    text: "Through its exploitation of the world market, the {bourgeoisie} has given production and consumption in every country a worldwide character. To the great annoyance of reactionaries, it has pulled out from under the feet of industry the national ground on which it stood. All old national industries have been destroyed or are being destroyed every day. They are pushed out by new industries, which become a matter of life and death for all civilised nations. These new industries no longer use local raw materials, but raw materials brought from the most distant regions. Their products are used not only at home, but in every part of the globe. In place of the old needs, which the country's own production satisfied, we find new needs, which only the products of distant lands and climates can satisfy. In place of the old local and national isolation and self-sufficiency, we have trade and contact in every direction: all nations depend on each other. And the same happens in the production of ideas as in the production of goods. The ideas and works of single nations become common property. National one-sidedness and narrow-mindedness become more and more impossible, and out of the many national and local literatures a world literature grows."
   p00029:
     covers: [p00029]
     based_on: sha256:20e697bf141b81c8404bee434d809875f7e1c12cccea95ebe9e0185b2bb23cba
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Through the rapid improvement of all instruments of production, through the immensely easier means of communication, the {bourgeoisie} draws all nations, even the most barbarian, into civilisation. The cheap prices of commodities are the heavy artillery with which it batters down all Chinese walls, with which it forces the barbarians' intensely stubborn hatred of foreigners to surrender. It compels all nations, on pain of extinction, to adopt the {bourgeoisie:adj} mode of production; it compels them to introduce what it calls civilisation into their midst, that is, to become {bourgeoisie:adj} themselves. In one word, it creates a world after its own image.
+    text: Through the rapid improvement of all instruments of production, and through far easier means of communication, the {bourgeoisie} draws all nations, even the most barbarian, into civilisation. The cheap prices of its commodities are the heavy artillery with which it knocks down all Chinese walls, and with which it forces the barbarians' deeply stubborn hatred of foreigners to give in. It forces all nations, under threat of dying out, to adopt the {bourgeoisie:adj} mode of production. It forces them to bring what it calls civilisation into their own countries, that is, to become {bourgeoisie:adj} themselves. In short, it creates a world in its own image.
   p00030:
     covers: [p00030]
     based_on: sha256:bf7912623f70a5ba71e5f60abc6693dac6e5911e90937dee9753578fe0bc7f76
@@ -186,9 +186,9 @@ renderings:
   p00031:
     covers: [p00031]
     based_on: sha256:606b4d6810218f5ed26c524e86250f89d1a1a7abcb32260d4cad1850403eaa49
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: The {bourgeoisie} keeps doing away more and more with the scattered state of the population, of the means of production, and of property. It has packed the population together, centralised the means of production, and concentrated property in a few hands. The necessary consequence of this was political centralisation. Independent provinces, or only loosely connected ones, had separate interests, laws, governments and systems of taxation. They were lumped together into one nation, with one government, one code of laws, one national class interest, one frontier and one customs tariff.
+    text: The {bourgeoisie} keeps ending, more and more, the scattered state of the population, of the means of production and of property. It has packed the population together, centralised the means of production, and concentrated property in a few hands. The necessary result of this was political centralisation. Independent provinces, or only loosely connected ones, had separate interests, laws, governments and tax systems. They were lumped together into one nation, with one government, one set of laws, one national class interest, one border and one customs tariff.
   p00032:
     covers: [p00032]
     based_on: sha256:bc1429c6de01cb1da34446735b69881e46fec2f2daa786613e4defff76cc965a
@@ -198,24 +198,24 @@ renderings:
   p00033:
     covers: [p00033]
     based_on: sha256:4efcb6b4fb797c07758e0e9fd717e9fafc7835a9bc21f17a923d83b6162458ec
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: "We see then: the means of production and of exchange, on whose foundation the {bourgeoisie} built itself up, were created in feudal society. At a certain stage in the development of these means, the conditions under which feudal society produced and exchanged were no longer compatible with the productive forces that had already developed. These conditions were the feudal organisation of agriculture and manufacturing industry — in one word, the feudal relations of property. They became so many shackles. They had to be burst apart; they were burst apart."
+    text: "So we see: the means of production and of exchange, on which the {bourgeoisie} built itself up, were created in feudal society. At a certain stage in the development of these means, the conditions under which feudal society produced and exchanged no longer fitted the productive forces that had already developed. These conditions were the feudal organisation of farming and manufacturing industry — in short, the feudal relations of property. They became chains. They had to be burst apart; they were burst apart."
   p00034:
     covers: [p00034]
     based_on: sha256:795b9f6584d84c479be7035a09352eda96d13cadc3725d3cb92e19d904a350f0
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Into their place stepped free competition, together with a social and political constitution adapted to it, and the economic and political rule of the {bourgeoisie:adj} class.
+    text: Free competition took their place, together with a social and political system suited to it, and the economic and political rule of the {bourgeoisie:adj} class.
   p00035:
     covers: [p00035]
     based_on: sha256:647270beea7061c95e8277ab4e055de740a4c1eefffa31d7f3963cc8a67b33f1
-    revision: 2
+    revision: 3
     ai_assisted: true
     text: |
-      A similar movement is going on before our own eyes. Modern {bourgeoisie:adj} society, with its relations of production, of exchange and of property, has conjured up such gigantic means of production and of exchange. It is like the sorcerer who is no longer able to control the powers of the underworld that he has called up by his spells. For many decades now, the history of industry and commerce has been nothing but the history of a revolt. It is the revolt of modern productive forces against modern conditions of production, against the property relations that are the conditions for the existence of the {bourgeoisie} and of its rule. It is enough to mention the commercial crises. By returning again and again, they put the existence of the entire {bourgeoisie:adj} society on trial, each time more threateningly.
+      A similar movement is going on before our own eyes. Modern {bourgeoisie:adj} society, with its relations of production, of exchange and of property, has conjured up such gigantic means of production and of exchange. It is like the sorcerer who can no longer control the powers of the underworld that he has called up by his spells. For many decades now, the history of industry and trade has been nothing but the history of a revolt. It is the revolt of modern productive forces against modern conditions of production, against the property relations that the {bourgeoisie} and its rule need in order to exist. It is enough to mention the commercial crises. They come back again and again, and each time they put the existence of the whole {bourgeoisie:adj} society on trial, more threateningly than before.
 
-      In these crises, a great part not only of the existing products, but also of the productive forces created earlier, is destroyed again and again. In these crises there breaks out an epidemic that in all earlier epochs would have seemed absurd — the epidemic of over-production. Society suddenly finds itself thrown back into a state of temporary barbarism. It looks as if a famine, a universal war of destruction, had cut off the supply of every means of subsistence. Industry and commerce seem to be destroyed. And why? Because there is too much civilisation, too much means of subsistence, too much industry, too much commerce. The productive forces at the disposal of society no longer serve to further the development of the conditions of {bourgeoisie:adj} property. On the contrary, they have become too powerful for these conditions, which shackle them. As soon as they overcome these shackles, they bring disorder into the whole of {bourgeoisie:adj} society and endanger the existence of {bourgeoisie:adj} property. The conditions of {bourgeoisie:adj} society are too narrow to hold the wealth created by them. And how does the {bourgeoisie} get over these crises? On the one hand, by the forced destruction of a mass of productive forces. On the other, by the conquest of new markets, and by the more thorough exploitation of the old ones. That is to say, by paving the way for more extensive and more destructive crises, and by reducing the means by which crises are prevented.
+      In these crises, a great part not only of the existing products, but also of the productive forces created earlier, is destroyed again and again. In these crises an epidemic breaks out that in all earlier times would have seemed absurd — the epidemic of over-production. Society suddenly finds itself thrown back into a state of temporary barbarism. It looks as if a famine, a worldwide war of destruction, had cut off the supply of every means of subsistence. Industry and trade seem to be destroyed. And why? Because there is too much civilisation, too much means of subsistence, too much industry, too much trade. The productive forces that society has no longer help {bourgeoisie:adj} property relations to develop. On the contrary, they have become too powerful for these relations, which hold them back like chains. As soon as they break these chains, they bring disorder into the whole of {bourgeoisie:adj} society and put {bourgeoisie:adj} property in danger. The conditions of {bourgeoisie:adj} society are too narrow to hold the wealth they have created. And how does the {bourgeoisie} get over these crises? On the one hand, by forcing the destruction of a mass of productive forces. On the other, by conquering new markets, and by exploiting the old ones more thoroughly. That is to say, by preparing the way for wider and more destructive crises, and by reducing the means of preventing crises.
   p00036:
     covers: [p00036]
     based_on: sha256:769d05d5e81dac68a094838e5e996d23f893d2955ab3b547be4a2b0907ae8534
@@ -225,15 +225,15 @@ renderings:
   p00037:
     covers: [p00037]
     based_on: sha256:d18c724599997354e68ea87ee03596d409fb046f02a76650c215a2f78d076012
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: But the {bourgeoisie} has not only forged the weapons that bring death to itself. It has also called into existence the men who are to use those weapons — the modern working class — the {proletariat:pl}.
+    text: But the {bourgeoisie} has not only made the weapons that will bring it death. It has also created the people who will use those weapons — the modern working class — the {proletariat:pl}.
   p00038:
     covers: [p00038]
     based_on: sha256:2615d92187b0ab394ce522919561220c132067dc1c50d025c72d5dd624e7aeed
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: In proportion as the {bourgeoisie}, that is, capital, develops, the {proletariat}, the modern working class, develops in the same proportion. It is a class of labourers who live only as long as they find work, and who find work only as long as their labour increases capital. These labourers must sell themselves piece by piece. They are a commodity, like every other article of commerce, and are therefore exposed to all the ups and downs of competition, to all the fluctuations of the market.
+    text: As the {bourgeoisie}, that is, capital, develops, the {proletariat}, the modern working class, develops to the same degree. It is a class of labourers who live only as long as they find work, and who find work only as long as their labour increases capital. These labourers must sell themselves piece by piece. They are a commodity, like every other article of trade. So they are exposed to all the ups and downs of competition and to all the changes of the market.
   p00039:
     covers: [p00039]
     based_on: sha256:23c001e71bac6f8badf8c99ec7b84bef8c0bacfdc19abf601ed05abe9ec97756
@@ -243,45 +243,45 @@ renderings:
   p00040:
     covers: [p00040]
     based_on: sha256:3d1b747a3c8bf5c958029347f77e3cfb44a07dbf0c77f085bf79505a8773b9f5
-    revision: 3
+    revision: 5
     ai_assisted: true
-    text: Modern Industry has turned the little workshop of the patriarchal master into the great factory of the industrial capitalist. Masses of labourers, crowded into the factory, are organised like soldiers. As privates of the industrial army they are placed under the command of a complete hierarchy of officers and sergeants. They are not only slaves of the {bourgeoisie:adj} class and of the {bourgeoisie:adj} State. They are also enslaved every day and every hour by the machine, by the supervisor, and above all by the individual {bourgeoisie:adj} manufacturer himself. The more openly this tyranny declares profit to be its end and aim, the more petty, the more hateful and the more bitter it is.
+    text: Modern Industry has turned the master's small, family-run workshop into the great factory of the industrial capitalist. Masses of labourers, crowded into the factory, are organised like soldiers. As privates of the industrial army they are placed under the command of a whole chain of officers and sergeants. They are not only slaves of the {bourgeoisie:adj} class and of the {bourgeoisie:adj} State. They are also enslaved every day and every hour by the machine, by the supervisor, and above all by the individual {bourgeoisie:adj} factory owner himself. The more openly this tyranny says that profit is its only aim, the more petty, hateful and bitter it is.
   p00041:
     covers: [p00041]
     based_on: sha256:89358997778b0926c37c3f2932b4e5a14d1029d4e1c82cd747f8eab4b6c542b9
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The less skill and physical strength manual labour requires — in other words, the more modern industry develops — the more the labour of men is replaced by that of women. Differences of age and sex no longer have any distinct social validity for the working class. All are instruments of labour, more or less expensive to use, according to their age and sex.
+    text: The less skill and physical strength manual work needs — in other words, the more modern industry develops — the more the work of men is replaced by the work of women. Differences of age and sex no longer mean anything special in society for the working class. All are instruments of labour, more or less expensive to use, according to their age and sex.
   p00042:
     covers: [p00042]
     based_on: sha256:af6720bbdb6bc6d9c927f2b9ebd07c14185df811f03abd8b27fe114243f55456
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: "The manufacturer's exploitation of the labourer ends, so far, when the labourer receives his wages in cash. But no sooner has this happened than he is set upon by the other parts of the {bourgeoisie}: the landlord, the shopkeeper, the pawnbroker, etc."
+    text: "For the moment, the factory owner's exploitation of the labourer ends when the labourer receives his wages in cash. But as soon as this happens, other parts of the {bourgeoisie} attack him: the landlord, the shopkeeper, the pawnbroker, and so on."
   p00043:
     covers: [p00043]
     based_on: sha256:a79fb05311620068befc9f70d6897dac3e7779c07411f8a6cb99c78f00d98d63
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: The lower layers of the middle class — the small tradespeople, shopkeepers and retired tradesmen generally, the craftsmen and peasants — all these sink gradually into the {proletariat}. This is partly because their tiny capital is not enough for the scale on which Modern Industry is carried on, and is swamped in competition with the large capitalists. It is also partly because their specialised skill is made worthless by new methods of production. Thus the {proletariat} is recruited from all classes of the population.
+    text: The lower layers of the middle class — small traders, shopkeepers and retired tradesmen in general, craftsmen and peasants — all sink gradually into the {proletariat}. This is partly because their small capital is not enough for the scale on which Modern Industry works, and is crushed in competition with the large capitalists. It is also partly because new methods of production make their special skills worthless. So the {proletariat} is recruited from all classes of the population.
   p00044:
     covers: [p00044]
     based_on: sha256:024924dfd5791ca62514a336cf172d59e8166dd5eef459ed71d5317968ef6c48
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: The {proletariat} goes through various stages of development. Its struggle with the {bourgeoisie} begins with its birth. At first the contest is carried on by individual labourers, then by the workers of a factory, then by the workers of one trade in one place, against the individual {bourgeoisie:person} who directly exploits them. They direct their attacks not against the {bourgeoisie:adj} conditions of production, but against the instruments of production themselves. They destroy imported goods that compete with their labour, they smash machinery to pieces, they set factories on fire. They try to restore by force the vanished status of the worker of the Middle Ages.
+    text: The {proletariat} goes through various stages of development. Its struggle with the {bourgeoisie} begins with its birth. At first the fight is carried on by individual labourers, then by the workers of a factory, then by the workers of one trade in one place, against the individual {bourgeoisie:person} who directly exploits them. They direct their attacks not against the {bourgeoisie:adj} conditions of production, but against the instruments of production themselves. They destroy imported goods that compete with their labour, they smash machines to pieces, they set factories on fire. They try to win back by force the lost position of the worker of the Middle Ages.
   p00045:
     covers: [p00045]
     based_on: sha256:918a88eba88a60fcf93a1c7c7b025833795c04ea7cbb6eedf6ebc16be5f50c9f
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: "At this stage the labourers still form a disconnected mass scattered over the whole country and broken up by their competition with one another. If they unite anywhere to form more compact bodies, this is not yet the result of their own active union, but of the union of the {bourgeoisie}. To reach its own political ends, the {bourgeoisie} is compelled to set the whole {proletariat} in motion, and for a time it is still able to do so. At this stage, therefore, the {proletariat:pl} do not fight their enemies, but the enemies of their enemies: the remnants of absolute monarchy, the landowners, the non-industrial {bourgeoisie:persons}, the petty bourgeois. Thus the whole historical movement is concentrated in the hands of the {bourgeoisie}; every victory won in this way is a victory for the {bourgeoisie}."
+    text: "At this stage the labourers still form a scattered mass across the whole country, divided by competition with one another. If they unite anywhere to form closer groups, this is not yet the result of their own active union, but of the union of the {bourgeoisie}. To reach its own political goals, the {bourgeoisie} must set the whole {proletariat} in motion, and for a time it is still able to do so. At this stage, therefore, the {proletariat:pl} do not fight their own enemies, but the enemies of their enemies: what is left of absolute monarchy, the landowners, the non-industrial {bourgeoisie:persons}, the petty bourgeois. So the whole historical movement is in the hands of the {bourgeoisie}; every victory won in this way is a victory for the {bourgeoisie}."
   p00046:
     covers: [p00046]
     based_on: sha256:9998cbc9dc44c108a18299f31ea5f64c8f0718a176af90a35cdf1d5fe0db6a91
-    revision: 4
+    revision: 5
     ai_assisted: true
-    text: But with the development of industry, the {proletariat} not only grows in number. It also becomes concentrated in greater masses, its strength grows, and it feels that strength more. The various interests and conditions of life within the ranks of the {proletariat} are more and more evened out. This happens as machinery wipes out all distinctions of labour and nearly everywhere pushes wages down to the same low level. The growing competition among the {bourgeoisie:persons}, and the commercial crises that result from it, make the workers' wages ever more unstable. The constant improvement of machinery, developing ever more rapidly, makes their livelihood more and more insecure. The clashes between individual workers and individual {bourgeoisie:persons} take more and more the character of clashes between two classes. Then the workers begin to form combinations (Trades' Unions) against the {bourgeoisie:persons}. They join together in order to keep up the rate of wages. They found permanent associations in order to prepare in advance for these occasional revolts. Here and there the contest breaks out into riots.
+    text: But with the development of industry, the {proletariat} not only grows in number. It also becomes concentrated in greater masses, its strength grows, and it feels that strength more. The different interests and living conditions within the {proletariat} become more and more alike. This happens because machinery wipes out all differences between kinds of work and nearly everywhere pushes wages down to the same low level. The growing competition among the {bourgeoisie:persons}, and the commercial crises that result from it, make the workers' wages ever more unstable. Machinery keeps improving, faster and faster, and makes the workers' living more and more insecure. The clashes between individual workers and individual {bourgeoisie:persons} take on more and more the character of clashes between two classes. Then the workers begin to form combinations (Trades' Unions) against the {bourgeoisie:persons}. They join together to keep up the rate of wages. They set up permanent associations to prepare in advance for these occasional revolts. Here and there the fight breaks out into riots.
   p00047:
     covers: [p00047]
     based_on: sha256:6b6160efdcbf17fc9b57ed1e80e3361b8070fe6df76e976add53d57ffb2a8b83
@@ -291,39 +291,39 @@ renderings:
   p00048:
     covers: [p00048]
     based_on: sha256:1d8c1f31acb67bee01984f09ab8cb3d9229d685d7283e378cb1724499bc8abbf
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: This organisation of the {proletariat:pl} into a class, and consequently into a political party, is continually being upset again by the competition among the workers themselves. But it always rises up again, stronger, firmer, mightier. It forces legal recognition of particular interests of the workers by taking advantage of the divisions within the {bourgeoisie} itself. In this way the ten-hours' bill in England was passed.
+    text: This organisation of the {proletariat:pl} into a class, and so into a political party, is again and again broken up by the competition between the workers themselves. But it always rises up again, stronger, firmer, more powerful. It forces the law to recognise some particular interests of the workers by taking advantage of the divisions within the {bourgeoisie} itself. In this way the ten-hours' bill in England was passed.
   p00049:
     covers: [p00049]
     based_on: sha256:bb2c27cb3c3cccfa29d2d23a481c6601508575ff240425bdfc5174e3027d181d
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: Altogether, clashes between the classes of the old society further the development of the {proletariat} in many ways. The {bourgeoisie} finds itself involved in a constant battle. At first it fights the aristocracy. Later on, it fights those parts of the {bourgeoisie} itself whose interests have come into conflict with the progress of industry. At all times it fights the {bourgeoisie} of foreign countries. In all these battles it sees itself compelled to appeal to the {proletariat}, to ask for help, and so to drag it into the political arena. The {bourgeoisie} itself, therefore, supplies the {proletariat} with its own elements of political and general education. In other words, it provides the {proletariat} with weapons for fighting the {bourgeoisie}.
+    text: All in all, the clashes between the classes of the old society help the development of the {proletariat} in many ways. The {bourgeoisie} finds itself in a constant battle. At first it fights the aristocracy. Later on, it fights those parts of the {bourgeoisie} itself whose interests have come into conflict with the progress of industry. At all times it fights the {bourgeoisie} of foreign countries. In all these battles it feels forced to appeal to the {proletariat}, to ask for its help, and so to drag it into the political arena. The {bourgeoisie} itself, therefore, gives the {proletariat} parts of its own political and general education. In other words, it gives the {proletariat} weapons for fighting the {bourgeoisie}.
   p00050:
     covers: [p00050]
     based_on: sha256:fc6111596168dd0f156a4cd838a7662d55bf48d0c6a28baebbc601ee36c8cec5
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Further, as we have already seen, whole sections of the ruling class are thrown into the {proletariat} by the advance of industry, or are at least threatened in their conditions of existence. These also supply the {proletariat} with fresh elements of enlightenment and progress.
+    text: Further, as we have already seen, the advance of industry throws whole sections of the ruling class down into the {proletariat}, or at least threatens their conditions of life. These people also bring the {proletariat} new knowledge and new ideas of progress.
   p00051:
     covers: [p00051]
     based_on: sha256:303c87ef0e5ff01b539c362d8b197d60f81ce417d6e5b281c1c80b8f362ed458
-    revision: 3
+    revision: 5
     ai_assisted: true
-    text: "Finally, there are times when the class struggle nears the decisive hour. Then the process of dissolution going on within the ruling class — in fact within the whole range of the old society — takes on a violent, glaring character. It becomes so violent that a small section of the ruling class cuts itself loose and joins the revolutionary class, the class that holds the future in its hands. Therefore, just as at an earlier period a section of the nobility went over to the {bourgeoisie}, so now a portion of the {bourgeoisie} goes over to the {proletariat}. In particular, a portion of the {bourgeoisie:adj} ideologists goes over: those who have raised themselves to the level of understanding theoretically the historical movement as a whole."
+    text: "Finally, there are times when the class struggle comes close to the decisive hour. Then the ruling class, and in fact the whole of the old society, is breaking up. This process becomes so violent and so obvious that a small section of the ruling class cuts itself loose. It joins the revolutionary class, the class that holds the future in its hands. Therefore, just as a section of the nobility once went over to the {bourgeoisie}, so now a part of the {bourgeoisie} goes over to the {proletariat}. In particular, a part of the {bourgeoisie:adj} thinkers and writers goes over: those who have worked their way up to understanding, in theory, the historical movement as a whole."
   p00052:
     covers: [p00052]
     based_on: sha256:36a62858212783fd27a07754241928376850bb6f96c326aeb03fda5a59e28f23
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Of all the classes that stand face to face with the {bourgeoisie} today, the {proletariat} alone is a really revolutionary class. The other classes decay and finally disappear in the face of Modern Industry; the {proletariat} is its special and essential product.
+    text: Of all the classes that stand face to face with the {bourgeoisie} today, the {proletariat} alone is a really revolutionary class. The other classes decay and finally disappear as Modern Industry advances; the {proletariat} is its special and essential product.
   p00053:
     covers: [p00053]
     based_on: sha256:5f5e74f342db1c8ee0d558d64ef7e8baf10f702173e1e45c96581e23202586e4
-    revision: 2
+    revision: 4
     ai_assisted: true
-    text: The lower middle class — the small manufacturer, the shopkeeper, the artisan, the peasant — all these fight against the {bourgeoisie} to save their existence as fractions of the middle class from extinction. They are therefore not revolutionary, but conservative. What is more, they are reactionary, for they try to turn back the wheel of history. If by chance they are revolutionary, they are so only in view of their coming transfer into the {proletariat}. They thus defend not their present, but their future interests. They abandon their own standpoint to take up that of the {proletariat}.
+    text: The lower middle class — the small manufacturer, the shopkeeper, the craftsman, the peasant — all these fight against the {bourgeoisie} to save themselves from being wiped out as parts of the middle class. They are therefore not revolutionary, but conservative. What is more, they are reactionary, because they try to turn back the wheel of history. If they are revolutionary at all, they are so only because they are about to fall into the {proletariat}. So they defend not their present interests, but their future ones. They give up their own point of view to take up the point of view of the {proletariat}.
   p00054:
     covers: [p00054]
     based_on: sha256:38c6e7f06f337872cb9eb11c348e634383cd2d108ab0eccb71ea3af05bfd8758
@@ -333,45 +333,45 @@ renderings:
   p00055:
     covers: [p00055]
     based_on: sha256:0919211468f6969598fa8ceeffe939396462ea4089a2e80116f08a0b5e27ddf4
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: In the conditions of the {proletariat}, those of the old society as a whole are already virtually swamped. The {proletariat:person} is without property. His relation to his wife and children no longer has anything in common with {bourgeoisie:adj} family relations. Modern industrial labour, modern subjection to capital, the same in England as in France, in America as in Germany, has stripped him of every trace of national character. Law, morality and religion are to him so many {bourgeoisie:adj} prejudices, behind which just as many {bourgeoisie:adj} interests lie in ambush.
+    text: For the {proletariat}, the living conditions of the old society as a whole are already as good as gone. The {proletariat:person} has no property. His relation to his wife and children no longer has anything in common with {bourgeoisie:adj} family relations. Modern industrial labour, modern subjection to capital, which is the same in England as in France, in America as in Germany, has stripped him of every trace of national character. Law, morality and religion are, for him, just so many {bourgeoisie:adj} prejudices, behind which just as many {bourgeoisie:adj} interests hide, waiting to strike.
   p00056:
     covers: [p00056]
     based_on: sha256:f3d40f9ff0f5ba705fef3209853950227d72b0a2bc4bc62207af6e5345ceaa5e
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: All the earlier classes that gained the upper hand tried to strengthen the position they had already won by subjecting society as a whole to their conditions of appropriation. The {proletariat:pl} cannot become masters of the productive forces of society except by abolishing their own previous mode of appropriation, and in this way also every other previous mode of appropriation. They have nothing of their own to secure and to strengthen; their mission is to destroy all previous securities for, and insurances of, individual property.
+    text: All the earlier classes that won power tried to protect the position they had already gained by forcing society as a whole to accept their conditions of appropriation. The {proletariat:pl} cannot become masters of the productive forces of society except by abolishing their own earlier mode of appropriation, and in this way also every other earlier mode of appropriation. They have nothing of their own to protect and strengthen. Their task is to destroy everything that has so far protected and guaranteed individual property.
   p00057:
     covers: [p00057]
     based_on: sha256:29f2f1feeab716abe231bb6e7b7f14b5bcb8ab2fe443c2d2ce02107e5d295137
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: All earlier historical movements were movements of minorities, or in the interest of minorities. The {proletariat:adj} movement is the self-conscious, independent movement of the immense majority, in the interest of the immense majority. The {proletariat}, the lowest layer of our present society, cannot stir, cannot raise itself up, without all the layers of official society that sit on top of it being blown into the air.
+    text: All earlier historical movements were movements of minorities, or in the interest of minorities. The {proletariat:adj} movement is the conscious, independent movement of the vast majority, in the interest of the vast majority. The {proletariat}, the lowest layer of our present society, cannot move, cannot raise itself up, without blowing into the air all the layers of official society that sit on top of it.
   p00058:
     covers: [p00058]
     based_on: sha256:d00d937a981657a4288509ab3b91c37ee139ceaa0a36d7bd24ec28e1c5c32146
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Though not in content, yet in form, the struggle of the {proletariat} with the {bourgeoisie} is at first a national struggle. The {proletariat} of each country must, of course, first of all settle matters with its own {bourgeoisie}.
+    text: In form, though not in content, the struggle of the {proletariat} against the {bourgeoisie} is at first a national struggle. The {proletariat} of each country must, of course, first of all settle matters with its own {bourgeoisie}.
   p00059:
     covers: [p00059]
     based_on: sha256:6f4cb67fd61747215b5208cb3b70e9925a4e5ba2e71140d531707321d4da091b
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: In describing the most general phases of the development of the {proletariat}, we traced the more or less hidden civil war raging within existing society. We followed it up to the point where that war breaks out into open revolution, and where the violent overthrow of the {bourgeoisie} lays the foundation for the rule of the {proletariat}.
+    text: In describing the most general stages of the development of the {proletariat}, we followed the more or less hidden civil war raging inside existing society. We followed it up to the point where that war breaks out into open revolution, and where the violent overthrow of the {bourgeoisie} lays the foundation for the rule of the {proletariat}.
   p00060:
     covers: [p00060]
     based_on: sha256:79a60f9ac9227870015d4f97f00046ddc6227326d5d5c171ba99e5d18e62a4b5
-    revision: 3
+    revision: 4
     ai_assisted: true
-    text: Up to now, every form of society has been based, as we have already seen, on the opposition between oppressing and oppressed classes. But in order to oppress a class, certain conditions must be guaranteed to it under which it can at least continue its slavish existence. The serf, in the period of serfdom, raised himself to membership of the commune, just as the petty bourgeois, under the yoke of feudal absolutism, managed to develop into a member of the {bourgeoisie}. The modern labourer, on the contrary, instead of rising with the progress of industry, sinks deeper and deeper below the conditions of existence of his own class. He sinks into extreme poverty, and poverty grows faster than population and wealth. And here it becomes clear that the {bourgeoisie} is no longer fit to be the ruling class in society, and to impose its conditions of existence on society as an overriding law. It is unfit to rule because it cannot guarantee an existence to its slave within his slavery. It is unfit also because it cannot help letting him sink into such a state that it has to feed him, instead of being fed by him. Society can no longer live under this {bourgeoisie}; in other words, its existence is no longer compatible with society.
+    text: Up to now, every form of society has been based, as we have already seen, on the opposition between oppressing and oppressed classes. But to oppress a class, the oppressors must guarantee it conditions in which it can at least go on living as slaves. The serf, in the time of serfdom, rose to become a member of the commune, just as the petty bourgeois, under the rule of all-powerful feudal kings, managed to become a member of the {bourgeoisie}. The modern labourer, on the contrary, does not rise as industry progresses. Instead he sinks deeper and deeper, below the living conditions of his own class. He sinks into extreme poverty, and poverty grows faster than population and wealth. And here it becomes clear that the {bourgeoisie} is no longer fit to be the ruling class in society, and to force its own conditions of life on society as the law above all others. It is unfit to rule because it cannot guarantee its slave a living, even within his slavery. It is unfit also because it cannot help letting him sink so low that it has to feed him, instead of being fed by him. Society can no longer live under this {bourgeoisie}; in other words, the existence of the {bourgeoisie} no longer fits with the life of society.
   p00061:
     covers: [p00061]
     based_on: sha256:846bea4b370ad03e4c30ed5233319ab180790ce4a42647d397f6d14ee8be6ad3
-    revision: 1
+    revision: 3
     ai_assisted: true
-    text: The essential condition for the existence and for the rule of the {bourgeoisie:adj} class is the formation and growth of capital; the condition for capital is wage-labour. Wage-labour rests exclusively on competition between the labourers. The advance of industry, which the {bourgeoisie} promotes without intending to, replaces the isolation of the labourers, due to competition, with revolutionary combination, due to association. The development of Modern Industry, therefore, cuts from under the feet of the {bourgeoisie} the very foundation on which it produces and appropriates products. What the {bourgeoisie} therefore produces, above all, are its own grave-diggers. Its fall and the victory of the {proletariat} are equally inevitable.
+    text: The essential condition for the existence and the rule of the {bourgeoisie:adj} class is the building up and growth of capital; the condition for capital is wage-labour. Wage-labour rests only on competition between the labourers. Competition keeps the labourers isolated. The advance of industry, which the {bourgeoisie} pushes forward without meaning to, replaces this isolation with their revolutionary union, which comes from association. The development of Modern Industry therefore cuts away, from under the feet of the {bourgeoisie}, the very foundation on which it produces and appropriates products. What the {bourgeoisie} therefore produces, above all, are its own grave-diggers. Its fall and the victory of the {proletariat} are equally inevitable.
   p00062:
     covers: [p00062]
     based_on: sha256:30eabc1d1730430ee129a4427f8313f5a4fbaab3e5f5ae471aae3025f717630c
@@ -384,9 +384,9 @@ renderings:
   p00063:
     covers: [p00063]
     based_on: sha256:6cec295564193ee8b2499facc3f69ffac3cb015a31bff720d76928b5586ee4aa
-    revision: 2
+    revision: 3
     ai_assisted: true
-    text: That is, all <i>written</i> history. In 1847, the prehistory of society, the social organisation that existed before recorded history, was almost unknown. Since then, August von Haxthausen (1792-1866) discovered common ownership of land in Russia. Georg Ludwig von Maurer proved it to be the social foundation from which all Teutonic peoples started in history. And gradually village communities were found to be, or to have been, the original form of society everywhere from India to Ireland. The inner organisation of this primitive communist society was revealed, in its typical form, by Lewis Henry Morgan's (1818-1881) crowning discovery of the true nature of the gens and its relation to the tribe. With the breaking up of these primeval communities, society begins to divide into separate and finally antagonistic classes. I have tried to trace this breakup in The Origin of the Family, Private Property, and the State, second edition, Stuttgart, 1886. [Engels, 1888 English Edition and 1890 German Edition (with the last sentence omitted)]
+    text: That is, all <i>written</i> history. In 1847, the prehistory of society, the social organisation that existed before recorded history, was almost unknown. Since then, August von Haxthausen (1792-1866) discovered common ownership of land in Russia. Georg Ludwig von Maurer proved it to be the social foundation from which all Teutonic peoples started in history. And gradually village communities were found to be, or to have been, the original form of society everywhere from India to Ireland. The inner organisation of this early communist society was revealed, in its typical form, by Lewis Henry Morgan's (1818-1881) great discovery of the true nature of the gens and its relation to the tribe. With the breaking up of these earliest communities, society begins to divide into separate and finally antagonistic classes. I have tried to trace this breakup in The Origin of the Family, Private Property, and the State, second edition, Stuttgart, 1886. [Engels, 1888 English Edition and 1890 German Edition (with the last sentence omitted)]
   p00064:
     covers: [p00064]
     based_on: sha256:45902ca77cf9380a1b4457fa0fd4cea3eaac97c3c0c7c1d999e13a6b32d91abc

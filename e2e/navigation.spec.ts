@@ -192,7 +192,7 @@ test.describe("without JavaScript", () => {
 
     await page.goto(CH(3));
     await expect(page.locator(".toc-button")).toBeHidden();
-    await expect(page.locator(".reader-progress")).toHaveCount(0);
+    await expect(page.locator(".reader-progress")).toBeHidden();
     await page.locator(".toc-inline summary").click();
     const toc = page.locator(".toc-inline nav");
     await expect(
@@ -204,4 +204,20 @@ test.describe("without JavaScript", () => {
     );
     await expect(page.locator(".end-card a.start-reading")).toHaveAttribute("href", CH(4));
   });
+});
+
+test("the reader bar does not grow after loading, so the text does not jump", async ({ page }) => {
+  await page.addInitScript(() => {
+    document.addEventListener("DOMContentLoaded", () => {
+      (window as unknown as { early: number }).early =
+        document.querySelector(".reader-bar")?.getBoundingClientRect().height ?? 0;
+    });
+  });
+  await page.goto(`${CH(1)}?layers=plain,original#p00009`);
+  await expect(page.locator(".progress-label")).toContainText("%");
+  const [early, late] = await page.evaluate(() => [
+    (window as unknown as { early: number }).early,
+    document.querySelector(".reader-bar")?.getBoundingClientRect().height ?? 0,
+  ]);
+  expect(Math.abs(late - early)).toBeLessThan(2);
 });

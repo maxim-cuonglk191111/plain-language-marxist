@@ -80,9 +80,9 @@ YouVersion lets readers turn a verse into an image for sharing. PLM readers shar
 
 ---
 
-## Needs a maintainer decision (not in scope until decided)
-- **Discussion questions per chapter** (like YouVersion devotionals or study-Bible notes). They would help study groups. This is new editorial content: an explanation kind or a new file? Who writes and reviews it?
-- **The German original as a layer** (like the original-language view in Blue Letter Bible). The 1848 German text is public domain and on MIA. But a fourth layer changes the layer model (task 023) and the SDD, so it would be its own task.
+## Decisions on the open questions (maintainer, 2026-10-04)
+- **Discussion questions per chapter** (like YouVersion devotionals or study-Bible notes): **undecided, parked.** Nothing is built for now. Suggestion for when it comes back: wait until a reader or study group asks for them, then add them as a new explanation kind, reviewed like other explanations (task 025), so no new file type is needed.
+- **The German original as a layer:** **yes, as an option each reader turns on in Settings, off by default.** Filed as [task 033](033-german-original-layer.md).
 
 ## Out of scope (and why)
 - **Streaks, "verse of the day" reminders, badges, push notifications.** SDD §12 rules out gamification, and a static site sends no notifications.

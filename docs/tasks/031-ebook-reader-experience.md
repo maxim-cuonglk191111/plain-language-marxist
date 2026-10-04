@@ -11,7 +11,7 @@
 | **Related** | 024 (term card stack), 030 (four chapters to navigate). PWA/offline and EPUB remain M4 |
 
 ## Goal
-Make the reader feel like a good e-book or web-novel app (Kindle, Apple Books, KOReader, Moon+ Reader, Royal Road) rather than a document page. The reader should be able to:
+Make the reader feel like a good **study reader** rather than a document page. The reference model is a study Bible app (YouVersion, BibleGateway, Blue Letter Bible): an old canonical text read next to modern versions, cited by passage, marked up, and listened to. E-book apps (Kindle, Apple Books) remain the model for typography and navigation. Web-novel apps are **not** the model (see "Direction" below). The reader should be able to:
 - find their way around a work;
 - shape the page to their eyes;
 - read without distraction;
@@ -19,6 +19,18 @@ Make the reader feel like a good e-book or web-novel app (Kindle, Apple Books, K
 - listen to a chapter being read aloud.
 
 All of this keeps the platform's rules: static export, works without JavaScript, nothing leaves the browser, and the layers stay separate. This is the maintainer's request (2026-10-04).
+
+## Direction (maintainer, 2026-10-04, after Part A)
+The maintainer questioned whether a web-novel interface suits this project, and chose the study Bible app as the model instead. The reasons:
+- Marxist classics are **studied**, not binged: short, dense texts that people reread, compare, quote and argue about.
+- A Bible app solves the same problem: an old text and modern versions side by side, stable passage references, highlights and notes, "compare versions" on one passage, audio.
+- Web-novel patterns work against the core feature. Paged mode can only show one layer, and an auto-hiding bar hides the layer switch.
+
+What changed in this task:
+- **Dropped:** paged mode, the auto-hiding reader bar and tap zones (old C2 and part of C1). See "Out of scope".
+- **Changed:** C3 "peek" becomes **Compare this passage** (all layers of one passage). D starts from **passage actions** (tap a passage, act on all of it) before text-selection highlights.
+- **New order:** A (done) → B + F → D → E → C.
+- Bible-app features that are not in this task (passage references, concordance, reading plans, cross-references, quote images) are in [task 032](032-study-reader-features.md).
 
 ## What exists today (do not rebuild)
 - **Three layer toggles** in a sticky bar (023).
@@ -107,23 +119,14 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 | Alignment | Left (default), or Justified with `hyphens: auto` (`lang="en"` is already set) |
 | Reading speed | Words per minute for time estimates (150 / 200 / 250 / 300) |
 
-## Part C — Immersive reading
+## Part C — Focused reading
 
 1. **Focus mode.**
    - Toggled with a button or `f`.
-   - Hides the site header and footer. The reader bar auto-hides on scroll down and returns on scroll up, or on a tap in the middle of the page (web-novel pattern).
-   - Without reduced motion the bar slides; with reduced motion it simply shows or hides.
-   - A focusable "Show controls" control stays first in tab order.
-2. **Paged mode** (option: *Scroll* / *Pages*).
-   - Pages are laid out with CSS multi-column over the chapter. Turn pages by:
-     - tapping the left or right edge zones;
-     - swiping;
-     - using the arrow keys, PageUp/PageDown or Space.
-   - The footer shows the page number and the pages left in the chapter.
-   - Offered **only when exactly one layer is shown**. With two or three layers the aligned rows (023) cannot be paginated sensibly, so the option is disabled with a reason, and the reader falls back to Scroll if a second layer is turned on.
-   - Paged mode must still honour `#p00017` deep links, by opening the page that contains the passage.
-   - Record in this file whether paged mode is good enough to ship or should stay off by default.
-3. **Peek at the other layer.** With only Plain English shown, a small control on each row (or long-press on touch) opens that passage's Original in a popover, and vice versa. The reader can check the source without switching layers. The popover is labelled with the layer name and closes on Escape or a click outside.
+   - Hides the site header, the chapter header and the footer. The reader bar **stays** (it holds the layer switch, the project's core control), slimmed to one line.
+   - A focusable "Exit focus mode" control stays in the bar.
+2. _(Removed 2026-10-04: paged mode. See "Direction" and "Out of scope".)_
+3. **Compare this passage** (like "compare versions" in a Bible app). From the passage actions (D1) or a long-press, a sheet shows that one passage in every layer, labelled: Plain English, Original, and any Context. The reader can check the source without switching layers. It closes on Escape or a click outside.
 4. **Reading focus aids** (setting):
    - **Paragraph focus** dims every row except the one at the reading line.
    - **Reading ruler** is a horizontal band that follows the pointer or keyboard position.
@@ -147,8 +150,9 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 
 ## Part D — Highlights, notes and quoting
 
-1. **Highlights.**
-   - Select text in the Original or Plain English layer, then a small toolbar offers four colours, **Note**, **Copy with citation** and **Share**.
+1. **Passage actions first, then text highlights.**
+   - **Passage level (build first).** Tap or click a passage (or press Enter on it), the way a Bible app opens a verse. A small menu offers: four highlight colours for the whole passage, **Note**, **Bookmark**, **Copy with source**, **Share**, **Compare** (C3) and **Listen from here** (E). It replaces the separate row buttons (bookmark, copy link) from Part A. Passage highlights need no text anchoring, so they cannot be orphaned.
+   - **Text level (then).** Select text in the Original or Plain English layer, and a small toolbar offers the same colours, **Note**, **Copy with source** and **Share**.
    - Highlights render inline and can be opened to edit, recolour or delete.
    - Keyboard path: `h` highlights the current selection.
 2. **Anchoring that survives revisions.** Each highlight is stored as:
@@ -194,9 +198,10 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 - **External dictionary lookups.** These would send reader data to third parties. Term cards cover the project's vocabulary.
 - **Offline download / PWA and EPUB export.** These belong to M4. Nothing here may block them; keep state in `localStorage`, not in-memory only.
 - **Syncing across devices.** No accounts. Export/import (D4) is the manual path.
+- **Paged mode, auto-hiding bar, page-turn tap zones** (dropped 2026-10-04). Paging only works with one layer, but comparing layers is the point of the reader. Hiding the bar hides the layer switch. Scroll reading with a TOC and an end-of-chapter card covers the need.
 
 ## Docs and tests
-- **SDD §12 (Reader UI).** Update the table in the same PR. The reason: the maintainer asked for the reader to work like an e-book reader. Change the "Preferences" row and add rows for navigation, focus/paged mode, annotations and read-aloud.
+- **SDD §12 (Reader UI).** Update the table in the same PR. The reason: the maintainer asked for the reader to work like an e-book reader. Change the "Preferences" row and add rows for navigation, focus mode, annotations and read-aloud.
 - **Repo `CLAUDE.md`.** Update the "Reader" note if the boot script or export step changes.
 - **e2e (Playwright + axe):**
   - TOC open and close, plus keyboard;
@@ -206,10 +211,10 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
   - each theme passes axe;
   - prefs survive reload and apply before paint (no flash);
   - old `size` values migrate;
-  - focus mode hide/show and the keyboard way back;
-  - paged mode turns pages and honours a deep link, and is disabled with two layers;
-  - peek popover;
-  - highlight create/edit/delete, and survival across reload;
+  - focus mode on/off, the layer switch still reachable, and the keyboard way back;
+  - compare sheet for one passage;
+  - passage actions menu by mouse, touch and keyboard;
+  - highlight create/edit/delete (passage and text), and survival across reload;
   - an orphaned highlight shows on `/notes/`;
   - export → clear storage → import restores everything;
   - copy-with-citation text for both layers;
@@ -219,7 +224,7 @@ Extend Reading settings, with a live preview at the top of the panel and **Reset
 - **Unit tests:** the text-quote anchoring (exact match, shifted text, quote gone), the time-left estimate, and the prefs/annotations migrations.
 
 ## Delivery
-Parts A–F are independent and can ship as separate PRs in this order: A → B (with F) → C → D → E. Each PR updates the "Done" notes below and runs `pnpm check` and `pnpm e2e`. If a part grows too large, split it into its own task and link it here.
+Parts A–F are independent and ship as separate PRs in this order (revised 2026-10-04): A (done) → B (with F) → D → E → C. Each PR updates the "Done" notes below and runs `pnpm check` and `pnpm e2e`. If a part grows too large, split it into its own task and link it here.
 
 ## Part F — Telling Plain English and Original apart when stacked
 
@@ -230,17 +235,18 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 - Side-by-side columns already separate the layers by position and keep their current look.
 
 ## Decisions (maintainer, 2026-10-04)
-1. **Default mode: Scroll.** Pages is an opt-in for single-layer reading.
+1. **Default mode: Scroll.** Pages is an opt-in for single-layer reading. _Superseded by 6: paged mode is dropped._
 2. **Fonts:** ship both **Atkinson Hyperlegible** and **OpenDyslexic**, each fetched only when chosen.
 3. **Read-aloud:** the reader chooses the layer to listen to (Part E).
 4. **Citation:** the maintainer asked what it meant. It is the "Copy with source" button in D5, now explained there in plain words. Plain English quotes are allowed, but are always labelled as our version.
 5. **Stacked layers on mobile** need a subtle distinction (Part F).
+6. **Model: study Bible app, not web novel** (after Part A). Paged mode and the auto-hiding bar are dropped; passage actions and Compare are added; the order becomes B+F → D → E → C. Further Bible-app features go to task 032.
 
 ## Acceptance
 - From any chapter, a reader can reach the TOC, the work page and the previous/next chapter, with and without JS.
 - Progress and time left are shown and update while reading.
 - All Part B settings apply before first paint, survive reload, keep the layers distinct, and pass axe in every theme.
-- Focus mode, paged mode (single layer), peek, focus aids, wake lock and shortcuts work by keyboard and touch, and respect reduced motion.
+- Focus mode, Compare, passage actions, focus aids, wake lock and shortcuts work by keyboard and touch, and respect reduced motion.
 - Highlights and notes survive reload and Plain English revisions (or are shown as orphaned), and export/import round-trips them.
 - Read-aloud plays, follows along and can be paused, and is hidden where unsupported.
 - Reader page JS growth is ≤ 40 KB gzipped. No new third-party requests (checked in the e2e network log).

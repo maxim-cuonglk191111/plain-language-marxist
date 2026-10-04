@@ -1,0 +1,108 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch04
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:9b8d39319efff37aabc6985dc70b5a4231af1c163a95b8ca7065ac3ae55e9325
+    revision: 5
+    ai_assisted: true
+    text: Chapter IV. Position of the Communists in Relation to the Various Existing Opposition Parties
+  p00002:
+    covers: [p00002]
+    based_on: sha256:93b6ca870a9194785506fe83817658c37a26e4b0ab0819599a85216bca5b425d
+    revision: 5
+    ai_assisted: true
+    text: Chapter II made clear the relation of the Communists to existing working-class {party:pl}, such as the Chartists in England and the Agrarian Reformers in America.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:d814f4e38e944a5817a992296a4f993fe6137428509b84c72cbd333c35be34e0
+    revision: 5
+    ai_assisted: true
+    text: |
+      The Communists fight to achieve the immediate goals and defend the momentary interests of the working class. But in the movement of today, they also represent and protect the future of that movement.
+
+      In France, the Communists ally with the Social-Democrats<fn ref="1"/> against the conservative and radical {bourgeoisie}. However, they keep the right to take a critical stance toward the slogans and illusions handed down from the great French Revolution.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:7c6951d21c87bc84543941c31ad4aec9eb87a8acce3c2d0a3a28749f79341379
+    revision: 5
+    ai_assisted: true
+    text: In Switzerland, they support the Radicals, while keeping in mind that this {party} holds conflicting elements — partly Democratic Socialists in the French sense, partly radical capitalists.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:d6712b27d3b67c70e853baf013a6ecc37bedf8ce078e9efb519e7d1724019815
+    revision: 5
+    ai_assisted: true
+    text: "In Poland, they support the {party} that sees an agrarian {revolution} as the prime condition for national liberation: the {party} that led the insurrection of Cracow in 1846."
+  p00006:
+    covers: [p00006]
+    based_on: sha256:65ce804ed1b615d00a563ac10e9c7e770a4628dd7da0c29dd1a9e7fcfcee55a5
+    revision: 5
+    ai_assisted: true
+    text: In Germany, they fight alongside the {bourgeoisie} whenever it acts in a {revolution:adj} way against absolute monarchy, feudal landlords, and the {petty-bourgeoisie}.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:4c3210321a8c40e8db02cf23af90fdaefb77d6f6152ec62de90cb7fd8fa9573d
+    revision: 5
+    ai_assisted: true
+    text: |
+      Yet they never stop, even for a single moment, teaching workers to clearly understand the hostile conflict between {bourgeoisie} and {proletariat}.
+
+      German workers must and may straightway use the conditions of {bourgeoisie:adj} rule as weapons against the {bourgeoisie}.
+
+      After the fall of the {reactionary:adj} classes in Germany, the fight against the {bourgeoisie} itself may immediately begin.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:a01ac81e394c922d77820eadf5c4734e599791a8f86a1e0b6ff26e1405ab61ea
+    revision: 5
+    ai_assisted: true
+    text: |
+      The Communists turn their attention chiefly to Germany because that country is on the eve of a {bourgeoisie:adj} {revolution}.
+
+      This {revolution} is bound to happen under advanced European conditions, with a far more developed {proletariat} than England had in the seventeenth or France in the eighteenth century.
+
+      And because the {bourgeoisie:adj} {revolution} in Germany will be only the prologue to an immediately following {proletariat:adj} {revolution}.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:8b490744beb59e49230ae22771508105340e18abcfd3ad9c6229b3eea1fd55f3
+    revision: 5
+    ai_assisted: true
+    text: In short, Communists everywhere support every {revolution:adj} movement against the existing social and political order of things.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:8a8069436bf625ca862c795248db951ca76a2369ef5dbe118f06ab020ac55c2e
+    revision: 5
+    ai_assisted: true
+    text: In all these movements, they bring to the front the property question as the leading issue, no matter how developed it is at the time.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:a9b163af9f63b3249835fa6ccfc2ce17364464dfbdbfcc0121131c8432c2a51a
+    revision: 5
+    ai_assisted: true
+    text: Finally, they work everywhere for unity and agreement among democratic {party:pl} of all countries.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:4a3409ded938d0962af19c0db1f32518a98791c9127d9edfd34ac0fb26e8b279
+    revision: 5
+    ai_assisted: true
+    text: |
+      The Communists refuse to hide their views and aims. They openly declare that their ends can be attained only by forcefully overthrowing all existing social conditions.
+
+      Let the ruling classes tremble at a {Communism:adj} {revolution}. The {proletariat:pl} have nothing to lose but their chains. They have a world to win.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:5412190a5f2f99e6582c09ad32d3a7318be1e16059ed308335bc099d1ca79c27
+    revision: 5
+    ai_assisted: true
+    text: "{Proletariat:pl} of All Countries, Unite!"
+  p00014:
+    covers: [p00014]
+    based_on: sha256:9722afd5546101aea63ccfa4a42ae4b4c21ccd807dc3d02dfaea8d5336c0d4f5
+    revision: 5
+    ai_assisted: true
+    text: |
+      This party was then represented in Parliament by Alexandre Ledru-Rollin, in literature by Louis Blanc, and in the daily press by the newspaper <i>La Réforme</i>. To its inventors, Social-Democracy meant a section of the Democratic or Republican Party with a socialist coloring. [Engels, English Edition 1888.]<br/><br/>
+      The famous final phrase of the Manifesto is “Working Men of All Countries, Unite!”. In German it is “<i>Proletarier aller Länder, vereinigt euch!</i>”. A more literal translation would be “Proletarians of all countries, Unite!”.<br/><br/>
+      The slogan “Workers of the World, Unite!” is a popular version of the last sentences. It is not found in any official translation. The Plain English text uses the inclusive modern term Workers.

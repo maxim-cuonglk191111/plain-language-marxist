@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
-| **Owner** | Unassigned |
+| **Owner** | Claude |
 | **Severity** | High |
 | **Milestone** | M1 |
 | **Depends on** | 028, 029 |
@@ -44,8 +44,8 @@ Chapter IV is short and tactical:
 - Cut the M1 final release artifact (`scripts/release.mjs`) containing the complete, four-chapter Manifesto.
 
 ## Acceptance Criteria
-- [ ] Chapter IV imported, translated, and reviewed.
-- [ ] Closing slogan rendered inclusively with accompanying translation note.
-- [ ] All four chapters linked and navigable in reader.
-- [ ] `pnpm check` and `pnpm e2e` pass with 100% clean results.
-- [ ] Full release package built and validated.
+- [x] Chapter IV imported, translated, and reviewed.
+- [x] Closing slogan rendered inclusively with accompanying translation note.
+- [x] All four chapters linked and navigable in reader.
+- [x] `pnpm check` and `pnpm e2e` pass with 100% clean results.
+- [x] Full release package built and validated.

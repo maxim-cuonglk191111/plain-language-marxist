@@ -1,0 +1,87 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch04
+title: Communist Manifesto (Chapter 4)
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch04.htm
+  retrieved_at: 2026-10-04
+  via: https://web.archive.org/web/20261003230650id_/https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch04.htm
+  snapshot: ingestion/snapshots/marx/1848/communist-manifesto/ch04/2026-10-04.html
+  snapshot_hash: sha256:ff5a45048e5400cafb29a3c817f75e20a2c3b42fbab2c0fc0934532f3cff6c17
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: Chapter IV. Position of the Communists in Relation to the Various Existing Opposition Parties
+    hash: sha256:205c3f141c21d953d7b86e83c7de0b276756c9871daa178630c8f2e9163a7d9e
+    state: active
+  - id: p00002
+    type: paragraph
+    text: Section II has made clear the relations of the Communists to the existing working-class parties, such as the Chartists in England and the Agrarian Reformers in America.
+    hash: sha256:b1e15591afcbf11be0d24140d6a0500cc63260cbd3142721fdb8a27ab63eb368
+    state: active
+  - id: p00003
+    type: paragraph
+    text: The Communists fight for the attainment of the immediate aims, for the enforcement of the momentary interests of the working class; but in the movement of the present, they also represent and take care of the future of that movement. In France, the Communists ally with the Social-Democrats<fn ref="1"/> against the conservative and radical bourgeoisie, reserving, however, the right to take up a critical position in regard to phases and illusions traditionally handed down from the great Revolution.
+    hash: sha256:5f471ad8e287e1aab1df64979fcee365f2f8e4a65669360e24fff259560cc147
+    state: active
+  - id: p00004
+    type: paragraph
+    text: In Switzerland, they support the Radicals, without losing sight of the fact that this party consists of antagonistic elements, partly of Democratic Socialists, in the French sense, partly of radical bourgeois.
+    hash: sha256:235bd6da24de1b29ab363707510e45372e0b6c61420b07003b9087befc3612d3
+    state: active
+  - id: p00005
+    type: paragraph
+    text: In Poland, they support the party that insists on an agrarian revolution as the prime condition for national emancipation, that party which fomented the insurrection of Cracow in 1846.
+    hash: sha256:ad726e706bfd4c6b1c68212905d6ce8e0eb9334894595cbf4307e436b83c28bb
+    state: active
+  - id: p00006
+    type: paragraph
+    text: In Germany, they fight with the bourgeoisie whenever it acts in a revolutionary way, against the absolute monarchy, the feudal squirearchy, and the petty bourgeoisie.
+    hash: sha256:1f639edf95c509a5d76c81c6bcf5ca440f5a1a92d8e4a5e8b4373cf0ddaef110
+    state: active
+  - id: p00007
+    type: paragraph
+    text: But they never cease, for a single instant, to instill into the working class the clearest possible recognition of the hostile antagonism between bourgeoisie and proletariat, in order that the German workers may straightway use, as so many weapons against the bourgeoisie, the social and political conditions that the bourgeoisie must necessarily introduce along with its supremacy, and in order that, after the fall of the reactionary classes in Germany, the fight against the bourgeoisie itself may immediately begin.
+    hash: sha256:3d4cebcd25e782cfbfc3108980bf445a7f409083eadc616f9bc276b59635da28
+    state: active
+  - id: p00008
+    type: paragraph
+    text: The Communists turn their attention chiefly to Germany, because that country is on the eve of a bourgeois revolution that is bound to be carried out under more advanced conditions of European civilisation and with a much more developed proletariat than that of England was in the seventeenth, and France in the eighteenth century, and because the bourgeois revolution in Germany will be but the prelude to an immediately following proletarian revolution.
+    hash: sha256:cbd6ff7f3d9f7bbe697d02b2857c74741aee1e48a2e2315d65ab2119a6c842d8
+    state: active
+  - id: p00009
+    type: paragraph
+    text: In short, the Communists everywhere support every revolutionary movement against the existing social and political order of things.
+    hash: sha256:788860f4d2698c508cac05cac63ff2a4806a9d69137b2a43b5582b8004f369a6
+    state: active
+  - id: p00010
+    type: paragraph
+    text: In all these movements, they bring to the front, as the leading question in each, the property question, no matter what its degree of development at the time.
+    hash: sha256:27509568d75560fd9214a79d14bbb296a1292409e98a000c2e03d1a0dcb371e9
+    state: active
+  - id: p00011
+    type: paragraph
+    text: Finally, they labour everywhere for the union and agreement of the democratic parties of all countries.
+    hash: sha256:5b6194d14d4b0259352ee0b92ad95723612eaee1b8a2d6ca7db2d902a7b6511f
+    state: active
+  - id: p00012
+    type: paragraph
+    text: The Communists disdain to conceal their views and aims. They openly declare that their ends can be attained only by the forcible overthrow of all existing social conditions. Let the ruling classes tremble at a Communistic revolution. The proletarians have nothing to lose but their chains. They have a world to win.
+    hash: sha256:061735b95d0fe78b5410166541ed80e6ab5d54c92e993a0e66885934f6cd3c88
+    state: active
+  - id: p00013
+    type: heading
+    level: 3
+    text: Working Men of All Countries, Unite!
+    hash: sha256:6bed6efb545b482fba00eae4951664ebaa3e22c763059290c31c093b038c2b84
+    state: active
+  - id: p00014
+    type: footnote
+    label: "1"
+    text: "The party then represented in Parliament by Ledru-Rollin, in literature by Louis Blanc, in the daily press by the <i>Réforme</i>. The name of Social-Democracy signifies, with these its inventors, a section of the Democratic or Republican Party more or less tinged with socialism. [Engels, English Edition 1888]<br/><br/>The famous final phrase of the Manifesto, “Working Men of All Countries, Unite!”, in the original German is: “<i>Proletarier aller Länder, vereinigt euch!</i>” Thus, a more correct translation would be “Proletarians of all countries, Unite!”<br/><br/>“Workers of the World, Unite. You have nothing to lose but your chains!” is a popularisation of the last three sentences, and is not found in any official translation. Since this English translation was approved by Engels, we have kept the original intact."
+    hash: sha256:7e8f35e5488de47dcdd2d5394101412bc44e5f43d5d0c09bf7b5ee277d05df21
+    state: active

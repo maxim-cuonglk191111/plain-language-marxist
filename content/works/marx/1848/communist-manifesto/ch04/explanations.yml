@@ -1,0 +1,21 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch04
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00002]
+    text: |-
+      The National Reform Association, known as the Agrarian Reformers, was a US movement in the 1840s campaigning for free land grants for settlers.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00005]
+    text: |-
+      In February 1846, Polish patriots organized a national uprising in Cracow against Austrian, Russian, and Prussian partition, demanding agrarian land reform.
+    ai_assisted: true
+  e003:
+    kind: translation_note
+    targets: [p00013]
+    text: |-
+      The German original is “Proletarier aller Länder, vereinigt euch!”. Samuel Moore translated this in 1888 as “Working Men”. The Plain English uses the inclusive term “Workers”.
+    ai_assisted: true

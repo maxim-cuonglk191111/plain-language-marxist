@@ -99,3 +99,13 @@ The layer exists to help readers **understand** (SDD §1, §5.7): historical con
   - **6 background notes**: Pope and Tsar, Metternich and Guizot (p00002); the Cape (p00015); Exodus and crusades (p00025); "Chinese walls" and the Opium War (p00029); combinations and trade unions (p00046); the Ten Hours Act (p00048). **Check the dates and facts.**
   - **1 new text note** (p00030), on "idiocy" of rural life, the double reading of Idiotismus. This is the only use of the "two readings" exception.
   - **Plain English:** all 28 passages with a sentence over 35 words were split. The longest sentence drops from 76 words to 35, with every clause and link word kept.
+
+## Maintainer review (2026-10-04) and changes
+- **Section summaries dropped.** They read like generic AI summaries, and the reader could not see what each one covered. The Context layer now gives **background only**, and STYLE §15 says so. The reader still supports multi-passage explanations, but none are written.
+- **Words readers misread get cards.** The new cards are revolution/revolutionary, reactionary, conservative, communism, party, exploitation and barbarian. Each says what the word means in the Manifesto, and its "Common mix-up" line names the modern misreading, for example "revolutionary" as only an armed uprising, or "reactionary" as just an insult.
+- **Plain language, systematically.** `docs/editorial/hard-words.yml` lists literary words and set phrases with plain replacements:
+  - `plm apply` and the new `plm review` warn on them;
+  - the LLM prompt lists them, with a B1–B2 target;
+  - STYLE §3 and the review checklist point to them.
+
+  The Ch. I draft was rewritten with this (see task 012).

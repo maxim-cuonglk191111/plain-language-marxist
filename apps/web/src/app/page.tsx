@@ -1,6 +1,6 @@
+import { ContinueShelf } from "../components/WorkProgress";
 import { getIndex } from "../lib/data";
-
-const authorName = (slug: string) => slug.charAt(0).toUpperCase() + slug.slice(1);
+import { authorName, workPath } from "../lib/reading";
 
 export default function Home() {
   const index = getIndex();
@@ -22,11 +22,14 @@ export default function Home() {
           </a>
         </p>
       )}
+      <ContinueShelf />
       <h2>Library</h2>
       <ul className="library">
         {index.works.map((work) => (
           <li key={work.id}>
-            <h3>{work.title}</h3>
+            <h3>
+              <a href={workPath(work)}>{work.title}</a>
+            </h3>
             <p className="byline">
               {work.authors.map(authorName).join(" and ")}, {work.year}
               {work.translation

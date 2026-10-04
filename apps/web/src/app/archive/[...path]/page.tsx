@@ -5,10 +5,14 @@ import { notFound } from "next/navigation";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadingAids } from "../../../components/ReadingAids";
+import { ReadingProgress } from "../../../components/ReadingProgress";
 import { SearchHighlight } from "../../../components/SearchHighlight";
 import { TermCards } from "../../../components/TermCards";
-import { allDocuments, findDocument, getDocument, getTerm } from "../../../lib/data";
+import { TocDrawer } from "../../../components/TocDrawer";
+import { WorkPage } from "../../../components/WorkPage";
+import { allDocuments, findDocument, getDocument, getIndex, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
+import { chapters, rowWords, workPath, type ChapterInfo } from "../../../lib/reading";
 import { buildRows, footnoteTargets } from "../../../lib/rows";
 import { termsUsed, toTermFile } from "../../../lib/terms";
 
@@ -19,28 +23,65 @@ type Explanation = DataDocument["explanations"][number];
 
 export const dynamicParams = false;
 
+const segments = (path: string) =>
+  path
+    .replace(/^\/archive\//, "")
+    .replace(/\/$/, "")
+    .split("/");
+
+/** Every chapter, plus each work's own page at its folder path (task 031). */
 export function generateStaticParams() {
-  return allDocuments().map((d) => ({ path: d.path.replace(/^\/archive\//, "").split("/") }));
+  return [
+    ...allDocuments().map((d) => ({ path: segments(d.path) })),
+    ...getIndex().works.map((w) => ({ path: segments(workPath(w)) })),
+  ];
 }
 
 async function load(props: Props) {
   const { path } = await props.params;
-  const entry = findDocument(`/archive/${path.map(decodeURIComponent).join("/")}`);
-  if (!entry) notFound();
-  return { entry, doc: getDocument(entry) };
+  const url = `/archive/${path.map(decodeURIComponent).join("/")}`;
+  const entry = findDocument(url);
+  if (entry) return { kind: "document" as const, entry, doc: getDocument(entry) };
+  const work = getIndex().works.find((w) => workPath(w) === `${url}/`);
+  if (work) return { kind: "work" as const, work };
+  notFound();
 }
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { entry, doc } = await load(props);
+  const page = await load(props);
+  if (page.kind === "work")
+    return { title: page.work.title, alternates: { canonical: workPath(page.work) } };
+  const { entry, doc } = page;
+  const name = chapters(entry.work, RENDERING).find((c) => c.path === doc.path)?.name.name;
   return {
-    title: `${doc.title} — ${entry.work.title}`,
+    title: `${name ?? doc.title} — ${entry.work.title}`,
     alternates: { canonical: doc.path },
   };
 }
 
-export default async function DocumentPage(props: Props) {
-  const { entry, doc } = await load(props);
+export default async function ArchivePage(props: Props) {
+  const page = await load(props);
+  if (page.kind === "work") return <WorkPage work={page.work} renderingKey={RENDERING} />;
+  return <DocumentPage entry={page.entry} doc={page.doc} />;
+}
+
+function DocumentPage({
+  entry,
+  doc,
+}: {
+  entry: NonNullable<ReturnType<typeof findDocument>>;
+  doc: DataDocument;
+}) {
   const rows = buildRows(doc, RENDERING);
+  const work = chapters(entry.work, RENDERING);
+  const at = work.findIndex((c) => c.path === doc.path);
+  const chapter = work[at];
+  if (!chapter) notFound();
+  const prev = work[at - 1];
+  const next = work[at + 1];
+  const home = workPath(entry.work);
+  const meta = { title: chapter.name.name, work: entry.work.title, workPath: home };
+  const ordinal = new Map(doc.passages.map((p, i) => [p.id, i + 1]));
   const footnotes = footnoteTargets(doc);
   const translation = entry.work.translation;
   const terms = termsUsed(doc).map(getTerm);
@@ -63,8 +104,13 @@ export default async function DocumentPage(props: Props) {
 
   return (
     <article className="reader">
+      {/* React hoists these into <head>. */}
+      {prev && <link rel="prev" href={prev.path} />}
+      {next && <link rel="next" href={next.path} />}
       <header className="reader-header">
-        <p className="work-title">{entry.work.title}</p>
+        <p className="work-title">
+          <a href={home}>{entry.work.title}</a>
+        </p>
         <h1>{doc.title}</h1>
         <p className="attribution">
           Original: {doc.source.attribution}
@@ -88,6 +134,11 @@ export default async function DocumentPage(props: Props) {
             context={{ workId: entry.work.id, authors: entry.work.authors }}
           />
         </div>
+        {/* Without JavaScript, the contents; with it, the drawer in the reader bar replaces this. */}
+        <details className="toc-inline">
+          <summary>Contents</summary>
+          <TocList chapters={work} current={doc.path} home={home} workTitle={entry.work.title} />
+        </details>
       </header>
 
       <ReadingAids path={doc.path} title={`${entry.work.title}: ${doc.title}`} />
@@ -95,7 +146,21 @@ export default async function DocumentPage(props: Props) {
 
       {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
       <div className="reader-bar">
-        <LayerSwitch />
+        <div className="reader-bar-main">
+          <TocDrawer
+            current={doc.path}
+            workPath={home}
+            workTitle={entry.work.title}
+            chapters={work.map((c) => ({ path: c.path, name: c.name.name, sections: c.sections }))}
+          />
+          <LayerSwitch />
+        </div>
+        <ReadingProgress
+          path={doc.path}
+          meta={meta}
+          short={chapter.name.short}
+          passages={doc.passages.length}
+        />
         <div className="columns-head" aria-hidden="true">
           {LAYERS.map((l) => (
             <span key={l} className={`col-${l}`}>
@@ -109,20 +174,41 @@ export default async function DocumentPage(props: Props) {
         {rows.map((row) => {
           const [first, ...rest] = row.ids;
           const notes = atRow.get(first ?? "");
+          const words = rowWords(
+            row,
+            (notes?.context ?? []).map((e) => e.text),
+          );
           return (
-            <section key={first} id={first} className={row.rendering ? "row" : "row untranslated"}>
+            <section
+              key={first}
+              id={first}
+              className={row.rendering ? "row" : "row untranslated"}
+              data-words={words.join(" ")}
+              data-n={ordinal.get(first ?? "")}
+            >
               {rest.map((id) => (
                 <span key={id} id={id} className="anchor" />
               ))}
-              <button
-                type="button"
-                className="bookmark"
-                data-passage={first}
-                aria-pressed="false"
-                hidden
-              >
-                <span className="visually-hidden">Bookmark passage {first}</span>
-              </button>
+              <div className="row-tools">
+                <button
+                  type="button"
+                  className="bookmark"
+                  data-passage={first}
+                  aria-pressed="false"
+                  hidden
+                >
+                  <span className="visually-hidden">Bookmark passage {first}</span>
+                </button>
+                <button
+                  type="button"
+                  className="copy-link"
+                  data-passage={first}
+                  title="Copy link to this passage"
+                  hidden
+                >
+                  <span className="visually-hidden">Copy link to passage {first}</span>
+                </button>
+              </div>
               <div className="col-plain layer-plain">
                 <span className="layer-label">Plain English</span>
                 {row.rendering ? (
@@ -166,7 +252,107 @@ export default async function DocumentPage(props: Props) {
           );
         })}
       </div>
+
+      <ChapterEnd prev={prev} next={next} home={home} workTitle={entry.work.title} />
     </article>
+  );
+}
+
+/** The work's chapters, the current one opened to its sections. Server-rendered, no JS. */
+function TocList({
+  chapters: list,
+  current,
+  home,
+  workTitle,
+}: {
+  chapters: ChapterInfo[];
+  current: string;
+  home: string;
+  workTitle: string;
+}) {
+  return (
+    <nav aria-label="Contents">
+      <p className="toc-work">
+        <a href={home}>{workTitle}</a>
+      </p>
+      <ol className="toc-chapters">
+        {list.map((c) => (
+          <li key={c.path} className={c.path === current ? "current" : undefined}>
+            <a href={c.path} aria-current={c.path === current ? "page" : undefined}>
+              {c.name.name}
+            </a>
+            {c.path === current && c.sections.length > 0 && (
+              <ol className="toc-sections">
+                {c.sections.map((s) => (
+                  <li key={s.id} className={`level-${Math.min(s.level, 6)}`}>
+                    <a href={`#${s.id}`}>{s.title}</a>
+                  </li>
+                ))}
+              </ol>
+            )}
+          </li>
+        ))}
+      </ol>
+    </nav>
+  );
+}
+
+/**
+ * The end of a chapter (task 031, Part A): a card that says so and leads on to
+ * the next chapter (or back to the work page after the last), then plain
+ * previous/next links. Seeing the card marks the chapter finished (ReadingProgress).
+ */
+function ChapterEnd({
+  prev,
+  next,
+  home,
+  workTitle,
+}: {
+  prev: ChapterInfo | undefined;
+  next: ChapterInfo | undefined;
+  home: string;
+  workTitle: string;
+}) {
+  return (
+    <footer className="chapter-end">
+      <section className="end-card" aria-labelledby="end-card-title">
+        <h2 id="end-card-title">Chapter finished</h2>
+        {next ? (
+          <>
+            <p className="end-next-label">Next</p>
+            <p className="end-next-title">{next.name.name}</p>
+            {next.opening && <p className="end-opening">{next.opening}</p>}
+            <a className="start-reading" href={next.path}>
+              Next chapter →
+            </a>
+          </>
+        ) : (
+          <>
+            <p>This is the last chapter of {workTitle}.</p>
+            <a className="start-reading" href={home}>
+              Back to the work page
+            </a>
+          </>
+        )}
+      </section>
+      <nav className="chapter-nav" aria-label="Chapters">
+        {prev ? (
+          <a href={prev.path} rel="prev">
+            ← {prev.name.short}: {prev.name.name.replace(/^Chapter\s+\S+\s*/, "")}
+          </a>
+        ) : (
+          <span />
+        )}
+        <a href={home}>All chapters</a>
+        {next ? (
+          <a href={next.path} rel="next">
+            {next.name.short}: {next.name.name.replace(/^Chapter\s+\S+\s*/, "")} →
+          </a>
+        ) : (
+          <span />
+        )}
+      </nav>
+    </footer>
   );
 }
 

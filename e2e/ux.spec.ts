@@ -23,7 +23,8 @@ test("search marks the words it matched, and the reader highlights them on arriv
 }) => {
   await page.goto("/search/?q=guild");
   await expect(page.locator(".search-results mark").first()).toHaveText(/^guild/i);
-  const link = page.locator(".search-results li a").first();
+  // The first result in a chapter (vocabulary results may rank above it).
+  const link = page.locator('.search-results li a[href*=".htm"]').first();
   await expect(link).toHaveAttribute("href", /[?&]hl=guild/);
   await link.click();
   await expect

@@ -605,6 +605,7 @@ Base path `/api/v1`. It is Zod-validated, publishes OpenAPI at `/api/openapi.jso
 | Terminology preference | Global setting: "Project default / Original terms / Choose per term". Stored locally (§6.3) |
 | Explain | Per-passage panel with explanations, key terms and related passages, labelled by kind |
 | Badges | "Source verified", "Community reviewed", "AI-assisted". No truth scores |
+| Navigation | Changed by task 031 (maintainer asked for an e-book style reader). Each work has a pre-rendered page at its folder path (chapters, reading times, Start/Continue reading). Every chapter has a table of contents (drawer with JS, `<details>` without), an end-of-chapter card leading to the next chapter, previous/next links and `rel="prev"`/`"next"`. A progress bar shows chapter, percent, time left (words of the layers shown) and passage number. Finished chapters and a "Continue reading" shelf come from local history (`plm:reading`) |
 | Preferences | Theme, font size, line height, mode, card style, highlights, reading progress, bookmarks — `localStorage`, no account |
 | Community unavailable | Contribute buttons show "Contributions are temporarily unavailable". Reading is unaffected |
 | Accessibility | WCAG 2.2 AA; keyboard support (Enter/Space/Escape/Tab), screen-reader labels, visible focus, reduced motion, semantic HTML |

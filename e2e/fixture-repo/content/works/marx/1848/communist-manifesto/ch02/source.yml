@@ -1,0 +1,395 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch02
+title: Communist Manifesto (Chapter 2)
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch02.htm
+  retrieved_at: 2026-10-04
+  via: https://web.archive.org/web/20260929175855id_/https://www.marxists.org/archive/marx/works/1848/communist-manifesto/ch02.htm
+  snapshot: ingestion/snapshots/marx/1848/communist-manifesto/ch02/2026-10-04.html
+  snapshot_hash: sha256:0ea2e3bc35288e83b22809e910dc4833b0f0b8afb9256161035d7a813614b40f
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: Chapter II. Proletarians and Communists
+    hash: sha256:f14b80529cc5840d3fbee37097a0dbcb6d016a32d82d501fc8d5789a62e5bf52
+    state: active
+  - id: p00002
+    type: paragraph
+    text: In what relation do the Communists stand to the proletarians as a whole?
+    hash: sha256:b096c27054bae92695d9cfb06f252289c661b318038b525f860da70147970b55
+    state: active
+  - id: p00003
+    type: paragraph
+    text: The Communists do not form a separate party opposed to the other working-class parties.
+    hash: sha256:1fd460f0efe2e07134e63b31cc7f67a9c255cabd4b787ded8575f0839060115e
+    state: active
+  - id: p00004
+    type: paragraph
+    text: They have no interests separate and apart from those of the proletariat as a whole.
+    hash: sha256:80a464f0897d958610ff9c7f4afa16a24536169cfa3bd6351560d722bbb169f9
+    state: active
+  - id: p00005
+    type: paragraph
+    text: They do not set up any sectarian principles of their own, by which to shape and mould the proletarian movement.
+    hash: sha256:4818ee6a1f5bad94db259f2712ded256342770546651a64833cc1f24b3a746a5
+    state: active
+  - id: p00006
+    type: paragraph
+    text: "The Communists are distinguished from the other working-class parties by this only: 1. In the national struggles of the proletarians of the different countries, they point out and bring to the front the common interests of the entire proletariat, independently of all nationality. 2. In the various stages of development which the struggle of the working class against the bourgeoisie has to pass through, they always and everywhere represent the interests of the movement as a whole."
+    hash: sha256:748050df2aae088e49afcfe79e195342bb6f13d907971b073a0aa54b79f361ec
+    state: active
+  - id: p00007
+    type: paragraph
+    text: The Communists, therefore, are on the one hand, practically, the most advanced and resolute section of the working-class parties of every country, that section which pushes forward all others; on the other hand, theoretically, they have over the great mass of the proletariat the advantage of clearly understanding the line of march, the conditions, and the ultimate general results of the proletarian movement.
+    hash: sha256:dca32640d260d1495f3077f7646bec40f3378cce39444bf8cf895f763e9a09a5
+    state: active
+  - id: p00008
+    type: paragraph
+    text: "The immediate aim of the Communists is the same as that of all other proletarian parties: formation of the proletariat into a class, overthrow of the bourgeois supremacy, conquest of political power by the proletariat."
+    hash: sha256:04a79fa5d81aa51435feaf0f9933d4eb704437f00c0eac27d32f352d3876f0f6
+    state: active
+  - id: p00009
+    type: paragraph
+    text: The theoretical conclusions of the Communists are in no way based on ideas or principles that have been invented, or discovered, by this or that would-be universal reformer.
+    hash: sha256:7a605fb6e59eeb2517855305dbc57f0118737e2c1bf5a33f6abc3eb07701db44
+    state: active
+  - id: p00010
+    type: paragraph
+    text: They merely express, in general terms, actual relations springing from an existing class struggle, from a historical movement going on under our very eyes. The abolition of existing property relations is not at all a distinctive feature of communism.
+    hash: sha256:4ce7e4b684e41eb623c0409c5b9a5f00c52fdaccd4e9841b90f5e74276b1482c
+    state: active
+  - id: p00011
+    type: paragraph
+    text: All property relations in the past have continually been subject to historical change consequent upon the change in historical conditions.
+    hash: sha256:bc0086915ad1e7cccaca5721d1d1e87d27967838b382c1489b15666d8dbc1aa2
+    state: active
+  - id: p00012
+    type: paragraph
+    text: The French Revolution, for example, abolished feudal property in favour of bourgeois property.
+    hash: sha256:5b6e05dfa6056c636bd15b652530acbfc1c5a1209b3a4455e7dbd378e107c6c2
+    state: active
+  - id: p00013
+    type: paragraph
+    text: The distinguishing feature of Communism is not the abolition of property generally, but the abolition of bourgeois property. But modern bourgeois private property is the final and most complete expression of the system of producing and appropriating products, that is based on class antagonisms, on the exploitation of the many by the few.
+    hash: sha256:014e9a4cd3944d5307640ad5f76eaf79f4f1a56b18cd57bd5052f62d95f93315
+    state: active
+  - id: p00014
+    type: paragraph
+    text: "In this sense, the theory of the Communists may be summed up in the single sentence: Abolition of private property."
+    hash: sha256:a6494a694eab4efd504a3d3924b1de31d0d142e6bdd949aea3ebfd450477b6e7
+    state: active
+  - id: p00015
+    type: paragraph
+    text: We Communists have been reproached with the desire of abolishing the right of personally acquiring property as the fruit of a man’s own labour, which property is alleged to be the groundwork of all personal freedom, activity and independence.
+    hash: sha256:ad7a674711d20df481f735685eb812234f620bf3003ed3da0cdabe4677e7ece3
+    state: active
+  - id: p00016
+    type: paragraph
+    text: Hard-won, self-acquired, self-earned property! Do you mean the property of petty artisan and of the small peasant, a form of property that preceded the bourgeois form? There is no need to abolish that; the development of industry has to a great extent already destroyed it, and is still destroying it daily.
+    hash: sha256:faabfc8db71e9786bdb12c4d3312d5eec61f2558c76ed2cfb3e658b342ba5621
+    state: active
+  - id: p00017
+    type: paragraph
+    text: Or do you mean the modern bourgeois private property?
+    hash: sha256:6a11c93493ecb22a87ee81aa53535e52eb8f6054f139e6ff8508e808a2a1f166
+    state: active
+  - id: p00018
+    type: paragraph
+    text: But does wage-labour create any property for the labourer? Not a bit. It creates capital, <i>i.e.</i>, that kind of property which exploits wage-labour, and which cannot increase except upon condition of begetting a new supply of wage-labour for fresh exploitation. Property, in its present form, is based on the antagonism of capital and wage labour. Let us examine both sides of this antagonism.
+    hash: sha256:207cdbc7a870a972b44004032bc8142ef3ddc1e167fd7a89f7424101a6c1996d
+    state: active
+  - id: p00019
+    type: paragraph
+    text: To be a capitalist, is to have not only a purely personal, but a social <i>status</i> in production. Capital is a collective product, and only by the united action of many members, nay, in the last resort, only by the united action of all members of society, can it be set in motion.
+    hash: sha256:258659dfbf6bfc5e353164d9929e53152ae1a3a019dd0f3b077a82b5a93305c1
+    state: active
+  - id: p00020
+    type: paragraph
+    text: Capital is therefore not only personal; it is a social power.
+    hash: sha256:f8dd1da41aeb33bc29cad1e5023b35cf849aa0b015617affdb001dc540d37ef7
+    state: active
+  - id: p00021
+    type: paragraph
+    text: When, therefore, capital is converted into common property, into the property of all members of society, personal property is not thereby transformed into social property. It is only the social character of the property that is changed. It loses its class character.
+    hash: sha256:58f04cd84a77203fa6c8a494f698ff4567e8c0c883417a6d66fd497689766f23
+    state: active
+  - id: p00022
+    type: paragraph
+    text: Let us now take wage-labour.
+    hash: sha256:b543226dea604f29d34e79e0d561bae539da3c8aa7560b56088175500a9764c6
+    state: active
+  - id: p00023
+    type: paragraph
+    text: The average price of wage-labour is the minimum wage, <i>i.e.</i>, that quantum of the means of subsistence which is absolutely requisite to keep the labourer in bare existence as a labourer. What, therefore, the wage-labourer appropriates by means of his labour, merely suffices to prolong and reproduce a bare existence. We by no means intend to abolish this personal appropriation of the products of labour, an appropriation that is made for the maintenance and reproduction of human life, and that leaves no surplus wherewith to command the labour of others. All that we want to do away with is the miserable character of this appropriation, under which the labourer lives merely to increase capital, and is allowed to live only in so far as the interest of the ruling class requires it.
+    hash: sha256:c200ff4bab5db1c1e6f92438ae3d5f0b3f527a79824961ab213812bd250bf942
+    state: active
+  - id: p00024
+    type: paragraph
+    text: In bourgeois society, living labour is but a means to increase accumulated labour. In Communist society, accumulated labour is but a means to widen, to enrich, to promote the existence of the labourer.
+    hash: sha256:f9cefb5400e099479b0ba6108f2f743772d8ceb9af2038af6b9a6011bcca19cf
+    state: active
+  - id: p00025
+    type: paragraph
+    text: In bourgeois society, therefore, the past dominates the present; in Communist society, the present dominates the past. In bourgeois society capital is independent and has individuality, while the living person is dependent and has no individuality.
+    hash: sha256:210e25095dc019516cb56e2fee4baa954f95c1ca83710d87e1d607b682c1a096
+    state: active
+  - id: p00026
+    type: paragraph
+    text: And the abolition of this state of things is called by the bourgeois, abolition of individuality and freedom! And rightly so. The abolition of bourgeois individuality, bourgeois independence, and bourgeois freedom is undoubtedly aimed at.
+    hash: sha256:10d3af26781d8e09c3483c89173a905142137fb86bfba782e5c48bf9b8a5b5b1
+    state: active
+  - id: p00027
+    type: paragraph
+    text: By freedom is meant, under the present bourgeois conditions of production, free trade, free selling and buying.
+    hash: sha256:1f42849e1da5d6f6cfe9157133f46d679c0d72132a740efb0b4cc2206ff382f0
+    state: active
+  - id: p00028
+    type: paragraph
+    text: But if selling and buying disappears, free selling and buying disappears also. This talk about free selling and buying, and all the other “brave words” of our bourgeois about freedom in general, have a meaning, if any, only in contrast with restricted selling and buying, with the fettered traders of the Middle Ages, but have no meaning when opposed to the Communistic abolition of buying and selling, of the bourgeois conditions of production, and of the bourgeoisie itself.
+    hash: sha256:0d6ea44f70fdd689146dacd77dd4fd6a747c11215e48791c2ae7cb640e31a12f
+    state: active
+  - id: p00029
+    type: paragraph
+    text: You are horrified at our intending to do away with private property. But in your existing society, private property is already done away with for nine-tenths of the population; its existence for the few is solely due to its non-existence in the hands of those nine-tenths. You reproach us, therefore, with intending to do away with a form of property, the necessary condition for whose existence is the non-existence of any property for the immense majority of society.
+    hash: sha256:108db38d4647d1377aefcb16a8ef64055996692d0a38f9291fd36ad735593370
+    state: active
+  - id: p00030
+    type: paragraph
+    text: In one word, you reproach us with intending to do away with your property. Precisely so; that is just what we intend.
+    hash: sha256:812db5d762b4643c34fc8839a4964ae83967a9b922c102f2381c4f4a9f8e68ac
+    state: active
+  - id: p00031
+    type: paragraph
+    text: From the moment when labour can no longer be converted into capital, money, or rent, into a social power capable of being monopolised, <i>i.e.</i>, from the moment when individual property can no longer be transformed into bourgeois property, into capital, from that moment, you say, individuality vanishes.
+    hash: sha256:1e7dec6fb78a60ff982f6a3af8c536a176437126fe803f50878d4e4804ebeff1
+    state: active
+  - id: p00032
+    type: paragraph
+    text: You must, therefore, confess that by “individual” you mean no other person than the bourgeois, than the middle-class owner of property. This person must, indeed, be swept out of the way, and made impossible.
+    hash: sha256:40bac008e4bad54ea7febe4efc1700175ca8f5ed6578d108fc0fef9ab4f43769
+    state: active
+  - id: p00033
+    type: paragraph
+    text: Communism deprives no man of the power to appropriate the products of society; all that it does is to deprive him of the power to subjugate the labour of others by means of such appropriations.
+    hash: sha256:d9d34727da6bebd2303da35af6cf15fe3fb442167e37c5687f1ce1ba224380c6
+    state: active
+  - id: p00034
+    type: paragraph
+    text: It has been objected that upon the abolition of private property, all work will cease, and universal laziness will overtake us.
+    hash: sha256:a5725f5ae7df1ff9c7d1b55f8eab3250e50b14333b94e507c1cd0faa7d1871ed
+    state: active
+  - id: p00035
+    type: paragraph
+    text: "According to this, bourgeois society ought long ago to have gone to the dogs through sheer idleness; for those of its members who work, acquire nothing, and those who acquire anything do not work. The whole of this objection is but another expression of the tautology: that there can no longer be any wage-labour when there is no longer any capital."
+    hash: sha256:4386b7fa98a033c43b0c16594dc24051aa82817547e04a8aa92dc48644a5135f
+    state: active
+  - id: p00036
+    type: paragraph
+    text: All objections urged against the Communistic mode of producing and appropriating material products, have, in the same way, been urged against the Communistic mode of producing and appropriating intellectual products. Just as, to the bourgeois, the disappearance of class property is the disappearance of production itself, so the disappearance of class culture is to him identical with the disappearance of all culture.
+    hash: sha256:3931c026a2be4e2621e6fc51e71dbcfbf5b5a3e7c37c446634736b86c8256d08
+    state: active
+  - id: p00037
+    type: paragraph
+    text: That culture, the loss of which he laments, is, for the enormous majority, a mere training to act as a machine.
+    hash: sha256:99f6e0370ba9473f93b0b3725ab16ca2f5ea9e93f038e5f1f2e8dd079002f559
+    state: active
+  - id: p00038
+    type: paragraph
+    text: But don’t wrangle with us so long as you apply, to our intended abolition of bourgeois property, the standard of your bourgeois notions of freedom, culture, law, &amp;c. Your very ideas are but the outgrowth of the conditions of your bourgeois production and bourgeois property, just as your jurisprudence is but the will of your class made into a law for all, a will whose essential character and direction are determined by the economical conditions of existence of your class.
+    hash: sha256:b882051e05ced68159a86c60c6504b55ccd63fe887c2bbbb391b2efd14a0cc75
+    state: active
+  - id: p00039
+    type: paragraph
+    text: The selfish misconception that induces you to transform into eternal laws of nature and of reason, the social forms springing from your present mode of production and form of property – historical relations that rise and disappear in the progress of production – this misconception you share with every ruling class that has preceded you. What you see clearly in the case of ancient property, what you admit in the case of feudal property, you are of course forbidden to admit in the case of your own bourgeois form of property.
+    hash: sha256:8ca0f16da3b11bfc9b844f2755cce0461fc09574025009bcc5aded24d8e80fdf
+    state: active
+  - id: p00040
+    type: paragraph
+    text: Abolition [<i>Aufhebung</i>] of the family! Even the most radical flare up at this infamous proposal of the Communists.
+    hash: sha256:4c1bad6c0df511a48940ed9afd33ccdf5d42b42cb2bd1489f346d0cb899c3918
+    state: active
+  - id: p00041
+    type: paragraph
+    text: On what foundation is the present family, the bourgeois family, based? On capital, on private gain. In its completely developed form, this family exists only among the bourgeoisie. But this state of things finds its complement in the practical absence of the family among the proletarians, and in public prostitution.
+    hash: sha256:c068fab63f17af1a7bfc13d6feadbfc7b5d1981aff0299db6c569fc550acc90b
+    state: active
+  - id: p00042
+    type: paragraph
+    text: The bourgeois family will vanish as a matter of course when its complement vanishes, and both will vanish with the vanishing of capital.
+    hash: sha256:e5c9a67fe5f5e96a80e4dbd220caeb4d7c1d4fb23f294f3db6ccd00e3c3af339
+    state: active
+  - id: p00043
+    type: paragraph
+    text: Do you charge us with wanting to stop the exploitation of children by their parents? To this crime we plead guilty.
+    hash: sha256:0db0fabbcc4b9ab9408ac662b85934c548fae06de22e3fd23322dc66be51a232
+    state: active
+  - id: p00044
+    type: paragraph
+    text: But, you say, we destroy the most hallowed of relations, when we replace home education by social.
+    hash: sha256:d333cca96485c14849073aa542d758cab33a775cab32806c0cf3e8b3d54a39e5
+    state: active
+  - id: p00045
+    type: paragraph
+    text: And your education! Is not that also social, and determined by the social conditions under which you educate, by the intervention direct or indirect, of society, by means of schools, &amp;c.? The Communists have not invented the intervention of society in education; they do but seek to alter the character of that intervention, and to rescue education from the influence of the ruling class.
+    hash: sha256:d3c3f4b024b28b86d67b80358a7df09b34c234d3ce169071e860deb05ad30619
+    state: active
+  - id: p00046
+    type: paragraph
+    text: The bourgeois clap-trap about the family and education, about the hallowed co-relation of parents and child, becomes all the more disgusting, the more, by the action of Modern Industry, all the family ties among the proletarians are torn asunder, and their children transformed into simple articles of commerce and instruments of labour.
+    hash: sha256:b4f7704612d5570da88e3d60111e9332d8d5c41b4e77c59d665606dfdea4ce48
+    state: active
+  - id: p00047
+    type: paragraph
+    text: But you Communists would introduce community of women, screams the bourgeoisie in chorus.
+    hash: sha256:f3d197c4ab83f5967b19e901c0b1a945fd8e4d2e41606f29fcc99919212f2c5e
+    state: active
+  - id: p00048
+    type: paragraph
+    text: The bourgeois sees his wife as a mere instrument of production. He hears that the instruments of production are to be exploited in common, and, naturally, can come to no other conclusion than that the lot of being common to all will likewise fall to the women.
+    hash: sha256:f8bfd0392ed3a3f7747ea29970a9d8376a1665907d92e1ab166e6c3b7a1a0afc
+    state: active
+  - id: p00049
+    type: paragraph
+    text: He has not even a suspicion that the real point aimed at is to do away with the status of women as mere instruments of production.
+    hash: sha256:15c99015498de561f580aff329488f48c81db93c8b394c1272106a16ab96c5a3
+    state: active
+  - id: p00050
+    type: paragraph
+    text: For the rest, nothing is more ridiculous than the virtuous indignation of our bourgeois at the community of women which, they pretend, is to be openly and officially established by the Communists. The Communists have no need to introduce community of women; it has existed almost from time immemorial.
+    hash: sha256:80b8dbba020d2cd3803e8d3ff09485c7ff517574a5d7c471f464c36dd7924789
+    state: active
+  - id: p00051
+    type: paragraph
+    text: Our bourgeois, not content with having wives and daughters of their proletarians at their disposal, not to speak of common prostitutes, take the greatest pleasure in seducing each other’s wives.
+    hash: sha256:4f606f4570f59ad53c571a2861a2730bfc1a7d3aee80d3a57da92221c44991b6
+    state: active
+  - id: p00052
+    type: paragraph
+    text: Bourgeois marriage is, in reality, a system of wives in common and thus, at the most, what the Communists might possibly be reproached with is that they desire to introduce, in substitution for a hypocritically concealed, an openly legalised community of women. For the rest, it is self-evident that the abolition of the present system of production must bring with it the abolition of the community of women springing from that system, <i>i.e.</i>, of prostitution both public and private.
+    hash: sha256:9159a0fba65b9ec40936f212f15baabe9af42afb815c1fe6325578aeee9dd1eb
+    state: active
+  - id: p00053
+    type: paragraph
+    text: The Communists are further reproached with desiring to abolish countries and nationality.
+    hash: sha256:5b320ca78a836e43b3794862812d982c342e147ca47a296110cc095d56cbfbdc
+    state: active
+  - id: p00054
+    type: paragraph
+    text: The working men have no country. We cannot take from them what they have not got. Since the proletariat must first of all acquire political supremacy, must rise to be the leading class of the nation, must constitute itself <i>the</i> nation, it is so far, itself national, though not in the bourgeois sense of the word.
+    hash: sha256:d59a64044e8803a241d0932187308008942eaa9622bd5e804def1220ebfb9c30
+    state: active
+  - id: p00055
+    type: paragraph
+    text: National differences and antagonism between peoples are daily more and more vanishing, owing to the development of the bourgeoisie, to freedom of commerce, to the world market, to uniformity in the mode of production and in the conditions of life corresponding thereto.
+    hash: sha256:be9eb98f970734806227eb2c034409176101d41da860097c46f2dadf625acdc2
+    state: active
+  - id: p00056
+    type: paragraph
+    text: The supremacy of the proletariat will cause them to vanish still faster. United action, of the leading civilised countries at least, is one of the first conditions for the emancipation of the proletariat.
+    hash: sha256:bc9f70147be14eccb5fa6171c1680f0bad81620183241389f42355f7c9d8489d
+    state: active
+  - id: p00057
+    type: paragraph
+    text: In proportion as the exploitation of one individual by another will also be put an end to, the exploitation of one nation by another will also be put an end to. In proportion as the antagonism between classes within the nation vanishes, the hostility of one nation to another will come to an end.
+    hash: sha256:52a4a0cc745478b22138116aef590a25caf1a2ff692fb94a56db40966bd6145f
+    state: active
+  - id: p00058
+    type: paragraph
+    text: The charges against Communism made from a religious, a philosophical and, generally, from an ideological standpoint, are not deserving of serious examination.
+    hash: sha256:054ff00f6aee34017f80de614312d64737e098a84170b7ff76b5b8c52abf0cda
+    state: active
+  - id: p00059
+    type: paragraph
+    text: Does it require deep intuition to comprehend that man’s ideas, views, and conception, in one word, man’s consciousness, changes with every change in the conditions of his material existence, in his social relations and in his social life?
+    hash: sha256:d40dad6f7afffbfdae66c6285f7f163face3c42d6ba657dd8ed19ed3edfa032f
+    state: active
+  - id: p00060
+    type: paragraph
+    text: What else does the history of ideas prove, than that intellectual production changes its character in proportion as material production is changed? The ruling ideas of each age have ever been the ideas of its ruling class.
+    hash: sha256:04c66d1d06ae44aedfd688297b745d46c334a4bc262b39d33e625fc28626fd13
+    state: active
+  - id: p00061
+    type: paragraph
+    text: When people speak of the ideas that revolutionise society, they do but express that fact that within the old society the elements of a new one have been created, and that the dissolution of the old ideas keeps even pace with the dissolution of the old conditions of existence.
+    hash: sha256:b6436e2d5082ebe1c20e260f6adb52ba8c0ffb830ed7a9dfbc8cbd19d45af8c8
+    state: active
+  - id: p00062
+    type: paragraph
+    text: When the ancient world was in its last throes, the ancient religions were overcome by Christianity. When Christian ideas succumbed in the 18th century to rationalist ideas, feudal society fought its death battle with the then revolutionary bourgeoisie. The ideas of religious liberty and freedom of conscience merely gave expression to the sway of free competition within the domain of knowledge.
+    hash: sha256:6a50ed393d989f71c1bda19a73dedf3570be55b1885919d9ac150290e4c74732
+    state: active
+  - id: p00063
+    type: paragraph
+    text: “Undoubtedly,” it will be said, “religious, moral, philosophical, and juridical ideas have been modified in the course of historical development. But religion, morality, philosophy, political science, and law, constantly survived this change.”
+    hash: sha256:e11673999c9126eda58c2686c648a3491b3e278f095db123b71b8b8aed0974ef
+    state: active
+  - id: p00064
+    type: paragraph
+    text: “There are, besides, eternal truths, such as Freedom, Justice, etc., that are common to all states of society. But Communism abolishes eternal truths, it abolishes all religion, and all morality, instead of constituting them on a new basis; it therefore acts in contradiction to all past historical experience.”
+    hash: sha256:6648586153a234dcc6ac600cd72f7db0530873788c9cefd4877a9208b0a709aa
+    state: active
+  - id: p00065
+    type: paragraph
+    text: What does this accusation reduce itself to? The history of all past society has consisted in the development of class antagonisms, antagonisms that assumed different forms at different epochs.
+    hash: sha256:1e0455245a2cde9ae6ae25964cd26dc8c06ce63f8dc2b0688009b4869fb212ef
+    state: active
+  - id: p00066
+    type: paragraph
+    text: But whatever form they may have taken, one fact is common to all past ages, <i>viz.</i>, the exploitation of one part of society by the other. No wonder, then, that the social consciousness of past ages, despite all the multiplicity and variety it displays, moves within certain common forms, or general ideas, which cannot completely vanish except with the total disappearance of class antagonisms.
+    hash: sha256:f3ba0de6f21294904e4e35d763ea40185c6e3f83928cc66bc84fafd4c11762c4
+    state: active
+  - id: p00067
+    type: paragraph
+    text: The Communist revolution is the most radical rupture with traditional property relations; no wonder that its development involved the most radical rupture with traditional ideas.
+    hash: sha256:e3cdca3499c019176899cd1d833f462393483e733c3133ea9339bea8094e2a45
+    state: active
+  - id: p00068
+    type: paragraph
+    text: But let us have done with the bourgeois objections to Communism.
+    hash: sha256:aa5bb5b4290c2ce55a2b51819445ffd4328982007dc6517d9b858b853af09698
+    state: active
+  - id: p00069
+    type: paragraph
+    text: We have seen above, that the first step in the revolution by the working class is to raise the proletariat to the position of ruling class, to win the battle of democracy.
+    hash: sha256:c95aaea586ca1d9f883262541fcec73fb55d7562b4e691368140b99b19235c9d
+    state: active
+  - id: p00070
+    type: paragraph
+    text: The proletariat will use its political supremacy to wrest, by degrees, all capital from the bourgeoisie, to centralise all instruments of production in the hands of the State, <i>i.e.</i>, of the proletariat organised as the ruling class; and to increase the total of productive forces as rapidly as possible.
+    hash: sha256:06c42b4f4cdb94db2f753d3183f2b7c40e5b0af46295cda3d39d3dbc492b0ade
+    state: active
+  - id: p00071
+    type: paragraph
+    text: Of course, in the beginning, this cannot be effected except by means of despotic inroads on the rights of property, and on the conditions of bourgeois production; by means of measures, therefore, which appear economically insufficient and untenable, but which, in the course of the movement, outstrip themselves, necessitate further inroads upon the old social order, and are unavoidable as a means of entirely revolutionising the mode of production.
+    hash: sha256:be31d3b21a9ee0685512edde0f6131fcf076e4d35e0b8eaab5006aaf4026115f
+    state: active
+  - id: p00072
+    type: paragraph
+    text: These measures will, of course, be different in different countries.
+    hash: sha256:07ad533d16a5640ad4060046cfbced300883626d28fdd582fc0b0cbec8264b02
+    state: active
+  - id: p00073
+    type: paragraph
+    text: Nevertheless, in most advanced countries, the following will be pretty generally applicable.
+    hash: sha256:89d93a17697c6686582f4ab1e81ccdb5b9859f2cf79d3cf3d33750e4c074c4a0
+    state: active
+  - id: p00074
+    type: paragraph
+    text: <indent level="1"/>1. Abolition of property in land and application of all rents of land to public purposes.<br/>2. A heavy progressive or graduated income tax.<br/>3. Abolition of all rights of inheritance.<br/>4. Confiscation of the property of all emigrants and rebels.<br/>5. Centralisation of credit in the hands of the state, by means of a national bank with State capital and an exclusive monopoly.<br/>6. Centralisation of the means of communication and transport in the hands of the State.<br/>7. Extension of factories and instruments of production owned by the State; the bringing into cultivation of waste-lands, and the improvement of the soil generally in accordance with a common plan.<br/>8. Equal liability of all to work. Establishment of industrial armies, especially for agriculture.<br/>9. Combination of agriculture with manufacturing industries; gradual abolition of all the distinction between town and country by a more equable distribution of the populace over the country.<br/>10. Free education for all children in public schools. Abolition of children’s factory labour in its present form. Combination of education with industrial production, &amp;c, &amp;c.
+    hash: sha256:e1faf26f91a3fde369c4cd6955d43aa6c4069cf29317f8df69d8f370b4fd68ee
+    state: active
+  - id: p00075
+    type: paragraph
+    text: When, in the course of development, class distinctions have disappeared, and all production has been concentrated in the hands of a vast association of the whole nation, the public power will lose its political character. Political power, properly so called, is merely the organised power of one class for oppressing another. If the proletariat during its contest with the bourgeoisie is compelled, by the force of circumstances, to organise itself as a class, if, by means of a revolution, it makes itself the ruling class, and, as such, sweeps away by force the old conditions of production, then it will, along with these conditions, have swept away the conditions for the existence of class antagonisms and of classes generally, and will thereby have abolished its own supremacy as a class.
+    hash: sha256:ba99ad0238b7b079f2471b12b450b8d2b5d49ef3a633b228562d12deb7cd800b
+    state: active
+  - id: p00076
+    type: paragraph
+    text: In place of the old bourgeois society, with its classes and class antagonisms, we shall have an association, in which the free development of each is the condition for the free development of all.
+    hash: sha256:1a9d45e31ddafe1a3c2888adcf03a42cd6b25754795b9be1dfdace5394ee998d
+    state: active

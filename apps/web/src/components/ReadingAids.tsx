@@ -1,45 +1,24 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { BOOKMARKS_KEY, progressKey, readJson, writeJson, type Bookmark } from "../lib/prefs";
+import { readHistory } from "../lib/history";
+import { BOOKMARKS_KEY, readJson, writeJson, type Bookmark } from "../lib/prefs";
 
 /**
- * Reading progress and bookmarks for one document, both kept in this browser
- * (SDD §12). Progress is offered as a link, never an automatic jump. Bookmark
- * buttons are server-rendered hidden and revealed here, since they need JS.
+ * Resume link, bookmarks and passage links for one document, kept in this
+ * browser (SDD §12). The saved position (written by ReadingProgress) is offered
+ * as a link, never an automatic jump. Row buttons are server-rendered hidden
+ * and revealed here, since they need JS.
  */
 export function ReadingAids({ path, title }: { path: string; title: string }) {
   const [resume, setResume] = useState<string | null>(null);
+  const [status, setStatus] = useState("");
 
-  // Remember the topmost row on screen.
   useEffect(() => {
-    const saved = readJson<string | null>(progressKey(path), null);
+    const saved = readHistory().docs[path]?.passage;
     const first = document.querySelector<HTMLElement>(".rows > .row")?.id;
     if (saved && saved !== first && !location.hash && document.getElementById(saved))
       setResume(saved);
-
-    let timer: number | undefined;
-    const visible = new Map<string, number>();
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const e of entries) {
-          const id = (e.target as HTMLElement).id;
-          if (e.isIntersecting) visible.set(id, e.boundingClientRect.top);
-          else visible.delete(id);
-        }
-        window.clearTimeout(timer);
-        timer = window.setTimeout(() => {
-          const top = [...visible].sort((a, b) => a[1] - b[1])[0]?.[0];
-          if (top) writeJson(progressKey(path), top);
-        }, 400);
-      },
-      { rootMargin: "0px 0px -60% 0px" },
-    );
-    document.querySelectorAll(".rows > .row").forEach((row) => observer.observe(row));
-    return () => {
-      observer.disconnect();
-      window.clearTimeout(timer);
-    };
   }, [path]);
 
   // Bookmarks: reveal the buttons and keep their pressed state in sync.
@@ -87,15 +66,51 @@ export function ReadingAids({ path, title }: { path: string; title: string }) {
     return () => buttons.forEach((b) => b.removeEventListener("click", onClick));
   }, [path, title]);
 
-  if (!resume) return null;
+  // Copy link to passage: the canonical URL with the passage id, no ?layers= state.
+  useEffect(() => {
+    const buttons = [
+      ...document.querySelectorAll<HTMLButtonElement>("button.copy-link[data-passage]"),
+    ];
+    const onClick = async (e: Event) => {
+      const passage = (e.currentTarget as HTMLButtonElement).dataset["passage"] ?? "";
+      const url = `${location.origin}${path}#${passage}`;
+      try {
+        await navigator.clipboard.writeText(url);
+        setStatus(`Link to passage ${passage} copied.`);
+      } catch {
+        // No clipboard (insecure context, or permission refused): put it in the address bar.
+        history.replaceState(null, "", `#${passage}`);
+        setStatus("Copying is not available here; the link is now in the address bar.");
+      }
+    };
+    for (const b of buttons) {
+      b.hidden = false;
+      b.addEventListener("click", onClick);
+    }
+    return () => buttons.forEach((b) => b.removeEventListener("click", onClick));
+  }, [path]);
+
+  useEffect(() => {
+    if (!status) return;
+    const t = window.setTimeout(() => setStatus(""), 4000);
+    return () => window.clearTimeout(t);
+  }, [status]);
+
   return (
-    <p className="resume" role="status">
-      <a href={`#${resume}`} onClick={() => setResume(null)}>
-        Continue where you left off
-      </a>{" "}
-      <button type="button" className="link-button" onClick={() => setResume(null)}>
-        Dismiss
-      </button>
-    </p>
+    <>
+      <p className="toast" role="status">
+        {status}
+      </p>
+      {resume && (
+        <p className="resume" role="status">
+          <a href={`#${resume}`} onClick={() => setResume(null)}>
+            Continue where you left off
+          </a>{" "}
+          <button type="button" className="link-button" onClick={() => setResume(null)}>
+            Dismiss
+          </button>
+        </p>
+      )}
+    </>
   );
 }

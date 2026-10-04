@@ -247,4 +247,13 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 - `pnpm check` and `pnpm e2e` pass. SDD §12 is updated.
 
 ## Done
-_(fill in per part as it lands)_
+
+### Part A — Navigation and structure (2026-10-04)
+- **Work page** at the work's folder path, from the same `archive/[...path]` route (finalize-export turns it into `…/communist-manifesto/index.html`). `work.yml` has no description field, so none is shown; adding one would be a schema change and is left for when a work needs it. Reading times are for the Plain English (the Original where it is missing) at 200 wpm.
+- **TOC:** a modal `<dialog>` drawer (native focus containment and Escape; a backdrop click closes it; focus returns to the button). Without JS, a `<details>` "Contents" list in the chapter header. Chapter names come from each chapter's "Chapter II. …" heading, since document titles are source page titles.
+- **Previous/next:** end-of-chapter card, a "Chapters" nav and `<link rel="prev|next">` (React hoists them into `<head>`).
+- **Progress:** per-row word counts are written at build time as `data-words="plain original context"` and `data-n` (passage number) on each row; `/data/v1` is unchanged. `wpm` is read from `plm:prefs` with a default of 200 until Part B adds the setting.
+- **Stored shape:** `plm:reading = { v: 1, docs: { [path]: { title, work, workPath, passage, percent, updated, finished } } }`. The pre-031 `plm:progress:<path>` keys are read and folded in, then removed on the next write (`migrateHistory`, unit-tested).
+- **Copy link to passage** sits under the bookmark star in a new `.row-tools` column, with a visible toast confirmation.
+- The e2e fixture now has the Ch. II–IV sources (no renderings), so navigation is tested across four chapters. One older test now picks the first chapter search result, as the extra chapters change ranking.
+- `t` opens the TOC for now. Part C moves it into the shared shortcut handler with the on/off setting.

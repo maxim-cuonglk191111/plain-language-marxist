@@ -4,6 +4,7 @@ import { expect, test } from "@playwright/test";
 
 const PAGES = [
   ["home", "/"],
+  ["work page", "/archive/marx/works/1848/communist-manifesto/"],
   ["reader (plain)", "/archive/marx/works/1848/communist-manifesto/ch01.htm?layers=plain"],
   [
     "reader (two layers)",

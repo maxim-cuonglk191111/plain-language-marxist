@@ -166,11 +166,12 @@ test("shortcuts can be switched off, and never fire while typing", async ({ page
   await expect(page.locator("#reader-settings")).toHaveCount(0);
 });
 
-test("nothing is requested from anywhere but the site itself", async ({ page }) => {
+test("nothing is requested from anywhere but the site itself", async ({ page, baseURL }) => {
+  const site = new URL(baseURL ?? "http://127.0.0.1:4174").host;
   const outside: string[] = [];
   page.on("request", (r) => {
     const url = new URL(r.url());
-    if (url.protocol.startsWith("http") && url.host !== "127.0.0.1:4174") outside.push(r.url());
+    if (url.protocol.startsWith("http") && url.host !== site) outside.push(r.url());
   });
   await withPrefs(page, { font: "atkinson", aid: "ruler", theme: "sepia" });
   await page.goto(`${DOC}?layers=plain,original,context#p00013`);

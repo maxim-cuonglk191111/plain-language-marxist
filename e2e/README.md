@@ -4,6 +4,7 @@ Playwright tests against the **built static site** (task 019), including axe acc
 
 ```bash
 pnpm e2e        # builds the fixture site, serves it on 127.0.0.1:4174, runs the tests
+PLM_E2E_PORT=4190 pnpm e2e   # another port, so two checkouts (worktrees) can run at once
 ```
 
 - `fixture-repo/`: a frozen content repository holding the real *Manifesto* Ch. I source and vocabulary, the Ch. II–IV sources (no renderings, for chapter navigation), plus a few sample renderings (with term tokens) and an explanation, so the tests do not depend on how far task 012 has got. Validate it with `pnpm plm validate e2e/fixture-repo`.

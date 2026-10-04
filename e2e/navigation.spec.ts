@@ -178,7 +178,7 @@ test("copy link to passage writes the canonical passage URL", async ({ page, con
     .click();
   await expect(page.locator(".toast")).toContainText("copied");
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
-    `http://127.0.0.1:4174${CH(1)}#p00017`,
+    `${new URL(page.url()).origin}${CH(1)}#p00017`,
   );
 });
 

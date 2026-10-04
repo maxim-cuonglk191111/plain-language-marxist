@@ -246,7 +246,7 @@ test("copy with source labels each layer honestly", async ({ page, context }) =>
     .getByRole("button", { name: "Copy with source" })
     .click();
   expect((await clip()).replace(/\r/g, "")).toBe(
-    `“history”\n— Plain English version by Plain Language Marxist, not the original wording. Based on Marx & Engels, Manifesto of the Communist Party (1848), I.9. http://127.0.0.1:4174${DOC}#p00009`,
+    `“history”\n— Plain English version by Plain Language Marxist, not the original wording. Based on Marx & Engels, Manifesto of the Communist Party (1848), I.9. ${new URL(page.url()).origin}${DOC}#p00009`,
   );
 
   await page.locator("#p00009 button.row-actions").click();

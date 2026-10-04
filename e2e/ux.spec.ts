@@ -69,9 +69,11 @@ test("the home page has one obvious way into the text", async ({ page }) => {
   await expect(start).toHaveAttribute("href", DOC);
 });
 
-test("@mobile bookmark stars are visible without hover on touch screens", async ({ page }) => {
+test("@mobile passage action buttons are visible without hover on touch screens", async ({
+  page,
+}) => {
   await page.goto(DOC);
-  const star = page.locator("#p00009 button.bookmark");
+  const star = page.locator("#p00009 button.row-actions");
   await expect(star).toBeVisible();
   expect(Number(await star.evaluate((el) => getComputedStyle(el).opacity))).toBeGreaterThan(0);
 });

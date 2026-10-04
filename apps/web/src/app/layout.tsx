@@ -29,7 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <nav aria-label="Site">
             <a href="/vocabulary/">Vocabulary</a>
             <a href="/search/">Search</a>
-            <a href="/bookmarks/">Bookmarks</a>
+            <a href="/notes/">Notes</a>
             <ReaderSettings />
           </nav>
         </header>

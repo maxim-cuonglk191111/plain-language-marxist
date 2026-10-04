@@ -796,7 +796,7 @@ html:not([data-layers]) .settings {
 .row {
   position: relative;
 }
-/* Per-row tools (bookmark, copy link): in the margin, or inside the row on narrower screens. */
+/* Per-row tools (the passage actions button): in the margin, or inside the row on narrower screens. */
 .row-tools {
   position: absolute;
   top: 0.35rem;
@@ -818,31 +818,9 @@ html:not([data-layers]) .settings {
 .row-tools button[hidden] {
   display: none;
 }
-button.copy-link::before {
-  content: "";
-  display: block;
-  width: 0.95rem;
-  height: 0.95rem;
-  margin: auto;
-  background: currentColor;
-  /* A chain-link glyph, drawn so it follows the text colour in every theme. */
-  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.2' stroke-linecap='round'%3E%3Cpath d='M10 14a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1'/%3E%3Cpath d='M14 10a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1'/%3E%3C/svg%3E")
-    center / contain no-repeat;
-}
 .row:hover .row-tools button,
 .row-tools button:focus-visible {
   opacity: 1;
-}
-button.bookmark::before {
-  content: "\2606";
-  font-size: 1rem;
-}
-button.bookmark[aria-pressed="true"] {
-  opacity: 1;
-  color: var(--accent);
-}
-button.bookmark[aria-pressed="true"]::before {
-  content: "\2605";
 }
 @media (max-width: 80rem) {
   .row-tools {
@@ -894,14 +872,6 @@ button.bookmark[aria-pressed="true"]::before {
   border-radius: 999px;
   padding: 0.05rem 0.45rem;
   color: var(--muted);
-}
-.bookmark-list {
-  list-style: none;
-  padding: 0;
-}
-.bookmark-list li {
-  border-top: 1px solid var(--rule);
-  padding: 0.6rem 0;
 }
 
 /* ---------- UX polish (QA pass, 2026-10-04) ---------- */
@@ -975,7 +945,7 @@ button.bookmark[aria-pressed="true"]::before {
 .search-results mark {
   padding: 0 0.1em;
 }
-/* Where the bookmark star sits inside the row (narrower screens), keep text clear of it. */
+/* Where the passage actions button sits inside the row (narrower screens), keep text clear of it. */
 @media (max-width: 80rem) {
   .rows > .row {
     padding-right: 1.9rem;
@@ -1512,4 +1482,319 @@ html[data-align="justify"] .rows blockquote.block {
   margin: 0.5rem 0 0;
   border-top: 1px solid var(--rule);
   padding-top: 0.6rem;
+}
+
+/* ---------- Highlights, notes, passage actions (task 031 D) ---------- */
+/* Translucent, so the same four work on every theme; text keeps the theme's own colour. */
+:root {
+  --mark-yellow: rgb(245 196 30 / 0.34);
+  --mark-green: rgb(70 185 100 / 0.3);
+  --mark-blue: rgb(70 145 240 / 0.3);
+  --mark-pink: rgb(240 100 165 / 0.3);
+}
+.swatch {
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  padding: 0;
+  cursor: pointer;
+  vertical-align: middle;
+  background-clip: padding-box;
+  /* Android's tap flash would tint the swatch and misreport the colour. */
+  -webkit-tap-highlight-color: transparent;
+}
+span.swatch {
+  width: 0.9rem;
+  height: 0.9rem;
+  cursor: default;
+}
+.swatch-yellow {
+  background-color: var(--mark-yellow);
+}
+.swatch-green {
+  background-color: var(--mark-green);
+}
+.swatch-blue {
+  background-color: var(--mark-blue);
+}
+.swatch-pink {
+  background-color: var(--mark-pink);
+}
+.swatch[aria-pressed="true"] {
+  outline: 2px solid var(--fg);
+  outline-offset: 2px;
+}
+
+/* Whole-passage highlights tint the text layers of the row, not the Context. */
+.row[data-mark="yellow"] > .col-plain,
+.row[data-mark="yellow"] > .col-original {
+  background: var(--mark-yellow);
+}
+.row[data-mark="green"] > .col-plain,
+.row[data-mark="green"] > .col-original {
+  background: var(--mark-green);
+}
+.row[data-mark="blue"] > .col-plain,
+.row[data-mark="blue"] > .col-original {
+  background: var(--mark-blue);
+}
+.row[data-mark="pink"] > .col-plain,
+.row[data-mark="pink"] > .col-original {
+  background: var(--mark-pink);
+}
+.row[data-mark] > .col-plain,
+.row[data-mark] > .col-original {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 0.25rem transparent;
+}
+/* Browsers without the Custom Highlight API: a faint mark on the row instead. */
+html:not([data-highlight-api]) .row[data-text-mark] > .col-plain,
+html:not([data-highlight-api]) .row[data-text-mark] > .col-original {
+  border-left: 3px solid var(--mark-yellow);
+}
+
+/* A selected passage, while the action bar is open. */
+.row[data-selected] {
+  outline: 2px dashed var(--accent);
+  outline-offset: 2px;
+}
+.rows > .row {
+  cursor: pointer;
+}
+.rows > .row a,
+.rows > .row button {
+  cursor: pointer;
+}
+
+/* The ⋯ button, and quiet markers for what a row holds. */
+button.row-actions::before {
+  content: "\22EF";
+  font-size: 1.1rem;
+  line-height: 1;
+}
+.row-tools::after {
+  display: block;
+  text-align: center;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--accent);
+}
+.row[data-bookmarked] > .row-tools::after {
+  content: "\2605";
+}
+.row[data-note]:not([data-bookmarked]) > .row-tools::after {
+  content: "\270E";
+}
+.row[data-note][data-bookmarked] > .row-tools::after {
+  content: "\2605\A\270E";
+  white-space: pre;
+}
+
+/* Toolbars: over selected words, and the passage bar at the bottom of the screen. */
+.text-toolbar,
+.passage-bar {
+  z-index: 25;
+  background: var(--bg);
+  color: var(--fg);
+  border: 1px solid var(--rule);
+  box-shadow: 0 0.5rem 1.5rem rgb(0 0 0 / 0.2);
+  font: 0.9rem/1.2 var(--sans);
+}
+.text-toolbar {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: min(22rem, calc(100vw - 1rem));
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+}
+.passage-bar {
+  position: fixed;
+  left: 50%;
+  bottom: 0.75rem;
+  transform: translateX(-50%);
+  width: min(44rem, calc(100vw - 1rem));
+  padding: 0.5rem 0.75rem 0.6rem;
+  border-radius: 0.75rem;
+}
+.passage-bar-title {
+  margin: 0 0 0.35rem;
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.passage-bar-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+}
+.text-toolbar button:not(.swatch),
+.passage-bar button:not(.swatch),
+.notes-buttons button,
+.file-button,
+.dialog-actions button {
+  font: inherit;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--fg);
+  cursor: pointer;
+}
+.passage-bar button[aria-pressed="true"]:not(.swatch) {
+  background: var(--fg);
+  color: var(--bg);
+}
+.passage-bar .passage-bar-close {
+  margin-left: auto;
+  border: 0;
+  font-size: 1.3rem;
+  line-height: 1;
+}
+
+/* Note and Compare dialogs. */
+.note-dialog,
+.compare-dialog {
+  border: 1px solid var(--rule);
+  border-radius: 0.75rem;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 1rem 1.1rem;
+  width: min(32rem, calc(100vw - 1.5rem));
+  font-family: var(--sans);
+}
+.compare-dialog {
+  width: min(48rem, calc(100vw - 1.5rem));
+  max-height: 85dvh;
+  padding: 0;
+}
+.note-dialog::backdrop,
+.compare-dialog::backdrop {
+  background: rgb(0 0 0 / 0.35);
+}
+.note-dialog h2,
+.compare-dialog h2 {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+}
+.note-dialog textarea {
+  width: 100%;
+  font: inherit;
+  padding: 0.5rem;
+  border: 1px solid var(--rule);
+  border-radius: 0.5rem;
+  background: var(--bg);
+  color: var(--fg);
+}
+.dialog-actions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+.dialog-actions button[type="submit"] {
+  background: var(--fg);
+  color: var(--bg);
+}
+.compare-panel {
+  padding: 0.75rem 1.1rem 1.25rem;
+}
+.compare-cell {
+  border-top: 1px solid var(--rule);
+  padding-top: 0.5rem;
+  margin-top: 0.5rem;
+}
+.compare-cell .layer-label {
+  display: block;
+  margin: 0 0 0.35rem;
+}
+.compare-cell.layer-original {
+  background: var(--source-bg);
+  color: var(--source-fg);
+  border-left: 2px solid var(--source-rule);
+  padding: 0.5rem 0.75rem;
+}
+
+/* Notes page. */
+.notes-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 2rem;
+  margin-bottom: 1rem;
+}
+.notes-tools fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.notes-tools legend {
+  font-weight: 600;
+}
+.notes-tools label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  margin-right: 0.75rem;
+}
+.notes-items {
+  list-style: none;
+  padding: 0;
+}
+.notes-items li {
+  border-top: 1px solid var(--rule);
+  padding: 0.6rem 0 0.6rem 0.75rem;
+  border-left: 4px solid transparent;
+}
+.notes-items li.note-yellow {
+  border-left-color: var(--mark-yellow);
+}
+.notes-items li.note-green {
+  border-left-color: var(--mark-green);
+}
+.notes-items li.note-blue {
+  border-left-color: var(--mark-blue);
+}
+.notes-items li.note-pink {
+  border-left-color: var(--mark-pink);
+}
+.note-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.notes-items blockquote {
+  margin: 0.35rem 0;
+  font-family: var(--serif);
+}
+.note-text {
+  margin: 0.35rem 0;
+  white-space: pre-wrap;
+}
+.notes-backup {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+}
+.notes-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.file-button input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.file-button:focus-within {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+}
+/* Keep confirmations clear of the passage bar. */
+body:has(.passage-bar) .toast {
+  bottom: 8.5rem;
 }

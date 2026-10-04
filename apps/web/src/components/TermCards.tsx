@@ -119,6 +119,9 @@ export function TermCards({
           resolveChoice(file, resolveContext(p), el.dataset["pin"]),
           el.dataset["form"] ?? "sg",
         );
+        // Remember the server-rendered (project default) wording before the first swap:
+        // highlights anchor against it, so they survive a change of wording (task 031 D).
+        el.dataset["default"] ??= el.textContent ?? "";
         if (word !== undefined) el.textContent = el.dataset["cap"] ? capitalizeFirst(word) : word;
       });
     },

@@ -48,6 +48,7 @@ export const DEFAULT_PREFS: ReaderPrefs = {
   terms: "on",
 };
 export const PREFS_KEY = "plm:prefs";
+/** Pre-031 bookmark list; read once into plm:annotations (lib/annotations.ts). */
 export const BOOKMARKS_KEY = "plm:bookmarks";
 /** Dispatched on window when the reader changes a preference. */
 export const PREFS_EVENT = "plm:prefs";
@@ -113,8 +114,6 @@ export function applyPrefs(p: ReaderPrefs, html: Root = document.documentElement
   html.dataset["align"] = p.align;
   html.dataset["terms"] = p.terms;
 }
-
-export type Bookmark = { path: string; title: string; passage: string; snippet: string };
 
 /**
  * Inlined in <head> so the reading mode and preferences apply before first

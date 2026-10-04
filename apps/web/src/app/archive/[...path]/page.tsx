@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Annotations } from "../../../components/Annotations";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { LayerSwitch } from "../../../components/LayerSwitch";
+import { ReadAloud } from "../../../components/ReadAloud";
 import { ReadingAids } from "../../../components/ReadingAids";
 import { ReadingProgress } from "../../../components/ReadingProgress";
 import { SearchHighlight } from "../../../components/SearchHighlight";
@@ -169,6 +170,7 @@ function DocumentPage({
             chapters={work.map((c) => ({ path: c.path, name: c.name.name, sections: c.sections }))}
           />
           <LayerSwitch />
+          <ReadAloud next={next?.path ?? null} />
         </div>
         <ReadingProgress
           path={doc.path}

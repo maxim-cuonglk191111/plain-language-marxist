@@ -27,6 +27,17 @@ export function rowAtLine(rows: readonly HTMLElement[], line = readingLine()) {
   return { index: found, fraction: Math.min(Math.max(fraction, 0), 1) };
 }
 
+/** The first row the reader can see below the sticky reader bar: where reading aloud starts. */
+export function firstVisibleRow(rows: readonly HTMLElement[]): number {
+  const top = (document.querySelector(".reader-bar")?.getBoundingClientRect().bottom ?? 0) + 8;
+  // A row only peeking out under the bar does not count: half of it, or 48px, must show.
+  const i = rows.findIndex((r) => {
+    const box = r.getBoundingClientRect();
+    return box.bottom - top >= Math.min(48, box.height / 2);
+  });
+  return i === -1 ? 0 : i;
+}
+
 /** Single-key shortcuts must not fire while the reader types or uses a modifier. */
 export function isTyping(e: KeyboardEvent): boolean {
   if (e.ctrlKey || e.metaKey || e.altKey) return true;

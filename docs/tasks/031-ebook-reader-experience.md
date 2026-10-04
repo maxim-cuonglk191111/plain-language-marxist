@@ -254,6 +254,17 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 
 ## Done
 
+### Part E — Read aloud (2026-10-04)
+- **Player:** a "Listen" button in the reader bar opens a row with: layer (Plain English / Original / Context; the first text layer shown is chosen to start), previous passage / play-pause / next passage, speed (0.75–2×), voice, and "Continue to next chapter". "Listen from here" is also in the passage actions. Hidden unless `speechSynthesis.speak` and `SpeechSynthesisUtterance` both exist.
+- **One sentence at a time** (`Intl.Segmenter`, with a regex fallback). This works around Chrome cutting off long utterances, and gives sentence highlighting (`::highlight(tts-sentence)`) in every browser, not only those that fire boundary events. The row being read gets `data-reading` and is kept in view (no smooth scroll under reduced motion). Footnote numbers and source lists are not read.
+- **Layers never mixed:** an untranslated passage is skipped when listening to Plain English; the Original is not read in its place.
+- **Pause** cancels and remembers the sentence, because `speechSynthesis.pause()` is unreliable across voices. Play starts from the first passage visible under the reader bar.
+- **Privacy:** voices with `localService === false` are labelled "online voice", and a note explains what that means when one is chosen. Voices on the device are listed (and chosen by default) first, English first.
+- **Next chapter:** a session flag carries the layer to the next chapter, which keeps reading. If the browser blocks speech without a click, the player says "Press play to keep listening."
+- **Stored shape:** `plm:listen = { voice, rate, next }`, read with defaults (`normalizeListen`, unit-tested).
+- On phones the reader bar's Contents and Listen buttons show icons only (their names stay for screen readers), so the bar keeps one row.
+- e2e uses a stand-in speech engine (headless browsers cannot speak). Reader JS for the task so far: +12.8 KB gzipped.
+
 ### Part D — Highlights, notes and quoting, plus C3 Compare (2026-10-04)
 - **Passage actions** (D1, passage level): tap a passage, or press its ⋯ button (Tab, then Enter), to get a bar at the bottom of the screen. It offers four colours, Remove highlight, Note, Bookmark, Copy with source (one button per text layer shown), Share, Copy link and Compare. Several passages can be selected at once. Escape closes the bar and returns focus to the ⋯ button. The ⋯ button replaces Part A's bookmark star and copy-link button; quiet ★ and ✎ markers in the margin show which rows hold a bookmark or a note.
 - **Text highlights** (D1, text level): select words in Plain English or the Original for a toolbar (colours, Note, Copy with source, Share), or press `h` for yellow. They are drawn with the CSS Custom Highlight API, so the markup never changes. Clicking a highlight opens it to recolour, note or delete. Browsers without the API show a margin mark on the row instead.

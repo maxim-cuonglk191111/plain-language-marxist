@@ -23,6 +23,8 @@ import type { ChapterMeta } from "../lib/history";
 import { currentLayers } from "../lib/layers";
 import { fromRange, layerText, toRange } from "../lib/layertext";
 import { isTyping } from "../lib/position";
+import { canSpeak } from "../lib/speech";
+import { LISTEN_EVENT } from "./ReadAloud";
 
 export const TOAST_EVENT = "plm:toast";
 export const toast = (message: string) =>
@@ -103,6 +105,8 @@ export function Annotations({
     draft: string;
   } | null>(null);
   const [compare, setCompare] = useState<string | null>(null);
+  const [speech, setSpeech] = useState(false);
+  useEffect(() => setSpeech(canSpeak()), []);
   const bar = useRef<HTMLDivElement>(null);
   const opener = useRef<HTMLElement | null>(null);
   const noteDialog = useRef<HTMLDialogElement>(null);
@@ -684,6 +688,19 @@ export function Annotations({
                 <button type="button" onClick={() => setCompare(selected[0] ?? null)}>
                   Compare
                 </button>
+                {speech && (
+                  <button
+                    type="button"
+                    onClick={() => {
+                      window.dispatchEvent(
+                        new CustomEvent(LISTEN_EVENT, { detail: selected[0] ?? "" }),
+                      );
+                      setSelected([]);
+                    }}
+                  >
+                    Listen from here
+                  </button>
+                )}
               </>
             )}
             <button

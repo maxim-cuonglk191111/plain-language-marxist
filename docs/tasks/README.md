@@ -31,5 +31,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [023](023-three-layer-reader.md) | Reader with three switchable layers: Plain English, Original, Explanation | M1 | Done |
 | [024](024-nested-term-cards.md) | Clickable terms inside term cards (nested cards, up to 5) | M1 | Done |
 | [025](025-explanation-layer-policy.md) | Explanation layer: what it is for, how much to explain, and a plain-language review | M1 | In progress |
+| [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

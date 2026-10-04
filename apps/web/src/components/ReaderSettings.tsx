@@ -2,65 +2,85 @@
 
 import { useEffect, useRef, useState } from "react";
 import {
+  ALIGNS,
   DEFAULT_PREFS,
+  FONTS,
+  LEADINGS,
+  MARGINS,
+  PARAS,
+  PREFS_EVENT,
   PREFS_KEY,
+  SIZE_MAX,
+  SIZE_MIN,
+  THEMES,
+  WIDTHS,
+  WPMS,
   applyPrefs,
-  readJson,
+  readPrefs,
   writeJson,
   type ReaderPrefs,
 } from "../lib/prefs";
 
-type Option<K extends keyof ReaderPrefs> = { value: ReaderPrefs[K]; label: string };
+type Choice = {
+  [K in keyof ReaderPrefs]: {
+    key: K;
+    label: string;
+    hint?: string;
+    options: Record<string, string>;
+  };
+}[keyof ReaderPrefs];
 
-const GROUPS: { key: keyof ReaderPrefs; label: string; options: Option<keyof ReaderPrefs>[] }[] = [
+const labels = <T extends string | number>(values: readonly T[], names: string[]) =>
+  Object.fromEntries(values.map((v, i) => [String(v), names[i] ?? String(v)]));
+
+const CHOICES: Choice[] = [
   {
     key: "theme",
     label: "Theme",
-    options: [
-      { value: "system", label: "System" },
-      { value: "light", label: "Light" },
-      { value: "dark", label: "Dark" },
-    ],
+    options: labels(THEMES, ["System", "Light", "Sepia", "Dark", "Black"]),
   },
   {
-    key: "size",
-    label: "Text size",
-    options: [
-      { value: "s", label: "Small" },
-      { value: "m", label: "Medium" },
-      { value: "l", label: "Large" },
-      { value: "xl", label: "Extra large" },
-    ],
+    key: "font",
+    label: "Font",
+    hint: "For Plain English and Context. The Original keeps its book face.",
+    options: labels(FONTS, ["Sans", "Book serif", "Atkinson Hyperlegible", "OpenDyslexic"]),
   },
   {
     key: "leading",
     label: "Line spacing",
-    options: [
-      { value: "normal", label: "Normal" },
-      { value: "relaxed", label: "Relaxed" },
-    ],
+    options: labels(LEADINGS, ["Compact", "Normal", "Relaxed", "Loose"]),
   },
   {
-    key: "terms",
-    label: "Term underlines",
-    options: [
-      { value: "on", label: "Show" },
-      { value: "off", label: "Hide" },
-    ],
+    key: "width",
+    label: "Line width",
+    hint: "When one layer is shown.",
+    options: labels(WIDTHS, ["Narrow", "Medium", "Wide"]),
   },
+  { key: "margins", label: "Margins", options: labels(MARGINS, ["Small", "Medium", "Large"]) },
+  {
+    key: "para",
+    label: "Paragraphs",
+    hint: "Book style indents first lines, when one layer is shown.",
+    options: labels(PARAS, ["Spaced", "Book style"]),
+  },
+  { key: "align", label: "Alignment", options: labels(ALIGNS, ["Left", "Justified"]) },
+  {
+    key: "wpm",
+    label: "Reading speed",
+    hint: "Words a minute, for the time left.",
+    options: labels(WPMS, ["150", "200", "250", "300"]),
+  },
+  { key: "terms", label: "Term underlines", options: { on: "Show", off: "Hide" } },
 ];
 
-/** Site-wide reading preferences (SDD §12), kept in this browser only. */
+/** Site-wide reading preferences (SDD §12, task 031 B), kept in this browser only. */
 export function ReaderSettings() {
   const [prefs, setPrefs] = useState<ReaderPrefs>(DEFAULT_PREFS);
   const [open, setOpen] = useState(false);
   const panel = useRef<HTMLDivElement>(null);
   const toggle = useRef<HTMLButtonElement>(null);
 
-  useEffect(
-    () => setPrefs({ ...DEFAULT_PREFS, ...readJson<Partial<ReaderPrefs>>(PREFS_KEY, {}) }),
-    [],
-  );
+  useEffect(() => setPrefs(readPrefs()), []);
 
   // Escape, a click or tap outside, or focus moving elsewhere closes the panel.
   useEffect(() => {
@@ -89,12 +109,14 @@ export function ReaderSettings() {
     };
   }, [open]);
 
-  const set = (key: keyof ReaderPrefs, value: string) => {
-    const next = { ...prefs, [key]: value } as ReaderPrefs;
+  const save = (next: ReaderPrefs) => {
     setPrefs(next);
     writeJson(PREFS_KEY, next);
     applyPrefs(next);
+    window.dispatchEvent(new Event(PREFS_EVENT));
   };
+  const set = (key: keyof ReaderPrefs, value: string) =>
+    save({ ...prefs, [key]: key === "wpm" ? Number(value) : value } as ReaderPrefs);
 
   return (
     <div className="settings">
@@ -116,24 +138,69 @@ export function ReaderSettings() {
           role="region"
           aria-label="Reading settings"
         >
-          {GROUPS.map((group) => (
-            <fieldset key={group.key}>
-              <legend>{group.label}</legend>
-              {group.options.map((o) => (
-                <label key={o.value}>
-                  <input
-                    type="radio"
-                    name={`pref-${group.key}`}
-                    value={o.value}
-                    checked={prefs[group.key] === o.value}
-                    onChange={() => set(group.key, o.value)}
-                  />
-                  {o.label}
-                </label>
-              ))}
+          {/* Live preview: the same rules as the reader, in miniature. */}
+          <div className="settings-preview" aria-label="Preview" role="group">
+            <div className="layer-plain">
+              <span className="layer-label">Plain English</span>
+              <p className="block">
+                A ghost is haunting Europe — the ghost of communism. All the powers of old Europe
+                have joined in a holy alliance to drive out this ghost.
+              </p>
+            </div>
+            <div className="layer-original">
+              <span className="layer-label">Original</span>
+              <p className="block">
+                A spectre is haunting Europe — the spectre of communism. All the powers of old
+                Europe have entered into a holy alliance to exorcise this spectre.
+              </p>
+            </div>
+          </div>
+
+          <div className="settings-size">
+            <label htmlFor="pref-size">
+              Text size <output htmlFor="pref-size">{prefs.size} px</output>
+            </label>
+            <input
+              id="pref-size"
+              type="range"
+              min={SIZE_MIN}
+              max={SIZE_MAX}
+              step={1}
+              value={prefs.size}
+              onChange={(e) => save({ ...prefs, size: Number(e.target.value) })}
+            />
+          </div>
+
+          {CHOICES.map((c) => (
+            <fieldset key={c.key} aria-describedby={c.hint ? `pref-${c.key}-hint` : undefined}>
+              <legend>{c.label}</legend>
+              <div className="choices">
+                {Object.entries(c.options).map(([value, label]) => (
+                  <label key={value}>
+                    <input
+                      type="radio"
+                      name={`pref-${c.key}`}
+                      value={value}
+                      checked={String(prefs[c.key]) === value}
+                      onChange={() => set(c.key, value)}
+                    />
+                    {label}
+                  </label>
+                ))}
+              </div>
+              {c.hint && (
+                <p id={`pref-${c.key}-hint`} className="settings-hint">
+                  {c.hint}
+                </p>
+              )}
             </fieldset>
           ))}
-          <p className="muted">Saved in this browser only.</p>
+          <p className="settings-foot">
+            <button type="button" className="link-button" onClick={() => save(DEFAULT_PREFS)}>
+              Reset to defaults
+            </button>
+            <span className="muted">Saved in this browser only.</span>
+          </p>
         </div>
       )}
     </div>

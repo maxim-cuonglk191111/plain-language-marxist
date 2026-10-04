@@ -4,10 +4,8 @@ import { useEffect, useState } from "react";
 import { recordPosition, setFinished, type ChapterMeta } from "../lib/history";
 import { currentLayers } from "../lib/layers";
 import { readerRows, rowAtLine } from "../lib/position";
-import { PREFS_KEY, readJson } from "../lib/prefs";
+import { PREFS_EVENT, readPrefs } from "../lib/prefs";
 import { estimate, timeLeft, type RowCount } from "../lib/progress";
-
-const DEFAULT_WPM = 200;
 
 type State = { percent: number; left: string; passage: number };
 
@@ -37,7 +35,7 @@ export function ReadingProgress({
       const [p = 0, o = 0, c = 0] = (r.dataset["words"] ?? "").split(" ").map(Number);
       return { words: [p, o, c], untranslated: r.classList.contains("untranslated") };
     });
-    const wpm = Number(readJson<{ wpm?: unknown }>(PREFS_KEY, {}).wpm) || DEFAULT_WPM;
+    let wpm = readPrefs().wpm;
     let frame = 0;
     let saveTimer: number | undefined;
 
@@ -69,6 +67,12 @@ export function ReadingProgress({
     update();
     window.addEventListener("scroll", schedule, { passive: true });
     window.addEventListener("resize", schedule);
+    // Reading speed changed in Settings.
+    const onPrefs = () => {
+      wpm = readPrefs().wpm;
+      schedule();
+    };
+    window.addEventListener(PREFS_EVENT, onPrefs);
     // Layer toggles change which words count.
     const layers = new MutationObserver(schedule);
     layers.observe(document.documentElement, { attributeFilter: ["data-layers"] });
@@ -88,6 +92,7 @@ export function ReadingProgress({
       window.clearTimeout(saveTimer);
       window.removeEventListener("scroll", schedule);
       window.removeEventListener("resize", schedule);
+      window.removeEventListener(PREFS_EVENT, onPrefs);
       layers.disconnect();
       finished.disconnect();
     };

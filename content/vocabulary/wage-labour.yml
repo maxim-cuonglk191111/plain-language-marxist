@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: wage-labour
 aliases: [wage-labour]
 original:
   sg: wage labour
 definition:
-  short: Work done for a wage by people who own no means of production and so must sell their ability to work.
+  short: Work done for a wage by people who own no means of production. They must sell their ability to work.
+  long: |-
+    Wage labour means working for someone else in return for money. The worker does not own what he produces. The employer owns it, and sells it.
+
+    The Manifesto says capital depends on wage labour. And wage labour depends on competition between workers. When workers unite instead of competing, this foundation starts to give way.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00061
+  text: Wage-labour rests exclusively on competition between the labourers.
+not_to_confuse: It is not just any paid job. It means the relation in which people without property work for the owners of the means of production.
+related: [capital, proletariat, labour-power, means-of-production]
 renderings:
   keep:
     forms:

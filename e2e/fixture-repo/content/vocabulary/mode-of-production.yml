@@ -1,0 +1,28 @@
+schema_version: 2
+term: mode-of-production
+original:
+  sg: mode of production
+  pl: modes of production
+definition:
+  short: The way a society produces what it needs. It includes the tools and skills people use, and the relations between those who produce.
+  long: |-
+    Every society must produce food, clothes and shelter. How it does this is its mode of production.
+
+    A mode of production has two sides. One is the productive forces: people, their skills, tools and machines. The other is the relations of production: who owns what, and who works for whom.
+
+    History has seen several modes of production. Examples are slavery in ancient Rome, feudalism in the Middle Ages, and capitalism today.
+
+    The Manifesto calls the rise of the bourgeoisie “a series of revolutions in the modes of production and of exchange”.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00029
+  text: to adopt the bourgeois mode of production
+not_to_confuse: It is not just a method or a technique, such as a new machine. It is the whole way production is organised, including who owns and who works.
+related: [productive-forces, relations-of-production, means-of-production, feudalism]
+renderings:
+  keep:
+    forms:
+      sg: mode of production
+      pl: modes of production
+    reason: A core term, kept as written. The term card explains it.
+default: keep

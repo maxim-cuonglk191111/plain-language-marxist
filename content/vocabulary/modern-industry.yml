@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: modern-industry
 aliases: [modern industry]
 original:
   sg: Modern Industry
 definition:
-  short: "Large-scale industry driven by machinery and steam power: the factory system that replaced manufacture."
+  short: Large-scale industry driven by machines and steam power. It is the factory system that replaced manufacture.
+  long: |-
+    The Manifesto calls Modern Industry a “giant”. With steam engines and machines, one factory could produce more than many old workshops together.
+
+    Modern Industry created the world market and the modern working class. The Manifesto argues that it also created the conditions for that working class to unite.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00017
+  text: The place of manufacture was taken by the giant, Modern Industry
+not_to_confuse: It is not just any industry of today. It names the stage of machines and factories that began in Britain in the late 1700s.
+related: [manufacture, world-market, productive-forces, proletariat]
 renderings:
   keep:
     forms:

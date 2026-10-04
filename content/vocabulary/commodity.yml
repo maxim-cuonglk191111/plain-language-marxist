@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: commodity
 original:
   sg: commodity
   pl: commodities
 definition:
-  short: A good or service produced in order to be sold or exchanged, not for the producer's own use.
+  short: Something produced in order to be sold, not for the producer’s own use.
+  long: |-
+    A loaf of bread baked for your own family is not a commodity. The same loaf baked for sale in a shop is.
+
+    Under capitalism almost everything is produced as a commodity. The Manifesto adds a hard point: workers become a commodity too. They must sell themselves “piecemeal”, one working day at a time, like any other article of trade.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00038
+  text: These labourers, who must sell themselves piecemeal, are a commodity, like every other article of commerce
+not_to_confuse: In business English, “commodities” often means raw materials such as oil or wheat. Here it means any product made for sale.
+related: [exchange-value, capital, labour-power, world-market]
 renderings:
   keep:
     forms:

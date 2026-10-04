@@ -10,7 +10,7 @@ const passage = (id: string, text: string, state: Passage["state"] = "active"): 
   state,
 });
 const term = (slug: string, original: Record<string, string>, aliases?: string[]): TermFile => ({
-  schema_version: 1,
+  schema_version: 2,
   term: slug,
   original,
   ...(aliases ? { aliases } : {}),

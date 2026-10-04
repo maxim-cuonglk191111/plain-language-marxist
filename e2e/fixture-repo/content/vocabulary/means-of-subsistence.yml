@@ -1,0 +1,22 @@
+schema_version: 2
+term: means-of-subsistence
+original:
+  sg: means of subsistence
+definition:
+  short: "What a person needs to stay alive: food, clothing, housing and other basic needs."
+  long: |-
+    The Manifesto says a worker’s wage tends toward the cost of his means of subsistence. That is enough to keep him alive and able to work, and to raise the children who will be the next workers.
+
+    In a crisis, it says, society suddenly seems cut off from its means of subsistence. Yet the real cause is that there is “too much” of them.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00039
+  text: the means of subsistence that he requires for maintenance
+not_to_confuse: It does not mean comfort or a good life. It means the bare necessities.
+related: [wage-labour, labour-power, over-production]
+renderings:
+  keep:
+    forms:
+      sg: means of subsistence
+    reason: A core term, kept as written. The term card explains it.
+default: keep

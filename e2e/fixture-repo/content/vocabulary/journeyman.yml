@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: journeyman
 original:
   sg: journeyman
   pl: journeymen
 definition:
-  short: A trained craftsman who worked for a guild-master for wages but had not yet become a master himself.
+  short: A trained craftsman who worked for a guild-master for wages. He had not yet become a master himself.
+  long: |-
+    In the medieval guild system a young person first became an apprentice and learned the trade. After training he became a journeyman. He could then work for wages in a master’s workshop.
+
+    To become a master, a journeyman often had to make a “masterpiece” and win the guild’s approval. Many never managed it.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00011
+  text: feudal lords, vassals, guild-masters, journeymen, apprentices, serfs
+not_to_confuse: It has nothing to do with journeys. The word comes from the French “journée”, a day, because journeymen were paid by the day.
+related: [guild-master, serf]
 renderings:
   keep:
     forms:

@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 bootstrap_mode: true
 min_account_age_days: 30
 maintainers: [cuonglkhe191111]

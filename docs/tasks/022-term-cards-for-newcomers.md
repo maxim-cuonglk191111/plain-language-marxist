@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | High |
@@ -60,3 +60,36 @@ Get at least one reader from the target audience, ideally a non-native English s
 - Every card meets the STYLE standard and has been read by someone from the target audience.
 - The new fields appear on the term card and the vocabulary page, and still work without JavaScript.
 - `pnpm check` and `pnpm e2e` pass; the migration upgrades the existing vocabulary files.
+
+## Progress (2026-10-04)
+**Built.** The one thing still open is review by a reader from the target audience.
+
+**Schema and checks:**
+- Content `schema_version` is now 2. `plm migrate --write` upgrades v1 files; it is the first real migration, and every content file and fixture has been migrated.
+- Term cards gain three optional fields: `example` (document, passage and exact text), `not_to_confuse` and `related`.
+- New `plm validate` checks:
+  - `related` must name existing cards, and a card cannot list itself;
+  - `example.text` must occur in its passage;
+  - a warning (`term/long-sentence`) for card sentences over 25 words.
+- Data contract v1 gains optional `example` (with a reader link), `not_to_confuse` and `related` (with names).
+
+**Person forms:**
+- `{bourgeoisie:person}` / `{bourgeoisie:persons}` → capitalist / capitalists, or bourgeois.
+- `{proletariat:person}` → worker, or proletarian.
+- The LLM prompt labels them "(one person)" / "(people)", and STYLE §6 explains them.
+
+**Reader:**
+- Cards show the short definition, a "Common mix-up" line, the example linked to its passage, "Read more" (the long text, folded), and related terms.
+- The vocabulary page shows everything unfolded.
+- **Kept terms are now clickable in Plain English too.** Before this, only tokenised terms were, so a Plain English reader could not reach the card for *mode of production*. They are marked with `data-kept`, and the "Original terms" switch leaves their wording alone.
+
+**Content:**
+- All 15 existing cards were rewritten to the new STYLE §15 standard.
+- **18 new cards:** mode of production, relations of production (aliases: relations of property, property relations), productive forces, instruments of production, means of exchange, exchange value, class struggle, feudalism, petty bourgeoisie (alias: lower middle class), appropriation, means of subsistence, division of labour, labour power, patrician, plebeian, vassal, over-production, commercial crisis.
+- Ch. I annotations were regenerated: 231 marks, up from 172. The only marks dropped are two "bourgeois" now covered by "petty bourgeois".
+
+**Deliberately no card** (ordinary English, or better as an explanation): free competition, free trade, the State, commune and third estate. Engels's own notes 3–4 already explain the last two.
+
+**Still open:**
+- **Review by a reader from the target audience,** ideally a non-native English speaker new to Marxism.
+- **Update the task 012 renderings** that worked around the missing person forms (see the notes there). This happens on the `content/manifesto-ch01-render` branch.

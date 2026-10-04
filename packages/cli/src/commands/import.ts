@@ -19,7 +19,7 @@ import {
   waybackRawUrl,
   type FetchPolicy,
 } from "@plm/parser";
-import { SourceFile, WorkFile } from "@plm/schema";
+import { SCHEMA_VERSION, SourceFile, WorkFile } from "@plm/schema";
 import { parse as parseYaml } from "yaml";
 import { z } from "zod";
 
@@ -204,7 +204,7 @@ export async function runImport(
   }
 
   const source: SourceFile = {
-    schema_version: 1,
+    schema_version: SCHEMA_VERSION,
     document: `document:${author}:${year}:${slug}:${doc}`,
     title: parsed.title,
     source: {
@@ -228,7 +228,7 @@ export async function runImport(
     if (!work.documents.includes(doc)) work.documents.push(doc);
   } else {
     work = {
-      schema_version: 1,
+      schema_version: SCHEMA_VERSION,
       id: `work:${author}:${year}:${slug}`,
       title: parsed.title,
       authors: [author],

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { Citation, SchemaVersion, Slug, WorkId } from "./common.ts";
+import { Citation, DocumentId, PassageId, SchemaVersion, Slug, WorkId } from "./common.ts";
 
 /** Form names a term can declare, e.g. sg, pl, adj. */
 const FormName = z.string().regex(/^[a-z]+$/, "form names are lowercase letters, e.g. sg, pl, adj");
@@ -20,9 +20,18 @@ export const TermFile = z
     original: Forms,
     definition: z.strictObject({
       short: z.string().min(1),
+      /** Paragraphs separated by a blank line. */
       long: z.string().min(1).optional(),
       sources: z.array(Citation).optional(),
     }),
+    /** A sentence from a work showing the term in use; `text` must occur in that passage (v2). */
+    example: z
+      .strictObject({ document: DocumentId, passage: PassageId, text: z.string().min(1) })
+      .optional(),
+    /** The everyday meaning a reader should not confuse the term with (v2). */
+    not_to_confuse: z.string().min(1).optional(),
+    /** Slugs of related term cards, shown as links (v2). */
+    related: z.array(Slug).optional(),
     renderings: z.record(
       Slug,
       z.strictObject({
@@ -57,6 +66,9 @@ export const TermFile = z
             (extra.length ? `; undeclared ${extra.join(", ")}` : ""),
         });
       }
+    }
+    if (term.related?.includes(term.term)) {
+      ctx.addIssue({ code: "custom", path: ["related"], message: "a term cannot be related to itself" });
     }
     if (!(term.default in term.renderings)) {
       ctx.addIssue({

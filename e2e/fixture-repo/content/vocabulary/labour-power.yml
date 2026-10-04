@@ -1,0 +1,26 @@
+schema_version: 2
+term: labour-power
+original:
+  sg: labour power
+definition:
+  short: A person’s ability to work. Workers sell it to an employer for a certain time in return for a wage.
+  long: |-
+    Marx later made an important distinction. The worker does not sell his labour itself. He sells his ability to work for a day or a week. That ability is labour power.
+
+    The employer pays roughly what the worker needs to live. But during the working day the worker produces more than that. Engels uses the term in his 1888 note on the proletariat.
+  sources:
+    - title: Manifesto of the Communist Party, English edition, note by Engels
+      author: Frederick Engels
+      year: 1888
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00062
+  text: are reduced to selling their labour power in order to live
+not_to_confuse: It is not physical strength alone. It is the whole ability to work, of mind as well as body.
+related: [wage-labour, proletariat, means-of-subsistence, commodity]
+renderings:
+  keep:
+    forms:
+      sg: labour power
+    reason: A core term, kept as written. The term card explains it.
+default: keep

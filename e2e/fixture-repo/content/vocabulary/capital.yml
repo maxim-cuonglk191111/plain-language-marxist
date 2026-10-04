@@ -1,10 +1,21 @@
-schema_version: 1
+schema_version: 2
 term: capital
 original:
   sg: capital
 definition:
-  short: Wealth used to produce more wealth, above all money invested in production that employs wage labour.
-  long: "For Marx, capital is not simply money or machines: it is wealth functioning in a process that yields more value than was put in."
+  short: Wealth that is used to make more wealth. In the Manifesto it is above all money invested in production that employs wage workers.
+  long: |-
+    For Marx, capital is not just money or machines. Money becomes capital when it is invested to bring back more money than was put in.
+
+    This happens through wage labour. The owner pays workers a wage. The workers produce more value than they are paid. The difference becomes profit.
+
+    The Manifesto says: “the condition for capital is wage-labour.” Without people who must work for wages, there is no capital.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00061
+  text: the condition for capital is wage-labour
+not_to_confuse: In everyday English, capital can mean any savings, or a capital city. Here it means wealth that grows by employing wage labour.
+related: [wage-labour, bourgeoisie, means-of-production, commodity]
 renderings:
   keep:
     forms:

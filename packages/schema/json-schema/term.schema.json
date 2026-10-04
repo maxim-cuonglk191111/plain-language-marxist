@@ -5,7 +5,7 @@
   "properties": {
     "schema_version": {
       "type": "number",
-      "const": 1
+      "const": 2
     },
     "term": {
       "type": "string",
@@ -83,6 +83,40 @@
         "short"
       ],
       "additionalProperties": false
+    },
+    "example": {
+      "type": "object",
+      "properties": {
+        "document": {
+          "type": "string",
+          "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+$"
+        },
+        "passage": {
+          "type": "string",
+          "pattern": "^p\\d{5}$"
+        },
+        "text": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "document",
+        "passage",
+        "text"
+      ],
+      "additionalProperties": false
+    },
+    "not_to_confuse": {
+      "type": "string",
+      "minLength": 1
+    },
+    "related": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      }
     },
     "renderings": {
       "type": "object",

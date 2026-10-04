@@ -6,7 +6,7 @@ import { buildPrompt, extractCoreRules, extractTemplate } from "./prompt.ts";
 import { checkRenderings, type SourcePassage } from "./rendering.ts";
 
 const bourgeoisie: TermFile = {
-  schema_version: 1,
+  schema_version: 2,
   term: "bourgeoisie",
   original: { sg: "bourgeoisie", adj: "bourgeois" },
   definition: { short: "x" },

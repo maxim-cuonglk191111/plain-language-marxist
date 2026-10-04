@@ -16,6 +16,9 @@ export function extractTemplate(promptDoc: string): string {
   return parts[1].trim();
 }
 
+/** Forms whose word can equal another form's (e.g. "bourgeois" as adjective and as a person). */
+const FORM_HINTS: Record<string, string> = { person: " (one person)", persons: " (people)" };
+
 /** Term table for the prompt: only terms with a real choice of wording, so the LLM uses tokens for them. */
 export function termTable(terms: readonly TermFile[]): string {
   const lines = terms
@@ -23,7 +26,9 @@ export function termTable(terms: readonly TermFile[]): string {
     .map((t) => {
       const forms = Object.entries(t.original)
         .map(([form, word]) =>
-          form === "sg" ? `{${t.term}} for "${word}"` : `{${t.term}:${form}} for "${word}"`,
+          form === "sg"
+            ? `{${t.term}} for "${word}"`
+            : `{${t.term}:${form}} for "${word}"${FORM_HINTS[form] ?? ""}`,
         )
         .join(", ");
       return `- ${forms}`;

@@ -1,0 +1,23 @@
+schema_version: 2
+term: patrician
+original:
+  sg: patrician
+  pl: patricians
+definition:
+  short: A member of the old noble families of ancient Rome, who held most of the land and political power.
+  long: |-
+    Patricians and plebeians were the two main groups of free citizens in early Rome. The patricians were a small upper class, and membership passed from parents to children.
+
+    For a long time only patricians could hold the highest offices. The struggle of the plebeians against them is one of the class struggles the Manifesto names.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00011
+  text: In ancient Rome we have patricians, knights, plebeians, slaves
+related: [plebeian, class-struggle]
+renderings:
+  keep:
+    forms:
+      sg: patrician
+      pl: patricians
+    reason: A core term, kept as written. The term card explains it.
+default: keep

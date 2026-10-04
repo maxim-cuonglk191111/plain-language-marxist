@@ -1,10 +1,22 @@
-schema_version: 1
+schema_version: 2
 term: class-antagonism
 original:
   sg: class antagonism
   pl: class antagonisms
 definition:
-  short: Opposed and conflicting interests between social classes, open or hidden.
+  short: A built-in conflict of interests between two classes. What is good for one class is bad for the other.
+  long: |-
+    Antagonism means opposition. A class antagonism is not just a quarrel. It comes from the place of each class in production.
+
+    For example, the owner wants wages low and the worker wants them high. This conflict can be hidden or open. But it does not go away while both classes exist.
+
+    The Manifesto says modern society has simplified class antagonisms. More and more, society splits into two great classes: bourgeoisie and proletariat.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00012
+  text: has not done away with class antagonisms
+not_to_confuse: It does not mean personal hatred between people. It is a conflict of interests built into the way society produces.
+related: [class-struggle, bourgeoisie, proletariat]
 renderings:
   class-conflict:
     forms:

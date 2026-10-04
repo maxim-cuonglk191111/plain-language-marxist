@@ -10,6 +10,19 @@ describe("validate: the fixture repository", () => {
   it("is clean", () => {
     expect(validate(writeFixture())).toEqual([]);
   });
+
+  it("accepts a term card with an exact example and known related terms", () => {
+    const root = writeFixture((d) => {
+      d[PATHS.term].example = {
+        document: "document:marx:1848:communist-manifesto:ch01",
+        passage: "p00005",
+        text: "The modern bourgeois  society has not done away", // whitespace is normalised
+      };
+      d[PATHS.term].not_to_confuse = "Not just people who are well off.";
+      d[PATHS.term].related = [];
+    });
+    expect(validate(root)).toEqual([]);
+  });
 });
 
 type Case = [name: string, mutate: (d: FixtureData) => void, expected: string];
@@ -165,6 +178,38 @@ const CASES: Case[] = [
     "warning term/unknown-scope",
   ],
   [
+    "related term card does not exist",
+    (d) => (d[PATHS.term].related = ["mode-of-production"]),
+    "error term/unknown-related",
+  ],
+  [
+    "example points at a missing passage",
+    (d) =>
+      (d[PATHS.term].example = {
+        document: "document:marx:1848:communist-manifesto:ch01",
+        passage: "p00099",
+        text: "The modern bourgeois society",
+      }),
+    "error term/example-not-found",
+  ],
+  [
+    "example text is not in the passage",
+    (d) =>
+      (d[PATHS.term].example = {
+        document: "document:marx:1848:communist-manifesto:ch01",
+        passage: "p00005",
+        text: "The modern capitalist society",
+      }),
+    "error term/example-not-found",
+  ],
+  [
+    "term card sentence too long for newcomers",
+    (d) =>
+      (d[PATHS.term].definition.short =
+        "The class that owns the factories, the land, the machines, the raw materials and the money that is invested in all of these in order to employ others for wages."),
+    "warning term/long-sentence",
+  ],
+  [
     "collection references unknown work",
     (d) => d[PATHS.collection].items.push("work:lenin:1917:state-and-revolution"),
     "error collection/unknown-ref",
@@ -196,7 +241,7 @@ describe("validate: invariants", () => {
 
 describe("validate: file problems carry line numbers", () => {
   it("reports YAML syntax errors with a line", () => {
-    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 1\nterm: [unclosed\n" });
+    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 2\nterm: [unclosed\n" });
     const issue = validate(root).find((i) => i.file === PATHS.term);
     expect(issue?.message).toMatch(/^YAML:/);
     expect(issue?.line).toBeGreaterThan(0);
@@ -217,7 +262,7 @@ describe("validate: file problems carry line numbers", () => {
 
     const broken = writeFixture(undefined, {
       "governance.yml":
-        "schema_version: 1\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
+        "schema_version: 2\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
     });
     const issue = validate(broken).find((i) => i.file === "governance.yml");
     expect(issue?.message).toContain("rules.RENDERING");
@@ -227,7 +272,7 @@ describe("validate: file problems carry line numbers", () => {
     const root = writeFixture(undefined, {
       [`${PATHS.docDir}/notes.txt`]: "scratch",
       "content/vocabulary/wrong-name.yml":
-        "schema_version: 1\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
+        "schema_version: 2\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
     });
     const found = codes(root);
     expect(found).toContain("warning layout/unknown-file");

@@ -1,0 +1,24 @@
+schema_version: 2
+term: productive-forces
+original:
+  sg: productive forces
+definition:
+  short: "Everything that makes a society able to produce: workers and their skills, tools, machines, science and organisation."
+  long: |-
+    The productive forces measure how much a society can produce. They grow when people invent better tools, learn new skills or use science in industry.
+
+    The Manifesto argues that productive forces can outgrow the relations of production. Then those relations become “fetters”, or chains, that hold production back. This happened to feudal society, and its relations “were burst asunder”.
+
+    The Manifesto says the same is now happening to bourgeois society. It points to the commercial crises as the sign.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00032
+  text: has created more massive and more colossal productive forces than have all preceding generations together
+not_to_confuse: It does not mean armed forces or physical strength. It means the power of a society to produce.
+related: [mode-of-production, relations-of-production, means-of-production, over-production]
+renderings:
+  keep:
+    forms:
+      sg: productive forces
+    reason: A core term, kept as written. The term card explains it.
+default: keep

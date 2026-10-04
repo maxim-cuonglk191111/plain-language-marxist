@@ -1,15 +1,24 @@
-schema_version: 1
+schema_version: 2
 term: guild-master
 original:
   sg: guild-master
   pl: guild-masters
 definition:
-  short: A full member of a guild, a master within, not a head of a guild.
-  long: Engels's own explanation, added to the 1888 English edition. A guild was an association of craftsmen in one trade that controlled who could practise it.
+  short: "A full member of a guild, with his own workshop. Engels: “a master within, not a head of a guild.”"
+  long: |-
+    A guild was an association of craftsmen in one trade, such as bakers or weavers, in a medieval town. The guild decided who could work in the trade, how goods were made and what they cost.
+
+    Inside each workshop the master owned the tools and the shop. Journeymen and apprentices worked for him. Engels added a note in 1888 to explain the word. Readers might otherwise think it meant the leader of the whole guild.
   sources:
     - title: Manifesto of the Communist Party, English edition, note by Engels
       author: Frederick Engels
       year: 1888
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00016
+  text: The guild-masters were pushed on one side by the manufacturing middle class
+not_to_confuse: A guild-master is not the head of a guild. He is one of its full members, a master craftsman.
+related: [journeyman, manufacture, burgher, feudalism]
 renderings:
   keep:
     forms:

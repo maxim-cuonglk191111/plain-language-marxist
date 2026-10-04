@@ -54,6 +54,8 @@ export function buildData(options: BuildOptions): BuildResult {
   const usageTexts: { text: string; workId: string; authors: string[] }[] = [];
   const index: DataIndex = { version: 1, release: options.release, works: [], collections: [], terms: [] };
   const search: DataSearch = { version: 1, release: options.release, documents: [], entries: [] };
+  /** Reader path and title by document id, for term-card example links. */
+  const documentPaths = new Map<string, { path: string; title: string }>();
   let passageCount = 0;
   let renderingCount = 0;
 
@@ -135,6 +137,7 @@ export function buildData(options: BuildOptions): BuildResult {
           ai_assisted: e.ai_assisted,
         })),
       };
+      documentPaths.set(source.document, { path: document.path, title: source.title });
       const d = search.documents.push({ path: document.path, title: source.title, work: w.title }) - 1;
       for (const p of document.passages) search.entries.push({ d, p: p.id, l: "o", t: plainText(p.text) ?? "" });
       for (const r of renderings["en-plain"] ?? []) {
@@ -157,6 +160,13 @@ export function buildData(options: BuildOptions): BuildResult {
     index.works.push(entry);
   }
 
+  const exampleFor = (t: TermFile): Pick<DataTerm, "example"> => {
+    const doc = t.example && documentPaths.get(t.example.document);
+    if (!t.example || !doc) return {};
+    const { text, passage } = t.example;
+    return { example: { text, passage, title: doc.title, href: `${doc.path}#${passage}` } };
+  };
+
   const usage = usageCounts(usageTexts, vocabulary);
   for (const [slug, t] of [...vocabulary].sort(([a], [b]) => a.localeCompare(b))) {
     const term: DataTerm = {
@@ -169,6 +179,12 @@ export function buildData(options: BuildOptions): BuildResult {
         ...(t.definition.long ? { long: t.definition.long } : {}),
         sources: (t.definition.sources ?? []) as Record<string, string | number>[],
       },
+      ...exampleFor(t),
+      ...(t.not_to_confuse ? { not_to_confuse: t.not_to_confuse } : {}),
+      related: (t.related ?? []).flatMap((r) => {
+        const other = vocabulary.get(r);
+        return other ? [{ term: r, name: other.original["sg"] ?? r }] : [];
+      }),
       default: t.default,
       scoped_defaults: t.scoped_defaults ?? [],
       renderings: Object.entries(t.renderings).map(([key, r]) => ({

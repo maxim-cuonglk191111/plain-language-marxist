@@ -1,0 +1,24 @@
+schema_version: 2
+term: feudalism
+original:
+  sg: feudalism
+  adj: feudal
+definition:
+  short: The social order of medieval Europe. Lords owned the land, and serfs worked it and owed them labour or dues.
+  long: |-
+    Under feudalism, land was the main source of wealth. Kings granted land to lords. Lords granted it to vassals in return for loyalty and military service. At the bottom were the serfs who worked the land.
+
+    In the towns, guilds controlled the crafts. The Manifesto describes how trade and new markets broke this order apart. The bourgeoisie grew up inside feudal society and then overthrew it.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00036
+  text: The weapons with which the bourgeoisie felled feudalism to the ground are now turned against the bourgeoisie itself.
+not_to_confuse: It does not just mean any old or unfair system. It names the order of lords, vassals and serfs in medieval Europe.
+related: [serf, vassal, guild-master, burgher, mode-of-production]
+renderings:
+  keep:
+    forms:
+      sg: feudalism
+      adj: feudal
+    reason: A core term, kept as written. The term card explains it.
+default: keep

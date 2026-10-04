@@ -1,0 +1,22 @@
+schema_version: 2
+term: exchange-value
+original:
+  sg: exchange value
+definition:
+  short: What a thing is worth when it is traded for other things, usually measured in money.
+  long: |-
+    A thing can be useful, like a coat that keeps you warm. But it can also be traded for other things. What it can be traded for is its exchange value.
+
+    The Manifesto says the bourgeoisie “has resolved personal worth into exchange value”. People, too, are now judged by what they are worth on the market.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00022
+  text: It has resolved personal worth into exchange value
+not_to_confuse: It is not the same as how useful or how good a thing is. A very useful thing can have a low exchange value.
+related: [commodity, capital]
+renderings:
+  keep:
+    forms:
+      sg: exchange value
+    reason: A core term, kept as written. The term card explains it.
+default: keep

@@ -115,6 +115,12 @@ export const DataTerm = z.strictObject({
     long: z.string().optional(),
     sources: z.array(z.record(z.string(), z.union([z.string(), z.number()]))),
   }),
+  /** Added in v1 for task 022 (optional, so older readers are unaffected). */
+  example: z
+    .strictObject({ text: z.string(), passage: z.string(), title: z.string(), href: z.string() })
+    .optional(),
+  not_to_confuse: z.string().optional(),
+  related: z.array(z.strictObject({ term: z.string(), name: z.string() })).optional(),
   default: z.string(),
   scoped_defaults: z.array(z.strictObject({ scope: z.string(), rendering: z.string() })),
   renderings: z.array(

@@ -4,6 +4,7 @@ import type { DataTerm } from "@plm/schema";
 import { formFor, resolveChoice, type ResolveContext, type TermChoice } from "@plm/terms";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toTermFile } from "../lib/terms";
+import { TermDetails } from "./TermDetails";
 
 const STORAGE_KEY = "plm:terms";
 type Preferences = { all?: "original"; perTerm: Record<string, TermChoice> };
@@ -63,7 +64,9 @@ export function TermCards({
   // Re-resolve every Plain English term button from the preferences.
   const apply = useCallback(
     (p: Preferences) => {
-      document.querySelectorAll<HTMLElement>(".layer-plain .term[data-term]").forEach((el) => {
+      // Kept terms (data-kept) are ordinary words with no choice of wording: leave them as written.
+      const buttons = ".layer-plain .term[data-term]:not([data-kept])";
+      document.querySelectorAll<HTMLElement>(buttons).forEach((el) => {
         const file = files.get(el.dataset["term"] ?? "");
         if (!file) return;
         const word = formFor(
@@ -223,6 +226,7 @@ function TermCardBody({
         </p>
       )}
       <p>{term.definition.short}</p>
+      <TermDetails term={term} />
       {inPlain && shown && choosable && (
         <div className="term-card-why">
           <p className="term-card-label">Why this wording?</p>

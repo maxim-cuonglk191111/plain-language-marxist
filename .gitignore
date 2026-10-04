@@ -39,3 +39,6 @@ playwright-report/
 # Release artifacts (scripts/release.mjs) and Wrangler local state
 release/
 .wrangler/
+
+# Claude Code local permissions (per machine)
+.claude/settings.local.json

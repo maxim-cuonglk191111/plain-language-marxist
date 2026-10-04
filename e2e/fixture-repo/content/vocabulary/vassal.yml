@@ -1,0 +1,23 @@
+schema_version: 2
+term: vassal
+original:
+  sg: vassal
+  pl: vassals
+definition:
+  short: In feudal Europe, a person who held land from a lord and owed him loyalty and military service.
+  long: |-
+    A vassal was not a serf. He was often a knight or a lesser noble. He received land, called a fief, and in return had to fight for his lord.
+
+    Vassals could have their own vassals and serfs below them. This chain of loyalty held feudal society together.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00011
+  text: feudal lords, vassals, guild-masters
+related: [feudalism, serf]
+renderings:
+  keep:
+    forms:
+      sg: vassal
+      pl: vassals
+    reason: A core term, kept as written. The term card explains it.
+default: keep

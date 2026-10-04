@@ -1,10 +1,19 @@
-schema_version: 1
+schema_version: 2
 term: manufacture
 original:
   sg: manufacture
 definition:
-  short: Production in workshops by hand, with the work divided among many workers, before machinery took over.
-  long: In Marx and Engels this is a historical stage, between guild handicraft and Modern Industry. It does not mean factories with machines, and never the assembly line.
+  short: Production by hand in workshops, with the work divided among many workers. It came before machines took over.
+  long: |-
+    Manufacture was a stage between the guild workshop and the modern factory. Many workers came together under one owner. Each did one small part of the job, but still by hand.
+
+    This division of labour inside each workshop made production faster. Then steam and machinery replaced manufacture with Modern Industry.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00016
+  text: The manufacturing system took its place.
+not_to_confuse: Today “manufacture” means making anything, often with machines. Here it means the older stage of hand production in divided workshops.
+related: [modern-industry, division-of-labour, guild-master]
 renderings:
   keep:
     forms:

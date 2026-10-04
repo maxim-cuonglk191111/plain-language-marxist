@@ -1,10 +1,22 @@
-schema_version: 1
+schema_version: 2
 term: means-of-production
 aliases: [means of social production]
 original:
   sg: means of production
 definition:
-  short: "The things needed to produce goods: land, raw materials, tools, machines and buildings."
+  short: "The things people need in order to produce: land, raw materials, tools, machines and buildings."
+  long: |-
+    To make anything, people need two things: their own work, and things to work with. Those things are the means of production.
+
+    Who owns them decides a great deal. Under capitalism a small class owns the means of production. Everyone else must work for that class in order to live.
+
+    The Manifesto says the bourgeoisie has “centralised the means of production” and “concentrated property in a few hands”.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00031
+  text: centralised the means of production
+not_to_confuse: It does not mean personal belongings, such as your clothes or your phone. It means what is used to produce goods for society.
+related: [mode-of-production, productive-forces, instruments-of-production, capital]
 renderings:
   keep:
     forms:

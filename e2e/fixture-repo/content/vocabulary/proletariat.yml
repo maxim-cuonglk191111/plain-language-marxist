@@ -1,22 +1,35 @@
-schema_version: 1
+schema_version: 2
 term: proletariat
 original:
   sg: proletariat
   pl: proletarians
   adj: proletarian
+  person: proletarian
 definition:
-  short: The class of modern wage labourers who, having no means of production of their own, are reduced to selling their labour power in order to live.
-  long: Engels's own definition, added to the 1888 English edition.
+  short: The class of modern wage workers. They own no means of production, so they must sell their ability to work in order to live.
+  long: |-
+    Engels defined the word in a note to the 1888 English edition. The proletariat is the class of modern wage labourers. They have no means of production of their own. So they must sell their labour power in order to live.
+
+    The key point is what workers do not own. They have no land, tools or factory of their own. So they can only live by working for someone who does.
+
+    The word comes from Latin. In ancient Rome the “proletarii” were the poorest citizens, who owned nothing but their children.
   sources:
     - title: Manifesto of the Communist Party, English edition, note by Engels
       author: Frederick Engels
       year: 1888
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00052
+  text: the proletariat alone is a really revolutionary class
+not_to_confuse: It does not mean only factory workers, or only poor people. It means everyone who owns no means of production and must work for a wage.
+related: [bourgeoisie, wage-labour, labour-power, class-struggle, means-of-production]
 renderings:
   working-class:
     forms:
       sg: working class
       pl: workers
       adj: working-class
+      person: worker
     reason: The everyday English name for the same class.
     limitation: "\"Working class\" is often used loosely today; the Manifesto's sense is specifically those who must sell their labour power to live."
   proletariat:
@@ -24,5 +37,6 @@ renderings:
       sg: proletariat
       pl: proletarians
       adj: proletarian
+      person: proletarian
     reason: Keeps the original term.
 default: working-class

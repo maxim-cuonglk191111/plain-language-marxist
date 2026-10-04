@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 document: document:marx:1848:communist-manifesto:ch01
 annotations:
   - passage: p00008
@@ -8,6 +8,18 @@ annotations:
   - passage: p00008
     term: proletariat
     match: Proletarians
+    occurrence: 1
+  - passage: p00009
+    term: class-struggle
+    match: class struggles
+    occurrence: 1
+  - passage: p00010
+    term: patrician
+    match: patrician
+    occurrence: 1
+  - passage: p00010
+    term: plebeian
+    match: plebeian
     occurrence: 1
   - passage: p00010
     term: serf
@@ -20,6 +32,22 @@ annotations:
   - passage: p00010
     term: journeyman
     match: journeyman
+    occurrence: 1
+  - passage: p00011
+    term: patrician
+    match: patricians
+    occurrence: 1
+  - passage: p00011
+    term: plebeian
+    match: plebeians
+    occurrence: 1
+  - passage: p00011
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00011
+    term: vassal
+    match: vassals
     occurrence: 1
   - passage: p00011
     term: guild-master
@@ -36,6 +64,10 @@ annotations:
   - passage: p00012
     term: bourgeoisie
     match: bourgeois
+    occurrence: 1
+  - passage: p00012
+    term: feudalism
+    match: feudal
     occurrence: 1
   - passage: p00012
     term: class-antagonism
@@ -78,13 +110,33 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00015
+    term: means-of-exchange
+    match: means of exchange
+    occurrence: 1
+  - passage: p00015
     term: commodity
     match: commodities
+    occurrence: 1
+  - passage: p00015
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00016
+    term: feudalism
+    match: feudal
     occurrence: 1
   - passage: p00016
     term: guild-master
     match: guild-masters
     occurrence: 1
+  - passage: p00016
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00016
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
   - passage: p00017
     term: manufacture
     match: manufacture
@@ -117,10 +169,22 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00019
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
   - passage: p00020
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00020
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00020
+    term: feudalism
+    match: feudal
+    occurrence: 2
   - passage: p00020
     term: bourgeoisie
     match: bourgeoisie
@@ -145,6 +209,18 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00022
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00022
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00022
+    term: exchange-value
+    match: exchange value
+    occurrence: 1
   - passage: p00023
     term: bourgeoisie
     match: bourgeoisie
@@ -160,6 +236,18 @@ annotations:
   - passage: p00026
     term: bourgeoisie
     match: bourgeoisie
+    occurrence: 1
+  - passage: p00026
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00026
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00026
+    term: mode-of-production
+    match: modes of production
     occurrence: 1
   - passage: p00026
     term: bourgeoisie
@@ -182,12 +270,20 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00029
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00029
     term: commodity
     match: commodities
     occurrence: 1
   - passage: p00029
     term: bourgeoisie
     match: bourgeois
+    occurrence: 1
+  - passage: p00029
+    term: mode-of-production
+    match: mode of production
     occurrence: 1
   - passage: p00029
     term: bourgeoisie
@@ -217,6 +313,14 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00032
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00032
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
   - passage: p00033
     term: means-of-production
     match: means of production
@@ -226,9 +330,33 @@ annotations:
     match: bourgeoisie
     occurrence: 1
   - passage: p00033
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00033
     term: means-of-production
     match: means of production
     occurrence: 2
+  - passage: p00033
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00033
+    term: feudalism
+    match: feudal
+    occurrence: 3
+  - passage: p00033
+    term: feudalism
+    match: feudal
+    occurrence: 4
+  - passage: p00033
+    term: relations-of-production
+    match: relations of property
+    occurrence: 1
+  - passage: p00033
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
   - passage: p00034
     term: bourgeoisie
     match: bourgeois
@@ -238,16 +366,52 @@ annotations:
     match: bourgeois
     occurrence: 1
   - passage: p00035
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00035
     term: means-of-production
     match: means of production
+    occurrence: 1
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00035
+    term: relations-of-production
+    match: property relations
     occurrence: 1
   - passage: p00035
     term: bourgeoisie
     match: bourgeois
     occurrence: 2
   - passage: p00035
+    term: commercial-crisis
+    match: commercial crises
+    occurrence: 1
+  - passage: p00035
     term: bourgeoisie
     match: bourgeois
+    occurrence: 3
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00035
+    term: over-production
+    match: over-production
+    occurrence: 1
+  - passage: p00035
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00035
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
     occurrence: 3
   - passage: p00035
     term: bourgeoisie
@@ -269,9 +433,17 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
+    occurrence: 4
   - passage: p00036
     term: bourgeoisie
     match: bourgeoisie
+    occurrence: 1
+  - passage: p00036
+    term: feudalism
+    match: feudalism
     occurrence: 1
   - passage: p00036
     term: bourgeoisie
@@ -306,13 +478,25 @@ annotations:
     match: commodity
     occurrence: 1
   - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00039
     term: proletariat
     match: proletarians
+    occurrence: 1
+  - passage: p00039
+    term: means-of-subsistence
+    match: means of subsistence
     occurrence: 1
   - passage: p00039
     term: commodity
     match: commodity
     occurrence: 1
+  - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
   - passage: p00040
     term: modern-industry
     match: Modern Industry
@@ -369,6 +553,10 @@ annotations:
     term: bourgeoisie
     match: bourgeois
     occurrence: 2
+  - passage: p00044
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
   - passage: p00045
     term: bourgeoisie
     match: bourgeoisie
@@ -386,9 +574,9 @@ annotations:
     match: bourgeois
     occurrence: 1
   - passage: p00045
-    term: bourgeoisie
-    match: bourgeois
-    occurrence: 2
+    term: petty-bourgeoisie
+    match: petty bourgeois
+    occurrence: 1
   - passage: p00045
     term: bourgeoisie
     match: bourgeoisie
@@ -408,6 +596,10 @@ annotations:
   - passage: p00046
     term: bourgeoisie
     match: bourgeois
+    occurrence: 1
+  - passage: p00046
+    term: commercial-crisis
+    match: commercial crises
     occurrence: 1
   - passage: p00046
     term: bourgeoisie
@@ -420,6 +612,10 @@ annotations:
   - passage: p00047
     term: modern-industry
     match: modern industry
+    occurrence: 1
+  - passage: p00047
+    term: class-struggle
+    match: class struggle
     occurrence: 1
   - passage: p00047
     term: burgher
@@ -482,6 +678,10 @@ annotations:
     match: proletariat
     occurrence: 2
   - passage: p00051
+    term: class-struggle
+    match: class struggle
+    occurrence: 1
+  - passage: p00051
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
@@ -513,6 +713,10 @@ annotations:
     term: proletariat
     match: proletariat
     occurrence: 2
+  - passage: p00053
+    term: petty-bourgeoisie
+    match: lower middle class
+    occurrence: 1
   - passage: p00053
     term: bourgeoisie
     match: bourgeoisie
@@ -562,9 +766,25 @@ annotations:
     match: bourgeois
     occurrence: 3
   - passage: p00056
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00056
     term: proletariat
     match: proletarians
     occurrence: 1
+  - passage: p00056
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00056
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00056
+    term: appropriation
+    match: appropriation
+    occurrence: 3
   - passage: p00057
     term: proletariat
     match: proletarian
@@ -606,8 +826,12 @@ annotations:
     match: serf
     occurrence: 1
   - passage: p00060
-    term: bourgeoisie
-    match: bourgeois
+    term: petty-bourgeoisie
+    match: petty bourgeois
+    occurrence: 1
+  - passage: p00060
+    term: feudalism
+    match: feudal
     occurrence: 1
   - passage: p00060
     term: bourgeoisie
@@ -681,10 +905,22 @@ annotations:
     term: means-of-production
     match: means of production
     occurrence: 1
+  - passage: p00062
+    term: labour-power
+    match: labour power
+    occurrence: 1
   - passage: p00064
     term: guild-master
     match: Guild-master
     occurrence: 1
+  - passage: p00065
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00065
+    term: feudalism
+    match: feudal
+    occurrence: 2
   - passage: p00065
     term: bourgeoisie
     match: bourgeoisie

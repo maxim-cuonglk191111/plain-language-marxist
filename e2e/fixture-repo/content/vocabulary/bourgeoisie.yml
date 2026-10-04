@@ -1,26 +1,43 @@
-schema_version: 1
+schema_version: 2
 term: bourgeoisie
 original:
   sg: bourgeoisie
   adj: bourgeois
+  person: bourgeois
+  persons: bourgeois
 definition:
-  short: The class of modern capitalists, owners of the means of social production and employers of wage labour.
-  long: Engels's own definition, added to the 1888 English edition. In the Manifesto the word names a class defined by what it owns and by employing others for wages, not a general word for the well-off.
+  short: The class of modern capitalists. They own the factories, land and machines, and employ other people for wages.
+  long: |-
+    Engels added a definition in 1888: “the class of modern capitalists, owners of the means of social production and employers of wage labour.”
+
+    So two things define the bourgeoisie. It owns the means of production. And it lives by employing workers for wages.
+
+    The word comes from French. In the Middle Ages a “bourgeois” was a town-dweller. The Manifesto tells how these town-dwellers grew into the ruling class of modern society.
   sources:
     - title: Manifesto of the Communist Party, English edition, note by Engels
       author: Frederick Engels
       year: 1888
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00021
+  text: The bourgeoisie, historically, has played a most revolutionary part.
+not_to_confuse: Today “bourgeois” often means “middle class” or “well-off”. In the Manifesto it means the class that owns the means of production and employs wage workers.
+related: [proletariat, capital, means-of-production, wage-labour, burgher]
 renderings:
   capitalist-class:
     forms:
       sg: capitalist class
       adj: capitalist
+      person: capitalist
+      persons: capitalists
     reason: Makes the class reference immediately understandable to contemporary readers.
     limitation: Foregrounds ownership of capital; the historical term also carries the class's origin in the medieval towns.
   bourgeoisie:
     forms:
       sg: bourgeoisie
       adj: bourgeois
+      person: bourgeois
+      persons: bourgeois
     reason: Keeps the original term, which is still used in English.
     limitation: Many readers know it only as a loose word for the middle class.
 default: capitalist-class

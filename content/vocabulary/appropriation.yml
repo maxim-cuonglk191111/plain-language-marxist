@@ -1,0 +1,22 @@
+schema_version: 2
+term: appropriation
+original:
+  sg: appropriation
+definition:
+  short: Taking something as your own. Here it means the way a class takes possession of what society produces.
+  long: |-
+    Every society has rules about who gets the products of work. Under feudalism the lord took part of the serf’s harvest. Under capitalism the owner takes what the workers produce, and sells it.
+
+    These rules are a mode of appropriation. The Manifesto says workers can only become masters of production by abolishing every previous mode of appropriation, including their own.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00056
+  text: except by abolishing their own previous mode of appropriation
+not_to_confuse: It has nothing to do with “cultural appropriation”. It means taking possession of the products of labour.
+related: [relations-of-production, bourgeoisie, proletariat]
+renderings:
+  keep:
+    forms:
+      sg: appropriation
+    reason: A core term, kept as written. The term card explains it.
+default: keep

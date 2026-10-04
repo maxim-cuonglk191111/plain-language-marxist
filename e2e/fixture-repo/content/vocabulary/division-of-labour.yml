@@ -1,0 +1,22 @@
+schema_version: 2
+term: division-of-labour
+original:
+  sg: division of labour
+definition:
+  short: Splitting work into separate tasks, each done by different people.
+  long: |-
+    In a society there is a division of labour between trades: bakers, weavers, smiths. Inside a workshop the work can be divided again, so that each worker does one small step.
+
+    The Manifesto says this makes work faster but also emptier. The worker “becomes an appendage of the machine” and repeats one simple task.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00039
+  text: Owing to the extensive use of machinery, and to the division of labour
+not_to_confuse: It is not just teamwork. It is a lasting split of tasks that shapes people’s whole working lives.
+related: [manufacture, modern-industry]
+renderings:
+  keep:
+    forms:
+      sg: division of labour
+    reason: A core term, kept as written. The term card explains it.
+default: keep

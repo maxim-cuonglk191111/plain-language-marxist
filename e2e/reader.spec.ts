@@ -75,7 +75,7 @@ test("the mode switch changes what is shown and remembers the choice", async ({ 
 
 test("term cards open from both layers", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
-  await page.locator("#p00013 .layer-plain button.term").first().click();
+  await page.locator("#p00013 .layer-plain button.term:not([data-kept])").first().click();
   const card = page.getByRole("dialog");
   await expect(card).toContainText("bourgeoisie");
   await expect(card).toContainText("Why this wording?");
@@ -100,6 +100,28 @@ test("'Original terms' swaps the Plain English wording only", async ({ page }) =
   expect(await original.innerText()).toBe(originalBefore);
 });
 
+test("term cards explain the term for newcomers", async ({ page }) => {
+  await page.goto(`${DOC}?view=parallel#p00013`);
+  await page.locator("#p00013 .layer-original button.term").first().click();
+  const card = page.getByRole("dialog");
+  await expect(card).toContainText("Common mix-up");
+  await expect(card.locator(".term-example blockquote")).toBeVisible();
+  await expect(card.locator(".term-related a").first()).toHaveAttribute("href", /^\/vocabulary\//);
+  await card.getByText("Read more").click();
+  await expect(card.locator(".term-more p").first()).toBeVisible();
+});
+
+test("kept terms in Plain English open cards and keep their wording", async ({ page }) => {
+  await page.goto(`${DOC}?view=plain#p00010`);
+  const serf = page.locator('#p00010 .layer-plain button.term[data-term="serf"]');
+  await expect(serf).toHaveText("serf");
+  await expect(serf).toHaveAttribute("data-kept", "1");
+  await page.getByRole("button", { name: "Original terms" }).click();
+  await expect(serf).toHaveText("serf");
+  await serf.click();
+  await expect(page.getByRole("dialog")).toContainText("bound to a lord");
+});
+
 test("the explanation panel opens", async ({ page }) => {
   await page.goto(`${DOC}?view=plain#p00009`);
   await page.locator("#p00009 .explain summary").click();
@@ -109,6 +131,8 @@ test("the explanation panel opens", async ({ page }) => {
 test("vocabulary and search pages work", async ({ page }) => {
   await page.goto("/vocabulary/bourgeoisie/");
   await expect(page.locator("h1")).toHaveText("bourgeoisie");
+  await expect(page.locator(".term-more")).toHaveCount(0); // the full text is shown, not folded
+  await expect(page.locator(".term-example a")).toHaveAttribute("href", /ch01\.htm#p\d{5}$/);
   await page.goto("/search/?q=guild-master");
   await expect(page.locator(".search-results .layer-tag").first()).toBeVisible();
 });
@@ -129,7 +153,7 @@ test.describe("without JavaScript", () => {
 
 test("@mobile the reader and term card work on a phone", async ({ page }) => {
   await page.goto(`${DOC}?view=plain#p00013`);
-  await page.locator("#p00013 .layer-plain button.term").first().click();
+  await page.locator("#p00013 .layer-plain button.term:not([data-kept])").first().click();
   const card = page.getByRole("dialog");
   await expect(card).toBeVisible();
   const box = await card.boundingBox();

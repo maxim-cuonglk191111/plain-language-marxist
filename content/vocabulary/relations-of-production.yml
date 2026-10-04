@@ -1,0 +1,25 @@
+schema_version: 2
+term: relations-of-production
+aliases: [relations of property, property relations]
+original:
+  sg: relations of production
+definition:
+  short: "The relations people enter into when they produce. Above all: who owns the means of production, and who must work for the owners."
+  long: |-
+    When people produce, they do not work alone. They stand in definite relations to each other. A lord and his serfs, a capitalist and his workers: these are relations of production.
+
+    The most important question is ownership. The owners control production and what it produces. The others must work for them.
+
+    The law expresses these relations as property relations. So the Manifesto also speaks of “relations of property” and “property relations” in the same sense.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00026
+  text: constantly revolutionising the instruments of production, and thereby the relations of production
+not_to_confuse: It does not mean personal relationships at work, such as getting on well with a boss. It means how classes stand to the means of production.
+related: [mode-of-production, productive-forces, means-of-production, class-antagonism]
+renderings:
+  keep:
+    forms:
+      sg: relations of production
+    reason: A core term, kept as written. The term card explains it.
+default: keep

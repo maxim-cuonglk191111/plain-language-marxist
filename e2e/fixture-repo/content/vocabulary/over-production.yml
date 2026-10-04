@@ -1,0 +1,22 @@
+schema_version: 2
+term: over-production
+original:
+  sg: over-production
+definition:
+  short: Producing more goods than can be sold at a profit, while many people still lack them.
+  long: |-
+    Before capitalism, crises meant too little: bad harvests, famine, war. The Manifesto points to something new. In a crisis there is “too much civilisation, too much means of subsistence, too much industry, too much commerce”.
+
+    Goods pile up unsold. Factories close and workers lose their jobs. This is not because too little was produced. It is because more was produced than could be sold at a profit.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00035
+  text: the epidemic of over-production
+not_to_confuse: It does not mean that everyone has more than enough. People can go hungry during a crisis of over-production.
+related: [commercial-crisis, productive-forces, means-of-subsistence]
+renderings:
+  keep:
+    forms:
+      sg: over-production
+    reason: A core term, kept as written. The term card explains it.
+default: keep

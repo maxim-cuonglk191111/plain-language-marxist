@@ -448,6 +448,36 @@ button.term:hover {
   line-height: 1;
   cursor: pointer;
 }
+.term-card {
+  max-height: min(75vh, 34rem);
+  overflow-y: auto;
+}
+.term-confuse .term-card-label,
+.term-related .term-card-label {
+  margin-right: 0.35rem;
+}
+.term-example {
+  margin: 0 0 0.75rem;
+}
+.term-example blockquote {
+  margin: 0;
+  padding-left: 0.75rem;
+  border-left: 3px solid var(--rule);
+  font-family: var(--serif);
+}
+.term-example figcaption {
+  font-size: 0.85em;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+.term-more {
+  margin: 0 0 0.6rem;
+}
+.term-more summary {
+  cursor: pointer;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
 .muted {
   color: var(--muted);
 }

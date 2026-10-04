@@ -72,7 +72,8 @@ These three habits make a rendering longer and turn it into commentary. Each has
 - **Write plain words** when:
   - the term is still current English;
   - a specific context needs specific wording;
-  - no declared form fits the grammar. For example, "the modern bourgeois", meaning a person, has no matching form in the bourgeoisie term, so keep the plain words.
+  - no declared form fits the grammar.
+- **People, not the class:** use the person forms. `{bourgeoisie:person}` is one bourgeois ("the individual {bourgeoisie:person}"); `{bourgeoisie:persons}` is several ("the modern {bourgeoisie:persons}"); `{proletariat:person}` is one proletarian, `{proletariat:pl}` several.
 - **Watch articles.** "a {bourgeoisie:adj} society" becomes "a capitalist society" by default, which is fine. But another wording might start with a vowel. Rephrase so that no article sits directly before a token ("societies of the {bourgeoisie:adj} kind", or restructure the sentence).
 - **Pin** a single occurrence (`{bourgeoisie=bourgeoisie}`) only when this passage needs one specific rendering whatever the reader prefers. Explain why in your PR or contribution.
 
@@ -185,3 +186,18 @@ For each passage, compare the rendering with the original and ask:
 - Is the claim exactly as strong as in the original?
 - Is there anything here that the original does not say?
 - Is it roughly the original's length?
+
+## 15. Term cards and explanations
+
+Term cards (`content/vocabulary/*.yml`) and explanations are where a reader learns what the words mean. They are written for the readers in §1, especially those **new to Marxism** and those **reading English as a second language**. These rules apply to cards and explanations only; the Plain English layer stays under the core rules (no definitions, no examples).
+
+- **Short sentences.** Aim for 20 words or fewer. `plm validate` warns above 25.
+- **Common words, no idioms.** Never explain a term with a harder word, or with another Marxist term the reader may not know. If you need another term, name it in `related` so the reader can open its card.
+- **Keep the term.** The card explains *mode of production*; it never replaces it with something looser.
+- **Say what it means in the text,** then how it differs from everyday English, in `not_to_confuse` ("bourgeois" is not just "middle class").
+- **One concrete example.** `example` quotes the work exactly, with its passage ID; `plm validate` checks the quote.
+- **Shape of a card:**
+  - `definition.short` is one or two sentences, shown first in the reader;
+  - `definition.long` is two to five short paragraphs, separated by blank lines;
+  - `sources` cite Engels's notes and similar where they are used.
+- **No hedging and no taking sides.** Where readings really differ, say so in `long` and attribute each one.

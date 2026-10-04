@@ -1,0 +1,26 @@
+schema_version: 2
+term: class-struggle
+original:
+  sg: class struggle
+  pl: class struggles
+definition:
+  short: The fight between classes whose interests are opposed, such as slaves and owners, or workers and capitalists.
+  long: |-
+    The Manifesto opens Chapter I with this idea: “The history of all hitherto existing society is the history of class struggles.”
+
+    A class struggle can be hidden, like everyday resistance at work. Or it can be open, like strikes, riots and revolutions. The Manifesto says each struggle ended either in a new form of society or in the ruin of both classes.
+
+    It also says that every class struggle is a political struggle. Sooner or later it becomes a fight over state power.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00047
+  text: But every class struggle is a political struggle.
+not_to_confuse: It does not mean fights between individual people. It means the conflict between whole classes.
+related: [class-antagonism, bourgeoisie, proletariat]
+renderings:
+  keep:
+    forms:
+      sg: class struggle
+      pl: class struggles
+    reason: A core term, kept as written. The term card explains it.
+default: keep

@@ -7,7 +7,7 @@ import {
   parseContent,
   stringifyContent,
 } from "@plm/content";
-import { OriginalTermsFile } from "@plm/schema";
+import { OriginalTermsFile, SCHEMA_VERSION } from "@plm/schema";
 
 /** plm annotate <document-dir>: add missing term annotations to original-terms.yml. */
 export function runAnnotate(documentDir: string, root: string): number {
@@ -34,7 +34,7 @@ export function runAnnotate(documentDir: string, root: string): number {
   writeFileSync(
     join(repoRoot, file),
     stringifyContent(OriginalTermsFile, {
-      schema_version: 1,
+      schema_version: SCHEMA_VERSION,
       document: doc.source.data.document,
       annotations,
     }),

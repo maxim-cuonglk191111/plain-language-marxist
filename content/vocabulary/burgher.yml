@@ -1,11 +1,21 @@
-schema_version: 1
+schema_version: 2
 term: burgher
 aliases: [burgess, burgesses]
 original:
   sg: burgher
   pl: burghers
 definition:
-  short: A citizen of a medieval town, holding the rights granted by the town's charter, usually a merchant or master craftsman.
+  short: A citizen of a medieval town. Burghers were usually merchants or master craftsmen.
+  long: |-
+    In the Middle Ages most people were peasants or serfs who worked the land. Towns were different. Their citizens, the burghers, often had a charter: a written grant of rights from a king or a lord.
+
+    The Manifesto says the first members of the bourgeoisie grew out of these burghers. The two words are related. Both come from an old word for a town.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00014
+  text: From the serfs of the Middle Ages sprang the chartered burghers of the earliest towns.
+not_to_confuse: A burgher is not a modern capitalist. The burghers were the starting point from which the bourgeoisie later grew.
+related: [bourgeoisie, serf, guild-master, feudalism]
 renderings:
   keep:
     forms:

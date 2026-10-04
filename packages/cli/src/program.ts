@@ -209,10 +209,11 @@ export function buildProgram(): Command {
 
   program
     .command("migrate")
-    .description("Check content schema versions and apply migrations (none exist yet)")
+    .description("Check content schema versions; with --write, upgrade outdated files")
     .argument("[paths...]", "content directories or files", ["content", "governance.yml"])
-    .action((paths: string[]) => {
-      process.exitCode = runMigrate(paths);
+    .option("--write", "apply migrations to outdated files in place")
+    .action((paths: string[], options: { write?: boolean }) => {
+      process.exitCode = runMigrate(paths, options);
     });
 
   return program;

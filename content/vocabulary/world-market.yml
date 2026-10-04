@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: world-market
 aliases: [world-market]
 original:
   sg: world market
 definition:
-  short: A market spanning the whole world, in which goods, raw materials and capital move across borders.
+  short: A market that covers the whole world. Goods, raw materials and money move across borders.
+  long: |-
+    Before Modern Industry, most goods were made and sold nearby. The discovery of America and new sea routes began to change that.
+
+    The Manifesto says Modern Industry “has established the world market”. Factories now use raw materials from distant lands and sell everywhere. No country can stay outside.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00018
+  text: Modern industry has established the world market
+not_to_confuse: It is not one physical market place. It means that production and trade in every country are tied together worldwide.
+related: [modern-industry, commodity, bourgeoisie]
 renderings:
   keep:
     forms:

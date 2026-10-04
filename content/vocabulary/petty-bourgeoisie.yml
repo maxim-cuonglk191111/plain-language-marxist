@@ -1,0 +1,27 @@
+schema_version: 2
+term: petty-bourgeoisie
+aliases: [lower middle class]
+original:
+  sg: petty bourgeoisie
+  adj: petty bourgeois
+definition:
+  short: Small owners who work for themselves, such as shopkeepers, craftsmen and small farmers. They own a little property but employ few or no workers.
+  long: |-
+    The petty bourgeoisie stands between the two great classes. Like the bourgeoisie, it owns some means of production. Like the workers, it lives mostly from its own labour.
+
+    The Manifesto says big capital squeezes this class, and many of its members sink into the proletariat. It also calls the class conservative, because it tries “to roll back the wheel of history”.
+
+    Moore’s translation also calls this class the “lower middle class”.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00053
+  text: The lower middle class, the small manufacturer, the shopkeeper, the artisan, the peasant
+not_to_confuse: “Petty” here means small, not mean or narrow-minded. It is the class of small owners.
+related: [bourgeoisie, proletariat]
+renderings:
+  keep:
+    forms:
+      sg: petty bourgeoisie
+      adj: petty bourgeois
+    reason: A core term, kept as written. The term card explains it.
+default: keep

@@ -4,7 +4,9 @@ import { parseTokens } from "@plm/terms";
 /** The resolver in @plm/terms works on the content shape; rebuild it from the public data shape. */
 export function toTermFile(t: DataTerm): TermFile {
   return {
-    schema_version: 1,
+    // A literal, not SCHEMA_VERSION: importing values from @plm/schema would put zod in the
+    // client bundle. `satisfies` makes tsc fail here when the schema version changes.
+    schema_version: 2 satisfies TermFile["schema_version"],
     term: t.term,
     ...(t.aliases.length ? { aliases: t.aliases } : {}),
     original: t.original,

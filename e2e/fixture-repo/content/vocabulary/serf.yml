@@ -1,10 +1,20 @@
-schema_version: 1
+schema_version: 2
 term: serf
 original:
   sg: serf
   pl: serfs
 definition:
-  short: A peasant legally bound to a lord's land, owing the lord labour or dues, and not free to leave.
+  short: A peasant who was bound to a lord’s land. He owed the lord work or payments and was not free to leave.
+  long: |-
+    Serfdom was the main form of labour in feudal Europe. A serf was not a slave: he could not be sold on his own. But he was tied to the land, and the land belonged to the lord.
+
+    The serf worked partly for himself and partly for the lord. The Manifesto says the first burghers of the towns came from these serfs.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00014
+  text: From the serfs of the Middle Ages
+not_to_confuse: A serf is neither a slave nor a free farmer. He was tied to the land and owed his lord labour or dues.
+related: [feudalism, burgher, vassal]
 renderings:
   keep:
     forms:

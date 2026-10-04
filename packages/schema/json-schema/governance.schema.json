@@ -5,7 +5,7 @@
   "properties": {
     "schema_version": {
       "type": "number",
-      "const": 1
+      "const": 2
     },
     "bootstrap_mode": {
       "type": "boolean"

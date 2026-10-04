@@ -1,0 +1,22 @@
+schema_version: 2
+term: instruments-of-production
+original:
+  sg: instruments of production
+definition:
+  short: The tools and machines used in production.
+  long: |-
+    Instruments of production are one part of the means of production. Land and raw materials are what people work on. Instruments are what they work with.
+
+    The Manifesto says the bourgeoisie must keep improving them. Early workers sometimes attacked the machines themselves, instead of the system that used the machines against them.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00044
+  text: but against the instruments of production themselves
+not_to_confuse: It does not mean musical instruments or legal documents. It means tools and machines.
+related: [means-of-production, productive-forces]
+renderings:
+  keep:
+    forms:
+      sg: instruments of production
+    reason: A core term, kept as written. The term card explains it.
+default: keep

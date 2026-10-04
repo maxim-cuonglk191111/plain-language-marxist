@@ -95,6 +95,65 @@ export function LayoutText({
   );
 }
 
+type Surface = { match: string; term: string };
+const surfaceCache = new WeakMap<ReadonlyMap<string, TermFile>, Surface[]>();
+
+/**
+ * Words of terms kept as written (one rendering, so no token): in Plain English
+ * they appear as ordinary words, and are marked so their cards open too (task 022).
+ * Longest first, so "means of production" wins over a shorter term inside it.
+ */
+function keptSurfaces(vocabulary: ReadonlyMap<string, TermFile>): Surface[] {
+  const cached = surfaceCache.get(vocabulary);
+  if (cached) return cached;
+  const out: Surface[] = [];
+  for (const t of vocabulary.values()) {
+    const renderings = Object.values(t.renderings);
+    if (renderings.length !== 1 || !renderings[0]) continue;
+    for (const w of new Set([...Object.values(renderings[0].forms), ...(t.aliases ?? [])])) {
+      out.push({ match: w, term: t.term });
+      if (capitalizeFirst(w) !== w) out.push({ match: capitalizeFirst(w), term: t.term });
+    }
+  }
+  out.sort((a, b) => b.match.length - a.match.length);
+  surfaceCache.set(vocabulary, out);
+  return out;
+}
+
+/** Marks whole-word occurrences of kept terms in a plain text segment. */
+function markKept(value: string, key: string, surfaces: readonly Surface[]): ReactNode {
+  const found: Range[] = [];
+  for (const s of surfaces) {
+    for (let i = value.indexOf(s.match); i !== -1; i = value.indexOf(s.match, i + 1)) {
+      const end = i + s.match.length;
+      if (WORD.test(value[i - 1] ?? "") || WORD.test(value[end] ?? "")) continue;
+      if (found.some((r) => i < r.end && end > r.start)) continue;
+      found.push({ start: i, end, term: s.term });
+    }
+  }
+  if (found.length === 0) return value;
+  found.sort((a, b) => a.start - b.start);
+  const parts: ReactNode[] = [];
+  let at = 0;
+  for (const r of found) {
+    parts.push(value.slice(at, r.start));
+    parts.push(
+      <button
+        key={`${key}-${r.start}`}
+        type="button"
+        className="term"
+        data-term={r.term}
+        data-kept="1"
+      >
+        {value.slice(r.start, r.end)}
+      </button>,
+    );
+    at = r.end;
+  }
+  parts.push(value.slice(at));
+  return parts;
+}
+
 function renderTokens(
   value: string,
   key: number,
@@ -102,8 +161,9 @@ function renderTokens(
 ): ReactNode {
   const parsed = parseTokens(value);
   if (!parsed.ok) return value;
+  const surfaces = keptSurfaces(terms.vocabulary);
   return parsed.segments.map((s, i) => {
-    if (s.kind === "text") return s.value;
+    if (s.kind === "text") return markKept(s.value, `${key}-${i}`, surfaces);
     const term = terms.vocabulary.get(s.term);
     const word = term
       ? formFor(term, resolveChoice(term, terms.context, s.pin), s.form)

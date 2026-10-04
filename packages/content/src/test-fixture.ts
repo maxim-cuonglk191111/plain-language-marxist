@@ -51,7 +51,7 @@ export function fixtureData() {
 
   return {
     [`${WORK_DIR}/work.yml`]: {
-      schema_version: 1,
+      schema_version: 2,
       id: "work:marx:1848:communist-manifesto",
       title: "Manifesto of the Communist Party",
       authors: ["marx", "engels"],
@@ -66,7 +66,7 @@ export function fixtureData() {
       documents: ["ch01"],
     },
     [`${DOC_DIR}/source.yml`]: {
-      schema_version: 1,
+      schema_version: 2,
       document: "document:marx:1848:communist-manifesto:ch01",
       title: "I. Bourgeois and Proletarians",
       source: {
@@ -80,7 +80,7 @@ export function fixtureData() {
       passages,
     },
     [`${DOC_DIR}/en-plain.yml`]: {
-      schema_version: 1,
+      schema_version: 2,
       document: "document:marx:1848:communist-manifesto:ch01",
       language: "en",
       register: "plain",
@@ -97,12 +97,12 @@ export function fixtureData() {
       },
     },
     [`${DOC_DIR}/original-terms.yml`]: {
-      schema_version: 1,
+      schema_version: 2,
       document: "document:marx:1848:communist-manifesto:ch01",
       annotations: [{ passage: "p00005", term: "bourgeoisie", match: "bourgeois", occurrence: 1 }],
     },
     [`${DOC_DIR}/explanations.yml`]: {
-      schema_version: 1,
+      schema_version: 2,
       document: "document:marx:1848:communist-manifesto:ch01",
       explanations: {
         e001: {
@@ -114,7 +114,7 @@ export function fixtureData() {
       },
     },
     "content/vocabulary/bourgeoisie.yml": {
-      schema_version: 1,
+      schema_version: 2,
       term: "bourgeoisie",
       original: { sg: "bourgeoisie", adj: "bourgeois" },
       definition: { short: "The class that owns the means of production." },
@@ -127,7 +127,7 @@ export function fixtureData() {
       default: "capitalist-class",
     },
     "content/collections/foundations.yml": {
-      schema_version: 1,
+      schema_version: 2,
       kind: "reading_path",
       id: "foundations",
       title: "Foundation texts",

@@ -1,0 +1,22 @@
+schema_version: 2
+term: means-of-exchange
+original:
+  sg: means of exchange
+definition:
+  short: "Everything that makes trade possible: money, ships, roads, railways, markets and the like."
+  long: |-
+    Producing goods is one side of the economy. Getting them to buyers is the other. The means of exchange make this second side work: money, transport, trading houses and markets.
+
+    The Manifesto often speaks of “the means of production and of exchange” together. Both grew up inside feudal society, and both helped the bourgeoisie to rise.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00015
+  text: the increase in the means of exchange and in commodities generally
+not_to_confuse: It does not mean only money. In the Manifesto it covers everything used to trade and to move goods.
+related: [means-of-production, world-market, commodity]
+renderings:
+  keep:
+    forms:
+      sg: means of exchange
+    reason: A core term, kept as written. The term card explains it.
+default: keep

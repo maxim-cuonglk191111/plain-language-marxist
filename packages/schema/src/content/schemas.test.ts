@@ -38,7 +38,7 @@ type Case = [description: string, mutate: (d: any) => void, expected: string]; /
 
 const INVALID: Record<keyof typeof CONTENT_SCHEMAS, Case[]> = {
   work: [
-    ["unknown schema_version", (d) => (d.schema_version = 2), "schema_version:"],
+    ["unknown schema_version", (d) => (d.schema_version = 99), "schema_version:"],
     ["unknown key (typo)", (d) => (d.titel = "x"), 'Unrecognized key: "titel"'],
     [
       "verified rights without verifier",

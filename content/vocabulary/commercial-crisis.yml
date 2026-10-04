@@ -1,0 +1,21 @@
+schema_version: 2
+term: commercial-crisis
+original:
+  sg: commercial crisis
+  pl: commercial crises
+definition:
+  short: "A sudden breakdown of trade and industry: goods go unsold, businesses fail and workers lose their jobs."
+  long: The Manifesto says these crises come back again and again, each time more threatening. The bourgeoisie gets out of them in two ways. It destroys productive forces, or it conquers new markets. Both, it says, only prepare bigger crises later.
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00035
+  text: It is enough to mention the commercial crises
+not_to_confuse: It is not the crisis of one shop or one firm. It shakes the whole economy at once.
+related: [over-production, productive-forces, world-market]
+renderings:
+  keep:
+    forms:
+      sg: commercial crisis
+      pl: commercial crises
+    reason: A core term, kept as written. The term card explains it.
+default: keep

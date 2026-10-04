@@ -1,4 +1,4 @@
-import type { Rendering, RenderingFile, SourceFile } from "@plm/schema";
+import { SCHEMA_VERSION, type Rendering, type RenderingFile, type SourceFile } from "@plm/schema";
 import { basedOnHash } from "./hash.ts";
 
 export type ProposedRendering = { covers: string[]; text: string };
@@ -47,7 +47,7 @@ export function applyRenderings(
   );
   return {
     file: {
-      schema_version: 1,
+      schema_version: SCHEMA_VERSION,
       document: source.document,
       language: options.language,
       register: options.register,

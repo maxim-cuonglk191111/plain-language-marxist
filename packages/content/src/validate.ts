@@ -54,6 +54,17 @@ export function countWholeWords(haystack: string, needle: string): number {
   return count;
 }
 
+/** Term-card prose aims for 20 words a sentence; validate warns above this. */
+export const MAX_SENTENCE_WORDS = 25;
+
+/** Sentences of `text` longer than MAX_SENTENCE_WORDS words. */
+export function longSentences(text: string): string[] {
+  return text
+    .split(/(?<=[.!?])\s+(?=["“(]?[A-Z])|\n\s*\n/)
+    .map((s) => s.trim())
+    .filter((s) => s.split(/\s+/).filter(Boolean).length > MAX_SENTENCE_WORDS);
+}
+
 export function validateRepository(repo: Repository, options: ValidateOptions = {}): Issue[] {
   const issues: Issue[] = [...repo.issues];
   const report: Reporter = (severity, code, loaded, path, message) => {
@@ -424,7 +435,62 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
     }
   }
 
+  // Passage text by document id, for term-card examples.
+  const passageText = new Map<string, Map<string, string>>();
+  for (const w of repo.works) {
+    for (const d of w.documents.values()) {
+      if (!d.source) continue;
+      passageText.set(
+        d.source.data.document,
+        new Map(d.source.data.passages.map((p) => [p.id, plainText(p.text) ?? ""])),
+      );
+    }
+  }
+  const squash = (s: string) => s.replace(/\s+/g, " ").trim();
+
   for (const term of repo.terms.values()) {
+    term.data.related?.forEach((slug, i) => {
+      if (!repo.terms.has(slug))
+        report("error", "term/unknown-related", term, ["related", i], `no term card "${slug}"`);
+    });
+    const example = term.data.example;
+    if (example) {
+      const text = passageText.get(example.document)?.get(example.passage);
+      if (text === undefined) {
+        report(
+          "error",
+          "term/example-not-found",
+          term,
+          ["example"],
+          `${example.document} has no passage ${example.passage}`,
+        );
+      } else if (!squash(text).includes(squash(example.text))) {
+        report(
+          "error",
+          "term/example-not-found",
+          term,
+          ["example", "text"],
+          `the example text does not occur in ${example.passage}; quote the passage exactly`,
+        );
+      }
+    }
+    // STYLE "Term cards and explanations": short sentences for newcomers and non-native readers.
+    const prose: [readonly PropertyKey[], string | undefined][] = [
+      [["definition", "short"], term.data.definition.short],
+      [["definition", "long"], term.data.definition.long],
+      [["not_to_confuse"], term.data.not_to_confuse],
+    ];
+    for (const [path, text] of prose) {
+      const long = text ? longSentences(text) : [];
+      if (long.length > 0)
+        report(
+          "warning",
+          "term/long-sentence",
+          term,
+          path,
+          `${long.length} sentence(s) over ${MAX_SENTENCE_WORDS} words; split them (e.g. "${(long[0] ?? "").slice(0, 60)}…")`,
+        );
+    }
     term.data.scoped_defaults?.forEach((s, i) => {
       const known = s.scope.startsWith("author:")
         ? authors.has(s.scope.slice("author:".length))

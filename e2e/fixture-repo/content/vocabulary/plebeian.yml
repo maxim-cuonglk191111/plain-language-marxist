@@ -1,0 +1,21 @@
+schema_version: 2
+term: plebeian
+original:
+  sg: plebeian
+  pl: plebeians
+definition:
+  short: An ordinary free citizen of ancient Rome, not from the noble patrician families.
+  long: "The plebeians were most of Rome’s citizens: farmers, craftsmen and traders. For centuries they fought the patricians for political rights."
+example:
+  document: document:marx:1848:communist-manifesto:ch01
+  passage: p00011
+  text: In ancient Rome we have patricians, knights, plebeians, slaves
+not_to_confuse: Today “plebeian” can be an insult meaning common or vulgar. Here it simply names a social group in Rome.
+related: [patrician, class-struggle]
+renderings:
+  keep:
+    forms:
+      sg: plebeian
+      pl: plebeians
+    reason: A core term, kept as written. The term card explains it.
+default: keep

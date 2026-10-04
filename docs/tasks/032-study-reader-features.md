@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -100,4 +100,12 @@ YouVersion lets readers turn a verse into an image for sharing. PLM readers shar
 A → B → E (M1), then C and D with M3 content. Separate PRs. Each updates "Done" below and runs `pnpm check` and `pnpm e2e`.
 
 ## Done
-_(fill in per part as it lands)_
+
+### Part A — Passage numbers and references (2026-10-05)
+- **Schema v3:** `work.yml` gains an optional `short_title` (one or two capitalised words; the Manifesto's is "Manifesto"). `plm migrate` step 2→3 restamps every content file, as task 022 did for v2; the JSON Schemas are regenerated. The data contract gains an optional `short_title` on works (backward-compatible).
+- **Format** (`apps/web/src/lib/reference.ts`, unit-tested): "Manifesto II.17". The chapter number is written as its heading writes it (Roman for the Manifesto); the passage number is the number in the ID. Rows covering several passages read "I.11–12".
+- **Parser:** accepts "II.17", "Manifesto 2.17", "ch2 17", "Chapter 4, 3", "4:3", "chapter 3" (top of the chapter), in any case. A lone word or number ("civil", "1848", "II") stays a search. Errors are plain: "Manifesto II has 76 passages, so there is no passage 99."; "Manifesto has no chapter IX."
+- **In the reader:** numbers in the margin, from `data-label` in a `::before`, so they are never copied, and with empty alternative text so screen readers do not read a number before every passage. New setting "Passage numbers: Auto / Show / Hide" (`numbers` in `plm:prefs`, applied before first paint); Auto shows them with two or more layers. The progress bar reads "II.17 of 76"; the passage bar and Compare are titled "Manifesto II.17".
+- **Go to:** a "Go to a passage" box at the top of the contents drawer, and on the Search page a "Go to Manifesto II.17 →" link (Enter follows it). Search results in chapters are titled by their reference.
+- **Citations** now give the reference instead of the chapter: "— Marx & Engels, Manifesto of the Communist Party (1848), I.9, trans. Samuel Moore (1888). Original text." Notes list each item by its reference.
+- Fixed on the way: the `b` shortcut's toast said "Passage NaN bookmarked" (a mangled regex from task 031 C); it now says "Manifesto II.17 bookmarked."

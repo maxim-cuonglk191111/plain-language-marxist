@@ -15,7 +15,15 @@ import { TocDrawer } from "../../../components/TocDrawer";
 import { WorkPage } from "../../../components/WorkPage";
 import { allDocuments, findDocument, getDocument, getIndex, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
-import { authorName, chapters, rowWords, workPath, type ChapterInfo } from "../../../lib/reading";
+import {
+  authorName,
+  chapters,
+  refWork,
+  rowWords,
+  workPath,
+  workShort,
+  type ChapterInfo,
+} from "../../../lib/reading";
 import { buildRows, footnoteTargets } from "../../../lib/rows";
 import { termsUsed, toTermFile } from "../../../lib/terms";
 
@@ -86,6 +94,8 @@ function DocumentPage({
   const meta = { title: chapter.name.name, work: entry.work.title, workPath: home };
   const ordinal = new Map(doc.passages.map((p, i) => [p.id, i + 1]));
   // "Copy with source" (task 031 D5): who wrote it, and which chapter.
+  // Passage references (task 032 A): "Manifesto II" + ".17".
+  const prefix = `${workShort(entry.work)} ${chapter.numeral}`;
   const cite = {
     authors: entry.work.authors.map(authorName).join(" & "),
     work: entry.work.title,
@@ -96,7 +106,7 @@ function DocumentPage({
           translationYear: entry.work.translation.year,
         }
       : {}),
-    chapter: /^Chapter\s+[^.\s]+/.exec(chapter.name.name)?.[0] ?? chapter.name.name,
+    numeral: chapter.numeral,
   };
   const footnotes = footnoteTargets(doc);
   const translation = entry.work.translation;
@@ -159,7 +169,7 @@ function DocumentPage({
 
       <ReadingAids path={doc.path} />
       <SearchHighlight />
-      <Annotations path={doc.path} meta={meta} cite={cite} />
+      <Annotations path={doc.path} meta={meta} cite={cite} prefix={prefix} />
       <ReaderExtras />
 
       {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
@@ -170,6 +180,7 @@ function DocumentPage({
             workPath={home}
             workTitle={entry.work.title}
             chapters={work.map((c) => ({ path: c.path, name: c.name.name, sections: c.sections }))}
+            refs={refWork(entry.work, RENDERING)}
           />
           <LayerSwitch />
           <ReadAloud next={next?.path ?? null} />
@@ -179,6 +190,7 @@ function DocumentPage({
           path={doc.path}
           meta={meta}
           short={chapter.name.short}
+          numeral={chapter.numeral}
           passages={doc.passages.length}
         />
         <div className="columns-head" aria-hidden="true">
@@ -205,6 +217,11 @@ function DocumentPage({
               className={row.rendering ? "row" : "row untranslated"}
               data-words={words.join(" ")}
               data-n={ordinal.get(first ?? "")}
+              data-label={
+                rest.length
+                  ? `${ordinal.get(first ?? "")}–${ordinal.get(rest.at(-1) ?? "")}`
+                  : ordinal.get(first ?? "")
+              }
             >
               {rest.map((id) => (
                 <span key={id} id={id} className="anchor" />

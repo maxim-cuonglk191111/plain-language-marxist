@@ -18,6 +18,8 @@ export const DataIndex = z.strictObject({
     z.strictObject({
       id: z.string(),
       title: z.string(),
+      /** Added in v1 for task 032 (optional): the name used in passage references. */
+      short_title: z.string().optional(),
       authors: z.array(z.string()),
       year: z.number().int(),
       translation: z.strictObject({ translator: z.string(), year: z.number().int() }).optional(),

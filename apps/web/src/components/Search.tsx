@@ -3,6 +3,7 @@
 import type { DataSearch } from "@plm/schema";
 import MiniSearch from "minisearch";
 import { useEffect, useMemo, useState, type ReactNode } from "react";
+import { formatRef, parseRef, type RefWork } from "../lib/reference";
 import { termPattern } from "../lib/search";
 
 const LAYER = { o: "Original", p: "Plain English", e: "Context", v: "Vocabulary" } as const;
@@ -41,8 +42,19 @@ function Marked({ text, terms }: { text: string; terms: readonly string[] }) {
   return <>{parts}</>;
 }
 
-/** Client-side search over /data/v1/search.json, with every result labelled by layer (SDD §10.3). */
-export function Search() {
+/**
+ * Client-side search over /data/v1/search.json, with every result labelled by
+ * layer (SDD §10.3). A passage reference ("II.17", "Manifesto 2.17") offers to
+ * go straight there (task 032 A), and results are named by their reference.
+ */
+export function Search({
+  works,
+  prefixes,
+}: {
+  works: RefWork[];
+  /** Reference prefix ("Manifesto II") by document path. */
+  prefixes: Record<string, string>;
+}) {
   const [data, setData] = useState<DataSearch | null>(null);
   const [error, setError] = useState(false);
   const [query, setQuery] = useState("");
@@ -71,6 +83,9 @@ export function Search() {
     [index, query],
   );
 
+  const ref = useMemo(() => parseRef(query, works), [query, works]);
+  const refHref = ref?.ok ? `${ref.path}${ref.passage ? `#${ref.passage}` : ""}` : null;
+
   const update = (q: string) => {
     setQuery(q);
     const url = new URL(location.href);
@@ -90,9 +105,22 @@ export function Search() {
         value={query}
         autoComplete="off"
         onChange={(e) => update(e.target.value)}
-        placeholder="e.g. guild-master, world market, class struggles"
+        onKeyDown={(e) => {
+          if (e.key === "Enter" && refHref) location.href = refHref;
+        }}
+        placeholder="e.g. guild-master, class struggles, or a passage such as II.17"
       />
       {error && <p className="notice">The search index could not be loaded.</p>}
+      {ref?.ok && refHref && (
+        <p className="search-goto">
+          <a href={refHref}>Go to {ref.label} →</a>
+        </p>
+      )}
+      {ref && !ref.ok && (
+        <p className="notice" role="status">
+          {ref.message}
+        </p>
+      )}
       <p className="muted" aria-live="polite">
         {query.trim().length > 1 && index
           ? `${results.length} result${results.length === 1 ? "" : "s"}`
@@ -107,7 +135,13 @@ export function Search() {
             e.l === "v"
               ? `/vocabulary/${e.p}/`
               : `${doc?.path ?? "/"}?layers=${SEARCH_LAYERS[e.l] ?? "plain"}&${hl}#${e.p}`;
-          const title = e.l === "v" ? (e.t.split(":")[0] ?? e.p) : (doc?.title ?? e.p);
+          const prefix = doc ? prefixes[doc.path] : undefined;
+          const title =
+            e.l === "v"
+              ? (e.t.split(":")[0] ?? e.p)
+              : prefix
+                ? formatRef(prefix, e.p)
+                : (doc?.title ?? e.p);
           const body = e.l === "v" ? e.t.split(": ").slice(1).join(": ") : e.t;
           return (
             <li key={r.id}>

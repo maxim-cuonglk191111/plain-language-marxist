@@ -23,6 +23,7 @@ import type { ChapterMeta } from "../lib/history";
 import { currentLayers } from "../lib/layers";
 import { fromRange, layerText, toRange } from "../lib/layertext";
 import { readerRows, rowAtLine } from "../lib/position";
+import { formatRange, formatRef } from "../lib/reference";
 import { canSpeak } from "../lib/speech";
 import { LISTEN_EVENT } from "./ReadAloud";
 import { onShortcut } from "./Shortcuts";
@@ -91,10 +92,13 @@ export function Annotations({
   path,
   meta,
   cite,
+  prefix,
 }: {
   path: string;
   meta: ChapterMeta;
   cite: CitationMeta;
+  /** Reference prefix for this chapter, e.g. "Manifesto II" (task 032). */
+  prefix: string;
 }) {
   const [items, setItems] = useState<Annotation[]>([]);
   const [selected, setSelected] = useState<string[]>([]);
@@ -462,7 +466,7 @@ export function Annotations({
       .filter(Boolean)
       .join("\n\n");
     void copy(
-      withSource(words, cite, layer, url(ordered[0] ?? "")),
+      withSource(words, cite, layer, url(ordered[0] ?? ""), ordered),
       `Copied with its source (${LAYER_NAME[layer]}).`,
     );
   };
@@ -584,7 +588,7 @@ export function Annotations({
               },
             ],
       );
-      toast(on ? "Bookmark removed." : `Passage ${Number(row.id.replace(/D/g, ""))} bookmarked.`);
+      toast(on ? "Bookmark removed." : `${formatRef(prefix, row.id)} bookmarked.`);
     });
     return () => {
       offH();
@@ -639,7 +643,7 @@ export function Annotations({
             type="button"
             onClick={() =>
               void copy(
-                withSource(text.shown, cite, text.layer, url(text.passage)),
+                withSource(text.shown, cite, text.layer, url(text.passage), [text.passage]),
                 "Copied with its source.",
               )
             }
@@ -648,7 +652,9 @@ export function Annotations({
           </button>
           <button
             type="button"
-            onClick={() => void share(withSource(text.shown, cite, text.layer, ""), text.passage)}
+            onClick={() =>
+              void share(withSource(text.shown, cite, text.layer, "", [text.passage]), text.passage)
+            }
           >
             Share
           </button>
@@ -662,11 +668,7 @@ export function Annotations({
 
       {selected.length > 0 && (
         <div ref={bar} className="passage-bar" role="toolbar" aria-label="Passage actions">
-          <p className="passage-bar-title">
-            {selected.length === 1
-              ? `Passage ${Number((selected[0] ?? "").replace(/\D/g, ""))}`
-              : `${selected.length} passages`}
-          </p>
+          <p className="passage-bar-title">{formatRange(prefix, selected)}</p>
           <div className="passage-bar-actions">
             {COLORS.map((c) => (
               <button
@@ -701,7 +703,7 @@ export function Annotations({
               onClick={() => {
                 const first = [...selected].sort()[0] ?? "";
                 const layer = copyLayers[0] ?? "original";
-                void share(withSource(passageText(first, layer), cite, layer, ""), first);
+                void share(withSource(passageText(first, layer), cite, layer, "", [first]), first);
               }}
             >
               Share
@@ -793,14 +795,28 @@ export function Annotations({
           if (e.target === e.currentTarget) setCompare(null);
         }}
       >
-        {compare && <CompareSheet passage={compare} onClose={() => setCompare(null)} />}
+        {compare && (
+          <CompareSheet
+            passage={compare}
+            label={formatRef(prefix, compare)}
+            onClose={() => setCompare(null)}
+          />
+        )}
       </dialog>
     </>
   );
 }
 
 /** One passage in every layer, labelled (task 031 C3, "compare versions"). */
-function CompareSheet({ passage, onClose }: { passage: string; onClose: () => void }) {
+function CompareSheet({
+  passage,
+  label,
+  onClose,
+}: {
+  passage: string;
+  label: string;
+  onClose: () => void;
+}) {
   const row = rowOf(passage);
   const cells = (
     [
@@ -821,7 +837,7 @@ function CompareSheet({ passage, onClose }: { passage: string; onClose: () => vo
   return (
     <div className="compare-panel">
       <div className="toc-head">
-        <h2 id="compare-title">Compare passage {Number(passage.replace(/\D/g, ""))}</h2>
+        <h2 id="compare-title">Compare {label}</h2>
         <button type="button" className="toc-close" aria-label="Close" onClick={onClose}>
           ×
         </button>

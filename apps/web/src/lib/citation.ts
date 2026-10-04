@@ -3,6 +3,7 @@
 // Plain English always says it is our version, never Marx's wording.
 
 import type { MarkLayer } from "./annotations";
+import { formatRange } from "./reference";
 
 export type CitationMeta = {
   /** e.g. "Marx & Engels" */
@@ -11,12 +12,18 @@ export type CitationMeta = {
   year: number;
   translator?: string;
   translationYear?: number;
-  /** e.g. "Chapter I" */
-  chapter: string;
+  /** The chapter's number, e.g. "I": with the passage numbers it makes "I.17" (task 032). */
+  numeral: string;
 };
 
-export function sourceLine(meta: CitationMeta, layer: MarkLayer, url: string): string {
-  const base = `${meta.authors}, ${meta.work} (${meta.year}), ${meta.chapter}`;
+/** The source line for a quote from these passages (row ids such as "p00017"). */
+export function sourceLine(
+  meta: CitationMeta,
+  layer: MarkLayer,
+  url: string,
+  passages: readonly string[],
+): string {
+  const base = `${meta.authors}, ${meta.work} (${meta.year}), ${formatRange(meta.numeral, passages)}`;
   if (layer === "plain")
     return `— Plain English version by Plain Language Marxist, not the original wording. Based on ${base}. ${url}`.trimEnd();
   const trans = meta.translator
@@ -30,6 +37,7 @@ export function withSource(
   meta: CitationMeta,
   layer: MarkLayer,
   url: string,
+  passages: readonly string[],
 ): string {
-  return `“${text.trim()}”\n${sourceLine(meta, layer, url)}`;
+  return `“${text.trim()}”\n${sourceLine(meta, layer, url, passages)}`;
 }

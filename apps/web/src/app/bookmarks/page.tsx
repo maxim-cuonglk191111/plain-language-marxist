@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { NotesList } from "../../components/NotesList";
+import { refPrefixes } from "../../lib/reading";
 
 export const metadata: Metadata = { title: "Bookmarks", robots: { index: false } };
 
@@ -12,7 +13,7 @@ export default function BookmarksPage() {
         Bookmarks are now part of <a href="/notes/">Notes</a>, with your highlights. Saved in this
         browser only.
       </p>
-      <NotesList initial="bookmark" />
+      <NotesList initial="bookmark" refs={refPrefixes("en-plain")} />
     </div>
   );
 }

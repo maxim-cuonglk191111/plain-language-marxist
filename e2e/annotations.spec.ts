@@ -245,7 +245,7 @@ test("copy with source labels each layer honestly", async ({ page, context }) =>
     .getByRole("button", { name: "Copy with source" })
     .click();
   expect((await clip()).replace(/\r/g, "")).toBe(
-    `“history”\n— Plain English version by Plain Language Marxist, not the original wording. Based on Marx & Engels, Manifesto of the Communist Party (1848), Chapter I. http://127.0.0.1:4174${DOC}#p00009`,
+    `“history”\n— Plain English version by Plain Language Marxist, not the original wording. Based on Marx & Engels, Manifesto of the Communist Party (1848), I.9. http://127.0.0.1:4174${DOC}#p00009`,
   );
 
   await page.locator("#p00009 button.row-actions").click();
@@ -253,7 +253,7 @@ test("copy with source labels each layer honestly", async ({ page, context }) =>
   const original = (await clip()).replace(/\r/g, "");
   expect(original).toMatch(/^“The history of all hitherto existing society/);
   expect(original).toContain(
-    "— Marx & Engels, Manifesto of the Communist Party (1848), Chapter I, trans. Samuel Moore (1888). Original text.",
+    "— Marx & Engels, Manifesto of the Communist Party (1848), I.9, trans. Samuel Moore (1888). Original text.",
   );
 });
 
@@ -261,7 +261,7 @@ test("Compare shows one passage in every layer, labelled", async ({ page }) => {
   await page.goto(`${DOC}?layers=plain#p00009`);
   await page.locator("#p00009 button.row-actions").click();
   await bar(page).getByRole("button", { name: "Compare" }).click();
-  const sheet = page.getByRole("dialog", { name: /Compare passage 9/ });
+  const sheet = page.getByRole("dialog", { name: /Compare Manifesto I\.9$/ });
   await expect(sheet.getByRole("heading", { name: "Plain English" })).toBeVisible();
   await expect(sheet.getByRole("heading", { name: "Original" })).toBeVisible();
   await expect(sheet).toContainText("The history of all hitherto existing society");

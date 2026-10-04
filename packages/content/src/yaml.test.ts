@@ -32,7 +32,7 @@ describe("stringifyContent", () => {
   it("orders keys by the schema, whatever the input order", () => {
     const shuffled = Object.fromEntries(Object.entries(data[PATHS.work]).reverse());
     const written = stringifyContent(WorkFile, shuffled);
-    expect(written.startsWith("schema_version: 2\nid: work:marx:1848:communist-manifesto\n")).toBe(
+    expect(written.startsWith("schema_version: 3\nid: work:marx:1848:communist-manifesto\n")).toBe(
       true,
     );
     expect(written).toBe(stringifyContent(WorkFile, data[PATHS.work]));

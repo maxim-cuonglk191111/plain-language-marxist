@@ -115,10 +115,10 @@ test("progress shows the chapter, percent, time left and passage, and moves", as
   await page.goto(`${CH(1)}?layers=plain`);
   const label = page.locator(".progress-label");
   await expect(label).toContainText(/^Ch\. I · 0% · about \d+ min left/);
-  await expect(label).toContainText("Passage 1 of 65");
+  await expect(label).toContainText("I.1 of 65");
   await page.goto(`${CH(1)}?layers=plain#p00030`);
   await expect(label).toContainText(/Ch\. I · ([1-9]\d?)% /);
-  await expect(label).toContainText(/Passage (2[89]|3[0-2]) of 65/);
+  await expect(label).toContainText(/I\.(2[89]|3[0-2]) of 65/);
   const before = await label.innerText();
   // More layers, more words left.
   await page.getByRole("button", { name: "Original", exact: true }).click();

@@ -7,7 +7,7 @@ import { findHardWords, parseHardWords } from "./hard-words.ts";
 import { checkRenderings, type SourcePassage } from "./rendering.ts";
 
 const bourgeoisie: TermFile = {
-  schema_version: 2,
+  schema_version: 3,
   term: "bourgeoisie",
   original: { sg: "bourgeoisie", adj: "bourgeois" },
   definition: { short: "x" },

@@ -102,7 +102,7 @@ describe("withSource", () => {
     year: 1848,
     translator: "Samuel Moore",
     translationYear: 1888,
-    chapter: "Chapter I",
+    numeral: "I",
   };
   const url = `https://plm.example${CH1}#p00009`;
 
@@ -113,14 +113,17 @@ describe("withSource", () => {
         meta,
         "original",
         url,
+        ["p00009"],
       ),
     ).toBe(
-      `“The history of all hitherto existing society is the history of class struggles.”\n— Marx & Engels, Manifesto of the Communist Party (1848), Chapter I, trans. Samuel Moore (1888). Original text. ${url}`,
+      `“The history of all hitherto existing society is the history of class struggles.”\n— Marx & Engels, Manifesto of the Communist Party (1848), I.9, trans. Samuel Moore (1888). Original text. ${url}`,
     );
   });
 
   it("says a Plain English quote is our version, not the original wording", () => {
-    const text = withSource(" The history of all society up to now ", meta, "plain", url);
+    const text = withSource(" The history of all society up to now ", meta, "plain", url, [
+      "p00009",
+    ]);
     expect(text).toMatch(
       /^“The history of all society up to now”\n— Plain English version by Plain Language Marxist, not the original wording\. Based on Marx & Engels/,
     );

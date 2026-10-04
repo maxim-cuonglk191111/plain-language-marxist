@@ -1,4 +1,4 @@
-schema_version: 2
+schema_version: 3
 # While true, one maintainer approval satisfies any rule. Turn off once there are at least 3 reviewers (GOVERNANCE.md).
 bootstrap_mode: true
 min_account_age_days: 30

@@ -2,6 +2,7 @@ import type { DataDocument, TermFile } from "@plm/schema";
 import type { ResolveContext } from "@plm/terms";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { Annotations } from "../../../components/Annotations";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadingAids } from "../../../components/ReadingAids";
@@ -12,7 +13,7 @@ import { TocDrawer } from "../../../components/TocDrawer";
 import { WorkPage } from "../../../components/WorkPage";
 import { allDocuments, findDocument, getDocument, getIndex, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
-import { chapters, rowWords, workPath, type ChapterInfo } from "../../../lib/reading";
+import { authorName, chapters, rowWords, workPath, type ChapterInfo } from "../../../lib/reading";
 import { buildRows, footnoteTargets } from "../../../lib/rows";
 import { termsUsed, toTermFile } from "../../../lib/terms";
 
@@ -82,6 +83,19 @@ function DocumentPage({
   const home = workPath(entry.work);
   const meta = { title: chapter.name.name, work: entry.work.title, workPath: home };
   const ordinal = new Map(doc.passages.map((p, i) => [p.id, i + 1]));
+  // "Copy with source" (task 031 D5): who wrote it, and which chapter.
+  const cite = {
+    authors: entry.work.authors.map(authorName).join(" & "),
+    work: entry.work.title,
+    year: entry.work.year,
+    ...(entry.work.translation
+      ? {
+          translator: entry.work.translation.translator,
+          translationYear: entry.work.translation.year,
+        }
+      : {}),
+    chapter: /^Chapter\s+[^.\s]+/.exec(chapter.name.name)?.[0] ?? chapter.name.name,
+  };
   const footnotes = footnoteTargets(doc);
   const translation = entry.work.translation;
   const terms = termsUsed(doc).map(getTerm);
@@ -141,8 +155,9 @@ function DocumentPage({
         </details>
       </header>
 
-      <ReadingAids path={doc.path} title={`${entry.work.title}: ${doc.title}`} />
+      <ReadingAids path={doc.path} />
       <SearchHighlight />
+      <Annotations path={doc.path} meta={meta} cite={cite} />
 
       {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
       <div className="reader-bar">
@@ -189,24 +204,19 @@ function DocumentPage({
               {rest.map((id) => (
                 <span key={id} id={id} className="anchor" />
               ))}
+              {/* Passage actions (task 031 D): highlight, note, bookmark, copy, share, compare. */}
               <div className="row-tools">
                 <button
                   type="button"
-                  className="bookmark"
+                  className="row-actions"
                   data-passage={first}
-                  aria-pressed="false"
+                  aria-haspopup="true"
+                  title="Passage actions"
                   hidden
                 >
-                  <span className="visually-hidden">Bookmark passage {first}</span>
-                </button>
-                <button
-                  type="button"
-                  className="copy-link"
-                  data-passage={first}
-                  title="Copy link to this passage"
-                  hidden
-                >
-                  <span className="visually-hidden">Copy link to passage {first}</span>
+                  <span className="visually-hidden">
+                    Actions for passage {ordinal.get(first ?? "")}
+                  </span>
                 </button>
               </div>
               <div className="col-plain layer-plain">

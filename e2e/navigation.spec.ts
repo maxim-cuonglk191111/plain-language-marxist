@@ -170,7 +170,12 @@ test("a position saved before task 031 still offers 'Continue where you left off
 test("copy link to passage writes the canonical passage URL", async ({ page, context }) => {
   await context.grantPermissions(["clipboard-read", "clipboard-write"]);
   await page.goto(`${CH(1)}?layers=plain,original#p00017`);
-  await page.locator("#p00017 button.copy-link").click();
+  // Since task 031 D the link is one of the passage actions (the ⋯ button).
+  await page.locator("#p00017 button.row-actions").click();
+  await page
+    .getByRole("toolbar", { name: "Passage actions" })
+    .getByRole("button", { name: "Copy link" })
+    .click();
   await expect(page.locator(".toast")).toContainText("copied");
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe(
     `http://127.0.0.1:4174${CH(1)}#p00017`,

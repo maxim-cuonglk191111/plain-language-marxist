@@ -254,6 +254,17 @@ When Plain English and the Original are both on and stacked (phones, and below 6
 
 ## Done
 
+### Part D — Highlights, notes and quoting, plus C3 Compare (2026-10-04)
+- **Passage actions** (D1, passage level): tap a passage, or press its ⋯ button (Tab, then Enter), to get a bar at the bottom of the screen. It offers four colours, Remove highlight, Note, Bookmark, Copy with source (one button per text layer shown), Share, Copy link and Compare. Several passages can be selected at once. Escape closes the bar and returns focus to the ⋯ button. The ⋯ button replaces Part A's bookmark star and copy-link button; quiet ★ and ✎ markers in the margin show which rows hold a bookmark or a note.
+- **Text highlights** (D1, text level): select words in Plain English or the Original for a toolbar (colours, Note, Copy with source, Share), or press `h` for yellow. They are drawn with the CSS Custom Highlight API, so the markup never changes. Clicking a highlight opens it to recolour, note or delete. Browsers without the API show a margin mark on the row instead.
+- **Anchoring** (D2): `lib/anchor.ts` (exact, prefix and suffix of 32 characters each, plus an offset hint; unit-tested for exact, shifted and gone). The text is read through `lib/layertext.ts`, where a Plain English term mark counts as its project-default wording: TermCards now keeps that as `data-default` before its first swap. So switching to "Original terms" neither moves nor orphans a highlight (checked in e2e). Words not found → `orphaned: true`, shown on Notes as "Text changed — highlight could not be placed" with the words that were marked.
+- **Stored shape:** `plm:annotations = { v: 1, items }`, read through `migrateAnnotations` (unit-tested). The pre-031 `plm:bookmarks` list is folded in with stable ids (`bookmark:<path>#<passage>`), never duplicated, and removed on the next write.
+- **Notes page** (D3) at `/notes/`: filters by type and colour, grouped by work and chapter, linked back. `/bookmarks/` stays, showing the same list filtered to bookmarks. The site nav now says "Notes".
+- **Export/import** (D4): Markdown and JSON downloads; JSON import merges by id, and the newer copy wins.
+- **Copy with source** (D5): `lib/citation.ts`. Original: "— Marx & Engels, *title* (1848), Chapter I, trans. Samuel Moore (1888). Original text. <url>". Plain English: "— Plain English version by Plain Language Marxist, not the original wording. Based on …". Ordinary Ctrl+C is untouched. **Share** (D6) uses the Web Share API, or else copies the link.
+- **Compare** (C3) is built here because it lives in the same menu: a dialog with one passage in every layer, labelled, with term marks shown as plain words.
+- Reader JS for the task so far: +10.2 KB gzipped.
+
 ### Parts B and F — Appearance; telling stacked layers apart (2026-10-04)
 - **Settings:** theme (adds Sepia and Black), font, a 14–28 px size slider, four line spacings, line width, margins, paragraph style, alignment, reading speed, and term underlines. A live preview sits at the top (our real Ch. I opening in both layers), with **Reset to defaults** at the bottom.
 - **Stored shape:** `plm:prefs` gains fields only. Everything is read through `normalizePrefs`, so old prefs still load, and the old sizes s/m/l/xl map to 16/17/19/21 px. `BOOT_SCRIPT` applies everything before first paint; a unit test runs it against `applyPrefs` on old, new and broken prefs. e2e checks the attributes are already on `<html>` before `<body>` exists.

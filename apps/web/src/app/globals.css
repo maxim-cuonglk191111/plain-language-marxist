@@ -6,6 +6,7 @@
   --rule: #e4e0d5;
   --accent: #8a1c1c;
   --highlight: #fbf0c9;
+  --highlight-strong: #f3d36b;
   --notice: #f3efe3;
   --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -21,6 +22,7 @@
     --rule: #34312a;
     --accent: #e28b7b;
     --highlight: #3d3620;
+    --highlight-strong: #6b520c;
     --notice: #24221c;
     color-scheme: dark;
   }
@@ -673,6 +675,7 @@ button.term:hover {
   --rule: #34312a;
   --accent: #e28b7b;
   --highlight: #3d3620;
+  --highlight-strong: #6b520c;
   --notice: #24221c;
   color-scheme: dark;
 }
@@ -684,6 +687,7 @@ button.term:hover {
     --rule: #e4e0d5;
     --accent: #8a1c1c;
     --highlight: #fbf0c9;
+    --highlight-strong: #f3d36b;
     --notice: #f3efe3;
     color-scheme: light;
   }
@@ -851,4 +855,97 @@ button.bookmark:focus-visible {
 .bookmark-list li {
   border-top: 1px solid var(--rule);
   padding: 0.6rem 0;
+}
+
+/* ---------- UX polish (QA pass, 2026-10-04) ---------- */
+/* The Settings button reads as one of the site links. */
+.site-header .settings-toggle {
+  color: var(--fg);
+}
+
+/* A locked toggle (the last visible layer) still looks on; it just cannot be turned off. */
+.layer-switch button[aria-disabled="true"] {
+  opacity: 1;
+}
+
+/* Card stack: the page dims behind the cards, and every card below the top one
+   dims and softens, so it is always clear which card is current. */
+.term-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 19;
+  background: rgb(0 0 0 / 0.18);
+}
+.term-card[inert] {
+  filter: brightness(0.72) blur(1.5px);
+  pointer-events: none;
+}
+@media (max-width: 40rem) {
+  .term-backdrop {
+    background: rgb(0 0 0 / 0.5);
+    backdrop-filter: blur(2px);
+  }
+  .term-card[inert] {
+    filter: brightness(0.6) blur(2px);
+    transform: scale(0.97);
+    transform-origin: top center;
+  }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .term-backdrop {
+    backdrop-filter: none;
+  }
+}
+
+/* Bookmarks: touch screens have no hover, so the star always shows, faintly. */
+@media (hover: none) {
+  button.bookmark {
+    opacity: 0.45;
+  }
+}
+.ai-note {
+  font: 0.85rem/1.5 var(--sans);
+  color: var(--muted);
+  background: var(--notice);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0 0;
+}
+.ai-note .badge {
+  display: inline-block;
+  margin: 0 0.35rem 0 0;
+  padding: 0 0.4rem;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  font-weight: 600;
+}
+/* Search: matches are marked in results and, after following a result, in the passage. */
+.search-results mark {
+  background: var(--highlight-strong);
+  color: var(--fg);
+  border-radius: 0.15em;
+}
+.search-results mark {
+  padding: 0 0.1em;
+}
+/* Where the bookmark star sits inside the row (narrower screens), keep text clear of it. */
+@media (max-width: 80rem) {
+  .rows > .row {
+    padding-right: 1.9rem;
+  }
+}
+/* Home: one obvious way in. */
+.start-reading {
+  display: inline-block;
+  font: 600 1rem/1.3 var(--sans);
+  padding: 0.65rem 1.1rem;
+  border-radius: 999px;
+  background: var(--fg);
+  color: var(--bg);
+  text-decoration: none;
+}
+.start-reading:hover,
+.start-reading:focus-visible {
+  background: var(--accent);
+  color: var(--bg);
 }

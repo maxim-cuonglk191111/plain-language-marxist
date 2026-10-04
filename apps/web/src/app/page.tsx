@@ -4,6 +4,9 @@ const authorName = (slug: string) => slug.charAt(0).toUpperCase() + slug.slice(1
 
 export default function Home() {
   const index = getIndex();
+  // The first document with Plain English, so a new reader lands on something readable.
+  const docs = index.works.flatMap((w) => w.documents);
+  const start = docs.find((d) => (d.covered["en-plain"] ?? 0) > 0) ?? docs[0];
   return (
     <div className="home">
       <h1>Read the classics in the original and in plain English</h1>
@@ -12,6 +15,13 @@ export default function Home() {
         <strong>plain English</strong> version that modernizes the wording but never the argument,
         and <strong>explanations</strong> that are always labelled as interpretation.
       </p>
+      {start && (
+        <p>
+          <a className="start-reading" href={start.path}>
+            Start reading: {start.title} →
+          </a>
+        </p>
+      )}
       <h2>Library</h2>
       <ul className="library">
         {index.works.map((work) => (

@@ -65,7 +65,7 @@ A term card explains a term with other terms. For example, *capital* mentions *w
   - In the fifth card the links are disabled, with the hint "Close a card to open more".
   - A link to a term already open closes back to that card, so there are no loops. The trail on the top card goes back to any earlier card.
   - Focus returns to the link that opened the closed card, and finally to the term in the text. Lower cards are `inert`; each card is labelled "Term card n of m: …"; a live region announces changes.
-  - With one card open, clicking another term in the text replaces it. With several open, that click only closes one.
+  - While cards are open, the page behind them is dimmed (a backdrop), and cards below the top one are dimmed and blurred (QA pass, 2026-10-04). A tap on the page, including on another term, closes one card.
 - **Vocabulary pages** show the same terms as plain links, which also work without JavaScript.
 - **Tests:**
   - unit tests for `findTermRanges`;

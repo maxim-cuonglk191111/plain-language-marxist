@@ -28,7 +28,7 @@ The "Copy for LLM" prompt (`plm prompt`) embeds the block below word for word. E
 6. Do not add anything: no definitions, examples, context, commentary or framing sentences ("In other words…", "This was an important step…"). Those belong in explanations and term cards.
 7. Do not remove difficult ideas. Make the sentence easier, not the idea.
 8. Keep words that are still current English (capital, commodity, division of labour, world market, means of production). Readers get term cards for them.
-9. Keep metaphors and images ("a spectre is haunting Europe"); simplify only the words around them.
+9. Keep metaphors and images, but say them in common words: "a spectre is haunting Europe" becomes "a ghost is haunting Europe". Readers learning English should not need a dictionary for the image itself.
 10. Use term tokens for marked terms, e.g. {bourgeoisie}. Never put "a" or "an" directly before a token.
 11. Keep footnote markers where they are and keep emphasis the source uses. Never merge, split or reorder passages.
 12. Aim for about the original's length (0.8–1.5×). Much longer means you are explaining; much shorter means you are dropping something.

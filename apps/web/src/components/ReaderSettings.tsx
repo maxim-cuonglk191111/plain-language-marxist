@@ -62,16 +62,31 @@ export function ReaderSettings() {
     [],
   );
 
+  // Escape, a click or tap outside, or focus moving elsewhere closes the panel.
   useEffect(() => {
     if (!open) return;
+    const inside = (n: EventTarget | null) =>
+      n instanceof Node && (panel.current?.contains(n) || toggle.current?.contains(n));
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
         setOpen(false);
         toggle.current?.focus();
       }
     };
+    const onPointer = (e: PointerEvent) => {
+      if (!inside(e.target)) setOpen(false);
+    };
+    const onFocus = (e: FocusEvent) => {
+      if (!inside(e.target)) setOpen(false);
+    };
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    document.addEventListener("pointerdown", onPointer);
+    document.addEventListener("focusin", onFocus);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.removeEventListener("pointerdown", onPointer);
+      document.removeEventListener("focusin", onFocus);
+    };
   }, [open]);
 
   const set = (key: keyof ReaderPrefs, value: string) => {

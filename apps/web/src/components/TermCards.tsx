@@ -265,6 +265,8 @@ export function TermCards({
         </button>
       </div>
 
+      {/* Dims the page; a tap on it is a tap outside, which closes one card. */}
+      {stack.length > 0 && <div className="term-backdrop" aria-hidden="true" />}
       {stack.map((card, i) => {
         const isTop = i === stack.length - 1;
         return (

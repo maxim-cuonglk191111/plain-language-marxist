@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { LayoutText, type TermMarking } from "../../../components/LayoutText";
 import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadingAids } from "../../../components/ReadingAids";
+import { SearchHighlight } from "../../../components/SearchHighlight";
 import { TermCards } from "../../../components/TermCards";
 import { allDocuments, findDocument, getDocument, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
@@ -53,6 +54,9 @@ export default async function DocumentPage(props: Props) {
   const terms = termsUsed(doc).map(getTerm);
   const vocabulary = new Map<string, TermFile>(terms.map((t) => [t.term, toTermFile(t)]));
   const context: ResolveContext = { workId: entry.work.id, authors: entry.work.authors };
+  // When every rendering is AI-assisted, say so once at the top instead of under each paragraph.
+  const rendered = rows.flatMap((r) => (r.rendering ? [r.rendering] : []));
+  const allAiAssisted = rendered.length > 0 && rendered.every((r) => r.ai_assisted);
   const explanationsFor = (ids: string[]) =>
     doc.explanations.filter((e) => e.targets.some((t) => ids.includes(t)));
 
@@ -70,6 +74,13 @@ export default async function DocumentPage(props: Props) {
             View original source
           </a>
         </p>
+        {allAiAssisted && (
+          <p className="ai-note">
+            <span className="badge">AI-assisted</span> The Plain English in this chapter was drafted
+            with the help of AI and is being checked by people. You can compare it with the Original
+            at any time.
+          </p>
+        )}
         <div className="reader-controls">
           <TermCards
             terms={terms}
@@ -79,6 +90,7 @@ export default async function DocumentPage(props: Props) {
       </header>
 
       <ReadingAids path={doc.path} title={`${entry.work.title}: ${doc.title}`} />
+      <SearchHighlight />
 
       {/* Sticky: the layer toggles stay reachable anywhere in the text (task 023). */}
       <div className="reader-bar">
@@ -126,7 +138,9 @@ export default async function DocumentPage(props: Props) {
                       footnotes={footnotes}
                       terms={{ kind: "tokens", vocabulary, context }}
                     />
-                    {row.rendering.ai_assisted && <p className="badge">AI-assisted</p>}
+                    {row.rendering.ai_assisted && !allAiAssisted && (
+                      <p className="badge">AI-assisted</p>
+                    )}
                   </>
                 ) : (
                   <p className="notice missing">

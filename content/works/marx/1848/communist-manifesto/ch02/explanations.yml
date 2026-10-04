@@ -1,0 +1,39 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch02
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00029]
+    text: |-
+      In 1848, the vast majority of people owned no productive property. Voting laws also required owning property, excluding workers from political life.
+    ai_assisted: true
+  e002:
+    kind: translation_note
+    targets: [p00040]
+    text: |-
+      The German word Aufhebung is a philosophical term from Hegel. It means to abolish, to preserve, and to elevate to a higher stage all at once.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00041]
+    text: |-
+      In 1848, bourgeois marriage was heavily focused on property inheritance. Under the legal doctrine of coverture, a married woman had no separate legal identity or property rights.
+    ai_assisted: true
+  e004:
+    kind: historical_context
+    targets: [p00046]
+    text: |-
+      In Victorian Britain and Europe, young children regularly worked twelve-hour shifts in textile mills and coal mines. Their wages were vital for family survival.
+    ai_assisted: true
+  e005:
+    kind: historical_context
+    targets: [p00054]
+    text: |-
+      Marx and Engels emphasize that workers had no vote or ownership in the 1840s state. International solidarity unites workers across national borders.
+    ai_assisted: true
+  e006:
+    kind: historical_context
+    targets: [p00074]
+    text: |-
+      These ten measures were practical demands for Western Europe in 1848. In their 1872 preface, Marx and Engels noted that specific measures would change over time.
+    ai_assisted: true

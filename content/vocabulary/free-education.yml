@@ -1,0 +1,24 @@
+schema_version: 2
+term: free-education
+original:
+  sg: free education
+definition:
+  short: Free schooling for all children provided by the public, combined with the abolition of child factory labour.
+  long: |-
+    In the 1840s, most working-class children received little or no schooling. Many worked long hours in dangerous factories and mines.
+
+    The Manifesto demanded free public schooling for all children. It also called to end child factory labour in its existing form.
+
+    Marx and Engels argued that education should be combined with physical production. This would prepare young people for active roles in society.
+example:
+  document: document:marx:1848:communist-manifesto:ch02
+  passage: p00074
+  text: Free education for all children in public schools.
+not_to_confuse: In 1848, free public education did not exist for most children. Working-class children often worked twelve-hour factory shifts instead.
+related: [modern-industry, proletariat, means-of-production]
+renderings:
+  keep:
+    forms:
+      sg: free education
+    reason: Standard English phrase. Kept as written; the term card explains its historical context.
+default: keep

@@ -1,0 +1,26 @@
+schema_version: 2
+term: private-property
+original:
+  sg: private property
+definition:
+  short: Ownership of productive assets like land, factories, and machines that employ wage workers to make profit.
+  long: |-
+    In everyday speech, people often think private property means personal possessions like clothes, books, or a home.
+
+    For Marx and Engels, private property has a specific social meaning. It means private ownership of the means of production by the capitalist class.
+
+    This kind of property allows owners to control the labour of other people and extract profit.
+
+    When the Manifesto calls to abolish private property, it does not mean taking away personal belongings. It means ending private ownership of the productive resources that society depends on.
+example:
+  document: document:marx:1848:communist-manifesto:ch02
+  passage: p00014
+  text: "the theory of the Communists may be summed up in the single sentence: Abolition of private property"
+not_to_confuse: Do not confuse private property with personal property. Personal belongings like clothes, phones, or furniture are not means of production.
+related: [means-of-production, capital, bourgeoisie, wage-labour]
+renderings:
+  keep:
+    forms:
+      sg: private property
+    reason: Still standard English. Kept as written; the term card explains the concept.
+default: keep

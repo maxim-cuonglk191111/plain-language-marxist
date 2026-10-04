@@ -1,0 +1,671 @@
+schema_version: 2
+document: document:marx:1848:communist-manifesto:ch02
+annotations:
+  - passage: p00001
+    term: proletariat
+    match: Proletarians
+    occurrence: 1
+  - passage: p00001
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00002
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00002
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00003
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00003
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00003
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00004
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00005
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00006
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00006
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00006
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00006
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00006
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00007
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00007
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00007
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00007
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00008
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00008
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00008
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00008
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00008
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00009
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00010
+    term: class-struggle
+    match: class struggle
+    occurrence: 1
+  - passage: p00010
+    term: relations-of-production
+    match: property relations
+    occurrence: 1
+  - passage: p00010
+    term: communism
+    match: communism
+    occurrence: 1
+  - passage: p00011
+    term: relations-of-production
+    match: property relations
+    occurrence: 1
+  - passage: p00012
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00012
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00012
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00013
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00013
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00013
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00013
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00013
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00014
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00015
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00016
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00017
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00018
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00018
+    term: exploitation
+    match: exploits
+    occurrence: 1
+  - passage: p00018
+    term: wage-labour
+    match: wage-labour
+    occurrence: 2
+  - passage: p00018
+    term: wage-labour
+    match: wage-labour
+    occurrence: 3
+  - passage: p00018
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00018
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00020
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00022
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00023
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00023
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00023
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00023
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00023
+    term: appropriation
+    match: appropriation
+    occurrence: 3
+  - passage: p00023
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00024
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00024
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00025
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00025
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00025
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00025
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00026
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00027
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00028
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00028
+    term: communism
+    match: Communistic
+    occurrence: 1
+  - passage: p00028
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00028
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00031
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00031
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00031
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00032
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00033
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00035
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00035
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00035
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00036
+    term: communism
+    match: Communistic
+    occurrence: 1
+  - passage: p00036
+    term: communism
+    match: Communistic
+    occurrence: 2
+  - passage: p00036
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00038
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00038
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00038
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00038
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00039
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00039
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00039
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00040
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00041
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00041
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00041
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00041
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00042
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00042
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00043
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00045
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00046
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00046
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00046
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00047
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00047
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00048
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00048
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00048
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00049
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00050
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00050
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00050
+    term: communism
+    match: Communists
+    occurrence: 2
+  - passage: p00051
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00051
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00052
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00052
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00053
+    term: communism
+    match: Communists
+    occurrence: 1
+  - passage: p00054
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00054
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00055
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00055
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00055
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00056
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00056
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00057
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00057
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00058
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00061
+    term: revolution
+    match: revolutionise
+    occurrence: 1
+  - passage: p00062
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00062
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00062
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00064
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00065
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00066
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00066
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00067
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00067
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00067
+    term: relations-of-production
+    match: property relations
+    occurrence: 1
+  - passage: p00068
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00068
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00069
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00069
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00070
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00070
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00070
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00070
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00070
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00070
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00071
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00071
+    term: revolution
+    match: revolutionising
+    occurrence: 1
+  - passage: p00071
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00074
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00074
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00075
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00075
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00075
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00075
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00076
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00076
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00013
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00014
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00017
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00029
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00029
+    term: private-property
+    match: private property
+    occurrence: 2
+  - passage: p00034
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00074
+    term: free-education
+    match: Free education
+    occurrence: 1

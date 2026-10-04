@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
-| **Owner** | Unassigned |
+| **Owner** | Claude |
 | **Severity** | High |
 | **Milestone** | M1 |
 | **Depends on** | 027 |
@@ -46,8 +46,8 @@ Chapter II contains two distinct rhetorical styles:
 - Keep explanation sentences $\le$ 25 words.
 
 ## Acceptance Criteria
-- [ ] Ch. II imported and verified against MIA snapshot.
-- [ ] New term cards pass `pnpm plm validate` with pronunciation guides and "not_to_confuse" lines.
-- [ ] All passages rendered; 0 sentences over 35 words; all hard words resolved.
-- [ ] `pnpm plm validate` passes with 0 errors.
-- [ ] `pnpm check` and `pnpm e2e` pass cleanly.
+- [x] Ch. II imported and verified against MIA snapshot.
+- [x] New term cards pass `pnpm plm validate` with pronunciation guides and "not_to_confuse" lines.
+- [x] All passages rendered; 0 sentences over 35 words; all hard words resolved.
+- [x] `pnpm plm validate` passes with 0 errors.
+- [x] `pnpm check` and `pnpm e2e` pass cleanly.

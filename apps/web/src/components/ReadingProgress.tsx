@@ -117,18 +117,17 @@ export function ReadingProgress({
     };
   }, []);
 
-  if (!state) return null;
+  // Rendered from the start (empty until measured), so the bar does not grow after
+  // load and push the text down. Hidden without JavaScript by CSS.
   return (
     <div className="reader-progress">
       <div className="progress-track" aria-hidden="true">
-        <div className="progress-fill" style={{ width: `${state.percent}%` }} />
+        <div className="progress-fill" style={{ width: `${state?.percent ?? 0}%` }} />
       </div>
       <p className="progress-label">
-        <span>
-          {short} · {state.percent}% · {state.left}
-        </span>
+        <span>{state ? `${short} · ${state.percent}% · ${state.left}` : " "}</span>
         <span className="progress-passage">
-          {numeral}.{state.passage} of {passages}
+          {state ? `${numeral}.${state.passage} of ${passages}` : ""}
         </span>
       </p>
     </div>

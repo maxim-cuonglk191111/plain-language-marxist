@@ -113,6 +113,8 @@ test("reading speed changes the time left", async ({ page }) => {
   await page.goto(`${DOC}?layers=plain`);
   const minutes = async () =>
     Number(/about (\d+) min/.exec(await page.locator(".progress-label").innerText())?.[1]);
+  // The label is an empty placeholder until the page has measured the chapter.
+  await expect(page.locator(".progress-label")).toContainText("min left");
   const at200 = await minutes();
   await page.getByRole("button", { name: "Settings" }).click();
   await page.getByLabel("150").check();

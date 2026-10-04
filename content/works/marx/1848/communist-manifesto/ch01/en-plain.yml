@@ -1,4 +1,4 @@
-schema_version: 1
+schema_version: 2
 document: document:marx:1848:communist-manifesto:ch01
 language: en
 register: plain
@@ -48,9 +48,9 @@ renderings:
   p00008:
     covers: [p00008]
     based_on: sha256:02c9fdf027d3a8fbf0bdad98591c9700aacf420cf0423a05377ffaaabf116f58
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Chapter I. {Bourgeoisie} and {Proletariat}<fn ref="1"/>
+    text: Chapter I. {Bourgeoisie:persons} and {Proletariat:pl}<fn ref="1"/>
   p00009:
     covers: [p00009]
     based_on: sha256:d63e2e18431592545f3addcaa1a9163d50673c6080f1cfcb1cf2355e1a2221c8
@@ -102,9 +102,9 @@ renderings:
   p00017:
     covers: [p00017]
     based_on: sha256:ec1fe89fe54a980e5be195287376bbe6e39d855d1922cda7cf19f153a12a8f49
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: Meanwhile the markets kept growing and demand kept rising. Even manufacture was no longer enough. Then steam and machinery revolutionised industrial production. The place of manufacture was taken by the giant, Modern Industry; the place of the industrial middle class was taken by industrial millionaires, the leaders of whole industrial armies, the modern {bourgeoisie}.
+    text: Meanwhile the markets kept growing and demand kept rising. Even manufacture was no longer enough. Then steam and machinery revolutionised industrial production. The place of manufacture was taken by the giant, Modern Industry; the place of the industrial middle class was taken by industrial millionaires, the leaders of whole industrial armies, the modern {bourgeoisie:persons}.
   p00018:
     covers: [p00018]
     based_on: sha256:d0023e9889dd36faa143462d02ce133de8d645a4699646425dc54d36c3c47e1b
@@ -267,21 +267,21 @@ renderings:
   p00044:
     covers: [p00044]
     based_on: sha256:024924dfd5791ca62514a336cf172d59e8166dd5eef459ed71d5317968ef6c48
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: The {proletariat} goes through various stages of development. Its struggle with the {bourgeoisie} begins with its birth. At first the contest is carried on by individual labourers, then by the workers of a factory, then by the workers of one trade in one place, against the individual {bourgeoisie:adj} who directly exploits them. They direct their attacks not against the {bourgeoisie:adj} conditions of production, but against the instruments of production themselves; they destroy imported goods that compete with their labour, they smash machinery to pieces, they set factories on fire, they try to restore by force the vanished status of the worker of the Middle Ages.
+    text: The {proletariat} goes through various stages of development. Its struggle with the {bourgeoisie} begins with its birth. At first the contest is carried on by individual labourers, then by the workers of a factory, then by the workers of one trade in one place, against the individual {bourgeoisie:person} who directly exploits them. They direct their attacks not against the {bourgeoisie:adj} conditions of production, but against the instruments of production themselves; they destroy imported goods that compete with their labour, they smash machinery to pieces, they set factories on fire, they try to restore by force the vanished status of the worker of the Middle Ages.
   p00045:
     covers: [p00045]
     based_on: sha256:918a88eba88a60fcf93a1c7c7b025833795c04ea7cbb6eedf6ebc16be5f50c9f
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: "At this stage the labourers still form a disconnected mass scattered over the whole country and broken up by their competition with one another. If they unite anywhere to form more compact bodies, this is not yet the result of their own active union, but of the union of the {bourgeoisie}, which, in order to reach its own political ends, is compelled to set the whole {proletariat} in motion, and is moreover still able to do so for a time. At this stage, therefore, the {proletariat:pl} do not fight their enemies, but the enemies of their enemies: the remnants of absolute monarchy, the landowners, the non-industrial {bourgeoisie}, the petty bourgeois. Thus the whole historical movement is concentrated in the hands of the {bourgeoisie}; every victory won in this way is a victory for the {bourgeoisie}."
+    text: "At this stage the labourers still form a disconnected mass scattered over the whole country and broken up by their competition with one another. If they unite anywhere to form more compact bodies, this is not yet the result of their own active union, but of the union of the {bourgeoisie}, which, in order to reach its own political ends, is compelled to set the whole {proletariat} in motion, and is moreover still able to do so for a time. At this stage, therefore, the {proletariat:pl} do not fight their enemies, but the enemies of their enemies: the remnants of absolute monarchy, the landowners, the non-industrial {bourgeoisie:persons}, the petty bourgeois. Thus the whole historical movement is concentrated in the hands of the {bourgeoisie}; every victory won in this way is a victory for the {bourgeoisie}."
   p00046:
     covers: [p00046]
     based_on: sha256:9998cbc9dc44c108a18299f31ea5f64c8f0718a176af90a35cdf1d5fe0db6a91
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: But with the development of industry, the {proletariat} not only grows in number; it becomes concentrated in greater masses, its strength grows, and it feels that strength more. The various interests and conditions of life within the ranks of the {proletariat} are more and more evened out, as machinery wipes out all distinctions of labour and nearly everywhere pushes wages down to the same low level. The growing competition within the {bourgeoisie}, and the commercial crises that result from it, make the workers' wages ever more unstable. The constant improvement of machinery, developing ever more rapidly, makes their livelihood more and more insecure; the clashes between individual workers and individual members of the {bourgeoisie} take more and more the character of clashes between two classes. Then the workers begin to form combinations (Trades' Unions) against the {bourgeoisie}; they join together in order to keep up the rate of wages; they found permanent associations in order to prepare in advance for these occasional revolts. Here and there the contest breaks out into riots.
+    text: But with the development of industry, the {proletariat} not only grows in number; it becomes concentrated in greater masses, its strength grows, and it feels that strength more. The various interests and conditions of life within the ranks of the {proletariat} are more and more evened out, as machinery wipes out all distinctions of labour and nearly everywhere pushes wages down to the same low level. The growing competition among the {bourgeoisie:persons}, and the commercial crises that result from it, make the workers' wages ever more unstable. The constant improvement of machinery, developing ever more rapidly, makes their livelihood more and more insecure; the clashes between individual workers and individual {bourgeoisie:persons} take more and more the character of clashes between two classes. Then the workers begin to form combinations (Trades' Unions) against the {bourgeoisie:persons}; they join together in order to keep up the rate of wages; they found permanent associations in order to prepare in advance for these occasional revolts. Here and there the contest breaks out into riots.
   p00047:
     covers: [p00047]
     based_on: sha256:6b6160efdcbf17fc9b57ed1e80e3361b8070fe6df76e976add53d57ffb2a8b83
@@ -333,9 +333,9 @@ renderings:
   p00055:
     covers: [p00055]
     based_on: sha256:0919211468f6969598fa8ceeffe939396462ea4089a2e80116f08a0b5e27ddf4
-    revision: 1
+    revision: 2
     ai_assisted: true
-    text: In the conditions of the {proletariat}, those of the old society as a whole are already virtually swamped. The {proletariat:pl} are without property; their relation to their wives and children no longer has anything in common with {bourgeoisie:adj} family relations; modern industrial labour, modern subjection to capital, the same in England as in France, in America as in Germany, has stripped them of every trace of national character. Law, morality and religion are to them so many {bourgeoisie:adj} prejudices, behind which just as many {bourgeoisie:adj} interests lie in ambush.
+    text: In the conditions of the {proletariat}, those of the old society as a whole are already virtually swamped. The {proletariat:person} is without property; his relation to his wife and children no longer has anything in common with {bourgeoisie:adj} family relations; modern industrial labour, modern subjection to capital, the same in England as in France, in America as in Germany, has stripped him of every trace of national character. Law, morality and religion are to him so many {bourgeoisie:adj} prejudices, behind which just as many {bourgeoisie:adj} interests lie in ambush.
   p00056:
     covers: [p00056]
     based_on: sha256:f3d40f9ff0f5ba705fef3209853950227d72b0a2bc4bc62207af6e5345ceaa5e

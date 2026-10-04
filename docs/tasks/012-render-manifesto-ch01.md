@@ -39,14 +39,13 @@ Complete, reviewed Plain English for Ch. I. This chapter is the project's first 
 The Moore readings come from the drafter's knowledge of the 1888 text. **Check them against a scan before publishing.**
 
 **Check warnings left, each explained:**
-- **p00008 `names`, "Proletarians".** The heading uses the class tokens, `{Bourgeoisie} and {Proletariat}`. Matching "Proletarians" would give "Capitalist class and Workers", which is lopsided. Engels's note 1 on this heading defines the two classes, so naming the classes keeps the meaning.
 - **p00028 `names`, "Reactionists".** This is a capitalised common noun, not a name; it is rendered as "reactionaries".
 - **p00038 `gloss`.** "the {bourgeoisie}, that is, capital" is the source's own "i.e., capital", not an added definition.
 
 **Choices the reviewer should look at:**
-- **"The bourgeois" meaning people.** The term has no form for persons. Where a word for a person is needed, the drafts use `{bourgeoisie:adj}` as a noun ("the individual {bourgeoisie:adj} who directly exploits them"). Otherwise they rephrase to the class ("the modern {bourgeoisie}", "individual members of the {bourgeoisie}"). A future `person` form on the term would allow a closer match.
-- **"The petty bourgeois"** (p00045, p00060) is kept as a plain phrase, not tokenised; petty bourgeoisie is not a vocabulary term yet.
-- **p00055** turns the singular "the proletarian … his wife and children" into the plural, because the token has no singular-person form.
+- **People, not the class** (revised after task 022 added person forms): p00008, p00017, p00044, p00045 and p00046 now use `{bourgeoisie:person}` / `{bourgeoisie:persons}`. The heading reads "Capitalists and Workers" by default, or "Bourgeois and Proletarians" with original terms, which also clears the p00008 `names` warning. Elsewhere `{bourgeoisie:adj}` is used only as an adjective.
+- **"The petty bourgeois"** (p00045, p00060) stays as written. Since task 022, petty bourgeoisie is a kept term with its own card, so it is clickable in Plain English.
+- **p00055** keeps the singular "the proletarian … his wife and children" with `{proletariat:person}`.
 - **p00062 (note 1)** keeps the words "bourgeoisie" and "proletariat" without tokens, because the note defines those words.
 
 **Still open for this task:**

@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { readHistory } from "../lib/history";
 import { readingLine } from "../lib/position";
+import { parseRef, type RefWork } from "../lib/reference";
 import { onShortcut } from "./Shortcuts";
 
 export type TocChapter = {
@@ -23,11 +24,14 @@ export function TocDrawer({
   chapters,
   workPath,
   workTitle,
+  refs,
 }: {
   current: string;
   chapters: TocChapter[];
   workPath: string;
   workTitle: string;
+  /** For "Go to a passage" (task 032 A). */
+  refs: RefWork;
 }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const button = useRef<HTMLButtonElement>(null);
@@ -56,6 +60,21 @@ export function TocDrawer({
     d.showModal();
   };
   const close = () => dialog.current?.close();
+  const [goError, setGoError] = useState("");
+
+  /** "II.17", "ch2 17", "chapter 3": jump there, or say plainly why not. */
+  const goTo = (value: string) => {
+    const r = parseRef(value, [refs], refs);
+    if (!r) return setGoError("Type a passage reference, such as II.17 or chapter 3.");
+    if (!r.ok) return setGoError(r.message);
+    setGoError("");
+    const hash = r.passage ? `#${r.passage}` : "";
+    if (r.path === current) {
+      close();
+      if (hash) location.hash = hash;
+      else window.scrollTo({ top: 0 });
+    } else location.href = r.path + hash;
+  };
 
   // "t" (the shortcuts component decides when keys apply).
   useEffect(() => onShortcut("toc", open));
@@ -101,6 +120,32 @@ export function TocDrawer({
               ×
             </button>
           </div>
+          <form
+            className="toc-goto"
+            onSubmit={(e) => {
+              e.preventDefault();
+              goTo(new FormData(e.currentTarget).get("ref")?.toString() ?? "");
+            }}
+          >
+            <label htmlFor="toc-goto-input">Go to a passage</label>
+            <span className="toc-goto-row">
+              <input
+                id="toc-goto-input"
+                name="ref"
+                type="text"
+                autoComplete="off"
+                spellCheck={false}
+                placeholder={`e.g. ${refs.chapters[1]?.numeral ?? "I"}.17`}
+                aria-describedby="toc-goto-message"
+                aria-invalid={goError ? true : undefined}
+                onInput={() => setGoError("")}
+              />
+              <button type="submit">Go</button>
+            </span>
+            <p id="toc-goto-message" className="toc-goto-message" role="status">
+              {goError}
+            </p>
+          </form>
           <p className="toc-work">
             <a href={workPath}>{workTitle}</a>
           </p>

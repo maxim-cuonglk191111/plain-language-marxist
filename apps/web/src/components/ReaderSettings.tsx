@@ -5,6 +5,7 @@ import { onShortcut } from "./Shortcuts";
 import {
   AIDS,
   ALIGNS,
+  NUMBERS,
   DEFAULT_PREFS,
   FONTS,
   LEADINGS,
@@ -83,6 +84,12 @@ const CHOICES: Choice[] = [
     label: "Keep screen on",
     hint: "While a chapter is open. Only in browsers that support it.",
     options: labels(SWITCH, ["Off", "On"]),
+  },
+  {
+    key: "numbers",
+    label: "Passage numbers",
+    hint: "Numbers like II.17 for citing. Auto shows them when two or more layers are on.",
+    options: labels(NUMBERS, ["Auto", "Show", "Hide"]),
   },
   {
     key: "shortcuts",

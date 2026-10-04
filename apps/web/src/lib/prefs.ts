@@ -19,6 +19,7 @@ export const ALIGNS = ["left", "justify"] as const;
 export const WPMS = [150, 200, 250, 300] as const;
 export const AIDS = ["none", "paragraph", "ruler"] as const;
 export const SWITCH = ["off", "on"] as const;
+export const NUMBERS = ["auto", "on", "off"] as const;
 export const SIZE_MIN = 14;
 export const SIZE_MAX = 28;
 
@@ -40,6 +41,8 @@ export type ReaderPrefs = {
   aid: (typeof AIDS)[number];
   screen: (typeof SWITCH)[number];
   shortcuts: (typeof SWITCH)[number];
+  /** Passage numbers in the margin (task 032 A); "auto" shows them with two or more layers. */
+  numbers: (typeof NUMBERS)[number];
 };
 
 export const DEFAULT_PREFS: ReaderPrefs = {
@@ -57,6 +60,7 @@ export const DEFAULT_PREFS: ReaderPrefs = {
   aid: "none",
   screen: "off",
   shortcuts: "on",
+  numbers: "auto",
 };
 export const PREFS_KEY = "plm:prefs";
 /** Pre-031 bookmark list; read once into plm:annotations (lib/annotations.ts). */
@@ -92,6 +96,7 @@ export function normalizePrefs(raw: unknown): ReaderPrefs {
     aid: pick(AIDS, p["aid"], d.aid),
     screen: pick(SWITCH, p["screen"], d.screen),
     shortcuts: pick(SWITCH, p["shortcuts"], d.shortcuts),
+    numbers: pick(NUMBERS, p["numbers"], d.numbers),
   };
 }
 
@@ -141,6 +146,7 @@ export function applyPrefs(p: ReaderPrefs, html: Root = document.documentElement
   html.dataset["terms"] = p.terms;
   html.dataset["focus"] = p.focus;
   html.dataset["aid"] = p.aid;
+  html.dataset["numbers"] = p.numbers;
 }
 
 /**
@@ -148,4 +154,4 @@ export function applyPrefs(p: ReaderPrefs, html: Root = document.documentElement
  * paint (no flash). Kept dependency-free and defensive. It must set the same
  * values as applyPrefs(normalizePrefs(…)); prefs.test.ts checks that.
  */
-export const BOOT_SCRIPT = `(function(){var d=document.documentElement;try{${LAYERS_BOOT}var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}")||{};var o=function(l,v,f){return l.indexOf(v)>=0?v:f};if(${JSON.stringify(THEMES.slice(1))}.indexOf(p.theme)>=0){d.dataset.theme=p.theme}var s=typeof p.size==="number"&&isFinite(p.size)?Math.round(Math.min(${SIZE_MAX},Math.max(${SIZE_MIN},p.size))):(${JSON.stringify(OLD_SIZES)})[p.size]||${DEFAULT_PREFS.size};d.style.setProperty("--text-size",String(s));d.dataset.font=o(${JSON.stringify(FONTS)},p.font,"${DEFAULT_PREFS.font}");d.dataset.leading=o(${JSON.stringify(LEADINGS)},p.leading,"${DEFAULT_PREFS.leading}");d.dataset.width=o(${JSON.stringify(WIDTHS)},p.width,"${DEFAULT_PREFS.width}");d.dataset.margins=o(${JSON.stringify(MARGINS)},p.margins,"${DEFAULT_PREFS.margins}");d.dataset.para=o(${JSON.stringify(PARAS)},p.para,"${DEFAULT_PREFS.para}");d.dataset.align=o(${JSON.stringify(ALIGNS)},p.align,"${DEFAULT_PREFS.align}");d.dataset.terms=p.terms==="off"?"off":"on";d.dataset.focus=o(${JSON.stringify(SWITCH)},p.focus,"${DEFAULT_PREFS.focus}");d.dataset.aid=o(${JSON.stringify(AIDS)},p.aid,"${DEFAULT_PREFS.aid}")}catch(e){d.dataset.layers="plain";d.dataset.cols="1"}})();`;
+export const BOOT_SCRIPT = `(function(){var d=document.documentElement;try{${LAYERS_BOOT}var p=JSON.parse(localStorage.getItem("${PREFS_KEY}")||"{}")||{};var o=function(l,v,f){return l.indexOf(v)>=0?v:f};if(${JSON.stringify(THEMES.slice(1))}.indexOf(p.theme)>=0){d.dataset.theme=p.theme}var s=typeof p.size==="number"&&isFinite(p.size)?Math.round(Math.min(${SIZE_MAX},Math.max(${SIZE_MIN},p.size))):(${JSON.stringify(OLD_SIZES)})[p.size]||${DEFAULT_PREFS.size};d.style.setProperty("--text-size",String(s));d.dataset.font=o(${JSON.stringify(FONTS)},p.font,"${DEFAULT_PREFS.font}");d.dataset.leading=o(${JSON.stringify(LEADINGS)},p.leading,"${DEFAULT_PREFS.leading}");d.dataset.width=o(${JSON.stringify(WIDTHS)},p.width,"${DEFAULT_PREFS.width}");d.dataset.margins=o(${JSON.stringify(MARGINS)},p.margins,"${DEFAULT_PREFS.margins}");d.dataset.para=o(${JSON.stringify(PARAS)},p.para,"${DEFAULT_PREFS.para}");d.dataset.align=o(${JSON.stringify(ALIGNS)},p.align,"${DEFAULT_PREFS.align}");d.dataset.terms=p.terms==="off"?"off":"on";d.dataset.focus=o(${JSON.stringify(SWITCH)},p.focus,"${DEFAULT_PREFS.focus}");d.dataset.aid=o(${JSON.stringify(AIDS)},p.aid,"${DEFAULT_PREFS.aid}");d.dataset.numbers=o(${JSON.stringify(NUMBERS)},p.numbers,"${DEFAULT_PREFS.numbers}")}catch(e){d.dataset.layers="plain";d.dataset.cols="1"}})();`;

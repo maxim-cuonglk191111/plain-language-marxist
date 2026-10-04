@@ -68,6 +68,12 @@ export const WorkFile = z
     schema_version: SchemaVersion,
     id: WorkId,
     title: z.string().min(1),
+    /** Short name for passage references, e.g. "Manifesto" in "Manifesto II.17" (task 032). */
+    short_title: z
+      .string()
+      .regex(/^[A-Z][A-Za-z]*( [A-Z][A-Za-z]*)?$/, "one or two capitalised words, letters only")
+      .max(24)
+      .optional(),
     authors: z.array(Slug).min(1),
     year: z.number().int(),
     translation: z

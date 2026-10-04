@@ -2,7 +2,8 @@
 // names, section headings, word counts and the work's own page. All computed
 // from the data contract already loaded for the page, so /data/v1 does not change.
 import { parseLayout, toPlainText, type DataDocument, type DataIndex } from "@plm/schema";
-import { getDocument, type DocumentEntry } from "./data";
+import { getDocument, getIndex, type DocumentEntry } from "./data";
+import type { RefWork } from "./reference";
 import type { Row } from "./rows";
 
 type Work = DataIndex["works"][number];
@@ -97,6 +98,9 @@ export function openingLine(doc: DataDocument, renderingKey: string, max = 180):
 export type ChapterInfo = {
   path: string;
   name: ChapterName;
+  /** The chapter's number as its heading writes it: "II" (task 032 references). */
+  numeral: string;
+  passages: number;
   words: number;
   sections: Section[];
   opening: string;
@@ -115,6 +119,8 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
     return {
       path: d.path,
       name,
+      numeral: name.short.replace(/^Ch. /, ""),
+      passages: d.passages,
       words: chapterWords(doc, renderingKey),
       sections: sections(doc, name),
       opening: openingLine(doc, renderingKey),
@@ -125,3 +131,28 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
 }
 
 export const authorName = (slug: string) => slug.charAt(0).toUpperCase() + slug.slice(1);
+
+/** The name in passage references: the work's short title, or its title. */
+export const workShort = (work: Work) => work.short_title ?? work.title;
+
+/** What the reference parser needs to know about a work (task 032 A). */
+export function refWork(work: Work, renderingKey: string): RefWork {
+  return {
+    short: workShort(work),
+    title: work.title,
+    chapters: chapters(work, renderingKey).map((c) => ({
+      path: c.path,
+      numeral: c.numeral,
+      passages: c.passages,
+    })),
+  };
+}
+
+/** Every chapter's reference prefix ("Manifesto II"), by path, for lists outside the reader. */
+export function refPrefixes(renderingKey: string): Record<string, string> {
+  return Object.fromEntries(
+    getIndex().works.flatMap((w) =>
+      chapters(w, renderingKey).map((c) => [c.path, `${workShort(w)} ${c.numeral}`]),
+    ),
+  );
+}

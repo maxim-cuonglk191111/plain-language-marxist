@@ -66,6 +66,7 @@ export function buildData(options: BuildOptions): BuildResult {
     const entry: DataIndex["works"][number] = {
       id: w.id,
       title: w.title,
+      ...(w.short_title ? { short_title: w.short_title } : {}),
       authors: w.authors,
       year: w.year,
       ...(w.translation ? { translation: w.translation } : {}),

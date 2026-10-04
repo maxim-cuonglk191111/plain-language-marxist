@@ -5,7 +5,7 @@
   "properties": {
     "schema_version": {
       "type": "number",
-      "const": 2
+      "const": 3
     },
     "id": {
       "type": "string",
@@ -14,6 +14,11 @@
     "title": {
       "type": "string",
       "minLength": 1
+    },
+    "short_title": {
+      "type": "string",
+      "maxLength": 24,
+      "pattern": "^[A-Z][A-Za-z]*( [A-Z][A-Za-z]*)?$"
     },
     "authors": {
       "minItems": 1,

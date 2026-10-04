@@ -20,11 +20,14 @@ export function ReadingProgress({
   path,
   meta,
   short,
+  numeral,
   passages,
 }: {
   path: string;
   meta: ChapterMeta;
   short: string;
+  /** The chapter number in references ("II"), for "II.17 of 76" (task 032). */
+  numeral: string;
   passages: number;
 }) {
   const [state, setState] = useState<State | null>(null);
@@ -110,7 +113,7 @@ export function ReadingProgress({
           {short} · {state.percent}% · {state.left}
         </span>
         <span className="progress-passage">
-          Passage {state.passage} of {passages}
+          {numeral}.{state.passage} of {passages}
         </span>
       </p>
     </div>

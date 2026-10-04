@@ -11,6 +11,7 @@ import {
   type Annotation,
   type Color,
 } from "../lib/annotations";
+import { formatRef, passageNumber } from "../lib/reference";
 
 type Kind = "all" | "bookmark" | "highlight" | "note";
 const KINDS: [Kind, string][] = [
@@ -41,7 +42,14 @@ function download(name: string, type: string, body: string) {
  * work and chapter, with filters, export (Markdown and JSON) and import (JSON,
  * merged by id), so they can be backed up or moved to another browser.
  */
-export function NotesList({ initial = "all" }: { initial?: Kind }) {
+export function NotesList({
+  initial = "all",
+  refs,
+}: {
+  initial?: Kind;
+  /** Reference prefix ("Manifesto II") by document path (task 032 A). */
+  refs: Record<string, string>;
+}) {
   const [items, setItems] = useState<Annotation[] | null>(null);
   const [kind, setKind] = useState<Kind>(initial);
   const [color, setColor] = useState<Color | "all">("all");
@@ -138,7 +146,9 @@ export function NotesList({ initial = "all" }: { initial?: Kind }) {
                         {a.layer === "plain" && " · Plain English (our version)"}
                         {a.layer === "original" && " · Original"} ·{" "}
                         <a href={`${a.path}#${a.passage}`}>
-                          Go to passage {Number(a.passage.replace(/\D/g, ""))}
+                          {refs[a.path]
+                            ? formatRef(refs[a.path] ?? "", a.passage)
+                            : `Go to passage ${passageNumber(a.passage)}`}
                         </a>
                       </p>
                       {a.orphaned && (

@@ -18,6 +18,9 @@ export const MIGRATIONS: Readonly<Record<number, (text: string) => string>> = {
   // fields. Older files are valid as they are; only the stamp changes, so an older plm
   // refuses v2 files with a clear version error instead of a strict-schema failure.
   1: (text) => restamp(text, 2),
+  // v3 (task 032 A): work files gain the optional short_title used in passage
+  // references ("Manifesto II.17"). Older files are valid as they are.
+  2: (text) => restamp(text, 3),
 };
 
 /** Content YAML files under the given roots (directories are walked, files taken as-is). */

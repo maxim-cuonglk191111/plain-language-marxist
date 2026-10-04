@@ -25,6 +25,7 @@ pnpm plm import <url> --via wayback   # import a source; see config/sources.yml
 pnpm plm annotate <document-dir>      # mark vocabulary terms in the original text
 pnpm plm prompt <document-dir> --next 15        # Copy-for-LLM prompt
 pnpm plm apply <document-dir> <file> --ai|--human  # check and write renderings
+pnpm plm review <document-dir>                    # all checks over existing Plain English (hard words, long sentences)
 ```
 
 **Layout:** library packages in `packages/*` export their TypeScript source directly (`"exports": "./src/index.ts"`). Tests live next to the code as `*.test.ts`.

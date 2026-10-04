@@ -190,6 +190,7 @@ For each passage, compare the rendering with the original and ask:
 - Is the claim exactly as strong as in the original?
 - Is there anything here that the original does not say?
 - Is it roughly the original's length?
+- Would a reader with intermediate English (B1–B2) need a dictionary anywhere? Run `pnpm plm review <document-dir>`: it flags words from [hard-words.yml](hard-words.yml) and sentences over 35 words. Add any new stumbling words to that list.
 
 ## 15. Term cards and explanations
 

@@ -1,0 +1,78 @@
+# Words and phrases that readers with intermediate English (about CEFR B1–B2)
+# would need a dictionary for, with plain replacements (STYLE §3, task 025).
+#
+# plm warns when Plain English uses one (plm apply, plm review), and the LLM
+# prompt tells the drafter to avoid them. Add an entry whenever a reviewer or
+# reader stumbles. Terms with a card (bourgeoisie, mode of production, ...)
+# never go here: they stay, and the card explains them.
+#
+# match: matched as whole words, ignoring case. use: what to write instead.
+
+# Old-fashioned words
+- { match: hitherto, use: up to now }
+- { match: thereby, use: in this way }
+- { match: whence, use: from where }
+- { match: thence, use: from there }
+- { match: wherein, use: in which }
+- { match: nay, use: "what is more, or in fact" }
+- { match: epoch, use: "era, period or time" }
+- { match: epochs, use: eras or times }
+- { match: manifold, use: many kinds of }
+- { match: sway, use: rule or power }
+- { match: piecemeal, use: piece by piece }
+
+# Rare or literary words
+- { match: spectre, use: ghost }
+- { match: exorcise, use: drive out }
+- { match: yoke, use: "rule (say who rules)" }
+- { match: absolutism, use: rule by all-powerful kings }
+- { match: idyllic, use: peaceful }
+- { match: appendage, use: attachment }
+- { match: pauper, use: very poor person }
+- { match: pauperism, use: extreme poverty }
+- { match: despotism, use: tyranny or harsh rule }
+- { match: cosmopolitan, use: worldwide or international }
+- { match: canalisation, use: turning rivers into canals }
+- { match: inkling, use: idea or suspicion }
+- { match: presentiment, use: feeling or suspicion }
+- { match: knack, use: skill }
+- { match: profaned, use: stripped of its holiness }
+- { match: nestle, use: make itself at home }
+- { match: superincumbent, use: lying on top }
+- { match: ecstasies, use: joys }
+- { match: chivalrous, use: knightly }
+- { match: philistine, use: narrow-minded }
+- { match: unconscionable, use: heartless }
+- { match: fetters, use: chains }
+- { match: shackles, use: chains }
+- { match: shackle, use: chain }
+- { match: vicissitudes, use: ups and downs }
+- { match: agglomerated, use: packed together }
+- { match: primeval, use: earliest }
+- { match: decried, use: accused or attacked }
+- { match: damning, use: serious or harmful }
+- { match: tendencies, use: aims or direction }
+- { match: dissolution, use: breaking up }
+- { match: ideologists, use: thinkers and writers }
+- { match: sentimentality, use: soft feelings }
+- { match: patriarchal, use: "family-style, ruled by the head of the family" }
+- { match: swamped, use: crushed or wiped out }
+- { match: fractions, use: parts }
+
+# Literary set phrases
+- { match: under the yoke of, use: "under the rule of (say who rules)" }
+- { match: in the face of, use: faced with or against }
+- { match: in proportion as, use: "the more ..., the more ..., or as" }
+- { match: on pain of, use: under threat of }
+- { match: in one word, use: in short }
+- { match: lie in ambush, use: "hide, waiting to strike" }
+- { match: set upon, use: attacked }
+- { match: put in the shade, use: far greater than }
+- { match: in its own right, use: itself }
+- { match: fitting counterpart, use: went together with }
+- { match: at the disposal of, use: "that ... has" }
+- { match: compatible with, use: fit with }
+- { match: train of, use: "with all the ... that came with them" }
+- { match: social validity, use: meaning in society }
+- { match: in view of, use: because of }
+- { match: executive of the, use: government of the }

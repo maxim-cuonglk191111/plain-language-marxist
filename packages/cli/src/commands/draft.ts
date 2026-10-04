@@ -19,8 +19,17 @@ import {
   extractCoreRules,
   extractTemplate,
   parseExchange,
+  parseHardWords,
+  type HardWord,
 } from "@plm/checks";
+import { parse as parseYaml } from "yaml";
 import { RenderingFile, type TermFile } from "@plm/schema";
+
+/** docs/editorial/hard-words.yml, or no list if the repository has none. */
+export function loadHardWords(root: string): HardWord[] {
+  const file = join(root, "docs/editorial/hard-words.yml");
+  return existsSync(file) ? parseHardWords(parseYaml(readFileSync(file, "utf8"))) : [];
+}
 
 type Located = { repo: Repository; work: LoadedWork; doc: LoadedDocument };
 
@@ -86,6 +95,7 @@ export function runPrompt(documentDir: string, options: PromptOptions): string {
     coreRules: extractCoreRules(readFileSync(join(repo.root, "docs/editorial/STYLE.md"), "utf8")),
     work: `${workData.title} (${authors}, ${workData.year}${translation})`,
     terms: terms.filter((t) => present.has(t.term)),
+    hardWords: loadHardWords(repo.root),
     passages: selected,
   });
 }
@@ -126,6 +136,7 @@ export function runApply(documentDir: string, input: string, options: ApplyOptio
     passages: source.passages,
     vocabulary,
     termWords: termWords([...vocabulary.values()]),
+    hardWords: loadHardWords(repo.root),
   });
   for (const f of findings)
     log(`${f.level.padEnd(7)} ${f.covers.join(" ").padEnd(14)} ${f.message}  [${f.code}]`);
@@ -162,4 +173,42 @@ export function runApply(documentDir: string, input: string, options: ApplyOptio
   for (const i of issues)
     log(`validate ${i.severity}: ${i.file}${i.line ? `:${i.line}` : ""} ${i.message}`);
   return issues.some((i) => i.severity === "error") ? 1 : 0;
+}
+
+export type ReviewOptions = {
+  root: string;
+  language: string;
+  register: string;
+  log?: (line: string) => void;
+};
+
+/**
+ * plm review: runs every rendering check (including hard words and sentence
+ * length) over a document's existing Plain English, for a review pass. Reports
+ * only; never writes. Returns the number of passages with findings.
+ */
+export function runReview(documentDir: string, options: ReviewOptions): number {
+  const log = options.log ?? console.log;
+  const { repo, doc } = locate(options.root, documentDir);
+  const source = doc.source?.data;
+  if (!source) throw new Error(`no source.yml at ${documentDir}`);
+  const name = renderingFileName(options.language, options.register).slice(0, -4);
+  const rendering = doc.renderings.get(name)?.data;
+  if (!rendering) throw new Error(`no ${name}.yml at ${documentDir}`);
+  const vocabulary = new Map([...repo.terms].map(([slug, t]) => [slug, t.data]));
+  const entries = Object.values(rendering.renderings).map((r) => ({
+    covers: r.covers,
+    text: r.text,
+  }));
+  const findings = checkRenderings(entries, {
+    passages: source.passages,
+    vocabulary,
+    termWords: termWords([...vocabulary.values()]),
+    hardWords: loadHardWords(repo.root),
+  });
+  for (const f of findings)
+    log(`${f.level.padEnd(7)} ${f.covers.join(" ").padEnd(14)} ${f.message}  [${f.code}]`);
+  const passages = new Set(findings.map((f) => f.covers[0]));
+  log(`\n${findings.length} finding(s) in ${passages.size} of ${entries.length} rendering(s).`);
+  return passages.size;
 }

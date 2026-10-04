@@ -9,6 +9,7 @@ Placeholders:
 | `{{CORE_RULES}}` | The block between `<!-- core-rules:start -->` and `<!-- core-rules:end -->` in [STYLE.md](STYLE.md), copied verbatim. Never retype it |
 | `{{WORK}}` | Work title, authors, year, translation |
 | `{{TERMS}}` | The work's term table: token, forms, current default wording |
+| `{{AVOID}}` | [hard-words.yml](hard-words.yml): words and phrases too hard for readers learning English, with plain replacements |
 | `{{PASSAGES}}` | The selected passages in the exchange format, original text only |
 
 Everything between the two `---8<---` lines is the prompt.
@@ -17,7 +18,7 @@ Everything between the two `---8<---` lines is the prompt.
 
 You are helping to write the Plain English layer of an open-source reading edition of {{WORK}}.
 
-Readers will see your text next to the original and can always check one against the other. Your task is to rewrite each passage below in plain, modern English that a general adult reader can follow. Many of these readers are not native English speakers.
+Readers will see your text next to the original and can always check one against the other. Your task is to rewrite each passage below in plain, modern English that a general adult reader can follow. Many of these readers are not native English speakers. Write for a reader with intermediate English (about CEFR B1–B2): if they would need a dictionary for a word or phrase, use a common one. Keep every image and claim; change only the words.
 
 RULES
 
@@ -35,6 +36,12 @@ Token syntax:
 - `{Term}` gives a capitalized form, for the start of a sentence.
 
 If no form fits the grammar, write plain words instead.
+
+WORDS AND PHRASES TO AVOID
+
+These are too hard for many readers. Use the plain wording instead, and avoid other literary or old-fashioned phrases like them.
+
+{{AVOID}}
 
 INPUT AND OUTPUT FORMAT
 

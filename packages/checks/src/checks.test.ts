@@ -3,6 +3,7 @@ import type { TermFile } from "@plm/schema";
 import { describe, expect, it } from "vitest";
 import { parseExchange, serializeExchange } from "./exchange.ts";
 import { buildPrompt, extractCoreRules, extractTemplate } from "./prompt.ts";
+import { findHardWords, parseHardWords } from "./hard-words.ts";
 import { checkRenderings, type SourcePassage } from "./rendering.ts";
 
 const bourgeoisie: TermFile = {
@@ -224,5 +225,38 @@ describe("prompt", () => {
     expect(prompt).toContain("=== p00017\nFrom the serfs of the Middle Ages");
     expect(prompt).not.toMatch(/\{\{[A-Z_]+\}\}/);
     expect(prompt).not.toContain("---8<---");
+  });
+});
+
+describe("hard words", () => {
+  const hardWords = [
+    { match: "yoke", use: "rule" },
+    { match: "in the face of", use: "faced with" },
+  ];
+  const withList = (text: string) => {
+    const parsed = parseExchange(text);
+    if (!parsed.ok) throw new Error(parsed.error.message);
+    return checkRenderings(parsed.entries, { ...ctx, hardWords });
+  };
+
+  it("warns on listed words and phrases, whole words only, ignoring case", () => {
+    const found = withList(
+      "=== p00019\nUnder the Yoke of the nobility, in the face of everything, the government of the modern state is only a committee for managing the common affairs of the whole {bourgeoisie}.",
+    ).filter((f) => f.code === "hard-word");
+    expect(found).toHaveLength(1);
+    expect(found[0]?.message).toContain('"yoke" (use rule)');
+    expect(found[0]?.message).toContain('"in the face of" (use faced with)');
+  });
+
+  it("does not match inside other words", () => {
+    expect(findHardWords("the yokes of oxen, a yoked team", hardWords)).toEqual([]);
+  });
+
+  it("reads the YAML list shape and rejects broken entries", () => {
+    expect(parseHardWords([{ match: " nay ", use: "what is more" }])).toEqual([
+      { match: "nay", use: "what is more" },
+    ]);
+    expect(() => parseHardWords([{ match: "", use: "x" }])).toThrow(/entry 1/);
+    expect(() => parseHardWords({})).toThrow(/list/);
   });
 });

@@ -2,6 +2,7 @@
 // the CLI (plm apply), the contributor editor and the community API, so it
 // must stay runtime-agnostic: no Node APIs.
 import { collectNodes, parseLayout, toPlainText, type TermFile } from "@plm/schema";
+import { findHardWords, type HardWord } from "./hard-words.ts";
 import { checkTokens, formFor, parseTokens, type Vocabulary } from "@plm/terms";
 import type { ExchangeEntry } from "./exchange.ts";
 
@@ -94,6 +95,8 @@ export type CheckContext = {
   vocabulary: Vocabulary;
   /** Surface words that count as terms for the inline-gloss check. */
   termWords?: readonly string[];
+  /** Words and phrases too hard for readers learning English (docs/editorial/hard-words.yml). */
+  hardWords?: readonly HardWord[];
 };
 
 /** Errors block the write; warnings are shown to the contributor and reviewers. */
@@ -220,6 +223,15 @@ export function checkRenderings(entries: readonly ExchangeEntry[], ctx: CheckCon
         "long-sentence",
         covers,
         `a sentence has ${longest} words; split sentences over ${MAX_SENTENCE_WORDS} words, keeping every clause (task 025)`,
+      );
+    }
+    const hard = findHardWords(rendered, ctx.hardWords ?? []);
+    if (hard.length) {
+      add(
+        "warning",
+        "hard-word",
+        covers,
+        `not plain enough for readers learning English: ${hard.map((w) => `"${w.match}" (use ${w.use})`).join(", ")}`,
       );
     }
     if (original.includes("?") && !rendered.includes("?"))

@@ -2,7 +2,7 @@ import { appendFileSync, readFileSync, writeFileSync } from "node:fs";
 import { Command } from "commander";
 import { runAnnotate } from "./commands/annotate.ts";
 import { runBuild } from "./commands/build.ts";
-import { runApply, runPrompt } from "./commands/draft.ts";
+import { runApply, runPrompt, runReview } from "./commands/draft.ts";
 import { driftReport, runDiffSource } from "./commands/drift.ts";
 import { runImport } from "./commands/import.ts";
 import { checkLinks, linksReport } from "./commands/links.ts";
@@ -127,6 +127,19 @@ export function buildProgram(): Command {
         });
       },
     );
+
+  program
+    .command("review")
+    .description(
+      "Run every rendering check (hard words, sentence length, ...) over a document's existing Plain English",
+    )
+    .argument("<document-dir>", "e.g. content/works/marx/1848/communist-manifesto/ch01")
+    .option("--language <code>", "rendering language", "en")
+    .option("--register <name>", "rendering register", "plain")
+    .option("--root <dir>", "repository root", ".")
+    .action((documentDir: string, opts: { language: string; register: string; root: string }) => {
+      runReview(documentDir, opts);
+    });
 
   program
     .command("build")

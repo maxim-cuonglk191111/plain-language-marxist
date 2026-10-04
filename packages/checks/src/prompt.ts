@@ -1,4 +1,5 @@
 import type { TermFile } from "@plm/schema";
+import { hardWordTable, type HardWord } from "./hard-words.ts";
 import { serializeExchange } from "./exchange.ts";
 
 /** The block between <!-- core-rules:start --> and <!-- core-rules:end --> in STYLE.md, verbatim. */
@@ -41,12 +42,14 @@ export function buildPrompt(input: {
   coreRules: string;
   work: string;
   terms: readonly TermFile[];
+  hardWords?: readonly HardWord[];
   passages: readonly { id: string; text: string }[];
 }): string {
   return input.template
     .replace("{{WORK}}", input.work)
     .replace("{{CORE_RULES}}", input.coreRules)
     .replace("{{TERMS}}", termTable(input.terms))
+    .replace("{{AVOID}}", hardWordTable(input.hardWords ?? []))
     .replace(
       "{{PASSAGES}}",
       serializeExchange(input.passages.map((p) => ({ covers: [p.id], text: p.text }))).trim(),

@@ -2,3 +2,4 @@
 export * from "./exchange.ts";
 export * from "./prompt.ts";
 export * from "./rendering.ts";
+export * from "./hard-words.ts";

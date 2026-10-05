@@ -7,6 +7,7 @@ import {
   DataSearch,
   DataTerm,
   SCHEMA_VERSION,
+  splitPassageRef,
   type TermFile,
 } from "@plm/schema";
 import { renderTokens, usageCounts } from "@plm/terms";
@@ -59,6 +60,13 @@ export function buildData(options: BuildOptions): BuildResult {
   const documentPaths = new Map<string, { path: string; title: string }>();
   let passageCount = 0;
   let renderingCount = 0;
+  /** Reader path of every published document, for cross-reference targets (task 032 D). */
+  const publishedPaths = new Map<string, string>();
+  for (const work of published) {
+    for (const d of work.documents.values()) {
+      if (d.source) publishedPaths.set(d.source.data.document, publicPath(d.source.data.source.url));
+    }
+  }
 
   for (const work of published) {
     const w = work.work.data;
@@ -85,6 +93,23 @@ export function buildData(options: BuildOptions): BuildResult {
       const active = source.passages.filter((p) => p.state === "active");
       const hashes = new Map(source.passages.map((p) => [p.id, p.hash]));
       const annotations = doc.originalTerms?.data.annotations ?? [];
+
+      // Links to unpublished (blocked) works are left out; validate warns about them.
+      const crossrefs: NonNullable<DataDocument["crossrefs"]> = (
+        doc.crossrefs?.data.crossrefs ?? []
+      ).flatMap((c) => {
+        const target = splitPassageRef(c.to);
+        const path = publishedPaths.get(target.document);
+        if (!path) return [];
+        return [
+          {
+            from: c.from,
+            to: { ...target, path },
+            kind: c.kind,
+            ...(c.note ? { note: c.note } : {}),
+          },
+        ];
+      });
 
       const renderings: DataDocument["renderings"] = {};
       const covered: Record<string, number> = {};
@@ -138,6 +163,7 @@ export function buildData(options: BuildOptions): BuildResult {
           sources: (e.sources ?? []) as Record<string, string | number>[],
           ai_assisted: e.ai_assisted,
         })),
+        ...(crossrefs.length ? { crossrefs } : {}),
       };
       documentPaths.set(source.document, { path: document.path, title: source.title });
       const d = search.documents.push({ path: document.path, title: source.title, work: w.title }) - 1;

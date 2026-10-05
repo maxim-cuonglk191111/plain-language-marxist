@@ -168,6 +168,42 @@ const CASES: Case[] = [
     (d) => (d[PATHS.explanations].explanations.e001.text = '<a href="/vocabulary/capital/">c</a>'),
     "error link/unknown-term",
   ],
+  // cross-references (task 032 D)
+  [
+    "cross-reference from an unknown passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].from = "p00099"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference from a tombstoned passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].from = "p00004"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference to an unknown passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch01#p00099"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference to an unknown document",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch09#p00001"),
+    "error crossref/unknown-document",
+  ],
+  [
+    "cross-reference to itself",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch01#p00002"),
+    "error schema/invalid",
+  ],
+  [
+    "cross-reference with an unknown kind",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].kind = "refutes"),
+    "error schema/invalid",
+  ],
+  [
+    "cross-reference file for another document",
+    (d) => (d[PATHS.crossrefs].document = "document:marx:1848:communist-manifesto:ch02"),
+    "error document/id-mismatch",
+  ],
   // vocabulary and collections
   [
     "scoped default for unknown work",

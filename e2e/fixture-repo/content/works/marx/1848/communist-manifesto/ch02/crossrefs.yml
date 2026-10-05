@@ -1,0 +1,6 @@
+schema_version: 4
+document: document:marx:1848:communist-manifesto:ch02
+crossrefs:
+  - from: p00065
+    to: document:marx:1848:communist-manifesto:ch01#p00009
+    kind: same-argument

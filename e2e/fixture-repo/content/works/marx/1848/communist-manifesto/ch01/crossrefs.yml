@@ -1,0 +1,14 @@
+schema_version: 4
+document: document:marx:1848:communist-manifesto:ch01
+crossrefs:
+  - from: p00009
+    to: document:marx:1848:communist-manifesto:ch01#p00063
+    kind: explains
+    note: Engels' footnote to the 1888 English edition.
+  - from: p00009
+    to: document:marx:1848:communist-manifesto:ch02#p00065
+    kind: same-argument
+  - from: p00010
+    to: document:marx:1848:communist-manifesto:ch01#p00064
+    kind: explains
+    note: Engels' footnote on "guild-master".

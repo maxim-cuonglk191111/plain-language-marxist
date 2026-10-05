@@ -1,0 +1,10 @@
+schema_version: 4
+document: document:marx:1848:communist-manifesto:ch01
+crossrefs:
+  - from: p00002
+    to: document:marx:1848:communist-manifesto:ch01#p00005
+    kind: explains
+    note: Engels' footnote to the 1888 English edition.
+  - from: p00002
+    to: document:marx:1848:communist-manifesto:ch02#p00040
+    kind: same-argument

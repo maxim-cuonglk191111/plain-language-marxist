@@ -113,6 +113,19 @@ export function fixtureData() {
         },
       },
     },
+    [`${DOC_DIR}/crossrefs.yml`]: {
+      schema_version: 4,
+      document: "document:marx:1848:communist-manifesto:ch01",
+      crossrefs: [
+        {
+          from: "p00002",
+          to: "document:marx:1848:communist-manifesto:ch01#p00006",
+          kind: "explains",
+          note: "Engels' footnote to the 1888 English edition.",
+        },
+        { from: "p00005", to: "document:marx:1848:communist-manifesto:ch01#p00002", kind: "same-argument" },
+      ],
+    },
     "content/vocabulary/bourgeoisie.yml": {
       schema_version: 4,
       term: "bourgeoisie",
@@ -144,6 +157,7 @@ export const PATHS = {
   rendering: `${DOC_DIR}/en-plain.yml`,
   terms: `${DOC_DIR}/original-terms.yml`,
   explanations: `${DOC_DIR}/explanations.yml`,
+  crossrefs: `${DOC_DIR}/crossrefs.yml`,
   term: "content/vocabulary/bourgeoisie.yml",
   collection: "content/collections/foundations.yml",
   docDir: DOC_DIR,

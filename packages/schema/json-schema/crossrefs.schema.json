@@ -1,0 +1,58 @@
+{
+  "title": "PLM crossrefs file",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "number",
+      "const": 4
+    },
+    "document": {
+      "type": "string",
+      "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+$"
+    },
+    "crossrefs": {
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "from": {
+            "type": "string",
+            "pattern": "^p\\d{5}$"
+          },
+          "to": {
+            "type": "string",
+            "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+#p\\d{5}$"
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "revises",
+              "explains",
+              "same-argument",
+              "quotes"
+            ]
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          }
+        },
+        "required": [
+          "from",
+          "to",
+          "kind"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "document",
+    "crossrefs"
+  ],
+  "additionalProperties": false
+}

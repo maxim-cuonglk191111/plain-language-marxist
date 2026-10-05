@@ -101,6 +101,14 @@ A → B → E (M1), then C and D with M3 content. Separate PRs. Each updates "Do
 
 ## Done
 
+### Part D — Cross-references: "See also" (2026-10-05)
+- **Schema v4:** a new, optional `crossrefs.yml` in a document's folder: `{ from: p00009, to: <document id>#p00063, kind: explains | revises | quotes | same-argument, note? }`. `kind` says what the linked passage does for this one. `plm migrate` step 3→4 restamps every content file (the new file needs nothing else); the JSON Schemas are regenerated, with a new `crossrefs.schema.json`.
+- **Validation:** the schema rejects unknown kinds, malformed targets, a passage linking to itself and the same link listed twice; `plm validate` checks that both ends are active passages of documents that exist (`crossref/unknown-passage`, `crossref/unknown-document`) and warns when the target's work is blocked (the link is then left out of the build).
+- **Data contract:** documents gain an optional `crossrefs` list (`from`, `to: { document, passage, path }`, `kind`, `note?`), only when a document has any, so v1 stays backward-compatible and existing files are byte-identical.
+- **Editorial rule** (STYLE "Cross-references"): a cross-reference states a checkable connection, never an interpretation; anything interpretive goes in Context (SDD §8.6).
+- **Reader:** a "See also" line at the end of the passage's Context cell: "See also: Manifesto I.63 explains this (Engels' footnote to the 1888 English edition); Manifesto II.65 makes the same argument." Links within the chapter go to `#p00063`, others to the other chapter. It lives in the Context cell, so it shows and hides with the Context layer; a row with no explanations but with cross-references gets a Context cell instead of the empty one. Server-rendered, so it works without JavaScript.
+- **Content:** none in `content/` yet (real cross-references need more works, M3). The e2e fixture links I.9 and I.10 to Engels' footnotes, and I.9 and II.65 to each other; `e2e/cross-references.spec.ts` covers the line with and without JS, with the Context layer on and off, the empty-cell case, and axe.
+
 ### Part E — Quote cards (2026-10-05)
 - "Quote card" in the passage actions (the passage's words; a choice of layer when both have text) and in the selected-words toolbar (that layer only). A dialog shows the card, with Style (Light / Sepia / Dark, starting from the reader's theme), **Download image** (`manifesto-I-13.png`) and **Share** (Web Share with the file, only where `navigator.canShare({ files })` says yes).
 - **Drawn in the browser** on a 1080 × 1080 canvas (`lib/quotecard.ts`): a label ("ORIGINAL TEXT" / "PLAIN ENGLISH VERSION"), the reference, the quote in the layer's face (book serif for the Original), the source and the site's address. The quote takes the largest size that fits (64 down to 30 px). If it still does not fit, it is cut at a word with "…" and the alt text says "(shortened on the card)". Layout is pure and unit-tested.

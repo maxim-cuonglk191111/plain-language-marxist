@@ -104,6 +104,26 @@ export const DataDocument = z.strictObject({
       ai_assisted: z.boolean(),
     }),
   ),
+  /**
+   * Added in v1 for task 032 D (optional, so older readers are unaffected):
+   * "See also" links from this document's passages to published passages.
+   * `kind` says what the target does in relation to `from`.
+   */
+  crossrefs: z
+    .array(
+      z.strictObject({
+        from: z.string(),
+        to: z.strictObject({
+          document: z.string(),
+          passage: z.string(),
+          /** Public reader path of the target document. */
+          path: z.string(),
+        }),
+        kind: z.enum(["revises", "explains", "same-argument", "quotes"]),
+        note: z.string().optional(),
+      }),
+    )
+    .optional(),
 });
 export type DataDocument = z.infer<typeof DataDocument>;
 

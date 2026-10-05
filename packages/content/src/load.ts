@@ -2,6 +2,7 @@ import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import {
   CollectionsEntry,
+  CrossRefsFile,
   ExplanationsFile,
   GovernanceFile,
   OriginalTermsFile,
@@ -14,6 +15,7 @@ import type { z } from "zod";
 import type { Issue } from "./issues.ts";
 import {
   COLLECTIONS_DIR,
+  CROSSREFS_FILE,
   EXPLANATIONS_FILE,
   GOVERNANCE_FILE,
   ORIGINAL_TERMS_FILE,
@@ -41,6 +43,8 @@ export type LoadedDocument = {
   renderings: Map<string, Loaded<RenderingFile>>;
   originalTerms?: Loaded<OriginalTermsFile>;
   explanations?: Loaded<ExplanationsFile>;
+  /** "See also" links from this document's passages (task 032 D). */
+  crossrefs?: Loaded<CrossRefsFile>;
 };
 
 export type LoadedWork = {
@@ -132,6 +136,9 @@ export function loadRepository(root: string): Repository {
       } else if (name === EXPLANATIONS_FILE) {
         const loaded = load(file, ExplanationsFile);
         if (loaded) doc.explanations = loaded;
+      } else if (name === CROSSREFS_FILE) {
+        const loaded = load(file, CrossRefsFile);
+        if (loaded) doc.crossrefs = loaded;
       } else if (RENDERING_FILE.test(name)) {
         const loaded = load(file, RenderingFile);
         if (loaded) doc.renderings.set(name.slice(0, -".yml".length), loaded);

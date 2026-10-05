@@ -533,6 +533,17 @@ a.term:hover {
   display: block;
   padding: 0.15rem 0;
 }
+.term-card-reset {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.85rem;
+}
+.term-card-privacy {
+  font-size: 0.78rem;
+  margin-top: 0.6rem;
+  line-height: 1.4;
+  color: var(--muted);
+}
 .term-card-close {
   position: absolute;
   top: 0.4rem;

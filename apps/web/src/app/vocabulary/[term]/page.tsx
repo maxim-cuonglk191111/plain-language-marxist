@@ -64,13 +64,13 @@ export default async function TermPage(props: Props) {
       <h2>Renderings in plain English</h2>
       <p className="muted">
         Usage counts show how often each rendering appears by default in published text. They
-        describe community usage, not correctness.
+        describe in-text occurrences across published works, not correctness.
       </p>
       {term.renderings.map((r) => (
         <section key={r.key} className="rendering-option">
           <h3>
             {r.forms["sg"] ?? r.key}
-            {r.key === term.default ? <span className="badge"> project default</span> : null}
+            {r.key === term.default ? <span className="badge"> default</span> : null}
           </h3>
           <p>
             <strong>Why:</strong> {r.reason}
@@ -81,7 +81,7 @@ export default async function TermPage(props: Props) {
             </p>
           )}
           <p className="muted">
-            {r.usage} {r.usage === 1 ? "use" : "uses"} · forms:{" "}
+            appears {r.usage} {r.usage === 1 ? "time" : "times"} in texts · forms:{" "}
             {Object.entries(r.forms)
               .map(([f, w]) => `${w} (${f})`)
               .join(", ")}

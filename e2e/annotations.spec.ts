@@ -145,8 +145,8 @@ test("a text highlight can be made, recoloured and deleted, and survives reload"
 
   await page.reload();
   await expect.poll(() => size("hl-pink")).toBe(1);
-  // Switching to "Original terms" changes the wording, not the highlight.
-  await page.getByRole("button", { name: "Original terms" }).click();
+  // Switching to "Original (1848)" changes the wording, not the highlight.
+  await page.getByRole("button", { name: "Original (1848)" }).click();
   await expect.poll(() => size("hl-pink")).toBe(1);
 
   // Click on it to edit (after a reload the page is at the top: scroll to it first).

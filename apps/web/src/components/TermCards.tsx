@@ -248,10 +248,27 @@ export function TermCards({
     };
   }, [stack.length, closeFrom]);
 
+  // Listen for global reset of terminology choices from Settings.
+  useEffect(() => {
+    const onReset = () => {
+      const p = loadPreferences();
+      setPrefs(p);
+      apply(p);
+    };
+    window.addEventListener("plm:terms-reset", onReset);
+    return () => window.removeEventListener("plm:terms-reset", onReset);
+  }, [apply]);
+
   const top = stack.at(-1);
   const choiceFor = (t: DataTerm): TermChoice => {
     const file = files.get(t.term);
     return file ? resolveChoice(file, resolveContext(prefs)) : t.default;
+  };
+
+  const isOverridden = (slug: string) => prefs.perTerm[slug] !== undefined;
+  const resetTerm = (slug: string) => {
+    const next = Object.fromEntries(Object.entries(prefs.perTerm).filter(([k]) => k !== slug));
+    update({ ...prefs, perTerm: next });
   };
 
   return (
@@ -263,14 +280,14 @@ export function TermCards({
           aria-pressed={!prefs.all}
           onClick={() => update({ perTerm: prefs.perTerm })}
         >
-          Project wording
+          Default (Plain)
         </button>
         <button
           type="button"
           aria-pressed={prefs.all === "original"}
           onClick={() => update({ ...prefs, all: "original" })}
         >
-          Original terms
+          Original (1848)
         </button>
       </div>
 
@@ -309,6 +326,8 @@ export function TermCards({
               inPlain={card.inPlain}
               full={stack.length >= MAX_CARDS}
               appears={counts[card.term.term]}
+              isOverridden={isOverridden(card.term.term)}
+              onReset={() => resetTerm(card.term.term)}
               onChoose={(choice) =>
                 update({ ...prefs, perTerm: { ...prefs.perTerm, [card.term.term]: choice } })
               }
@@ -337,6 +356,8 @@ function TermCardBody({
   inPlain,
   full,
   appears,
+  isOverridden,
+  onReset,
   onChoose,
 }: {
   term: DataTerm;
@@ -344,6 +365,8 @@ function TermCardBody({
   inPlain: boolean;
   full: boolean;
   appears: number | undefined;
+  isOverridden: boolean;
+  onReset: () => void;
   onChoose: (choice: TermChoice) => void;
 }) {
   const shown = term.renderings.find((r) => r.key === choice);
@@ -372,7 +395,7 @@ function TermCardBody({
       )}
       {choosable && (
         <fieldset className="term-card-choices">
-          <legend className="term-card-label">Alternatives (community usage)</legend>
+          <legend className="term-card-label">Alternative wordings (in-text occurrences)</legend>
           {term.renderings.map((r) => (
             <label key={r.key}>
               <input
@@ -382,15 +405,24 @@ function TermCardBody({
                 onChange={() => onChoose(r.key)}
               />
               {r.forms["sg"] ?? r.key}
-              {r.key === term.default ? " (project default)" : ""}
+              {r.key === term.default ? " (default)" : ""}
               <span className="muted">
                 {" "}
-                · {r.usage} {r.usage === 1 ? "use" : "uses"}
+                · {r.usage === 1 ? "appears 1 time in texts" : `appears ${r.usage} times in texts`}
               </span>
             </label>
           ))}
+          {isOverridden && (
+            <button type="button" className="link-button term-card-reset" onClick={onReset}>
+              Reset term to default
+            </button>
+          )}
         </fieldset>
       )}
+      <p className="term-card-privacy muted">
+        Choices are saved locally in your browser. No reading choices or votes are sent to any
+        server.
+      </p>
       <p className="term-card-more">
         <a href={`/vocabulary/${term.term}/`}>More about this term</a>
         {appears ? (

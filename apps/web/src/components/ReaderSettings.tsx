@@ -244,6 +244,20 @@ export function ReaderSettings() {
             <button type="button" className="link-button" onClick={() => save(DEFAULT_PREFS)}>
               Reset to defaults
             </button>
+            <button
+              type="button"
+              className="link-button"
+              onClick={() => {
+                try {
+                  localStorage.removeItem("plm:terms");
+                  window.dispatchEvent(new Event("plm:terms-reset"));
+                } catch {
+                  // Storage unavailable
+                }
+              }}
+            >
+              Reset all terminology choices
+            </button>
             <span className="muted">Saved in this browser only.</span>
           </p>
         </div>

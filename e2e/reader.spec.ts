@@ -65,7 +65,7 @@ test("term cards open from both layers", async ({ page }) => {
   const card = page.getByRole("dialog");
   await expect(card).toContainText("bourgeoisie");
   await expect(card).toContainText("Why this wording?");
-  await expect(card).toContainText("community usage", { ignoreCase: true });
+  await expect(card).toContainText("occurrences", { ignoreCase: true });
   await page.keyboard.press("Escape");
   await expect(card).toBeHidden();
 
@@ -74,13 +74,13 @@ test("term cards open from both layers", async ({ page }) => {
   await expect(page.getByRole("dialog")).toContainText("bourgeoisie");
 });
 
-test("'Original terms' swaps the Plain English wording only", async ({ page }) => {
+test("'Original (1848)' swaps the Plain English wording only", async ({ page }) => {
   await page.goto(`${DOC}?view=parallel#p00013`);
   const plain = page.locator("#p00013 .layer-plain");
   const original = page.locator("#p00013 .layer-original");
   const originalBefore = await original.innerText();
   await expect(plain).toContainText("capitalist class");
-  await page.getByRole("button", { name: "Original terms" }).click();
+  await page.getByRole("button", { name: "Original (1848)" }).click();
   await expect(plain).toContainText("bourgeoisie");
   await expect(plain).not.toContainText("capitalist class");
   expect(await original.innerText()).toBe(originalBefore);
@@ -103,7 +103,7 @@ test("kept terms in Plain English open cards and keep their wording", async ({ p
   const serf = page.locator('#p00010 .layer-plain a.term[data-term="serf"]');
   await expect(serf).toHaveText("serf");
   await expect(serf).toHaveAttribute("data-kept", "1");
-  await page.getByRole("button", { name: "Original terms" }).click();
+  await page.getByRole("button", { name: "Original (1848)" }).click();
   await expect(serf).toHaveText("serf");
   await serf.click();
   await expect(page.getByRole("dialog")).toContainText("bound to a lord");
@@ -135,6 +135,29 @@ test("vocabulary and search pages work", async ({ page }) => {
   await expect(page.locator(".term-example a")).toHaveAttribute("href", /ch01\.htm#p\d{5}$/);
   await page.goto("/search/?q=guild-master");
   await expect(page.locator(".search-results .layer-tag").first()).toBeVisible();
+});
+
+test("term preferences can be overridden individually and reset to default", async ({ page }) => {
+  await page.goto(`${DOC}?view=plain#p00013`);
+  const plain = page.locator("#p00013 .layer-plain");
+  await expect(plain).toContainText("capitalist class");
+
+  // Open card
+  await plain.locator("a.term:not([data-kept])").first().click();
+  const card = page.getByRole("dialog");
+  await expect(card).toContainText("Alternative wordings (in-text occurrences)");
+  await expect(card).toContainText("Choices are saved locally in your browser");
+
+  // Select alternative 'bourgeoisie'
+  await card.getByLabel(/^bourgeoisie/).check();
+  await expect(plain).toContainText("bourgeoisie");
+
+  // 'Reset term to default' appears and resets it
+  const resetBtn = card.getByRole("button", { name: "Reset term to default" });
+  await expect(resetBtn).toBeVisible();
+  await resetBtn.click();
+  await expect(plain).toContainText("capitalist class");
+  await expect(resetBtn).toBeHidden();
 });
 
 test.describe("without JavaScript", () => {

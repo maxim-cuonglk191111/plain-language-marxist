@@ -42,6 +42,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Original
             texts as credited on each page. Code: AGPL-3.0.
           </p>
+          <nav aria-label="About the project" className="footer-links">
+            <a href="/about/">About</a>
+            <a href="/faq/">FAQ</a>
+          </nav>
         </footer>
       </body>
     </html>

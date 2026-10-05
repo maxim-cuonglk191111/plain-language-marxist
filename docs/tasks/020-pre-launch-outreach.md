@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | In progress |
 | **Filed** | 2026-10-03 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -32,3 +32,16 @@ Prepare the community before the public launch. How the project is received will
 ## Acceptance
 - The FAQ is published and at least 3 reviewers are listed.
 - Feedback from the soft launch has been triaged into tasks.
+
+## Progress
+
+### 2026-10-05
+- **MIA volunteers contacted.** The maintainer reports that MIA volunteers were told about the project and approved it. The site says only that they "had no objection", and keeps "not affiliated with MIA" (SDD §10.1).
+- **Editorial principles and FAQ published on the site** as a draft for the maintainer's review:
+  - `/about/` (`apps/web/src/app/about/page.tsx`): the three layers, "only the wording changes", the Original one click away, terms and their alternative wordings, AI use, who checks the text, sources and rights, privacy, and links to STYLE.md, GOVERNANCE.md and LICENSING.md on GitHub.
+  - `/faq/` (`apps/web/src/app/faq/page.tsx`): the five expected objections from the scope above, plus neutrality and Context, the MIA relationship, citing passages, reporting mistakes and how to help.
+  - Both are static (they work without JavaScript) and linked from the site footer; the header nav is unchanged. `e2e/about.spec.ts` checks rendering with and without JavaScript, the footer links and axe (light and dark).
+- **Still needs the maintainer:**
+  - recruit at least 3 reviewers and add them to `governance.yml` (then turn off `bootstrap_mode`, GOVERNANCE.md);
+  - review and approve the wording of `/about/` and `/faq/`;
+  - soft launch to a small audience, and triage the feedback into tasks.

@@ -657,6 +657,28 @@ a.term:hover {
 .prose-page h1 {
   font-family: var(--serif);
 }
+/* About and FAQ (task 020): headings are link targets, so leave room above them. */
+.about-page h2,
+.faq-page h2 {
+  margin-top: 2rem;
+  scroll-margin-top: 1rem;
+}
+.about-layers dt {
+  font-weight: 600;
+  margin-top: 0.75rem;
+}
+.about-layers dd {
+  margin: 0.25rem 0 0;
+}
+.faq-toc li {
+  margin-block: 0.35rem;
+}
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
 .vocabulary-list dt {
   font-weight: 600;
   margin-top: 0.75rem;

@@ -8,6 +8,9 @@
 // 3. RSC payloads (*.txt, __next.*) are dropped: they serve only next/link client
 //    navigation, and the reader uses plain links with full page loads.
 // 4. The static data contract is copied to /data/v1/, the public read API.
+// 5. The placeholder page /paths/_none, built only when there are no reading
+//    paths (NO_PATHS in src/lib/paths.ts; a static export cannot leave a
+//    dynamic route empty), is deleted.
 import { cpSync, existsSync, mkdirSync, readdirSync, renameSync, rmSync, statSync } from "node:fs";
 import { dirname, join, relative, sep } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -27,10 +30,14 @@ const walk = (dir) => {
 };
 walk(out);
 
+const PLACEHOLDER = join("paths", "_none");
+
 let dropped = 0;
 for (const file of files) {
   const name = file.split(sep).pop();
-  if (name.endsWith(".txt") || name.startsWith("__next.")) {
+  if (relative(out, file).startsWith(PLACEHOLDER)) {
+    rmSync(file, { force: true });
+  } else if (name.endsWith(".txt") || name.startsWith("__next.")) {
     rmSync(file, { force: true });
     dropped++;
   }

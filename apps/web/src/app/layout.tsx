@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { ReaderSettings } from "../components/ReaderSettings";
 import { Shortcuts } from "../components/Shortcuts";
 import { siteUrl } from "../lib/data";
+import { readingPaths } from "../lib/paths";
 import { BOOT_SCRIPT } from "../lib/prefs";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             Plain Language Marxist
           </a>
           <nav aria-label="Site">
+            {readingPaths().length > 0 && <a href="/paths/">Paths</a>}
             <a href="/vocabulary/">Vocabulary</a>
             <a href="/search/">Search</a>
             <a href="/notes/">Notes</a>

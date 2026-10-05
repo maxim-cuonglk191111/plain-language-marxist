@@ -7,6 +7,6 @@ pnpm e2e        # builds the fixture site, serves it on 127.0.0.1:4174, runs the
 PLM_E2E_PORT=4190 pnpm e2e   # another port, so two checkouts (worktrees) can run at once
 ```
 
-- `fixture-repo/`: a frozen content repository holding the real *Manifesto* Ch. I source and vocabulary, the Ch. II–IV sources (no renderings, for chapter navigation), plus a few sample renderings (with term tokens) and an explanation, so the tests do not depend on how far task 012 has got. Validate it with `pnpm plm validate e2e/fixture-repo`.
+- `fixture-repo/`: a frozen content repository holding the real *Manifesto* Ch. I source and vocabulary, the Ch. II–IV sources (no renderings, for chapter navigation), plus a few sample renderings (with term tokens), an explanation and two test reading paths (task 032 C), so the tests do not depend on how far task 012 has got. Validate it with `pnpm plm validate e2e/fixture-repo`.
 - `build.mjs`: runs `plm build` on the fixture, then the Next.js export with `PLM_DATA_DIR` pointing at the result.
 - `serve.mjs`: a dependency-free static server for `apps/web/out` that serves `.htm` as HTML, like a real static host.

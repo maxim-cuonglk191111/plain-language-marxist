@@ -1,9 +1,11 @@
 import { ContinueShelf } from "../components/WorkProgress";
 import { getIndex } from "../lib/data";
+import { readingPaths } from "../lib/paths";
 import { authorName, workPath } from "../lib/reading";
 
 export default function Home() {
   const index = getIndex();
+  const paths = readingPaths();
   // The first document with Plain English, so a new reader lands on something readable.
   const docs = index.works.flatMap((w) => w.documents);
   const start = docs.find((d) => (d.covered["en-plain"] ?? 0) > 0) ?? docs[0];
@@ -23,6 +25,22 @@ export default function Home() {
         </p>
       )}
       <ContinueShelf />
+      {paths.length > 0 && (
+        <section aria-labelledby="paths-title">
+          <h2 id="paths-title">Suggested reading paths</h2>
+          <ul>
+            {paths.map((p) => (
+              <li key={p.id}>
+                <a href={`/paths/${p.id}/`}>{p.title}</a>
+                {p.description && <span className="muted"> · {p.description}</span>}
+              </li>
+            ))}
+          </ul>
+          <p className="small">
+            <a href="/paths/">All reading paths</a>
+          </p>
+        </section>
+      )}
       <h2>Library</h2>
       <ul className="library">
         {index.works.map((work) => (

@@ -53,6 +53,20 @@ describe("chapterName", () => {
     expect(sections(d, name).map((s) => s.title)).toEqual(["1. Reactionary Socialism"]);
   });
 
+  it("without a chapter heading, is named by its numbered sections", () => {
+    const vpp = (headings: string[]) =>
+      chapterName(doc(headings.map((text) => ({ type: "heading", text }))), 2).name;
+    expect(vpp(["VI. Value and Labour", "VII. Labouring Power", "XI. The Different Parts"])).toBe(
+      "VI–XI. Value and Labour …",
+    );
+    expect(vpp(["Preliminary", "I. Production and Wages", "V. Wages and Prices"])).toBe(
+      "Preliminary; I–V. Production and Wages …",
+    );
+    expect(vpp(["XIV. The Struggle between Capital and Labour"])).toBe(
+      "XIV. The Struggle between Capital and Labour",
+    );
+  });
+
   it("falls back to the document title and its position", () => {
     expect(chapterName(doc([{ text: "A spectre is haunting Europe" }]), 2)).toEqual({
       name: "Communist Manifesto (Chapter 3)",

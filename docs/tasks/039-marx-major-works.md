@@ -48,3 +48,13 @@ Checked 2026-10-05 from MIA's own source notes and Gutenberg's catalogue. **The 
 - Each imported work has rights verified by the maintainer, and its source is the free edition.
 - A "Marx: where to start" reading path (task 032 C), with the rationale written out.
 - `pnpm check` and `pnpm e2e` pass.
+
+## Progress (2026-10-05)
+- **The maintainer verified** *Value, Price and Profit*, *Capital* Vol. I (1887), *The Eighteenth Brumaire* (De Leon's translation), the *Contribution* (Stone) and *Feuerbach* (Lewis).
+- ***Value, Price and Profit* imported** from MIA's three pages (ch01: Preliminary and §§I–V; ch02: §§VI–XI; ch03: §§XII–XIV).
+  - The three editors' notes signed "—Ed." (from the 1969 reprint) were dropped by the parser; nothing else was lost.
+  - Rights: PUBLIC_DOMAIN, verified by the maintainer. 242 vocabulary marks. Short title "Value".
+- **Reader:**
+  - Chapters without a "Chapter II." heading are now named by their numbered sections, e.g. "VI–XI. Value and Labour …", instead of the source page title, which is the same on every page.
+  - A chapter page's main heading is now the chapter name.
+- **Next:** *Capital* Vol. I (check the inserted 4th-edition passages), then the Project Gutenberg adapter for the Brumaire, the *Contribution* and *Feuerbach*.

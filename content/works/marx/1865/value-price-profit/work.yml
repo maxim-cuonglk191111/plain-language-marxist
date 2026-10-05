@@ -1,0 +1,13 @@
+schema_version: 4
+id: work:marx:1865:value-price-profit
+title: Value, Price and Profit
+short_title: Value
+authors: [marx]
+year: 1865
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: "Address to the General Council of the International Working Men's Association, June 1865, written by Marx in English (no translation). First published 1898, edited by Eleanor Marx Aveling. Marx d. 1883, Eleanor Marx d. 1898: public domain in the US, life+70, life+100 and Vietnam. MIA's page cites a 1969 International Publishers reprint; the three editors' notes signed '—Ed.' were dropped by the parser and are not part of this text. Verified by the maintainer (task 039)."
+  verified_by: maxim-cuonglk191111
+  verified_at: 2026-10-05
+documents: [ch01, ch02, ch03]

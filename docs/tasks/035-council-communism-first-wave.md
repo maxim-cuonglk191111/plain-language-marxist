@@ -84,3 +84,20 @@ This connects to task 033 (an original-language layer), which would show the Ger
 - For each first-wave work, `work.yml` records rights verified by the maintainer, and the source is the free edition.
 - The permission requests are sent, and their answers are recorded here.
 - A "Council communism" collection and at least one reading path (e.g. "From the Paris Commune to the workers' councils") are published, labelled as suggested, with a rationale.
+
+## Progress (2026-10-05): parse checks done, import waits for rights
+All four first-wave English originals on MIA parse cleanly via Wayback. Nothing was imported: `plm validate` treats `rights.status: UNVERIFIED` as an error (`rights/unverified`), so the maintainer verifies rights first.
+
+| Page | Passages | Not kept |
+|---|---|---|
+| De Leon, *Reform or Revolution* (1896) | 144 | navigation only (12 words) |
+| De Leon, *What Means This Strike?* (1898) | 163 | navigation only |
+| De Leon, *Socialist Reconstruction of Society* (1905) | 227 | navigation only |
+| *Civil War in France*, MIA ch03–ch06 | 31 / 13 / 51 / 56 blocks | later editors' notes (`sup.ednote`) and footer links; Marx's own notes are kept |
+
+- **The 1871 Address is MIA's ch03–ch06.** ch01–ch02 are the 1870 addresses on the Franco-Prussian war. Consider document names `address1`…`address4` instead of MIA's numbering.
+- **MIA typo:** the 1896 page has a closing quote (”) where an em dash belongs, about 55 times ("I shall assume”it is…"); the 1898 page has it once. The source stays faithful, so a translation note will explain it.
+- **Import commands:**
+  - De Leon: `--work deleon/<year>/<slug> --doc speech`, with slugs `reform-or-revolution`, `what-means-this-strike` and `socialist-reconstruction-of-society`.
+  - Marx: paths are derived automatically.
+- **Proposed `short_title`s** (to confirm): Reform, Strike, Reconstruction, Civil War.

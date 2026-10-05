@@ -157,7 +157,7 @@ function DocumentPage({
         <p className="work-title">
           <a href={home}>{entry.work.title}</a>
         </p>
-        <h1>{doc.title}</h1>
+        <h1>{chapter.name.name}</h1>
         <p className="attribution">
           Original: {doc.source.attribution}
           {translation

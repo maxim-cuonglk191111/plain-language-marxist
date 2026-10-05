@@ -36,12 +36,31 @@ export type ChapterName = { name: string; short: string };
  * (document titles like "Communist Manifesto (Chapter 2)" are source page titles).
  */
 export function chapterName(doc: DataDocument, ordinal: number): ChapterName {
-  for (const p of doc.passages) {
-    if (p.type !== "heading") continue;
-    const m = /^Chapter\s+([IVXLC]+|\d+)\b\.?\s*(.*)$/i.exec(plainOf(p.text));
-    if (m) return { name: plainOf(p.text), short: `Ch. ${m[1]}` };
+  const headings = doc.passages.filter((p) => p.type === "heading").map((p) => plainOf(p.text));
+  for (const h of headings) {
+    const m = /^Chapter\s+([IVXLC]+|\d+)\b\.?\s*(.*)$/i.exec(h);
+    if (m) return { name: h, short: `Ch. ${m[1]}` };
   }
-  return { name: doc.title, short: `Ch. ${ordinal}` };
+  return { name: sectionsName(headings) ?? doc.title, short: `Ch. ${ordinal}` };
+}
+
+/**
+ * A document without a "Chapter II." heading but with numbered sections ("VI. Value and
+ * Labour", … "XI. …") is named by them: "VI–XI. Value and Labour …", after any unnumbered
+ * opening heading ("Preliminary; I–V. Production and Wages …"). Source page titles are
+ * often the whole work's title, the same on every page, so they come last.
+ */
+function sectionsName(headings: readonly string[]): string | null {
+  const numbered = headings.flatMap((h) => {
+    const m = /^([IVXLC]+|\d+)\.\s+(.+)$/.exec(h);
+    return m ? [{ num: m[1] ?? "", title: m[2] ?? "" }] : [];
+  });
+  const first = numbered[0];
+  const last = numbered.at(-1);
+  if (!first || !last) return null;
+  const range = first === last ? first.num : `${first.num}–${last.num}`;
+  const lead = headings[0] && !/^([IVXLC]+|\d+)\.\s/.test(headings[0]) ? `${headings[0]}; ` : "";
+  return `${lead}${range}. ${first.title}${numbered.length > 1 ? " …" : ""}`;
 }
 
 export type Section = { id: string; title: string; level: number };

@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| **Status** | In progress |
+| **Status** | Done |
 | **Filed** | 2026-10-04 |
 | **Owner** | Unassigned |
 | **Severity** | Medium |
@@ -56,3 +56,6 @@ Readers whose first language is not English often turn on the browser's page tra
   - links open cards with JS and vocabulary pages without.
 
   All other suites were updated to the link selectors, and 64 tests pass.
+
+## Manual check (maintainer, 2026-10-05)
+The maintainer checked Chrome's "Translate to Vietnamese" by hand and confirmed that paragraphs with term marks translate as whole sentences. With the automated checks in `e2e/translate.spec.ts`, the acceptance criteria are met. (No before/after screenshot was attached; the maintainer's confirmation is the record.)

@@ -3,6 +3,7 @@ import type { ReactNode } from "react";
 import { ReaderSettings } from "../components/ReaderSettings";
 import { Shortcuts } from "../components/Shortcuts";
 import { siteUrl } from "../lib/data";
+import { readingPaths } from "../lib/paths";
 import { BOOT_SCRIPT } from "../lib/prefs";
 import "./globals.css";
 
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             Plain Language Marxist
           </a>
           <nav aria-label="Site">
+            {readingPaths().length > 0 && <a href="/paths/">Paths</a>}
             <a href="/vocabulary/">Vocabulary</a>
             <a href="/search/">Search</a>
             <a href="/notes/">Notes</a>
@@ -42,6 +44,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>. Original
             texts as credited on each page. Code: AGPL-3.0.
           </p>
+          <nav aria-label="About the project" className="footer-links">
+            <a href="/about/">About</a>
+            <a href="/faq/">FAQ</a>
+          </nav>
         </footer>
       </body>
     </html>

@@ -25,13 +25,13 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [017](017-deploy-and-releases.md) | Deploy pipeline, release artifacts, DEPLOYMENT.md | M1 | Blocked |
 | [018](018-drift-and-link-checks.md) | Source drift and link-check scheduled jobs | M1 | Done |
 | [019](019-m1-e2e-tests.md) | M1 end-to-end test suite | M1 | Done |
-| [020](020-pre-launch-outreach.md) | Pre-launch outreach and first reviewers | M1 | Open |
+| [020](020-pre-launch-outreach.md) | Pre-launch outreach and first reviewers | M1 | In progress |
 | [021](021-parser-hardening.md) | Parser hardening: independent loss detection, broad survey, proxy | M1 | Done |
 | [022](022-term-cards-for-newcomers.md) | Term cards that really explain Marxist terms, in simple language | M1 | In progress |
 | [023](023-three-layer-reader.md) | Reader with three switchable layers: Plain English, Original, Explanation | M1 | Done |
 | [024](024-nested-term-cards.md) | Clickable terms inside term cards (nested cards, up to 5) | M1 | Done |
 | [025](025-explanation-layer-policy.md) | Explanation layer: what it is for, how much to explain, and a plain-language review | M1 | In progress |
-| [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | In progress |
+| [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | Done |
 | [027](027-quality-and-consistency-pass-ch01.md) | Quality, consistency and plain-language polish for Manifesto Chapter I | M1 | Done |
 | [028](028-manifesto-ch02.md) | Manifesto Chapter II: Import, vocabulary, Plain English rendering and explanations | M1 | Done |
 | [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Done |
@@ -40,5 +40,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [032](032-study-reader-features.md) | Study reader features from Bible apps: passage references, concordance, reading paths, quote cards | M1/M3 | In progress |
 | [033](033-german-original-layer.md) | Optional German original layer, switched on in Settings | M3 | Open |
 | [034](034-term-senses-by-author.md) | Term senses by author and period | M3 | Open |
+| [035](035-council-communism-first-wave.md) | Council communism and De Leon: rights, first wave, permission requests | M3 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

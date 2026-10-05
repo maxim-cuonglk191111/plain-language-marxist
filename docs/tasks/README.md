@@ -41,5 +41,8 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [033](033-german-original-layer.md) | Optional German original layer, switched on in Settings | M3 | Open |
 | [034](034-term-senses-by-author.md) | Term senses by author and period | M3 | Open |
 | [035](035-council-communism-first-wave.md) | Council communism and De Leon: rights, first wave, permission requests | M3 | Open |
+| [036](036-term-ui-and-usage-clarity.md) | Term UI and usage count clarity (Default labels, local override, privacy) | M1 | Open |
+| [037](037-contributor-workflow-and-authoring-guide.md) | Contributor workflow, root CONTRIBUTING.md, and authoring guide | M2 | Open |
+| [038](038-visual-companion-and-1848-timeline.md) | Visual study companion and 1848 revolutionary timeline (Mermaid) | M1 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

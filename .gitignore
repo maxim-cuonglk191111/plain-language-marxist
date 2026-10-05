@@ -42,3 +42,5 @@ release/
 
 # Claude Code local permissions (per machine)
 .claude/settings.local.json
+# Git worktrees made by Claude Code agents: separate checkouts, never part of the repo.
+.claude/worktrees/

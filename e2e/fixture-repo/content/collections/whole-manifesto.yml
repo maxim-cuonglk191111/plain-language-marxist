@@ -1,0 +1,7 @@
+schema_version: 3
+kind: reading_path
+id: whole-manifesto
+title: The whole Manifesto, in order
+items:
+  - work:marx:1848:communist-manifesto
+rationale: "Test fixture, suggested for the end-to-end tests. Read the chapters in the order Marx and Engels wrote them."

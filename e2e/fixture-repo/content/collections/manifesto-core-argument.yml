@@ -1,0 +1,10 @@
+schema_version: 3
+kind: reading_path
+id: manifesto-core-argument
+title: The Manifesto's core argument
+description: Three of the four chapters, for a first reading.
+items:
+  - document:marx:1848:communist-manifesto:ch01
+  - document:marx:1848:communist-manifesto:ch02
+  - document:marx:1848:communist-manifesto:ch04
+rationale: "Test fixture, suggested for the end-to-end tests. Chapters I and II make the main argument, and Chapter IV says what the Communists do next. Chapter III, a survey of other socialist writing of the 1840s, can wait for a second reading."

@@ -31,7 +31,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [023](023-three-layer-reader.md) | Reader with three switchable layers: Plain English, Original, Explanation | M1 | Done |
 | [024](024-nested-term-cards.md) | Clickable terms inside term cards (nested cards, up to 5) | M1 | Done |
 | [025](025-explanation-layer-policy.md) | Explanation layer: what it is for, how much to explain, and a plain-language review | M1 | In progress |
-| [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | In progress |
+| [026](026-translatable-term-marks.md) | Term marks that do not break sentences under browser translation | M1 | Done |
 | [027](027-quality-and-consistency-pass-ch01.md) | Quality, consistency and plain-language polish for Manifesto Chapter I | M1 | Done |
 | [028](028-manifesto-ch02.md) | Manifesto Chapter II: Import, vocabulary, Plain English rendering and explanations | M1 | Done |
 | [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Done |

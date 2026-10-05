@@ -8,6 +8,7 @@ export const WORK_FILE = "work.yml";
 export const SOURCE_FILE = "source.yml";
 export const ORIGINAL_TERMS_FILE = "original-terms.yml";
 export const EXPLANATIONS_FILE = "explanations.yml";
+export const CROSSREFS_FILE = "crossrefs.yml";
 
 /** `{language}-{register}.yml`, e.g. en-plain.yml. */
 export const RENDERING_FILE = /^([a-z]{2,3})-([a-z0-9]+(?:-[a-z0-9]+)*)\.yml$/;

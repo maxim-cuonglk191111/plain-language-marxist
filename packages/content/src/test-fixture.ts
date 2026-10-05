@@ -51,7 +51,7 @@ export function fixtureData() {
 
   return {
     [`${WORK_DIR}/work.yml`]: {
-      schema_version: 3,
+      schema_version: 4,
       id: "work:marx:1848:communist-manifesto",
       title: "Manifesto of the Communist Party",
       authors: ["marx", "engels"],
@@ -66,7 +66,7 @@ export function fixtureData() {
       documents: ["ch01"],
     },
     [`${DOC_DIR}/source.yml`]: {
-      schema_version: 3,
+      schema_version: 4,
       document: "document:marx:1848:communist-manifesto:ch01",
       title: "I. Bourgeois and Proletarians",
       source: {
@@ -80,7 +80,7 @@ export function fixtureData() {
       passages,
     },
     [`${DOC_DIR}/en-plain.yml`]: {
-      schema_version: 3,
+      schema_version: 4,
       document: "document:marx:1848:communist-manifesto:ch01",
       language: "en",
       register: "plain",
@@ -97,12 +97,12 @@ export function fixtureData() {
       },
     },
     [`${DOC_DIR}/original-terms.yml`]: {
-      schema_version: 3,
+      schema_version: 4,
       document: "document:marx:1848:communist-manifesto:ch01",
       annotations: [{ passage: "p00005", term: "bourgeoisie", match: "bourgeois", occurrence: 1 }],
     },
     [`${DOC_DIR}/explanations.yml`]: {
-      schema_version: 3,
+      schema_version: 4,
       document: "document:marx:1848:communist-manifesto:ch01",
       explanations: {
         e001: {
@@ -113,8 +113,21 @@ export function fixtureData() {
         },
       },
     },
+    [`${DOC_DIR}/crossrefs.yml`]: {
+      schema_version: 4,
+      document: "document:marx:1848:communist-manifesto:ch01",
+      crossrefs: [
+        {
+          from: "p00002",
+          to: "document:marx:1848:communist-manifesto:ch01#p00006",
+          kind: "explains",
+          note: "Engels' footnote to the 1888 English edition.",
+        },
+        { from: "p00005", to: "document:marx:1848:communist-manifesto:ch01#p00002", kind: "same-argument" },
+      ],
+    },
     "content/vocabulary/bourgeoisie.yml": {
-      schema_version: 3,
+      schema_version: 4,
       term: "bourgeoisie",
       original: { sg: "bourgeoisie", adj: "bourgeois" },
       definition: { short: "The class that owns the means of production." },
@@ -127,7 +140,7 @@ export function fixtureData() {
       default: "capitalist-class",
     },
     "content/collections/foundations.yml": {
-      schema_version: 3,
+      schema_version: 4,
       kind: "reading_path",
       id: "foundations",
       title: "Foundation texts",
@@ -144,6 +157,7 @@ export const PATHS = {
   rendering: `${DOC_DIR}/en-plain.yml`,
   terms: `${DOC_DIR}/original-terms.yml`,
   explanations: `${DOC_DIR}/explanations.yml`,
+  crossrefs: `${DOC_DIR}/crossrefs.yml`,
   term: "content/vocabulary/bourgeoisie.yml",
   collection: "content/collections/foundations.yml",
   docDir: DOC_DIR,

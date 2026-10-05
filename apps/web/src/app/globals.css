@@ -654,6 +654,17 @@ a.term:hover {
   color: var(--muted);
   font-size: 0.85rem;
 }
+/* "See also" (task 032 D): cross-references at the end of the Context cell. */
+.see-also {
+  font: 0.85rem/1.5 var(--sans);
+  margin: 0.5rem 0 0;
+}
+.explanation + .see-also {
+  margin-top: 0.75rem;
+}
+.see-also-label {
+  font-weight: 600;
+}
 .badge {
   font: 0.75rem/1.4 var(--sans);
   color: var(--muted);

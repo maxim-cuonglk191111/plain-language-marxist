@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { checkTokens, parseTokens, renderTokens, resolveChoice, usageCounts } from "./index.ts";
 
 const bourgeoisie: TermFile = {
-  schema_version: 3,
+  schema_version: 4,
   term: "bourgeoisie",
   original: { sg: "bourgeoisie", adj: "bourgeois" },
   definition: { short: "The class of modern capitalists." },

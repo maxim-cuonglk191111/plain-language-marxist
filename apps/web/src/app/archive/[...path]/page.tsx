@@ -16,9 +16,11 @@ import { WorkPage } from "../../../components/WorkPage";
 import { concordance } from "../../../lib/concordance";
 import { allDocuments, findDocument, getDocument, getIndex, getTerm } from "../../../lib/data";
 import { LAYERS, LAYER_LABEL } from "../../../lib/layers";
+import { formatRef } from "../../../lib/reference";
 import {
   authorName,
   chapters,
+  refPrefixes,
   refWork,
   rowWords,
   workPath,
@@ -127,6 +129,23 @@ function DocumentPage({
     const slot = atRow.get(key) ?? { context: [], text: [] };
     (e.kind === "translation_note" ? slot.text : slot.context).push(e);
     atRow.set(key, slot);
+  }
+  // "See also" (task 032 D): each cross-reference shows at the row holding its passage,
+  // named by the target's reference ("Manifesto II.65").
+  const prefixes = refPrefixes(RENDERING);
+  const seeAlsoAt = new Map<string, SeeAlso[]>();
+  for (const c of doc.crossrefs ?? []) {
+    const key = rows.find((r) => r.ids.includes(c.from))?.ids[0];
+    const targetPrefix = prefixes[c.to.path];
+    if (!key || !targetPrefix) continue;
+    const list = seeAlsoAt.get(key) ?? [];
+    list.push({
+      label: formatRef(targetPrefix, c.to.passage),
+      href: c.to.path === doc.path ? `#${c.to.passage}` : `${c.to.path}#${c.to.passage}`,
+      kind: c.kind,
+      ...(c.note ? { note: c.note } : {}),
+    });
+    seeAlsoAt.set(key, list);
   }
 
   return (
@@ -283,7 +302,11 @@ function DocumentPage({
                 ))}
                 <TextNotes notes={notes?.text ?? []} footnotes={footnotes} />
               </div>
-              <Explain explanations={notes?.context ?? []} footnotes={footnotes} />
+              <Explain
+                explanations={notes?.context ?? []}
+                seeAlso={seeAlsoAt.get(first ?? "") ?? []}
+                footnotes={footnotes}
+              />
             </section>
           );
         })}
@@ -440,19 +463,34 @@ function ExplanationBody({
   );
 }
 
+type SeeAlso = { label: string; href: string; kind: CrossRefKind; note?: string };
+type CrossRefKind = NonNullable<DataDocument["crossrefs"]>[number]["kind"];
+
+/** What the linked passage does, in plain words: "Manifesto I.63 explains this". */
+const SEE_ALSO_KIND: Record<CrossRefKind, string> = {
+  revises: "revises this",
+  explains: "explains this",
+  "same-argument": "makes the same argument",
+  quotes: "quotes this",
+};
+
 /**
  * The Context layer for one row: section explanations (shown once, at the
- * section's first row), background and notes. The cell is always rendered,
- * empty when the row has none, so the columns of every row line up.
+ * section's first row), background and notes, then a "See also" line for its
+ * cross-references (task 032 D). The cell is always rendered, empty when the
+ * row has none, so the columns of every row line up.
  */
 function Explain({
   explanations,
+  seeAlso,
   footnotes,
 }: {
   explanations: Explanation[];
+  seeAlso: SeeAlso[];
   footnotes: ReadonlyMap<string, string>;
 }) {
-  if (explanations.length === 0) return <div className="col-context layer-context empty" />;
+  if (explanations.length === 0 && seeAlso.length === 0)
+    return <div className="col-context layer-context empty" />;
   return (
     <div className="col-context layer-context">
       <span className="layer-label">Context</span>
@@ -468,6 +506,18 @@ function Explain({
           <ExplanationBody e={e} footnotes={footnotes} />
         </div>
       ))}
+      {seeAlso.length > 0 && (
+        <p className="see-also">
+          <span className="see-also-label">See also:</span>{" "}
+          {seeAlso.map((s, i) => (
+            <span key={`${s.href} ${s.kind}`} className="see-also-item">
+              <a href={s.href}>{s.label}</a> {SEE_ALSO_KIND[s.kind]}
+              {s.note ? ` (${s.note.replace(/\.$/, "")})` : ""}
+              {i < seeAlso.length - 1 ? "; " : "."}
+            </span>
+          ))}
+        </p>
+      )}
     </div>
   );
 }

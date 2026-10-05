@@ -168,6 +168,42 @@ const CASES: Case[] = [
     (d) => (d[PATHS.explanations].explanations.e001.text = '<a href="/vocabulary/capital/">c</a>'),
     "error link/unknown-term",
   ],
+  // cross-references (task 032 D)
+  [
+    "cross-reference from an unknown passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].from = "p00099"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference from a tombstoned passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].from = "p00004"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference to an unknown passage",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch01#p00099"),
+    "error crossref/unknown-passage",
+  ],
+  [
+    "cross-reference to an unknown document",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch09#p00001"),
+    "error crossref/unknown-document",
+  ],
+  [
+    "cross-reference to itself",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].to = "document:marx:1848:communist-manifesto:ch01#p00002"),
+    "error schema/invalid",
+  ],
+  [
+    "cross-reference with an unknown kind",
+    (d) => (d[PATHS.crossrefs].crossrefs[0].kind = "refutes"),
+    "error schema/invalid",
+  ],
+  [
+    "cross-reference file for another document",
+    (d) => (d[PATHS.crossrefs].document = "document:marx:1848:communist-manifesto:ch02"),
+    "error document/id-mismatch",
+  ],
   // vocabulary and collections
   [
     "scoped default for unknown work",
@@ -241,7 +277,7 @@ describe("validate: invariants", () => {
 
 describe("validate: file problems carry line numbers", () => {
   it("reports YAML syntax errors with a line", () => {
-    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 3\nterm: [unclosed\n" });
+    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 4\nterm: [unclosed\n" });
     const issue = validate(root).find((i) => i.file === PATHS.term);
     expect(issue?.message).toMatch(/^YAML:/);
     expect(issue?.line).toBeGreaterThan(0);
@@ -262,7 +298,7 @@ describe("validate: file problems carry line numbers", () => {
 
     const broken = writeFixture(undefined, {
       "governance.yml":
-        "schema_version: 3\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
+        "schema_version: 4\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
     });
     const issue = validate(broken).find((i) => i.file === "governance.yml");
     expect(issue?.message).toContain("rules.RENDERING");
@@ -272,7 +308,7 @@ describe("validate: file problems carry line numbers", () => {
     const root = writeFixture(undefined, {
       [`${PATHS.docDir}/notes.txt`]: "scratch",
       "content/vocabulary/wrong-name.yml":
-        "schema_version: 3\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
+        "schema_version: 4\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
     });
     const found = codes(root);
     expect(found).toContain("warning layout/unknown-file");

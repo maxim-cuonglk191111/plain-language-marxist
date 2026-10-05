@@ -216,3 +216,17 @@ The reader calls this layer **Context**: background a newcomer needs and cannot 
 - **Translation notes** (`kind: translation_note`) are about the source text. The reader shows them beside the Original as "Text note", not in Context.
 - **Do not list weaknesses of the Plain English.** The Original is always one click away, and term cards state each wording's limitation. The one exception: when an original sentence can honestly be read two ways, add a translation note saying which reading the Plain English follows.
 - **Plain English sentences stay at 35 words or fewer** (`plm` warns above that). Split long sentences and keep every clause and link word.
+
+### Cross-references (task 032 D)
+
+A cross-reference (`crossrefs.yml` in a document's folder) links one passage to another, and the reader shows it as a "See also" line at the end of the passage's Context. It **states a connection that anyone can check, not an interpretation.** Anything interpretive goes in an explanation in the Context layer, with its sources (SDD §8.6).
+
+- **`kind` says what the linked passage (`to`) does for this one (`from`):**
+  - `explains`: it explains this passage, e.g. Engels' 1888 footnote on "all hitherto existing society" (shown as "Manifesto I.63 explains this");
+  - `revises`: it corrects or updates it, e.g. a later preface that says a point is out of date;
+  - `quotes`: it quotes this passage, word for word;
+  - `same-argument`: it makes the same argument, in nearly the same terms ("the history of all past society has consisted in the development of class antagonisms" in II.65 and I.9).
+- **Checkable, not arguable.** Two passages that merely deal with a similar theme, or that one school reads together, are not cross-references. Neither is "this anticipates…", "this contradicts…" or "compare…": those are readings, so they go in Context, attributed.
+- **`note` is optional and factual,** under 200 characters: who wrote the linked passage and when ("Engels' footnote to the 1888 English edition"). No evaluation.
+- **Link both ways only when both are true.** A footnote explains its passage; the passage does not explain the footnote. `same-argument` usually goes both ways.
+- `plm validate` checks that both passages exist and are active, that a passage does not link to itself, and that a link is not listed twice.

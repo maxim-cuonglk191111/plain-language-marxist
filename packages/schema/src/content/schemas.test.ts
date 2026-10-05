@@ -15,6 +15,7 @@ const FIXTURES: Record<keyof typeof CONTENT_SCHEMAS, string> = {
   rendering: "en-plain.yml",
   "original-terms": "original-terms.yml",
   explanations: "explanations.yml",
+  crossrefs: "crossrefs.yml",
   term: "term.yml",
   collection: "collection.yml",
   governance: "governance.yml",
@@ -150,6 +151,28 @@ const INVALID: Record<keyof typeof CONTENT_SCHEMAS, Case[]> = {
       (d) => (d.explanations.x1 = d.explanations.e001),
       "explanations.x1: Invalid key in record",
     ],
+  ],
+  crossrefs: [
+    ["unknown kind", (d) => (d.crossrefs[0].kind = "contradicts"), "crossrefs.0.kind:"],
+    ["from not a passage id", (d) => (d.crossrefs[0].from = "17"), "crossrefs.0.from:"],
+    [
+      "to without a passage",
+      (d) => (d.crossrefs[0].to = "document:marx:1848:communist-manifesto:ch01"),
+      "crossrefs.0.to: must look like document:{author}:{year}:{slug}:{doc}#p00017",
+    ],
+    [
+      "self-link",
+      (d) => (d.crossrefs[0].to = `${d.document}#${d.crossrefs[0].from}`),
+      "crossrefs.0.to: p00002 cannot refer to itself",
+    ],
+    [
+      "duplicate",
+      (d) => d.crossrefs.push({ ...d.crossrefs[0], kind: "quotes" }),
+      "crossrefs.2: duplicate cross-reference from p00002",
+    ],
+    ["empty list", (d) => (d.crossrefs = []), "crossrefs:"],
+    ["empty note", (d) => (d.crossrefs[0].note = ""), "crossrefs.0.note:"],
+    ["unknown key", (d) => (d.crossrefs[0].why = "x"), "Unrecognized key"],
   ],
   term: [
     [

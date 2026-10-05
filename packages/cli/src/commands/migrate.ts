@@ -21,6 +21,9 @@ export const MIGRATIONS: Readonly<Record<number, (text: string) => string>> = {
   // v3 (task 032 A): work files gain the optional short_title used in passage
   // references ("Manifesto II.17"). Older files are valid as they are.
   2: (text) => restamp(text, 3),
+  // v4 (task 032 D): document directories gain the optional crossrefs.yml ("See also"
+  // links between passages). Existing files are valid as they are.
+  3: (text) => restamp(text, 4),
 };
 
 /** Content YAML files under the given roots (directories are walked, files taken as-is). */

@@ -2,6 +2,7 @@ import {
   PUBLISHABLE_RIGHTS,
   collectNodes,
   parseLayout,
+  splitPassageRef,
   type LayoutNode,
   type Passage,
 } from "@plm/schema";
@@ -85,6 +86,9 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
   const workIds = new Set<string>();
   const authors = new Set<string>();
   const documentIds = new Set<string>();
+  /** Active passages by document id, and documents of blocked works, for cross-references. */
+  const activeByDocument = new Map<string, Set<string>>();
+  const blockedDocuments = new Set<string>();
   for (const w of repo.works) {
     if (w.work) {
       workIds.add(w.work.data.id);
@@ -93,6 +97,11 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
     for (const d of w.documents.values()) {
       if (!d.source) continue;
       documentIds.add(d.source.data.document);
+      activeByDocument.set(
+        d.source.data.document,
+        new Set(d.source.data.passages.filter((p) => p.state === "active").map((p) => p.id)),
+      );
+      if (w.work?.data.rights.status === "BLOCKED") blockedDocuments.add(d.source.data.document);
       documentsByPath.set(
         publicPath(d.source.data.source.url),
         new Set(d.source.data.passages.map((p) => p.id)),
@@ -442,6 +451,58 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
             `${long.length} sentence(s) over ${MAX_SENTENCE_WORDS} words; split them`,
           );
       }
+    }
+
+    // "See also" links (task 032 D). The schema checks shapes, self-links and duplicates;
+    // here both ends must be active passages that exist.
+    const crossrefs = doc.crossrefs;
+    if (crossrefs) {
+      if (crossrefs.data.document !== expectedDocId)
+        report(
+          "error",
+          "document/id-mismatch",
+          crossrefs,
+          ["document"],
+          `document must be ${expectedDocId}`,
+        );
+      crossrefs.data.crossrefs.forEach((c, i) => {
+        const path = ["crossrefs", i];
+        if (passages.get(c.from)?.state !== "active")
+          report(
+            "error",
+            "crossref/unknown-passage",
+            crossrefs,
+            [...path, "from"],
+            `${c.from} is not an active passage of this document`,
+          );
+        const target = splitPassageRef(c.to);
+        const targetPassages = activeByDocument.get(target.document);
+        if (!targetPassages) {
+          report(
+            "error",
+            "crossref/unknown-document",
+            crossrefs,
+            [...path, "to"],
+            `no document ${target.document}`,
+          );
+        } else if (!targetPassages.has(target.passage)) {
+          report(
+            "error",
+            "crossref/unknown-passage",
+            crossrefs,
+            [...path, "to"],
+            `${target.passage} is not an active passage of ${target.document}`,
+          );
+        } else if (blockedDocuments.has(target.document)) {
+          report(
+            "warning",
+            "crossref/blocked-target",
+            crossrefs,
+            [...path, "to"],
+            `${target.document} belongs to a blocked work; the link is left out of the build`,
+          );
+        }
+      });
     }
   }
 

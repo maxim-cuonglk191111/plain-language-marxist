@@ -89,6 +89,30 @@ describe("plm build", () => {
     if (!result.ok) expect(result.issues.some((i) => i.code === "rendering/unknown-passage")).toBe(true);
   });
 
+  it("carries cross-references with the target's reader path", () => {
+    const { read } = build(writeFixture());
+    const doc = DataDocument.parse(read(documentDataPath(`https://www.marxists.org${DOC_PUBLIC_PATH}`)));
+    expect(doc.crossrefs).toEqual([
+      {
+        from: "p00002",
+        to: { document: "document:marx:1848:communist-manifesto:ch01", passage: "p00006", path: DOC_PUBLIC_PATH },
+        kind: "explains",
+        note: "Engels' footnote to the 1888 English edition.",
+      },
+      {
+        from: "p00005",
+        to: { document: "document:marx:1848:communist-manifesto:ch01", passage: "p00002", path: DOC_PUBLIC_PATH },
+        kind: "same-argument",
+      },
+    ]);
+  });
+
+  it("leaves crossrefs out of a document that has none (the contract stays as it was)", () => {
+    const { read } = build(writeFixture((d) => Reflect.deleteProperty(d, PATHS.crossrefs)));
+    const doc = read(documentDataPath(`https://www.marxists.org${DOC_PUBLIC_PATH}`));
+    expect(doc).not.toHaveProperty("crossrefs");
+  });
+
   it("leaves blocked works out", () => {
     const { result, read } = build(writeFixture((d) => (d[PATHS.work].rights.status = "BLOCKED")));
     expect(result.ok).toBe(true);

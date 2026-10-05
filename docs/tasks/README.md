@@ -44,5 +44,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [036](036-term-ui-and-usage-clarity.md) | Term UI and usage count clarity (Default labels, local override, privacy) | M1 | Done |
 | [037](037-contributor-workflow-and-authoring-guide.md) | Contributor workflow, root CONTRIBUTING.md, and authoring guide | M2 | Open |
 | [038](038-visual-companion-and-1848-timeline.md) | Visual study companion and 1848 revolutionary timeline (Mermaid) | M1 | Open |
+| [039](039-marx-major-works.md) | Marx's major works first: free editions, order, Project Gutenberg source | M3 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

@@ -89,8 +89,7 @@ function DocumentPage({
   const rows = buildRows(doc, RENDERING);
   const hasPlain = (entry.covered[RENDERING] ?? 0) > 0;
   const hasContext =
-    doc.explanations.some((e) => e.kind !== "translation_note") ||
-    (doc.crossrefs?.length ?? 0) > 0;
+    doc.explanations.some((e) => e.kind !== "translation_note") || (doc.crossrefs?.length ?? 0) > 0;
   const work = chapters(entry.work, RENDERING);
   const at = work.findIndex((c) => c.path === doc.path);
   const chapter = work[at];

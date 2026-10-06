@@ -1,0 +1,191 @@
+schema_version: 5
+document: document:marx:1845:theses-on-feuerbach:theses
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:73e7bc0f6a83216c820c467d6ae8cb00c10c20f22fb3932f410bd944006d36d9
+    revision: 3
+    ai_assisted: true
+    text: Theses On Feuerbach
+  p00002:
+    covers: [p00002]
+    based_on: sha256:602822c4f02320e4eba22a1591fb3ef28fb9e7281e98780184eab3d869ca2d05
+    revision: 3
+    ai_assisted: true
+    text: I
+  p00003:
+    covers: [p00003]
+    based_on: sha256:6a379f204264c98533b84449f56da5c4924cc88a8ebebd8209071b0c082c2f80
+    revision: 3
+    ai_assisted: true
+    text: The main flaw of all materialism up to now — including Feuerbach's — is how it sees reality. It understands things, reality, and what we experience through our senses only as an <i>object or something to look at</i>. It does not understand them as <i>human activity through the senses, as practice</i>, not from the side of the person acting. So, in contrast to materialism, the <i>active</i> side was developed in an abstract way by idealism — which, of course, does not know real activity through the senses as such.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:d62f9ba08d6281af116392b1aae5a6ca31ea253e480a5e3ffc9f4313f10edc1a
+    revision: 3
+    ai_assisted: true
+    text: Feuerbach wants real objects that we can sense, truly distinct from objects of pure thought, but he does not see human activity itself as <i>objective</i> activity. So, in The Essence of Christianity, he treats the stance of pure theory as the only genuinely human stance, while seeing practical action only in its narrowest commercial form. Therefore he does not understand the meaning of "{revolution:adj}", of "practical-critical", activity.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:d61487a5393261367faece49d308d763e4779d53c7cb912e56cf82f6e60440d2
+    revision: 3
+    ai_assisted: true
+    text: II
+  p00006:
+    covers: [p00006]
+    based_on: sha256:a833b26921ab660caf718c7c511be5c02ea4e3934b76c8328b1c9fcafd1b053a
+    revision: 3
+    ai_assisted: true
+    text: The question of whether human thinking can reach objective truth is not a question of theory, but a practical question. People must prove the truth — that is, the reality and power, the real-world standing of their thinking — in practice. The dispute over whether thinking that is cut off from practice is real or unreal is a purely <i>academic</i> question.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:3b7725f0620835e257711d1e44d554805ca717723f794c620b368e17a0c98669
+    revision: 3
+    ai_assisted: true
+    text: III
+  p00008:
+    covers: [p00008]
+    based_on: sha256:4250e07f25e1fc4b48c06439b4ff068e10720e977b52fac5911bef5f7f5db62b
+    revision: 3
+    ai_assisted: true
+    text: The materialist teaching about changing circumstances and upbringing forgets that circumstances are changed by human beings, and that the educator must himself be educated. This teaching must therefore split society into two parts, one of which is placed above society.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:4cab2f14fb5c76c7fc9deef7a0d82f25dc787fb75d4f9305bde79ce1395f7f64
+    revision: 3
+    ai_assisted: true
+    text: The coming together of changing circumstances and human activity, or self-change, can be understood reasonably only as <i>{revolution:adj} practice</i>.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:0935153c04c25fd0cc9112bd489dce9fe5774f1d57f22e4bf3622a7d56e96156
+    revision: 3
+    ai_assisted: true
+    text: IV
+  p00011:
+    covers: [p00011]
+    based_on: sha256:df5ece1c22253fc05eeded03ef13253839c49581d77c7a405133b83cc8221c27
+    revision: 3
+    ai_assisted: true
+    text: "Feuerbach starts from the fact of religious self-alienation, of splitting the world in two: a religious world and an earthly one. His work consists in tracing the religious world back to its earthly foundation."
+  p00012:
+    covers: [p00012]
+    based_on: sha256:09b6c17bf3a92b5e6fe93a7436cf575c17e6ddda0648bfa69fd46c8e43edf77c
+    revision: 3
+    ai_assisted: true
+    text: Yet the earthly foundation breaks away from itself and sets itself up as an independent realm in the clouds. This can be explained only by the splits and inner contradictions within this earthly foundation itself. This earthly foundation must therefore first be understood in its contradictions and then revolutionized in practice. So, for example, once the earthly family is discovered to be the secret of the holy family, the earthly family itself must be destroyed both in theory and in practice.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:fa36ab9de7cd0b4d9628fe89fb3d0f335ca61fcd8b28c845c3a977fac5542f06
+    revision: 3
+    ai_assisted: true
+    text: V
+  p00014:
+    covers: [p00014]
+    based_on: sha256:5d6057f1da27d1d3e906aaf5483a73fa320e4e853bedaa6451635bc97503ad5b
+    revision: 3
+    ai_assisted: true
+    text: Feuerbach, not satisfied with abstract thinking, wants observation through the senses; but he does not see what we experience through our senses as practical, active human experience.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:884e0ff96472e4aec784391b65a928b4cf98bfb3072328c97b7b6f7344b9acd1
+    revision: 3
+    ai_assisted: true
+    text: VI
+  p00016:
+    covers: [p00016]
+    based_on: sha256:afe4b7dab765b7d6897d5afbea5dea92470045a2f3e3bf1964697bab506b604c
+    revision: 3
+    ai_assisted: true
+    text: Feuerbach traces the nature of religion back to the nature of human beings. But human nature is no abstraction that lives inside each separate individual.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:d03edfb2cb40e3269ffd4ec0e3b2a21b9aef01f124b2acf23ff2c0cb10be3309
+    revision: 3
+    ai_assisted: true
+    text: In reality, it is the whole web of social relations.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:dd3362076e5036038c3cb23fcd328ccead282e073e9086e39e1b41193c62c21c
+    revision: 3
+    ai_assisted: true
+    text: "Feuerbach, who does not criticize this real nature of humanity, is therefore forced:"
+  p00019:
+    covers: [p00019]
+    based_on: sha256:74d709a31f4f5bda9d980d9463bc17873f36504f86e7a660a1ae7e625c03acab
+    revision: 3
+    ai_assisted: true
+    text: To leave out the course of history, to treat religious feeling as something that exists on its own, and to assume an abstract, isolated human individual.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:75d0aaa0416e353b6d6e582f3dea5dda4a1e8db2f5f66465304f1f25b02d505e
+    revision: 3
+    ai_assisted: true
+    text: Human nature can therefore be understood only as a "genus" — as an inward, silent bond that ties many individuals together by nature alone.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:929710ca3aceb7254f8cc6514cbddc87ca1d8b112b96e7bf3da6198b9194546c
+    revision: 3
+    ai_assisted: true
+    text: VII
+  p00022:
+    covers: [p00022]
+    based_on: sha256:9621cb667eb05efc781b1aee78a07e4feecf3992d389d70b473c748fb6bf3fc3
+    revision: 3
+    ai_assisted: true
+    text: Feuerbach therefore does not see that "religious feeling" is itself produced by society, and that the abstract individual he examines belongs to a specific form of society.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:a8bf11a7321cf829e54e25e3333501be79a67602a02dd8d5d380974007b2f15a
+    revision: 3
+    ai_assisted: true
+    text: VIII
+  p00024:
+    covers: [p00024]
+    based_on: sha256:0350498b3c02e7bcccb0a351dfc05be09a13fa45430a6e7af37ad5ff5bafd9b3
+    revision: 3
+    ai_assisted: true
+    text: All life in society is practical at its root. All mysteries that lead theory into mysticism find their rational answer in human practice and in understanding that practice.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:3639f538e0ccbd69bc48a2d1308391585db19ba412cb9325ac24efdc7d85f9a4
+    revision: 3
+    ai_assisted: true
+    text: IX
+  p00026:
+    covers: [p00026]
+    based_on: sha256:d8d0ebfd8f0343b082ffb5a67eaa78194dd55366b4155aa95bbc803c5f715cfc
+    revision: 3
+    ai_assisted: true
+    text: The highest point reached by observational materialism — that is, materialism that does not understand sensory experience as practical activity — is looking at single individuals and at civil society.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:0116649026fd9415fc624d62ddc75ead2ab4df76fe939b8cb657d4bcd71759ef
+    revision: 3
+    ai_assisted: true
+    text: X
+  p00028:
+    covers: [p00028]
+    based_on: sha256:38fddf11d5443373acada7370cc7b72d9a33795fa005a4d497eff8483aa3732f
+    revision: 3
+    ai_assisted: true
+    text: The standpoint of the old materialism is civil society; the standpoint of the new is human society, or social humanity.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:4cd3f090c26a530eadf3d3b391e0e65183638ef0fb780aa0b5888bde390ad7ac
+    revision: 3
+    ai_assisted: true
+    text: XI
+  p00030:
+    covers: [p00030]
+    based_on: sha256:d3b5ec4c8d738f1e86f8d54f3f72bd42b2b5ca47fbf0cadcd1afa38432894d09
+    revision: 3
+    ai_assisted: true
+    text: Philosophers have only interpreted the world in different ways; the point is to change it.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:5f39813dc5bc5f07f07ea1e900fb4a9bc2d77db82f10fcafb936975b7bfe9188
+    revision: 3
+    ai_assisted: true
+    text: German text | 1938 translation of Marx's original | 2002 translation of Marx's original | MECW translation of Engels’ 1888 version

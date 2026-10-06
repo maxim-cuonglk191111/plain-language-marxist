@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:marx:1845:theses-on-feuerbach:theses
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00003]
+    text: |-
+      Ludwig Feuerbach (1804–1872) was a German philosopher who broke with G.W.F. Hegel's idealism by insisting that nature and the human body come before ideas.
+
+      Marx welcomed Feuerbach's materialism but saw a key weakness. It treated humans merely as passive observers of nature, ignoring practical activity, labor, and revolutionary struggle ("praxis").
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00004]
+    text: |-
+      *The Essence of Christianity* (1841) was Feuerbach's most influential book. In it, he argued that religious beliefs are merely idealized human qualities projected onto an imaginary God.
+
+      Marx points out that Feuerbach praised abstract contemplation while dismissing practical human activity, failing to understand revolutionary and critical practice.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00008]
+    text: |-
+      Eighteenth-century French materialists and early utopian socialists (such as Robert Owen) argued that human behavior is determined entirely by environment and education.
+
+      Marx points out that this view divides society in two, placing enlightened reformers above the masses. In contrast, Marx argues that people change their own conditions through collective struggle, educating themselves in the process.
+    ai_assisted: true
+  e004:
+    kind: historical_context
+    targets: [p00030]
+    text: |-
+      Marx wrote these eleven theses in his Brussels notebook in spring 1845 under the heading "1. ad Feuerbach". They marked his decisive break with the Young Hegelians and all passive philosophy.
+
+      Engels discovered the notebook after Marx's death and published an edited version in 1888, calling it "the brilliant germ of the new world outlook."
+    ai_assisted: true

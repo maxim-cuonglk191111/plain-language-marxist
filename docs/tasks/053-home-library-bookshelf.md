@@ -90,10 +90,8 @@ Replace the flat `ul.library > li > ul` with a modern card grid:
 ### 3. Layer Switch Availability & Fallback for Untranslated Works
 
 - **Issue:** When viewing works without Plain English (e.g. *Theses on Feuerbach*, *Principles of Communism*, *Value, Price and Profit*) or without Context explanations, the reader still defaulted to "Plain English" as the active selected layer, showing `ORIGINAL — no plain English yet` fallback notices while locking the toggle button.
-
-![Layer switch defaulting to Plain English on a work with no Plain English](assets/053-layer-switch-missing-plain.png)
-
 - **Resolution:**
+
   - `apps/web/src/app/archive/[...path]/page.tsx`: Computes layer availability (`hasPlain`, `hasOriginal`, `hasContext`) and passes it to `LayerSwitch`. Untranslated documents execute an immediate pre-hydration script setting `data-layers="original"` to eliminate flash of fallback notices.
   - `apps/web/src/components/LayerSwitch.tsx`: When `plain` is unavailable, defaults to `original`. Buttons for unavailable layers are marked `data-unavailable="true"` and `disabled`.
   - `apps/web/src/app/globals.css`: Styled unavailable buttons with `blur-no-click` (`opacity: 0.35; filter: blur(0.25px); cursor: not-allowed; pointer-events: none`).

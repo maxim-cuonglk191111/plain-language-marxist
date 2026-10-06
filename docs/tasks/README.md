@@ -47,7 +47,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [039](039-marx-major-works.md) | Marx's major works first: free editions, order, Project Gutenberg source | M3 | Open |
 | [040](040-marxism-fundamentals-reading-path.md) | Marxism Fundamentals: reading primary sources leading to Das Kapital | M1 | Done |
 | [041](041-fundamentals-source-ingestion.md) | Source text ingestion for the Marxism Fundamentals corpus | M3 | Done |
-| [042](042-render-theses-on-feuerbach.md) | Plain English rendering of *Theses on Feuerbach* (Marx, 1845) | M3 | Open |
+| [042](042-render-theses-on-feuerbach.md) | Plain English rendering of *Theses on Feuerbach* (Marx, 1845) | M3 | Done |
 | [043](043-render-principles-of-communism.md) | Plain English rendering of *The Principles of Communism* (Engels, 1847) | M3 | Open |
 | [044](044-render-1859-preface.md) | Plain English rendering of the *1859 Preface* (Marx, Critique of Political Economy) | M3 | Open |
 | [045](045-render-wage-labour-and-capital.md) | Plain English rendering of *Wage Labour and Capital* (Marx, 1849/1891) | M3 | Open |

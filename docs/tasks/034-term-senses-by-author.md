@@ -1,20 +1,21 @@
 # Task 034 — Term senses by author, period, and conceptual evolution
 
-| | |
-|---|---|
-| **Status** | Open (ready for implementation once second text/author is staged) |
-| **Filed** | 2026-10-05 |
-| **Owner** | Unassigned |
-| **Severity** | High (core semantic requirement for scaling beyond a single text) |
-| **Milestone** | M3 (archive growth & multi-author corpus) |
-| **Depends on** | 010 (term system), 022 (term cards), 036 (term clarity) |
-| **Related** | 032 B (concordance), 035 (council communism), 038 (visual companion) |
+|                      |                                                                      |
+| -------------------- | -------------------------------------------------------------------- |
+| **Status**     | Open (ready for implementation once second text/author is staged)    |
+| **Filed**      | 2026-10-05                                                           |
+| **Owner**      | Unassigned                                                           |
+| **Severity**   | High (core semantic requirement for scaling beyond a single text)    |
+| **Milestone**  | M3 (archive growth & multi-author corpus)                            |
+| **Depends on** | 010 (term system), 022 (term cards), 036 (term clarity)              |
+| **Related**    | 032 B (concordance), 035 (council communism), 038 (visual companion) |
 
 ## Problem
 
 The initial term system was built around a single foundational text (*The Communist Manifesto*, 1848). Each term card currently has exactly **one static definition** (`short`, `long`, `sources`). Only the Plain English surface wording can vary by context using `scoped_defaults` (e.g. `work:…` or `author:…`).
 
 When scaling the archive across different texts, authors, and eras, this model breaks:
+
 1. **Intra-Author Evolution (Shifts within the same author over time):**
    - In 1844–1848, Marx wrote simply of *labour* (*Arbeit*) being bought and sold.
    - By 1867 (*Das Kapital*, Vol. 1), Marx recognized this as a theoretical flaw and introduced the rigorous distinction between **labour** (the actual activity) and **labour-power** (*Arbeitskraft* — the commodity the worker actually sells). Defining "labour" identically in 1848 and 1867 misrepresents Marx's own theoretical breakthrough.
@@ -36,6 +37,7 @@ A single static card cannot serve as a dogmatic global dictionary. The cards mus
 ### 1. Schema Extension (`content/vocabulary/{term}.yml`)
 
 Add an optional `senses` array to the term schema:
+
 ```yaml
 schema_version: 4
 term: party
@@ -73,7 +75,10 @@ senses:
 ### 2. Resolution Hierarchy
 
 When resolving a term card inside a reader page, the resolver matches scopes in order of specificity:
-$$\text{Work Scope } (\texttt{work:\{author\}:\{year\}:\{slug\}}) \longrightarrow \text{Author Scope } (\texttt{author:\{slug\}}) \longrightarrow \text{Period Scope } (\texttt{period:\{start\}-\{end\}}) \longrightarrow \text{General Definition}$$
+
+$$
+\text{Work Scope } (\texttt{work:\{author\}:\{year\}:\{slug\}}) \longrightarrow \text{Author Scope } (\texttt{author:\{slug\}}) \longrightarrow \text{Period Scope } (\texttt{period:\{start\}-\{end\}}) \longrightarrow \text{General Definition}
+$$
 
 The highest-ranking match becomes the primary **"In this text"** definition.
 

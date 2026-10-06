@@ -87,6 +87,10 @@ function DocumentPage({
   doc: DataDocument;
 }) {
   const rows = buildRows(doc, RENDERING);
+  const hasPlain = (entry.covered[RENDERING] ?? 0) > 0;
+  const hasContext =
+    doc.explanations.some((e) => e.kind !== "translation_note") ||
+    (doc.crossrefs?.length ?? 0) > 0;
   const work = chapters(entry.work, RENDERING);
   const at = work.findIndex((c) => c.path === doc.path);
   const chapter = work[at];
@@ -205,7 +209,14 @@ function DocumentPage({
             chapters={work.map((c) => ({ path: c.path, name: c.name.name, sections: c.sections }))}
             refs={refWork(entry.work, RENDERING)}
           />
-          <LayerSwitch />
+          <LayerSwitch available={{ plain: hasPlain, original: true, context: hasContext }} />
+          {!hasPlain && (
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `if(!document.documentElement.dataset.layers||document.documentElement.dataset.layers==='plain'){document.documentElement.dataset.layers='original';document.documentElement.dataset.cols='1';}`,
+              }}
+            />
+          )}
           <ReadAloud next={next?.path ?? null} />
           <FocusToggle />
         </div>

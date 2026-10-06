@@ -8,3 +8,4 @@
 - Running `pnpm e2e` builds Next.js using `e2e/fixture-repo` and writes to `apps/web/out`, overwriting any previous production static export with test fixture data until `pnpm build:site` is re-run.
 - The `plm annotate` CLI command accepts only a single document path argument at a time and errors out if passed multiple paths in a single invocation.
 - With tsconfig's `exactOptionalPropertyTypes` enabled, optional component and data properties passed as undefined require explicit `prop?: T | undefined` typing to avoid TS2375/TS2379 typecheck errors.
+- ESLint in this repo is configured without eslint-plugin-react-hooks, so inline comments disabling `react-hooks/exhaustive-deps` fail the linter with an undefined rule error.

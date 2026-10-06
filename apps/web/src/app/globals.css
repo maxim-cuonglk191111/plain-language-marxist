@@ -1169,8 +1169,18 @@ html:not([data-layers]) .settings {
 }
 
 /* A locked toggle (the last visible layer) still looks on; it just cannot be turned off. */
-.layer-switch button[aria-disabled="true"] {
+.layer-switch button[aria-disabled="true"]:not([data-unavailable="true"]) {
   opacity: 1;
+}
+.layer-switch button[data-unavailable="true"],
+.layer-switch button:disabled {
+  opacity: 0.35;
+  filter: blur(0.25px);
+  cursor: not-allowed;
+  pointer-events: none;
+  border-color: color-mix(in srgb, var(--rule) 60%, transparent);
+  color: var(--muted);
+  background: transparent !important;
 }
 
 /* Card stack: the page dims behind the cards, and every card below the top one

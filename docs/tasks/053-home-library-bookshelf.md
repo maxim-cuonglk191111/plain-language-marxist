@@ -1,14 +1,14 @@
 # Task 053 — Home library bookshelf: work cards, aggregated metrics, and scalable catalog UI
 
-|              |                                                                       |
-| ------------ | --------------------------------------------------------------------- |
-| **Status**   | Done                                                                  |
-| **Filed**    | 2026-10-06                                                            |
-| **Owner**    | Unassigned                                                            |
-| **Severity** | High (core UI/UX & scalability bottleneck for multi-work library)     |
-| **Milestone**| M3 (archive growth & multi-author corpus)                             |
-| **Depends on** | 031 (e-book reader experience), 040 (reading paths)                  |
-| **Related**  | 039 (major works), 041–052 (multi-work ingestion & rendering)         |
+|                      |                                                                   |
+| -------------------- | ----------------------------------------------------------------- |
+| **Status**     | Done                                                              |
+| **Filed**      | 2026-10-06                                                        |
+| **Owner**      | Unassigned                                                        |
+| **Severity**   | High (core UI/UX & scalability bottleneck for multi-work library) |
+| **Milestone**  | M3 (archive growth & multi-author corpus)                         |
+| **Depends on** | 031 (e-book reader experience), 040 (reading paths)               |
+| **Related**    | 039 (major works), 041–052 (multi-work ingestion & rendering)    |
 
 ## Problem
 
@@ -21,6 +21,7 @@ The homepage currently flattens the library catalog by listing every single chap
 ## Goal
 
 Redesign the homepage library section into a clean, scalable **Bookshelf / Work Card grid** (Option A):
+
 - Present each work as a distinct, curated card with high-level metadata and aggregated metrics.
 - Keep the homepage uncluttered as the archive grows to dozens of works and hundreds of chapters.
 - Retain quick access to chapters via an optional collapsed preview accordion (`<details>`).
@@ -61,9 +62,48 @@ Replace the flat `ul.library > li > ul` with a modern card grid:
 
 ## Acceptance Criteria
 
-- [x] Homepage `/` displays works as curated Work Cards instead of an uncollapsed list of all chapters.
-- [x] Each card shows aggregated metadata: chapter count, total estimated reading time, and Plain English status.
-- [x] Chapter list is tucked inside a clean, collapsed `<details>` preview per card.
-- [x] Works link seamlessly to their dedicated `WorkPage` and first chapter.
-- [x] Responsive across mobile and desktop.
-- [x] `pnpm check` and `pnpm e2e` pass 100%.
+- [X] Homepage `/` displays works as curated Work Cards instead of an uncollapsed list of all chapters.
+- [X] Each card shows aggregated metadata: chapter count, total estimated reading time, and Plain English status.
+- [X] Chapter list is tucked inside a clean, collapsed `<details>` preview per card.
+- [X] Works link seamlessly to their dedicated `WorkPage` and first chapter.
+- [X] Responsive across mobile and desktop.
+- [X] `pnpm check` and `pnpm e2e` pass 100%.
+- [X] Streamlined WorkCard action buttons (eliminated duplicate "Table of contents" link).
+- [X] Reading path steps formatted with structured multi-row hierarchy instead of single-line cramming.
+- [X] Reader Layer Switch auto-detects layer availability: defaults to Original when Plain English is missing, and disables unavailable layers with blur-no-click styling.
+
+## Follow-up Refinements & Issue Resolutions
+
+### 1. WorkCard Redundancy Clean-up
+
+- **Issue:** The work title and the "Table of contents" CTA both navigated to the exact same URL (`workPath(work)`).
+- **Resolution:** Removed the redundant secondary link, keeping the primary `Read work →` CTA (or `Read text →` for single essay / preface) and allowing title click / chapter preview for TOC navigation.
+
+### 2. Reading Paths Step Layout Polish (`/paths/[id]/`)
+
+- **Issue:** In `/paths/marxism-fundamentals/`, chapter title, work attribution, reading time, and checkbox were jammed onto a single horizontal line separated by dots (`·`), creating wrapped, cluttered rows.
+- **Resolution:** Restructured `PathSteps.tsx` into a 2-tier hierarchy:
+  - Top row: prominent chapter/step link.
+  - Sub-row: source work name (when different from chapter) and estimated read time.
+  - Right-aligned: pill-styled `Read` checkbox button with smooth hover feedback.
+
+### 3. Layer Switch Availability & Fallback for Untranslated Works
+
+- **Issue:** When viewing works without Plain English (e.g. *Theses on Feuerbach*, *Principles of Communism*, *Value, Price and Profit*) or without Context explanations, the reader still defaulted to "Plain English" as the active selected layer, showing `ORIGINAL — no plain English yet` fallback notices while locking the toggle button.
+
+![Layer switch defaulting to Plain English on a work with no Plain English](assets/053-layer-switch-missing-plain.png)
+
+- **Resolution:**
+  - `apps/web/src/app/archive/[...path]/page.tsx`: Computes layer availability (`hasPlain`, `hasOriginal`, `hasContext`) and passes it to `LayerSwitch`. Untranslated documents execute an immediate pre-hydration script setting `data-layers="original"` to eliminate flash of fallback notices.
+  - `apps/web/src/components/LayerSwitch.tsx`: When `plain` is unavailable, defaults to `original`. Buttons for unavailable layers are marked `data-unavailable="true"` and `disabled`.
+  - `apps/web/src/app/globals.css`: Styled unavailable buttons with `blur-no-click` (`opacity: 0.35; filter: blur(0.25px); cursor: not-allowed; pointer-events: none`).
+
+## Verification & Deployment Evidence
+
+- **Unit & Schema Tests:** `pnpm check` passed cleanly (423/423 tests across 32 test files).
+- **End-to-End Tests:** `pnpm e2e` passed 153/153 Playwright tests across desktop and mobile.
+- **Commits:**
+  - `a07ffe0`: `feat(web): implement task 053 home library bookshelf UI`
+  - `0fa79fd`: `fix(web): streamline work card actions and polish reading paths layout`
+  - Subsequent commit: `fix(web): handle layer availability and disable missing layers with blur-no-click`
+- **Cloudflare Pages Production Deployment:** Verified live on Cloudflare Pages.

@@ -63,10 +63,7 @@ export function WorkCard({
 
       <div className="work-card-actions">
         <a className="work-card-read-btn" href={firstChapterPath}>
-          Read work →
-        </a>
-        <a className="work-card-toc-link" href={workPath(work)}>
-          Table of contents
+          {isSinglePart ? "Read text →" : "Read work →"}
         </a>
       </div>
 

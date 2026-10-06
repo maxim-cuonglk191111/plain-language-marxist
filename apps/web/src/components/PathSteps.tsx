@@ -97,32 +97,45 @@ export function PathSteps({ id, steps }: { id: string; steps: PathStep[] }) {
           <li key={`${i}-${s.href}`} className={s.kind === "work" ? "path-step-work" : undefined}>
             {s.kind === "chapter" ? (
               <div className="path-row">
-                <span>
-                  <a href={s.href}>{s.title}</a>{" "}
-                  <span className="muted">
-                    · {s.work} · about {s.chapters[0]?.minutes ?? 1} min
-                  </span>
-                </span>
+                <div className="path-step-body">
+                  <a className="path-step-title" href={s.href}>
+                    {s.title}
+                  </a>
+                  <div className="path-step-meta muted">
+                    {s.title !== s.work && <span className="path-step-work-name">{s.work}</span>}
+                    {s.title !== s.work && <span aria-hidden="true">·</span>}
+                    <span className="path-step-time">about {s.chapters[0]?.minutes ?? 1} min</span>
+                  </div>
+                </div>
                 {s.chapters[0] && tick(s.chapters[0])}
               </div>
             ) : (
               <>
                 <div className="path-row">
-                  <span>
-                    <a href={s.href}>{s.title}</a>{" "}
-                    <span className="muted">
-                      · the whole work, {s.chapters.length} chapters, about{" "}
-                      {s.chapters.reduce((n, c) => n + c.minutes, 0)} min
-                    </span>
-                  </span>
+                  <div className="path-step-body">
+                    <a className="path-step-title" href={s.href}>
+                      {s.title}
+                    </a>
+                    <div className="path-step-meta muted">
+                      <span>the whole work, {s.chapters.length} chapters</span>
+                      <span aria-hidden="true">·</span>
+                      <span className="path-step-time">
+                        about {s.chapters.reduce((n, c) => n + c.minutes, 0)} min
+                      </span>
+                    </div>
+                  </div>
                 </div>
                 <ol className="path-chapters">
                   {s.chapters.map((c) => (
                     <li key={c.path} className="path-row">
-                      <span>
-                        <a href={c.path}>{c.title}</a>{" "}
-                        <span className="muted">· about {c.minutes} min</span>
-                      </span>
+                      <div className="path-step-body">
+                        <a className="path-step-title" href={c.path}>
+                          {c.title}
+                        </a>
+                        <div className="path-step-meta muted">
+                          <span className="path-step-time">about {c.minutes} min</span>
+                        </div>
+                      </div>
                       {tick(c)}
                     </li>
                   ))}

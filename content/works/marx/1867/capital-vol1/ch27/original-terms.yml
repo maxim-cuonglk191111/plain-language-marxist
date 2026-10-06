@@ -1,0 +1,247 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch27
+annotations:
+  - passage: p00002
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00002
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00002
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00002
+    term: feudalism
+    match: feudal
+    occurrence: 3
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00003
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00003
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00003
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00003
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00003
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00003
+    term: feudalism
+    match: feudal
+    occurrence: 3
+  - passage: p00003
+    term: feudalism
+    match: feudal
+    occurrence: 4
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00004
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00004
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00005
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00005
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00006
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00007
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00007
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00007
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00008
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00008
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00008
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00009
+    term: feudalism
+    match: feudalism
+    occurrence: 1
+  - passage: p00009
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00009
+    term: private-property
+    match: private property
+    occurrence: 2
+  - passage: p00009
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00009
+    term: private-property
+    match: private property
+    occurrence: 3
+  - passage: p00010
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00010
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00011
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00011
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00013
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00016
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00016
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00019
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00019
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00019
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00021
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00021
+    term: serf
+    match: serf
+    occurrence: 2
+  - passage: p00021
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00021
+    term: serf
+    match: serf
+    occurrence: 3
+  - passage: p00022
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00022
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00028
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00030
+    term: vassal
+    match: vassals
+    occurrence: 1
+  - passage: p00031
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00036
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00042
+    term: plebeian
+    match: plebeians
+    occurrence: 1
+  - passage: p00042
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00043
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00052
+    term: feudalism
+    match: feudalism
+    occurrence: 1
+  - passage: p00052
+    term: feudalism
+    match: feudalism
+    occurrence: 2

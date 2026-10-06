@@ -1,0 +1,51 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch29
+annotations:
+  - passage: p00002
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00002
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00002
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00002
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00002
+    term: exploitation
+    match: exploits
+    occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00002
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00006
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00006
+    term: feudalism
+    match: feudal
+    occurrence: 2

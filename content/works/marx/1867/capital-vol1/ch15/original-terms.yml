@@ -1,0 +1,1967 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch15
+annotations:
+  - passage: p00001
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00006
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00007
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00007
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00007
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00008
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00009
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00009
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00010
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00010
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00011
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00011
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00011
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00011
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00011
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00011
+    term: revolution
+    match: revolution
+    occurrence: 3
+  - passage: p00011
+    term: revolution
+    match: revolution
+    occurrence: 4
+  - passage: p00012
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00013
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00014
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00014
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00017
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00017
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00017
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00017
+    term: manufacture
+    match: Manufacture
+    occurrence: 3
+  - passage: p00018
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00018
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 3
+  - passage: p00018
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 4
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 5
+  - passage: p00018
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00019
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00019
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00021
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00021
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00021
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00021
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00021
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00021
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00021
+    term: modern-industry
+    match: modern industry
+    occurrence: 3
+  - passage: p00021
+    term: modern-industry
+    match: modern industry
+    occurrence: 4
+  - passage: p00021
+    term: manufacture
+    match: Manufacture
+    occurrence: 3
+  - passage: p00021
+    term: manufacture
+    match: Manufacture
+    occurrence: 4
+  - passage: p00021
+    term: manufacture
+    match: Manufacture
+    occurrence: 5
+  - passage: p00022
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00022
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00022
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00022
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00022
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00022
+    term: revolution
+    match: revolution
+    occurrence: 3
+  - passage: p00022
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00022
+    term: revolution
+    match: revolution
+    occurrence: 4
+  - passage: p00022
+    term: revolution
+    match: revolutionised
+    occurrence: 1
+  - passage: p00022
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00022
+    term: mode-of-production
+    match: modes of production
+    occurrence: 2
+  - passage: p00023
+    term: modern-industry
+    match: Modern industry
+    occurrence: 1
+  - passage: p00027
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00027
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00027
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00030
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00030
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00030
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00030
+    term: exploitation
+    match: exploit
+    occurrence: 2
+  - passage: p00030
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00030
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00030
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00031
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00032
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00032
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00038
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00038
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00039
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00041
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00041
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00041
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00044
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00044
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00044
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00044
+    term: revolution
+    match: revolution
+    occurrence: 3
+  - passage: p00045
+    term: appropriation
+    match: Appropriation
+    occurrence: 1
+  - passage: p00045
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00047
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00048
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00048
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00048
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00050
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00050
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00050
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00050
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00051
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00051
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00051
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00056
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00068
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00070
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00070
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00070
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00070
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00071
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00071
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00072
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00076
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00076
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00077
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00077
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00078
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00078
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00078
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00078
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00079
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00079
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00079
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00081
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00082
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00082
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00082
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00087
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00091
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00096
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00098
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00100
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00101
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00106
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00109
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00112
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00113
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00113
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00113
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00114
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00114
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00114
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00115
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00116
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00116
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00116
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00116
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00116
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00116
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00118
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00118
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00118
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00120
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00120
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00120
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00120
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00123
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00123
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00123
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00123
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00128
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00129
+    term: reactionary
+    match: reactionary
+    occurrence: 1
+  - passage: p00129
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00129
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00130
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00130
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00130
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00130
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00130
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00130
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00130
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00130
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00130
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00130
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00130
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00130
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00130
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00131
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00131
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00131
+    term: division-of-labour
+    match: Division of labour
+    occurrence: 1
+  - passage: p00131
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00133
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00134
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00135
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00143
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00143
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00143
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00149
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00151
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00152
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00161
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00161
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 8
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 9
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 10
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 11
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 12
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 13
+  - passage: p00162
+    term: capital
+    match: capital
+    occurrence: 14
+  - passage: p00163
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00165
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00165
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00165
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 3
+  - passage: p00165
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 4
+  - passage: p00165
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00166
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00166
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00166
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00166
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00167
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00167
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00167
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00167
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00167
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00167
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00167
+    term: commodity
+    match: commodities
+    occurrence: 5
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00167
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 3
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00167
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 4
+  - passage: p00167
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 5
+  - passage: p00167
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00168
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00168
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00168
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00168
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00169
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00169
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00169
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00169
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00169
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00169
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00169
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00170
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00170
+    term: exploitation
+    match: Exploitation
+    occurrence: 1
+  - passage: p00170
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00170
+    term: barbarian
+    match: barbarism
+    occurrence: 1
+  - passage: p00171
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00172
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00172
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00174
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00174
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00175
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00175
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00176
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00177
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00177
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00179
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00183
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00186
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00186
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 8
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 9
+  - passage: p00186
+    term: capital
+    match: capital
+    occurrence: 10
+  - passage: p00188
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00188
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00188
+    term: revolution
+    match: revolutionised
+    occurrence: 1
+  - passage: p00188
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00188
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00188
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00188
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00188
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00191
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00191
+    term: over-production
+    match: over-production
+    occurrence: 1
+  - passage: p00191
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00192
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00195
+    term: commercial-crisis
+    match: commercial crisis
+    occurrence: 1
+  - passage: p00195
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00197
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00199
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00209
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00209
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00209
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00209
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00210
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00211
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00211
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00211
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00211
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00212
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00212
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00212
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00212
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00212
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00212
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00213
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00218
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00218
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00223
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00223
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00224
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00241
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00241
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00242
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00242
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00244
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00245
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00245
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00245
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00245
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00246
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00248
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00248
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00248
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00248
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00248
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00248
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00248
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00248
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00249
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00249
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00249
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00249
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00249
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00249
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00249
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00250
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00252
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00252
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00255
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00256
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00256
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00257
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00261
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00261
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00264
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00267
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00268
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00268
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00268
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00268
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00268
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00272
+    term: modern-industry
+    match: Modern industry
+    occurrence: 1
+  - passage: p00272
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00272
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00272
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00273
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00273
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00273
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00276
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00276
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00276
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00276
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00277
+    term: modern-industry
+    match: Modern industry
+    occurrence: 1
+  - passage: p00277
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00277
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00277
+    term: conservative
+    match: conservative
+    occurrence: 1
+  - passage: p00277
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00277
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00277
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00277
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00277
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00277
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00277
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00277
+    term: modern-industry
+    match: modern industry
+    occurrence: 3
+  - passage: p00277
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00277
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00278
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00278
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00278
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00278
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00279
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00279
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00280
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00281
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00281
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00281
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00282
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00282
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00282
+    term: revolution
+    match: revolutionised
+    occurrence: 1
+  - passage: p00282
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00282
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00282
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00288
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00304
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00309
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00311
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00311
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00313
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00315
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00326
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00328
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00332
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00332
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00332
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00335
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00335
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00335
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00336
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00336
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00336
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00336
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00336
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00336
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00336
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00340
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00343
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00349
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00350
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00351
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00351
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00351
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00352
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00352
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00352
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00354
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00359
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00359
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00359
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00360
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00362
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00362
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00369
+    term: communism
+    match: communistic
+    occurrence: 1
+  - passage: p00369
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00374
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00374
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00375
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00375
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00376
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00376
+    term: exploitation
+    match: exploits
+    occurrence: 1
+  - passage: p00398
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00403
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00403
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00404
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00406
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00406
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00408
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00410
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00439
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00439
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00446
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00446
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00465
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00472
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00473
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00483
+    term: petty-bourgeoisie
+    match: lower middle class
+    occurrence: 1
+  - passage: p00494
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00497
+    term: revolution
+    match: revolutionised
+    occurrence: 1
+  - passage: p00497
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00537
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00544
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00551
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00551
+    term: journeyman
+    match: journeymen
+    occurrence: 2
+  - passage: p00551
+    term: journeyman
+    match: journeymen
+    occurrence: 3
+  - passage: p00562
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00562
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00562
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00562
+    term: revolution
+    match: revolutionising
+    occurrence: 1
+  - passage: p00567
+    term: journeyman
+    match: journeyman
+    occurrence: 1
+  - passage: p00568
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00568
+    term: revolution
+    match: revolutionising
+    occurrence: 1
+  - passage: p00568
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00568
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00568
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00568
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00568
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00571
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00580
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00580
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00580
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00580
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00580
+    term: manufacture
+    match: manufacture
+    occurrence: 5
+  - passage: p00585
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00585
+    term: revolution
+    match: Revolution
+    occurrence: 1

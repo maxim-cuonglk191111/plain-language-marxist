@@ -2,9 +2,9 @@
 
 | | |
 |---|---|
-| **Status** | Open |
+| **Status** | Done |
 | **Filed** | 2026-10-06 |
-| **Owner** | Unassigned |
+| **Owner** | maxim-cuonglk191111 |
 | **Severity** | High (foundational primary source) |
 | **Milestone** | M3 (archive expansion) |
 | **Depends on** | 041 (fundamentals ingestion), 039 (major works survey) |

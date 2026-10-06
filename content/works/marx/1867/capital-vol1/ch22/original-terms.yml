@@ -1,0 +1,47 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch22
+annotations:
+  - passage: p00002
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00003
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00004
+    term: world-market
+    match: world-market
+    occurrence: 1
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00005
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00005
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00005
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00010
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00015
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00015
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1

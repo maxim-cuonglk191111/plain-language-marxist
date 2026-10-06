@@ -1,0 +1,235 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch32
+annotations:
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00002
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00002
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00002
+    term: private-property
+    match: Private property
+    occurrence: 1
+  - passage: p00002
+    term: private-property
+    match: private property
+    occurrence: 2
+  - passage: p00002
+    term: private-property
+    match: private property
+    occurrence: 3
+  - passage: p00002
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00002
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00002
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00002
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00002
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00002
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00002
+    term: private-property
+    match: private property
+    occurrence: 4
+  - passage: p00002
+    term: private-property
+    match: private property
+    occurrence: 5
+  - passage: p00002
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00003
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00003
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00003
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00003
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00003
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00003
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00003
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00003
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00003
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00003
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00003
+    term: means-of-production
+    match: means of production
+    occurrence: 5
+  - passage: p00003
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00004
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00004
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00004
+    term: private-property
+    match: private property
+    occurrence: 2
+  - passage: p00004
+    term: private-property
+    match: private property
+    occurrence: 3
+  - passage: p00004
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00005
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00005
+    term: private-property
+    match: private property
+    occurrence: 2
+  - passage: p00005
+    term: private-property
+    match: private property
+    occurrence: 3
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00007
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00007
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00007
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 4
+  - passage: p00007
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00007
+    term: revolution
+    match: revolutionary
+    occurrence: 2
+  - passage: p00007
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 2
+  - passage: p00007
+    term: proletariat
+    match: proletariat
+    occurrence: 3
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 5
+  - passage: p00007
+    term: reactionary
+    match: reactionary
+    occurrence: 1

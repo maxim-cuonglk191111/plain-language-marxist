@@ -1,0 +1,265 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch21
+title: "Economic Manuscripts: Capital Vol. I - Chapter Twenty-One"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch21.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260827181818id_/https://www.marxists.org/archive/marx/works/1867-c1/ch21.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch21/2026-10-06.html
+  snapshot_hash: sha256:d800bf7b7c05912095a7d2b3d3e7baa92b72bfb5234f79944b862b75874f9ad6
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: "Chapter Twenty-One: Piece-Wages"
+    hash: sha256:27caadd2a95a18780b1ea087bc53625174872839f5b0dbf1b9b52159039f0bdc
+    state: active
+  - id: p00002
+    type: paragraph
+    text: Wages by the piece are nothing else than a converted form of wages by time, just as wages by time are a converted form of the value or price of labour-power.
+    hash: sha256:b20d0f42370f47330ef7c20d39453d909890bfd6372a002d405060407c2a0b1b
+    state: active
+  - id: p00003
+    type: paragraph
+    text: In piece wages it seems at first sight as if the use-value bought from the labourer was, not the function of his labour-power, living labour, but labour already realized in the product, and as if the price of this labour was determined, not as with time-wages, by the fraction
+    hash: sha256:92dc16644a959d19c6c80e01c1eea73b696579446f546d080b212e6ecce1e3a2
+    state: active
+  - id: p00004
+    type: table
+    text: <tr><td>daily value of labour-power</td></tr><tr><td>the working day of a given number of hours</td></tr>
+    hash: sha256:c105be7bf436097f611daa073509c9934237cd214970b36d7a7fc0420e0c21a4
+    state: active
+  - id: p00005
+    type: paragraph
+    text: but by the capacity for work of the producer. <fn ref="1"/>
+    hash: sha256:4a9a47a46c6f5d6704b9306929b70c5e31ac1e5cb1ca08d9e8acf18aaad7f931
+    state: active
+  - id: p00006
+    type: paragraph
+    text: The confidence that trusts in this appearance ought to receive a first severe shock from the fact that both forms of wages exist side by side, simultaneously, in the same branches of industry; e.g.,
+    hash: sha256:5e356f6ad69931744852cf37419071047ceb30e965529e2bab3e0065c68297a7
+    state: active
+  - id: p00007
+    type: blockquote
+    text: “the compositors of London, as a general rule, work by the piece, time-work being the exception, while those in the country work by the day, the exception being work by the piece. The shipwrights of the port of London work by the job or piece, while those of all other parts work by the day.” <fn ref="2"/>
+    hash: sha256:cb2a8df296890d22eb5d63df9705df95d6acf6aa37f8af3c2ab2c213a9891b84
+    state: active
+  - id: p00008
+    type: paragraph
+    text: In the same saddlery shops of London, often for the same work, piece wages are paid to the French, time-wages to the English. In the regular factories in which throughout piece wages predominate, particular kinds of work are unsuitable to this form of wage, and are therefore paid by time. <fn ref="3"/> But it is, moreover, self-evident that the difference of form in the payment of wages alters in no way their essential nature, although the one form may be more favorable to the development of capitalist production than the other.
+    hash: sha256:9fa94d67eaae5cacebcc53cee653e1d7f5b72035ec2792ece6cd6873cad93068
+    state: active
+  - id: p00009
+    type: paragraph
+    text: Let the ordinary working-day contain 12 hours of which 6 are paid, 6 unpaid. Let its value-product be 6 shillings, that of one hour’s labour therefore 6d. Let us suppose that, as the result of experience, a labourer who works with the average amount of intensity and skill, who, therefore, gives in fact only the time socially necessary to the production of an article, supplies in 12 hours 24 pieces, either distinct products or measurable parts of a continuous whole. Then the value of these 24 pieces, after. subtraction of the portion of constant capital contained in them, is 6 shillings, and the value of a single piece 3d. The labourer receives 1 ½d. per piece, and thus earns in 12 hours 3 shillings. Just as, with time-wages, it does not matter whether we assume that the labourer works 6 hours for himself and 6 hours for the capitalist, or half of every hour for himself, and the other half for the capitalist, so here it does not matter whether we say that each individual piece is half paid, and half unpaid for, or that the price of 12 pieces is the equivalent only of the value of the labour-power, whilst in the other 12 pieces surplus-value is incorporated.
+    hash: sha256:3518b3b4a23117abd069da82c0685edb6804f3a68a4d46f52e0cd1ee2f404077
+    state: active
+  - id: p00010
+    type: paragraph
+    text: 'The form of piece wages is just as irrational as that of time-wages. Whilst in our example two pieces of a commodity, after subtraction of the value of the means of production consumed in them, are worth 6d. as being the product of one hour, the labourer receives for them a price of 3d. Piece wages do not, in fact, distinctly express any relation of value. It is not, therefore, a question of measuring the value of the piece by the working-time incorporated in it, but on the contrary, of measuring the working-time the labourer has expended by the number of pieces he has produced. In time-wages, the labour is measured by its immediate duration; in piece wages, by the quantity of products in which the labour has embodied itself during a given time. <fn ref="4"/> The price of labour time itself is finally determined by the equation: value of a day’s labour = daily value of labour-power. Piece-wage is, therefore, only a modified form of time-wage.'
+    hash: sha256:cba18bf022185844637d7e9391d59bc30301b02bcc2575c0e8f7aae44a35dec9
+    state: active
+  - id: p00011
+    type: paragraph
+    text: Let us now consider a little more closely the characteristic peculiarities of piece wages.
+    hash: sha256:113588e3d497aac0f036f6295394b127d9cf646fbc37b8f07074a25ecd773b95
+    state: active
+  - id: p00012
+    type: paragraph
+    text: The quality of the labour is here controlled by the work itself, which must be of average perfection if the piece-price is to be paid in full. Piece wages become, from this point of view, the most fruitful source of reductions of wages and capitalistic cheating.
+    hash: sha256:eecf140bb0a7df9231473458c242fd32f9927695bd260c40ce9ecad7e055aa58
+    state: active
+  - id: p00013
+    type: paragraph
+    text: They furnish to the capitalist an exact measure for the intensity of labour. Only the working-time which is embodied in a quantum of commodities determined beforehand, and experimentally fixed, counts as socially necessary working-time, and is paid as such. In the larger workshops of the London tailors, therefore, a certain piece of work, a waistcoat, e.g., is called an hour, or half an hour, the hour at 6d. By practice it is known how much is the average product of one hour. With new fashions, repairs, &amp;c., a contest arises between master and labourer as to whether a particular piece of work is one hour, and so on, until here also experience decides. Similarly in the London furniture workshops, &amp;c. If the labourer does not possess the average capacity, if he cannot in consequence supply a certain minimum of work per day, he is dismissed. <fn ref="5"/>
+    hash: sha256:d951535d8de9d6994365296bc9aa30b9b8c79467a524792bf2c7ac1e9a37db48
+    state: active
+  - id: p00014
+    type: paragraph
+    text: Since the quality and intensity of the work are here controlled by the form of wage itself, superintendence of labour becomes in great part superfluous. Piece wages therefore lay the foundation of the modern “domestic labour,” described above, as well as of a hierarchically organized system of exploitation and oppression. The latter has two fundamental forms. On the one hand, piece wages facilitate the interposition of parasites between the capitalist and the wage-labourer, the “sub-letting of labour.” The gain of these middlemen comes entirely from the difference between the labour-price which the capitalist pays, and the part of that price which they actually allow to reach the labourer. <fn ref="6"/> In England this system is characteristically called the “sweating system.” On the other hand, piece-wage allows the capitalist to make a contract for so much per piece with the head labourer — in manufactures with the chief of some group, in mines with the extractor of the coal, in the factory with the actual machine-worker — at a price for which the head labourer himself undertakes the enlisting and payment of his assistant work people. The exploitation of the labourer by capital is here effected through the exploitation of the labourer by the labourer. <fn ref="7"/>
+    hash: sha256:48df35d01fbc949660f9e3820cc29be3e59f6b92103b35e9b2ce113fd8a05316
+    state: active
+  - id: p00015
+    type: paragraph
+    text: Given piece-wage, it is naturally the personal interest of the labourer to strain his labour-power as intensely as possible; this enables the capitalist to raise more easily the normal degree of intensity of labour. <fn ref="8"/> It is moreover now the personal interest of the labourer to lengthen the working-day, since with it his daily or weekly wages rise. <fn ref="9"/> This gradually brings on a reaction like that already described in time-wages, without reckoning that the prolongation of the working-day, even if the piece wage remains constant, includes of necessity a fall in the price of the labour.
+    hash: sha256:cc42b65b4897f4b354c72d5e05035e16c37cc2246194337d2271a923c45e7a7c
+    state: active
+  - id: p00016
+    type: paragraph
+    text: In time-wages, with few exceptions, the same wage holds for the same kind of work, whilst in piece wages, though the price of the working time is measured by a certain quantity of product, the day’s or week’s wage will vary with the individual differences of the labourers, of whom one supplies in a given time the minimum of product only, another the average, a third more than the average. With regard to actual receipts there is, therefore, great variety according to the different skill, strength, energy, staying-power, &amp;c., of the individual labourers. <fn ref="10"/> Of course this does not alter the general relations between capital and wage-labour. First, the individual differences balance one another in the workshop as a whole, which thus supplies in a given working-time the average product, and the total wages paid will be the average wages of that particular branch of industry. Second, the proportion between wages and surplus-value remains unaltered, since the mass of surplus labour supplied by each particular labourer corresponds with the wage received by him. But the wider scope that piece-wage gives to individuality tends to develop on the one hand that individuality, and with it the sense of liberty, independence, and self-control of the labourers, and on the other, their competition one with another. Piece-work has, therefore, a tendency, while raising individual wages above the average, to lower this average itself. But where a particular rate of piece-wage has for a long time been fixed by tradition, and its lowering, therefore, presented especial difficulties, the masters, in such exceptional cases, sometimes had recourse to its compulsory transformation into time-wages. Hence, e.g., in 1860 a great strike among the ribbon-weavers of Coventry. <fn ref="11"/> Piece-wage is finally one of the chief supports of the hour-system described in the preceding chapter. <fn ref="12"/>
+    hash: sha256:e460f8d2a399409088f94ffd498cb9a71af4b961f8b847cf7005938f70d7d9ce
+    state: active
+  - id: p00017
+    type: paragraph
+    text: "From what has been shown so far, it follows that piece-wage is the form of wages most in harmony with the capitalist mode of production. Although by no means new — it figures side by side with time-wages officially in the French and English labour statutes of the 14th century — it only conquers a larger field for action during the period of manufacture, properly so-called. In the stormy youth of modern industry, especially from 1797 to 1815, it served as a lever for the lengthening of the working-day, and the lowering of wages. Very important materials for the fluctuation of wages during that period are to be found in the Blue books: “Report and Evidence from the Select Committee on Petitions respecting the Corn Laws” (Parliamentary Session of 1813-14), and “Report from the Lords’ Committee, on the State of the Growth, Commerce, and Consumption of Grain, and all Laws relating thereto” (Session of 1814-15). Here we find documentary evidence of the constant lowering of the price of labour from the beginning of the anti-Jacobin War. In the weaving industry, e.g., piece wages had fallen so low that, in spite of the very great lengthening of the working-day, the daily wages were then lower than before."
+    hash: sha256:48ea259f5d5d486ccd6f0a4b35606c2be9a7525c6dba2adb100db5249ad6d756
+    state: active
+  - id: p00018
+    type: blockquote
+    text: “The real earnings of the cotton weaver are now far less than they were; his superiority over the common labourer, which at first was very great, has now almost entirely ceased. Indeed... the difference in the wages of skillful and common labour is far less now than at any former period.” <fn ref="13"/>
+    hash: sha256:f60bfa03a24d94470e03f3287e343979edfb6339fc73457a0185026ea203293a
+    state: active
+  - id: p00019
+    type: paragraph
+    text: "How little the increased intensity and extension of labour through piece wages benefited the agricultural proletariat, the following passage borrowed from a work on the side of the landlords and farmers shows:"
+    hash: sha256:8ed1a6561de05bcd64bc6ba4da65fbc83cdec781f38f678ab5c9e13e6edd31ea
+    state: active
+  - id: p00020
+    type: blockquote
+    text: “By far the greater part of agricultural operations is done by people who are hired for the day or on piece-work. Their weekly wages are about 12s., and although it may be assumed that a man earns on piece-work under the greater stimulus to labour, 1s. or perhaps 2s. more than on weekly wages, yet it is found, on calculating his total income, that his loss of employment, during the year, outweighs this gain...Further, it will generally be found that the wages of these men bear a certain proportion to the price of the necessary means of subsistence, so that a man with two children is able to bring up his family without recourse to parish relief.” <fn ref="14"/>
+    hash: sha256:4898b42fd48e89d1d8ecbc506310436c76893a4bc059bf4731154174739ddf63
+    state: active
+  - id: p00021
+    type: paragraph
+    text: "Malthus at that time remarked with reference to the facts published by Parliament:"
+    hash: sha256:45e6a9bb87b0eee4d15b285c942056ced8f8febe377a72a30fdce31b5fb69fe0
+    state: active
+  - id: p00022
+    type: blockquote
+    text: “I confess that I see, with misgiving, the great extension of the practice of piece-wage. Really hard work during 12 or 14 hours of the day, or for any longer time, is too much for any human being.” <fn ref="15"/>
+    hash: sha256:de5d77c21e6de911e506a7b5aa38170d6c1f30d2947428e5ef9855a5a97cb7dd
+    state: active
+  - id: p00023
+    type: paragraph
+    text: In the workshops under the Factory Acts, piece wages become the general rule, because capital can there only increase the efficacy of the working-day by intensifying labour. <fn ref="16"/>
+    hash: sha256:06067dcd8301a8e993ce3bc413c21a72fb9c5590b01364ab0a99ecae804a3bc4
+    state: active
+  - id: p00024
+    type: paragraph
+    text: With the changing productiveness of labour the same quantum of product represents a varying working-time. Therefore, piece-wage also varies, for it is the money expression of a determined working-time. In our example above, 24 pieces were produced in 12 hours, whilst the value of the product of the 12 hours was 6s., the daily value of the labour-power 3s., the price of the labour-hour 3d., and the wage for one piece ½d. In one piece half-an-hour’s labour was absorbed. If the same working-day now supplies, in consequence of the doubled productiveness of labour, 48 pieces instead of 24, and all other circumstances remain unchanged, then the piece-wage falls from 1 ½d. to 3/4d., as every piece now only represents 1/4, instead of ½ of a working-hour. 24 by 1½d. = 3s., and in like manner 48 by 3/4d. = 3s. In other words, piece-wage is lowered in the same proportion as the number of the pieces produced in the same time rises, <fn ref="17"/> and, therefore, as the working time spent on the same piece falls. This change in piece-wage, so far purely nominal, leads to constant battles between capitalist and labour. Either because the capitalist uses it as a pretext for actually lowering the price of labour, or because increased productive power of labour is accompanied by an increased intensity of the same. Or because the labourer takes seriously the appearance of piece wages (viz., that his product is paid for, and not his labour-power) and therefore revolts against a lowering of wages, unaccompanied by a lowering in the selling price of the commodity.
+    hash: sha256:20be246cbc647cba86e8692d68e15c990e0ad747044104c1e33c1397e64c66d9
+    state: active
+  - id: p00025
+    type: blockquote
+    text: “The operatives...carefully watch the price of the raw material and the price of manufactured goods, and are thus enabled to form an accurate estimate of their master’s profits.” <fn ref="18"/>
+    hash: sha256:5946864e8b9a6ebfb228e0c1dd352acb3d7615863bc47419fa9503e5997ee263
+    state: active
+  - id: p00026
+    type: paragraph
+    text: The capitalist rightly knocks on the head such pretensions as gross errors as to the nature of wage-labour. <fn ref="19"/> He cries out against this usurping attempt to lay taxes on the advance of industry, and declares roundly that the productiveness of labour does not concern the labourer at all. <fn ref="20"/>
+    hash: sha256:cd115e51bf4bda3763ca4b2300907dafb5b264ddcb06c20003f68baee704fcbe
+    state: active
+  - id: p00027
+    type: footnote
+    label: "1"
+    text: "“The system of piece-work illustrates an epoch in the history of the working-man; it is halfway between the position of the mere day-labourer depending upon the will of the capitalist and the co-operative artisan, who in the not distant future promises to combine the artisan and the capitalist in his own person. Piece-workers are in fact their own masters, even whilst working upon the capital of the employer.” (John Watts: “Trade Societies and Strikes, Machinery and Co-operative Societies.” Manchester, 1865, pp. 52, 53.) I quote this little work because it is a very sink of all long-ago-rotten, apologetic commonplaces. This same Mr. Watts earlier traded in Owenism and published in 1842 another pamphlet: “Facts and Fictions of Political Economists,” in which among other things he declares that “property is robbery.” That was long ago."
+    hash: sha256:43dac3ad733526d83688ec61cb66fce60894267204d694d7d37ef7e4498f4139
+    state: active
+  - id: p00028
+    type: footnote
+    label: "2"
+    text: "T. J. Dunning: “Trades’ Unions and Strikes,” Lond., 1860, p. 22."
+    hash: sha256:f66fd57907f60aac2e341026848004c044fc5e41af4e46a9c028994bc6f22bf9
+    state: active
+  - id: p00029
+    type: footnote
+    label: "3"
+    text: "How the existence, side by side and simultaneously, of these two forms of wage favors the masters’ cheating: “A factory employs 400 people, the half of which work by the piece, and have a direct interest in working longer hours. The other 200 are paid by the day, work equally long with the others, and get no more money for their over-time.... The work of these 200 people for half an hour a day is equal to one person’s work for 50 hours, or 5/6’s of one person’s labour in a week, and is a positive gain to the employer.” (“Reports of Insp. of Fact., 31st Oct., 1860,” p. 9.) “Over-working to a very considerable extent still prevails; and, in most instances, with that security against detection and punishment which the law itself affords. I have in many former reports shown ... the injury to workpeople who are not employed on piece-work, but receive weekly wages.” (Leonard Horner in “Reports of Insp. of Fact.,” 30th April, 1859, pp. 8, 9.)"
+    hash: sha256:2b1fb6dbabe7381d7a51e9780e6a7e3be525ed4515b457471f96f429f7f98e57
+    state: active
+  - id: p00030
+    type: footnote
+    label: "4"
+    text: "“Wages can be measured in two ways: either by the duration of the labour, or by its product.” (“Abrégé é1émentaire des principes de l’économie politique.” Paris, 1796, p. 32.) The author of this anonymous work: G. Garnier."
+    hash: sha256:b7f52702a7b327d5e2847903c60b19ded43ed93f49209271b07632cd8c2058bd
+    state: active
+  - id: p00031
+    type: footnote
+    label: "5"
+    text: “So much weight of cotton is delivered to him” (the spinner), “and he has to return by a certain time, in lieu of it, a given weight of twist or yarn, of a certain degree of fineness, and he is paid so much per pound for all that he so returns. If his work is defective in quality, the penalty falls on him, if less in quantity than the minimum fixed for a given time, he is dismissed and an abler operative procured.” (Ure, l.c., p. 317.)
+    hash: sha256:5561e8b6a61d1d255312466cf0ce078c7a784661d8ef4e3dc112b12b3ff1f932
+    state: active
+  - id: p00032
+    type: footnote
+    label: "6"
+    text: “It is when work passes through several hands, each of which is to take its share of profits, while only the last does the work, that the pay which reaches the workwoman is miserably disproportioned.” (“Child. Emp. Comm. II Report,” p. 1xx., n. 424.)
+    hash: sha256:9b237d051f8737c38f2d8d1320977da8ed16a0cea9a6e86b439b1565cc4d4c3d
+    state: active
+  - id: p00033
+    type: footnote
+    label: "7"
+    text: "Even Watts, the apologetic, remarks: “It would be a great improvement to the system of piece-work, if all the men employed on a job were partners in the contract, each according to his abilities, instead of one man being interested in over-working his fellows for his own benefit.” (l.c., p. 53.) On the vileness of this system, cf. “Child. Emp. Comm., Rep. III.,” p. 66, n. 22, p. 11, n. 124, p. xi, n. 13, 53, 59, &amp;c."
+    hash: sha256:f9143b4aade9047640a445b5af54427a04d4a2b1113a42c31af9e276b27b0759
+    state: active
+  - id: p00034
+    type: footnote
+    label: "8"
+    text: This spontaneous result is often artificially helped along, e.g., in the Engineering Trade of London, a customary trick is “the selecting of a man who possesses superior physical strength and quickness, as the principal of several workmen, and paying him an additional rate, by the quarter or otherwise, with the understanding that he is to exert himself to the utmost to induce the others, who are only paid the ordinary wages, to keep up to him ... without any comment this will go far to explain many of the complaints of stinting the action, superior skill, and working-power, made by the employers against the men” (in Trades-Unions. Dunning, l.c., pp. 22, 23). As the author is himself a labourer and secretary of a Trades’ Union, this might be taken for exaggeration. But the reader may compare the “highly respectable” “Cyclopedia of Agriculture” of J. C. Morton, Art., the article “Labourer,” where this method is recommended to the farmers as an approved one.
+    hash: sha256:ac002608e407b6113bfd393d9d6739451dc3a2157faf4283519f3dd7af704129
+    state: active
+  - id: p00035
+    type: footnote
+    label: "9"
+    text: “All those who are paid by piece-work ... profit by the transgression of the legal limits of work. This observation as to the willingness to work over-time is especially applicable to the women employed as weavers and reelers.” (“Rept. of Insp. of Fact., 30th April, 1858,” p. 9.) “This system” (piece-work), “so advantageous to the employer ... tends directly to encourage the young potter greatly to over-work himself during the four or five years during which he is employed in the piece-work system, but at low wages.... This is ... another great cause to which the bad constitutions of the potters are to be attributed.” (“Child. Empl. Comm. 1. Rept.,” p. xiii.)
+    hash: sha256:a353da8c48f99216a27d1b9b32a259242f18ee0054b74420f46f5f4338bc1432
+    state: active
+  - id: p00036
+    type: footnote
+    label: "10"
+    text: “Where the work in any trade is paid for by the piece at so much per job ... wages may very materially differ in amount.... But in work by the day there is generally an uniform rate ... recognized by both employer and employed as the standard of wages for the general run of workmen in the trade.” (Dunning, l.c., p. 17.)
+    hash: sha256:78342847493d30bb93526a7616004cce34b68988e9054c10ae583e2147cf615e
+    state: active
+  - id: p00037
+    type: footnote
+    label: "11"
+    text: "“The work of the journeyman-artisans will be ruled by the day or by the piece. These master-artisans know about how much work a journeyman-artisan can do per day in each craft, and often pay them in proportion to the work which they do; the journey men, therefore, work as much as they can, in their own interest, without any further inspection.” (Cantillon, “Essai sur la Nature du Commerce en général,” Amst. Ed., 1756, pp. 185 and 202. The first edition appeared in 1755.) Cantillon, from whom Quesnay, Sir James Steuart &amp; A. Smith have largely drawn, already here represents piece-wage as simply a modified form of time-wage. The French edition of Cantillon professes in its title to be a translation from the English, but the English edition: “The Analysis of Trade, Commerce, &amp;c.,” by Philip Cantillon, late of the city of London, Merchant, is not only of later date (1759), but proves by its contents that it is a later and revised edition: e.g., in the French edition, Hume is not yet mentioned, whilst in the English, on the other hand, Petty hardly figures any longer. The English edition is theoretically less important, but it contains numerous details referring specifically to English commerce, bullion trade, &amp;c., that are wanting in the French text. The words on the title-page of the English edition, according to which the work is “taken chiefly from the manuscript of a very ingenious gentleman, deceased, and adapted, &amp;c.,” seem, therefore, a pure fiction, very customary at that time."
+    hash: sha256:9a4adf273843e5ca7d96809a6e1210017536898305a2e92e4ea764f009fd6d6c
+    state: active
+  - id: p00038
+    type: footnote
+    label: "12"
+    text: "“How often have we seen, in some workshops, many more workers recruited than the work actually called for? On many occasions, workers are recruited in anticipation of future work, which may never materialize. Because they are paid by piece wages, it is said that no risk is incurred, since any loss of time will be charged against the unemployed.” (H. Gregoir: “Les Typographes devant le Tribunal correctionnel de Bruxelles,” Brusseles, 1865, p. 9.)"
+    hash: sha256:ec0ca54db7cc74f82e3ad8baad601b30798abce328a9690753adb442e70bd11c
+    state: active
+  - id: p00039
+    type: footnote
+    label: "13"
+    text: “Remarks on the Commercial Policy of Great Britain,” London, 1815.
+    hash: sha256:70cec58f346fb8a810d02baa145e2d8cdd887439637bc567db979d574573e9e7
+    state: active
+  - id: p00040
+    type: footnote
+    label: "14"
+    text: “A Defense of the Landowners and Farmers of Great Britain,” 1814, pp. 4, 5.
+    hash: sha256:ca496c730b29ea834cc9346f4a2394f5c65e44055156425b5abfa538259adcdc
+    state: active
+  - id: p00041
+    type: footnote
+    label: "15"
+    text: Malthus, “Inquiry into the Nature and Progress of Rent,” Lond., 1815.
+    hash: sha256:b4c24c42f0749cdd5a4df7420b93de2d539da1d4acd253e19b69e9f1da5bd6ce
+    state: active
+  - id: p00042
+    type: footnote
+    label: "16"
+    text: “Those who are paid by piece-work ... constitute probably four-fifths of the workers in the factories.” “Report of Insp. of Fact.,” 30th April, 1858.
+    hash: sha256:f02e079d83bcbe6e6b9f5d45df9bf6370dc4666bf42c01ca708ac60507f3958d
+    state: active
+  - id: p00043
+    type: footnote
+    label: "17"
+    text: "“The productive power of his spinning-machine is accurately measured, and the rate of pay for work done with it decreases with, though not as, the increase of its productive power.” (Ure, l.c., p. 317.) This last apologetic phrase Ure himself again cancels. The lengthening of the mule causes some increase of labour, he admits. The labour does therefore not diminish in the same ratio as its productivity increases. Further: “By this increase the productive power of the machine will be augmented one-fifth. When this event happens the spinner will not be paid at the same rate for work done as he was before, but as that rate will not be diminished in the ratio of one-fifth, the improvement will augment his money earnings for any given number of hours’ work,” but “the foregoing statement requires a certain modification.... The spinner has to pay something additional for juvenile aid out of his additional sixpence, accompanied by displacing a portion of adults” (l.c., p. 321), which has in no way a tendency to raise wages."
+    hash: sha256:644f304f7b2dc32ae077ee15fc100cfc39776809e0b83f90e3cdee1129526256
+    state: active
+  - id: p00044
+    type: footnote
+    label: "18"
+    text: "H. Fawcett: “The Economic Position of the British labourer.” Cambridge and London, 1865, p. 178."
+    hash: sha256:b46ca815d9da05c4118c7b7566010b12d81450b0a068aa635b516222ae045987
+    state: active
+  - id: p00045
+    type: footnote
+    label: "19"
+    text: In the “London Standard” of October 26, 1861, there is a report of proceedings of the firm of John Bright &amp; Co., before the Rochdale magistrates “to prosecute for intimidation the agents of the Carpet Weavers Trades’ Union. Bright’s partners had introduced new machinery which would turn out 240 yards of carpet in the time and with the labour (!) previously required to produce 160 yards. The workmen had no claim whatever to share in the profits made by the investment of their employer’s capital in mechanical improvements. Accordingly, Messrs. Bright proposed to lower the rate of pay from 1½d. per yard to 1d., leaving the earnings of the men exactly the same as before for the same labour. But there was a nominal reduction, of which the operatives, it is asserted, had not fair warning beforehand.”
+    hash: sha256:e6e4cc6a0c552bfa3981e177d61bd3b8c892aca2af086f885911ba929ea10795
+    state: active
+  - id: p00046
+    type: footnote
+    label: "20"
+    text: “Trades’ Unions, in their desire to maintain wages, endeavor to share in the benefits of improved machinery.” (Quelle horreur!) “... the demanding higher wages, because labour is abbreviated, is in other words the endeavor to establish a duty on mechanical improvements.” (“On Combination of Trades,” new ed., London, 1834, p. 42.)<br/><br/>Transcribed by Bill McDorman<br/>Html Markup by Stephen Baird (1999)
+    hash: sha256:05e98a699462e792ef58b95d019854cc733af5cda9b65f164238daec84172a9a
+    state: active

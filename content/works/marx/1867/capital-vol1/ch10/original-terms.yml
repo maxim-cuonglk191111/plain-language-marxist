@@ -1,0 +1,739 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch10
+annotations:
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00011
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00012
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00014
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 4
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00019
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00019
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00019
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00019
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00021
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00022
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00025
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00041
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00047
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00047
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00049
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00062
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00065
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00066
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00072
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00073
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00074
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00074
+    term: journeyman
+    match: journeymen
+    occurrence: 2
+  - passage: p00075
+    term: journeyman
+    match: journeyman
+    occurrence: 1
+  - passage: p00075
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00076
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00079
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00080
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00081
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00081
+    term: journeyman
+    match: journeymen
+    occurrence: 2
+  - passage: p00085
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00086
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00094
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00094
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00094
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00094
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00094
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00100
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00100
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00115
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00121
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00121
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00121
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00121
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00121
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00121
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00122
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00123
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00123
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00123
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00124
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00125
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00132
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00132
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00132
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00132
+    term: capital
+    match: Capital
+    occurrence: 2
+  - passage: p00133
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00133
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00133
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00138
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00138
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00138
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00138
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00138
+    term: party
+    match: party
+    occurrence: 2
+  - passage: p00142
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00143
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00144
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00148
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00148
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00148
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00151
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00151
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00153
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00153
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00156
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00159
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00159
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00160
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00167
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00171
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00173
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00174
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00176
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00176
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00176
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00182
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00185
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00187
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00199
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00199
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00199
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00200
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00202
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00202
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00204
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00206
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00210
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00211
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00211
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00211
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00213
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00216
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00216
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00216
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00216
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00216
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00217
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00217
+    term: revolution
+    match: revolutionised
+    occurrence: 1
+  - passage: p00217
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00217
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00217
+    term: mode-of-production
+    match: mode of production
+    occurrence: 3
+  - passage: p00217
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00218
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00218
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00218
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00219
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00219
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00225
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00225
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00225
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00225
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00228
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00228
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00233
+    term: vassal
+    match: vassals
+    occurrence: 1
+  - passage: p00236
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00238
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00240
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00240
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00256
+    term: commercial-crisis
+    match: commercial crises
+    occurrence: 1
+  - passage: p00269
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00270
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00279
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00282
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00282
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00296
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00297
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00306
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00313
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00313
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00313
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00313
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00313
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00317
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00321
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00322
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00325
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00325
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00343
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00343
+    term: patrician
+    match: patricians
+    occurrence: 1
+  - passage: p00343
+    term: plebeian
+    match: plebeian
+    occurrence: 1
+  - passage: p00343
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00343
+    term: patrician
+    match: patrician
+    occurrence: 1
+  - passage: p00367
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00374
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00374
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00375
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00378
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00378
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00381
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00382
+    term: communism
+    match: communistic
+    occurrence: 1
+  - passage: p00382
+    term: reactionary
+    match: reactionary
+    occurrence: 1
+  - passage: p00386
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00389
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00391
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00392
+    term: capital
+    match: capital
+    occurrence: 1

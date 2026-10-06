@@ -1,0 +1,19 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:pref-3rd
+annotations:
+  - passage: p00004
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00008
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00008
+    term: world-market
+    match: world market
+    occurrence: 2

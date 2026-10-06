@@ -1,0 +1,1211 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch14
+annotations:
+  - passage: p00001
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00004
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00005
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00006
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00006
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00006
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00006
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00007
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00007
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00007
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00007
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00008
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00008
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00008
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00009
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00009
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00010
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00013
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00013
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00014
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00015
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00018
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00019
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00022
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00022
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00022
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00023
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00023
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00023
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00023
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00024
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00024
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00025
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00025
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00025
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00025
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00025
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00026
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00026
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00026
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00026
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00027
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00027
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00027
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00027
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00027
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00028
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00028
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00028
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00030
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00030
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00030
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00031
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00031
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00031
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00031
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00031
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00031
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00031
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00032
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00032
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00033
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00034
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00034
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00034
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00034
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00035
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00035
+    term: manufacture
+    match: Manufacture
+    occurrence: 2
+  - passage: p00035
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00038
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00038
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00038
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00038
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00038
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00039
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00040
+    term: division-of-labour
+    match: Division of labour
+    occurrence: 1
+  - passage: p00040
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00040
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00040
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00040
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00040
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00040
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00040
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00040
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00040
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00040
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00040
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00041
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00041
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00042
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00042
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00042
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00043
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00043
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00043
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00043
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00043
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00043
+    term: exploitation
+    match: exploits
+    occurrence: 1
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 5
+  - passage: p00043
+    term: division-of-labour
+    match: division of labour
+    occurrence: 6
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00044
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00044
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00044
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00044
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00044
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00044
+    term: division-of-labour
+    match: Division of labour
+    occurrence: 1
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 5
+  - passage: p00044
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00044
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00044
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00044
+    term: commodity
+    match: commodities
+    occurrence: 5
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 6
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 7
+  - passage: p00044
+    term: division-of-labour
+    match: Division of labour
+    occurrence: 2
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 8
+  - passage: p00044
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00044
+    term: division-of-labour
+    match: division of labour
+    occurrence: 9
+  - passage: p00044
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00045
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00045
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00046
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00046
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00046
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00046
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00046
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00046
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00046
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00047
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00047
+    term: journeyman
+    match: journeymen
+    occurrence: 2
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00047
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00047
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00047
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00047
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00047
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00047
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00047
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00047
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00048
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00048
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00048
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00048
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00048
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00051
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00051
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00051
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00051
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00051
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00051
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00051
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00051
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00051
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00052
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00052
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00052
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00052
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00052
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00053
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00053
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00053
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00053
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00053
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00054
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00054
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00060
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00060
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00061
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00061
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00061
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00062
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00062
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00064
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00064
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00064
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00064
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00064
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00065
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00065
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00065
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00065
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00065
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00065
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00065
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00066
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00066
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00066
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00066
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00066
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00066
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00066
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00066
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 4
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 5
+  - passage: p00067
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00067
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00067
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00067
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00067
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00067
+    term: manufacture
+    match: manufacture
+    occurrence: 4
+  - passage: p00067
+    term: manufacture
+    match: manufacture
+    occurrence: 5
+  - passage: p00067
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00069
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00069
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00069
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00069
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00070
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00070
+    term: revolution
+    match: revolutionise
+    occurrence: 1
+  - passage: p00070
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00070
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00072
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00073
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00073
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00073
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00074
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00075
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00080
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00080
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00081
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00083
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00084
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00085
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00092
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00092
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00092
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00096
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00096
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00096
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00096
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00096
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00098
+    term: division-of-labour
+    match: Division of labour
+    occurrence: 1
+  - passage: p00098
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00098
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00098
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00098
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00101
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00104
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00106
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00106
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00107
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00108
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00108
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00108
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00109
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00109
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00109
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00112
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00112
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00112
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00112
+    term: instruments-of-production
+    match: instruments of production
+    occurrence: 1
+  - passage: p00112
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00114
+    term: patrician
+    match: patrician
+    occurrence: 1
+  - passage: p00115
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00120
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00120
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00120
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00124
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00125
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00125
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00125
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00126
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00126
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00127
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00127
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00129
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00129
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00130
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00131
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1

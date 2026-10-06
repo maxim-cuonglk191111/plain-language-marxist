@@ -1,0 +1,95 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:pref-1st
+title: "Economic Manuscripts: Capital Vol. I - 1867 Preface"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/p1.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260914222313id_/https://www.marxists.org/archive/marx/works/1867-c1/p1.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/pref-1st/2026-10-06.html
+  snapshot_hash: sha256:c18476e21e05388741c8d7c5925b0fcfa685436361b2b4a80731dabae18d746b
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: <i>1867</i><br/>Preface to the<br/>First German Edition
+    hash: sha256:8afcbdf02e80a6705ab49fd3f5893d4069f15b59666c0f916d0139e37f74f69b
+    state: active
+  - id: p00002
+    type: paragraph
+    text: The work, the first volume of which I now submit to the public, forms the continuation of my <i>Zur Kritik der Politischen Oekonomie</i> (<i>A Contribution to the Criticism of Political Economy</i>) published in 1859. The long pause between the first part and the continuation is due to an illness of many years’ duration that again and again interrupted my work.
+    hash: sha256:08ce17305165e2d11477fc2ec124d537f8d262330d203bbc0545b12aa5f7b707
+    state: active
+  - id: p00003
+    type: paragraph
+    text: The substance of that earlier work is summarised in the first three chapters of this volume. This is done not merely for the sake of connexion and completeness. The presentation of the subject matter is improved. As far as circumstances in any way permit, many points only hinted at in the earlier book are here worked out more fully, whilst, conversely, points worked out fully there are only touched upon in this volume. The sections on the history of the theories of value and of money are now, of course, left out altogether. The reader of the earlier work will find, however, in the notes to the first chapter additional sources of reference relative to the history of those theories.
+    hash: sha256:534a9cd164ff4e7cbd92097b47e462ebdf7b00781877cfab85427d8f539a2f13
+    state: active
+  - id: p00004
+    type: paragraph
+    text: Every beginning is difficult, holds in all sciences. To understand the first chapter, especially the section that contains the analysis of commodities, will, therefore, present the greatest difficulty. That which concerns more especially the analysis of the substance of value and the magnitude of value, I have, as much as it was possible, popularised. [1] The value-form, whose fully developed shape is the money-form, is very elementary and simple. Nevertheless, the human mind has for more than 2,000 years sought in vain to get to the bottom of it all, whilst on the other hand, to the successful analysis of much more composite and complex forms, there has been at least an approximation. Why? Because the body, as an organic whole, is more easy of study than are the cells of that body. In the analysis of economic forms, moreover, neither microscopes nor chemical reagents are of use. The force of abstraction must replace both. But in bourgeois society, the commodity-form of the product of labour — or value-form of the commodity — is the economic cell-form. To the superficial observer, the analysis of these forms seems to turn upon minutiae. It does in fact deal with minutiae, but they are of the same order as those dealt with in microscopic anatomy.
+    hash: sha256:e67fcd560417eecaa45356195742f92a8ac7ab3ceb08b485e15432e3dca1e8ff
+    state: active
+  - id: p00005
+    type: paragraph
+    text: With the exception of the section on value-form, therefore, this volume cannot stand accused on the score of difficulty. I presuppose, of course, a reader who is willing to learn something new and therefore to think for himself.
+    hash: sha256:185984c5822313269d5deb17276cab7fb51c847f7117381b6c7d07ea5b05c84b
+    state: active
+  - id: p00006
+    type: paragraph
+    text: The physicist either observes physical phenomena where they occur in their most typical form and most free from disturbing influence, or, wherever possible, he makes experiments under conditions that assure the occurrence of the phenomenon in its normality. In this work I have to examine the capitalist mode of production, and the conditions of production and exchange corresponding to that mode. Up to the present time, their classic ground is England. That is the reason why England is used as the chief illustration in the development of my theoretical ideas. If, however, the German reader shrugs his shoulders at the condition of the English industrial and agricultural labourers, or in optimist fashion comforts himself with the thought that in Germany things are not nearly so bad; I must plainly tell him, “<i>De te fabula narratur!</i>” [It is of you that the story is told. – Horace]
+    hash: sha256:95a1ceb09edbe8a849cd45449ef51fcd76780a96418167568cbd08a927a079db
+    state: active
+  - id: p00007
+    type: paragraph
+    text: Intrinsically, it is not a question of the higher or lower degree of development of the social antagonisms that result from the natural laws of capitalist production. It is a question of these laws themselves, of these tendencies working with iron necessity towards inevitable results. The country that is more developed industrially only shows, to the less developed, the image of its own future.
+    hash: sha256:714ea5b3830a78ad989452e4b2c42e91856a6e80e8837c6ed3133ac0ca3e6288
+    state: active
+  - id: p00008
+    type: paragraph
+    text: But apart from this. Where capitalist production is fully naturalised among the Germans (for instance, in the factories proper) the condition of things is much worse than in England, because the counterpoise of the Factory Acts is wanting. In all other spheres, we, like all the rest of Continental Western Europe, suffer not only from the development of capitalist production, but also from the incompleteness of that development. Alongside the modern evils, a whole series of inherited evils oppress us, arising from the passive survival of antiquated modes of production, with their inevitable train of social and political anachronisms. We suffer not only from the living, but from the dead. <i>Le mort saisit le vif!</i> [The dead holds the living in his grasp. – formula of French common law]
+    hash: sha256:9fef16ec42c6418222f93a526c2f2d21c4897df36fb170801ddb9963670e22d4
+    state: active
+  - id: p00009
+    type: paragraph
+    text: The social statistics of Germany and the rest of Continental Western Europe are, in comparison with those of England, wretchedly compiled. But they raise the veil just enough to let us catch a glimpse of the Medusa head behind it. We should be appalled at the state of things at home, if, as in England, our governments and parliaments appointed periodically commissions of inquiry into economic conditions; if these commissions were armed with the same plenary powers to get at the truth; if it was possible to find for this purpose men as competent, as free from partisanship and respect of persons as are the English factory-inspectors, her medical reporters on public health, her commissioners of inquiry into the exploitation of women and children, into housing and food. Perseus wore a magic cap down over his eyes and ears as a make-believe that there are no monsters.
+    hash: sha256:a39c17679c40ad7e5a020066263b9af2abdaf95a701da736a7b26fd4d45f022f
+    state: active
+  - id: p00010
+    type: paragraph
+    text: Let us not deceive ourselves on this. As in the 18th century, the American war of independence sounded the tocsin for the European middle class, so that in the 19th century, the American Civil War sounded it for the European working class. In England the process of social disintegration is palpable. When it has reached a certain point, it must react on the Continent. There it will take a form more brutal or more humane, according to the degree of development of the working class itself. Apart from higher motives, therefore, their own most important interests dictate to the classes that are for the nonce the ruling ones, the removal of all legally removable hindrances to the free development of the working class. For this reason, as well as others, I have given so large a space in this volume to the history, the details, and the results of English factory legislation. One nation can and should learn from others. And even when a society has got upon the right track for the discovery of the natural laws of its movement — and it is the ultimate aim of this work, to lay bare the economic law of motion of modern society — it can neither clear by bold leaps, nor remove by legal enactments, the obstacles offered by the successive phases of its normal development. But it can shorten and lessen the birth-pangs.
+    hash: sha256:9260c1ccaf2db8c3401305984547bb1e315e1cca2fb7c133070925a135ec03d7
+    state: active
+  - id: p00011
+    type: paragraph
+    text: To prevent possible misunderstanding, a word. I paint the capitalist and the landlord in no sense <i>couleur de rose</i> [i.e., seen through rose-tinted glasses]. But here individuals are dealt with only in so far as they are the personifications of economic categories, embodiments of particular class-relations and class-interests. My standpoint, from which the evolution of the economic formation of society is viewed as a process of natural history, can less than any other make the individual responsible for relations whose creature he socially remains, however much he may subjectively raise himself above them.
+    hash: sha256:ad4e1e42766c4dbce4d5fb42afb90e26209fd34b8abacaf004422f2d3582f72a
+    state: active
+  - id: p00012
+    type: paragraph
+    text: "In the domain of Political Economy, free scientific inquiry meets not merely the same enemies as in all other domains. The peculiar nature of the materials it deals with, summons as foes into the field of battle the most violent, mean and malignant passions of the human breast, the Furies of private interest. The English Established Church, e.g., will more readily pardon an attack on 38 of its 39 articles than on 1/39 of its income. Now-a-days atheism is <i>culpa levis</i> [a relatively slight sin, c.f. mortal sin], as compared with criticism of existing property relations. Nevertheless, there is an unmistakable advance. I refer, e.g., to the Blue book published within the last few weeks: “Correspondence with Her Majesty’s Missions Abroad, regarding Industrial Questions and Trades’ Unions.” The representatives of the English Crown in foreign countries there declare in so many words that in Germany, in France, to be brief, in all the civilised states of the European Continent, radical change in the existing relations between capital and labour is as evident and inevitable as in England. At the same time, on the other side of the Atlantic Ocean, Mr. Wade, vice-president of the United States, declared in public meetings that, after the abolition of slavery, a radical change of the relations of capital and of property in land is next upon the order of the day. These are signs of the times, not to be hidden by purple mantles or black cassocks. They do not signify that tomorrow a miracle will happen. They show that, within the ruling classes themselves, a foreboding is dawning, that the present society is no solid crystal, but an organism capable of change, and is constantly changing."
+    hash: sha256:e3533b6d1dcb291520e0f673ad2e2f0546a3bbb3d105d5b893d0ec7086c6c32d
+    state: active
+  - id: p00013
+    type: paragraph
+    text: The second volume of this book will treat of the process of the circulation of capital (Book II.), and of the varied forms assumed by capital in the course of its development (Book III.), the third and last volume (Book IV.), the history of the theory.
+    hash: sha256:894c7dfee2e980886fae3ebd98b5725565ac6e5fbc4f9325ede1e2c3d7df2c63
+    state: active
+  - id: p00014
+    type: paragraph
+    text: "Every opinion based on scientific criticism I welcome. As to prejudices of so-called public opinion, to which I have never made concessions, now as aforetime the maxim of the great Florentine is mine:"
+    hash: sha256:4048980d4b1c0b53cfa055f598b840b03cfe879c7dbe3d5e59a7a06a475c64a4
+    state: active
+  - id: p00015
+    type: paragraph
+    text: “Segui il tuo corso, e lascia dir le genti.”<br/>[Follow your own course, and let people talk – paraphrased from Dante]
+    hash: sha256:8bb3304a47434b3f50d2207a3daa3bab14c1d614c78dd7139d67ac7f02078a0e
+    state: active
+  - id: p00016
+    type: paragraph
+    text: <indent level="1"/><b><i>Karl Marx</i></b><br/>London<br/>July 25, 1867
+    hash: sha256:b602b379e08f69a712ec451f5f93f69d8d83cf17d3476e31d46c3ba31d400f52
+    state: active

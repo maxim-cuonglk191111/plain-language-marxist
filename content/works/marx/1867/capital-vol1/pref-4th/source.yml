@@ -1,0 +1,125 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:pref-4th
+title: "Economic Manuscripts: Capital Vol. I - 1890 Preface"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/p7.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260501004836id_/https://www.marxists.org/archive/marx/works/1867-c1/p7.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/pref-4th/2026-10-06.html
+  snapshot_hash: sha256:a3f1a0a5a7ff775f9b68439a8e9d892fc1a7b493be582b71345ce4bac4a0a83d
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: <i>1890<br/></i> <b>PREFACE TO THE<br/>FOURTH GERMAN EDITION</b>
+    hash: sha256:170273e8af3ec4f75b44c15b3785430e0e7d1df401664918072c0c7bde4b977a
+    state: active
+  - id: p00002
+    type: paragraph
+    text: The fourth edition required that I should establish in final form, as nearly as possible, both text and footnotes. The following brief explanation will show how I have fulfilled this task.
+    hash: sha256:377505d188ceba873a5ad5698c45dfd63c09cb26f0e4521311751235e72bb857
+    state: active
+  - id: p00003
+    type: paragraph
+    text: After again comparing the French edition and Marx’s manuscript remarks I have made some further additions to the German text from that translation. They will be found on p. 80 (3rd edition, p. 88) [present edition, pp. 117-18], pp. 458-60 (3rd edition, pp. 509-10) [present edition, pp. 462-65], [1] pp. 547-51 (3rd edition, p. 600) [present edition, pp. 548-51], pp. 591-93 (3rd edition, p. 644) [present edition, 587-89] and p. 596 (3rd edition, p. 648) [present edition, p. 591] in Note 1. I have also followed the example of the French and English editions by putting the long footnote on the miners into the text (3rd edition, pp.509-15; 4th edition, pp. 461-67) [present edition, pp. 465-71]. Other small alterations are of a purely technical nature.
+    hash: sha256:26cf4919d96d4f1f121a2ef1dcf2b7e941f97795f8817a525471aff183dda6f2
+    state: active
+  - id: p00004
+    type: paragraph
+    text: Further, I have added a few more explanatory notes, especially where changed historical conditions seemed to demand this. All these additional notes are enclosed in square brackets and marked either with my initials or “D. H.” [2]
+    hash: sha256:a4fa473068c07a2999658bebbe47ed7267f81f1cf17fd42585f0abc3d7deac77
+    state: active
+  - id: p00005
+    type: paragraph
+    text: Meanwhile a complete revision of the numerous quotations had been made necessary by the publication of the English edition. For this edition Marx’s youngest daughter, Eleanor, undertook to compare all the quotations with their originals, so that those taken from English sources, which constitute the vast majority, are given there not as re-translations from the German but in the original English form. In preparing the fourth edition it was therefore incumbent upon me to consult this text. The comparison revealed various small inaccuracies. Page numbers wrongly indicated, due partly to mistakes in copying from notebooks, and partly to the accumulated misprints of three editions; misplaced quotation or omission marks, which cannot be avoided when a mass of quotations is copied from note-book extracts; here and there some rather unhappy translation of a word; particular passages quoted from the old Paris notebooks of 1843-45, when Marx did not know English and was reading English economists in French translations, so that the double translation yielded a slightly different shade of meaning, <i>e.g</i>., in the case of Steuart, Ure, etc., where the English text had now to be used — and other similar instances of trifling inaccuracy or negligence. But anyone who compares the fourth edition with the previous ones can convince himself that all this laborious process of emendation has not produced the smallest change in the book worth speaking of. There was only one quotation which could not be traced — the one from Richard Jones (4th edition, p. 562, note 47). Marx probably slipped up when writing down the title of the book. [3] All the other quotations retain their cogency in full, or have enhanced it due to their present exact form.
+    hash: sha256:de66dae3daced510178f0a2a98b4f7ee189b31f94612828961a8ba4589d45ca2
+    state: active
+  - id: p00006
+    type: paragraph
+    text: Here, however, I am obliged to revert to an old story.
+    hash: sha256:0d5772d4ffd48af7464b80c2aaeac042ca8423b250fd80385f97db6bcbf166e2
+    state: active
+  - id: p00007
+    type: paragraph
+    text: I know of only one case in which the accuracy of a quotation given by Marx has been called in question. But as the issue dragged beyond his lifetime I cannot well ignore it here.
+    hash: sha256:9c0bc03c8eda568a2fcc0888c3575a8982b812cf94b9df3667656b76a2c580a4
+    state: active
+  - id: p00008
+    type: paragraph
+    text: 'On March 7, 1872, there appeared in the Berlin <i>Concordia</i>, organ of the German Manufacturers’ Association, an anonymous article entitled: “How Karl Marx Quotes.” It was here asserted, with an effervescence of moral indignation and unparliamentary language, that the quotation from Gladstone’s Budget Speech of April 16, 1863 (in the <i>Inaugural Address</i> of the International Workingmen’s Association, 1864, and repeated in “Capital,” Vol. I, p. 617, 4th edition; p. 671, 3rd edition) [present edition, p. 610], had been falsified; that not a single word of the sentence: “this intoxicating augmentation of wealth and power ... is ... entirely confined to classes of property” was to be found in the (semi-official) stenographic report in Hansard. “But this sentence is nowhere to be found in Gladstone’s speech. Exactly the opposite is stated there.” (In bold type): “<b>This sentence, both in form and substance, is a lie inserted by Marx.</b>"'
+    hash: sha256:89240b4e1a9fa5a65dbbd20cebb660493c54f1ab852d4f916d7f6afcb91b1a02
+    state: active
+  - id: p00009
+    type: paragraph
+    text: "Marx, to whom the number of <i>Concordia</i> was sent the following May, answered the anonymous author in the <i>Volksstaat</i> of June 1st. As he could not recall which newspaper report he had used for the quotation, he limited himself to citing, first the equivalent quotation from two English publications, and then the report in <i>The Times</i>, according to which Gladstone says:"
+    hash: sha256:8fae0dad2b5cd57df429f412c31943f0fce8d73dacbd05a46887afc729130ebb
+    state: active
+  - id: p00010
+    type: paragraph
+    text: “That is the state of the case as regards the wealth of this country. I must say for one, I should look almost with apprehension and with pain upon this intoxicating augmentation of wealth and power, if it were my belief that it was confined to classes who are in easy circumstances. This takes no cognisance at all of the condition of the labouring population. The augmentation I have described and which is founded, I think, upon accurate returns, is an augmentation entirely confined to classes possessed of property.”
+    hash: sha256:94cb37fb712861f514e46b22382bdbe96f2403401f5c2fbd7544d9d1f707e3a3
+    state: active
+  - id: p00011
+    type: paragraph
+    text: "Thus Gladstone says here that he would be sorry if it were so, but it <i>is</i> so: this intoxicating augmentation of wealth and power is entirely confined to classes of property. And as to the semi-official Hansard, Marx goes on to say: “In the version which he afterwards manipulated [zurechtgestümpert], Mr. Gladstone was astute enough to obliterate [wegzupfuschen] this passage, which, coming from an English Chancellor of the Exchequer, was certainly compromising. This, by the way, is a traditional usage in the English parliament and not an invention gotten up by little Lasker against Bebel.”"
+    hash: sha256:170b4fb8443c13f32a82c020d2072a5c76a32e1e17b4a500bf63def799bebe96
+    state: active
+  - id: p00012
+    type: paragraph
+    text: The anonymous writer gets angrier and angrier. In his answer in <i>Concordia</i>, July 4th, he sweeps aside second-hand sources and demurely suggests that it is the “custom” to quote parliamentary speeches from the stenographic report; adding, however, that <i>The Times</i> report (which includes the “falsified” sentence) and the Hansard report (which omits it) are “substantially in complete agreement,” while <i>The Times</i> report likewise contains “the exact opposite to that notorious passage in the <i>Inaugural Address</i>.” This fellow carefully conceals the fact that <i>The Times</i> report explicitly includes that self-same “notorious passage,” alongside of its alleged “opposite.” Despite all this, however, the anonymous one feels that he is stuck fast and that only some new dodge can save him. Thus, whilst his article bristles, as we have just shown, with “impudent mendacity” and is interlarded with such edifying terms of abuse as “bad faith,” “dishonesty,” “lying allegation,” “that spurious quotation,” “impudent mendacity,” “a quotation entirely falsified,” “this falsification,” “simply infamous,” etc., he finds it necessary to divert the issue to another domain and therefore promises “to explain in a second article the meaning which we (the non-mendacious anonymous one) attribute to the content of Gladstone’s words.” As if his particular opinion, of no decisive value as it is, had anything whatever to do with the matter. This second article was printed in <i>Concordia</i> on July 11th.
+    hash: sha256:31e3f2283884bb121543de5626b096c9d83ad899402944c2ef5dd19e140dcae9
+    state: active
+  - id: p00013
+    type: paragraph
+    text: Marx replied again in the <i>Volksstaat</i> of August 7th now giving also the reports of the passage in question from the <i>Morning Star</i> and the <i>Morning Advertiser</i> of April 17, 1863. According to both reports Gladstone said that he would look with apprehension, etc., upon this intoxicating augmentation of wealth and power if he believed it to be confined to “classes in easy circumstances.” But this augmentation <i>was</i> in fact “entirely confined to classes possessed of property.” So these reports too reproduced word for word the sentence alleged to have been “lyingly inserted.” Marx further established once more, by a comparison of <i>The Times</i> and the Hansard texts, that this sentence, which three newspaper reports of identical content, appearing independently of one another the next morning, proved to have been really uttered, was missing from the Hansard report, revised according to the familiar “custom,” and that Gladstone, to use Marx’s words, “had afterwards conjured it away.” In conclusion Marx stated that he had no time for further intercourse with the anonymous one. The latter also seems to have had enough, at any rate Marx received no further issues of <i>Concordia</i>.
+    hash: sha256:f3771690dac1dbd2dc9629dd5da7e5fb6a414b8d8394c625384682888c00c20e
+    state: active
+  - id: p00014
+    type: paragraph
+    text: With this the matter appeared to be dead and buried. True, once or twice later on there reached us, from persons in touch with the University of Cambridge, mysterious rumours of an unspeakable literary crime which Marx was supposed to have committed in “Capital,” but despite all investigation nothing more definite could be learned. Then, on November 29, 1883, eight months after Marx’s death, there appeared in <i>The Times</i> a letter headed Trinity College, Cambridge, and signed Sedley Taylor, in which this little man, who dabbles in the mildest sort of co-operative affairs, seizing upon some chance pretext or other, at last enlightened us, not only concerning those vague Cambridge rumours, but also the anonymous one in <i>Concordia</i>.
+    hash: sha256:0521b7a510abb4b88134f63ae52c50d89af54050526f7b901c6b6b64a5f43c9e
+    state: active
+  - id: p00015
+    type: paragraph
+    text: “What appears extremely singular,” says the little man from Trinity College, “is that it was reserved for <i>Professor Brentano</i> (then of the University of Breslau, now of that of Strassburg) to expose... the bad faith which had manifestly dictated the citation made from Mr. Gladstone’s speech in the [Inaugural] Address. Herr Karl Marx, who... attempted to defend the citation, had the hardihood, in the deadly shifts to which Brentano’s masterly conduct of the attack speedily reduced him, to assert that Mr. Gladstone had ‘manipulated’ the report of his speech in <i>The Times</i> of April 17, 1863, before it appeared in Hansard, in order to ‘obliterate’ a passage which ‘was certainly compromising’ for an English Chancellor of the Exchequer. On Brentano’s showing, by a detailed comparison of texts, that the reports of <i>The Times</i> and of Hansard agreed in utterly excluding the meaning which craftily isolated quotation had put upon Mr. Gladstone’s words, Marx withdrew from further controversy under the plea of ‘want of time.’”
+    hash: sha256:65c896c05ac63e2633814445faeaa85c31e8f0b330ba4d0bd77d500262f5e061
+    state: active
+  - id: p00016
+    type: paragraph
+    text: So that was at the bottom of the whole business! And thus was the anonymous campaign of Herr Brentano in <i>Concordia</i> gloriously reflected in the productively co-operating imagination of Cambridge. Thus he stood, sword in hand, and thus he battled, in his “masterly conduct of the attack,” this St. George of the German Manufacturers’ Association, whilst the infernal dragon Marx, “in deadly shifts,” “speedily” breathed his last at his feet.
+    hash: sha256:fa59e000b695c4486ec648f67a3849224f70f9fba6c47109f45cc64df811cfde
+    state: active
+  - id: p00017
+    type: paragraph
+    text: All this Ariostian battle scene, however, only serves to conceal the dodges of our St. George. Here there is no longer talk of “lying insertion” or “falsification,” but of “craftily isolated quotation.” The whole issue was shifted, and St. George and his Cambridge squire very well knew why.
+    hash: sha256:9fe17cad9c3fd1518c4fe999d22ef8d1184880a7bd49f005fa1ce659de5e300f
+    state: active
+  - id: p00018
+    type: paragraph
+    text: 'Eleanor Marx replied in the monthly journal <i>To-day</i> (February 1884), <i>as The Times</i> refused to publish her letter. She once more focussed the debate on the sole question at issue: had Marx “lyingly inserted” that sentence or not? To this Mr. Sedley Taylor answered that “the question whether a particular sentence did or did not occur in Mr. Gladstone’s speech” had been, in his opinion, “of very subordinate importance” in the Brentano-Marx controversy, “compared to the issue whether the quotation in dispute was made with the intention of conveying, or of perverting Mr. Gladstone’s meaning.” He then admits <i>that The Times</i> report contains “a verbal contrariety"; but, if the context is rightly interpreted, <i>i.e.,</i> in the Gladstonian Liberal sense, it shows what Mr. Gladstone <i>meant</i> to say. (<i>To-day</i>, March, 1884.) The most comic point here is that our little Cambridge man now insists upon quoting the speech not from Hansard, as, according to the anonymous Brentano, it is “customary” to do, but from <i>The Times</i> report, which the same Brentano had characterised as “necessarily bungling.” Naturally so, for in Hansard the vexatious sentence is missing.'
+    hash: sha256:44a441be85378c57a52f7117431611a5326cb95a625d4d089cd0a7f1ba37cea4
+    state: active
+  - id: p00019
+    type: paragraph
+    text: 'Eleanor Marx had no difficulty (in the same issue of <i>To-day</i>) in dissolving all this argumentation into thin air. Either Mr. Taylor had read the controversy of 1872, in which case he was now making not only “lying insertions” but also “lying” suppressions; or he had not read it and ought to remain silent. In either case it was certain that he did not dare to maintain for a moment the accusation of his friend Brentano that Marx had made a “lying” addition. On the contrary, Marx, it now seems, had not lyingly added but suppressed an important sentence. But this same sentence is quoted on page 5 of the <i>Inaugural Address</i>, a few lines before the alleged “lying insertion.” And as to the “contrariety” in Gladstone’s speech, is it not Marx himself, who in “Capital,” p. 618 (3rd edition, p. 672), note 105 [present edition, p. 611, Note 1], refers to “the continual crying contradictions in Gladstone’s Budget speeches of 1863 and 1864"? Only he does not presume à la Mr. Sedley Taylor to resolve them into complacent Liberal sentiments. Eleanor Marx, in concluding her reply, finally sums up as follows:'
+    hash: sha256:5b690025429b6ff04ec7473ee5baefa571be2ecd205e951901b51786c6975b52
+    state: active
+  - id: p00020
+    type: paragraph
+    text: “Marx has not suppressed anything worth quoting, neither has he ‘lyingly’ added anything. But he has restored, rescued from oblivion, a particular sentence of one of Mr. Gladstone’s speeches, a sentence which had indubitably been pronounced, but which somehow or other had found its way — out of Hansard.”
+    hash: sha256:cf6d3b3242bca2f47893e0913e361d10bdc674215ffb4000e0df1288bc61f04a
+    state: active
+  - id: p00021
+    type: paragraph
+    text: With that Mr. Sedley Taylor too had had enough, and the result of this whole professorial cobweb, spun out over two decades and two great countries, is that nobody has since dared to cast any other aspersion upon Marx’s literary honesty; whilst Mr. Sedley Taylor, no doubt, will hereafter put as little confidence in the literary war bulletins of Herr Brentano as Herr Brentano will in the papal infallibility of Hansard.
+    hash: sha256:64a308f9d4f4c696e596c4ce9b59256f341282c04c523d5435b1723adae312a0
+    state: active
+  - id: p00022
+    type: paragraph
+    text: <indent level="1"/><b><i>Frederick Engels</i></b><br/><b>London.</b><br/><b>June 25, 1890</b>
+    hash: sha256:5fafc04354b90b810536aaa71f1399a57e2e523cf85ff71aeecdd5954ee9689f
+    state: active

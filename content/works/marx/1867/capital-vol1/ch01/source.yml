@@ -1,0 +1,1168 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch01
+title: "Economic Manuscripts: Capital Vol. I - Chapter One"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch01.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20261003112639id_/https://www.marxists.org/archive/marx/works/1867-c1/ch01.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch01/2026-10-06.html
+  snapshot_hash: sha256:42a6787e8d935f74c65f8585692fac037663f394fc0cecb9106c416df221c94f
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 4
+    text: "Part I: Commodities and Money"
+    hash: sha256:df086b15163fe767e9fa6394be45b7ba76fc7a151c22b22c11108bfefd89e4f3
+    state: active
+  - id: p00002
+    type: heading
+    level: 3
+    text: "Chapter One: Commodities"
+    hash: sha256:59e1fa5e0f861a11211955a1f1d17cde1af5843c3c2db8dab0e85b51df378054
+    state: active
+  - id: p00003
+    type: heading
+    level: 3
+    text: SECTION 1
+    hash: sha256:248559cdf6f2da4e583e48ba890b62e295a9c644ad5131b11784a97ab044475c
+    state: active
+  - id: p00004
+    type: heading
+    level: 4
+    text: THE TWO FACTORS OF A COMMODITY:<br/>USE-VALUE AND VALUE<br/>(THE SUBSTANCE OF VALUE AND THE MAGNITUDE OF VALUE)
+    hash: sha256:a1eb37f36b64330c3d35488e583990b78c75e77dfba4060a098b9c3c4f3a388e
+    state: active
+  - id: p00005
+    type: paragraph
+    text: The wealth of those societies in which the capitalist mode of production prevails, presents itself as “an immense accumulation of commodities,”<fn ref="1"/> its unit being a single commodity. Our investigation must therefore begin with the analysis of a commodity.
+    hash: sha256:7e0a5981247e6764671a5db4308284062006b9a9b151764c387185018b16d79d
+    state: active
+  - id: p00006
+    type: paragraph
+    text: A commodity is, in the first place, an object outside us, a thing that by its properties satisfies human wants of some sort or another. The nature of such wants, whether, for instance, they spring from the stomach or from fancy, makes no difference.<fn ref="2"/> Neither are we here concerned to know how the object satisfies these wants, whether directly as means of subsistence, or indirectly as means of production.
+    hash: sha256:a27a6c6e4023f32b9b6a1efed47e64d3d484c7b6acd0023476e6f0c4dc86e68b
+    state: active
+  - id: p00007
+    type: paragraph
+    text: Every useful thing, as iron, paper, &amp;c., may be looked at from the two points of view of quality and quantity. It is an assemblage of many properties, and may therefore be of use in various ways. To discover the various uses of things is the work of history.<fn ref="3"/> So also is the establishment of socially-recognized standards of measure for the quantities of these useful objects. The diversity of these measures has its origin partly in the diverse nature of the objects to be measured, partly in convention.
+    hash: sha256:6ae8138a53177214b1268b7235f94ee014216ef06527a68fdf4443529d7f49fd
+    state: active
+  - id: p00008
+    type: paragraph
+    text: 'The utility of a thing makes it a use value.<fn ref="4"/> But this utility is not a thing of air. Being limited by the physical properties of the commodity, it has no existence apart from that commodity. A commodity, such as iron, corn, or a diamond, is therefore, so far as it is a material thing, a use value, something useful. This property of a commodity is independent of the amount of labour required to appropriate its useful qualities. When treating of use value, we always assume to be dealing with definite quantities, such as dozens of watches, yards of linen, or tons of iron. The use values of commodities furnish the material for a special study, that of the commercial knowledge of commodities.<fn ref="5"/> Use values become a reality only by use or consumption: they also constitute the substance of all wealth, whatever may be the social form of that wealth. In the form of society we are about to consider, they are, in addition, the material depositories of exchange value.'
+    hash: sha256:7e8d24ea99e439ce64d2162788deedaba728f436ff2c3eb8596c080fb888113a
+    state: active
+  - id: p00009
+    type: paragraph
+    text: Exchange value, at first sight, presents itself as a quantitative relation, as the proportion in which values in use of one sort are exchanged for those of another sort,<fn ref="6"/> a relation constantly changing with time and place. Hence exchange value appears to be something accidental and purely relative, and consequently an intrinsic value, <i>i.e.</i>, an exchange value that is inseparably connected with, inherent in commodities, seems a contradiction in terms.<fn ref="7"/> Let us consider the matter a little more closely.
+    hash: sha256:9a0b8d584e163f22a2d54a4c7b2829c2679b56c10cdad9a17b0a76c56ff03ffd
+    state: active
+  - id: p00010
+    type: paragraph
+    text: "A given commodity, <i>e.g.</i>, a quarter of wheat is exchanged for x blacking, y silk, or z gold, &amp;c. – in short, for other commodities in the most different proportions. Instead of one exchange value, the wheat has, therefore, a great many. But since x blacking, y silk, or z gold &amp;c., each represents the exchange value of one quarter of wheat, x blacking, y silk, z gold, &amp;c., must, as exchange values, be replaceable by each other, or equal to each other. Therefore, first: the valid exchange values of a given commodity express something equal; secondly, exchange value, generally, is only the mode of expression, the phenomenal form, of something contained in it, yet distinguishable from it."
+    hash: sha256:dc625618b2a06b2933dd31a617027114a24859e2a081ce0ec623600c4cb71903
+    state: active
+  - id: p00011
+    type: paragraph
+    text: "Let us take two commodities, <i>e.g.</i>, corn and iron. The proportions in which they are exchangeable, whatever those proportions may be, can always be represented by an equation in which a given quantity of corn is equated to some quantity of iron: <i>e.g.</i>, 1 quarter corn = x cwt. iron. What does this equation tell us? It tells us that in two different things – in 1 quarter of corn and x cwt. of iron, there exists in equal quantities something common to both. The two things must therefore be equal to a third, which in itself is neither the one nor the other. Each of them, so far as it is exchange value, must therefore be reducible to this third."
+    hash: sha256:c89efd27898dd6215c4f9e4eeecbe4b1f3b3625f32d08b7b88b50d493079ea77
+    state: active
+  - id: p00012
+    type: paragraph
+    text: A simple geometrical illustration will make this clear. In order to calculate and compare the areas of rectilinear figures, we decompose them into triangles. But the area of the triangle itself is expressed by something totally different from its visible figure, namely, by half the product of the base multiplied by the altitude. In the same way the exchange values of commodities must be capable of being expressed in terms of something common to them all, of which thing they represent a greater or less quantity.
+    hash: sha256:377a8f78b4d1e7a82d87e3a994eb272337209fed59b40e95fd80d793e11111c0
+    state: active
+  - id: p00013
+    type: paragraph
+    text: This common “something” cannot be either a geometrical, a chemical, or any other natural property of commodities. Such properties claim our attention only in so far as they affect the utility of those commodities, make them use values. But the exchange of commodities is evidently an act characterised by a total abstraction from use value. Then one use value is just as good as another, provided only it be present in sufficient quantity. Or, as old Barbon says,
+    hash: sha256:1bedbc8edde7af3e346f28da23e4974c149f2bb51786c3cce38212e87cecea56
+    state: active
+  - id: p00014
+    type: blockquote
+    text: “one sort of wares are as good as another, if the values be equal. There is no difference or distinction in things of equal value ... An hundred pounds’ worth of lead or iron, is of as great value as one hundred pounds’ worth of silver or gold.”<fn ref="8"/>
+    hash: sha256:d7b77a667b86561708ee5e5239385da2684e9aff7d6883ddefade7f027f9ad0b
+    state: active
+  - id: p00015
+    type: paragraph
+    text: As use values, commodities are, above all, of different qualities, but as exchange values they are merely different quantities, and consequently do not contain an atom of use value.
+    hash: sha256:ecfb6983cfef4b303ca1be48f9fb306fa6e38e385d57c698e9a9f0fcb35d3324
+    state: active
+  - id: p00016
+    type: paragraph
+    text: If then we leave out of consideration the use value of commodities, they have only one common property left, that of being products of labour. But even the product of labour itself has undergone a change in our hands. If we make abstraction from its use value, we make abstraction at the same time from the material elements and shapes that make the product a use value; we see in it no longer a table, a house, yarn, or any other useful thing. Its existence as a material thing is put out of sight. Neither can it any longer be regarded as the product of the labour of the joiner, the mason, the spinner, or of any other definite kind of productive labour. Along with the useful qualities of the products themselves, we put out of sight both the useful character of the various kinds of labour embodied in them, and the concrete forms of that labour; there is nothing left but what is common to them all; all are reduced to one and the same sort of labour, human labour in the abstract.
+    hash: sha256:3fb28e87420ab5877122c9170ae21d35c960da0e71605854de03d9cc635e64b5
+    state: active
+  - id: p00017
+    type: paragraph
+    text: Let us now consider the residue of each of these products; it consists of the same unsubstantial reality in each, a mere congelation of homogeneous human labour, of labour power expended without regard to the mode of its expenditure. All that these things now tell us is, that human labour power has been expended in their production, that human labour is embodied in them. When looked at as crystals of this social substance, common to them all, they are – Values.
+    hash: sha256:b13dac29b0de0b77080d8e7944b662c3419f16b9d6a3cd5bda60104a0ba45833
+    state: active
+  - id: p00018
+    type: paragraph
+    text: We have seen that when commodities are exchanged, their exchange value manifests itself as something totally independent of their use value. But if we abstract from their use value, there remains their Value as defined above. Therefore, the common substance that manifests itself in the exchange value of commodities, whenever they are exchanged, is their value. The progress of our investigation will show that exchange value is the only form in which the value of commodities can manifest itself or be expressed. For the present, however, we have to consider the nature of value independently of this, its form.
+    hash: sha256:8739c477ddecce70cb13e030ae5ddaae58a22c95784fc7c0152efff43f6b8ff2
+    state: active
+  - id: p00019
+    type: paragraph
+    text: A use value, or useful article, therefore, has value only because human labour in the abstract has been embodied or materialised in it. How, then, is the magnitude of this value to be measured? Plainly, by the quantity of the value-creating substance, the labour, contained in the article. The quantity of labour, however, is measured by its duration, and labour time in its turn finds its standard in weeks, days, and hours.
+    hash: sha256:06148b356333466a8248c4b1a247705e92780409ce347c283a0324037fd0768a
+    state: active
+  - id: p00020
+    type: paragraph
+    text: Some people might think that if the value of a commodity is determined by the quantity of labour spent on it, the more idle and unskilful the labourer, the more valuable would his commodity be, because more time would be required in its production. The labour, however, that forms the substance of value, is homogeneous human labour, expenditure of one uniform labour power. The total labour power of society, which is embodied in the sum total of the values of all commodities produced by that society, counts here as one homogeneous mass of human labour power, composed though it be of innumerable individual units. Each of these units is the same as any other, so far as it has the character of the average labour power of society, and takes effect as such; that is, so far as it requires for producing a commodity, no more time than is needed on an average, no more than is socially necessary. The labour time socially necessary is that required to produce an article under the normal conditions of production, and with the average degree of skill and intensity prevalent at the time. The introduction of power-looms into England probably reduced by one-half the labour required to weave a given quantity of yarn into cloth. The hand-loom weavers, as a matter of fact, continued to require the same time as before; but for all that, the product of one hour of their labour represented after the change only half an hour’s social labour, and consequently fell to one-half its former value.
+    hash: sha256:d422e07f809305c55761ddceca24d33802816211308aca243d5967f03c0c98dc
+    state: active
+  - id: p00021
+    type: paragraph
+    text: We see then that that which determines the magnitude of the value of any article is the amount of labour socially necessary, or the labour time socially necessary for its production.<fn ref="9"/> Each individual commodity, in this connexion, is to be considered as an average sample of its class.<fn ref="10"/> Commodities, therefore, in which equal quantities of labour are embodied, or which can be produced in the same time, have the same value. The value of one commodity is to the value of any other, as the labour time necessary for the production of the one is to that necessary for the production of the other. “As values, all commodities are only definite masses of congealed labour time.”<fn ref="11"/>
+    hash: sha256:5f95bb956cd2f49e56e9f289d8ceee533961db8d538328c4abf2473b021a115a
+    state: active
+  - id: p00022
+    type: paragraph
+    text: The value of a commodity would therefore remain constant, if the labour time required for its production also remained constant. But the latter changes with every variation in the productiveness of labour. This productiveness is determined by various circumstances, amongst others, by the average amount of skill of the workmen, the state of science, and the degree of its practical application, the social organisation of production, the extent and capabilities of the means of production, and by physical conditions. For example, the same amount of labour in favourable seasons is embodied in 8 bushels of corn, and in unfavourable, only in four. The same labour extracts from rich mines more metal than from poor mines. Diamonds are of very rare occurrence on the earth’s surface, and hence their discovery costs, on an average, a great deal of labour time. Consequently much labour is represented in a small compass. Jacob doubts whether gold has ever been paid for at its full value. This applies still more to diamonds. According to Eschwege, the total produce of the Brazilian diamond mines for the eighty years, ending in 1823, had not realised the price of one-and-a-half years’ average produce of the sugar and coffee plantations of the same country, although the diamonds cost much more labour, and therefore represented more value. With richer mines, the same quantity of labour would embody itself in more diamonds, and their value would fall. If we could succeed at a small expenditure of labour, in converting carbon into diamonds, their value might fall below that of bricks. In general, the greater the productiveness of labour, the less is the labour time required for the production of an article, the less is the amount of labour crystallised in that article, and the less is its value; and <i>vice versâ</i>, the less the productiveness of labour, the greater is the labour time required for the production of an article, and the greater is its value. The value of a commodity, therefore, varies directly as the quantity, and inversely as the productiveness, of the labour incorporated in it. <fn ref="A"/>
+    hash: sha256:4f783499e5968107203d25edcef496b839b8534a34b93e08c8a956aba74317b1
+    state: active
+  - id: p00023
+    type: paragraph
+    text: A thing can be a use value, without having value. This is the case whenever its utility to man is not due to labour. Such are air, virgin soil, natural meadows, &amp;c. A thing can be useful, and the product of human labour, without being a commodity. Whoever directly satisfies his wants with the produce of his own labour, creates, indeed, use values, but not commodities. In order to produce the latter, he must not only produce use values, but use values for others, social use values. (And not only for others, without more. The mediaeval peasant produced quit-rent-corn for his feudal lord and tithe-corn for his parson. But neither the quit-rent-corn nor the tithe-corn became commodities by reason of the fact that they had been produced for others. To become a commodity a product must be transferred to another, whom it will serve as a use value, by means of an exchange.)<fn ref="12"/> Lastly nothing can have value, without being an object of utility. If the thing is useless, so is the labour contained in it; the labour does not count as labour, and therefore creates no value.
+    hash: sha256:50aaed082776b86569c0c32b203c93c6951deb71916abd507729d35db31902b7
+    state: active
+  - id: p00024
+    type: heading
+    level: 3
+    text: SECTION 2
+    hash: sha256:1bbe219f72ec4714da6f9e8e0cd81fcd41ddad5e4a6d144fd7e3ac6016a85e99
+    state: active
+  - id: p00025
+    type: heading
+    level: 4
+    text: THE TWO-FOLD CHARACTER OF<br/>THE LABOUR EMBODIED IN COMMODITIES
+    hash: sha256:ae8d45338edf7aad005d96050ea113d7768b813b4d3dfad67ba5e28456dc8163
+    state: active
+  - id: p00026
+    type: paragraph
+    text: At first sight a commodity presented itself to us as a complex of two things – use value and exchange value. Later on, we saw also that labour, too, possesses the same two-fold nature; for, so far as it finds expression in value, it does not possess the same characteristics that belong to it as a creator of use values. I was the first to point out and to examine critically this two-fold nature of the labour contained in commodities. As this point is the pivot on which a clear comprehension of political economy turns, we must go more into detail.
+    hash: sha256:2eea5cec491ef5381529adf798bcd93c59554c015cfb2dfd8a1d9bd26283a870
+    state: active
+  - id: p00027
+    type: paragraph
+    text: Let us take two commodities such as a coat and 10 yards of linen, and let the former be double the value of the latter, so that, if 10 yards of linen = W, the coat = 2W.
+    hash: sha256:1cfa64700cfece3944808bfc3ae68fec4be701f6e7557fc2f4de1237821e24b0
+    state: active
+  - id: p00028
+    type: paragraph
+    text: The coat is a use value that satisfies a particular want. Its existence is the result of a special sort of productive activity, the nature of which is determined by its aim, mode of operation, subject, means, and result. The labour, whose utility is thus represented by the value in use of its product, or which manifests itself by making its product a use value, we call useful labour. In this connection we consider only its useful effect.
+    hash: sha256:ecd41746f73ee0e4335f0b794d707fb7d42deff9b101f1a89d770b6f95957b57
+    state: active
+  - id: p00029
+    type: paragraph
+    text: As the coat and the linen are two qualitatively different use values, so also are the two forms of labour that produce them, tailoring and weaving. Were these two objects not qualitatively different, not produced respectively by labour of different quality, they could not stand to each other in the relation of commodities. Coats are not exchanged for coats, one use value is not exchanged for another of the same kind.
+    hash: sha256:54a7b2d9c0920855a2f52a173a5711fe568ee1d3f15db4f9c89017466c3c19a4
+    state: active
+  - id: p00030
+    type: paragraph
+    text: To all the different varieties of values in use there correspond as many different kinds of useful labour, classified according to the order, genus, species, and variety to which they belong in the social division of labour. This division of labour is a necessary condition for the production of commodities, but it does not follow, conversely, that the production of commodities is a necessary condition for the division of labour. In the primitive Indian community there is social division of labour, without production of commodities. Or, to take an example nearer home, in every factory the labour is divided according to a system, but this division is not brought about by the operatives mutually exchanging their individual products. Only such products can become commodities with regard to each other, as result from different kinds of labour, each kind being carried on independently and for the account of private individuals.
+    hash: sha256:f03910435797911b88f57a66cba50830d8ab5cb104cea6735e721deef0be457a
+    state: active
+  - id: p00031
+    type: paragraph
+    text: "To resume, then: In the use value of each commodity there is contained useful labour, <i>i.e.</i>, productive activity of a definite kind and exercised with a definite aim. Use values cannot confront each other as commodities, unless the useful labour embodied in them is qualitatively different in each of them. In a community, the produce of which in general takes the form of commodities, <i>i.e.</i>, in a community of commodity producers, this qualitative difference between the useful forms of labour that are carried on independently of individual producers, each on their own account, develops into a complex system, a social division of labour."
+    hash: sha256:3ebd08164ea4bcffb8915d01a03264756fb44fdbb149cc49bf4675e7b0e9e898
+    state: active
+  - id: p00032
+    type: paragraph
+    text: Anyhow, whether the coat be worn by the tailor or by his customer, in either case it operates as a use value. Nor is the relation between the coat and the labour that produced it altered by the circumstance that tailoring may have become a special trade, an independent branch of the social division of labour. Wherever the want of clothing forced them to it, the human race made clothes for thousands of years, without a single man becoming a tailor. But coats and linen, like every other element of material wealth that is not the spontaneous produce of Nature, must invariably owe their existence to a special productive activity, exercised with a definite aim, an activity that appropriates particular nature-given materials to particular human wants. So far therefore as labour is a creator of use value, is useful labour, it is a necessary condition, independent of all forms of society, for the existence of the human race; it is an eternal nature-imposed necessity, without which there can be no material exchanges between man and Nature, and therefore no life.
+    hash: sha256:41c7aa81b5dc297b7cf12429644339e33662130dfaca415d0af08c26fc3ead5b
+    state: active
+  - id: p00033
+    type: paragraph
+    text: The use values, coat, linen, &amp;c., <i>i.e.</i>, the bodies of commodities, are combinations of two elements – matter and labour. If we take away the useful labour expended upon them, a material substratum is always left, which is furnished by Nature without the help of man. The latter can work only as Nature does, that is by changing the form of matter.<fn ref="13"/> Nay more, in this work of changing the form he is constantly helped by natural forces. We see, then, that labour is not the only source of material wealth, of use values produced by labour. As William Petty puts it, labour is its father and the earth its mother.
+    hash: sha256:707935e16b9d62089b517c2adeb5547b2e5f81301a1a6f850f71431123e1ac79
+    state: active
+  - id: p00034
+    type: paragraph
+    text: Let us now pass from the commodity considered as a use value to the value of commodities.
+    hash: sha256:d1011b52240824c41217c7b63524a5e3ab36723a23863b6794d2b06c359d6e4e
+    state: active
+  - id: p00035
+    type: paragraph
+    text: By our assumption, the coat is worth twice as much as the linen. But this is a mere quantitative difference, which for the present does not concern us. We bear in mind, however, that if the value of the coat is double that of 10 yds of linen, 20 yds of linen must have the same value as one coat. So far as they are values, the coat and the linen are things of a like substance, objective expressions of essentially identical labour. But tailoring and weaving are, qualitatively, different kinds of labour. There are, however, states of society in which one and the same man does tailoring and weaving alternately, in which case these two forms of labour are mere modifications of the labour of the same individual, and not special and fixed functions of different persons, just as the coat which our tailor makes one day, and the trousers which he makes another day, imply only a variation in the labour of one and the same individual. Moreover, we see at a glance that, in our capitalist society, a given portion of human labour is, in accordance with the varying demand, at one time supplied in the form of tailoring, at another in the form of weaving. This change may possibly not take place without friction, but take place it must.
+    hash: sha256:2a5c0c90c7d7e5b704ec9c1307c221d1bd3df1946049d3a2fe7519fb59d0ccbe
+    state: active
+  - id: p00036
+    type: paragraph
+    text: Productive activity, if we leave out of sight its special form, viz., the useful character of the labour, is nothing but the expenditure of human labour power. Tailoring and weaving, though qualitatively different productive activities, are each a productive expenditure of human brains, nerves, and muscles, and in this sense are human labour. They are but two different modes of expending human labour power. Of course, this labour power, which remains the same under all its modifications, must have attained a certain pitch of development before it can be expended in a multiplicity of modes. But the value of a commodity represents human labour in the abstract, the expenditure of human labour in general. And just as in society, a general or a banker plays a great part, but mere man, on the other hand, a very shabby part,<fn ref="14"/> so here with mere human labour. It is the expenditure of simple labour power, <i>i.e.</i>, of the labour power which, on an average, apart from any special development, exists in the organism of every ordinary individual. Simple average labour, it is true, varies in character in different countries and at different times, but in a particular society it is given. Skilled labour counts only as simple labour intensified, or rather, as multiplied simple labour, a given quantity of skilled being considered equal to a greater quantity of simple labour. Experience shows that this reduction is constantly being made. A commodity may be the product of the most skilled labour, but its value, by equating it to the product of simple unskilled labour, represents a definite quantity of the latter labour alone.<fn ref="15"/> The different proportions in which different sorts of labour are reduced to unskilled labour as their standard, are established by a social process that goes on behind the backs of the producers, and, consequently, appear to be fixed by custom. For simplicity’s sake we shall henceforth account every kind of labour to be unskilled, simple labour; by this we do no more than save ourselves the trouble of making the reduction.
+    hash: sha256:3bbd1d7ddb74236c521402cd6e266d2758ac669e835c726ec082aa617880ffd8
+    state: active
+  - id: p00037
+    type: paragraph
+    text: "Just as, therefore, in viewing the coat and linen as values, we abstract from their different use values, so it is with the labour represented by those values: we disregard the difference between its useful forms, weaving and tailoring. As the use values, coat and linen, are combinations of special productive activities with cloth and yarn, while the values, coat and linen, are, on the other hand, mere homogeneous congelations of undifferentiated labour, so the labour embodied in these latter values does not count by virtue of its productive relation to cloth and yarn, but only as being expenditure of human labour power. Tailoring and weaving are necessary factors in the creation of the use values, coat and linen, precisely because these two kinds of labour are of different qualities; but only in so far as abstraction is made from their special qualities, only in so far as both possess the same quality of being human labour, do tailoring and weaving form the substance of the values of the same articles."
+    hash: sha256:781b2f5b83e44623d0d19a2280e85b820c774ccabb854cdb85896f8c96562de6
+    state: active
+  - id: p00038
+    type: paragraph
+    text: Coats and linen, however, are not merely values, but values of definite magnitude, and according to our assumption, the coat is worth twice as much as the ten yards of linen. Whence this difference in their values? It is owing to the fact that the linen contains only half as much labour as the coat, and consequently, that in the production of the latter, labour power must have been expended during twice the time necessary for the production of the former.
+    hash: sha256:e00ba1dce78e467b2c4b92ed07ddc72b3d7679fd366d37a41e9e6f187a6af0e4
+    state: active
+  - id: p00039
+    type: paragraph
+    text: While, therefore, with reference to use value, the labour contained in a commodity counts only qualitatively, with reference to value it counts only quantitatively, and must first be reduced to human labour pure and simple. In the former case, it is a question of How and What, in the latter of How much? How long a time? Since the magnitude of the value of a commodity represents only the quantity of labour embodied in it, it follows that all commodities, when taken in certain proportions, must be equal in value.
+    hash: sha256:0b6281b9e233c0b997def743fd481a42c27b7cd145bc295595ca76c03d538893
+    state: active
+  - id: p00040
+    type: paragraph
+    text: If the productive power of all the different sorts of useful labour required for the production of a coat remains unchanged, the sum of the values of the coats produced increases with their number. If one coat represents x days’ labour, two coats represent 2x days’ labour, and so on. But assume that the duration of the labour necessary for the production of a coat becomes doubled or halved. In the first case one coat is worth as much as two coats were before; in the second case, two coats are only worth as much as one was before, although in both cases one coat renders the same service as before, and the useful labour embodied in it remains of the same quality. But the quantity of labour spent on its production has altered.
+    hash: sha256:e62f96f655714bdd4fc4a1c7d700c8f328e9a546dd7c9a63d3fe7659baaae210
+    state: active
+  - id: p00041
+    type: paragraph
+    text: An increase in the quantity of use values is an increase of material wealth. With two coats two men can be clothed, with one coat only one man. Nevertheless, an increased quantity of material wealth may correspond to a simultaneous fall in the magnitude of its value. This antagonistic movement has its origin in the two-fold character of labour. Productive power has reference, of course, only to labour of some useful concrete form, the efficacy of any special productive activity during a given time being dependent on its productiveness. Useful labour becomes, therefore, a more or less abundant source of products, in proportion to the rise or fall of its productiveness. On the other hand, no change in this productiveness affects the labour represented by value. Since productive power is an attribute of the concrete useful forms of labour, of course it can no longer have any bearing on that labour, so soon as we make abstraction from those concrete useful forms. However then productive power may vary, the same labour, exercised during equal periods of time, always yields equal amounts of value. But it will yield, during equal periods of time, different quantities of values in use; more, if the productive power rise, fewer, if it fall. The same change in productive power, which increases the fruitfulness of labour, and, in consequence, the quantity of use values produced by that labour, will diminish the total value of this increased quantity of use values, provided such change shorten the total labour time necessary for their production; and <i>vice versâ</i>.
+    hash: sha256:f78a0c7f0351bf49986668a997f1fa1934914480451e367db04ef83e5ee643a1
+    state: active
+  - id: p00042
+    type: paragraph
+    text: On the one hand all labour is, speaking physiologically, an expenditure of human labour power, and in its character of identical abstract human labour, it creates and forms the value of commodities. On the other hand, all labour is the expenditure of human labour power in a special form and with a definite aim, and in this, its character of concrete useful labour, it produces use values.<fn ref="16"/>
+    hash: sha256:3b853d467229dcbab8f00db8a162ed2eca006e3ffc6bee7fbd41130a8a64fc6f
+    state: active
+  - id: p00043
+    type: heading
+    level: 3
+    text: SECTION 3
+    hash: sha256:c42035a9664ccca6f411ebb9e851680dd88d8ef10143685301255c123957a3d8
+    state: active
+  - id: p00044
+    type: heading
+    level: 4
+    text: THE FORM OF VALUE OR EXCHANGE VALUE
+    hash: sha256:5c7e8847557b1f1468ccc5fbde3f7e3697fd47c3a09093c05a878a6b82a423e9
+    state: active
+  - id: p00045
+    type: paragraph
+    text: Commodities come into the world in the shape of use values, articles, or goods, such as iron, linen, corn, &amp;c. This is their plain, homely, bodily form. They are, however, commodities, only because they are something two-fold, both objects of utility, and, at the same time, depositories of value. They manifest themselves therefore as commodities, or have the form of commodities, only in so far as they have two forms, a physical or natural form, and a value form.
+    hash: sha256:fd6bb6670207a10a77be170a60f043ac1883e7026cf69bf655e610c73ac07cb9
+    state: active
+  - id: p00046
+    type: paragraph
+    text: The reality of the value of commodities differs in this respect from Dame Quickly, that we don’t know “where to have it.” The value of commodities is the very opposite of the coarse materiality of their substance, not an atom of matter enters into its composition. Turn and examine a single commodity, by itself, as we will, yet in so far as it remains an object of value, it seems impossible to grasp it. If, however, we bear in mind that the value of commodities has a purely social reality, and that they acquire this reality only in so far as they are expressions or embodiments of one identical social substance, viz., human labour, it follows as a matter of course, that value can only manifest itself in the social relation of commodity to commodity. In fact we started from exchange value, or the exchange relation of commodities, in order to get at the value that lies hidden behind it. We must now return to this form under which value first appeared to us.
+    hash: sha256:8dfa00489fe7e9ba43425269fa14b618e91574dfb4441f6b50fd6961d7b2c00a
+    state: active
+  - id: p00047
+    type: paragraph
+    text: Every one knows, if he knows nothing else, that commodities have a value form common to them all, and presenting a marked contrast with the varied bodily forms of their use values. I mean their money form. Here, however, a task is set us, the performance of which has never yet even been attempted by <i>bourgeois</i> economy, the task of tracing the genesis of this money form, of developing the expression of value implied in the value relation of commodities, from its simplest, almost imperceptible outline, to the dazzling money-form. By doing this we shall, at the same time, solve the riddle presented by money.
+    hash: sha256:4b7525a4950583255a7d5b8c0e3acac44d519010d155079935a4df166f003465
+    state: active
+  - id: p00048
+    type: paragraph
+    text: The simplest value-relation is evidently that of one commodity to some one other commodity of a different kind. Hence the relation between the values of two commodities supplies us with the simplest expression of the value of a single commodity.
+    hash: sha256:27aee688afc251a83a8dfd47fee462173c21ee61a5740b61c922f9d377b5acbe
+    state: active
+  - id: p00049
+    type: heading
+    level: 5
+    text: A. Elementary or Accidental Form Of Value
+    hash: sha256:54c683531e489aa1c8c36bbb949e1ae8eb54b2312e405a06f916eb5a12b9ffb9
+    state: active
+  - id: p00050
+    type: paragraph
+    text: <indent level="1"/>x commodity A = y commodity B, or<br/>x commodity A is worth y commodity B.
+    hash: sha256:3e250693f8c760da8d8be5e875b81d5703edc1f39d7bbf6647889fc9377ca5ff
+    state: active
+  - id: p00051
+    type: paragraph
+    text: <indent level="1"/>20 yards of linen = 1 coat, or<br/>20 Yards of linen are worth 1 coat.
+    hash: sha256:a7614c7196a3d0c5aecb87f53bf196963aed876ce1c347cd22eeacc8c041e238
+    state: active
+  - id: p00052
+    type: heading
+    level: 6
+    text: 1. The two poles of the expression of value. Relative form and Equivalent form
+    hash: sha256:5818fb298d121099d53e3ad265bd2422495f6a785677144562f7c27166f92f31
+    state: active
+  - id: p00053
+    type: paragraph
+    text: The whole mystery of the form of value lies hidden in this elementary form. Its analysis, therefore, is our real difficulty.
+    hash: sha256:b6f7b8658baebf148936e5d638cdab4dc135770359519264a2623c239bc49895
+    state: active
+  - id: p00054
+    type: paragraph
+    text: Here two different kinds of commodities (in our example the linen and the coat), evidently play two different parts. The linen expresses its value in the coat; the coat serves as the material in which that value is expressed. The former plays an active, the latter a passive, part. The value of the linen is represented as relative value, or appears in relative form. The coat officiates as equivalent, or appears in equivalent form.
+    hash: sha256:1c0b79d12e3951e0209886ef07db4b6e44571a47acc16d266b36d019f3d1dc47
+    state: active
+  - id: p00055
+    type: paragraph
+    text: The relative form and the equivalent form are two intimately connected, mutually dependent and inseparable elements of the expression of value; but, at the same time, are mutually exclusive, antagonistic extremes – <i>i.e.</i>, poles of the same expression. They are allotted respectively to the two different commodities brought into relation by that expression. It is not possible to express the value of linen in linen. 20 yards of linen = 20 yards of linen is no expression of value. On the contrary, such an equation merely says that 20 yards of linen are nothing else than 20 yards of linen, a definite quantity of the use value linen. The value of the linen can therefore be expressed only relatively – <i>i.e.</i>, in some other commodity. The relative form of the value of the linen presupposes, therefore, the presence of some other commodity – here the coat – under the form of an equivalent. On the other hand, the commodity that figures as the equivalent cannot at the same time assume the relative form. That second commodity is not the one whose value is expressed. Its function is merely to serve as the material in which the value of the first commodity is expressed.
+    hash: sha256:3f263d21cb54d089945e3b082e0556bb10d82b042652a653f45d1f3f21edc9f4
+    state: active
+  - id: p00056
+    type: paragraph
+    text: No doubt, the expression 20 yards of linen = 1 coat, or 20 yards of linen are worth 1 coat, implies the opposite relation. 1 coat = 20 yards of linen, or 1 coat is worth 20 yards of linen. But, in that case, I must reverse the equation, in order to express the value of the coat relatively; and so soon as I do that the linen becomes the equivalent instead of the coat. A single commodity cannot, therefore, simultaneously assume, in the same expression of value, both forms. The very polarity of these forms makes them mutually exclusive.
+    hash: sha256:5d55ac2c66c7d5a97f5313960e6534c47f18bedad0730d6dbfb41823f130d3ff
+    state: active
+  - id: p00057
+    type: paragraph
+    text: Whether, then, a commodity assumes the relative form, or the opposite equivalent form, depends entirely upon its accidental position in the expression of value – that is, upon whether it is the commodity whose value is being expressed or the commodity in which value is being expressed.
+    hash: sha256:e940a9fd8c2ebc70771dd669704efbaf03129750f183eb9a262ffd0f565a87f2
+    state: active
+  - id: p00058
+    type: heading
+    level: 6
+    text: 2. The Relative Form of value
+    hash: sha256:d7c87722dbb471dde3f309819ac10d3ef902ae73191438a6d7ef3d8262399a6e
+    state: active
+  - id: p00059
+    type: paragraph
+    text: (a.) The nature and import of this form
+    hash: sha256:f9dd1eb015564f7891723f8600ba73e234c1766ccdad48ba2c68f8fd30ab81d2
+    state: active
+  - id: p00060
+    type: paragraph
+    text: In order to discover how the elementary expression of the value of a commodity lies hidden in the value relation of two commodities, we must, in the first place, consider the latter entirely apart from its quantitative aspect. The usual mode of procedure is generally the reverse, and in the value relation nothing is seen but the proportion between definite quantities of two different sorts of commodities that are considered equal to each other. It is apt to be forgotten that the magnitudes of different things can be compared quantitatively, only when those magnitudes are expressed in terms of the same unit. It is only as expressions of such a unit that they are of the same denomination, and therefore commensurable.<fn ref="17"/>
+    hash: sha256:b2c8808d785a95b9c29da9542d15025975b511e130c2f8704dba13b6b52fdc97
+    state: active
+  - id: p00061
+    type: paragraph
+    text: Whether 20 yards of linen = 1 coat or = 20 coats or = x coats – that is, whether a given quantity of linen is worth few or many coats, every such statement implies that the linen and coats, as magnitudes of value, are expressions of the same unit, things of the same kind. Linen = coat is the basis of the equation.
+    hash: sha256:56994aebdcda733415067555154e747a4d4048f06400361c3d726e13a8cbc965
+    state: active
+  - id: p00062
+    type: paragraph
+    text: But the two commodities whose identity of quality is thus assumed, do not play the same part. It is only the value of the linen that is expressed. And how? By its reference to the coat as its equivalent, as something that can be exchanged for it. In this relation the coat is the mode of existence of value, is value embodied, for only as such is it the same as the linen. On the other hand, the linen’s own value comes to the front, receives independent expression, for it is only as being value that it is comparable with the coat as a thing of equal value, or exchangeable with the coat. To borrow an illustration from chemistry, butyric acid is a different substance from propyl formate. Yet both are made up of the same chemical substances, carbon (C), hydrogen (H), and oxygen (O), and that, too, in like proportions – namely, C<sub>4</sub>H<sub>8</sub>O<sub>2</sub>. If now we equate butyric acid to propyl formate, then, in the first place, propyl formate would be, in this relation, merely a form of existence of C<sub>4</sub>H<sub>8</sub>O<sub>2</sub>; and in the second place, we should be stating that butyric acid also consists of C<sub>4</sub>H<sub>8</sub>O<sub>2</sub>. Therefore, by thus equating the two substances, expression would be given to their chemical composition, while their different physical forms would be neglected.
+    hash: sha256:b106705d53c74e124bdc69538a06e0e4e874404f203e1dbd0690df8313d34523
+    state: active
+  - id: p00063
+    type: paragraph
+    text: If we say that, as values, commodities are mere congelations of human labour, we reduce them by our analysis, it is true, to the abstraction, value; but we ascribe to this value no form apart from their bodily form. It is otherwise in the value relation of one commodity to another. Here, the one stands forth in its character of value by reason of its relation to the other.
+    hash: sha256:807820ef377b5208c08031d8e8010bf91f1124bb81133bd0934b305fa74f62bc
+    state: active
+  - id: p00064
+    type: paragraph
+    text: By making the coat the equivalent of the linen, we equate the labour embodied in the former to that in the latter. Now, it is true that the tailoring, which makes the coat, is concrete labour of a different sort from the weaving which makes the linen. But the act of equating it to the weaving, reduces the tailoring to that which is really equal in the two kinds of labour, to their common character of human labour. In this roundabout way, then, the fact is expressed, that weaving also, in so far as it weaves value, has nothing to distinguish it from tailoring, and, consequently, is abstract human labour. It is the expression of equivalence between different sorts of commodities that alone brings into relief the specific character of value-creating labour, and this it does by actually reducing the different varieties of labour embodied in the different kinds of commodities to their common quality of human labour in the abstract.<fn ref="18"/>
+    hash: sha256:bbfc45fc5b643da8c3c1a6683ffffb12a148220a7be4d06c0514a16cb0ad0a60
+    state: active
+  - id: p00065
+    type: paragraph
+    text: There is, however, something else required beyond the expression of the specific character of the labour of which the value of the linen consists. Human labour power in motion, or human labour, creates value, but is not itself value. It becomes value only in its congealed state, when embodied in the form of some object. In order to express the value of the linen as a congelation of human labour, that value must be expressed as having objective existence, as being a something materially different from the linen itself, and yet a something common to the linen and all other commodities. The problem is already solved.
+    hash: sha256:8ffe38e42a5fef08d7f13e1ff7f946f415c6e38477f373fd5456de96eb62d78b
+    state: active
+  - id: p00066
+    type: paragraph
+    text: When occupying the position of equivalent in the equation of value, the coat ranks qualitatively as the equal of the linen, as something of the same kind, because it is value. In this position it is a thing in which we see nothing but value, or whose palpable bodily form represents value. Yet the coat itself, the body of the commodity, coat, is a mere use value. A coat as such no more tells us it is value, than does the first piece of linen we take hold of. This shows that when placed in value-relation to the linen, the coat signifies more than when out of that relation, just as many a man strutting about in a gorgeous uniform counts for more than when in mufti.
+    hash: sha256:4d5771789835abb38176499980f4659ec93ba53528c6fe687934551d9f376919
+    state: active
+  - id: p00067
+    type: paragraph
+    text: In the production of the coat, human labour power, in the shape of tailoring, must have been actually expended. Human labour is therefore accumulated in it. In this aspect the coat is a depository of value, but though worn to a thread, it does not let this fact show through. And as equivalent of the linen in the value equation, it exists under this aspect alone, counts therefore as embodied value, as a body that is value. A, for instance, cannot be “your majesty” to B, unless at the same time majesty in B’s eyes assumes the bodily form of A, and, what is more, with every new father of the people, changes its features, hair, and many other things besides.
+    hash: sha256:917b6124c9ed3a3198696aec53a2bffaa2830486a0e2764d0aa9d672217cc4f0
+    state: active
+  - id: p00068
+    type: paragraph
+    text: Hence, in the value equation, in which the coat is the equivalent of the linen, the coat officiates as the form of value. The value of the commodity linen is expressed by the bodily form of the commodity coat, the value of one by the use value of the other. As a use value, the linen is something palpably different from the coat; as value, it is the same as the coat, and now has the appearance of a coat. Thus the linen acquires a value form different from its physical form. The fact that it is value, is made manifest by its equality with the coat, just as the sheep’s nature of a Christian is shown in his resemblance to the Lamb of God.
+    hash: sha256:ce3ee3190551280c01544d6d28d16dd3c2cf171fb1ef60ea6664806c66b97f22
+    state: active
+  - id: p00069
+    type: paragraph
+    text: We see, then, all that our analysis of the value of commodities has already told us, is told us by the linen itself, so soon as it comes into communication with another commodity, the coat. Only it betrays its thoughts in that language with which alone it is familiar, the language of commodities. In order to tell us that its own value is created by labour in its abstract character of human labour, it says that the coat, in so far as it is worth as much as the linen, and therefore is value, consists of the same labour as the linen. In order to inform us that its sublime reality as value is not the same as its buckram body, it says that value has the appearance of a coat, and consequently that so far as the linen is value, it and the coat are as like as two peas. We may here remark, that the language of commodities has, besides Hebrew, many other more or less correct dialects. The German “Wertsein,” to be worth, for instance, expresses in a less striking manner than the Romance verbs “valere,” “valer,” “valoir,” that the equating of commodity B to commodity A, is commodity A’s own mode of expressing its value. <i>Paris vaut bien une messe</i>. [Paris is certainly worth a mass]
+    hash: sha256:04c46da6f46313e1043e84c0391722f58d6d8af8f13f3b4d55772c622e57b66a
+    state: active
+  - id: p00070
+    type: paragraph
+    text: By means, therefore, of the value-relation expressed in our equation, the bodily form of commodity B becomes the value form of commodity A, or the body of commodity B acts as a mirror to the value of commodity A.<fn ref="19"/> By putting itself in relation with commodity B, as value <i>in propriâ personâ</i>, as the matter of which human labour is made up, the commodity A converts the value in use, B, into the substance in which to express its, A’s, own value. The value of A, thus expressed in the use value of B, has taken the form of relative value.
+    hash: sha256:048c03d6a179699d9476edae93c7453b917dd9231f0b97dfc86011efc06c504d
+    state: active
+  - id: p00071
+    type: paragraph
+    text: (b.) Quantitative determination of Relative value
+    hash: sha256:925b0e90c7e12649da16998d36c203891a3a563fe04f7f9d23ae10b5251b32f2
+    state: active
+  - id: p00072
+    type: paragraph
+    text: Every commodity, whose value it is intended to express, is a useful object of given quantity, as 15 bushels of corn, or 100 lbs of coffee. And a given quantity of any commodity contains a definite quantity of human labour. The value form must therefore not only express value generally, but also value in definite quantity. Therefore, in the value relation of commodity A to commodity B, of the linen to the coat, not only is the latter, as value in general, made the equal in quality of the linen, but a definite quantity of coat (1 coat) is made the equivalent of a definite quantity (20 yards) of linen.
+    hash: sha256:dbd10325971c126fbef10617691a8ed6b95980f800ed4a22e7cc41f8503b7cbf
+    state: active
+  - id: p00073
+    type: paragraph
+    text: The equation, 20 yards of linen = 1 coat, or 20 yards of linen are worth one coat, implies that the same quantity of value substance (congealed labour) is embodied in both; that the two commodities have each cost the same amount of labour or the same quantity of labour time. But the labour time necessary for the production of 20 yards of linen or 1 coat varies with every change in the productiveness of weaving or tailoring. We have now to consider the influence of such changes on the quantitative aspect of the relative expression of value.
+    hash: sha256:700b7a4248d0a3b10263767382e17eb0dbd031ead9f11ceab82e8fa80780db4a
+    state: active
+  - id: p00074
+    type: paragraph
+    text: I. Let the value of the linen vary,<fn ref="20"/> that of the coat remaining constant. If, say in consequence of the exhaustion of flax-growing soil, the labour time necessary for the production of the linen be doubled, the value of the linen will also be doubled. Instead of the equation, 20 yards of linen = 1 coat, we should have 20 yards of linen = 2 coats, since 1 coat would now contain only half the labour time embodied in 20 yards of linen. If, on the other hand, in consequence, say, of improved looms, this labour time be reduced by one-half, the value of the linen would fall by one-half. Consequently, we should have 20 yards of linen = ½ coat. The relative value of commodity A, <i>i.e.</i>, its value expressed in commodity B, rises and falls directly as the value of A, the value of B being supposed constant.
+    hash: sha256:001080458a036033a6bdb218d213e4e2ce746e9150bca0a1168c7c1d79d42b88
+    state: active
+  - id: p00075
+    type: paragraph
+    text: II. Let the value of the linen remain constant, while the value of the coat varies. If, under these circumstances, in consequence, for instance, of a poor crop of wool, the labour time necessary for the production of a coat becomes doubled, we have instead of 20 yards of linen = 1 coat, 20 yards of linen = ½ coat. If, on the other hand, the value of the coat sinks by one-half, then 20 yards of linen = 2 coats. Hence, if the value of commodity A remain constant, its relative value expressed in commodity B rises and falls inversely as the value of B.
+    hash: sha256:8c3184c3df5fb77b0b3121c8345af5fb5dd61294e73c66867ffad960268635f4
+    state: active
+  - id: p00076
+    type: paragraph
+    text: If we compare the different cases in I and II, we see that the same change of magnitude in relative value may arise from totally opposite causes. Thus, the equation, 20 yards of linen = 1 coat, becomes 20 yards of linen = 2 coats, either, because the value of the linen has doubled, or because the value of the coat has fallen by one-half; and it becomes 20 yards of linen = ½ coat, either, because the value of the linen has fallen by one-half, or because the value of the coat has doubled.
+    hash: sha256:01a8ed0ec38417307ba2f1c0a7304c0b0abd7f9732b1852e106c82c9db1711f1
+    state: active
+  - id: p00077
+    type: paragraph
+    text: III. Let the quantities of labour time respectively necessary for the production of the linen and the coat vary simultaneously in the same direction and in the same proportion. In this case 20 yards of linen continue equal to 1 coat, however much their values may have altered. Their change of value is seen as soon as they are compared with a third commodity, whose value has remained constant. If the values of all commodities rose or fell simultaneously, and in the same proportion, their relative values would remain unaltered. Their real change of value would appear from the diminished or increased quantity of commodities produced in a given time.
+    hash: sha256:8efdec6dedbaad67fdd998c55313b2337b2955c13ce6c9a795702ac0200370ba
+    state: active
+  - id: p00078
+    type: paragraph
+    text: IV. The labour time respectively necessary for the production of the linen and the coat, and therefore the value of these commodities may simultaneously vary in the same direction, but at unequal rates or in opposite directions, or in other ways. The effect of all these possible different variations, on the relative value of a commodity, may be deduced from the results of I, II, and III.
+    hash: sha256:b407a9c3df27dc06c822541efccccbf7a8b22cc24647d53d5fb802d0c12fe64d
+    state: active
+  - id: p00079
+    type: paragraph
+    text: Thus real changes in the magnitude of value are neither unequivocally nor exhaustively reflected in their relative expression, that is, in the equation expressing the magnitude of relative value. The relative value of a commodity may vary, although its value remains constant. Its relative value may remain constant, although its value varies; and finally, simultaneous variations in the magnitude of value and in that of its relative expression by no means necessarily correspond in amount.<fn ref="21"/>
+    hash: sha256:4bed34ae0ea3058d077bf5a3496ef3f3584097e05ac6079683d37ca4c21c4e7b
+    state: active
+  - id: p00080
+    type: heading
+    level: 6
+    text: 3. The Equivalent form of value
+    hash: sha256:f2cb11439a83d95e4dd013274f38f1449a576fda460d7cd72b158e14efa4bf81
+    state: active
+  - id: p00081
+    type: paragraph
+    text: We have seen that commodity A (the linen), by expressing its value in the use value of a commodity differing in kind (the coat), at the same time impresses upon the latter a specific form of value, namely that of the equivalent. The commodity linen manifests its quality of having a value by the fact that the coat, without having assumed a value form different from its bodily form, is equated to the linen. The fact that the latter therefore has a value is expressed by saying that the coat is directly exchangeable with it. Therefore, when we say that a commodity is in the equivalent form, we express the fact that it is directly exchangeable with other commodities.
+    hash: sha256:41face0618b752de0d77c9ec24fcb098b211bc7f463b083fe371897bb4c42178
+    state: active
+  - id: p00082
+    type: paragraph
+    text: When one commodity, such as a coat, serves as the equivalent of another, such as linen, and coats consequently acquire the characteristic property of being directly exchangeable with linen, we are far from knowing in what proportion the two are exchangeable. The value of the linen being given in magnitude, that proportion depends on the value of the coat. Whether the coat serves as the equivalent and the linen as relative value, or the linen as the equivalent and the coat as relative value, the magnitude of the coat’s value is determined, independently of its value form, by the labour time necessary for its production. But whenever the coat assumes in the equation of value, the position of equivalent, its value acquires no quantitative expression; on the contrary, the commodity coat now figures only as a definite quantity of some article.
+    hash: sha256:c21ec1e9b40adc0d0f4e3a7d806c3010704850b40370f1100e4fae4016cdf9cb
+    state: active
+  - id: p00083
+    type: paragraph
+    text: For instance, 40 yards of linen are worth – what? 2 coats. Because the commodity coat here plays the part of equivalent, because the use-value coat, as opposed to the linen, figures as an embodiment of value, therefore a definite number of coats suffices to express the definite quantity of value in the linen. Two coats may therefore express the quantity of value of 40 yards of linen, but they can never express the quantity of their own value. A superficial observation of this fact, namely, that in the equation of value, the equivalent figures exclusively as a simple quantity of some article, of some use value, has misled Bailey, as also many others, both before and after him, into seeing, in the expression of value, merely a quantitative relation. The truth being, that when a commodity acts as equivalent, no quantitative determination of its value is expressed.
+    hash: sha256:b4c4280d8cb96aea1f329e72117a61a2fc48955128507199597b2780a0ed0216
+    state: active
+  - id: p00084
+    type: paragraph
+    text: "The first peculiarity that strikes us, in considering the form of the equivalent, is this: use value becomes the form of manifestation, the phenomenal form of its opposite, value."
+    hash: sha256:c3a982d2569d4a780233db24f4e92de3cc6e8af8ba3d2d868b89a280690d0192
+    state: active
+  - id: p00085
+    type: paragraph
+    text: The bodily form of the commodity becomes its value form. But, mark well, that this <i>quid pro quo</i> exists in the case of any commodity B, only when some other commodity A enters into a value relation with it, and then only within the limits of this relation. Since no commodity can stand in the relation of equivalent to itself, and thus turn its own bodily shape into the expression of its own value, every commodity is compelled to choose some other commodity for its equivalent, and to accept the use value, that is to say, the bodily shape of that other commodity as the form of its own value.
+    hash: sha256:410da08173a044df4d6977ae5e6a415fe8a4334b6f07e6b881eaba4ed14b0885
+    state: active
+  - id: p00086
+    type: paragraph
+    text: "One of the measures that we apply to commodities as material substances, as use values, will serve to illustrate this point. A sugar-loaf being a body, is heavy, and therefore has weight: but we can neither see nor touch this weight. We then take various pieces of iron, whose weight has been determined beforehand. The iron, as iron, is no more the form of manifestation of weight, than is the sugar-loaf. Nevertheless, in order to express the sugar-loaf as so much weight, we put it into a weight-relation with the iron. In this relation, the iron officiates as a body representing nothing but weight. A certain quantity of iron therefore serves as the measure of the weight of the sugar, and represents, in relation to the sugar-loaf, weight embodied, the form of manifestation of weight. This part is played by the iron only within this relation, into which the sugar or any other body, whose weight has to be determined, enters with the iron. Were they not both heavy, they could not enter into this relation, and the one could therefore not serve as the expression of the weight of the other. When we throw both into the scales, we see in reality, that as weight they are both the same, and that, therefore, when taken in proper proportions, they have the same weight. Just as the substance iron, as a measure of weight, represents in relation to the sugar-loaf weight alone, so, in our expression of value, the material object, coat, in relation to the linen, represents value alone."
+    hash: sha256:29023e4eb7e816033db99309055046a8b0decb3da32cabc6e7a1c50762224959
+    state: active
+  - id: p00087
+    type: paragraph
+    text: Here, however, the analogy ceases. The iron, in the expression of the weight of the sugar-loaf, represents a natural property common to both bodies, namely their weight; but the coat, in the expression of value of the linen, represents a non-natural property of both, something purely social, namely, their value.
+    hash: sha256:6a79d4c1270ec6a95576ff20cb7242608dafba435613ad30e120fe2a89cde847
+    state: active
+  - id: p00088
+    type: paragraph
+    text: Since the relative form of value of a commodity – the linen, for example – expresses the value of that commodity, as being something wholly different from its substance and properties, as being, for instance, coat-like, we see that this expression itself indicates that some social relation lies at the bottom of it. With the equivalent form it is just the contrary. The very essence of this form is that the material commodity itself – the coat – just as it is, expresses value, and is endowed with the form of value by Nature itself. Of course this holds good only so long as the value relation exists, in which the coat stands in the position of equivalent to the linen.<fn ref="22"/> Since, however, the properties of a thing are not the result of its relations to other things, but only manifest themselves in such relations, the coat seems to be endowed with its equivalent form, its property of being directly exchangeable, just as much by Nature as it is endowed with the property of being heavy, or the capacity to keep us warm. Hence the enigmatical character of the equivalent form which escapes the notice of the bourgeois political economist, until this form, completely developed, confronts him in the shape of money. He then seeks to explain away the mystical character of gold and silver, by substituting for them less dazzling commodities, and by reciting, with ever renewed satisfaction, the catalogue of all possible commodities which at one time or another have played the part of equivalent. He has not the least suspicion that the most simple expression of value, such as 20 yds of linen = 1 coat, already propounds the riddle of the equivalent form for our solution.
+    hash: sha256:f21384c34cee5167ea6068cccc81fd24201728c0094e550c4ee0b7b643bc8fbc
+    state: active
+  - id: p00089
+    type: paragraph
+    text: The body of the commodity that serves as the equivalent, figures as the materialisation of human labour in the abstract, and is at the same time the product of some specifically useful concrete labour. This concrete labour becomes, therefore, the medium for expressing abstract human labour. If on the one hand the coat ranks as nothing but the embodiment of abstract human labour, so, on the other hand, the tailoring which is actually embodied in it, counts as nothing but the form under which that abstract labour is realised. In the expression of value of the linen, the utility of the tailoring consists, not in making clothes, but in making an object, which we at once recognise to be Value, and therefore to be a congelation of labour, but of labour indistinguishable from that realised in the value of the linen. In order to act as such a mirror of value, the labour of tailoring must reflect nothing besides its own abstract quality of being human labour generally.
+    hash: sha256:6af1a9d2078388b7ed1dae8a707184de070c2971ea35488dd356afc81858934a
+    state: active
+  - id: p00090
+    type: paragraph
+    text: In tailoring, as well as in weaving, human labour power is expended. Both, therefore, possess the general property of being human labour, and may, therefore, in certain cases, such as in the production of value, have to be considered under this aspect alone. There is nothing mysterious in this. But in the expression of value there is a complete turn of the tables. For instance, how is the fact to be expressed that weaving creates the value of the linen, not by virtue of being weaving, as such, but by reason of its general property of being human labour? Simply by opposing to weaving that other particular form of concrete labour (in this instance tailoring), which produces the equivalent of the product of weaving. Just as the coat in its bodily form became a direct expression of value, so now does tailoring, a concrete form of labour, appear as the direct and palpable embodiment of human labour generally.
+    hash: sha256:7f2289943b82f0b51980b774d00bd4e8f4561773e24ce4c832031be72d4d83ec
+    state: active
+  - id: p00091
+    type: paragraph
+    text: Hence, the second peculiarity of the equivalent form is, that concrete labour becomes the form under which its opposite, abstract human labour, manifests itself.
+    hash: sha256:51fdbf535366d25786883dc88bb367a0f41b1076f68a0bae3c8fbd101e42e2f0
+    state: active
+  - id: p00092
+    type: paragraph
+    text: But because this concrete labour, tailoring in our case, ranks as, and is directly identified with, undifferentiated human labour, it also ranks as identical with any other sort of labour, and therefore with that embodied in the linen. Consequently, although, like all other commodity-producing labour, it is the labour of private individuals, yet, at the same time, it ranks as labour directly social in its character. This is the reason why it results in a product directly exchangeable with other commodities. We have then a third peculiarity of the equivalent form, namely, that the labour of private individuals takes the form of its opposite, labour directly social in its form.
+    hash: sha256:a009cfc1ec5d7fc2ce9b3998dfa24b9530f658728500030e7a1d1b8b611fbc11
+    state: active
+  - id: p00093
+    type: paragraph
+    text: The two latter peculiarities of the equivalent form will become more intelligible if we go back to the great thinker who was the first to analyse so many forms, whether of thought, society, or Nature, and amongst them also the form of value. I mean Aristotle.
+    hash: sha256:ca3d0730bb6effd56963b7182f631f9e220b643b4df0c1def56bfdc4cbd4f290
+    state: active
+  - id: p00094
+    type: paragraph
+    text: "In the first place, he clearly enunciates that the money form of commodities is only the further development of the simple form of value – <i>i.e.</i>, of the expression of the value of one commodity in some other commodity taken at random; for he says:"
+    hash: sha256:46a2a96e825cf4857546fa78a9a71139468ae00f51eb999c8b3f67a5dafb0034
+    state: active
+  - id: p00095
+    type: paragraph
+    text: <indent level="1"/>5 beds = 1 house (κλῖναι πέντε ἀντὶ οἰκίας)
+    hash: sha256:c478d09d77c0600696eb7c6aa2c9a19f90cb1643f014c818e915a270d22d4297
+    state: active
+  - id: p00096
+    type: paragraph
+    text: is not to be distinguished from
+    hash: sha256:d151e22c391c3420d915a70225974e4230049626391c73f4fe1386519c06c613
+    state: active
+  - id: p00097
+    type: paragraph
+    text: <indent level="1"/>5 beds = so much money. (κλῖναι πέντε ἀντὶ ... ὅσου αἱ πέντε κλῖναι)
+    hash: sha256:557a059d08748de244b67e531fe7f9afb9c909624bbe582d8675bb59651276e2
+    state: active
+  - id: p00098
+    type: paragraph
+    text: He further sees that the value relation which gives rise to this expression makes it necessary that the house should qualitatively be made the equal of the bed, and that, without such an equalisation, these two clearly different things could not be compared with each other as commensurable quantities. “Exchange,” he says, “cannot take place without equality, and equality not without commensurability.” (οὔτ᾿ ἰσότης μὴ οὔσης συμμετρίας). Here, however, he comes to a stop, and gives up the further analysis of the form of value. “It is, however, in reality, impossible (τῇ μὲν οὖν ἀληθείᾳ ἀδύνατον), that such unlike things can be commensurable” – <i>i.e.</i>, qualitatively equal. Such an equalisation can only be something foreign to their real nature, consequently only “a makeshift for practical purposes.”
+    hash: sha256:b9ec1898ac23b351090522abd24545f24f8f64ad94d9f03c42da16c91a732584
+    state: active
+  - id: p00099
+    type: paragraph
+    text: Aristotle therefore, himself, tells us what barred the way to his further analysis; it was the absence of any concept of value. What is that equal something, that common substance, which admits of the value of the beds being expressed by a house? Such a thing, in truth, cannot exist, says Aristotle. And why not? Compared with the beds, the house does represent something equal to them, in so far as it represents what is really equal, both in the beds and the house. And that is – human labour.
+    hash: sha256:51c280549d9108571de9ae40be21c15bd2e0c0cb0b209ffcf38269a1da47b5ca
+    state: active
+  - id: p00100
+    type: paragraph
+    text: There was, however, an important fact which prevented Aristotle from seeing that, to attribute value to commodities, is merely a mode of expressing all labour as equal human labour, and consequently as labour of equal quality. Greek society was founded upon slavery, and had, therefore, for its natural basis, the inequality of men and of their labour powers. The secret of the expression of value, namely, that all kinds of labour are equal and equivalent, because, and so far as they are human labour in general, cannot be deciphered, until the notion of human equality has already acquired the fixity of a popular prejudice. This, however, is possible only in a society in which the great mass of the produce of labour takes the form of commodities, in which, consequently, the dominant relation between man and man, is that of owners of commodities. The brilliancy of Aristotle’s genius is shown by this alone, that he discovered, in the expression of the value of commodities, a relation of equality. The peculiar conditions of the society in which he lived, alone prevented him from discovering what, “in truth,” was at the bottom of this equality.
+    hash: sha256:507d5fad5a044dc266f80a221244fbc318fa841704651f4d02b6663c9d1d287e
+    state: active
+  - id: p00101
+    type: heading
+    level: 6
+    text: 4. The Elementary Form of value considered as a whole
+    hash: sha256:ab8cbb569caba4eb3cc479f04cec3f4e8ce77f79a10465b582b0c90181e17c9a
+    state: active
+  - id: p00102
+    type: paragraph
+    text: The elementary form of value of a commodity is contained in the equation, expressing its value relation to another commodity of a different kind, or in its exchange relation to the same. The value of commodity A, is qualitatively expressed, by the fact that commodity B is directly exchangeable with it. Its value is quantitatively expressed by the fact, that a definite quantity of B is exchangeable with a definite quantity of A. In other words, the value of a commodity obtains independent and definite expression, by taking the form of exchange value. When, at the beginning of this chapter, we said, in common parlance, that a commodity is both a use value and an exchange value, we were, accurately speaking, wrong. A commodity is a use value or object of utility, and a value. It manifests itself as this two-fold thing, that it is, as soon as its value assumes an independent form – viz., the form of exchange value. It never assumes this form when isolated, but only when placed in a value or exchange relation with another commodity of a different kind. When once we know this, such a mode of expression does no harm; it simply serves as an abbreviation.
+    hash: sha256:515e6d7b03b15080bc8729163d26bfc23c05780ffe4033b0a15e0fa99dc000f4
+    state: active
+  - id: p00103
+    type: paragraph
+    text: Our analysis has shown, that the form or expression of the value of a commodity originates in the nature of value, and not that value and its magnitude originate in the mode of their expression as exchange value. This, however, is the delusion as well of the mercantilists and their recent revivers, Ferrier, Ganilh,<fn ref="23"/> and others, as also of their antipodes, the modern bagmen of Free-trade, such as Bastiat. The mercantilists lay special stress on the qualitative aspect of the expression of value, and consequently on the equivalent form of commodities, which attains its full perfection in money. The modern hawkers of Free-trade, who must get rid of their article at any price, on the other hand, lay most stress on the quantitative aspect of the relative form of value. For them there consequently exists neither value, nor magnitude of value, anywhere except in its expression by means of the exchange relation of commodities, that is, in the daily list of prices current. Macleod, who has taken upon himself to dress up the confused ideas of Lombard Street in the most learned finery, is a successful cross between the superstitious mercantilists, and the enlightened Free-trade bagmen.
+    hash: sha256:b4c5791b3cbf75798e1e5804de8cf076d953721d1a20366029aa78db225da08b
+    state: active
+  - id: p00104
+    type: paragraph
+    text: A close scrutiny of the expression of the value of A in terms of B, contained in the equation expressing the value relation of A to B, has shown us that, within that relation, the bodily form of A figures only as a use value, the bodily form of B only as the form or aspect of value. The opposition or contrast existing internally in each commodity between use value and value, is, therefore, made evident externally by two commodities being placed in such relation to each other, that the commodity whose value it is sought to express, figures directly as a mere use value, while the commodity in which that value is to be expressed, figures directly as mere exchange value. Hence the elementary form of value of a commodity is the elementary form in which the contrast contained in that commodity, between use value and value, becomes apparent.
+    hash: sha256:dd6e0b9dbbb4e9f96839cbd42898c8773f5ce25850d6b56028ee477f3765aed8
+    state: active
+  - id: p00105
+    type: paragraph
+    text: Every product of labour is, in all states of society, a use value; but it is only at a definite historical epoch in a society’s development that such a product becomes a commodity, viz., at the epoch when the labour spent on the production of a useful article becomes expressed as one of the objective qualities of that article, <i>i.e.</i>, as its value. It therefore follows that the elementary value form is also the primitive form under which a product of labour appears historically as a commodity, and that the gradual transformation of such products into commodities, proceeds <i>pari passu</i> with the development of the value form.
+    hash: sha256:d459624da4d8782a7986c4777d983301783fbaf6e7b00c68922edfecbd4b272b
+    state: active
+  - id: p00106
+    type: paragraph
+    text: "We perceive, at first sight, the deficiencies of the elementary form of value: it is a mere germ, which must undergo a series of metamorphoses before it can ripen into the price form."
+    hash: sha256:c7df964d8161201f86d79cb988f282c73014d66a06abe27f6a1c2063a5bdd7d5
+    state: active
+  - id: p00107
+    type: paragraph
+    text: The expression of the value of commodity A in terms of any other commodity B, merely distinguishes the value from the use value of A, and therefore places A merely in a relation of exchange with a single different commodity, B; but it is still far from expressing A’s qualitative equality, and quantitative proportionality, to all commodities. To the elementary relative value form of a commodity, there corresponds the single equivalent form of one other commodity. Thus, in the relative expression of value of the linen, the coat assumes the form of equivalent, or of being directly exchangeable, only in relation to a single commodity, the linen.
+    hash: sha256:ae64b1238cf5c22c52cb6f2a8eff5b370e65ab556745eb6af019e1681c429895
+    state: active
+  - id: p00108
+    type: paragraph
+    text: Nevertheless, the elementary form of value passes by an easy transition into a more complete form. It is true that by means of the elementary form, the value of a commodity A, becomes expressed in terms of one, and only one, other commodity. But that one may be a commodity of any kind, coat, iron, corn, or anything else. Therefore, according as A is placed in relation with one or the other, we get for one and the same commodity, different elementary expressions of value.<fn ref="24"/> The number of such possible expressions is limited only by the number of the different kinds of commodities distinct from it. The isolated expression of A’s value, is therefore convertible into a series, prolonged to any length, of the different elementary expressions of that value.
+    hash: sha256:acacb4416a774ec3bb16a87cc172a84e2e4a093a52d8d915abef1dac7ab89c71
+    state: active
+  - id: p00109
+    type: heading
+    level: 5
+    text: B. Total or Expanded Form of value
+    hash: sha256:5c7378e0c40070b36a806fb887df982486bf7577503ad80232dceaefa4ac3c44
+    state: active
+  - id: p00110
+    type: paragraph
+    text: <indent level="1"/>z Com. A = u Com. B or = v Com. C or = w Com. D or = Com. E or = &amp;c.<br/>(20 yards of linen = 1 coat or = 10 lbs tea or = 40 lbs. coffee or<br/>= 1 quarter corn or = 2 ounces gold or = ½ ton iron or = &amp;c.)
+    hash: sha256:08f6e545c075b8b925046845c4efb519eacc69cae2248c4a0acc4e94af3dcf0c
+    state: active
+  - id: p00111
+    type: heading
+    level: 6
+    text: 1. The Expanded Relative form of value
+    hash: sha256:28b8251fa8c4aa8965d1d14f75617afeede21e5185b447ea1681b20a456ee24c
+    state: active
+  - id: p00112
+    type: paragraph
+    text: The value of a single commodity, the linen, for example, is now expressed in terms of numberless other elements of the world of commodities. Every other commodity now becomes a mirror of the linen’s value.<fn ref="25"/> It is thus, that for the first time, this value shows itself in its true light as a congelation of undifferentiated human labour. For the labour that creates it, now stands expressly revealed, as labour that ranks equally with every other sort of human labour, no matter what its form, whether tailoring, ploughing, mining, &amp;c., and no matter, therefore, whether it is realised in coats, corn, iron, or gold. The linen, by virtue of the form of its value, now stands in a social relation, no longer with only one other kind of commodity, but with the whole world of commodities. As a commodity, it is a citizen of that world. At the same time, the interminable series of value equations implies, that as regards the value of a commodity, it is a matter of indifference under what particular form, or kind, of use value it appears.
+    hash: sha256:58491386779f51f69ad2dd089411c9db4510a33e6cecd1e21092c2818e625a04
+    state: active
+  - id: p00113
+    type: paragraph
+    text: In the first form, 20 yds of linen = 1 coat, it might, for ought that otherwise appears, be pure accident, that these two commodities are exchangeable in definite quantities. In the second form, on the contrary, we perceive at once the background that determines, and is essentially different from, this accidental appearance. The value of the linen remains unaltered in magnitude, whether expressed in coats, coffee, or iron, or in numberless different commodities, the property of as many different owners. The accidental relation between two individual commodity-owners disappears. It becomes plain, that it is not the exchange of commodities which regulates the magnitude of their value; but, on the contrary, that it is the magnitude of their value which controls their exchange proportions.
+    hash: sha256:0b044b2d304d24e84d5b7880a875b52fbf90d1a59ef972af80e71f062db3f5ec
+    state: active
+  - id: p00114
+    type: heading
+    level: 6
+    text: 2. The particular Equivalent form
+    hash: sha256:8ea68f65a475b1901db51f019421f44580e9093ba88142b8faee0197ffe3bd05
+    state: active
+  - id: p00115
+    type: paragraph
+    text: Each commodity, such as, coat, tea, corn, iron, &amp;c., figures in the expression of value of the linen, as an equivalent, and, consequently, as a thing that is value. The bodily form of each of these commodities figures now as a particular equivalent form, one out of many. In the same way the manifold concrete useful kinds of labour, embodied in these different commodities, rank now as so many different forms of the realisation, or manifestation, of undifferentiated human labour.
+    hash: sha256:b117c9032aec4f33007d23d6859ed653f6e2dbe0a314c5818246ec553a543618
+    state: active
+  - id: p00116
+    type: heading
+    level: 6
+    text: 3. Defects of the Total or Expanded form of value
+    hash: sha256:20f11d1013847e2c69fb4be278751c92fff181c37db43cb8a46603ae1ab3e1a6
+    state: active
+  - id: p00117
+    type: paragraph
+    text: In the first place, the relative expression of value is incomplete because the series representing it is interminable. The chain of which each equation of value is a link, is liable at any moment to be lengthened by each new kind of commodity that comes into existence and furnishes the material for a fresh expression of value. In the second place, it is a many-coloured mosaic of disparate and independent expressions of value. And lastly, if, as must be the case, the relative value of each commodity in turn, becomes expressed in this expanded form, we get for each of them a relative value form, different in every case, and consisting of an interminable series of expressions of value. The defects of the expanded relative value form are reflected in the corresponding equivalent form. Since the bodily form of each single commodity is one particular equivalent form amongst numberless others, we have, on the whole, nothing but fragmentary equivalent forms, each excluding the others. In the same way, also, the special, concrete, useful kind of labour embodied in each particular equivalent, is presented only as a particular kind of labour, and therefore not as an exhaustive representative of human labour generally. The latter, indeed, gains adequate manifestation in the totality of its manifold, particular, concrete forms. But, in that case, its expression in an infinite series is ever incomplete and deficient in unity.
+    hash: sha256:4b26fc566a25cd44836e47a9bbc6fb44c56588cda1877cf28d2060a23c63a65c
+    state: active
+  - id: p00118
+    type: paragraph
+    text: "The expanded relative value form is, however, nothing but the sum of the elementary relative expressions or equations of the first kind, such as:"
+    hash: sha256:74a6d03368e4184fdb6163840d90dfb9d045525dee969fd293d51ecbaf6cc423
+    state: active
+  - id: p00119
+    type: paragraph
+    text: <indent level="1"/>20 yards of linen = 1 coat<br/>20 yards of linen = 10 lbs of tea, etc.
+    hash: sha256:7677d6a4e2915b4f56ec259a2d940d1ce56e6c866e2d832f5c5b19176ade6c8d
+    state: active
+  - id: p00120
+    type: paragraph
+    text: Each of these implies the corresponding inverted equation,
+    hash: sha256:fd32e5e3c249e8ceef1adc62924b32d0431b457e08e3b65775585447f8263161
+    state: active
+  - id: p00121
+    type: paragraph
+    text: <indent level="1"/>1 coat = 20 yards of linen<br/>10 lbs of tea = 20 yards of linen, etc.
+    hash: sha256:765fc6226cffc44b0e307a96540466a61cb0b74f77c80e29ed8a898afcc3902d
+    state: active
+  - id: p00122
+    type: paragraph
+    text: In fact, when a person exchanges his linen for many other commodities, and thus expresses its value in a series of other commodities, it necessarily follows, that the various owners of the latter exchange them for the linen, and consequently express the value of their various commodities in one and the same third commodity, the linen. If then, we reverse the series, 20 yards of linen = 1 coat or = 10 lbs of tea, etc., that is to say, if we give expression to the converse relation already implied in the series, we get,
+    hash: sha256:c19a9b2e48b42b91e1e38008e55092bf0ee73ada7b5f2b11e066cbdf6c5879cb
+    state: active
+  - id: p00123
+    type: heading
+    level: 5
+    text: C. The General Form of Value
+    hash: sha256:ac6fcc2047dcae9c5e9df02df730d3dba5db8d3512055920b1ef262e12857770
+    state: active
+  - id: p00124
+    type: table
+    text: <tr><td>1</td><td>coat</td></tr><tr><td>10</td><td>lbs of tea</td></tr><tr><td>40</td><td>lbs of coffee</td></tr><tr><td>1</td><td>quarter of corn</td></tr><tr><td>2</td><td>ounces of gold</td></tr><tr><td>½</td><td>a ton of iron</td></tr><tr><td>x</td><td>Commodity A, etc.</td></tr>
+    hash: sha256:e7f067fc4e9d0a2de7c0a97aa0f63225afec5caf95cdca6d2d57f81901d8a4c0
+    state: active
+  - id: p00125
+    type: paragraph
+    text: = 20 yards of linen
+    hash: sha256:b46d218c2afadb22bb4b67cc16380e6cefcdd46398e2e08d146be6f414c58df9
+    state: active
+  - id: p00126
+    type: heading
+    level: 6
+    text: 1. The altered character of the form of value
+    hash: sha256:2571809b3b54baf93f8ea871dc6fc8c559f533e7993c8498e212f76055728c91
+    state: active
+  - id: p00127
+    type: paragraph
+    text: All commodities now express their value (1) in an elementary form, because in a single commodity; (2) with unity, because in one and the same commodity. This form of value is elementary and the same for all, therefore general.
+    hash: sha256:e8a920003050976ff72982d9301485ed4f4e522bd7a312625d0e9451d7086159
+    state: active
+  - id: p00128
+    type: paragraph
+    text: The forms A and B were fit only to express the value of a commodity as something distinct from its use value or material form.
+    hash: sha256:fdd20831a34c73e92d0ad1d9b9828a0e2812e9bb0011e833a82c9f04727efa2c
+    state: active
+  - id: p00129
+    type: paragraph
+    text: "The first form, A, furnishes such equations as the following: – 1 coat = 20 yards of linen, 10 lbs of tea = ½ a ton of iron. The value of the coat is equated to linen, that of the tea to iron. But to be equated to linen, and again to iron, is to be as different as are linen and iron. This form, it is plain, occurs practically only in the first beginning, when the products of labour are converted into commodities by accidental and occasional exchanges."
+    hash: sha256:c06791d32da2b4f78c0e79c57df8e5484ec8f2bda06a25c77abd896818658789
+    state: active
+  - id: p00130
+    type: paragraph
+    text: The second form, B, distinguishes, in a more adequate manner than the first, the value of a commodity from its use value, for the value of the coat is there placed in contrast under all possible shapes with the bodily form of the coat; it is equated to linen, to iron, to tea, in short, to everything else, only not to itself, the coat. On the other hand, any general expression of value common to all is directly excluded; for, in the equation of value of each commodity, all other commodities now appear only under the form of equivalents. The expanded form of value comes into actual existence for the first time so soon as a particular product of labour, such as cattle, is no longer exceptionally, but habitually, exchanged for various other commodities.
+    hash: sha256:ed5af6505c5d48615af45bab3f239893e22f56a3f29662064840c7ccd0f4b572
+    state: active
+  - id: p00131
+    type: paragraph
+    text: The third and lastly developed form expresses the values of the whole world of commodities in terms of a single commodity set apart for the purpose, namely, the linen, and thus represents to us their values by means of their equality with linen. The value of every commodity is now, by being equated to linen, not only differentiated from its own use value, but from all other use values generally, and is, by that very fact, expressed as that which is common to all commodities. By this form, commodities are, for the first time, effectively brought into relation with one another as values, or made to appear as exchange values.
+    hash: sha256:cb4a0e2b77264a9508e5a08273fc11ebd1e1a44e302c0eebd2d74d93c1d52413
+    state: active
+  - id: p00132
+    type: paragraph
+    text: The two earlier forms either express the value of each commodity in terms of a single commodity of a different kind, or in a series of many such commodities. In both cases, it is, so to say, the special business of each single commodity to find an expression for its value, and this it does without the help of the others. These others, with respect to the former, play the passive parts of equivalents. The general form of value, C, results from the joint action of the whole world of commodities, and from that alone. A commodity can acquire a general expression of its value only by all other commodities, simultaneously with it, expressing their values in the same equivalent; and every new commodity must follow suit. It thus becomes evident that since the existence of commodities as values is purely social, this social existence can be expressed by the totality of their social relations alone, and consequently that the form of their value must be a socially recognised form.
+    hash: sha256:a47990bde3e3b0b06fd44e0ddfe02faebc737fe9db2257d1e00f8b254eadaec1
+    state: active
+  - id: p00133
+    type: paragraph
+    text: All commodities being equated to linen now appear not only as qualitatively equal as values generally, but also as values whose magnitudes are capable of comparison. By expressing the magnitudes of their values in one and the same material, the linen, those magnitudes are also compared with each other. For instance, 10 lbs of tea = 20 yards of linen, and 40 lbs of coffee = 20 yards of linen. Therefore, 10 lbs of tea = 40 lbs of coffee. In other words, there is contained in 1 lb of coffee only one-fourth as much substance of value – labour – as is contained in 1 lb of tea.
+    hash: sha256:5ba0af6f7fdc0becdfc9837da12a92a4ffdb51e0b61d5f17dd6af770b943887a
+    state: active
+  - id: p00134
+    type: paragraph
+    text: The general form of relative value, embracing the whole world of commodities, converts the single commodity that is excluded from the rest, and made to play the part of equivalent – here the linen – into the universal equivalent. The bodily form of the linen is now the form assumed in common by the values of all commodities; it therefore becomes directly exchangeable with all and every of them. The substance linen becomes the visible incarnation, the social chrysalis state of every kind of human labour. Weaving, which is the labour of certain private individuals producing a particular article, linen, acquires in consequence a social character, the character of equality with all other kinds of labour. The innumerable equations of which the general form of value is composed, equate in turn the labour embodied in the linen to that embodied in every other commodity, and they thus convert weaving into the general form of manifestation of undifferentiated human labour. In this manner the labour realised in the values of commodities is presented not only under its negative aspect, under which abstraction is made from every concrete form and useful property of actual work, but its own positive nature is made to reveal itself expressly. The general value form is the reduction of all kinds of actual labour to their common character of being human labour generally, of being the expenditure of human labour power.
+    hash: sha256:45bf5b3a73e2f1eadf0e64d225f6eea60a4c215d8f171aed1a1514709e161f2e
+    state: active
+  - id: p00135
+    type: paragraph
+    text: The general value form, which represents all products of labour as mere congelations of undifferentiated human labour, shows by its very structure that it is the social resumé of the world of commodities. That form consequently makes it indisputably evident that in the world of commodities the character possessed by all labour of being <i>human</i> labour constitutes its specific social character.
+    hash: sha256:485b890b35057c2a41f64e94ab4d8441ca264d59121d23899dc16248cebaf7d4
+    state: active
+  - id: p00136
+    type: heading
+    level: 6
+    text: 2. The Interdependent Development of the Relative Form of Value, and of the Equivalent Form
+    hash: sha256:a5239675ae8d3764cae0af63496e28004935fc87529a57ee984e76766fdb9417
+    state: active
+  - id: p00137
+    type: paragraph
+    text: The degree of development of the relative form of value corresponds to that of the equivalent form. But we must bear in mind that the development of the latter is only the expression and result of the development of the former.
+    hash: sha256:0f54a7cefc412405b60676e50d12fcac0ba21e908e98a96238ead80476899c4c
+    state: active
+  - id: p00138
+    type: paragraph
+    text: The primary or isolated relative form of value of one commodity converts some other commodity into an isolated equivalent. The expanded form of relative value, which is the expression of the value of one commodity in terms of all other commodities, endows those other commodities with the character of particular equivalents differing in kind. And lastly, a particular kind of commodity acquires the character of universal equivalent, because all other commodities make it the material in which they uniformly express their value.
+    hash: sha256:5473732b41914d46c6a26a3e70267b9d1690dc0d1cefc37b60aaa4500993f483
+    state: active
+  - id: p00139
+    type: paragraph
+    text: The antagonism between the relative form of value and the equivalent form, the two poles of the value form, is developed concurrently with that form itself.
+    hash: sha256:c1c0fef01e6a1d6089e388d7352bb9487cdb5f939b6ab92d7321748e3f6c46cc
+    state: active
+  - id: p00140
+    type: paragraph
+    text: The first form, 20 yds of linen = one coat, already contains this antagonism, without as yet fixing it. According as we read this equation forwards or backwards, the parts played by the linen and the coat are different. In the one case the relative value of the linen is expressed in the coat, in the other case the relative value of the coat is expressed in the linen. In this first form of value, therefore, it is difficult to grasp the polar contrast.
+    hash: sha256:0cf1c4ce3fc0b421d129f5a0a319a15513f8a35e4bfa01fe22bb8c907454e504
+    state: active
+  - id: p00141
+    type: paragraph
+    text: Form B shows that only one single commodity at a time can completely expand its relative value, and that it acquires this expanded form only because, and in so far as, all other commodities are, with respect to it, equivalents. Here we cannot reverse the equation, as we can the equation 20 yds of linen = 1 coat, without altering its general character, and converting it from the expanded form of value into the general form of value.
+    hash: sha256:4fa56081b1e305baa5e7d7ef37cc7ca3d1b6fbc1704b0c7bc382ddb9d29749d5
+    state: active
+  - id: p00142
+    type: paragraph
+    text: Finally, the form C gives to the world of commodities a general social relative form of value, because, and in so far as, thereby all commodities, with the exception of one, are excluded from the equivalent form. A single commodity, the linen, appears therefore to have acquired the character of direct exchangeability with every other commodity because, and in so far as, this character is denied to every other commodity.<fn ref="26"/>
+    hash: sha256:275f7358b42cae218241b17256e0513a55fa1c495a2a85759580a97e3f61ef3e
+    state: active
+  - id: p00143
+    type: paragraph
+    text: The commodity that figures as universal equivalent, is, on the other hand, excluded from the relative value form. If the linen, or any other commodity serving as universal equivalent, were, at the same time, to share in the relative form of value, it would have to serve as its own equivalent. We should then have 20 yds of linen = 20 yds of linen; this tautology expresses neither value, nor magnitude of value. In order to express the relative value of the universal equivalent, we must rather reverse the form <b>C</b>. This equivalent has no relative form of value in common with other commodities, but its value is relatively expressed by a never ending series of other commodities. Thus, the expanded form of relative value, or form <b>B</b>, now shows itself as the specific form of relative value for the equivalent commodity.
+    hash: sha256:5f7a627b377e7061de3a6f3c3abc28c309e397afb395c4e9e252b1add94fc764
+    state: active
+  - id: p00144
+    type: heading
+    level: 6
+    text: 3. Transition from the General form of value to the Money form
+    hash: sha256:0ce519c1878fabbf58f127936b56fcf1577b897569406f2fc7ea402630eca409
+    state: active
+  - id: p00145
+    type: paragraph
+    text: The universal equivalent form is a form of value in general. It can, therefore, be assumed by any commodity. On the other hand, if a commodity be found to have assumed the universal equivalent form (form <b>C</b>), this is only because and in so far as it has been excluded from the rest of all other commodities as their equivalent, and that by their own act. And from the moment that this exclusion becomes finally restricted to one particular commodity, from that moment only, the general form of relative value of the world of commodities obtains real consistence and general social validity.
+    hash: sha256:fd813ff4f3de3a793c5bfc025c4f08b72e1be65346848bc598800d072f715409
+    state: active
+  - id: p00146
+    type: paragraph
+    text: The particular commodity, with whose bodily form the equivalent form is thus socially identified, now becomes the money commodity, or serves as money. It becomes the special social function of that commodity, and consequently its social monopoly, to play within the world of commodities the part of the universal equivalent. Amongst the commodities which, in form <b>B</b>, figure as particular equivalents of the linen, and, in form <b>C</b>, express in common their relative values in linen, this foremost place has been attained by one in particular – namely, gold. If, then, in form <b>C</b> we replace the linen by gold, we get,
+    hash: sha256:43180ff31f0dd94db47bc02ed7f46ee81625ca412e30f252401fa91e94fc47d3
+    state: active
+  - id: p00147
+    type: heading
+    level: 5
+    text: D. The Money-Form
+    hash: sha256:a64afd608f52a0571124e24345e1f76e22a6b09323ff3a06b894641cee11e650
+    state: active
+  - id: p00148
+    type: table
+    text: <tr><td>20</td><td>yards of linen</td><td>=</td></tr><tr><td>1</td><td>coat</td><td>=</td></tr><tr><td>10</td><td>lbs of tea</td><td>=</td></tr><tr><td>40</td><td>lbs of coffee</td><td>=</td></tr><tr><td>1</td><td>quarter of corn</td><td>=</td></tr><tr><td>½</td><td>a ton of iron</td><td>=</td></tr><tr><td>x</td><td>Commodity A</td><td>=</td></tr>
+    hash: sha256:a73ab3930027886c5636c58a467257a86739ecb13e3bdb30c5e1a1edfdfe41c1
+    state: active
+  - id: p00149
+    type: paragraph
+    text: 2 ounces of gold
+    hash: sha256:36e3215e9c5281e1699fcdc3d7989100c0442a26a3d4fe93035041786fc0dc73
+    state: active
+  - id: p00150
+    type: paragraph
+    text: In passing from form <b>A</b> to form <b>B</b>, and from the latter to form <b>C</b>, the changes are fundamental. On the other hand, there is no difference between forms <b>C</b> and <b>D</b>, except that, in the latter, gold has assumed the equivalent form in the place of linen. Gold is in form <b>D</b>, what linen was in form <b>C</b> – the universal equivalent. The progress consists in this alone, that the character of direct and universal exchangeability – in other words, that the universal equivalent form – has now, by social custom, become finally identified with the substance, gold.
+    hash: sha256:5ccca497272bf4a91cf6849c409d013fb88c095601c70637b23ec4e4a973520a
+    state: active
+  - id: p00151
+    type: paragraph
+    text: Gold is now money with reference to all other commodities only because it was previously, with reference to them, a simple commodity. Like all other commodities, it was also capable of serving as an equivalent, either as simple equivalent in isolated exchanges, or as particular equivalent by the side of others. Gradually it began to serve, within varying limits, as universal equivalent. So soon as it monopolises this position in the expression of value for the world of commodities, it becomes the money commodity, and then, and not till then, does form <b>D</b> become distinct from form <b>C</b>, and the general form of value become changed into the money form.
+    hash: sha256:9e45ed827e4ee4e58c1eca2d895a9d4f6d6ec2edd9930d724fe9fe99b11489da
+    state: active
+  - id: p00152
+    type: paragraph
+    text: The elementary expression of the relative value of a single commodity, such as linen, in terms of the commodity, such as gold, that plays the part of money, is the price form of that commodity. The price form of the linen is therefore
+    hash: sha256:7d0474b6bbace5911a3edcbbeb3c24991c20a7599c50bfe06b88609cc7c85b73
+    state: active
+  - id: p00153
+    type: paragraph
+    text: <indent level="1"/>20 yards of linen = 2 ounces of gold, or, if 2 ounces of gold when<br/>coined are £2, 20 yards of linen = £2.
+    hash: sha256:d78dd343fb94374cbec910a87951bed11e23ae3532701e78805a44feb87938e3
+    state: active
+  - id: p00154
+    type: paragraph
+    text: The difficulty in forming a concept of the money form, consists in clearly comprehending the universal equivalent form, and as a necessary corollary, the general form of value, form <b>C</b>. The latter is deducible from form <b>B</b>, the expanded form of value, the essential component element of which, we saw, is form <b>A</b>, 20 yards of linen = 1 coat or x commodity <b>A</b> = y commodity <b>B</b>. The simple commodity form is therefore the germ of the money form.
+    hash: sha256:bb2a0521e6600297273eb1aeecd2dcd2dc32eb08cec9d0749667e34a78a45585
+    state: active
+  - id: p00155
+    type: heading
+    level: 3
+    text: SECTION 4
+    hash: sha256:4b14fc79f377969ea3aef0e55157d0e457a5fddbee17c57ea37f1e6c864ce4ed
+    state: active
+  - id: p00156
+    type: heading
+    level: 4
+    text: THE FETISHISM OF COMMODITIES<br/>AND THE SECRET THEREOF
+    hash: sha256:94ea7c42e335512d1217ed3e04ce1f89839bce6d7611be4e3f4bbaa7227fdd66
+    state: active
+  - id: p00157
+    type: paragraph
+    text: A commodity appears, at first sight, a very trivial thing, and easily understood. Its analysis shows that it is, in reality, a very queer thing, abounding in metaphysical subtleties and theological niceties. So far as it is a value in use, there is nothing mysterious about it, whether we consider it from the point of view that by its properties it is capable of satisfying human wants, or from the point that those properties are the product of human labour. It is as clear as noon-day, that man, by his industry, changes the forms of the materials furnished by Nature, in such a way as to make them useful to him. The form of wood, for instance, is altered, by making a table out of it. Yet, for all that, the table continues to be that common, every-day thing, wood. But, so soon as it steps forth as a commodity, it is changed into something transcendent. It not only stands with its feet on the ground, but, in relation to all other commodities, it stands on its head, and evolves out of its wooden brain grotesque ideas, far more wonderful than “table-turning” ever was. <fn ref="26a"/>
+    hash: sha256:f0f605b1f601cd9041908fa578d6e509514fb963d56129abb6d815e9cca458bf
+    state: active
+  - id: p00158
+    type: paragraph
+    text: The mystical character of commodities does not originate, therefore, in their use value. Just as little does it proceed from the nature of the determining factors of value. For, in the first place, however varied the useful kinds of labour, or productive activities, may be, it is a physiological fact, that they are functions of the human organism, and that each such function, whatever may be its nature or form, is essentially the expenditure of human brain, nerves, muscles, &amp;c. Secondly, with regard to that which forms the ground-work for the quantitative determination of value, namely, the duration of that expenditure, or the quantity of labour, it is quite clear that there is a palpable difference between its quantity and quality. In all states of society, the labour time that it costs to produce the means of subsistence, must necessarily be an object of interest to mankind, though not of equal interest in different stages of development.<fn ref="27"/> And lastly, from the moment that men in any way work for one another, their labour assumes a social form.
+    hash: sha256:c0eb076439490af17cc908bf61b6651c12df97bc8610f1af9b0d81dd64421599
+    state: active
+  - id: p00159
+    type: paragraph
+    text: Whence, then, arises the enigmatical character of the product of labour, so soon as it assumes the form of commodities? Clearly from this form itself. The equality of all sorts of human labour is expressed objectively by their products all being equally values; the measure of the expenditure of labour power by the duration of that expenditure, takes the form of the quantity of value of the products of labour; and finally the mutual relations of the producers, within which the social character of their labour affirms itself, take the form of a social relation between the products.
+    hash: sha256:5d85d8b9c1dc607ae3e94b5b44d9e0bafc10f2a77b1ad74a555e932d3f65a468
+    state: active
+  - id: p00160
+    type: paragraph
+    text: A commodity is therefore a mysterious thing, simply because in it the social character of men’s labour appears to them as an objective character stamped upon the product of that labour; because the relation of the producers to the sum total of their own labour is presented to them as a social relation, existing not between themselves, but between the products of their labour. This is the reason why the products of labour become commodities, social things whose qualities are at the same time perceptible and imperceptible by the senses. In the same way the light from an object is perceived by us not as the subjective excitation of our optic nerve, but as the objective form of something outside the eye itself. But, in the act of seeing, there is at all events, an actual passage of light from one thing to another, from the external object to the eye. There is a physical relation between physical things. But it is different with commodities. There, the existence of the things <i>quâ</i> commodities, and the value relation between the products of labour which stamps them as commodities, have absolutely no connection with their physical properties and with the material relations arising therefrom. There it is a definite social relation between men, that assumes, in their eyes, the fantastic form of a relation between things. In order, therefore, to find an analogy, we must have recourse to the mist-enveloped regions of the religious world. In that world the productions of the human brain appear as independent beings endowed with life, and entering into relation both with one another and the human race. So it is in the world of commodities with the products of men’s hands. This I call the Fetishism which attaches itself to the products of labour, so soon as they are produced as commodities, and which is therefore inseparable from the production of commodities.
+    hash: sha256:d6b630c4ea6aae1e287f973e1be3eef58278a2a5b8fcf20e9480e7ef23db2f71
+    state: active
+  - id: p00161
+    type: paragraph
+    text: This Fetishism of commodities has its origin, as the foregoing analysis has already shown, in the peculiar social character of the labour that produces them.
+    hash: sha256:5a433dc377a4d2f8214dc63180017b2b573f64a258e2bfb1a65c64a251e8b321
+    state: active
+  - id: p00162
+    type: paragraph
+    text: As a general rule, articles of utility become commodities, only because they are products of the labour of private individuals or groups of individuals who carry on their work independently of each other. The sum total of the labour of all these private individuals forms the aggregate labour of society. Since the producers do not come into social contact with each other until they exchange their products, the specific social character of each producer’s labour does not show itself except in the act of exchange. In other words, the labour of the individual asserts itself as a part of the labour of society, only by means of the relations which the act of exchange establishes directly between the products, and indirectly, through them, between the producers. To the latter, therefore, the relations connecting the labour of one individual with that of the rest appear, not as direct social relations between individuals at work, but as what they really are, material relations between persons and social relations between things. It is only by being exchanged that the products of labour acquire, as values, one uniform social status, distinct from their varied forms of existence as objects of utility. This division of a product into a useful thing and a value becomes practically important, only when exchange has acquired such an extension that useful articles are produced for the purpose of being exchanged, and their character as values has therefore to be taken into account, beforehand, during production. From this moment the labour of the individual producer acquires socially a two-fold character. On the one hand, it must, as a definite useful kind of labour, satisfy a definite social want, and thus hold its place as part and parcel of the collective labour of all, as a branch of a social division of labour that has sprung up spontaneously. On the other hand, it can satisfy the manifold wants of the individual producer himself, only in so far as the mutual exchangeability of all kinds of useful private labour is an established social fact, and therefore the private useful labour of each producer ranks on an equality with that of all others. The equalisation of the most different kinds of labour can be the result only of an abstraction from their inequalities, or of reducing them to their common denominator, viz. expenditure of human labour power or human labour in the abstract. The two-fold social character of the labour of the individual appears to him, when reflected in his brain, only under those forms which are impressed upon that labour in every-day practice by the exchange of products. In this way, the character that his own labour possesses of being socially useful takes the form of the condition, that the product must be not only useful, but useful for others, and the social character that his particular labour has of being the equal of all other particular kinds of labour, takes the form that all the physically different articles that are the products of labour, have one common quality, viz., that of having value.
+    hash: sha256:be53f9c299e7ae0b76ec44639dbaa72e86b9b7882753cd6b3daf7d633a170587
+    state: active
+  - id: p00163
+    type: paragraph
+    text: 'Hence, when we bring the products of our labour into relation with each other as values, it is not because we see in these articles the material receptacles of homogeneous human labour. Quite the contrary: whenever, by an exchange, we equate as values our different products, by that very act, we also equate, as human labour, the different kinds of labour expended upon them. We are not aware of this, nevertheless we do it.<fn ref="28"/> Value, therefore, does not stalk about with a label describing what it is. It is value, rather, that converts every product into a social hieroglyphic. Later on, we try to decipher the hieroglyphic, to get behind the secret of our own social products; for to stamp an object of utility as a value, is just as much a social product as language. The recent scientific discovery, that the products of labour, so far as they are values, are but material expressions of the human labour spent in their production, marks, indeed, an epoch in the history of the development of the human race, but, by no means, dissipates the mist through which the social character of labour appears to us to be an objective character of the products themselves. The fact, that in the particular form of production with which we are dealing, viz., the production of commodities, the specific social character of private labour carried on independently, consists in the equality of every kind of that labour, by virtue of its being human labour, which character, therefore, assumes in the product the form of value – this fact appears to the producers, notwithstanding the discovery above referred to, to be just as real and final, as the fact, that, after the discovery by science of the component gases of air, the atmosphere itself remained unaltered.'
+    hash: sha256:07051c0737dc92d767c90df8674d4c589edaa626d34dddf709bebcf5d33b6bf9
+    state: active
+  - id: p00164
+    type: paragraph
+    text: What, first of all, practically concerns producers when they make an exchange, is the question, how much of some other product they get for their own? In what proportions the products are exchangeable? When these proportions have, by custom, attained a certain stability, they appear to result from the nature of the products, so that, for instance, one ton of iron and two ounces of gold appear as naturally to be of equal value as a pound of gold and a pound of iron in spite of their different physical and chemical qualities appear to be of equal weight. The character of having value, when once impressed upon products, obtains fixity only by reason of their acting and re-acting upon each other as quantities of value. These quantities vary continually, independently of the will, foresight and action of the producers. To them, their own social action takes the form of the action of objects, which rule the producers instead of being ruled by them. It requires a fully developed production of commodities before, from accumulated experience alone, the scientific conviction springs up, that all the different kinds of private labour, which are carried on independently of each other, and yet as spontaneously developed branches of the social division of labour, are continually being reduced to the quantitative proportions in which society requires them. And why? Because, in the midst of all the accidental and ever fluctuating exchange relations between the products, the labour time socially necessary for their production forcibly asserts itself like an over-riding law of Nature. The law of gravity thus asserts itself when a house falls about our ears.<fn ref="29"/> The determination of the magnitude of value by labour time is therefore a secret, hidden under the apparent fluctuations in the relative values of commodities. Its discovery, while removing all appearance of mere accidentality from the determination of the magnitude of the values of products, yet in no way alters the mode in which that determination takes place.
+    hash: sha256:afa5074f1fa85c97f97fe29feae90c44658be97f69e5085f3e0c7d08ac3a2c9f
+    state: active
+  - id: p00165
+    type: paragraph
+    text: Man’s reflections on the forms of social life, and consequently, also, his scientific analysis of those forms, take a course directly opposite to that of their actual historical development. He begins, <i>post festum</i>, with the results of the process of development ready to hand before him. The characters that stamp products as commodities, and whose establishment is a necessary preliminary to the circulation of commodities, have already acquired the stability of natural, self-understood forms of social life, before man seeks to decipher, not their historical character, for in his eyes they are immutable, but their meaning. Consequently it was the analysis of the prices of commodities that alone led to the determination of the magnitude of value, and it was the common expression of all commodities in money that alone led to the establishment of their characters as values. It is, however, just this ultimate money form of the world of commodities that actually conceals, instead of disclosing, the social character of private labour, and the social relations between the individual producers. When I state that coats or boots stand in a relation to linen, because it is the universal incarnation of abstract human labour, the absurdity of the statement is self-evident. Nevertheless, when the producers of coats and boots compare those articles with linen, or, what is the same thing, with gold or silver, as the universal equivalent, they express the relation between their own private labour and the collective labour of society in the same absurd form.
+    hash: sha256:6c876eb959a2176499e231acb782ed3c71764d7e0f1669ff7cdcd64e59caae21
+    state: active
+  - id: p00166
+    type: paragraph
+    text: The categories of bourgeois economy consist of such like forms. They are forms of thought expressing with social validity the conditions and relations of a definite, historically determined mode of production, viz., the production of commodities. The whole mystery of commodities, all the magic and necromancy that surrounds the products of labour as long as they take the form of commodities, vanishes therefore, so soon as we come to other forms of production.
+    hash: sha256:c160adb2c8ae6dc342f0406e510579f57b7fab689b6cc230ce866f36f8ab1b8c
+    state: active
+  - id: p00167
+    type: paragraph
+    text: Since Robinson Crusoe’s experiences are a favourite theme with political economists,<fn ref="30"/> let us take a look at him on his island. Moderate though he be, yet some few wants he has to satisfy, and must therefore do a little useful work of various sorts, such as making tools and furniture, taming goats, fishing and hunting. Of his prayers and the like we take no account, since they are a source of pleasure to him, and he looks upon them as so much recreation. In spite of the variety of his work, he knows that his labour, whatever its form, is but the activity of one and the same Robinson, and consequently, that it consists of nothing but different modes of human labour. Necessity itself compels him to apportion his time accurately between his different kinds of work. Whether one kind occupies a greater space in his general activity than another, depends on the difficulties, greater or less as the case may be, to be overcome in attaining the useful effect aimed at. This our friend Robinson soon learns by experience, and having rescued a watch, ledger, and pen and ink from the wreck, commences, like a true-born Briton, to keep a set of books. His stock-book contains a list of the objects of utility that belong to him, of the operations necessary for their production; and lastly, of the labour time that definite quantities of those objects have, on an average, cost him. All the relations between Robinson and the objects that form this wealth of his own creation, are here so simple and clear as to be intelligible without exertion, even to Mr. Sedley Taylor. And yet those relations contain all that is essential to the determination of value.
+    hash: sha256:bd35622f70f35f23290062769667cf0ccd2616a7b5943886d7554314bfa3d3f6
+    state: active
+  - id: p00168
+    type: paragraph
+    text: Let us now transport ourselves from Robinson’s island bathed in light to the European middle ages shrouded in darkness. Here, instead of the independent man, we find everyone dependent, serfs and lords, vassals and suzerains, laymen and clergy. Personal dependence here characterises the social relations of production just as much as it does the other spheres of life organised on the basis of that production. But for the very reason that personal dependence forms the ground-work of society, there is no necessity for labour and its products to assume a fantastic form different from their reality. They take the shape, in the transactions of society, of services in kind and payments in kind. Here the particular and natural form of labour, and not, as in a society based on production of commodities, its general abstract form is the immediate social form of labour. Compulsory labour is just as properly measured by time, as commodity-producing labour; but every serf knows that what he expends in the service of his lord, is a definite quantity of his own personal labour power. The tithe to be rendered to the priest is more matter of fact than his blessing. No matter, then, what we may think of the parts played by the different classes of people themselves in this society, the social relations between individuals in the performance of their labour, appear at all events as their own mutual personal relations, and are not disguised under the shape of social relations between the products of labour.
+    hash: sha256:60cb4b06d17988342550d1a4c080fd1320bb645be0425cfcc8f5ac9d9d948b00
+    state: active
+  - id: p00169
+    type: paragraph
+    text: For an example of labour in common or directly associated labour, we have no occasion to go back to that spontaneously developed form which we find on the threshold of the history of all civilised races.<fn ref="31"/> We have one close at hand in the patriarchal industries of a peasant family, that produces corn, cattle, yarn, linen, and clothing for home use. These different articles are, as regards the family, so many products of its labour, but as between themselves, they are not commodities. The different kinds of labour, such as tillage, cattle tending, spinning, weaving and making clothes, which result in the various products, are in themselves, and such as they are, direct social functions, because functions of the family, which, just as much as a society based on the production of commodities, possesses a spontaneously developed system of division of labour. The distribution of the work within the family, and the regulation of the labour time of the several members, depend as well upon differences of age and sex as upon natural conditions varying with the seasons. The labour power of each individual, by its very nature, operates in this case merely as a definite portion of the whole labour power of the family, and therefore, the measure of the expenditure of individual labour power by its duration, appears here by its very nature as a social character of their labour.
+    hash: sha256:bb14a1e64b40f8576bc935b8a722e983768786a1752bbd671f943c593b131e85
+    state: active
+  - id: p00170
+    type: paragraph
+    text: Let us now picture to ourselves, by way of change, a community of free individuals, carrying on their work with the means of production in common, in which the labour power of all the different individuals is consciously applied as the combined labour power of the community. All the characteristics of Robinson’s labour are here repeated, but with this difference, that they are social, instead of individual. Everything produced by him was exclusively the result of his own personal labour, and therefore simply an object of use for himself. The total product of our community is a social product. One portion serves as fresh means of production and remains social. But another portion is consumed by the members as means of subsistence. A distribution of this portion amongst them is consequently necessary. The mode of this distribution will vary with the productive organisation of the community, and the degree of historical development attained by the producers. We will assume, but merely for the sake of a parallel with the production of commodities, that the share of each individual producer in the means of subsistence is determined by his labour time. Labour time would, in that case, play a double part. Its apportionment in accordance with a definite social plan maintains the proper proportion between the different kinds of work to be done and the various wants of the community. On the other hand, it also serves as a measure of the portion of the common labour borne by each individual, and of his share in the part of the total product destined for individual consumption. The social relations of the individual producers, with regard both to their labour and to its products, are in this case perfectly simple and intelligible, and that with regard not only to production but also to distribution.
+    hash: sha256:7f31d337ced667e455fc64208565a4be2d85503ac8492a18f6d8fcd28bd97835
+    state: active
+  - id: p00171
+    type: paragraph
+    text: The religious world is but the reflex of the real world.<fn ref="Note"/> And for a society based upon the production of commodities, in which the producers in general enter into social relations with one another by treating their products as commodities and values, whereby they reduce their individual private labour to the standard of homogeneous human labour – for such a society, Christianity with its <i>cultus</i> of abstract man, more especially in its bourgeois developments, Protestantism, Deism, &amp;c., is the most fitting form of religion. In the ancient Asiatic and other ancient modes of production, we find that the conversion of products into commodities, and therefore the conversion of men into producers of commodities, holds a subordinate place, which, however, increases in importance as the primitive communities approach nearer and nearer to their dissolution. Trading nations, properly so called, exist in the ancient world only in its interstices, like the gods of Epicurus in the Intermundia, or like Jews in the pores of Polish society. Those ancient social organisms of production are, as compared with bourgeois society, extremely simple and transparent. But they are founded either on the immature development of man individually, who has not yet severed the umbilical cord that unites him with his fellowmen in a primitive tribal community, or upon direct relations of subjection. They can arise and exist only when the development of the productive power of labour has not risen beyond a low stage, and when, therefore, the social relations within the sphere of material life, between man and man, and between man and Nature, are correspondingly narrow. This narrowness is reflected in the ancient worship of Nature, and in the other elements of the popular religions. The religious reflex of the real world can, in any case, only then finally vanish, when the practical relations of every-day life offer to man none but perfectly intelligible and reasonable relations with regard to his fellowmen and to Nature.
+    hash: sha256:6e9af6ced00529fc21caac30fafe2a16578f6980ef13e37abcb7e2f67fc85959
+    state: active
+  - id: p00172
+    type: paragraph
+    text: The life-process of society, which is based on the process of material production, does not strip off its mystical veil until it is treated as production by freely associated men, and is consciously regulated by them in accordance with a settled plan. This, however, demands for society a certain material ground-work or set of conditions of existence which in their turn are the spontaneous product of a long and painful process of development.
+    hash: sha256:ba9445b08a1c8f37675243d9975673dcec831082d64b2ab7ea3a55cbc8fe3b8a
+    state: active
+  - id: p00173
+    type: paragraph
+    text: Political Economy has indeed analysed, however incompletely,<fn ref="32"/> value and its magnitude, and has discovered what lies beneath these forms. But it has never once asked the question why labour is represented by the value of its product and labour time by the magnitude of that value.<fn ref="33"/> These formulæ, which bear it stamped upon them in unmistakable letters that they belong to a state of society, in which the process of production has the mastery over man, instead of being controlled by him, such formulæ appear to the bourgeois intellect to be as much a self-evident necessity imposed by Nature as productive labour itself. Hence forms of social production that preceded the bourgeois form, are treated by the bourgeoisie in much the same way as the Fathers of the Church treated pre-Christian religions.<fn ref="34"/>
+    hash: sha256:7059b92ce85c089ae73bae8fd5d46756f4e4cd7e008d1d3e9887015a41d1bc02
+    state: active
+  - id: p00174
+    type: paragraph
+    text: To what extent some economists are misled by the Fetishism inherent in commodities, or by the objective appearance of the social characteristics of labour, is shown, amongst other ways, by the dull and tedious quarrel over the part played by Nature in the formation of exchange value. Since exchange value is a definite social manner of expressing the amount of labour bestowed upon an object, Nature has no more to do with it, than it has in fixing the course of exchange.
+    hash: sha256:be2c3e694d62be04249a59388bd66190f46caa0ed7139d3b1cba59a482c7494e
+    state: active
+  - id: p00175
+    type: paragraph
+    text: The mode of production in which the product takes the form of a commodity, or is produced directly for exchange, is the most general and most embryonic form of bourgeois production. It therefore makes its appearance at an early date in history, though not in the same predominating and characteristic manner as now-a-days. Hence its Fetish character is comparatively easy to be seen through. But when we come to more concrete forms, even this appearance of simplicity vanishes. Whence arose the illusions of the monetary system? To it gold and silver, when serving as money, did not represent a social relation between producers, but were natural objects with strange social properties. And modern economy, which looks down with such disdain on the monetary system, does not its superstition come out as clear as noon-day, whenever it treats of capital? How long is it since economy discarded the physiocratic illusion, that rents grow out of the soil and not out of society?
+    hash: sha256:e8418fae3c31f31fc44397fe14b0ead2a42296c84c1350a3fe04f1ef6f3f5f4d
+    state: active
+  - id: p00176
+    type: paragraph
+    text: "But not to anticipate, we will content ourselves with yet another example relating to the commodity form. Could commodities themselves speak, they would say: Our use value may be a thing that interests men. It is no part of us as objects. What, however, does belong to us as objects, is our value. Our natural intercourse as commodities proves it. In the eyes of each other we are nothing but exchange values. Now listen how those commodities speak through the mouth of the economist."
+    hash: sha256:4e1d0f6df6da667f75f78eb75f5caae203dcde0b55c5609c88eaf23475c1d385
+    state: active
+  - id: p00177
+    type: blockquote
+    text: “Value” – (<i>i.e.</i>, exchange value) “is a property of things, riches” – (<i>i.e.</i>, use value) “of man. Value, in this sense, necessarily implies exchanges, riches do not.”<fn ref="35"/> “Riches” (use value) “are the attribute of men, value is the attribute of commodities. A man or a community is rich, a pearl or a diamond is valuable...” A pearl or a diamond is valuable as a pearl or a diamond.<fn ref="36"/>
+    hash: sha256:433d338fd663131d7a3ab7ac0a94f0247d234c872fb431818629543a03bd8d3b
+    state: active
+  - id: p00178
+    type: paragraph
+    text: So far no chemist has ever discovered exchange value either in a pearl or a diamond. The economic discoverers of this chemical element, who by-the-bye lay special claim to critical acumen, find however that the use value of objects belongs to them independently of their material properties, while their value, on the other hand, forms a part of them as objects. What confirms them in this view, is the peculiar circumstance that the use value of objects is realised without exchange, by means of a direct relation between the objects and man, while, on the other hand, their value is realised only by exchange, that is, by means of a social process. Who fails here to call to mind our good friend, Dogberry, who informs neighbour Seacoal, that, “To be a well-favoured man is the gift of fortune; but reading and writing comes by Nature.”<fn ref="37"/>
+    hash: sha256:40812bc46d58876121b2e78d216a1db3057e36970f31765ff49583b95f853a65
+    state: active
+  - id: p00179
+    type: footnote
+    label: "1"
+    text: Karl Marx, “Zur Kritik der Politischen Oekonomie.” Berlin, 1859, p. 3.
+    hash: sha256:e6314aae1e6fcc1764acd73e9a8a8396878a4c87ad85f74b48525a5b3d9dbd22
+    state: active
+  - id: p00180
+    type: footnote
+    label: "2"
+    text: "“Desire implies want, it is the appetite of the mind, and as natural as hunger to the body... The greatest number (of things) have their value from supplying the wants of the mind.” Nicholas Barbon: “A Discourse Concerning Coining the New Money Lighter. In Answer to Mr. Locke’s Considerations, &amp;c.”, London, 1696, pp. 2, 3."
+    hash: sha256:123ad7fe3855ba0f2154a33ee37da299a31d20f0fd5b04ff9b45cfeda145f666
+    state: active
+  - id: p00181
+    type: footnote
+    label: "3"
+    text: “Things have an intrinsick vertue” (this is Barbon’s special term for value in use) “which in all places have the same vertue; as the loadstone to attract iron” (l.c., p. 6). The property which the magnet possesses of attracting iron, became of use only after by means of that property the polarity of the magnet had been discovered.
+    hash: sha256:c64e3af545e1d152801779e5dfac4d345acc20885e9dec899a61e53346c06b5d
+    state: active
+  - id: p00182
+    type: footnote
+    label: "4"
+    text: “The natural worth of anything consists in its fitness to supply the necessities, or serve the conveniencies of human life.” (John Locke, “Some Considerations on the Consequences of the Lowering of Interest, 1691,” in Works Edit. Lond., 1777, Vol. II., p. 28.) In English writers of the 17th century we frequently find “worth” in the sense of value in use, and “value” in the sense of exchange value. This is quite in accordance with the spirit of a language that likes to use a Teutonic word for the actual thing, and a Romance word for its reflexion.
+    hash: sha256:10e00a1c879d78bf137cb84e1578c681817d27bd5693251705fdcb3a5b6a692b
+    state: active
+  - id: p00183
+    type: footnote
+    label: "5"
+    text: In bourgeois societies the economic <i>fictio juris</i> prevails, that every one, as a buyer, possesses an encyclopedic knowledge of commodities.
+    hash: sha256:ea1e94078e929f398b3ee18648818862a499f250440d9711348b3376426a419c
+    state: active
+  - id: p00184
+    type: footnote
+    label: "6"
+    text: "“La valeur consiste dans le rapport d’échange qui se trouve entre telle chose et telle autre entre telle mesure d’une production et telle mesure d’une autre.” [“Value consists in the exchange relation between one thing and another, between a given amount of one product and a given amount of another”] (Le Trosne: “De l’Intérêt Social.” Physiocrates, Ed. Daire. Paris, 1846. p. 889.)"
+    hash: sha256:42fbbaba6e70abde12119a5d17ff7d14e6e2c27e1794b33b45a8a9f06ccb9f5e
+    state: active
+  - id: p00185
+    type: footnote
+    label: "7"
+    text: “Nothing can have an intrinsick value.” (N. Barbon, l.c., p. 6); or as Butler says – “The value of a thing is just as much as it will bring.”
+    hash: sha256:23ffae67b479ca3b76bd971bc12c75d7dad87b23e1a4ec854140a9089ef64d9a
+    state: active
+  - id: p00186
+    type: footnote
+    label: "8"
+    text: N. Barbon, l.c., p. 53 and 7.
+    hash: sha256:ef688c519ba979ec67fddbfbb22adbd602ffbf72b6c638786a592db62c276bae
+    state: active
+  - id: p00187
+    type: footnote
+    label: "9"
+    text: “The value of them (the necessaries of life), when they are exchanged the one for another, is regulated by the quantity of labour necessarily required, and commonly taken in producing them.” (“Some Thoughts on the Interest of Money in General, and Particularly in the Publick Funds, &amp;c.” Lond., p. 36) This remarkable anonymous work written in the last century, bears no date. It is clear, however, from internal evidence that it appeared in the reign of George II, about 1739 or 1740.
+    hash: sha256:e2b7111f7be7bb414cea010f521a6deb6837d9aa228c4f84ab956a38e0e66ef6
+    state: active
+  - id: p00188
+    type: footnote
+    label: "10"
+    text: “Toutes les productions d’un même genre ne forment proprement qu’une masse, dont le prix se détermine en général et sans régard aux circonstances particulières.” [“Properly speaking, all products of the same kind form a single mass, and their price is determined in general and without regard to particular circumstances”] (Le Trosne, l.c., p. 893.)
+    hash: sha256:799a6654595de90e7a995de82d0a419c5f14f53836785eb17da3509f5aa47b0b
+    state: active
+  - id: p00189
+    type: footnote
+    label: "11"
+    text: K. Marx. l.c., p.6.
+    hash: sha256:2cfd1b9e513b1026caedd0e19eb805925512f8ea7195f520794a42dbe7c95bf4
+    state: active
+  - id: p00190
+    type: footnote
+    label: A
+    text: The following passage occurred only in the first edition.<br/><br/>Now we know the <i>substance</i> of value. It is <i>labour</i>. We know the <i>measure of its magnitude</i>. It is <i>labour time</i>. The <i>form</i>, which stamps <i>value</i> as <i>exchange-value</i>, remains to be analysed. But before this we need to develop the characteristics we have already found somewhat more fully.<br/><br/>Taken from the Penguin edition of <i>Capital</i>, translated by Ben Fowkes.
+    hash: sha256:7fdd989ee61e567f1cdf0eaea7e80f1ba306f0065e423ed838e103351d480af1
+    state: active
+  - id: p00191
+    type: footnote
+    label: "12"
+    text: I am inserting the parenthesis because its omission has often given rise to the misunderstanding that every product that is consumed by some one other than its producer is considered in Marx a commodity. [Engels, 4th German Edition]
+    hash: sha256:32fc47082a2ca6cca0ae4df4a1769a1f2c703bc00203266ee83983d1959edc73
+    state: active
+  - id: p00192
+    type: footnote
+    label: "13"
+    text: "Tutti i fenomeni dell’universo, sieno essi prodotti della mano dell’uomo, ovvero delle universali leggi della fisica, non ci danno idea di attuale creazione, ma unicamente di una modificazione della materia. Accostare e separare sono gli unici elementi che l’ingegno umano ritrova analizzando l’idea della riproduzione: e tanto è riproduzione di valore (value in use, although Verri in this passage of his controversy with the Physiocrats is not himself quite certain of the kind of value he is speaking of) e di ricchezze se la terra, l’aria e l’acqua ne’ campi si trasmutino in grano, come se colla mano dell’uomo il glutine di un insetto si trasmuti in velluto ovvero alcuni pezzetti di metalio si organizzino a formare una ripetizione.” [“All the phenomena of the universe, whether produced by the hand of man or through the universal laws of physics, are not actual new creations, but merely a modification of matter. Joining together and separating are the only elements which the human mind always finds on analysing the concept of reproduction.’ and it is just the same with the reproduction of value” (value in use, although Verri in this passage of his controversy with the Physiocrats is not himself quite certain of the kind of value he is speaking of) “and of wealth, when earth, air and water in the fields are transformed into corn, or when the hand of man transforms the secretions of an insect into silk, or some pieces of metal are arranged to make the mechanism of a watch.”] – Pietro Verri, “Meditazioni sulla Economia Politica” [first printed in 1773] in Custodi’s edition of the Italian Economists, Parte Moderna, t. XV., p. 22."
+    hash: sha256:c0d9a9d083fca0da7e06802fc48f4bcb657672a007c74e1a51282aea3064d020
+    state: active
+  - id: p00193
+    type: footnote
+    label: "14"
+    text: Comp. Hegel, “Philosophie des Rechts.” Berlin, 1840. p. 250.
+    hash: sha256:3b802f5a1c848490887590285228df086dd6c4a40a572858b8b5d59cc9a07831
+    state: active
+  - id: p00194
+    type: footnote
+    label: "15"
+    text: The reader must note that we are not speaking here of the wages or value that the labourer gets for a given labour time, but of the value of the commodity in which that labour time is materialised. Wages is a category that, as yet, has no existence at the present stage of our investigation.
+    hash: sha256:4c25add91a42987b9ea37f75579f6470d29f6d5e64c760ffd734e5176d095c9a
+    state: active
+  - id: p00195
+    type: footnote
+    label: "16"
+    text: In order to prove that labour alone is that all-sufficient and real measure, by which at all times the value of all commodities can be estimated and compared, Adam Smith says, “Equal quantities of labour must at all times and in all places have the same value for the labourer. In his normal state of health, strength, and activity, and with the average degree of skill that he may possess, he must always give up the same portion of his rest, his freedom, and his happiness.” (“Wealth of Nations,” b. I. ch. V.) On the one hand Adam Smith here (but not everywhere) confuses the determination of value by means of the quantity of labour expended in the production of commodities, with the determination of the values of commodities by means of the value of labour, and seeks in consequence to prove that equal quantities of labour have always the same value. On the other hand he has a presentiment, that labour, so far as it manifests itself in the value of commodities, counts only as expenditure of labour power, but he treats this expenditure as the mere sacrifice of rest, freedom, and happiness, not as at the same time the normal activity of living beings. But then, he has the modern wage-labourer in his eye. Much more aptly, the anonymous predecessor of Adam Smith, quoted above in Note 1, p. 39 [note 9 etext]. says “one man has employed himself a week in providing this necessary of life ... and he that gives him some other in exchange cannot make a better estimate of what is a proper equivalent, than by computing what cost him just as much labour and time; which in effect is no more than exchanging one man’s labour in one thing for a time certain, for another man’s labour in another thing for the same time.” (l.c., p. 39.) [The English language has the advantage of possessing different words for the two aspects of labour here considered. The labour which creates use value, and counts qualitatively, is Work, as distinguished from Labour, that which creates Value and counts quantitatively, is Labour as distinguished from Work - Engels]
+    hash: sha256:7f67212d1d6b247db09eb3792c43f722e1103bc9c8d2499050917332d160b123
+    state: active
+  - id: p00196
+    type: footnote
+    label: "17"
+    text: The few economists, amongst whom is S. Bailey, who have occupied themselves with the analysis of the form of value, have been unable to arrive at any result, first, because they confuse the form of value with value itself; and second, because, under the coarse influence of the practical bourgeois, they exclusively give their attention to the quantitative aspect of the question. “The command of quantity ... constitutes value.” (“Money and its Vicissitudes.” London, 1837, p. 11. By S. Bailey.)
+    hash: sha256:950c4651e5c9a3c3d205d5b717d1eb165f68c142ec3f0af545bda02f0c7c62bb
+    state: active
+  - id: p00197
+    type: footnote
+    label: "18"
+    text: "The celebrated Franklin, one of the first economists, after Wm. Petty, who saw through the nature of value, says: “Trade in general being nothing else but the exchange of labour for labour, the value of all things is ... most justly measured by labour.” (“The works of B. Franklin, &amp;c.,” edited by Sparks. Boston, 1836, Vol. II., p. 267.) Franklin is unconscious that by estimating the value of everything in labour, he makes abstraction from any difference in the sorts of labour exchanged, and thus reduces them all to equal human labour. But although ignorant of this, yet he says it. He speaks first of “the one labour,” then of “the other labour,” and finally of “labour,” without further qualification, as the substance of the value of everything."
+    hash: sha256:d9e259bddd9639346ebae59bb09474b42eaeb84f348d07c65ed631fddc03ffcb
+    state: active
+  - id: p00198
+    type: footnote
+    label: "19"
+    text: In a sort of way, it is with man as with commodities. Since he comes into the world neither with a looking glass in his hand, nor as a Fichtian philosopher, to whom “I am I” is sufficient, man first sees and recognises himself in other men. Peter only establishes his own identity as a man by first comparing himself with Paul as being of like kind. And thereby Paul, just as he stands in his Pauline personality, becomes to Peter the type of the <i>genus homo</i>.
+    hash: sha256:0609f09c85ae2a416e2935ec2a9985af6477e4b374980e140e8a8999ea028847
+    state: active
+  - id: p00199
+    type: footnote
+    label: "20"
+    text: Value is here, as occasionally in the preceding pages, used in sense of value determined as to quantity, or of magnitude of value.
+    hash: sha256:542d548968b98fcf3cbd00d2fbbf60fc38ee5cd0f1080ef38c4e2f388e4da5b3
+    state: active
+  - id: p00200
+    type: footnote
+    label: "21"
+    text: "This incongruity between the magnitude of value and its relative expression has, with customary ingenuity, been exploited by vulgar economists. For example – “Once admit that A falls, because B, with which it is exchanged, rises, while no less labour is bestowed in the meantime on A, and your general principle of value falls to the ground... If he [Ricardo] allowed that when A rises in value relatively to B, B falls in value relatively to A, he cut away the ground on which he rested his grand proposition, that the value of a commodity is ever determined by the labour embodied in it, for if a change in the cost of A alters not only its own value in relation to B, for which it is exchanged, but also the value of B relatively to that of A, though no change has taken place in the quantity of labour to produce B, then not only the doctrine falls to the ground which asserts that the quantity of labour bestowed on an article regulates its value, but also that which affirms the cost of an article to regulate its value’ (J. Broadhurst: “Political Economy,” London, 1842, pp. 11 and 14.) Mr. Broadhurst might just as well say: consider the fractions 10/20, 10/50, 10/100, &amp;c., the number 10 remains unchanged, and yet its proportional magnitude, its magnitude relatively to the numbers 20, 50, 100 &amp;c., continually diminishes. Therefore the great principle that the magnitude of a whole number, such as 10, is “regulated” by the number of times unity is contained in it, falls to the ground. [The author explains in section 4 of this chapter, pp. 80–81, note 2 (note 33 etext), what he understands by “Vulgar Economy.” – Engels]"
+    hash: sha256:29b0abb28b06b9e787613a3847337ab1f6eb6e4e36e3d8ad20d6cf6d1b53ce77
+    state: active
+  - id: p00201
+    type: footnote
+    label: "22"
+    text: Such expressions of relations in general, called by Hegel reflex categories, form a very curious class. For instance, one man is king only because other men stand in the relation of subjects to him. They, on the contrary, imagine that they are subjects because he is king.
+    hash: sha256:7c37d45475f71f7c3e513ada0c55c46a46aa0a1744d1bf88ad822aa5da4d593e
+    state: active
+  - id: p00202
+    type: footnote
+    label: "23"
+    text: F. L. A. Ferrier, sous-inspecteur des douanes, “Du gouvernement considéré dans ses rapports avec le commerce,” Paris, 1805; and Charles Ganilh, “Des Systèmes d’Economie Politique,” – 2nd ed., Paris, 1821.
+    hash: sha256:77272c6fdbeb401f7eb4c0828259052a108b69166bf87343e0d1d3f41d520093
+    state: active
+  - id: p00203
+    type: footnote
+    label: "24"
+    text: In Homer, for instance, the value of an article is expressed in a series of different things. <i>Iliad</i>. VII. 472–475.
+    hash: sha256:4b014f667c46bc3d222f453b5b01dd4208357da758ecccccaeebc94339a2a013
+    state: active
+  - id: p00204
+    type: footnote
+    label: "25"
+    text: "For this reason, we can speak of the coat value of the linen when its value is expressed in coats, or of its corn value when expressed in corn, and so on. Every such expression tells us, that what appears in the use values, coat, corn, &amp;c., is the value of the linen. “The value of any commodity denoting its relation in exchange, we may speak of it as ... corn value, cloth value, according to the commodity with which it is compared; and hence there are a thousand different kinds of value, as many kinds of value as there are commodities in existence, and all are equally real and equally nominal.” (“A Critical Dissertation on the Nature, Measures and Causes of Value: chiefly in reference to the writings of Mr. Ricardo and his followers.” By the author of “Essays on the Formation, &amp;c., of Opinions.” London, 1825, p. 39.) S. Bailey, the author of this anonymous work, a work which in its day created much stir in England, fancied that, by thus pointing out the various relative expressions of one and the same value, he had proved the impossibility of any determination of the concept of value. However narrow his own views may have been, yet, that he laid his finger on some serious defects in the Ricardian Theory, is proved by the animosity with which he was attacked by Ricardo’s followers. See the <i>Westminster Review</i> for example."
+    hash: sha256:9cc861758899dc394dd037f6f90e5122853e61ef6b2d09a6e15a486ebe3d38ff
+    state: active
+  - id: p00205
+    type: footnote
+    label: "26"
+    text: It is by no means self-evident that this character of direct and universal exchangeability is, so to speak, a polar one, and as intimately connected with its opposite pole, the absence of direct exchangeability, as the positive pole of the magnet is with its negative counterpart. It may therefore be imagined that all commodities can simultaneously have this character impressed upon them, just as it can be imagined that all Catholics can be popes together. It is, of course, highly desirable in the eyes of the petit bourgeois, for whom the production of commodities is the <i>nec plus ultra</i> of human freedom and individual independence, that the inconveniences resulting from this character of commodities not being directly exchangeable, should be removed. Proudhon’s socialism is a working out of this Philistine Utopia, a form of socialism which, as I have elsewhere shown, does not possess even the merit of originality. Long before his time, the task was attempted with much better success by Gray, Bray, and others. But, for all that, wisdom of this kind flourishes even now in certain circles under the name of “science.” Never has any school played more tricks with the word science, than that of Proudhon, for “wo Begriffe fehlen, Da stellt zur rechten Zeit ein Wort sich ein.” [“Where thoughts are absent, Words are brought in as convenient replacements,” Goethe’s <i>Faust</i>. See Proudhon’s <i>Philosophy of Poverty</i>]
+    hash: sha256:18b38e7057ce44af763231c257d6961a6520e716a0003984207b8486ee0439db
+    state: active
+  - id: p00206
+    type: footnote
+    label: 26a
+    text: "In the German edition, there is the following footnote here: “One may recall that China and the tables began to dance when the rest of the world appeared to be standing still – <i>pour encourager les autres</i> [to encourage the others].” The defeat of the 1848–49 revolutions was followed by a period of dismal political reaction in Europe. At that time, spiritualism, especially table-turning, became the rage among the European aristocracy. In 1850–64, China was swept by an anti-feudal liberation movement in the form of a large-scale peasant war, the Taiping Revolt. – Note by editors of <i>MECW</i>."
+    hash: sha256:16b3146412726cf190ea6d22d303ab99cd8b8365f55033e73a37c8ccf906527a
+    state: active
+  - id: p00207
+    type: footnote
+    label: "27"
+    text: Among the ancient Germans the unit for measuring land was what could be harvested in a day, and was called Tagwerk, Tagwanne (jurnale, or terra jurnalis, or diornalis), Mannsmaad, &amp;c. (See G. L. von Maurer, “Einleitung zur Geschichte der Mark—, &amp;c. Verfassung,” Munchen, 1854, p. 129 sq.)
+    hash: sha256:655c40ff9aef0279d0fa0ed17133b460fedfc5cff6b2c379538fa504c143138b
+    state: active
+  - id: p00208
+    type: footnote
+    label: "28"
+    text: "When, therefore, Galiani says: Value is a relation between persons – “La Ricchezza è una ragione tra due persone,” – he ought to have added: a relation between persons expressed as a relation between things. (Galiani: Della Moneta, p. 221, V. III. of Custodi’s collection of “Scrittori Classici Italiani di Economia Politica.” Parte Moderna, Milano 1803.)"
+    hash: sha256:805071b123b4c6007d2fd8f9e8def9fa8d9ea8b81f527b7e57dd44afd8b35ba6
+    state: active
+  - id: p00209
+    type: footnote
+    label: "29"
+    text: "“What are we to think of a law that asserts itself only by periodical revolutions? It is just nothing but a law of Nature, founded on the want of knowledge of those whose action is the subject of it.” (Friedrich Engels: “Umrisse zu einer Kritik der Nationalökonomie,” in the “Deutsch-Französische Jahrbücher,” edited by Arnold Ruge and Karl Marx. Paris. 1844.)"
+    hash: sha256:aee7c3af7daa226d613f120c6c8fd524c0cfd3078ebec2e8718b9ec087e76d4a
+    state: active
+  - id: p00210
+    type: footnote
+    label: "30"
+    text: "Even Ricardo has his stories <i>à la Robinson</i>. “He makes the primitive hunter and the primitive fisher straightway, as owners of commodities, exchange fish and game in the proportion in which labour time is incorporated in these exchange values. On this occasion he commits the anachronism of making these men apply to the calculation, so far as their implements have to be taken into account, the annuity tables in current use on the London Exchange in the year 1817. The parallelograms of Mr. Owen appear to be the only form of society, besides the bourgeois form, with which he was acquainted.” (Karl Marx: “Zur Kritik, &amp;c..” pp. 38, 39)"
+    hash: sha256:1b6cdbb9853b7d1b8faf4d6727982fc2a46e875a06a9c86b65ae0bfc8e12f63a
+    state: active
+  - id: p00211
+    type: footnote
+    label: "31"
+    text: “A ridiculous presumption has latterly got abroad that common property in its primitive form is specifically a Slavonian, or even exclusively Russian form. It is the primitive form that we can prove to have existed amongst Romans, Teutons, and Celts, and even to this day we find numerous examples, ruins though they be, in India. A more exhaustive study of Asiatic, and especially of Indian forms of common property, would show how from the different forms of primitive common property, different forms of its dissolution have been developed. Thus, for instance, the various original types of Roman and Teutonic private property are deducible from different forms of Indian common property.” (Karl Marx, “Zur Kritik, &amp;c.,” p. 10.)
+    hash: sha256:621f106344e501eb07c1c24aedf49a3739df93df3e4791962a2b4444d6b876f6
+    state: active
+  - id: p00212
+    type: footnote
+    label: "32"
+    text: "The insufficiency of Ricardo’s analysis of the magnitude of value, and his analysis is by far the best, will appear from the 3rd and 4th books of this work. As regards value in general, it is the weak point of the classical school of Political Economy that it nowhere expressly and with full consciousness, distinguishes between labour, as it appears in the value of a product, and the same labour, as it appears in the use value of that product. Of course the distinction is practically made, since this school treats labour, at one time under its quantitative aspect, at another under its qualitative aspect. But it has not the least idea, that when the difference between various kinds of labour is treated as purely quantitative, their qualitative unity or equality, and therefore their reduction to abstract human labour, is implied. For instance, Ricardo declares that he agrees with Destutt de Tracy in this proposition: “As it is certain that our physical and moral faculties are alone our original riches, the employment of those faculties, labour of some kind, is our only original treasure, and it is always from this employment that all those things are created which we call riches... It is certain, too, that all those things only represent the labour which has created them, and if they have a value, or even two distinct values, they can only derive them from that (the value) of the labour from which they emanate.” (Ricardo, “The Principles of Pol. Econ.,” 3 Ed. Lond. 1821, p. 334.) We would here only point out, that Ricardo puts his own more profound interpretation upon the words of Destutt. What the latter really says is, that on the one hand all things which constitute wealth represent the labour that creates them, but that on the other hand, they acquire their “two different values” (use value and exchange value) from “the value of labour.” He thus falls into the commonplace error of the vulgar economists, who assume the value of one commodity (in this case labour) in order to determine the values of the rest. But Ricardo reads him as if he had said, that labour (not the value of labour) is embodied both in use value and exchange value. Nevertheless, Ricardo himself pays so little attention to the two-fold character of the labour which has a two-fold embodiment, that he devotes the whole of his chapter on “Value and Riches, Their Distinctive Properties,” to a laborious examination of the trivialities of a J.B. Say. And at the finish he is quite astonished to find that Destutt on the one hand agrees with him as to labour being the source of value, and on the other hand with J. B. Say as to the notion of value."
+    hash: sha256:b8b876ebeb11ad61276b28a0fa60282bcdc272e2a487eb285b98d4574f556901
+    state: active
+  - id: p00213
+    type: footnote
+    label: "33"
+    text: It is one of the chief failings of classical economy that it has never succeeded, by means of its analysis of commodities, and, in particular, of their value, in discovering that form under which value becomes exchange value. Even Adam Smith and Ricardo, the best representatives of the school, treat the form of value as a thing of no importance, as having no connection with the inherent nature of commodities. The reason for this is not solely because their attention is entirely absorbed in the analysis of the magnitude of value. It lies deeper. The value form of the product of labour is not only the most abstract, but is also the most universal form, taken by the product in bourgeois production, and stamps that production as a particular species of social production, and thereby gives it its special historical character. If then we treat this mode of production as one eternally fixed by Nature for every state of society, we necessarily overlook that which is the <i>differentia specifica</i> of the value form, and consequently of the commodity form, and of its further developments, money form, capital form, &amp;c. We consequently find that economists, who are thoroughly agreed as to labour time being the measure of the magnitude of value, have the most strange and contradictory ideas of money, the perfected form of the general equivalent. This is seen in a striking manner when they treat of banking, where the commonplace definitions of money will no longer hold water. This led to the rise of a restored mercantile system (Ganilh, &amp;c.), which sees in value nothing but a social form, or rather the unsubstantial ghost of that form. Once for all I may here state, that by classical Political Economy, I understand that economy which, since the time of W. Petty, has investigated the real relations of production in bourgeois society in contradistinction to vulgar economy, which deals with appearances only, ruminates without ceasing on the materials long since provided by scientific economy, and there seeks plausible explanations of the most obtrusive phenomena, for bourgeois daily use, but for the rest, confines itself to systematising in a pedantic way, and proclaiming for everlasting truths, the trite ideas held by the self-complacent bourgeoisie with regard to their own world, to them the best of all possible worlds.
+    hash: sha256:e890dc2c3ba26235e4c9f65de985312518fbec03cef0df8da57fbd641c7585f8
+    state: active
+  - id: p00214
+    type: footnote
+    label: "34"
+    text: “Les économistes ont une singulière manière de procéder. Il n’y a pour eux que deux sortes d’institutions, celles de l’art et celles de la nature. Les institutions de la féodalité sont des institutions artificielles celles de la bourgeoisie sont des institutions naturelles. Ils ressemblent en ceci aux théologiens, qui eux aussi établissent deux sortes de religions. Toute religion qui n’est pas la leur, est une invention des hommes tandis que leur propre religion est une émanation de Dieu—Ainsi il y a eu de l’histoire, mais il n’y en a plus.” [“Economists have a singular method of procedure. There are only two kinds of institutions for them, artificial and natural. The institutions of feudalism are artificial institutions, those of the bourgeoisie are natural institutions. In this they resemble the theologians, who likewise establish two kinds of religion. Every religion which is not theirs is an invention of men, while their own is an emanation from God. ... Thus there has been history, but there is no longer any”] (Karl Marx. Misère de la Philosophie. Réponse a la Philosophie de la Misère par M. Proudhon, 1847, p. 113.) Truly comical is M. Bastiat, who imagines that the ancient Greeks and Romans lived by plunder alone. But when people plunder for centuries, there must always be something at hand for them to seize; the objects of plunder must be continually reproduced. It would thus appear that even Greeks and Romans had some process of production, consequently, an economy, which just as much constituted the material basis of their world, as bourgeois economy constitutes that of our modern world. Or perhaps Bastiat means, that a mode of production based on slavery is based on a system of plunder. In that case he treads on dangerous ground. If a giant thinker like Aristotle erred in his appreciation of slave labour, why should a dwarf economist like Bastiat be right in his appreciation of wage labour? I seize this opportunity of shortly answering an objection taken by a German paper in America, to my work, “Zur Kritik der Pol. Oekonomie, 1859.” In the estimation of that paper, my view that each special mode of production and the social relations corresponding to it, in short, that the economic structure of society, is the real basis on which the juridical and political superstructure is raised and to which definite social forms of thought correspond; that the mode of production determines the character of the social, political, and intellectual life generally, all this is very true for our own times, in which material interests preponderate, but not for the middle ages, in which Catholicism, nor for Athens and Rome, where politics, reigned supreme. In the first place it strikes one as an odd thing for any one to suppose that these well-worn phrases about the middle ages and the ancient world are unknown to anyone else. This much, however, is clear, that the middle ages could not live on Catholicism, nor the ancient world on politics. On the contrary, it is the mode in which they gained a livelihood that explains why here politics, and there Catholicism, played the chief part. For the rest, it requires but a slight acquaintance with the history of the Roman republic, for example, to be aware that its secret history is the history of its landed property. On the other hand, Don Quixote long ago paid the penalty for wrongly imagining that knight errantry was compatible with all economic forms of society.
+    hash: sha256:f58df21e141f451fef10e2bda4c5f67dcda436b6b62cc6a766bdeb1fbacaaf0d
+    state: active
+  - id: p00215
+    type: footnote
+    label: "35"
+    text: “Observations on certain verbal disputes in Pol. Econ., particularly relating to value and to demand and supply” Lond., 1821, p. 16.
+    hash: sha256:23d381e8d7069e8ddbe5aa41a718fee465429b0f5c19e77ad548b005ff5dee40
+    state: active
+  - id: p00216
+    type: footnote
+    label: "36"
+    text: S. Bailey, l.c., p. 165.
+    hash: sha256:e8fe0ce2b6c8f7807ac5eceef2e98d5e0f410c47f208694c9352c3a5d128bfb6
+    state: active
+  - id: p00217
+    type: footnote
+    label: "37"
+    text: The author of “Observations” and S. Bailey accuse Ricardo of converting exchange value from something relative into something absolute. The opposite is the fact. He has explained the apparent relation between objects, such as diamonds and pearls, in which relation they appear as exchange values, and disclosed the true relation hidden behind the appearances, namely, their relation to each other as mere expressions of human labour. If the followers of Ricardo answer Bailey somewhat rudely, and by no means convincingly, the reason is to be sought in this, that they were unable to find in Ricardo’s own works any key to the hidden relations existing between value and its form, exchange value.
+    hash: sha256:141d5d020aad4363456ac2676705685efc1c074f51b53feb928ea4d83571786f
+    state: active
+  - id: p00218
+    type: footnote
+    label: Note
+    text: This oft-quoted aphorism was included in the first English translation prepared by Engels and published in 1887. Readers should note that this observation is consistent with Marx's explanation above. There are numerous divergences between this English edition and the first German edition. [MIA]<br/><br/>Transcribed by Bert Schultz (1993)<br/>Html Markup by Brian Baggins &amp; Andy Blunden (1999)<br/>Proofed and Corrected by Andy Blunden (2005)
+    hash: sha256:8fdafa027c77ed00256e5ca2f5d7b153d911879bf6f65b0c157768aebdda9be2
+    state: active

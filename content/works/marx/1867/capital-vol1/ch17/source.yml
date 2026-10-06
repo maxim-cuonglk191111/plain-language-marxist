@@ -1,0 +1,304 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch17
+title: "Economic Manuscripts: Capital Vol. I - Chapter Seventeen"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch17.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260910085742id_/https://www.marxists.org/archive/marx/works/1867-c1/ch17.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch17/2026-10-06.html
+  snapshot_hash: sha256:b819958edcf48dacb1c7f9e83e4608e1ef739b979f8894f5a62cd62e9700d120
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: "Chapter Seventeen: Changes of Magnitude in the Price of Labour-Power and in Surplus-Value"
+    hash: sha256:484998e98d009b3727f2063f066cdf40d0d5d141b25b6d944fd1d77691be6712
+    state: active
+  - id: p00002
+    type: paragraph
+    text: The value of labour-power is determined by the value of the necessaries of life habitually required by the average labourer. The quantity of these necessaries is known at any given epoch of a given society, and can therefore be treated as a constant magnitude. What changes, is the value of this quantity. There are, besides, two other factors that enter into the determination of the value of labour-power. One, the expenses of developing that power, which expenses vary with the mode of production; the other, its natural diversity, the difference between the labour-power of men and women, of children and adults. The employment of these different sorts of labour-power, an employment which is, in its turn, made necessary by the mode of production, makes a great difference in the cost of maintaining the family of the labourer, and in the value of the labour-power of the adult male. Both these factors, however, are excluded in the following investigation. <fn ref="1"/>
+    hash: sha256:ac4ac287fb00e25f4e4af7a1db8d32005b94069c427c6277ae22b9d93b41a11e
+    state: active
+  - id: p00003
+    type: paragraph
+    text: I assume (1) that commodities are sold at their value; (2) that the price of labour-power rises occasionally above its value, but never sinks below it.
+    hash: sha256:774d847a01955883c6fabd09f7c5b682ffa005ca6e6677ac853f934eaaa1bca3
+    state: active
+  - id: p00004
+    type: paragraph
+    text: On this assumption we have seen that the relative magnitudes of surplus-value and of price of labour-power are determined by three circumstances; (1) the length of the working-day, or the extensive magnitude of labour; (2) the normal intensity of labour, its intensive magnitude, whereby a given quantity of labour is expended in a given time; (3) the productiveness of labour, whereby the same quantum of labour yields, in a given time, a greater or less quantum of product, dependent on the degree of development in the conditions of production. Very different combinations are clearly possible, according as one of the three factors is constant and two variable, or two constant and one variable, or lastly, all three simultaneously variable. And the number of these combinations is augmented by the fact that, when these factors simultaneously vary, the amount and direction of their respective variations may differ. In what follows the chief combinations alone are considered.
+    hash: sha256:cddfb26b66b58e36bc3b142b7f8903f24ff2cc0cb16f26a7df950ac981be4063
+    state: active
+  - id: p00005
+    type: heading
+    level: 3
+    text: SECTION 1
+    hash: sha256:248559cdf6f2da4e583e48ba890b62e295a9c644ad5131b11784a97ab044475c
+    state: active
+  - id: p00006
+    type: heading
+    level: 4
+    text: LENGTH OF THE WORKING-DAY AND INTENSITY OF LABOUR CONSTANT. PRODUCTIVENESS OF LABOUR VARIABLE.
+    hash: sha256:21995e7351cf5d872cef52288bf2d15e7ec6d90ad150fd58ddb617f363e7c1f9
+    state: active
+  - id: p00007
+    type: paragraph
+    text: On these assumptions the value of labour-power, and the magnitude of surplus-value, are determined by three laws.
+    hash: sha256:bc35f394209787c247c2259d6137da77e6e419e6f85dbeebc93a642807b3e0e4
+    state: active
+  - id: p00008
+    type: paragraph
+    text: <i>(1.)</i> A working day of given length always creates the same amount of value, no matter how the productiveness of labour, and, with it, the mass of the product, and the price of each single commodity produced, may vary.
+    hash: sha256:5bf85596f9f742ed3799acf191b23c4aef771e3eb5c1ab2d12d6bbdf0d7fd961
+    state: active
+  - id: p00009
+    type: paragraph
+    text: If the value created by a working-day of 12 hours be, say, six shillings, then, although the mass of the articles produced varies with the productiveness of labour, the only result is that the value represented by six shillings is spread over a greater or less number of articles.
+    hash: sha256:7a9c83d08fc6016a938866d0931be5a689aba69447252b1a06de92e193b5640f
+    state: active
+  - id: p00010
+    type: paragraph
+    text: <i>(2.)</i> Surplus-value and the value of labour-power vary in opposite directions. A variation in the productiveness of labour, its increase or diminution, causes a variation in the opposite direction in the value of labour-power, and in the same direction in surplus-value.
+    hash: sha256:5e552749569f4fa145fc3e8bfa7306c42a9ef423036e37e1cea436025ef879a2
+    state: active
+  - id: p00011
+    type: paragraph
+    text: The value created by a working day of 12 hours is a constant quantity, say, six shillings. This constant quantity is the sum of the surplus-value plus the value of the labour-power, which latter value the labourer replaces by an equivalent. It is self-evident, that if a constant quantity consists of two parts, neither of them can increase without the other diminishing. Let the two parts at starting be equal; 3 shillings value of labour-power, 3 shillings surplus-value. Then the value of the labour-power cannot rise from three shillings to four, without the surplus-value falling from three shillings to two; and the surplus-value cannot rise from three shillings to four, without the value of labour-power falling from three shillings to two. Under these circumstances, therefore, no change can take place in the absolute magnitude, either of the surplus-value, or of the value of labour-power, without a simultaneous change in their relative magnitudes, <i>i.e.</i>, relatively to each other. It is impossible for them to rise or fall simultaneously.
+    hash: sha256:8e9c4d4b60220c5ef0e38d703a70d0997cc5073ba381a4f1dc9c6d4727e44f31
+    state: active
+  - id: p00012
+    type: paragraph
+    text: Further, the value of labour-power cannot fall, and consequently surplus-value cannot rise, without a rise in the productiveness of labour. For instance, in the above case, the value of the labour-power cannot sink from three shillings to two, unless an increase in the productiveness of labour makes it possible to produce in 4 hours the same quantity of necessaries as previously required 6 hours to produce. On the other hand, the value of the labour-power cannot rise from three shillings to four, without a decrease in the productiveness of labour, whereby eight hours become requisite to produce the same quantity of necessaries, for the production of which six hours previously sufficed. It follows from this, that an increase in the productiveness of labour causes a fall in the value of labour-power and a consequent rise in surplus-value, while, on the other hand, a decrease in such productiveness causes a rise in the value of labour-power, and a fall in surplus-value.
+    hash: sha256:72b9c9ddd1791c984a1775b5da0f1e294765fd48268cc0674d6a9fe8359871e9
+    state: active
+  - id: p00013
+    type: paragraph
+    text: In formulating this law, Ricardo overlooked one circumstance; although a change in the magnitude of the surplus-value or surplus-labour causes a change in the opposite direction in the magnitude of the value of labour-power, or in the quantity of necessary labour, it by no means follows that they vary in the same proportion. They do increase or diminish by the same quantity. But their proportional increase or diminution depends on their original magnitudes before the change in the productiveness of labour took place. If the value of the labour-power be 4 shillings, or the necessary labour time 8 hours, and the surplus-value be 2 shillings, or the surplus-labour 4 hours, and if, in consequence of an increase in the productiveness of labour, the value of the labour-power fall to 3 shillings, or the necessary labour to 6 hours, the surplus-value will rise to 3 shillings, or the surplus-labour to 6 hours. The same quantity, 1 shilling or 2 hours, is added in one case and subtracted in the other. But the proportional change of magnitude is different in each case. While the value of the labour-power falls from 4 shillings to 3, <i>i.e.</i>, by 1/4 or 25%, the surplus-value rises from 2 shillings to 3, <i>i.e.</i>, by 1/2 or 50%. It therefore follows that the proportional increase or diminution in surplus-value, consequent on a given change in the productiveness of labour, depends on the original magnitude of that portion of the working day which embodies itself in surplus-value; the smaller that portion, the greater is the proportional change; the greater that portion, the less is the proportional change.
+    hash: sha256:555bcd1b50ffe90a6ca11f57526986bfaf1ad475c5dae4cd253d34a9279ff18b
+    state: active
+  - id: p00014
+    type: paragraph
+    text: <i>(3.)</i> Increase or diminution in surplus-value is always consequent on, and never the cause of, the corresponding diminution or increase in the value of labour-power. <fn ref="2"/>
+    hash: sha256:3722410971b2ba65e4d4f097d3926f02e745187ad0a29ea33620516d334b28e3
+    state: active
+  - id: p00015
+    type: paragraph
+    text: Since the working-day is constant in magnitude, and is represented by a value of constant magnitude, since, to every variation in the magnitude of surplus-value, there corresponds an inverse variation in the value of labour-power, and since the value of labour-power cannot change, except in consequence of a change in the productiveness of labour, it clearly follows, under these conditions, that every change of magnitude in surplus-value arises from an inverse change of magnitude in the value of labour-power. If, then, as we have already seen, there can be no change of absolute magnitude in the value of labour-power, and in surplus-value, unaccompanied by a change in their relative magnitudes, so now it follows that no change in their relative magnitudes is possible, without a previous change in the absolute magnitude of the value of labour-power.
+    hash: sha256:43160018f0c24158b8e6c29b12159f854b43b949fc0a7d851efaa9ac0329631f
+    state: active
+  - id: p00016
+    type: paragraph
+    text: "According to the third law, a change in the magnitude of surplus-value, presupposes a movement in the value of labour-power, which movement is brought about by a variation in the productiveness of labour. The limit of this change is given by the altered value of labour-power. Nevertheless, even when circumstances allow the law to operate, subsidiary movements may occur. For example: if in consequence of the increased productiveness of labour, the value of labour-power falls from 4 shillings to 3, or the necessary labour time from 8 hours to 6, the price of labour-power may possibly not fall below 3s. 8d., 3s. 6d., or 3s. 2d., and the surplus-value consequently not rise above 3s. 4d., 3s. 6d., or 3s. 10d. The amount of this fall, the lowest limit of which is 3 shillings (the new value of labour-power), depends on the relative weight, which the pressure of capital on the one side, and the resistance of the labourer on the other, throws into the scale."
+    hash: sha256:596379f23dcdbbc238940c7278ad5c14bd9bfa5647244d410cb363720e001bcc
+    state: active
+  - id: p00017
+    type: paragraph
+    text: The value of labour-power is determined by the value of a given quantity of necessaries. It is the value and not the mass of these necessaries that varies with the productiveness of labour. It is, however, possible that, owing to an increase of productiveness, both the labourer and the capitalist may simultaneously be able to appropriate a greater quantity of these necessaries, without any change in the price of labour-power or in surplus-value. If the value of labour-power be 3 shillings, and the necessary labour time amount to 6 hours, if the surplus-value likewise be 3 shillings, and the surplus-labour 6 hours, then if the productiveness of labour were doubled without altering the ratio of necessary labour to surplus-labour, there would be no change of magnitude in surplus-value and price of labour-power. The only result would be that each of them would represent twice as many use-values as before; these use-values being twice as cheap as before. Although labour-power would be unchanged in price, it would be above its value. If, however, the price of labour-power had fallen, not to 1s. 6d., the lowest possible point consistent with its new value, but to 2s. 10d. or 2s. 6d., still this lower price would represent an increased mass of necessaries. In this way it is possible with an increasing productiveness of labour, for the price of labour-power to keep on falling, and yet this fall to be accompanied by a constant growth in the mass of the labourer's means of subsistence. But even in such case, the fall in the value of labour-power would cause a corresponding rise of surplus-value, and thus the abyss between the labourer's position and that of the capitalist would keep widening. <fn ref="3"/>
+    hash: sha256:72c0707dcdae6f6fa306d12cd5a79982686232d38087e59aa9cc25d4fba1f8c5
+    state: active
+  - id: p00018
+    type: paragraph
+    text: "Ricardo was the first who accurately formulated the three laws we have above stated. But he falls into the following errors: (1) he looks upon the special conditions under which these laws hold good as the general and sole conditions of capitalist production. He knows no change, either in the length of the working-day, or in the intensity of labour; consequently with him there can be only one variable factor, viz., the productiveness of labour; (2), and this error vitiates his analysis much more than (1), he has not, any more than have the other economists, investigated surplus-value as such, <i>i.e.</i>, independently of its particular forms, such as profit, rent, &amp;c. He therefore confounds together the laws of the rate of surplus-value and the laws of the rate of profit. The rate of profit is, as we have already said, the ratio of the surplus-value to the total capital advanced; the rate of surplus-value is the ratio of the surplus-value to the variable part of that capital. Assume that a capital C of £500 is made up of raw material, instruments of labour, &amp;c. (c) to the amount of £400; and of wages (v) to the amount of £100; and further, that the surplus-value (s) = £100. Then we have rate of surplus-value s/v = £100/£100 = 100%. But the rate of profit s/c = £100/£500 = 20%. It is, besides, obvious that the rate of profit may depend on circumstances that in no way affect the rate of surplus-value. I shall show in Book III. that, with a given rate of surplus-value, we may have any number of rates of profit, and that various rates of surplus-value may, under given conditions, express themselves in a single rate of profit."
+    hash: sha256:5e53922a0cc1bc38d7ab10530f7616269e85e796bf791b6b66c720815e63c7cb
+    state: active
+  - id: p00019
+    type: heading
+    level: 3
+    text: SECTION 2
+    hash: sha256:1bbe219f72ec4714da6f9e8e0cd81fcd41ddad5e4a6d144fd7e3ac6016a85e99
+    state: active
+  - id: p00020
+    type: heading
+    level: 4
+    text: WORKING-DAY CONSTANT. PRODUCTIVENESS OF LABOUR CONSTANT. INTENSITY OF LABOUR VARIABLE
+    hash: sha256:204ed6b59136c137acbb12b314892f72801795f7a82a2e874368499df371f695
+    state: active
+  - id: p00021
+    type: paragraph
+    text: "Increased intensity of labour means increased expenditure of labour in a given time. Hence a working-day of more intense labour is embodied in more products than is one of less intense labour, the length of each day being the same. Increased productiveness of labour also, it is true, will supply more products in a given working-day. But in this latter case, the value of each single product falls, for it costs less labour than before; in the former case, that value remains unchanged, for each article costs the same labour as before. Here we have an increase in the number of products, unaccompanied by a fall in their individual prices: as their number increases, so does the sum of their prices. But in the case of increased productiveness, a given value is spread over a greater mass of products. Hence the length of the working-day being constant, a day's labour of increased intensity will be incorporated in an increased value, and, the value of money remaining unchanged, in more money. The value created varies with the extent to which the intensity of labour deviates from its normal intensity in the society. A given working-day, therefore, no longer creates a constant, but a variable value; in a day of 12 hours of ordinary intensity, the value created is, say 6 shillings, but with increased intensity, the value created may be 7, 8, or more shillings. It is clear that, if the value created by a day's labour increases from, say, 6 to 8 shillings then the two parts into which this value is divided, viz., price of labour-power and surplus-value, may both of them increase simultaneously, and either equally or unequally. They may both simultaneously increase from 3 shillings to 4. Here, the rise in the price of labour-power does not necessarily imply that the price has risen above the value of labour-power. On the contrary, the rise in price may be accompanied by a fall in value. This occurs whenever the rise in the price of labour-power does not compensate for its increased wear and tear."
+    hash: sha256:7f6f19125f5781b63cf0da31ce725f95d5664b55dce4f1270332ed0024c4a1f9
+    state: active
+  - id: p00022
+    type: paragraph
+    text: We know that, with transitory exceptions, a change in the productiveness of labour does not cause any change in the value of labour-power, nor consequently in the magnitude of surplus-value, unless the products of the industries affected are articles habitually consumed by the labourers. In the present case this condition no longer applies. For when the variation is either in the duration or in the intensity of labour, there is always a corresponding change in the magnitude of the value created, independently of the nature of the article in which that value is embodied.
+    hash: sha256:4757788dedf993546b35ae8a29ba662c67533329669ed40beda4d49749908758
+    state: active
+  - id: p00023
+    type: paragraph
+    text: If the intensity of labour were to increase simultaneously and equally in every branch of industry, then the new and higher degree of intensity would become the normal degree for the society, and would therefore cease to be taken account of. But still, even then, the intensity of labour would be different in different countries, and would modify the international application of the law of value. The more intense working-day of one nation would be represented by a greater sum of money than would the less intense day of another nation. <fn ref="4"/>
+    hash: sha256:2a4bf10971118cd6a2ab669d12fae0e411acaf2b04cc88234934aef911fed165
+    state: active
+  - id: p00024
+    type: heading
+    level: 3
+    text: SECTION 3
+    hash: sha256:c42035a9664ccca6f411ebb9e851680dd88d8ef10143685301255c123957a3d8
+    state: active
+  - id: p00025
+    type: heading
+    level: 4
+    text: PRODUCTIVENESS AND INTENSITY OF LABOUR CONSTANT. LENGTH OF THE WORKING-DAY VARIABLE
+    hash: sha256:fd25e564ed876e92b87b406598328310ccda5e59fa47d22dab8d25a17902a851
+    state: active
+  - id: p00026
+    type: paragraph
+    text: "The working-day may vary in two ways. It may be made either longer or shorter. From our present data, and within the limits of the assumptions made on p. 487 [v. 35 MECW p. 520] we obtain the following laws:"
+    hash: sha256:aa13144720ec366d1a2fb9feb67e659c71401cfe39de62b7d35b907f4a74688d
+    state: active
+  - id: p00027
+    type: paragraph
+    text: <i>(1.)</i> The working-day creates a greater or less amount of value in proportion to its length — thus, a variable and not a constant quantity of value.
+    hash: sha256:aaa1151c14cf4b0d1143004055c8537d26e96bc952eaf349caa3906b4810e108
+    state: active
+  - id: p00028
+    type: paragraph
+    text: <i>(2.)</i> Every change in the relation between the magnitudes of surplus-value and of the value of labour-power arises from a change in the absolute magnitude of the surplus-labour, and consequently of the surplus-value.
+    hash: sha256:1d87483e2626d5cbb80b8e342f4d88445c0ffc078c4e33af3e3a4787219de7c4
+    state: active
+  - id: p00029
+    type: paragraph
+    text: <i>(3.)</i> The absolute value of labour-power can change only in consequence of the reaction exercised by the prolongation of surplus-labour upon the wear and tear of labour-power. Every change in this absolute value is therefore the effect, but never the cause, of a change in the magnitude of surplus-value.
+    hash: sha256:1f166398a9b66bb156bd8468c72284e5f4f8a03fb3f8f467525e8da5a3afcf86
+    state: active
+  - id: p00030
+    type: paragraph
+    text: We begin with the case in which the working-day is shortened.
+    hash: sha256:b4c5f35e66b74913ab7885f534b6454a0c3fa53a02092d1b4457947c1181b519
+    state: active
+  - id: p00031
+    type: paragraph
+    text: <i>(1.)</i> A shortening of the working-day under the conditions given above, leaves the value of labour-power, and with it, the necessary labour time, unaltered. It reduces the surplus-labour and surplus-value. Along with the absolute magnitude of the latter, its relative magnitude also falls, <i>i.e.,</i> its magnitude relatively to the value of labour-power whose magnitude remains unaltered. Only by lowering the price of labour-power below its value could the capitalist save himself harmless.
+    hash: sha256:64f35a6a864150048690fb63cd31503a8c6495bfe342ec50d7db7025e84917bd
+    state: active
+  - id: p00032
+    type: paragraph
+    text: 'All the usual arguments against the shortening of the working-day, assume that it takes place under the conditions we have here supposed to exist; but in reality the very contrary is the case: a change in the productiveness and intensity of labour either precedes, or immediately follows, a shortening of the working-day. <fn ref="5"/>'
+    hash: sha256:b2791c920bb90034b935afa1f3634b7a3d82a3be7a55cf0f94700f22fe139525
+    state: active
+  - id: p00033
+    type: paragraph
+    text: <i>(2.)</i> Lengthening of the working-day. Let the necessary labour time be 6 hours, or the value of labour-power 3 shillings; also let the surplus-labour be 6 hours or the surplus-value 3 shillings. The whole working-day then amounts to 12 hours and is embodied in a value of 6 shillings. If, now, the working-day be lengthened by 2 hours and the price of labour-power remain unaltered, the surplus-value increases both absolutely and relatively. Although there is no absolute change in the value of labour-power, it suffers a relative fall. Under the conditions assumed in 1. there could not be a change of relative magnitude in the value of labour-power without a change in its absolute magnitude. Here, on the contrary, the change of relative magnitude in the value of labour-power is the result of the change of absolute magnitude in surplus-value.
+    hash: sha256:109d1fad12b26a477ab8dfc47391683241eceddc21d1d60e2917b5b60a0c882f
+    state: active
+  - id: p00034
+    type: paragraph
+    text: Since the value in which a day's labour is embodied, increases with the length of that day, it is evident that the surplus-value and the price of labour-power may simultaneously increase, either by equal or unequal quantities. This simultaneous increase is therefore possible in two cases, one, the actual lengthening of the working-day, the other, an increase in the intensity of labour unaccompanied by such lengthening.
+    hash: sha256:2d3d99cad2037112c6335363fdd84104f4939dd7885edc213f54578fcc478edd
+    state: active
+  - id: p00035
+    type: paragraph
+    text: When the working-day is prolonged, the price of labour-power may fall below its value, although that price be nominally unchanged or even rise. The value of a day's labour-power is, as will be remembered, estimated from its normal average duration, or from the normal duration of life among the labourers, and from corresponding normal transformations of organised bodily matter into motion, <fn ref="6"/> in conformity with the nature of man. Up to a certain point, the increased wear and tear of labour-power, inseparable from a lengthened working-day, may be compensated by higher wages. But beyond this point the wear and tear increases in geometrical progression, and every condition suitable for the normal reproduction and functioning of labour-power is suppressed. The price of labour-power and the degree of its exploitation cease to be commensurable quantities.
+    hash: sha256:aa6ba00e26145434a85aeb4a5b84176cdfe72a1bcca51c482cd00fe166c90aa1
+    state: active
+  - id: p00036
+    type: heading
+    level: 3
+    text: SECTION 4
+    hash: sha256:4b14fc79f377969ea3aef0e55157d0e457a5fddbee17c57ea37f1e6c864ce4ed
+    state: active
+  - id: p00037
+    type: heading
+    level: 4
+    text: SIMULTANEOUS VARIATIONS IN THE DURATION, PRODUCTIVENESS, AND INTENSITY OF LABOUR
+    hash: sha256:f75d84b9d2023202300fa3ee468a17a0bb642e246af579a15cb4835f78f039dd
+    state: active
+  - id: p00038
+    type: paragraph
+    text: It is obvious that a large number of combinations are here possible. Any two of the factors may vary and the third remain constant, or all three may vary at once. They may vary either in the same or in different degrees, in the same or in opposite directions, with the result that the variations counteract one another, either wholly or in part. Nevertheless the analysis of every possible case is easy in view of the results given in I., II., and III. The effect of every possible combination may be found by treating each factor in turn as variable, and the other two constant for the time being. We shall, therefore, notice, and that briefly, but two important cases.
+    hash: sha256:c7e3c2d3f0704a76184373b453b3cbb3c5f14905bb8726d4650bb0a3c4e18c10
+    state: active
+  - id: p00039
+    type: heading
+    level: 5
+    text: A. Diminishing productiveness of labour with a simultaneous lengthening of the working-day.
+    hash: sha256:98f17263b007fb30502024868fa5f64b1f7cf7960b4f0a8f1ac0dcd27924faf6
+    state: active
+  - id: p00040
+    type: paragraph
+    text: In speaking of diminishing productiveness of labour, we here refer to diminution in those industries whose products determine the value of labour-power; such a diminution, for example, as results from decreasing fertility of the soil, and from the corresponding dearness of its products. Take the working-day at 12 hours and the value created by it at 6 shillings, of which one half replaces the value of the labour-power, the other forms the surplus-value. Suppose, in consequence of the increased dearness of the products of the soil, that the value of labour-power rises from 3 shillings to 4, and therefore the necessary labour time from 6 hours to 8. If there be no change in the length of the working-day, the surplus-labour would fall from 6 hours to 4, the surplus-value from 3 shillings to 2. If the day be lengthened by 2 hours, <i>i.e.</i>, from 12 hours to 14, the surplus-labour remains at 6 hours, the surplus-value at 3 shillings <fn ref="note"/>, but the surplus-value decreases compared with the value of labour-power, as measured by the necessary labour time. If the day be lengthened by 4 hours, viz., from 12 hours to 16, the proportional magnitudes of surplus-value and value of labour-power, of surplus-labour and necessary labour, continue unchanged, but the absolute magnitude of surplus-value rises from 3 shillings to 4, that of the surplus-labour from 6 hours to 8, an increment of 33 1/3%. Therefore, with diminishing productiveness of labour and a simultaneous lengthening of the working-day, the absolute magnitude of surplus-value may continue unaltered, at the same time that its relative magnitude diminishes; its relative magnitude may continue unchanged, at the same time that its absolute magnitude increases; and, provided the lengthening of the day be sufficient, both may increase.
+    hash: sha256:72f3317bbf0069ab764507ea335c6467176239e4821b1350ab4420be9ae72387
+    state: active
+  - id: p00041
+    type: paragraph
+    text: In the period between 1799 and 1815 the increasing price of provisions led in England to a nominal rise in wages, although the real wages, expressed in the necessaries of life, fell. From this fact West and Ricardo drew the conclusion, that the diminution in the productiveness of agricultural labour had brought about a fall in the rate of surplus-value, and they made this assumption of a fact that existed only in their imaginations, the starting-point of important investigations into the relative magnitudes of wages, profits, and rent. But, as a matter of fact, surplus-value had at that time, thanks to the increased intensity of labour, and to the prolongation of the working-day, increased both in absolute and relative magnitude. This was the period in which the right to prolong the hours of labour to an outrageous extent was established; <fn ref="7"/> the period that was especially characterised by an accelerated accumulation of capital here, by pauperism there. <fn ref="8"/>
+    hash: sha256:be3d935288c6d9bdfbf40d705afd148eb3a813cc2bb99e2e9522dde4a2d4a124
+    state: active
+  - id: p00042
+    type: heading
+    level: 5
+    text: B. Increasing intensity and productiveness of labour with simultaneous shortening of the working-day.
+    hash: sha256:6755e0ab63f233a4d395abc60a2266049b6dbef2681c6730b8a3ecde7759ed1e
+    state: active
+  - id: p00043
+    type: paragraph
+    text: Increased productiveness and greater intensity of labour, both have a like effect. They both augment the mass of articles produced in a given time. Both, therefore, shorten that portion of the working-day which the labourer needs to produce his means of subsistence or their equivalent. The minimum length of the working-day is fixed by this necessary but contractile portion of it. If the whole working-day were to shrink to the length of this portion, surplus-labour would vanish, a consummation utterly impossible under the régime of capital. Only by suppressing the capitalist form of production could the length of the working-day be reduced to the necessary labour time. But, even in that case, the latter would extend its limits. On the one hand, because the notion of “means of subsistence” would considerably expand, and the labourer would lay claim to an altogether different standard of life. On the other hand, because a part of what is now surplus-labour, would then count as necessary labour; I mean the labour of forming a fund for reserve and accumulation.
+    hash: sha256:41ab7e7cef5b137187c7ca5385c9a1037d179b0087516a4af3768c7df485d155
+    state: active
+  - id: p00044
+    type: paragraph
+    text: The more the productiveness of labour increases, the more can the working-day be shortened; and the more the working-day is shortened, the more can the intensity of labour increase. From a social point of view, the productiveness increases in the same ratio as the economy of labour, which, in its turn, includes not only economy of the means of production, but also the avoidance of all useless labour. The capitalist mode of production, while on the one hand, enforcing economy in each individual business, on the other hand, begets, by its anarchical system of competition, the most outrageous squandering of labour-power and of the social means of production, not to mention the creation of a vast number of employments, at present indispensable, but in themselves superfluous.
+    hash: sha256:ff4745db54c9312cc81c543df150504340fbc9616a5d221d553ef3a98532f38d
+    state: active
+  - id: p00045
+    type: paragraph
+    text: The intensity and productiveness of labour being given, the time which society is bound to devote to material production is shorter, and as a consequence, the time at its disposal for the free development, intellectual and social, of the individual is greater, in proportion as the work is more and more evenly divided among all the able-bodied members of society, and as a particular class is more and more deprived of the power to shift the natural burden of labour from its own shoulders to those of another layer of society. In this direction, the shortening of the working-day finds at last a limit in the generalisation of labour. In capitalist society spare time is acquired for one class by converting the whole life-time of the masses into labour time.
+    hash: sha256:f758bffad8b4cb354127e918316d7b499ec6dff8d231155e49ac29457ed50670
+    state: active
+  - id: p00046
+    type: footnote
+    label: "1"
+    text: <i>Note in the 3rd German edition</i>. — The case considered at pages 321-324 is here of course omitted. — <i>F. E.</i>
+    hash: sha256:2dced203be1d5685adfe8ffa27b8be0bac75aa7435855daaa20344524e098084
+    state: active
+  - id: p00047
+    type: footnote
+    label: "2"
+    text: To this third law MacCulloch has made, amongst others, this absurd addition, that a rise in surplus-value, unaccompanied by a fall in the value of labour-power, can occur through the abolition of taxes payable by the capitalist. The abolition of such taxes makes no change whatever in the quantity of surplus-value that the capitalist extorts at first-hand from the labourer. It alters only the proportion in which that surplus-value is divided between himself and third persons. It consequently makes no alteration whatever in the relation between surplus-value and value of labour-power. MacCulloch's exception therefore proves only his misapprehension of the rule, a misfortune that as often happens to him in the vulgarisation of Ricardo, as it does to J. B. Say in the vulgarisation of Adam Smith.
+    hash: sha256:aea526d988e20be86eb104e2a1cd4b49e6e12c0adc288347fab2882422f4d9a9
+    state: active
+  - id: p00048
+    type: footnote
+    label: "3"
+    text: “When an alteration takes place in the productiveness of industry, and that either more or less is produced by a given quantity of labour and capital, the proportion of wages may obviously vary, whilst the quantity, which that proportion represents, remains the same, or the quantity may vary, whilst the proportion remains the same.” (“Outlines of Political Economy, &amp;c.,” p. 67.)
+    hash: sha256:65a9c410db3ee7c0f311c43c439676f4c385abde1aa83ee5cae3bbbc772cf555
+    state: active
+  - id: p00049
+    type: footnote
+    label: "4"
+    text: “All things being equal, the English manufacturer can turn out a considerably larger amount of work in a given time than a foreign manufacturer, so much as to counterbalance the difference of the working-days, between 60 hours a week here, and 72 or 80 elsewhere.” (Rep. of Insp. of Fact. for 31st Oct., 1855, p. 65.) The most infallible means for reducing this qualitative difference between the English and Continental working hour would be a law shortening quantitatively the length of the working-day in Continental factories.
+    hash: sha256:adde54632233e8dafbdc3ba1004c0b6ddaadafb4a0e8f9397b7dc03903f79da8
+    state: active
+  - id: p00050
+    type: footnote
+    label: "5"
+    text: “There are compensating circumstances ... which the working of the Ten Hours' Act has brought to light.” (“Rep. of Insp. of Fact. for 31st Oct. 1848,” p. 7.)
+    hash: sha256:d3927fa5f53d183f8c20a86864c7929f89a1e2f5a07295206970db79d9aabcf4
+    state: active
+  - id: p00051
+    type: footnote
+    label: "6"
+    text: "“The amount of labour which a man had undergone in the course of 24 hours might be approximately arrived at by an examination of the chemical changes which had taken place in his body, changed forms in matter indicating the anterior exercise of dynamic force.” (Grove: “On the Correlation of Physical Forces.”)"
+    hash: sha256:3eafcf9178baf71a6a7892d00a3ed22a118830c8d6f32c1d354c3999e6c7eb4f
+    state: active
+  - id: p00052
+    type: footnote
+    label: "7"
+    text: "“Corn and labour rarely march quite abreast; but there is an obvious limit, beyond which they cannot be separated. With regard to the unusual exertions made by the labouring classes in periods of dearness, which produce the fall of wages noticed in the evidence” (namely, before the Parliamentary Committee of Inquiry, 1814-15), “they are most meritorious in the individuals, and certainly favour the growth of capital. But no man of humanity could wish to see them constant and unremitted. They are most admirable as a temporary relief; but if they were constantly in action, effects of a similar kind would result from them, as from the population of a country being pushed to the very extreme limits of its food.” (Malthus: “Inquiry into the Nature and Progress of Rent,” Lond., 1815, p. 48, note.) All honour to Malthus that he lays stress on the lengthening of the hours of labour, a fact to which he elsewhere in his pamphlet draws attention, while Ricardo and others, in face of the most notorious facts, make invariability in the length of the working-day the groundwork of all their investigations. But the conservative interests, which Malthus served, prevented him from seeing that an unlimited prolongation of the working-day, combined with an extraordinary development of machinery, and the exploitation of women and children, must inevitably have made a great portion of the working-class “supernumerary,” particularly whenever the war should have ceased, and the monopoly of England in the markets of the world should have come to an end. It was, of course, far more convenient, and much more in conformity with the interests of the ruling classes, whom Malthus adored like a true priest, to explain this “over-population” by the eternal laws of Nature, rather than by the historical laws of capitalist production."
+    hash: sha256:9c4f5d17129fc7f307233e79e9594fbb12457e42e58b3b48e875052c70cee649
+    state: active
+  - id: p00053
+    type: footnote
+    label: "8"
+    text: “A principal cause of the increase of capital, during the war, proceeded from the greater exertions, and perhaps the greater privations of the labouring classes, the most numerous in every society. More women and children were compelled by necessitous circumstances, to enter upon laborious occupations, and former workmen were, from the same cause, obliged to devote a greater portion of their time to increase production.” (Essays on Pol. Econ., in which are illustrated the principal causes of the present national distress. Lond., 1830, p. 248.)<br/><br/>Transcribed by Alan Thurrott<br/>Html Markup by Stephen Baird (1999)
+    hash: sha256:d99e327a9d6acdb047a90982232ec45ae762f9635cb9fefda26297553adbef38
+    state: active
+  - id: p00054
+    type: footnote
+    label: note
+    text: Earlier English translations have “6 sh.” instead of 3 shillings. This error was pointed out to us by a reader, we have investigated and checked with the 1872 German Edition and duly corrected an obvious error. See “A three shilling mystery”.
+    hash: sha256:ff3bffdb60005ac01760793abfbf0a5a8f4e114b46611a5e92a5ff44bf264db4
+    state: active

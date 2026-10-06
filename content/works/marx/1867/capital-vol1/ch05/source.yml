@@ -1,0 +1,285 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch05
+title: "Economic Manuscripts: Capital Vol. I - Chapter Five"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch05.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260907125712id_/https://www.marxists.org/archive/marx/works/1867-c1/ch05.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch05/2026-10-06.html
+  snapshot_hash: sha256:48ed476d60e0a5dae1dbc5b2ec36926816952f2fa48877088dfa55d32de1c12d
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: "Chapter Five: Contradictions in the General Formula of Capital"
+    hash: sha256:474a7de033be85792a50831fdd81da91fe185ff8c3482128f7edbe0cec1fcfc8
+    state: active
+  - id: p00002
+    type: paragraph
+    text: The form which circulation takes when money becomes capital, is opposed to all the laws we have hitherto investigated bearing on the nature of commodities, value and money, and even of circulation itself. What distinguishes this form from that of the simple circulation of commodities, is the inverted order of succession of the two antithetical processes, sale and purchase. How can this purely formal distinction between these processes change their character as it were by magic?
+    hash: sha256:fdcf80e6a2b1abc08b27ea5111918d40db8493a7ff2bd7da07dea8f4d473b229
+    state: active
+  - id: p00003
+    type: paragraph
+    text: But that is not all. This inversion has no existence for two out of the three persons who transact business together. As capitalist, I buy commodities from A and sell them again to B, but as a simple owner of commodities, I sell them to B and then purchase fresh ones from A. A and B see no difference between the two sets of transactions. They are merely buyers or sellers. And I on each occasion meet them as a mere owner of either money or commodities, as a buyer or a seller, and, what is more, in both sets of transactions, I am opposed to A only as a buyer and to B only as a seller, to the one only as money, to the other only as commodities, and to neither of them as capital or a capitalist, or as representative of anything that is more than money or commodities, or that can produce any effect beyond what money and commodities can. For me the purchase from A and the sale to B are part of a series. But the connexion between the two acts exists for me alone. A does not trouble himself about my transaction with B, nor does B about my business with A. And if I offered to explain to them the meritorious nature of my action in inverting the order of succession, they would probably point out to me that I was mistaken as to that order of succession, and that the whole transaction, instead of beginning with a purchase and ending with a sale, began, on the contrary, with a sale and was concluded with a purchase. In truth, my first act, the purchase, was from the standpoint of A, a sale, and my second act, the sale, was from the standpoint of B, a purchase. Not content with that, A and B would declare that the whole series was superfluous and nothing but Hokus Pokus; that for the future A would buy direct from B, and B sell direct to A. Thus the whole transaction would be reduced to a single act forming an isolated, non-complemented phase in the ordinary circulation of commodities, a mere sale from A’s point of view, and from B’s, a mere purchase. The inversion, therefore, of the order of succession, does not take us outside the sphere of the simple circulation of commodities, and we must rather look, whether there is in this simple circulation anything permitting an expansion of the value that enters into circulation, and, consequently, a creation of surplus-value.
+    hash: sha256:01d5bb7cd662eb1f1663fe6eb359fabac6d60627777c40ffacbe0de1fb56c0e6
+    state: active
+  - id: p00004
+    type: paragraph
+    text: Let us take the process of circulation in a form under which it presents itself as a simple and direct exchange of commodities. This is always the case when two owners of commodities buy from each other, and on the settling day the amounts mutually owing are equal and cancel each other. The money in this case is money of account and serves to express the value of the commodities by their prices, but is not, itself, in the shape of hard cash, confronted with them. So far as regards use-values, it is clear that both parties may gain some advantage. Both part with goods that, as use-values, are of no service to them, and receive others that they can make use of. And there may also be a further gain. A, who sells wine and buys corn, possibly produces more wine, with given labour-time, than farmer B could, and B on the other hand, more corn than wine-grower A could. A, therefore, may get, for the same exchange-value, more corn, and B more wine, than each would respectively get without any exchange by producing his own corn and wine. With reference, therefore, to use-value, there is good ground for saying that “exchange is a transaction by which both sides gain.” <fn ref="1"/> It is otherwise with exchange-value. “A man who has plenty of wine and no corn treats with a man who has plenty of corn and no wine; an exchange takes place between them of corn to the value of 50, for wine of the same value.This act produces no increase of exchange-value either for the one or the other; for each of them already possessed, before the exchange, a value equal to that which he acquired by means of that operation.” <fn ref="2"/> The result is not altered by introducing money, as a medium of circulation, between the commodities, and making the sale and the purchase two distinct acts. <fn ref="3"/> The value of a commodity is expressed in its price before it goes into circulation, and is therefore a precedent condition of circulation, not its result. <fn ref="4"/>
+    hash: sha256:a6ad667e68fe277dc6a09f0ae0648844a6b33e5579506156c3214551a8e25575
+    state: active
+  - id: p00005
+    type: paragraph
+    text: Abstractedly considered, that is, apart from circumstances not immediately flowing from the laws of the simple circulation of commodities, there is in an exchange nothing (if we except the replacing of one use-value by another) but a metamorphosis, a mere change in the form of the commodity. The same exchange-value, i.e., the same quantity of incorporated social labour, remains throughout in the hands of the owner of the commodity, first in the shape of his own commodity, then in the form of the money for which he exchanged it, and lastly, in the shape of the commodity he buys with that money. This change of form does not imply a change in the magnitude of the value. But the change, which the value of the commodity undergoes in this process, is limited to a change in its money-form. This form exists first as the price of the commodity offered for sale, then as an actual sum of money, which, however, was already expressed in the price, and lastly, as the price of an equivalent commodity. This change of form no more implies, taken alone, a change in the quantity of value, than does the change of a £5 note into sovereigns, half sovereigns and shillings. So far therefore as the circulation of commodities effects a change in the form alone of their values, and is free from disturbing influences, it must be the exchange of equivalents. Little as Vulgar-Economy knows about the nature of value, yet whenever it wishes to consider the phenomena of circulation in their purity, it assumes that supply and demand are equal, which amounts to this, that their effect is nil. If therefore, as regards the use-values exchanged, both buyer and seller may possibly gain something, this is not the case as regards the exchange-values. Here we must rather say, “Where equality exists there can be no gain.” <fn ref="5"/> It is true, commodities may be sold at prices deviating from their values, but these deviations are to be considered as infractions of the laws of the exchange of commodities <fn ref="6"/>, which in its normal state is an exchange of equivalents, consequently, no method for increasing value. <fn ref="7"/>
+    hash: sha256:23f7b341ecb241e70b8fd79a5abdcea461511ef9bb4b4f1d0579c92be6be6e62
+    state: active
+  - id: p00006
+    type: paragraph
+    text: 'Hence, we see that behind all attempts to represent the circulation of commodities as a source of surplus-value, there lurks a <i>quid pro quo</i>, a mixing up of use-value and exchange-value. For instance, Condillac says: “It is not true that on an exchange of commodities we give value for value. On the contrary, each of the two contracting parties in every case, gives a less for a greater value. ... If we really exchanged equal values, neither party could make a profit. And yet, they both gain, or ought to gain. Why? The value of a thing consists solely in its relation to our wants. What is more to the one is less to the other, and <i>vice versâ</i>. ... It is not to be assumed that we offer for sale articles required for our own consumption. ... We wish to part with a useless thing, in order to get one that we need; we want to give less for more. ... It was natural to think that, in an exchange, value was given for value, whenever each of the articles exchanged was of equal value with the same quantity of gold. ... But there is another point to be considered in our calculation. The question is, whether we both exchange something superfluous for something necessary.” <fn ref="8"/> We see in this passage, how Condillac not only confuses use-value with exchange-value, but in a really childish manner assumes, that in a society, in which the production of commodities is well developed, each producer produces his own means of subsistence, and throws into circulation only the excess over his own requirements. <fn ref="9"/> Still, Condillac’s argument is frequently used by modern economists, more especially when the point is to show, that the exchange of commodities in its developed form, commerce, is productive of surplus-value. For instance, “Commerce ... adds value to products, for the same products in the hands of consumers, are worth more than in the hands of producers, and it may strictly be considered an act of production.” <fn ref="10"/> But commodities are not paid for twice over, once on account of their use-value, and again on account of their value. And though the use-value of a commodity is more serviceable to the buyer than to the seller, its money-form is more serviceable to the seller. Would he otherwise sell it? We might therefore just as well say that the buyer performs "strictly an act of production,” by converting stockings, for example, into money.'
+    hash: sha256:2aeb0d3bf03a69a6d92587859585e2fc28c9ccae972688f4144e72a4e1cc7446
+    state: active
+  - id: p00007
+    type: paragraph
+    text: If commodities, or commodities and money, of equal exchange-value, and consequently equivalents, are exchanged, it is plain that no one abstracts more value from, than he throws into, circulation. There is no creation of surplus-value. And, in its normal form, the circulation of commodities demands the exchange of equivalents. But in actual practice, the process does not retain its normal form. Let us, therefore, assume an exchange of non-equivalents.
+    hash: sha256:4b92294f03dbcb1c61950f3ae1900579cddb2747534f0d1e29c486d8208ab1a1
+    state: active
+  - id: p00008
+    type: paragraph
+    text: In any case the market for commodities is only frequented by owners of commodities, and the power which these persons exercise over each other, is no other than the power of their commodities. The material variety of these commodities is the material incentive to the act of exchange, and makes buyers and sellers mutually dependent, because none of them possesses the object of his own wants, and each holds in his hand the object of another’s wants. Besides these material differences of their use-values, there is only one other difference between commodities, namely, that between their bodily form and the form into which they are converted by sale, the difference between commodities and money. And consequently the owners of commodities are distinguishable only as sellers, those who own commodities, and buyers, those who own money.
+    hash: sha256:f8d49b31dde151d2d19bc58e7082c10ee486688e15674f586175ceb21a6ae6a5
+    state: active
+  - id: p00009
+    type: paragraph
+    text: Suppose then, that by some inexplicable privilege, the seller is enabled to sell his commodities above their value, what is worth 100 for 110, in which case the price is nominally raised 10%. The seller therefore pockets a surplus-value of 10. But after he has sold he becomes a buyer. A third owner of commodities comes to him now as seller, who in this capacity also enjoys the privilege of selling his commodities 10% too dear. Our friend gained 10 as a seller only to lose it again as a buyer. <fn ref="11"/> The net result is, that all owners of commodities sell their goods to one another at 10% above their value, which comes precisely to the same as if they sold them at their true value. Such a general and nominal rise of prices has the same effect as if the values had been expressed in weight of silver instead of in weight of gold. The nominal prices of commodities would rise, but the real relation between their values would remain unchanged.
+    hash: sha256:dde2c7476fe3976163bdea239c2639dea2689ac201d92b7623b6ffcdf43c6f80
+    state: active
+  - id: p00010
+    type: paragraph
+    text: Let us make the opposite assumption, that the buyer has the privilege of purchasing commodities under their value. In this case it is no longer necessary to bear in mind that he in his turn will become a seller. He was so before he became buyer; he had already lost 10% in selling before he gained 10% as buyer. <fn ref="12"/> Everything is just as it was.
+    hash: sha256:27e1f39d72ccd8d7f2d9f5e0efaee01569172ee4a33c05894ff41df765b5d106
+    state: active
+  - id: p00011
+    type: paragraph
+    text: The creation of surplus-value, and therefore the conversion of money into capital, can consequently be explained neither on the assumption that commodities are sold above their value, nor that they are bought below their value. <fn ref="13"/>
+    hash: sha256:663dd57d2292dae82c7e444ec5eb0e0f376a77a7c30dfa9d7739e8de7aaa003d
+    state: active
+  - id: p00012
+    type: paragraph
+    text: 'The problem is in no way simplified by introducing irrelevant matters after the manner of Col. Torrens: “Effectual demand consists in the power and inclination (!), on the part of consumers, to give for commodities, either by immediate or circuitous barter, some greater portion of ... capital than their production costs.” <fn ref="14"/> In relation to circulation, producers and consumers meet only as buyers and sellers. To assert that the surplus-value acquired by the producer has its origin in the fact that consumers pay for commodities more than their value, is only to say in other words: The owner of commodities possesses, as a seller, the privilege of selling too dear. The seller has himself produced the commodities or represents their producer, but the buyer has to no less extent produced the commodities represented by his money, or represents their producer. The distinction between them is, that one buys and the other sells. The fact that the owner of the commodities, under the designation of producer, sells them over their value, and under the designation of consumer, pays too much for them, does not carry us a single step further. <fn ref="15"/>'
+    hash: sha256:e691ed6598d77567eb9105f71eed182bbcc82fd27d9f3f1d7be6d2bc534289a4
+    state: active
+  - id: p00013
+    type: paragraph
+    text: To be consistent therefore, the upholders of the delusion that surplus-value has its origin in a nominal rise of prices or in the privilege which the seller has of selling too dear, must assume the existence of a class that only buys and does not sell, i.e., only consumes and does not produce. The existence of such a class is inexplicable from the standpoint we have so far reached, viz., that of simple circulation. But let us anticipate. The money with which such a class is constantly making purchases, must constantly flow into their pockets, without any exchange, gratis, by might or right, from the pockets of the commodity-owners themselves. To sell commodities above their value to such a class, is only to crib back again a part of the money previously given to it. <fn ref="16"/> The towns of Asia Minor thus paid a yearly money tribute to ancient Rome. With this money Rome purchased from them commodities, and purchased them too dear. The provincials cheated the Romans, and thus got back from their conquerors, in the course of trade, a portion of the tribute. Yet, for all that, the conquered were the really cheated. Their goods were still paid for with their own money. That is not the way to get rich or to create surplus-value.
+    hash: sha256:75afca9fe12b9d9b5da5d253706200c660aed47b00b266481ac63d24452396db
+    state: active
+  - id: p00014
+    type: paragraph
+    text: Let us therefore keep within the bounds of exchange where sellers are also buyers, and buyers, sellers. Our difficulty may perhaps have arisen from treating the actors as personifications instead of as individuals.
+    hash: sha256:13261e1c9e77dccae1525db6ab08b85a510bc18880823d05dcfb8a35d839eef3
+    state: active
+  - id: p00015
+    type: paragraph
+    text: A may be clever enough to get the advantage of B or C without their being able to retaliate. A sells wine worth £40 to B, and obtains from him in exchange corn to the value of £50. A has converted his £40 into £50, has made more money out of less, and has converted his commodities into capital. Let us examine this a little more closely. Before the exchange we had £40 worth of wine in the hands of A, and £50 worth of corn in those of B, a total value of £90. After the exchange we have still the same total value of £90. The value in circulation has not increased by one iota, it is only distributed differently between A and B. What is a loss of value to B is surplus-value to A; what is “minus” to one is “plus” to the other. The same change would have taken place, if A, without the formality of an exchange, had directly stolen the £10 from B. The sum of the values in circulation can clearly not be augmented by any change in their distribution, any more than the quantity of the precious metals in a country by a Jew selling a Queen Anne’s farthing for a guinea. The capitalist class, as a whole, in any country, cannot over-reach themselves. <fn ref="17"/>
+    hash: sha256:09bc1d0dead4ffbb55dea40abedcc0ed1a3006ebcd7b3f52d773d9e988870c35
+    state: active
+  - id: p00016
+    type: paragraph
+    text: Turn and twist then as we may, the fact remains unaltered. If equivalents are exchanged, no surplus-value results, and if non-equivalents are exchanged, still no surplus-value. <fn ref="18"/> Circulation, or the exchange of commodities, begets no value. <fn ref="19"/>
+    hash: sha256:5057bde7275f3fd2d16f17c95ed5f5a318635445cd0420ddf94d1a015f650905
+    state: active
+  - id: p00017
+    type: paragraph
+    text: The reason is now therefore plain why, in analysing the standard form of capital, the form under which it determines the economic organisation of modern society, we entirely left out of consideration its most popular, and, so to say, antediluvian forms, merchants’ capital and money-lenders’ capital.
+    hash: sha256:25616dc188f8bd70336597a4038aa99d7b26589ac02f6c50908baa9ef39a7210
+    state: active
+  - id: p00018
+    type: paragraph
+    text: The circuit M-C-M, buying in order to sell dearer, is seen most clearly in genuine merchants’ capital. But the movement takes place entirely within the sphere of circulation. Since, however, it is impossible, by circulation alone, to account for the conversion of money into capital, for the formation of surplus-value, it would appear, that merchants’ capital is an impossibility, so long as equivalents are exchanged; <fn ref="20"/> that, therefore, it can only have its origin in the two-fold advantage gained, over both the selling and the buying producers, by the merchant who parasitically shoves himself in between them. It is in this sense that Franklin says, “war is robbery, commerce is generally cheating.” <fn ref="21"/> If the transformation of merchants’ money into capital is to be explained otherwise than by the producers being simply cheated, a long series of intermediate steps would be necessary, which, at present, when the simple circulation of commodities forms our only assumption, are entirely wanting.
+    hash: sha256:3eafa0a7a07797bc489e99cd26b67f28e40671a111d65b01d379293549092c5a
+    state: active
+  - id: p00019
+    type: paragraph
+    text: 'What we have said with reference to merchants’ capital, applies still more to money-lenders’ capital. In merchants’ capital, the two extremes, the money that is thrown upon the market, and the augmented money that is withdrawn from the market, are at least connected by a purchase and a sale, in other words by the movement of the circulation. In money-lenders’ capital the form M-C-M is reduced to the two extremes without a mean, M-M , money exchanged for more money, a form that is incompatible with the nature of money, and therefore remains inexplicable from the standpoint of the circulation of commodities. Hence Aristotle: “since chrematistic is a double science, one part belonging to commerce, the other to economic, the latter being necessary and praiseworthy, the former based on circulation and with justice disapproved (for it is not based on Nature, but on mutual cheating), therefore the usurer is most rightly hated, because money itself is the source of his gain, and is not used for the purposes for which it was invented. For it originated for the exchange of commodities, but interest makes out of money, more money. Hence its name ([greek: tokos] interest and offspring). For the begotten are like those who beget them. But interest is money of money, so that of all modes of making a living, this is the most contrary to Nature.” <fn ref="22"/>'
+    hash: sha256:8ef6e7f6e1495243bdc779bd3eba71ce0b873d6fd88595277f0f80705628df1b
+    state: active
+  - id: p00020
+    type: paragraph
+    text: In the course of our investigation, we shall find that both merchants’ capital and interest-bearing capital are derivative forms, and at the same time it will become clear, why these two forms appear in the course of history before the modern standard form of capital.
+    hash: sha256:412b5e70dcff89cc31917e2454e58ad82273e2a380863d175d727f05768ad3a1
+    state: active
+  - id: p00021
+    type: paragraph
+    text: We have shown that surplus-value cannot be created by circulation, and, therefore, that in its formation, something must take place in the background, which is not apparent in the circulation itself. <fn ref="23"/> But can surplus-value possibly originate anywhere else than in circulation, which is the sum total of all the mutual relations of commodity-owners, as far as they are determined by their commodities? Apart from circulation, the commodity-owner is in relation only with his own commodity. So far as regards value, that relation is limited to this, that the commodity contains a quantity of his own labour, that quantity being measured by a definite social standard. This quantity is expressed by the value of the commodity, and since the value is reckoned in money of account, this quantity is also expressed by the price, which we will suppose to be £10. But his labour is not represented both by the value of the commodity, and by a surplus over that value, not by a price of 10 that is also a price of 11, not by a value that is greater than itself. The commodity owner can, by his labour, create value, but not self-expanding value. He can increase the value of his commodity, by adding fresh labour, and therefore more value to the value in hand, by making, for instance, leather into boots. The same material has now more value, because it contains a greater quantity of labour. The boots have therefore more value than the leather, but the value of the leather remains what it was; it has not expanded itself, has not, during the making of the boots, annexed surplus-value. It is therefore impossible that outside the sphere of circulation, a producer of commodities can, without coming into contact with other commodity-owners, expand value, and consequently convert money or commodities into capital.
+    hash: sha256:713f963df3906a0d730ddcf504926f9d8548e878d6f886e6d2b3eeec9133964d
+    state: active
+  - id: p00022
+    type: paragraph
+    text: It is therefore impossible for capital to be produced by circulation, and it is equally impossible for it to originate apart from circulation. It must have its origin both in circulation and yet not in circulation.
+    hash: sha256:8ce41b878d4f55df1c6b26d950173930762717b46949743672624f90a56d809a
+    state: active
+  - id: p00023
+    type: paragraph
+    text: We have, therefore, got a double result.
+    hash: sha256:f75bd4a33d3f8d885265f89d8afc140ca32ec3992b8fe4068d7939368f283671
+    state: active
+  - id: p00024
+    type: paragraph
+    text: The conversion of money into capital has to be explained on the basis of the laws that regulate the exchange of commodities, in such a way that the starting-point is the exchange of equivalents. <fn ref="24"/> Our friend, Moneybags, who as yet is only an embryo capitalist, must buy his commodities at their value, must sell them at their value, and yet at the end of the process must withdraw more value from circulation than he threw into it at starting. His development into a full-grown capitalist must take place, both within the sphere of circulation and without it. These are the conditions of the problem. <i>Hic Rhodus, hic salta!</i><fn ref="25"/>
+    hash: sha256:2145e67b166a6720457b7f666567b6fa968fd04cc6b7683533d83b80512fa071
+    state: active
+  - id: p00025
+    type: footnote
+    label: "1"
+    text: "“L’échange est une transaction admirable dans laquelle les deux contractants gagnent - toujours (!)” [“Exchange is a transaction in which the two contracting parties always gain, both of them (!)”] (Destutt de Tracy: “Traité de la Volonté et de ses effets.” Paris, 1826, p. 68.) This work appeared afterwards as “Traité d’Econ. Polit.”"
+    hash: sha256:0529240401224085d75fa174e7eceb962a053f8cc4eaaed0484aa2684fa8e0cd
+    state: active
+  - id: p00026
+    type: footnote
+    label: "2"
+    text: “Mercier de la Rivière,” l. c., p. 544.
+    hash: sha256:267200e4a288380148269591441fafd6fb4705378172156186e8b398779c47af
+    state: active
+  - id: p00027
+    type: footnote
+    label: "3"
+    text: “Que l’une de ces deux valeurs soit argent, ou qu’elles soient toutes deux marchandises usuelles, rien de plus indifférent en soi.” [“Whether one of those two values is money, or they are both ordinary commodities, is in itself a matter of complete indifference.”] (“Mercier de la Rivière,” l.c., p. 543.)
+    hash: sha256:2cbe6cbe1377107d065450788901218841d57cc74772a7aefb927495d8ca05a9
+    state: active
+  - id: p00028
+    type: footnote
+    label: "4"
+    text: “Ce ne sont pas les contractants qui prononcent sur la valeur; elle est décidée avant la convention.” [“It is not the parties to a contract who decide on the value; that has been decided before the contract.”] (Le Trosne, p. 906.)
+    hash: sha256:7de5170112198174b1a6efdca7ea005b36a201084d3b902eb8dc263bb09055cf
+    state: active
+  - id: p00029
+    type: footnote
+    label: "5"
+    text: “Dove è egualità non è lucro.” (Galiani, “Della Moneta in Custodi, Parte Moderna,” t. iv., p. 244.)
+    hash: sha256:72b433fa39d711f2fef5182e7d239149f1124509e69fc49979aa6d71bd873775
+    state: active
+  - id: p00030
+    type: footnote
+    label: "6"
+    text: “L’échange devient désavantageux pour l’une des parties, lorsque quelque chose étrangère vient diminuer ou exagérer le prix; alors l’égalité est blessée, mais la lésion procède de cette cause et non de l’échange.” [“The exchange becomes unfavourable for one of the parties when some external circumstance comes to lessen or increase the price; then equality is infringed, but this infringement arises from that cause and not from the exchange itself.”] (Le Trosne, l.c., p. 904.)
+    hash: sha256:a066ad7bcb191ffd430853f76b757c82bbd13905869c0a7295f53e8d72d58116
+    state: active
+  - id: p00031
+    type: footnote
+    label: "7"
+    text: “L’échange est de sa nature un contrat d’égalité qui se fait de valeur pour valeur égale. Il n’est donc pas un moyen de s’enrichir, puisque l’on donne autant que l’on reçoit.” [“Exchange is by its nature a contract which rests on equality, i.e., it takes place between two equal values, and it is not a means of self-enrichment, since as much is given as is received.”] (Le Trosne, l.c., p. 903.)
+    hash: sha256:d1eb9d8dbb4ff69914cec89abf8c4689fffc67a8426990e95b3bbefc425b52e1
+    state: active
+  - id: p00032
+    type: footnote
+    label: "8"
+    text: "Condillac: “Le Commerce et le Gouvernement” (1776). Edit. Daire et Molinari in the “Mélanges d’Econ. Polit.” Paris, 1847, pp. 267, 291."
+    hash: sha256:b1ed9cda47c9b2d890689c4cc4526ce4193943e6a5bf899a88fb28f13dd2817c
+    state: active
+  - id: p00033
+    type: footnote
+    label: "9"
+    text: "Le Trosne, therefore, answers his friend Condillac with justice as follows: “Dans une ... société formée il n’y a pas de surabondant en aucun genre.” [“In a developed society absolutely nothing is superfluous.”] At the same time, in a bantering way, he remarks: “If both the persons who exchange receive more to an equal amount, and part with less to an equal amount, they both get the same.” It is because Condillac has not the remotest idea of the nature of exchange-value that he has been chosen by Herr Professor Wilhelm Roscher as a proper person to answer for the soundness of his own childish notions. See Roscher’s “Die Grundlagen der Nationalökonomie, Dritte Auflage,” 1858."
+    hash: sha256:307d6428a605b11bafbc3b2cb4f6d51374dd46abbe6fa8af01a60b41cf6ed438
+    state: active
+  - id: p00034
+    type: footnote
+    label: "10"
+    text: "S. P. Newman: “Elements of Polit. Econ.” Andover and New York, 1835, p. 175."
+    hash: sha256:72a4ca260b42b8aebf9429688a43962a327e8afe8b100f4d0843cd1a690c70c7
+    state: active
+  - id: p00035
+    type: footnote
+    label: "11"
+    text: “By the augmentation of the nominal value of the produce... sellers not enriched... since what they gain as sellers, they precisely expend in the quality of buyers.” (“The Essential Principles of the Wealth of Nations.” &amp;c., London, 1797, p. 66.)
+    hash: sha256:68dcb5d15377ccacf2a717218d2d7c0b2a2d0e29574eaab704a422eff6cc5d55
+    state: active
+  - id: p00036
+    type: footnote
+    label: "12"
+    text: “Si l’on est forcé de donner pour 18 livres une quantité de telle production qui en valait 24, lorsqu’on employera ce même argent à acheter, on aura également pour 18 l. ce que l’on payait 24.” [“If one is compelled to sell a quantity of a certain product for 18 livres when it has a value of 24 livres, when one employs the same amount of money in buying, one will receive for 18 livres the same quantity of the product as 24 livres would have bought otherwise.”] (Le Trosne, I. c., p. 897.)
+    hash: sha256:bf5e6de5a74ff13c45b9b883ecfae90674eca80b08ee10d2aab1b597916686b0
+    state: active
+  - id: p00037
+    type: footnote
+    label: "13"
+    text: “Chaque vendeur ne peut donc parvenir à renchérir habituellement ses marchandises, qu’en se soumettant aussi à payer habituellement plus cher les marchandises des autres vendeurs; et par la même raison, chaque consommateur ne peut payer habituellement moins cher ce qu’il achète, qu’en se soumettant aussi à une diminution semblable sur le prix des choses qu’il vend.” [“A seller can normally only succeed in raising the prices of his commodities if he agrees to pay, by and large, more for the commodities of the other sellers; and for the same reason a consumer can normally only pay less for his purchases if he submits to a similar reduction in the prices of the things he sells.”] (Mercier de la Rivière, l.c., p. 555.)
+    hash: sha256:4662c00aebdcdbce25da99e9330a6c16daf009e41b66a9dfdb2aa415dc1ca0d5
+    state: active
+  - id: p00038
+    type: footnote
+    label: "14"
+    text: Torrens. “An Essay on the Production of Wealth.” London, 1821, p. 349.
+    hash: sha256:4bf389e231e87968822658f9890ba4e2f58f89d4370deacb49166af1c09f19eb
+    state: active
+  - id: p00039
+    type: footnote
+    label: "15"
+    text: "“The idea of profits being paid by the consumers, is, assuredly, very absurd. Who are the consumers?” (G. Ramsay: “An Essay on the Distribution of Wealth.” Edinburgh, 1836, p. 183.)"
+    hash: sha256:d5a7a552f8c75ea3f819816d90ef044ad20ddcc4a3b5a330ae87f479be5fb229
+    state: active
+  - id: p00040
+    type: footnote
+    label: "16"
+    text: “When a man is in want of a demand, does Mr. Malthus recommend him to pay some other person to take off his goods?” is a question put by an angry disciple of Ricardo to Malthus, who, like his disciple, Parson Chalmers, economically glorifies this class of simple buyers or consumers. (See “An Inquiry into those Principles Respecting the Nature of Demand and the Necessity of Consumption, lately advocated by Mr. Malthus,” &amp;c. Lond., 1821, p. 55.)
+    hash: sha256:fad57d34d92527f792bf4f57d17253e820e197908d3657b799ff03e043b57db2
+    state: active
+  - id: p00041
+    type: footnote
+    label: "17"
+    text: Destutt de Tracy, although, or perhaps because, he was a member of the Institute, held the opposite view. He says, industrial capitalists make profits because “they all sell for more than it has cost to produce. And to whom do they sell? In the first instance to one another.” (I. c., p. 239.)
+    hash: sha256:433e82e5801ac1db8ecfd396993513beceb9ca605752de3be75913cc7b6965c6
+    state: active
+  - id: p00042
+    type: footnote
+    label: "18"
+    text: "“L’échange qui se fait de deux valeurs égales n’augmente ni ne diminue la masse des valeurs subsistantes dans la société. L’échange de deux valeurs inégales ... ne change rien non plus à la somme des valeurs sociales, bien qu’il ajoute à la fortune de l’un ce qu’il ôte de la fortune de l’autre.” [“The exchange of two equal values neither increases nor diminishes the amount of the values available in society. Nor does the exchange of two unequal values ... change anything in the sum of social values, although it adds to the wealth of one person what it removes from the wealth of another.”] (J. B. Say, l.c., t. II, pp. 443, 444.) Say, not in the least troubled as to the consequences of this statement, borrows it, almost word for word, from the Physiocrats. The following example will show how Monsieur Say turned to account the writings of the Physiocrats, in his day quite forgotten, for the purpose of expanding the “value” of his own. His most celebrated saying, “On n’achète des produits qu’avec des produits” [“Products can only be bought with products.”](l.c., t. II. p. 441.) runs as follows in the original physiocratic work: “Les productions ne se paient qu’avec des productions.” [“Products can only be paid for with products.”] (Le Trosne, l.c., p. 899.)"
+    hash: sha256:13c0d3b7aa488504a317724c683a278c2ee5c5ae166cebee3980e7ab573e99fa
+    state: active
+  - id: p00043
+    type: footnote
+    label: "19"
+    text: "“Exchange confers no value at all upon products.” (F. Wayland: “The Elements of Political Economy.” Boston, 1843, p. 169.)"
+    hash: sha256:479039a7379f4b7eaf819f77d5a9231eeeea3161a7470ef9ca78dcb165ab9ad5
+    state: active
+  - id: p00044
+    type: footnote
+    label: "20"
+    text: "Under the rule of invariable equivalents commerce would be impossible. (G. Opdyke: “A Treatise on Polit. Economy.” New York, 1851, pp. 66-69.) “The difference between real value and exchange-value is based upon this fact, namely, that the value of a thing is different from the so-called equivalent given for it in trade, i.e., that this equivalent is no equivalent.” (F. Engels, l.c., p. 96)."
+    hash: sha256:e8c34ef48c0b242b20f9e874d9809d66c1da0f773f962b4f73614e3180aaf92f
+    state: active
+  - id: p00045
+    type: footnote
+    label: "21"
+    text: "Benjamin Franklin: Works, Vol. II, edit. Sparks in “Positions to be examined concerning National Wealth,” p. 376."
+    hash: sha256:3bc4621f624da5569d92198c4c33922b5b40618ae8f14080695bf7cb105cd344
+    state: active
+  - id: p00046
+    type: footnote
+    label: "22"
+    text: Aristotle, I. c., c. 10.
+    hash: sha256:503f8e53e34dbeaa1373cb8bb32f171f200f2845945fc78f4f05bebcdfd7d2a4
+    state: active
+  - id: p00047
+    type: footnote
+    label: "23"
+    text: “Profit, in the usual condition of the market, is not made by exchanging. Had it not existed before, neither could it after that transaction.” (Ramsay, l.c., p. 184.)
+    hash: sha256:4dad0a1ad96eb1af9068010424c48ce5ba3972abe4b86b491ac83c05f0e5fa4d
+    state: active
+  - id: p00048
+    type: footnote
+    label: "24"
+    text: "From the foregoing investigation, the reader will see that this statement only means that the formation of capital must be possible even though the price and value of a commodity be the same; for its formation cannot be attributed to any deviation of the one from the other. If prices actually differ from values, we must, first of all, reduce the former to the latter, in other words, treat the difference as accidental in order that the phenomena may be observed in their purity, and our observations not interfered with by disturbing circumstances that have nothing to do with the process in question. We know, moreover, that this reduction is no mere scientific process. The continual oscillations in prices, their rising and falling, compensate each other, and reduce themselves to an average price, which is their hidden regulator. It forms the guiding star of the merchant or the manufacturer in every undertaking that requires time. He knows that when a long period of time is taken, commodities are sold neither over nor under, but at their average price. If therefore he thought about the matter at all, he would formulate the problem of the formation of capital as follows: How can we account for the origin of capital on the supposition that prices are regulated by the average price, i. e., ultimately by the value of the commodities? I say “ultimately,” because average prices do not directly coincide with the values of commodities, as Adam Smith, Ricardo, and others believe."
+    hash: sha256:963e5e85fe8f9465d70510cfb169a18a0234906951d3f6161918bd9effc1ebfd
+    state: active
+  - id: p00049
+    type: footnote
+    label: "25"
+    text: See MIA Glossary.<br/><br/>Transcribed by Hinrich Kuhls<br/>Html Markup by Stephen Baird (1999)
+    hash: sha256:a58417189998d608d3b8bc9486d80b233b9fcf4d0524b31617fe62e1d9ece3b5
+    state: active

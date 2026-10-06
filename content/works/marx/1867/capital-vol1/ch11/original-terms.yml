@@ -1,0 +1,343 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch11
+annotations:
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00004
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00004
+    term: exploitation
+    match: exploit
+    occurrence: 2
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00005
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00005
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00006
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00010
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00011
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00012
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00012
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 8
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00013
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00013
+    term: exploitation
+    match: exploits
+    occurrence: 1
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00013
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 8
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 9
+  - passage: p00013
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00013
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00016
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00016
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00016
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00016
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00016
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00017
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00017
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00017
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00019
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00020
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00020
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00020
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00021
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00021
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00021
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00021
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00021
+    term: means-of-production
+    match: means of production
+    occurrence: 5
+  - passage: p00022
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00022
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00025
+    term: capital
+    match: Capital
+    occurrence: 1

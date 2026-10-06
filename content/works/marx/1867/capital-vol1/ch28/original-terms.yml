@@ -1,0 +1,127 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch28
+annotations:
+  - passage: p00002
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00002
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00002
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00008
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00010
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00010
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00010
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00010
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00010
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00011
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00011
+    term: wage-labour
+    match: wage labour
+    occurrence: 2
+  - passage: p00012
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00012
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00016
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00016
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00016
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00016
+    term: party
+    match: party
+    occurrence: 1
+  - passage: p00016
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00016
+    term: party
+    match: party
+    occurrence: 2
+  - passage: p00017
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00017
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00017
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00017
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00017
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00017
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1

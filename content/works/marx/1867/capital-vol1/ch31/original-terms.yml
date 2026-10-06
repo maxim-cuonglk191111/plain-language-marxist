@@ -1,0 +1,215 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch31
+annotations:
+  - passage: p00002
+    term: guild-master
+    match: guild-masters
+    occurrence: 1
+  - passage: p00002
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00002
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00002
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00004
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00005
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00005
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00007
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00007
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00017
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00017
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00019
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00020
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00022
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00023
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00023
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00023
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00024
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00024
+    term: petty-bourgeoisie
+    match: lower middle class
+    occurrence: 1
+  - passage: p00024
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00026
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00026
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00026
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00026
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00027
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00027
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00028
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00031
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00032
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00032
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00032
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00032
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00036
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00045
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00045
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00047
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00047
+    term: capital
+    match: Capital
+    occurrence: 2
+  - passage: p00047
+    term: capital
+    match: capital
+    occurrence: 1

@@ -1,0 +1,91 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch17
+annotations:
+  - passage: p00002
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00003
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00017
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00018
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00035
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00041
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00043
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00043
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00043
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00044
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00048
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00052
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00052
+    term: conservative
+    match: conservative
+    occurrence: 1
+  - passage: p00052
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00053
+    term: capital
+    match: capital
+    occurrence: 1

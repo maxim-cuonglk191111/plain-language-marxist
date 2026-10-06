@@ -1,0 +1,423 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch04
+annotations:
+  - passage: p00001
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00003
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00003
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00005
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 5
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 4
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 5
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 6
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 7
+  - passage: p00011
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00011
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00013
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00014
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00014
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00015
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00018
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00019
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00019
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00019
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00019
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00019
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00021
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00021
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00021
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00022
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00023
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00023
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00023
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00023
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00023
+    term: capital
+    match: Capital
+    occurrence: 2
+  - passage: p00023
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00023
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00024
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00024
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00024
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00024
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00024
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00025
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00025
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00025
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00025
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00025
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00026
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00026
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00027
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00027
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00028
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00030
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00030
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00032
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00032
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00032
+    term: party
+    match: parties
+    occurrence: 1
+  - passage: p00033
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00033
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00033
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00033
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00034
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00035
+    term: commodity
+    match: Commodities
+    occurrence: 1
+  - passage: p00037
+    term: over-production
+    match: over-production
+    occurrence: 1
+  - passage: p00040
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00040
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00041
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00041
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00041
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00042
+    term: capital
+    match: Capital
+    occurrence: 1

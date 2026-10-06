@@ -1,0 +1,126 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch22
+title: "Economic Manuscripts: Capital Vol. I - Chapter Twenty-Two"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch22.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260923031452id_/https://www.marxists.org/archive/marx/works/1867-c1/ch22.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch22/2026-10-06.html
+  snapshot_hash: sha256:99a3693bd1fc65427aed7b6403d3964cc140b95bfcf7f93a76da9a5434cb58ac
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: "Chapter Twenty-Two: National Differences of Wages"
+    hash: sha256:417bb07ed855c5649492d3680004fcd968b0a149724e657e8896b458f1414968
+    state: active
+  - id: p00002
+    type: paragraph
+    text: In the 17th chapter we were occupied with the manifold combinations which may bring about a change in magnitude of the value of labour-power — this magnitude being considered either absolutely or relatively, i.e., as compared with surplus-value; whilst on the other hand, the quantum of the means of subsistence in which the price of labour is realized might again undergo fluctuations independent of, or different from, the changes of this price. <fn ref="1"/> As has been already said, the simple translation of the value, or respectively of the price, of labour-power into the exoteric form of wages transforms all these laws into laws of the fluctuations of wages. That which appears in these fluctuations of wages within a single country as a series of varying combinations, may appear in different countries as contemporaneous difference of national wages. In the comparison of the wages in different nations, we must therefore take into account all the factors that determine changes in the amount of the value of labour-power; the price and the extent of the prime necessaries of life as naturally and historically developed, the cost of training the labourers, the part played by the labour of women and children, the productiveness of labour, its extensive and intensive magnitude. Even the most superficial comparison requires the reduction first of the average day-wage for the same trades, in different countries, to a uniform working-day. After this reduction to the same terms of the day-wages, time-wage must again be translated into piece-wage, as the latter only can be a measure both of the productivity and the intensity of labour.
+    hash: sha256:ad279817ca13666d3059457602b2cc8dbb5df3de46d3542163f091001eb20fa0
+    state: active
+  - id: p00003
+    type: paragraph
+    text: In every country there is a certain average intensity of labour below which the labour for the production of a commodity requires more than the socially necessary time, and therefore does not reckon as labour of normal quality. Only a degree of intensity above the national average affects, in a given country, the measure of value by the mere duration of the working-time. This is not the case on the universal market, whose integral parts are the individual countries. The average intensity of labour changes from country to country; here it is greater, there less. These national averages form a scale, whose unit of measure is the average unit of universal labour. The more intense national labour, therefore, as compared with the less intense, produces in the same time more value, which expresses itself in more money.
+    hash: sha256:1ae2ea63f2998c6c56289d9e6db8ce41bd75f760833e06efbbf1b2aa27f347bd
+    state: active
+  - id: p00004
+    type: paragraph
+    text: But the law of value in its international application is yet more modified by the fact that on the world-market the more productive national labour reckons also as the more intense, so long as the more productive nation is not compelled by competition to lower the selling price of its commodities to the level of their value.
+    hash: sha256:7dcf07475a29dd5d03df9f1f03fa140760788c801df4056e2b09934f736f8164
+    state: active
+  - id: p00005
+    type: paragraph
+    text: In proportion as capitalist production is developed in a country, in the same proportion do the national intensity and productivity of labour there rise above the international level. <fn ref="2"/> The different quantities of commodities of the same kind, produced in different countries in the same working-time, have, therefore, unequal international values, which are expressed in different prices, i.e., in sums of money varying according to international values. The relative value of money will, therefore, be less in the nation with more developed capitalist mode of production than in the nation with less developed. It follows, then, that the nominal wages, the equivalent of labour-power expressed in money, will also be higher in the first nation than in the second; which does not at all prove that this holds also for the real wages, i.e., for the means of subsistence placed at the disposal of the labourer.
+    hash: sha256:e6261db8cb6ed10794b291e96f7e2e3d17b698342c0c9bb7326178e05a3047ca
+    state: active
+  - id: p00006
+    type: paragraph
+    text: But even apart from these relative differences of the value of money in different countries, it will be found, frequently, that the daily or weekly, etc., wage in the first nation is higher than in the second, whilst the relative price of labour, i.e., the price of labour as compared both with surplus-value and with the value of the product, stands higher in the second than in the first. <fn ref="3"/>
+    hash: sha256:89282e71777f06a49bc455f50ff3b4a67cb7c02b3a10d43d847b5cc7147a7764
+    state: active
+  - id: p00007
+    type: paragraph
+    text: J. W. Cowell, member of the Factory Commission of 1833, after careful investigation of the spinning trade, came to the conclusion that
+    hash: sha256:00d3942d1ef28171c238890466f133c78b779b6f143fcc063719efbda1f34e4c
+    state: active
+  - id: p00008
+    type: blockquote
+    text: “in England wages are virtually lower to the capitalist, though higher to the operative than on the Continent of Europe.” <fn ref="4"/>
+    hash: sha256:87f917262b7dc651d371a5c4da35d085191ea0cb6564e8ec245ef1e81eb342d7
+    state: active
+  - id: p00009
+    type: paragraph
+    text: The English Factory Inspector, Alexander Redgrave, in his report of Oct. 31st, 1866, proves by comparative statistics with continental states, that in spite of lower wages and much longer working-time, continental labour is, in proportion to the product, dearer than English. An English manager of a cotton factory in Oldenburg declares that the working time there lasted from 5:30 a.m. to 8 p.m., Saturdays included, and that the workpeople there, when under English overlookers, did not supply during this time quite so much product as the English in 10 hours, but under German overlookers much less. Wages are much lower than in England, in many cases 50%, but the number of hands in proportion to the machinery was much greater, in certain departments in the proportion of 5:3.
+    hash: sha256:619248c0f9aff06aa7d265b710dad45f8b262c1b59d787a38e52b5e5ce4e43e7
+    state: active
+  - id: p00010
+    type: paragraph
+    text: Mr. Redgrave gives very full details as to the Russian cotton factories. The data were given him by an English manager until recently employed there. On this Russian soil, so fruitful of all infamies, the old horrors of the early days of English factories are in full swing. The managers are, of course, English, as the native Russian capitalist is of no use in factory business. Despite all over-work, continued day and night, despite the most shameful under-payment of the workpeople, Russian manufacture manages to vegetate only by prohibition of foreign competition.
+    hash: sha256:9082e93a560e4f09b2c01bd105c03141933fd7006f3417854b195b81b0b49a5d
+    state: active
+  - id: p00011
+    type: paragraph
+    text: I give, in conclusion, a comparative table of Mr. Redgrave’s, on the average number of spindles per factory and per spinner in the different countries of Europe. He himself remarks that he had collected these figures a few years ago, and that since that time the size of the factories and the number of spindles per labourer in England has increased. He supposes, however, an approximately equal progress in the continental countries mentioned, so that the numbers given would still have their value for purposes of comparison.
+    hash: sha256:0f2b38146f60ab1945d165e3ba926ff6e97dddafac916cd38af7c61440993132
+    state: active
+  - id: p00012
+    type: table
+    text: <tr><td colspan="2"><b>AVERAGE NUMBER OF SPINDLES PER FACTORY</b></td></tr><tr><td><b>England</b>, <i>average of spindles per factory</i></td><td>12,600</td></tr><tr><td><b>France</b>, <i>average of spindles per factory</i></td><td>1,500</td></tr><tr><td><b>Prussia</b>, <i>average of spindles per factory</i></td><td>1,500</td></tr><tr><td><b>Belgium</b>, <i>average of spindles per factory</i></td><td>4,000</td></tr><tr><td><b>Saxony</b>, <i>average of spindles per factory</i></td><td>4,500</td></tr><tr><td><b>Austria</b>, <i>average of spindles per factory</i></td><td>7,000</td></tr><tr><td><b>Switzerland</b>, <i>average of spindles per factory</i></td><td>8,000</td></tr><tr><td colspan="2"><b>AVERAGE NUMBER OF PERSONS EMPLOYED TO SPINDLES</b></td></tr><tr><td><b>France</b></td><td><i>one person to</i> 14 spindles</td></tr><tr><td><b>Russia</b></td><td><i>one person to</i> 28 spindles</td></tr><tr><td><b>Prussia</b></td><td><i>one person to</i> 37 spindles</td></tr><tr><td><b>Bavaria</b></td><td><i>one person to</i> 46 spindles</td></tr><tr><td><b>Austria</b></td><td><i>one person to</i> 49 spindles</td></tr><tr><td><b>Belgium</b></td><td><i>one person to</i> 50 spindles</td></tr><tr><td><b>Saxony</b></td><td><i>one person to</i> 50 spindles</td></tr><tr><td><b>Switzerland</b></td><td><i>one person to</i> 55 spindles</td></tr><tr><td><b>Smaller States of Germany</b></td><td><i>one person to</i> 55 spindles</td></tr><tr><td><b>Great Britain</b></td><td><i>one person to</i> 74 spindles</td></tr>
+    hash: sha256:5e80b58900aaa014b4f083e4d412d3d750e51776c9cde4248a8b547bbc6e2b1d
+    state: active
+  - id: p00013
+    type: blockquote
+    text: “This comparison,” says Mr. Redgrave, “is yet more unfavorable to Great Britain, inasmuch as there is so large a number of factories in which weaving by power is carried on in conjunction with spinning” (whilst in the table the weavers are not deducted), “and the factories abroad are chiefly spinning factories; if it were possible to compare like with like, strictly, I could find many cotton spinning factories in my district in which mules containing 2,200 spindles are minded by one man (the minder) and two assistants only, turning off daily 220 lbs. of yarn, measuring 400 miles in length.” <fn ref="5"/>
+    hash: sha256:d4e91cb59631510cd4adf367367cbfa1941d6f0d60adefbcd929cdeef2425395
+    state: active
+  - id: p00014
+    type: paragraph
+    text: It is well known that in Eastern Europe, as well as in Asia, English companies have undertaken the construction of railways, and have, in making them, employed side by side with the native labourers, a certain number of English working-men. Compelled by practical necessity, they thus have had to take into account the national difference in the intensity of labour, but this has brought them no loss. Their experience shows that even if the height of wages corresponds more or less with the average intensity of labour, the relative price of labour varies generally in the inverse direction.
+    hash: sha256:242361ac5de7899043d4019b67e41d97fd4b502472122db0d28c3f4edee5ee0a
+    state: active
+  - id: p00015
+    type: paragraph
+    text: In an “Essay on the Rate of Wages,” <fn ref="6"/> one of his first economic writings, H. Carey tries to prove that the wages of the different nations are directly proportional to the degree of productiveness of the national working-days, in order to draw from this international relation the conclusion that wages everywhere rise and fall in proportion to the productiveness of labour. The whole of our analysis of the production of surplus-value shows the absurdity of this conclusion, even if Carey himself had proved his premises instead of, after his usual uncritical and superficial fashion, shuffling to and fro a confused mass of statistical materials. The best of it is that he does not assert that things actually are as they ought to be according to his theory. For State intervention has falsified the natural economic relations. The different national wages must be reckoned, therefore, as if that part of each that goes to the State in the form of taxes, came to the labourer himself. Ought not Mr. Carey to consider further whether those “State expenses” are not the “natural” fruits of capitalistic development? The reasoning is quite worthy of the man who first declared the relations of capitalist production to be eternal laws of nature and reason, whose free, harmonious working is only disturbed by the intervention of the State, in order afterwards to discover that the diabolical influence of England on the world market (an influence which, it appears, does not spring from the natural laws of capitalist production) necessitates State intervention, i.e., the protection of those laws of nature and reason by the State, alias the System of Protection. He discovered further that the theorems of Ricardo and others, in which existing social antagonisms and contradictions are formulated, are not the ideal product of the real economic movement, but on the contrary, that the real antagonisms of capitalist production in England and elsewhere are the result of the theories of Ricardo and others! Finally he discovered that it is, in the last resort, commerce that destroys the inborn beauties and harmonies of the capitalist mode of production. A step further and he will, perhaps, discover that the one evil in capitalist production is capital itself. Only a man with such atrocious want of the critical faculty and such spurious erudition deserved, in spite of his Protectionist heresy, to become the secret source of the harmonious wisdom of a Bastiat, and of all the other Free-trade optimists of today.
+    hash: sha256:0dcaf2e9b801b0095a25cbdd8ed92d8ceb30065ae1e11ee538818289663893b8
+    state: active
+  - id: p00016
+    type: footnote
+    label: "1"
+    text: “It is not accurate to say that wages” (he deals here with their money expression) “are increased, because they purchase more of a cheaper article.” (David Buchanan in his edition of Adam Smith’s “Wealth of Nations,” 1814, Vol. 1, p. 417, note.)
+    hash: sha256:6898320a2f12d2f7dc63693d11c40c3aa72fabbb7968f1c4ad007a296a369445
+    state: active
+  - id: p00017
+    type: footnote
+    label: "2"
+    text: We shall inquire, in another place, what circumstances in relation to productivity may modify this law for individual branches of industry.
+    hash: sha256:2cea07604cf23fcb1a2d07a854d4bf78ebb90b921dadd42eab2fe3f76688d8c0
+    state: active
+  - id: p00018
+    type: footnote
+    label: "3"
+    text: "James Anderson remarks in his polemic against Adam Smith: “It deserves, likewise, to be remarked, that although the apparent price of Labour is usually lower in poor countries, where the produce of the soil, and grain in general, is cheap; yet it is in fact for the most part really higher than in other countries. For it is not the wages that is given to the labourer per day that constitutes the real price of labour, although it is its apparent price. The real price is that which a certain quantity of work performed actually costs the employer; and considered in this light, labour is in almost all cases cheaper in rich countries than in those that are poorer, although the price of grain and other provisions is usually much lower in the last than in the first.... Labour estimated by the day is much lower in Scotland than in England.... Labour by the piece is generally cheaper in England.” (James Anderson, “Observations on the Means of Exciting a Spirit of National Industry,” &amp;tc., Edin. 1777, pp. 350, 351.) On the contrary, lowness of wages produces, in its turn, dearness of labour. “Labour being dearer in Ireland than it is in England ... because the wages are so much lower.” (N. 2079 in “Royal Commission on Railways, Minutes,” 1867.)"
+    hash: sha256:25ae92b171cedda9fe53647b3b176f0e91cc4eec9ed1181dd73e28c2c472a427
+    state: active
+  - id: p00019
+    type: footnote
+    label: "4"
+    text: (Ure, op. cit., p. 314.)
+    hash: sha256:c6bd612a39d7687945abe0de8006888888555ce0e37020ba9170a79e038709bb
+    state: active
+  - id: p00020
+    type: footnote
+    label: "5"
+    text: (“Reports of Insp. of Fact.,” 31st Oct., 1866, pp. 31-37, passim.)
+    hash: sha256:2c4a599c3313b354309c4cecdf026e5f59d7326a9d6e77b931c83b3421cd68f6
+    state: active
+  - id: p00021
+    type: footnote
+    label: "6"
+    text: “Essay on the Rate of Wages, with an Examination of the Causes of the Differences in the Condition of the Labouring Population throughout the World,” Philadelphia, 1835.<br/><br/>Transcribed by Bill McDorman<br/>Html Markup by Stephen Baird (1999)
+    hash: sha256:f12e4bf0877d4ae7f6f75d51af4ab91577489d7f6e24670d68e437927cf77aa9
+    state: active

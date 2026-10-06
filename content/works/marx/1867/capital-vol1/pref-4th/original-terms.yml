@@ -1,0 +1,15 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:pref-4th
+annotations:
+  - passage: p00008
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00014
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: Capital
+    occurrence: 1

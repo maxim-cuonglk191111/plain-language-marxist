@@ -1,0 +1,308 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch27
+title: "Economic Manuscripts: Capital Vol. I - Chapter Twenty-Seven"
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1867-c1/ch27.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260923201529id_/https://www.marxists.org/archive/marx/works/1867-c1/ch27.htm
+  snapshot: ingestion/snapshots/marx/1867/capital-vol1/ch27/2026-10-06.html
+  snapshot_hash: sha256:15a35750ddb385dda513a93337a97e17cd3c18ecd9234ce8d36c9190fa75adf1
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: "Chapter Twenty-Seven: Expropriation of the Agricultural Population from the Land"
+    hash: sha256:d7b17ae0b1137a6d09c6a15f513b6d610bc84d26e88afeeea78ae344f584a909
+    state: active
+  - id: p00002
+    type: paragraph
+    text: In England, serfdom had practically disappeared in the last part of the 14th century. The immense majority of the population <fn ref="1"/> consisted then, and to a still larger extent, in the 15th century, of free peasant proprietors, whatever was the feudal title under which their right of property was hidden. In the larger seignorial domains, the old bailiff, himself a serf, was displaced by the free farmer. The wage labourers of agriculture consisted partly of peasants, who utilised their leisure time by working on the large estates, partly of an independent special class of wage labourers, relatively and absolutely few in numbers. The latter also were practically at the same time peasant farmers, since, besides their wages, they had allotted to them arable land to the extent of 4 or more acres, together with their cottages. Besides they, with the rest of the peasants, enjoyed the usufruct of the common land, which gave pasture to their cattle, furnished them with timber, fire-wood, turf, &amp;c. <fn ref="2"/> In all countries of Europe, feudal production is characterised by division of the soil amongst the greatest possible number of subfeudatories. The might of the feudal lord, like that of the sovereign, depended not on the length of his rent roll, but on the number of his subjects, and the latter depended on the number of peasant proprietors. <fn ref="3"/> Although, therefore, the English land, after the Norman Conquest, was distributed in gigantic baronies, one of which often included some 900 of the old Anglo-Saxon lordships, it was bestrewn with small peasant properties, only here and there interspersed with great seignorial domains. Such conditions, together with the prosperity of the towns so characteristic of the 15th century, allowed of that wealth of the people which Chancellor Fortescue so eloquently paints in his “Laudes legum Angliae;” but it excluded the possibility of capitalistic wealth.
+    hash: sha256:ccaf60d4815b90ba06c3ec788558d921e7a814c1d5f673b6834e7af79dc27a9d
+    state: active
+  - id: p00003
+    type: paragraph
+    text: The prelude of the revolution that laid the foundation of the capitalist mode of production, was played in the last third of the 15th, and the first decade of the 16th century. A mass of free proletarians was hurled on the labour market by the breaking-up of the bands of feudal retainers, who, as Sir James Steuart well says, “everywhere uselessly filled house and castle.” Although the royal power, itself a product of bourgeois development, in its strife after absolute sovereignty forcibly hastened on the dissolution of these bands of retainers, it was by no means the sole cause of it. In insolent conflict with king and parliament, the great feudal lords created an incomparably larger proletariat by the forcible driving of the peasantry from the land, to which the latter had the same feudal right as the lord himself, and by the usurpation of the common lands. The rapid rise of the Flemish wool manufactures, and the corresponding rise in the price of wool in England, gave the direct impulse to these evictions. The old nobility had been devoured by the great feudal wars. The new nobility was the child of its time, for which money was the power of all powers. Transformation of arable land into sheep-walks was, therefore, its cry. Harrison, in his “Description of England, prefixed to Holinshed’s Chronicles,” describes how the expropriation of small peasants is ruining the country. “What care our great encroachers?” The dwellings of the peasants and the cottages of the labourers were razed to the ground or doomed to decay. “If,” says Harrison, “the old records of euerie manour be sought... it will soon appear that in some manour seventeene, eighteene, or twentie houses are shrunk... that England was neuer less furnished with people than at the present... Of cities and townes either utterly decaied or more than a quarter or half diminished, though some one be a little increased here or there; of townes pulled downe for sheepe-walks, and no more but the lordships now standing in them... I could saie somewhat.” The complaints of these old chroniclers are always exaggerated, but they reflect faithfully the impression made on contemporaries by the revolution in the conditions of production. A comparison of the writings of Chancellor Fortescue and Thomas More reveals the gulf between the 15th and 16th century. As Thornton rightly has it, the English working class was precipitated without any transition from its golden into its iron age.
+    hash: sha256:0e84bf295d6ccf530918c3f2f3e8039700617f20721a82bfa5c88fbb7166d44f
+    state: active
+  - id: p00004
+    type: paragraph
+    text: 'Legislation was terrified at this revolution. It did not yet stand on that height of civilization where the “wealth of the nation” (i.e., the formation of capital, and the reckless exploitation and impoverishing of the mass of the people) figure as the <i>ultima Thule</i> of all state-craft. In his history of Henry VII., Bacon says: “Inclosures at that time (1489) began to be more frequent, whereby arable land (which could not be manured without people and families) was turned into pasture, which was easily rid by a few herdsmen; and tenancies for years, lives, and at will (whereupon much of the yeomanry lived) were turned into demesnes. This bred a decay of people, and (by consequence) a decay of towns, churches, tithes, and the like... In remedying of this inconvenience the king’s wisdom was admirable, and the parliament’s at that time... they took a course to take away depopulating enclosures, and depopulating pasturage.” An Act of Henry VII., 1489, cap. 19, forbad the destruction of all “houses of husbandry” to which at least 20 acres of land belonged. By an Act, 25 Henry VIII., the same law was renewed. It recites, among other things, that many farms and large flocks of cattle, especially of sheep, are concentrated in the hands of a few men, whereby the rent of land has much risen and tillage has fallen off, churches and houses have been pulled down, and marvellous numbers of people have been deprived of the means wherewith to maintain themselves and their families. The Act, therefore, ordains the rebuilding of the decayed farmsteads, and fixes a proportion between corn land and pasture land, &amp;c. An Act of 1533 recites that some owners possess 24,000 sheep, and limits the number to be owned to 2,000. <fn ref="4"/> The cry of the people and the legislation directed, for 150 years after Henry VII., against the expropriation of the small farmers and peasants, were alike fruitless. The secret of their inefficiency Bacon, without knowing it, reveals to us. “The device of King Henry VII.,” says Bacon, in his “Essays, Civil and Moral,” Essay 29, “was profound and admirable, in making farms and houses of husbandry of a standard; that is, maintained with such a proportion of land unto them as may breed a subject to live in convenient plenty, and no servile condition, and to keep the plough in the hands of the owners and not mere hirelings.” <fn ref="5"/> What the capitalist system demanded was, on the other hand, a degraded and almost servile condition of the mass of the people, the transformation of them into mercenaries, and of their means of labour into capital. During this transformation period, legislation also strove to retain the 4 acres of land by the cottage of the agricultural wage labourer, and forbad him to take lodgers into his cottage. In the reign of James I., 1627, Roger Crocker of Front Mill, was condemned for having built a cottage on the manor of Front Mill without 4 acres of land attached to the same in perpetuity. As late as Charles I.’s reign, 1638, a royal commission was appointed to enforce the carrying out of the old laws, especially that referring to the 4 acres of land. Even in Cromwell’s time, the building of a house within 4 miles of London was forbidden unless it was endowed with 4 acres of land. As late as the first half of the 18th century complaint is made if the cottage of the agricultural labourer has not an adjunct of one or two acres of land. Nowadays he is lucky if it is furnished with a little garden, or if he may rent, far away from his cottage, a few roods. “Landlords and farmers,” says Dr. Hunter, “work here hand in hand. A few acres to the cottage would make the labourers too independent.” <fn ref="6"/>'
+    hash: sha256:6909ab5ca86ff41b515447007b832bdc7a3326dcd970f815dbf2e1aabf87e3c4
+    state: active
+  - id: p00005
+    type: paragraph
+    text: The process of forcible expropriation of the people received in the 16th century a new and frightful impulse from the Reformation, and from the consequent colossal spoliation of the church property. The Catholic church was, at the time of the Reformation, feudal proprietor of a great part of the English land. The suppression of the monasteries, &amp;c., hurled their inmates into the proletariat. The estates of the church were to a large extent given away to rapacious royal favourites, or sold at a nominal price to speculating farmers and citizens, who drove out, <i>en masse,</i> the hereditary sub-tenants and threw their holdings into one. The legally guaranteed property of the poorer folk in a part of the church’s tithes was tacitly confiscated. <fn ref="7"/> “Pauper ubique jacet,” cried Queen Elizabeth, after a journey through England. In the 43rd year of her reign the nation was obliged to recognise pauperism officially by the introduction of a poor-rate. “The authors of this law seem to have been ashamed to state the grounds of it, for [contrary to traditional usage] it has no preamble whatever.” <fn ref="8"/> By the 16th of Charles I., ch. 4, it was declared perpetual, and in fact only in 1834 did it take a new and harsher form. <fn ref="9"/> These immediate results of the Reformation were not its most lasting ones. The property of the church formed the religious bulwark of the traditional conditions of landed property. With its fall these were no longer tenable. <fn ref="10"/>
+    hash: sha256:7b754df4886dee8f8020191f5f3601e0ed4f310793418ba281ec6010bce1c99f
+    state: active
+  - id: p00006
+    type: paragraph
+    text: Even in the last decade of the 17th century, the yeomanry, the class of independent peasants, were more numerous than the class of farmers. They had formed the backbone of Cromwell’s strength, and, even according to the confession of Macaulay, stood in favourable contrast to the drunken squires and to their servants, the country clergy, who had to marry their masters’ cast-off mistresses. About 1750, the yeomanry had disappeared, <fn ref="11"/> and so had, in the last decade of the 18th century, the last trace of the common land of the agricultural labourer. We leave on one side here the purely economic causes of the agricultural revolution. We deal only with the forcible means employed.
+    hash: sha256:a85a5c34fe9da981301ef9e5c6dbf147ea62c6cb6ae2a591aec9468eeed6869e
+    state: active
+  - id: p00007
+    type: paragraph
+    text: After the restoration of the Stuarts, the landed proprietors carried, by legal means, an act of usurpation, effected everywhere on the Continent without any legal formality. They abolished the feudal tenure of land, <i>i.e.</i>, they got rid of all its obligations to the State, “indemnified” the State by taxes on the peasantry and the rest of the mass of the people, vindicated for themselves the rights of modern private property in estates to which they had only a feudal title, and, finally, passed those laws of settlement, which, <i>mutatis mutandis</i>, had the same effect on the English agricultural labourer, as the edict of the Tartar Boris Godunof on the Russian peasantry.
+    hash: sha256:f34bd821cf3b3051e8ee95d0961839f2677d96221d256af0540daaa2c6b19571
+    state: active
+  - id: p00008
+    type: paragraph
+    text: The “glorious Revolution” brought into power, along with William of Orange, the landlord and capitalist appropriators of surplus-value. <fn ref="12"/> They inaugurated the new era by practising on a colossal scale thefts of state lands, thefts that had been hitherto managed more modestly. These estates were given away, sold at a ridiculous figure, or even annexed to private estates by direct seizure. <fn ref="13"/> All this happened without the slightest observation of legal etiquette. The Crown lands thus fraudulently appropriated, together with the robbery of the Church estates, as far as these had not been lost again during the republican revolution, form the basis of the today princely domains of the English oligarchy. <fn ref="14"/> The bourgeois capitalists favoured the operation with the view, among others, to promoting free trade in land, to extending the domain of modern agriculture on the large farm-system, and to increasing their supply of the free agricultural proletarians ready to hand. Besides, the new landed aristocracy was the natural ally of the new bankocracy, of the newly-hatched <i>haute finance,</i> and of the large manufacturers, then depending on protective duties. The English bourgeoisie acted for its own interest quite as wisely as did the Swedish bourgeoisie who, reversing the process, hand in hand with their economic allies, the peasantry, helped the kings in the forcible resumption of the Crown lands from the oligarchy. This happened since 1604 under Charles X. and Charles XI.
+    hash: sha256:41b74b374ed91e7e8fecc59d4d22616ef8971168b731fd7857c7b2179a29fc9f
+    state: active
+  - id: p00009
+    type: paragraph
+    text: Communal property — always distinct from the State property just dealt with — was an old Teutonic institution which lived on under cover of feudalism. We have seen how the forcible usurpation of this, generally accompanied by the turning of arable into pasture land, begins at the end of the 15th and extends into the 16th century. But, at that time, the process was carried on by means of individual acts of violence against which legislation, for a hundred and fifty years, fought in vain. The advance made by the 18th century shows itself in this, that the law itself becomes now the instrument of the theft of the people’s land, although the large farmers make use of their little independent methods as well. <fn ref="15"/> The parliamentary form of the robbery is that of Acts for enclosures of Commons, in other words, decrees by which the landlords grant themselves the people’s land as private property, decrees of expropriation of the people. Sir F. M. Eden refutes his own crafty special pleading, in which he tries to represent communal property as the private property of the great landlords who have taken the place of the feudal lords, when he, himself, demands a “general Act of Parliament for the enclosure of Commons” (admitting thereby that a parliamentary <i>coup d’état</i> is necessary for its transformation into private property), and moreover calls on the legislature for the indemnification for the expropriated poor. <fn ref="16"/>
+    hash: sha256:b2552f0f8feca572c0693efeb718c7fc361eeab6077be85e4fa26c90e0bcf681
+    state: active
+  - id: p00010
+    type: paragraph
+    text: Whilst the place of the independent yeoman was taken by tenants at will, small farmers on yearly leases, a servile rabble dependent on the pleasure of the landlords, the systematic robbery of the Communal lands helped especially, next to the theft of the State domains, to swell those large farms, that were called in the 18th century capital farms <fn ref="17"/> or merchant farms, <fn ref="18"/> and to “set free” the agricultural population as proletarians for manufacturing industry.
+    hash: sha256:63e83a27dff98033e6e060062d758d8e71799738a2d103221ce94b077b5c40c8
+    state: active
+  - id: p00011
+    type: paragraph
+    text: 'The 18th century, however, did not yet recognise as fully as the 19th, the identity between national wealth and the poverty of the people. Hence the most vigorous polemic, in the economic literature of that time, on the “enclosure of commons.” From the mass of materials that lie before me, I give a few extracts that will throw a strong light on the circumstances of the time. “In several parishes of Hertfordshire,” writes one indignant person, “24 farms, numbering on the average 50-150 acres, have been melted up into three farms.” <fn ref="19"/> “In Northamptonshire and Leicestershire the enclosure of common lands has taken place on a very large scale, and most of the new lordships, resulting from the enclosure, have been turned into pasturage, in consequence of which many lordships have not now 50 acres ploughed yearly, in which 1,500 were ploughed formerly. The ruins of former dwelling-houses, barns, stables, &amp;c.,” are the sole traces of the former inhabitants. “An hundred houses and families have in some open-field villages dwindled to eight or ten.... The landholders in most parishes that have been enclosed only 15 or 20 years, are very few in comparison of the numbers who occupied them in their open-field state. It is no uncommon thing for 4 or 5 wealthy graziers to engross a large enclosed lordship which was before in the hands of 20 or 30 farmers, and as many smaller tenants and proprietors. All these are hereby thrown out of their livings with their families and many other families who were chiefly employed and supported by them.” <fn ref="20"/> It was not only the land that lay waste, but often land cultivated either in common or held under a definite rent paid to the community, that was annexed by the neighbouring landlords under pretext of enclosure. “I have here in view enclosures of open fields and lands already improved. It is acknowledged by even the writers in defence of enclosures that these diminished villages increase the monopolies of farms, raise the prices of provisions, and produce depopulation ... and even the enclosure of waste lands (as now carried on) bears hard on the poor, by depriving them of a part of their subsistence, and only goes towards increasing farms already too large.” <fn ref="21"/> “When,” says Dr. Price, “this land gets into the hands of a few great farmers, the consequence must be that the little farmers” (earlier designated by him “a multitude of little proprietors and tenants, who maintain themselves and families by the produce of the ground they occupy by sheep kept on a common, by poultry, hogs, &amp;c., and who therefore have little occasion to purchase any of the means of subsistence”) “will be converted into a body of men who earn their subsistence by working for others, and who will be under a necessity of going to market for all they want.... There will, perhaps, be more labour, because there will be more compulsion to it.... Towns and manufactures will increase, because more will be driven to them in quest of places and employment. This is the way in which the engrossing of farms naturally operates. And this is the way in which, for many years, it has been actually operating in this kingdom.” <fn ref="22"/> He sums up the effect of the enclosures thus: “Upon the whole, the circumstances of the lower ranks of men are altered in almost every respect for the worse. From little occupiers of land, they are reduced to the state of day-labourers and hirelings; and, at the same time, their subsistence in that state has become more difficult.” <fn ref="23"/> In fact, usurpation of the common lands and the revolution in agriculture accompanying this, told so acutely on the agricultural labourers that, even according to Eden, between 1765 and 1780, their wages began to fall below the minimum, and to be supplemented by official poor-law relief. Their wages, he says, “were not more than enough for the absolute necessaries of life.”'
+    hash: sha256:a27d828b95383fba68ad09e1f92fb432cbb93aa147e107a28f8fb96da00cf5fc
+    state: active
+  - id: p00012
+    type: paragraph
+    text: Let us hear for a moment a defender of enclosures and an opponent of Dr. Price. “Not is it a consequence that there must be depopulation, because men are not seen wasting their labour in the open field.... If, by converting the little farmers into a body of men who must work for others, more labour is produced, it is an advantage which the nation” (to which, of course, the “converted” ones do not belong) “should wish for ... the produce being greater when their joint labours are employed on one farm, there will be a surplus for manufactures, and by this means manufactures, one of the mines of the nation, will increase, in proportion to the quantity of corn produced.” <fn ref="24"/>
+    hash: sha256:24d535c8fb5bb27b81a93e70932efb1ee5d19e437302b25463219ce26e04dadc
+    state: active
+  - id: p00013
+    type: paragraph
+    text: "The stoical peace of mind with which the political economist regards the most shameless violation of the “sacred rights of property” and the grossest acts of violence to persons, as soon as they are necessary to lay the foundations of the capitalistic mode of production, is shown by Sir F. M. Eden, philanthropist and tory to boot. The whole series of thefts, outrages, and popular misery, that accompanied the forcible expropriation of the people, from the last third of the 15th to the end of the 18th century, lead him merely to the comfortable conclusion: “The due proportion between arable land and pasture had to be established. During the whole of the 14th and the greater part of the 15th century, there was one acre of pasture to 2, 3, and even 4 of arable land. About the middle of the 16th century the proportion was changed of 2 acres of pasture to 2, later on, of 2 acres of pasture to one of arable, until at last the just proportion of 3 acres of pasture to one of arable land was attained.”"
+    hash: sha256:2f2e51e307d27dc4dd5882703a2e214e13018df4a72250b3c6aaec1fe3d1040b
+    state: active
+  - id: p00014
+    type: paragraph
+    text: In the 19th century, the very memory of the connexion between the agricultural labourer and the communal property had, of course, vanished. To say nothing of more recent times, have the agricultural population received a farthing of compensation for the 3,511,770 acres of common land which between 1801 and 1831 were stolen from them and by parliamentary devices presented to the landlords by the landlords?
+    hash: sha256:90e184d67b979ed81ea69b509cf920aef6bcdcd0ae157c1c169a555ae81c65d1
+    state: active
+  - id: p00015
+    type: paragraph
+    text: The last process of wholesale expropriation of the agricultural population from the soil is, finally, the so-called clearing of estates, <i>i.e.</i>, the sweeping men off them. All the English methods hitherto considered culminated in “clearing.” As we saw in the picture of modern conditions given in a former chapter, where there are no more independent peasants to get rid of, the “clearing” of cottages begins; so that the agricultural labourers do not find on the soil cultivated by them even the spot necessary for their own housing. But what “clearing of estates” really and properly signifies, we learn only in the promised land of modern romance, the Highlands of Scotland. There the process is distinguished by its systematic character, by the magnitude of the scale on which it is carried out at one blow (in Ireland landlords have gone to the length of sweeping away several villages at once; in Scotland areas as large as German principalities are dealt with), finally by the peculiar form of property, under which the embezzled lands were held.
+    hash: sha256:76a7371ff1de977b62e8d6b7f5d66d72f553491fa44e37bdb49a722d3641ff68
+    state: active
+  - id: p00016
+    type: paragraph
+    text: The Highland Celts were organised in clans, each of which was the owner of the land on which it was settled. The representative of the clan, its chief or “great man,” was only the titular owner of this property, just as the Queen of England is the titular owner of all the national soil. When the English government succeeded in suppressing the intestine wars of these “great men,” and their constant incursions into the Lowland plains, the chiefs of the clans by no means gave up their time-honored trade as robbers; they only changed its form. On their own authority they transformed their nominal right into a right of private property, and as this brought them into collision with their clansmen, resolved to drive them out by open force. “A king of England might as well claim to drive his subjects into the sea,” says Professor Newman. <fn ref="25"/> This revolution, which began in Scotland after the last rising of the followers of the Pretender, can be followed through its first phases in the writings of Sir James Steuart <fn ref="26"/> and James Anderson. <fn ref="27"/> In the 18th century the hunted-out Gaels were forbidden to emigrate from the country, with a view to driving them by force to Glasgow and other manufacturing towns. <fn ref="28"/> As an example of the method <fn ref="29"/> obtaining in the 19th century, the “clearing” made by the Duchess of Sutherland will suffice here. This person, well instructed in economy, resolved, on entering upon her government, to effect a radical cure, and to turn the whole country, whose population had already been, by earlier processes of the like kind, reduced to 15,000, into a sheep-walk. From 1814 to 1820 these 15,000 inhabitants, about 3,000 families, were systematically hunted and rooted out. All their villages were destroyed and burnt, all their fields turned into pasturage. British soldiers enforced this eviction, and came to blows with the inhabitants. One old woman was burnt to death in the flames of the hut, which she refused to leave. Thus this fine lady appropriated 794,000 acres of land that had from time immemorial belonged to the clan. She assigned to the expelled inhabitants about 6,000 acres on the sea-shore — 2 acres per family. The 6,000 acres had until this time lain waste, and brought in no income to their owners. The Duchess, in the nobility of her heart, actually went so far as to let these at an average rent of 2s. 6d. per acre to the clansmen, who for centuries had shed their blood for her family. The whole of the stolen clanland she divided into 29 great sheep farms, each inhabited by a single family, for the most part imported English farm-servants. In the year 1835 the 15,000 Gaels were already replaced by 131,000 sheep. The remnant of the aborigines flung on the sea-shore tried to live by catching fish. They became amphibious and lived, as an English author says, half on land and half on water, and withal only half on both. <fn ref="30"/>
+    hash: sha256:7497202338b359007b61c688e56e4cd948c272967dcf565e292027d7de3caf97
+    state: active
+  - id: p00017
+    type: paragraph
+    text: But the brave Gaels must expiate yet more bitterly their idolatry, romantic and of the mountains, for the “great men” of the clan. The smell of their fish rose to the noses of the great men. They scented some profit in it, and let the sea-shore to the great fishmongers of London. For the second time the Gaels were hunted out. <fn ref="31"/>
+    hash: sha256:7935aa275a346d831525b4004e941d6813cc825c2bb7c97c4453bd3931ae6ed2
+    state: active
+  - id: p00018
+    type: paragraph
+    text: But, finally, part of the sheep-walks are turned into deer preserves. Every one knows that there are no real forests in England. The deer in the parks of the great are demurely domestic cattle, fat as London aldermen. Scotland is therefore the last refuge of the “noble passion.” “In the Highlands,” says Somers in 1848, “new forests are springing up like mushrooms. Here, on one side of Gaick, you have the new forest of Glenfeshie; and there on the other you have the new forest of Ardverikie. In the same line you have the Black Mount, an immense waste also recently erected. From east to west — from the neighbourhood of Aberdeen to the crags of Oban — you have now a continuous line of forests; while in other parts of the Highlands there are the new forests of Loch Archaig, Glengarry, Glenmoriston, &amp;c. Sheep were introduced into glens which had been the seats of communities of small farmers; and the latter were driven to seek subsistence on coarser and more sterile tracks of soil. Now deer are supplanting sheep; and these are once more dispossessing the small tenants, who will necessarily be driven down upon still coarser land and to more grinding penury. Deer-forests <fn ref="32"/> and the people cannot co-exist. One or other of the two must yield. Let the forests be increased in number and extent during the next quarter of a century, as they have been in the last, and the Gaels will perish from their native soil... This movement among the Highland proprietors is with some a matter of ambition... with some love of sport... while others, of a more practical cast, follow the trade in deer with an eye solely to profit. For it is a fact, that a mountain range laid out in forest is, in many cases, more profitable to the proprietor than when let as a sheep-walk. ... The huntsman who wants a deer-forest limits his offers by no other calculation than the extent of his purse.... Sufferings have been inflicted in the Highlands scarcely less severe than those occasioned by the policy of the Norman kings. Deer have received extended ranges, while men have been hunted within a narrower and still narrower circle.... One after one the liberties of the people have been cloven down.... And the oppressions are daily on the increase.... The clearance and dispersion of the people is pursued by the proprietors as a settled principle, as an agricultural necessity, just as trees and brushwood are cleared from the wastes of America or Australia; and the operation goes on in a quiet, business-like way, &amp;c.” <fn ref="33"/>
+    hash: sha256:63ba691dedab5d7f1858e2d70042d2a7b985474f9bf1c0d43ea9ea00590d1b4c
+    state: active
+  - id: p00019
+    type: paragraph
+    text: The spoliation of the church’s property, the fraudulent alienation of the State domains, the robbery of the common lands, the usurpation of feudal and clan property, and its transformation into modern private property under circumstances of reckless terrorism, were just so many idyllic methods of primitive accumulation. They conquered the field for capitalistic agriculture, made the soil part and parcel of capital, and created for the town industries the necessary supply of a “free” and outlawed proletariat.
+    hash: sha256:955f51ef45dc906c27cb1512f93d0e9697024e90ae5acd56dc2410a879fd1703
+    state: active
+  - id: p00020
+    type: footnote
+    label: "1"
+    text: "“The petty proprietors who cultivated their own fields with their own hands, and enjoyed a modest competence.... then formed a much more important part of the nation than at present. If we may trust the best statistical writers of that age, not less than 160,000 proprietors who, with their families, must have made up more than a seventh of the whole population, derived their subsistence from little freehold estates. The average income of these small landlords... was estimated at between £60 and £70 a year. It was computed that the number of persons who tilled their own land was greater than the number of those who farmed the land of others.” Macaulay: “History of England,” 10th ed., 1854, I. pp. 333, 334. Even in the last third of the 17th century, 4/5 of the English people were agricultural. (l. c., p. 413.) I quote Macaulay, because as systematic falsifier of history he minimises as much as possible facts of this kind."
+    hash: sha256:177c10e45964d2828ae505d43e1b399305fcde01ac0d446f04d117f6dcab0a83
+    state: active
+  - id: p00021
+    type: footnote
+    label: "2"
+    text: "We must never forget that even the serf was not only the owner, if but a tribute-paying owner, of the piece of land attached to his house, but also a co-possessor of the common land. “Le paysan (in Silesia, under Frederick II.) est serf.” Nevertheless, these serfs possess common lands. “On n’a pas pu encore engager les Silésiens au partage des communes, tandis que dans la Nouvelle Marche, il n’y a guère de village où ce partage ne soit exécuté avec le plus grand succès.” [The peasant ... is a serf. ... It has not yet been possible to persuade the Silesians to partition the common lands, whereas in the Neumark there is scarcely a village where the partition has not been implemented with very great success] (Mirabeau: “De la Monarchie Prussienne.” Londres, 1788, t. ii, pp. 125, 126.)"
+    hash: sha256:33b5876a6af07656e7d2b3b9919f1168b53788247f12457ac869329da39e247f
+    state: active
+  - id: p00022
+    type: footnote
+    label: "3"
+    text: Japan, with its purely feudal organisation of landed property and its developed <i>petite culture</i>, gives a much truer picture of the European middle ages than all our history books, dictated as these are, for the most part, by bourgeois prejudices. It is very convenient to be “liberal” at the expense of the middle ages.
+    hash: sha256:b499dc0e284317459b11ae2bf03bb67f9f9a8327356fb29fb3a8cbe9ba017a16
+    state: active
+  - id: p00023
+    type: footnote
+    label: "4"
+    text: In his “Utopia,” Thomas More says, that in England “your shepe that were wont to be so meke and tame, and so smal eaters, now, as I heare saye, be become so great devourers and so wylde that they eate up, and swallow downe, the very men themselfes.” “Utopia,” transl. by Robinson, ed. Arber, Lond., 1869, p. 41.
+    hash: sha256:003e1280e65f0d3808b5f0b67f9516e385d09d7ca958b1f5b0933672730cfe43
+    state: active
+  - id: p00024
+    type: footnote
+    label: "5"
+    text: Bacon shows the connexion between a free, well-to-do peasantry and good infantry. “This did wonderfully concern the might and mannerhood of the kingdom to have farms as it were of a standard sufficient to maintain an able body out of penury, and did in effect amortise a great part of the lands of the kingdom unto the hold and occupation of the yeomanry or middle people, of a condition between gentlemen, and cottagers and peasants.... For it hath been held by the general opinion of men of best judgment in the wars.... that the principal strength of an army consisteth in the infantry or foot. And to make good infantry it requireth men bred, not in a servile or indigent fashion, but in some free and plentiful manner. Therefore, if a state run most to noblemen and gentlemen, and that the husbandman and ploughmen be but as their workfolk and labourers, or else mere cottagers (which are but hous’d beggars), you may have a good cavalry, but never good stable bands of foot.... And this is to be seen in France, and Italy, and some other parts abroad, where in effect all is noblesse or peasantry.... insomuch that they are inforced to employ mercenary bands of Switzers and the like, for their battalions of foot; whereby also it comes to pass that those nations have much people and few soldiers.” (“The Reign of Henry VII.” Verbatim reprint from Kennet’s England. Ed. 1719. Lond., 1870, p. 308.)
+    hash: sha256:aeb3530de41df74755e2377e70fb3968e16beb62ea97b580c8ae118f95abc531
+    state: active
+  - id: p00025
+    type: footnote
+    label: "6"
+    text: "Dr. Hunter, l. c., p. 134. “The quantity of land assigned (in the old laws) would now be judged too great for labourers, and rather as likely to convert them into small farmers.” (George Roberts: “The Social History of the People of the Southern Counties of England in Past Centuries.” Lond., 1856, pp. 184-185.)"
+    hash: sha256:c110c2479a130af2c900665e2023bff5d92f508fc9dde703fb1ef3d0a62cd4e5
+    state: active
+  - id: p00026
+    type: footnote
+    label: "7"
+    text: “The right of the poor to share in the tithe, is established by the tenour of ancient statutes.” (Tuckett, l. c., Vol. II., pg. 804-805.)
+    hash: sha256:550d0afb9abb4230d6b05dd7123d46e2c87326fc848874dde6ee51a89f543374
+    state: active
+  - id: p00027
+    type: footnote
+    label: "8"
+    text: "William Cobbett: “A History of the Protestant Reformation,” § 471."
+    hash: sha256:057221431afb482ce9c4e6dc4574bf0875cd0b4440d5040765faf74f913aea2d
+    state: active
+  - id: p00028
+    type: footnote
+    label: "9"
+    text: "The “spirit” of Protestantism may be seen from the following, among other things. In the south of England certain landed proprietors and well-to-do farmers put their heads together and propounded ten questions as to the right interpretation of the poor-law of Elizabeth. These they laid before a celebrated jurist of that time, Sergeant Snigge (later a judge under James I.) for his opinion. “Question 9 — Some of the more wealthy farmers in the parish have devised a skilful mode by which all the trouble of executing this Act (the 43rd of Elizabeth) might be avoided. They have proposed that we shall erect a prison in the parish, and then give notice to the neighbourhood, that if any persons are disposed to farm the poor of this parish, they do give in sealed proposals, on a certain day, of the lowest price at which they will take them off our hands; and that they will be authorised to refuse to any one unless he be shut up in the aforesaid prison. The proposers of this plan conceive that there will be found in the adjoining counties, persons, who, being unwilling to labour and not possessing substance or credit to take a farm or ship, so as to live without labour, may be induced to make a very advantageous offer to the parish. If any of the poor perish under the contractor’s care, the sin will lie at his door, as the parish will have done its duty by them. We are, however, apprehensive that the present Act (43rd of Elizabeth) will not warrant a prudential measure of this kind; but you are to learn that the rest of the freeholders of the county, and of the adjoining county of B, will very readily join in instructing their members to propose an Act to enable the parish to contract with a person to lock up and work the poor; and to declare that if any person shall refuse to be so locked up and worked, he shall be entitled to no relief. This, it is hoped, will prevent persons in distress from wanting relief, and be the means of keeping down parishes.” (R. Blakey: “The History of Political Literature from the Earliest Times.” Lond., 1855, Vol. II., pp. 84-85.) In Scotland, the abolition of serfdom took place some centuries later than in England. Even in 1698, Fletcher of Saltoun, declared in the Scotch parliament, “The number of beggars in Scotland is reckoned at not less than 200,000. The only remedy that I, a republican on principle, can suggest, is to restore the old state of serfdom, to make slaves of all those who are unable to provide for their own subsistence.” Eden, l. c., Book I., ch. 1, pp. 60-61, says, “The decrease of villenage seems necessarily to have been the era of the origin of the poor. Manufactures and commerce are the two parents of our national poor.” Eden, like our Scotch republican on principle, errs only in this: not the abolition of villenage, but the abolition of the property of the agricultural labourer in the soil made him a proletarian, and eventually a pauper. In France, where the expropriation was effected in another way, the ordonnance of Moulins, 1571, and the Edict of 1656, correspond to the English poor-laws."
+    hash: sha256:14dd9439a749c4195f9172f05214dbdea266920587bf394879b1a6d662404a03
+    state: active
+  - id: p00029
+    type: footnote
+    label: "10"
+    text: Professor Rogers, although formerly Professor of Political Economy in the University of Oxford, the hotbed of Protestant orthodoxy, in his preface to the “History of Agriculture” lays stress on the fact of the pauperisation of the mass of the people by the Reformation.
+    hash: sha256:d13927fabda90ab4cc1095f9814ace4bc3f52a1f9f54f591cd243a122b0daff7
+    state: active
+  - id: p00030
+    type: footnote
+    label: "11"
+    text: "“A Letter to Sir T. C. Bunbury, Bart., on the High Price of Provisions. By a Suffolk Gentleman.” Ipswich, 1795, p. 4. Even the fanatical advocate of the system of large farms, the author of the “Inquiry into the Connexion between the Present Price of Provisions,” London, 1773, p. 139, says: “I most lament the loss of our yeomanry, that set of men who really kept up the independence of this nation; and sorry I am to see their lands now in the hands of monopolising lords, tenanted out to small farmers, who hold their leases on such conditions as to be little better than vassals ready to attend a summons on every mischievous occasion.”"
+    hash: sha256:dc4f5c03d990ed246f2ec39ffdcb772168d51aeb61ab620411bca23654edcd1a
+    state: active
+  - id: p00031
+    type: footnote
+    label: "12"
+    text: "On the private moral character of this bourgeois hero, among other things: “The large grant of lands in Ireland to Lady Orkney, in 1695, is a public instance of the king’s affection, and the lady’s influence... Lady Orkney’s endearing offices are supposed to have been — fœda labiorum ministeria.” (In the Sloane Manuscript Collection, at the British Museum, No. 4224. The Manuscript is entitled: “The character and behaviour of King William, Sunderland, etc., as represented in Original Letters to the Duke of Shrewsbury from Somers Halifax, Oxford, Secretary Vernon, etc.” It is full of curiosa.)"
+    hash: sha256:8129d83735379f1384c3733a966101263e843dc268e8bfe8062d406fa98f93a0
+    state: active
+  - id: p00032
+    type: footnote
+    label: "13"
+    text: “The illegal alienation of the Crown Estates, partly by sale and partly by gift, is a scandalous chapter in English history... a gigantic fraud on the nation.” (F. W. Newman, “Lectures on Political Economy.” London, 1851, pp. 129, 130.) [For details as to how the present large landed proprietors of England came into their possessions see “Our Old Nobility. By Noblesse Oblige.” London, 1879. — <i>F. E.</i>]
+    hash: sha256:76d262eeb5e23118768d7f5ed97498bb08c2ac721b413833cca271330412c378
+    state: active
+  - id: p00033
+    type: footnote
+    label: "14"
+    text: Read, <i>e.g.</i>, E. Burke’s Pamphlet on the ducal house of Bedford, whose offshoot was Lord John Russell, the “tomtit of Liberalism.”
+    hash: sha256:10ae7d250f2ed9ebf1ea639033b9811f5b1da7d0884bab9eb8e72ba540d40bd6
+    state: active
+  - id: p00034
+    type: footnote
+    label: "15"
+    text: “The farmers forbid cottagers to keep any living creatures besides themselves and children, under the pretence that if they keep any beasts or poultry, they will steal from the farmers’ barns for their support; they also say, keep the cottagers poor and you will keep them industrious, &amp;c., but the real fact I believe, is that the farmers may have the whole right of common to themselves.” (“A Political Inquiry into the Consequences of Enclosing Waste Lands.” London, 1785, p. 75.)
+    hash: sha256:770081e087c1516a3752c971cb874aff91bd17720126a9a06ed5b5b6e35145c9
+    state: active
+  - id: p00035
+    type: footnote
+    label: "16"
+    text: Eden, l. c., preface.
+    hash: sha256:46f534a021e2bd63a0a266a6e63a671d480ce11af3702a7b654705ac111a4eea
+    state: active
+  - id: p00036
+    type: footnote
+    label: "17"
+    text: “Capital Farms.” Two letters on the Flour Trade and the Dearness of Corn. By a person in business. London, 1767, pp. 19, 20.
+    hash: sha256:0bd3ce20170f8e98c0edad8b695e13bc022fe1a21f55e501464eed306ed74f5c
+    state: active
+  - id: p00037
+    type: footnote
+    label: "18"
+    text: “Merchant Farms.” “An Enquiry into the Causes of the Present High Price of Provisions.” London, 1767, p. 11. Note.— This excellent work, that was published anonymously, is by the Rev. Nathaniel Forster.
+    hash: sha256:5e685490efce16f5f45eb9b3878f4869dbc512f42c790236ce36e78695a73c18
+    state: active
+  - id: p00038
+    type: footnote
+    label: "19"
+    text: "Thomas Wright: “A Short Address to the Public on the Monopoly of Large Farms,” 1779, pp. 2, 3."
+    hash: sha256:75c0bf59b8bafccafa63aaa850782dd91d6c01bbb114581afb87a4105f1549eb
+    state: active
+  - id: p00039
+    type: footnote
+    label: "20"
+    text: "Rev. Addington: “Inquiry into the Reasons for or against Enclosing Open Fields,” London, 1772, pp. 37, 43 passim."
+    hash: sha256:898e4a7d7d3eab51bcff74605b4abfbb9605c51a6e621952d79ed7f830b5b7a8
+    state: active
+  - id: p00040
+    type: footnote
+    label: "21"
+    text: "Dr. R. Price, l. c., v. ii., p. 155, Forster, Addington, Kent, Price, and James Anderson, should be read and compared with the miserable prattle of Sycophant MacCulloch in his catalogue: “The Literature of Political Economy,” London, 1845."
+    hash: sha256:6023b48cd2796d1396ebb51ed9335d0a06770a1fe5aead092b5234dd8d6b8bbe
+    state: active
+  - id: p00041
+    type: footnote
+    label: "22"
+    text: Price, l. c., p. 147.
+    hash: sha256:9d4473b2fed7e09debdec3a4568a7ccde13225a0192517c32d443e0ba7fa47ae
+    state: active
+  - id: p00042
+    type: footnote
+    label: "23"
+    text: "Price, l. c., p. 159. We are reminded of ancient Rome. “The rich had got possession of the greater part of the undivided land. They trusted in the conditions of the time, that these possessions would not be again taken from them, and bought, therefore, some of the pieces of land lying near theirs, and belonging to the poor, with the acquiescence of their owners, and took some by force, so that they now were cultivating widely extended domains, instead of isolated fields. Then they employed slaves in agriculture and cattle-breeding, because freemen would have been taken from labour for military service. The possession of slaves brought them great gain, inasmuch as these, on account of their immunity from military service, could freely multiply and have a multitude of children. Thus the powerful men drew all wealth to themselves, and all the land swarmed with slaves. The Italians, on the other hand, were always decreasing in number, destroyed as they were by poverty, taxes, and military service. Even when times of peace came, they were doomed to complete inactivity, because the rich were in possession of the soil, and used slaves instead of freemen in the tilling of it.” (Appian: “Civil Wars,” I.7.) This passage refers to the time before the Licinian rogations. Military service, which hastened to so great an extent the ruin of the Roman plebeians, was also the chief means by which, as in a forcing-house, Charlemagne brought about the transformation of free German peasants into serfs and bondsmen."
+    hash: sha256:cd78c11de8817cf8ce3df47017eb2f7713fc8f2edae3130b294f590efe3a85e6
+    state: active
+  - id: p00043
+    type: footnote
+    label: "24"
+    text: "“An Inquiry into the Connexion between the Present Price of Provisions, &amp;c.,” pp. 124, 129. To the like effect, but with an opposite tendency: “Working-men are driven from their cottages and forced into the towns to seek for employment; but then a larger surplus is obtained, and thus capital is augmented.” (“The Perils of the Nation,” 2nd ed. London., 1843, p. 14.)"
+    hash: sha256:3d8b2ac30b3f71c3045d3439e289479fc14afb81cf42129078f64c69f0e99c4a
+    state: active
+  - id: p00044
+    type: footnote
+    label: "25"
+    text: l. c., p. 132.
+    hash: sha256:a82aa7fab21a172ac078d1d1cb9678750ff25fc554f66897cd1e243545b8340e
+    state: active
+  - id: p00045
+    type: footnote
+    label: "26"
+    text: "Steuart says: “If you compare the rent of these lands” (he erroneously includes in this economic category the tribute of the taskmen to the clanchief) “with the extent, it appears very small. If you compare it with the numbers fed upon the farm, you will find that an estate in the Highlands maintains, perhaps, ten times as many people as another of the same value in a good and fertile province.” (l. c., vol. i., ch. xvi., p. 104.)"
+    hash: sha256:d1feb0031047e14ca544c8820ecc62076787e0fa8a3e3695587bdc9c9af4c4a3
+    state: active
+  - id: p00046
+    type: footnote
+    label: "27"
+    text: "James Anderson: “Observations on the Means of Exciting a Spirit of National Industry, &amp;c.,” Edinburgh, 1777."
+    hash: sha256:e01229ae29df958c3475227a5d9fcb9382e7b9508d40a562524f4e03024f8ce0
+    state: active
+  - id: p00047
+    type: footnote
+    label: "28"
+    text: In 1860 the people expropriated by force were exported to Canada under false pretences. Some fled to the mountains and neighbouring islands. They were followed by the police, came to blows with them and escaped.
+    hash: sha256:d4782e5b105cec59a74f44bc8b0c13600a610b3964b833c1af1157fbdec4ad0c
+    state: active
+  - id: p00048
+    type: footnote
+    label: "29"
+    text: "“In the Highlands of Scotland,” says Buchanan, the commentator on Adam Smith, 1814, “the ancient state of property is daily subverted.... The landlord, without regard to the hereditary tenant (a category used in error here), now offers his land to the highest bidder, who, if he is an improver, instantly adopts a new system of cultivation. The land, formerly overspread with small tenants or labourers, was peopled in proportion to its produce, but under the new system of improved cultivation and increased rents, the largest possible produce is obtained at the least possible expense: and the useless hands being, with this view, removed, the population is reduced, not to what the land will maintain, but to what it will employ. “The dispossessed tenants either seek a subsistence in the neighbouring towns,” &amp;c. (David Buchanan: “Observations on, &amp;c., A. Smith’s Wealth of Nations.” Edinburgh, 1814, vol. iv., p. 144.) “The Scotch grandees dispossessed families as they would grub up coppice-wood, and they treated villages and their people as Indians harassed with wild beasts do, in their vengeance, a jungle with tigers.... Man is bartered for a fleece or a carcase of mutton, nay, held cheaper.... Why, how much worse is it than the intention of the Moguls, who, when they had broken into the northern provinces of China, proposed in council to exterminate the inhabitants, and convert the land into pasture. This proposal many Highland proprietors have effected in their own country against their own countrymen.” (George Ensor: “An Inquiry Concerning the Population of Nations.” Lond,. 1818, pp. 215, 216.)"
+    hash: sha256:9d2413b47da3b8badf8e2fd22f51e2d044f755c2097e2248044a9ffa8ab89f5c
+    state: active
+  - id: p00049
+    type: footnote
+    label: "30"
+    text: When the present Duchess of Sutherland entertained Mrs. Beecher Stowe, authoress of “Uncle Tom’s Cabin,” with great magnificence in London to show her sympathy for the Negro slaves of the American republic — a sympathy that she prudently forgot, with her fellow-aristocrats, during the civil war, in which every “noble” English heart beat for the slave-owner — I gave in the <i>New York Tribune</i> the facts about the Sutherland slaves. (Epitomised in part by Carey in “The Slave Trade.” Philadelphia, 1853, pp. 203, 204.) My article was reprinted in a Scotch newspaper, and led to a pretty polemic between the latter and the sycophants of the Sutherlands.
+    hash: sha256:8e43d2ed0fe056f76833e6e3147617eecafc9b119b7ca066d42e187dfc01d03b
+    state: active
+  - id: p00050
+    type: footnote
+    label: "31"
+    text: Interesting details on this fish trade will be found in Mr. David Urquhart’s Portfolio, new series. — Nassau W. Senior, in his posthumous work, already quoted, terms “the proceedings in Sutherlandshire one of the most beneficent clearings since the memory of man.” (l. c.)
+    hash: sha256:cf97915cd59918c7e56c10beeb862a5d3e51255219ddfd4838dd915bd0080e72
+    state: active
+  - id: p00051
+    type: footnote
+    label: "32"
+    text: The deer-forests of Scotland contain not a single tree. The sheep are driven from, and then the deer driven to, the naked hills, and then it is called a deer-forest. Not even timber-planting and real forest culture.
+    hash: sha256:38edfc600598b5fb9cd5c45e1818828ed1179957ec84e8d501903adf0640baed
+    state: active
+  - id: p00052
+    type: footnote
+    label: "33"
+    text: "Robert Somers: “Letters from the Highlands: or the Famine of 1847.” London, 1848, pp. 12-28 passim. These letters originally appeared in <i>The Times</i>. The English economists of course explained the famine of the Gaels in 1847, by their over-population. At all events, they “were pressing on their food-supply.” The “clearing of estates,” or as it is called in Germany, “Bauernlegen,” occurred in Germany especially after the 30 years’ war, and led to peasant-revolts as late as 1790 in Kursachsen. It obtained especially in East Germany. In most of the Prussian provinces, Frederick II. for the first time secured right of property for the peasants. After the conquest of Silesia he forced the landlords to rebuild the huts, barns, etc., and to provide the peasants with cattle and implements. He wanted soldiers for his army and tax-payers for his treasury. For the rest, the pleasant life that the peasant led under Frederick’s system of finance and hodge-podge rule of despotism, bureaucracy and feudalism, may be seen from the following quotation from his admirer, Mirabeau: “Le lin fait donc une des grandes richesses du cultivateur dans le Nord de l’Allemagne. Malheureusement pour l’espèce humaine, ce n’est qu’une ressource contre la misère et non un moyen de bien-être. Les impôts directs, les corvées, les servitudes de tout genre, écrasent le cultivateur allemand, qui paie encore des impôts indirects dans tout ce qu’il achète.... et pour comble de ruine, il n’ose pas vendre ses productions où et comme il le veut; il n’ose pas acheter ce dont il a besoin aux marchands qui pourraient le lui livrer au meilleur prix. Toutes ces causes le ruinent insensiblement, et il se trouverait hors d’état de payer les impôts directs à l’échéance sans la filerie; elle lui offre une ressource, en occupant utilement sa femme, ses enfants, ses servants, ses valets, et lui-même; mais quelle pénible vie, même aidée de ce secours. En été, il travaille comme un forçat au labourage et à la récolte; il se couche à 9 heures et se lève à deux, pour suffire aux travaux; en hiver il devrait réparer ses forces par un plus grand repos; mais il manquera de grains pour le pain et les semailles, s’il se défait des denrées qu’il faudrait vendre pour payer les impôts. Il faut donc filer pour suppléer à ce vide.... il faut y apporter la plus grande assiduité. Aussi le paysan se couche-t-il en hiver à minuit, une heure, et se lève à cinq ou six; ou bien il se couche à neuf, et se lève à deux, et cela tous les jours de la vie si ce n’est le dimanche. Ces excès de veille et de travail usent la nature humaine, et de là vient qu’hommes et femmes vieillissent beaucoup plutôt dans les campagnes que dans les villes.” [Flax represents one of the greatest sources of wealth for the peasant of North Germany. Unfortunately for the human race, this is only a resource against misery and not a means towards well-being. Direct taxes, forced labour service, obligations of all kinds crush the German peasant, especially as he still has to pay indirect taxes on everything he buys, ... and to complete his ruin he dare not sell his produce where and as he wishes; he dare not buy what he needs from the merhcants who could sell it to him at a cheaper price. He is slowly ruined by all those factors, and when the dirct taxes fall due, he would find himself incapable of paying them without his spinning-wheel; it offers him a last resort, while providing useful occupation for his wife, his children, his maids, his farm-hands, and himself; but what a painful life he leads, even with this extra resource! In summer, he works like a convict with the plough and at harvest; he goes to bed at nine o’clock and rises at two to get through all his work; in winter he ought to be recovering his strength by sleeping longer; but he would run short of corn for his bread and next year’s sowing if he got rid of the products that he needs to sell in order to pay the taxes. He therefore has to spin to fill up this gap ... and indeed he must do so most assiduously. Thus the peasant goes to bed at midnight or one o’clock in winter, and gets up at five or six; or he goes to bed at nine and gets up at two, and this he does every day of his life except Sundays. These excessively short hours of sleep and long hours of work consume a person’s strength and hence it happens that men and women age much more in the country than in the towns] (Mirabeau, l. c., t.III. pp. 212 sqq.)<br/><br/><i>Note to the second edition.</i> In April 1866, 18 years after the publication of the work of Robert Somers quoted above, Professor Leone Levi gave a lecture before the Society of Arts on the transformation of sheep-walks into deer-forest, in which he depicts the advance in the devastation of the Scottish Highlands. He says, with other things: “Depopulation and transformation into sheep-walks were the most convenient means for getting an income without expenditure... A deer-forest in place of a sheep-walk was a common change in the Highlands. The landowners turned out the sheep as they once turned out the men from their estates, and welcomed the new tenants — the wild beasts and the feathered birds.... One can walk from the Earl of Dalhousie’s estates in Forfarshire to John O’Groats, without ever leaving forest land.... In many of these woods the fox, the wild cat, the marten, the polecat, the weasel and the Alpine hare are common; whilst the rabbit, the squirrel and the rat have lately made their way into the country. Immense tracts of land, much of which is described in the statistical account of Scotland as having a pasturage in richness and extent of very superior description, are thus shut out from all cultivation and improvement, and are solely devoted to the sport of a few persons for a very brief period of the year.” The London <i>Economist</i> of June 2, 1866, says, “Amongst the items of news in a Scotch paper of last week, we read... ’One of the finest sheep farms in Sutherlandshire, for which a rent of £1,200 a year was recently offered, on the expiry of the existing lease this year, is to be converted into a deer-forest.’ Here we see the modern instincts of feudalism ... operating pretty much as they did when the Norman Conqueror... destroyed 36 villages to create the New Forest.... Two millions of acres... totally laid waste, embracing within their area some of the most fertile lands of Scotland. The natural grass of Glen Tilt was among the most nutritive in the county of Perth. The deer-forest of Ben Aulder was by far the best grazing ground in the wide district of Badenoch; a part of the Black Mount forest was the best pasture for black-faced sheep in Scotland. Some idea of the ground laid waste for purely sporting purposes in Scotland may be formed from the fact that it embraced an area larger than the whole county of Perth. The resources of the forest of Ben Aulder might give some idea of the loss sustained from the forced desolations. The ground would pasture 15,000 sheep, and as it was not more than one-thirtieth part of the old forest ground in Scotland ... it might, &amp;c., ... All that forest land is as totally unproductive.... It might thus as well have been submerged under the waters of the German Ocean.... Such extemporised wildernesses or deserts ought to be put down by the decided interference of the Legislature.”<br/><br/>Transcribed by Zodiac<br/>Html Markup by Stephen Baird (1999)"
+    hash: sha256:3243751796617eff9b8d23fd1370e6226cead4f4006294d1341021cfa41a533a
+    state: active

@@ -1,0 +1,131 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch30
+annotations:
+  - passage: p00001
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00001
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00002
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00002
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00002
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00002
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00002
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00002
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00002
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00003
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00003
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00003
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00003
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 3
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00004
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 3
+  - passage: p00004
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00009
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: manufacture
+    match: manufacture
+    occurrence: 1

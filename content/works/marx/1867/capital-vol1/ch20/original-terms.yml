@@ -1,0 +1,55 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch20
+annotations:
+  - passage: p00002
+    term: wage-labour
+    match: wage labour
+    occurrence: 1
+  - passage: p00004
+    term: labour-power
+    match: labour power
+    occurrence: 1
+  - passage: p00008
+    term: labour-power
+    match: labour power
+    occurrence: 1
+  - passage: p00013
+    term: labour-power
+    match: labour power
+    occurrence: 1
+  - passage: p00019
+    term: labour-power
+    match: labour power
+    occurrence: 1
+  - passage: p00020
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00020
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00020
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00020
+    term: commodity
+    match: commodity
+    occurrence: 4
+  - passage: p00021
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00023
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00025
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00036
+    term: journeyman
+    match: Journeymen
+    occurrence: 1

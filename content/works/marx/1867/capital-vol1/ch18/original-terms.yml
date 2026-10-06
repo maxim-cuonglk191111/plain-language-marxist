@@ -1,0 +1,75 @@
+schema_version: 5
+document: document:marx:1867:capital-vol1:ch18
+annotations:
+  - passage: p00003
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00007
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00007
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00008
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00013
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00013
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00015
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00015
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00027
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00027
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00028
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00028
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00028
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00028
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00028
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 1

@@ -17,7 +17,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [009](009-import-manifesto-ch01.md) | Import Communist Manifesto Chapter I | M1 | Done |
 | [010](010-term-system.md) | Term system: tokens, resolver, vocabulary | M1 | Done |
 | [011](011-checks-and-prompt-apply.md) | Structural checks, exchange format, `plm prompt` / `plm apply` | M1 | Done |
-| [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | In progress |
+| [012](012-render-manifesto-ch01.md) | Plain English rendering of Manifesto Chapter I | M1 | Done |
 | [013](013-plm-build-static-data.md) | `plm build`: static data contract v1 | M1 | Done |
 | [014](014-web-reader.md) | Web reader: routes, modes, layout rendering | M1 | Done |
 | [015](015-term-cards-and-vocabulary.md) | Term cards, terminology preference, explanations, vocabulary pages | M1 | Done |
@@ -37,7 +37,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [029](029-manifesto-ch03.md) | Manifesto Chapter III: Socialist and Communist Literature | M1 | Done |
 | [030](030-manifesto-ch04-and-complete-work.md) | Manifesto Chapter IV: Tactical Alliances, Closing Slogan, and Complete Work Release | M1 | Done |
 | [031](031-ebook-reader-experience.md) | E-book reader experience: navigation, appearance, immersive reading, highlights, read-aloud | M1 | Done |
-| [032](032-study-reader-features.md) | Study reader features from Bible apps: passage references, concordance, reading paths, quote cards | M1/M3 | In progress |
+| [032](032-study-reader-features.md) | Study reader features from Bible apps: passage references, concordance, reading paths, quote cards | M1/M3 | Done |
 | [033](033-german-original-layer.md) | Optional German original layer, switched on in Settings | M3 | Open |
 | [034](034-term-senses-by-author.md) | Term senses by author and period | M3 | Open |
 | [035](035-council-communism-first-wave.md) | Council communism and De Leon: rights, first wave, permission requests | M3 | Open |
@@ -45,7 +45,18 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [037](037-contributor-workflow-and-authoring-guide.md) | Contributor workflow, root CONTRIBUTING.md, and authoring guide | M2 | Open |
 | [038](038-visual-companion-and-1848-timeline.md) | Visual study companion and 1848 revolutionary timeline (Mermaid) | M1 | Open |
 | [039](039-marx-major-works.md) | Marx's major works first: free editions, order, Project Gutenberg source | M3 | Open |
-| [040](040-marxism-fundamentals-reading-path.md) | Marxism Fundamentals: reading primary sources leading to Das Kapital | M1 | In progress |
+| [040](040-marxism-fundamentals-reading-path.md) | Marxism Fundamentals: reading primary sources leading to Das Kapital | M1 | Done |
 | [041](041-fundamentals-source-ingestion.md) | Source text ingestion for the Marxism Fundamentals corpus | M3 | Done |
+| [042](042-render-theses-on-feuerbach.md) | Plain English rendering of *Theses on Feuerbach* (Marx, 1845) | M3 | Open |
+| [043](043-render-principles-of-communism.md) | Plain English rendering of *The Principles of Communism* (Engels, 1847) | M3 | Open |
+| [044](044-render-1859-preface.md) | Plain English rendering of the *1859 Preface* (Marx, Critique of Political Economy) | M3 | Open |
+| [045](045-render-wage-labour-and-capital.md) | Plain English rendering of *Wage Labour and Capital* (Marx, 1849/1891) | M3 | Open |
+| [046](046-render-value-price-and-profit.md) | Plain English rendering of *Value, Price and Profit* (Marx, 1865) | M3 | Open |
+| [047](047-render-socialism-utopian-and-scientific.md) | Plain English rendering of *Socialism: Utopian and Scientific* (Engels, 1880) | M3 | Open |
+| [048](048-capital-vol1-source-ingestion.md) | Source ingestion of *Das Kapital*, Vol. I (Marx, 1867) | M3 | Open |
+| [049](049-render-capital-vol1-part1.md) | Plain English rendering of *Das Kapital* Vol. I, Part I: Commodities & Money (Ch. 1–3) | M3 | Open |
+| [050](050-render-capital-vol1-parts2-3.md) | Plain English rendering of *Das Kapital* Vol. I, Parts II & III: Capital & Absolute Surplus-Value (Ch. 4–11) | M3 | Open |
+| [051](051-render-capital-vol1-parts4-6.md) | Plain English rendering of *Das Kapital* Vol. I, Parts IV, V & VI: Relative Surplus-Value & Wages (Ch. 12–22) | M3 | Open |
+| [052](052-render-capital-vol1-parts7-8.md) | Plain English rendering of *Das Kapital* Vol. I, Parts VII & VIII: Accumulation & Primitive Accumulation (Ch. 23–33) | M3 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

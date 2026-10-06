@@ -13,3 +13,4 @@
 - Under high concurrency on Windows, Vitest tests executing multi-pass repository fixtures and validations (e.g. `packages/cli/src/commands/draft.test.ts`) can exceed the default 5000ms runner timeout, requiring `testTimeout: 15000` in `vitest.config.ts`.
 - In `checkRenderings()`, words following closing quotation marks with space (e.g. `..." But `) are flagged as capitalized names because quotation marks are not matched by the sentence-boundary character class `[.!?:;]`.
 - Collective noun vocabulary terms like `means-of-production`, `instruments-of-production`, and `productive-forces` only declare `sg` forms in their YAML schemas, causing `{term:pl}` tokens to fail schema validation even when referring to plural concepts.
+- In quotation passages from historical sources, the `plm review` checker flags phrases like "at the disposal of" as hard words, requiring simplification or restatement even when rendering citations.

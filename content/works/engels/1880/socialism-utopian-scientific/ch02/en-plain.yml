@@ -1,0 +1,334 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch02
+language: en
+register: plain
+renderings:
+  p00001:
+    covers:
+      - p00001
+    based_on: sha256:6f64b875598041d87a2e9f5e0a9116b4f4dceb4b3897411ccd86ce84b7e2003d
+    revision: 1
+    ai_assisted: true
+    text: II<br/>[Dialectics]
+  p00002:
+    covers:
+      - p00002
+    based_on: sha256:b9efbbafd3434a1554ebb6ee00acbc6aaf2ff78d288b4ea0e336cc016aa8e1e2
+    revision: 1
+    ai_assisted: true
+    text: Meanwhile, during and after 18th century French philosophy, modern German
+      philosophy arose, reaching its peak in Hegel.
+  p00003:
+    covers:
+      - p00003
+    based_on: sha256:bd04c99f5dc39b13e4d187dfbb2203b9ab77f878a78d8153d3a15d68b83b8249
+    revision: 1
+    ai_assisted: true
+    text: Its greatest merit was taking up dialectics again as the highest form of
+      reasoning. Ancient Greek philosophers were natural dialecticians, and
+      Aristotle analyzed the main forms of dialectical thought. Modern
+      philosophy, despite brilliant exponents like Descartes and Spinoza, became
+      trapped in metaphysical reasoning, largely through English influence. The
+      French of the 18th century were also dominated by this metaphysical
+      outlook in formal philosophical works. Outside formal philosophy, however,
+      the French produced masterpieces of dialectic, such as Diderot’s Le Neveu
+      de Rameau and Rousseau’s Discours on inequality. Here is a brief account
+      of these two modes of thought.
+  p00004:
+    covers:
+      - p00004
+    based_on: sha256:7f6a1ff5255d9da8324a7d2125352ebdfadbb5c62ef55e84078b0a6067b0d573
+    revision: 1
+    ai_assisted: true
+    text: "When we observe nature, human history, or our own minds, we first see an
+      endless web of relationships and reactions. Nothing remains where or what
+      it was. Everything moves, changes, comes into being, and passes away. We
+      see the picture as a whole, while individual parts remain in the
+      background. We observe movements and connections rather than isolated
+      things. This simple but correct view of the world belonged to ancient
+      Greek philosophy, first clearly stated by Heraclitus: everything is and is
+      not, because everything is fluid, constantly changing and passing away."
+  p00005:
+    covers:
+      - p00005
+    based_on: sha256:0f092e308c601b33185fba48835903614f9ddf18170648c425d72d4d01d5fa92
+    revision: 1
+    ai_assisted: true
+    text: "Although this view correctly grasps the whole picture, it cannot explain
+      the details that make it up. Without understanding details, we cannot
+      clearly understand the whole. To grasp details, we must detach them from
+      their natural connections and examine causes and effects separately. This
+      is primarily the task of natural science and historical research.
+      Classical Greeks gave this work a secondary place because they had to
+      collect the basic materials first. Exact natural science was worked out by
+      Greeks of the Alexandrian period and later by Arabs in the Middle Ages.
+      Real natural science dates from the second half of the 15th century and
+      advanced rapidly. Breaking nature into individual parts, classifying
+      objects, and studying anatomy made possible our enormous scientific
+      progress over the last 400 years. But this method left behind a habit:
+      observing natural objects in isolation, apart from the whole. It viewed
+      them at rest rather than in motion, fixed rather than changing, dead
+      rather than alive. When Bacon and Locke transferred this outlook to
+      philosophy, it created the narrow, metaphysical mode of thought of the
+      last century."
+  p00006:
+    covers:
+      - p00006
+    based_on: sha256:450d9dcd3142bba48d6a2d689847d51b0ac7305c9c87142ff24e402f05655f38
+    revision: 1
+    ai_assisted: true
+    text: "To the metaphysician, things and their ideas are isolated, rigid objects
+      studied one after another. Such a thinker reasons in absolute opposites:
+      “yes, yes; no, no”. For the metaphysician, a thing either exists or does
+      not exist. A thing cannot be itself and something else at the same time.
+      Positive and negative completely exclude each other, and cause and effect
+      stand in rigid opposition."
+  p00007:
+    covers:
+      - p00007
+    based_on: sha256:7d1ac986f759258f1349854503eb0a3cd8f4ae2f9e0347123b2e4774564ff3e6
+    revision: 1
+    ai_assisted: true
+    text: At first sight, this mode of thinking seems clear because it matches
+      common sense. But common sense, respectable as it is at home, experiences
+      bizarre adventures when it enters scientific research. Metaphysical
+      thinking is necessary in many fields, but it eventually reaches limits.
+      Beyond those limits, it becomes one-sided, abstract, and lost in insoluble
+      contradictions. In contemplating individual things, it forgets the
+      connections between them. Observing their existence, it forgets their
+      origin and end. Focused on repose, it forgets motion. It cannot see the
+      woods for the trees.
+  p00008:
+    covers:
+      - p00008
+    based_on: sha256:dc53723308c47a22de00409d394b1c4b49fe07042505b0b7b2e2893e97b1e000
+    revision: 1
+    ai_assisted: true
+    text: For everyday purposes, we can say whether an animal is alive or not. But
+      closer inquiry shows this is complex, as jurists know well. They have
+      struggled in vain to determine a rational limit beyond which terminating
+      life in the womb is murder. It is equally impossible to determine the
+      absolute moment of death, because physiology proves that death is a
+      protracted process rather than a momentary event.
+  p00009:
+    covers:
+      - p00009
+    based_on: sha256:13e0c4f20783af2fdb1da6e1a1d6f69d0e9c6018ded20801e14a88042d1625ce
+    revision: 1
+    ai_assisted: true
+    text: In like manner, every organized being is at every moment the same and not
+      the same. Every moment it assimilates matter from without and expels
+      waste. Cells in its body die while others form anew. Over time, the matter
+      of its body is completely renewed and replaced by new molecules. Every
+      living being is always itself, and yet something other than itself.
+  p00010:
+    covers:
+      - p00010
+    based_on: sha256:251c1c61856b39364643f1971252904bf6afb009017666437fde5edfba3cbe69
+    revision: 1
+    ai_assisted: true
+    text: Further, we find upon closer investigation that opposite poles, like
+      positive and negative, are as inseparable as they are opposed. Despite
+      their opposition, they mutually interpenetrate. Similarly, cause and
+      effect hold good only in isolated cases. When we consider individual cases
+      in connection with the universe as a whole, causes and effects constantly
+      exchange places. What is an effect here and now becomes a cause there and
+      then, and vice versa.
+  p00011:
+    covers:
+      - p00011
+    based_on: sha256:45dfb4721e305a8b43c1dd9989092d9f1a009085534fec732bf781e8ea5f40d0
+    revision: 1
+    ai_assisted: true
+    text: None of these processes enters into the framework of metaphysical
+      reasoning. Dialectics, on the other hand, grasps things and their ideas in
+      their essential connection, motion, origin, and ending. Processes like
+      those mentioned above provide corroborations of its method.
+  p00012:
+    covers:
+      - p00012
+    based_on: sha256:36f118977ab95dee6066d1e8a153e2bbd3252bccbdf47c58c097d62c421dc9da
+    revision: 1
+    ai_assisted: true
+    text: Nature is the proof of dialectics. Modern science furnishes rich materials
+      daily showing that nature works dialectically and not metaphysically.
+      Nature does not move in a perpetually recurring circle, but goes through
+      real historical evolution. Darwin dealt the metaphysical conception of
+      nature the heaviest blow by proving that all plants, animals, and man
+      evolved through millions of years. But scientists who think dialectically
+      are few and far between. This conflict between discoveries and old modes
+      of thought explains the confusion reigning in theoretical science.
+  p00013:
+    covers:
+      - p00013
+    based_on: sha256:3a9b045de169097747fcf1f5b1112db20936ce49bf3d17799989ccd656003177
+    revision: 1
+    ai_assisted: true
+    text: An exact representation of the universe, of human history, and of thought
+      can be obtained only by the dialectical method, which observes constant
+      actions and reactions of growth and decay. In this spirit, the new German
+      philosophy worked. Kant began by resolving Newton’s eternal solar system
+      into the result of historical evolution from a rotating, nebulous mass. He
+      drew the conclusion that the solar system must eventually perish. Half a
+      century later, Laplace proved this mathematically, and later spectroscopy
+      demonstrated incandescent gas masses condensing in space.
+  p00014:
+    covers:
+      - p00014
+    based_on: sha256:8872b52b12c74d1e4f5ea9e12bd32a9783281874d8a27395493a2a132e6abbd2
+    revision: 1
+    ai_assisted: true
+    text: This new German philosophy culminated in the Hegelian system. Its great
+      merit was that for the first time, the entire world of nature, history,
+      and intellect was represented as a continuous process in constant motion,
+      change, and development. Hegel attempted to trace the internal connection
+      running through this development. Human history no longer appeared as a
+      senseless whirl of violence to be dismissed by philosophy, but as the
+      evolutionary process of humanity itself. Thought had the task of
+      discovering the inner laws governing this process through all its apparent
+      accidents.
+  p00015:
+    covers:
+      - p00015
+    based_on: sha256:b6189b959412c76e3edad88c2185f648208f792c9079bacb93d6db2413ce2a4e
+    revision: 1
+    ai_assisted: true
+    text: That Hegel did not solve the problem he proposed is immaterial. His
+      historic merit was propounding the problem. No single individual could
+      ever solve it. Although Hegel was an encyclopedic mind, he was limited by
+      the bounds of his knowledge and the scientific conceptions of his age. In
+      addition, Hegel was an idealist. To him, thoughts were not abstract
+      pictures of actual things; rather, real things were realized reflections
+      of an eternal Idea. This idealist outlook reversed the actual connection
+      of things. The Hegelian system was a colossal miscarriage, but it was the
+      last of its kind.
+  p00016:
+    covers:
+      - p00016
+    based_on: sha256:6a0952cd6564a9b25cdadd3a4f81723356d33bf13f267fd375b45375c147251c
+    revision: 1
+    ai_assisted: true
+    text: It suffered from an incurable internal contradiction. On one hand, it
+      viewed human history as an evolutionary process that cannot end in any
+      absolute truth. On the other hand, it claimed to be the very essence of
+      that absolute truth. An all-embracing system final for all time
+      contradicts the fundamental law of dialectical reasoning.
+  p00017:
+    covers:
+      - p00017
+    based_on: sha256:eb88b700e4ea9dade7ee9d9729fdf563b572a01611cb872607d079a43b77ef0b
+    revision: 1
+    ai_assisted: true
+    text: This law by no means excludes, but on the contrary includes, the idea that
+      systematic knowledge of the universe can make giant strides from age to
+      age.
+  p00018:
+    covers:
+      - p00018
+    based_on: sha256:3d7b48d9b39f2a4420229196833e30a39def3113d297e58a256d22c1be06004b
+    revision: 1
+    ai_assisted: true
+    text: "Perceiving this contradiction in German idealism led necessarily back to
+      materialism. But this was not the mechanical materialism of the 18th
+      century. Old materialism viewed history as a crude heap of violence;
+      modern materialism sees the evolutionary process of humanity and aims to
+      discover its laws. Older thinkers and even Hegel viewed nature as moving
+      in narrow, unchanging cycles of immutable species and celestial bodies.
+      Modern materialism embraces recent discoveries showing that nature has a
+      history in time, where celestial bodies and species are born and perish.
+      Modern materialism is essentially dialectic and no longer needs a
+      philosophy ruling above the sciences. When each science clarifies its
+      position in the whole, an overarching philosophy of the totality becomes
+      unnecessary. What survives of earlier philosophy is the science of
+      thought: formal logic and dialectics. Everything else belongs to positive
+      science of nature and history."
+  p00019:
+    covers:
+      - p00019
+    based_on: sha256:0ccf359c6828ba90dd89923c2f81964ffab0c84c6282626629695bff29351aec
+    revision: 1
+    ai_assisted: true
+    text: While understanding nature required scientific research, historical facts
+      led to a decisive {revolution:sg} in understanding history earlier. In
+      1831, the first working-class rising took place in Lyons. Between 1838 and
+      1842, the English Chartists reached their height as the first national
+      workers' movement. The {class-struggle:sg} between the {proletariat} and
+      the {bourgeoisie} came to the front in advanced European nations, driven
+      by {modern-industry:sg} and {bourgeoisie:adj} political power. Facts gave
+      the lie to bourgeois economy regarding the harmony of {capital:sg} and
+      labour. French and English socialism gave theoretical expression to these
+      conflicts. But the old idealist conception of history knew nothing of
+      class struggles based on economic interests, treating production as a
+      minor element in the history of civilization.
+  p00020:
+    covers:
+      - p00020
+    based_on: sha256:37b93b228b76309485085804e99b522e0b22c9d1ad4fcbcac9a2fe087e22a714
+    revision: 1
+    ai_assisted: true
+    text: "These facts made a new examination of past history imperative. It showed
+      that all past history was the history of {class-struggle:pl}. Opposing
+      classes are products of {mode-of-production:pl} and exchange: the economic
+      conditions of their era. The economic structure of society furnishes the
+      real basis that explains legal, political, religious, and philosophical
+      institutions. Hegel made history dialectic, but his view remained
+      idealistic. Now idealism was driven from its last refuge: the philosophy
+      of history. A materialist treatment of history was established, explaining
+      human consciousness by material being, rather than being by
+      consciousness."
+  p00021:
+    covers:
+      - p00021
+    based_on: sha256:d24de35cd95b2173d86f6c8ef1967b49a95820e74d9e90ef06e2326fd3174c22
+    revision: 1
+    ai_assisted: true
+    text: "From then on, socialism was no longer an accidental discovery, but the
+      necessary outcome of the struggle between the {proletariat} and the
+      {bourgeoisie}. Its task was no longer to manufacture a perfect social
+      system, but to examine the economic succession of events producing these
+      classes and find the means to end their conflict. Earlier socialism
+      criticized the capitalist {mode-of-production:sg} and denounced the
+      {exploitation:sg} of the working class. But it could not explain how that
+      exploitation arose or operated. To master this system, two things were
+      necessary:"
+  p00022:
+    covers:
+      - p00022
+    based_on: sha256:64327823efd1b4aff9ea5672d711b7bf00ba2dcabbcc967c3d0f72f221e3b56b
+    revision: 1
+    ai_assisted: true
+    text: first, to present the capitalist {mode-of-production:sg} in its historical
+      connection, showing why it was necessary and why its downfall is
+      inevitable; and
+  p00023:
+    covers:
+      - p00023
+    based_on: sha256:f8cc3bb462dacbb2bf9e762046918c5edd8abe9a3752a9214f275a6e006d9b72
+    revision: 1
+    ai_assisted: true
+    text: second, to lay bare its essential character, which was accomplished by the
+      discovery of surplus value.
+  p00024:
+    covers:
+      - p00024
+    based_on: sha256:74cc4097c46a08c0a1365a32636be4a53d2b568b2747c60815d5b5f5e2fe394d
+    revision: 1
+    ai_assisted: true
+    text: It was shown that the {appropriation:sg} of unpaid labor is the basis of
+      the capitalist {mode-of-production:sg} and the {exploitation:sg} of the
+      worker. Even if the {bourgeoisie:person} buys the worker’s
+      {labour-power:sg} at full value as a {commodity:sg}, he extracts more
+      value from it than he paid for. In the ultimate analysis, this
+      surplus value forms the sums of value heaped up as increasing masses
+      of {capital:sg} in the hands of the possessing class. The genesis of
+      capitalist production and the production of capital were both explained.
+  p00025:
+    covers:
+      - p00025
+    based_on: sha256:59a51a83372db40022250b8d722a761cb700e36a6942bd05970a90c3769faed1
+    revision: 1
+    ai_assisted: true
+    text: "These two great discoveries: the materialist conception of history and
+      the revelation of capitalist production through surplus value, we owe
+      to Marx. With these discoveries, socialism became a science. The next step
+      was to work out all its details and relations."

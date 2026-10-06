@@ -1,0 +1,572 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch01
+language: en
+register: plain
+renderings:
+  p00001:
+    covers:
+      - p00001
+    based_on: sha256:8e49ad651bfe43cc1dbbe74ebc9c9354c7cd7449f819d7c592adbc6ee0ea48d5
+    revision: 2
+    ai_assisted: true
+    text: I<br/>[The Development of {utopian-socialism:sg}]
+  p00002:
+    covers:
+      - p00002
+    based_on: sha256:62d56ef367cd71ccba8faef542becd7d483fd9688a11872dfc7861743ec5fd8d
+    revision: 3
+    ai_assisted: true
+    text: Modern socialism is the direct product of recognizing two main facts.
+      First, it recognizes the {class-antagonism:pl} in today’s society between
+      owners and non-owners, between {bourgeoisie:persons} and wage-workers.
+      Second, it recognizes the anarchy in production. Yet in its theoretical
+      form, modern socialism originally appeared as an extension of principles
+      stated by the French philosophers of the 18th century. Like every new
+      theory, it had to connect itself with existing ideas, even though its
+      roots lay in material economic facts.
+  p00003:
+    covers:
+      - p00003
+    based_on: sha256:a78bc4773ab6e8a8cc79856c948ed7ff4317cd7b228018a7102b4207dba7381d
+    revision: 2
+    ai_assisted: true
+    text: "The great thinkers who prepared French minds for the coming
+      {revolution:sg} were themselves thorough radicals. They recognized no
+      external authority of any kind. Religion, natural science, society, and
+      political institutions were all subjected to ruthless criticism.
+      Everything had to justify its existence before human reason or cease to
+      exist. Reason became the sole measure of all things. As Hegel said, the
+      world stood upon its head: first because human thought claimed to guide
+      all action, and second because reality had to be turned upside down to
+      match these principles. Every existing social and political form was
+      discarded as irrational. Thinkers viewed past traditions with pity and
+      contempt. They believed a kingdom of reason had finally arrived. In this
+      new era, eternal truth, natural equality, and human rights were to replace
+      superstition, injustice, and oppression."
+  p00004:
+    covers:
+      - p00004
+    based_on: sha256:ec3f8d52a1489132212fecc99cc37d982aa8bf16d5b4635426345acbb85e65d0
+    revision: 2
+    ai_assisted: true
+    text: Today we know that this kingdom of reason was nothing more than the
+      idealized rule of the {bourgeoisie}. Eternal justice found its realization
+      in {bourgeoisie:adj} justice. Natural equality reduced itself to
+      {bourgeoisie:adj} equality before the law. Property owned by the
+      {bourgeoisie:person} was proclaimed as one of the essential rights of man.
+      The government of reason, the social contract of Rousseau, came into being
+      as a democratic {bourgeoisie:adj} republic. Like all thinkers before them,
+      the great philosophers of the 18th century could not go beyond the limits
+      of their historical era.
+  p00005:
+    covers:
+      - p00005
+    based_on: sha256:a43a4ec8411c421620cb54960d4b78ba43ba1c4f936046114c7012d91412acbf
+    revision: 4
+    ai_assisted: true
+    text: "Alongside the conflict between the {feudalism:adj} nobility and the
+      {burgher:pl}, a general conflict existed: the division between exploiters
+      and those suffering {exploitation:sg}, between rich idlers and poor
+      workers. This made it possible for the {bourgeoisie} to claim they
+      represented all suffering humanity rather than one special class. Still
+      further, from its origin the {bourgeoisie} was saddled with its
+      antithesis: {bourgeoisie:persons} cannot exist without wage-workers. As
+      the medieval guild {burgher:sg} became the modern {bourgeoisie:person},
+      the guild {journeyman:sg} and day labourer developed into the
+      {proletariat:person}. Although the {bourgeoisie} claimed to represent
+      working people against nobility, every great bourgeois movement saw
+      independent outbursts from the forerunner of the modern {proletariat}.
+      During the German Reformation and Peasants’ War, the Anabaptists and
+      Thomas Münzer arose. In the English Revolution, the Levellers appeared. In
+      the French Revolution, Babeuf fought for equality."
+  p00006:
+    covers:
+      - p00006
+    based_on: sha256:996e4cc7cb9191c2339cb385a5cd5d3e11e8ba41069484e984ef80815b3ae6d4
+    revision: 3
+    ai_assisted: true
+    text: 'These revolutionary uprisings produced matching theories from an
+      undeveloped class. The 16th and 17th centuries produced utopian pictures
+      of ideal social conditions. The 18th century produced actual
+      {communism:adj} theories from thinkers like Morelly and Mably.<fn
+      ref="2"/> The demand for equality extended beyond political rights to the
+      social conditions of individuals. Not only class privileges, but class
+      distinctions themselves were to be abolished. An ascetic, Spartan
+      {communism:sg} was the first form of the new teaching. Then came the three
+      great Utopians: Saint-Simon, Charles Fourier, and Robert Owen. Saint-Simon
+      still gave weight to middle-class leadership alongside the {proletariat}.
+      Fourier offered brilliant social criticism. Owen lived where capitalist
+      production was most developed. Drawing on French materialism, Owen worked
+      out proposals to remove class distinctions systematically.'
+  p00007:
+    covers:
+      - p00007
+    based_on: sha256:c17c03e8132c489bc295777717282b4f47ced1e0299f08d39c66586c98f23298
+    revision: 2
+    ai_assisted: true
+    text: One thing is common to all three Utopians. Not one of them appears as a
+      representative of the interests of that {proletariat} produced by
+      historical development. Like the French philosophers, they do not claim to
+      emancipate a particular class first, but all humanity at once. Like them,
+      they wish to bring in the kingdom of reason and eternal justice. But this
+      kingdom, as they see it, is as far as Heaven from Earth from that of the
+      French philosophers.
+  p00008:
+    covers:
+      - p00008
+    based_on: sha256:5d5cd56d181c7b04736487d8f1badd7df7e4941b51f9cd88fd2a9f0990266096
+    revision: 2
+    ai_assisted: true
+    text: To these three social reformers, the {bourgeoisie:adj} world seemed just
+      as irrational and unjust as {feudalism:sg}. Therefore, it finds its way to
+      the dustbin just as readily as earlier stages of society. In their view,
+      pure reason and justice had not ruled the world only because men had not
+      rightly understood them. Society needed only the individual man of genius
+      who has now arisen and understands the truth. In their view, this
+      discovery was not an inevitable historical event, but a mere happy
+      accident. He might just as well have been born 500 years earlier. He might
+      then have spared humanity 500 years of error, strife, and suffering.
+  p00009:
+    covers:
+      - p00009
+    based_on: sha256:3c62fcfac8b8710158dfdb98dc2d1de13a83fe143b3d3ce3328eaebb01d8e572
+    revision: 2
+    ai_assisted: true
+    text: French philosophers of the 18th century, the forerunners of the
+      Revolution, appealed to reason as the sole judge of all that is. A
+      rational government and rational society were to be founded. Everything
+      that ran counter to eternal reason was to be remorselessly done away with.
+      Yet this eternal reason was in reality nothing but the idealized
+      understanding of the 18th century citizen evolving into the
+      {bourgeoisie:person}. The French Revolution had realized this rational
+      society and government.
+  p00010:
+    covers:
+      - p00010
+    based_on: sha256:c393f31dfb49f6bdea46cc846e73cfe31595fd7115142c3ffe8b0a982d8f1cdc
+    revision: 3
+    ai_assisted: true
+    text: Yet the new order turned out to be by no means absolutely rational. The
+      state based upon reason completely collapsed. Rousseau’s Contrat Social
+      realized itself in the Reign of Terror. The {bourgeoisie}, losing
+      confidence in its own political capacity, took refuge first in the
+      corruption of the Directorate and finally under Napoleonic tyranny.
+      Promised eternal peace turned into an endless war of conquest. The society
+      based upon reason fared no better. The antagonism between rich and poor
+      intensified after guild protections and Church charity were removed. The
+      freedom of property from {feudalism:adj} chains meant, for small owners,
+      the freedom to sell their property to great lords under crushing
+      competition. It became “freedom from property”. The development of
+      capitalist industry made the misery of the working masses a condition of
+      existence of society. Cash payment became, in Thomas Carlyle's phrase
+      [Past and Present, London 1843], the sole nexus between human beings.
+      Crimes increased each year. Feudal vices moved to the background, while
+      {bourgeoisie:adj} vices blossomed openly. Trade became cheating.
+      Fraternity turned into the chicanery of competition. Corruption replaced
+      oppression by force, and gold replaced the sword. The right of the first
+      night transferred from feudal lords to {bourgeoisie:adj} manufacturers.
+      Prostitution increased to unheard-of levels, while marriage remained its
+      official cloak.
+  p00011:
+    covers:
+      - p00011
+    based_on: sha256:569910b75133697ead9a5736051d5decadf541d959efc2600dfd7e05136fb23e
+    revision: 2
+    ai_assisted: true
+    text: Compared with the splendid promises of the philosophers, the institutions
+      born of the “triumph of reason” were bitterly disappointing caricatures.
+      Men soon came to formulate this disappointment at the turn of the century.
+      In 1802, Saint-Simon’s Geneva letters appeared. In 1808, Fourier’s first
+      work appeared, although his theory dated from 1799. On January 1, 1800,
+      Robert Owen took direction of New Lanark.
+  p00012:
+    covers:
+      - p00012
+    based_on: sha256:41624e756dcbb24d195dcf93cf1e08669703011bff83204c6f14844c23305b72
+    revision: 2
+    ai_assisted: true
+    text: At this time, however, the capitalist {mode-of-production:sg} and the
+      antagonism between the {bourgeoisie} and the {proletariat} were still
+      incompletely developed. {modern-industry:sg}, which had just arisen in
+      England, was still unknown in France. But {modern-industry:sg} develops
+      the conflicts that make a {revolution:sg} in the {mode-of-production:sg}
+      absolutely necessary. It creates conflicts between classes, and between
+      the growing {productive-forces:sg} and capitalist forms of exchange.
+      Furthermore, it develops in these gigantic {productive-forces:sg} the
+      means of ending these conflicts. Around the year 1800, these conflicts and
+      the means of ending them were only beginning to take shape. In Paris,
+      during the Reign of Terror, the “have-nothing” masses briefly gained
+      mastery. They led the {bourgeoisie:adj} {revolution:sg} to victory in
+      spite of the {bourgeoisie}. But they proved that their domination could
+      not last under those conditions. The {proletariat}, evolving from these
+      masses as the nucleus of a new class, was incapable of independent
+      political action. It appeared only as an oppressed, suffering order that
+      could only receive help from without or down from above.
+  p00013:
+    covers:
+      - p00013
+    based_on: sha256:0945538dbe02f74120d04ede021f040859d8dd52a586edd9a2aa5432d3fbbbd9
+    revision: 2
+    ai_assisted: true
+    text: This historical situation dominated the founders of socialism. Crude
+      economic and class conditions produced crude theories. The solution of
+      social problems still lay hidden in undeveloped economic conditions, so
+      the Utopians attempted to invent it out of the human brain. Society
+      presented only wrongs; to remove these was the task of reason. It was
+      necessary to discover a new social system and impose it from without by
+      propaganda and model experiments. These new social systems were foredoomed
+      as utopian. The more completely they were worked out in detail, the more
+      they drifted into pure fantasies.
+  p00014:
+    covers:
+      - p00014
+    based_on: sha256:c655ac660c9c5a590fa1ff83c041f22971f839a06f639f84e73dee52f75adaf5
+    revision: 2
+    ai_assisted: true
+    text: These facts once established, we need not dwell longer on this side of the
+      question, which belongs wholly to the past. We can leave it to literary
+      critics to quibble over these fantasies and crow over the superiority of
+      their own reasoning compared with such “insanity”. For ourselves, we
+      delight in the grand thoughts and germs of thought that break out through
+      their fantastic covering, to which Philistines are blind.
+  p00015:
+    covers:
+      - p00015
+    based_on: sha256:306a77c91b94c14f8e68c0fe4bdb007465876083d7691158ec86fe5b29b2bc1d
+    revision: 2
+    ai_assisted: true
+    text: "Saint-Simon was a son of the great French Revolution, at the outbreak of
+      which he was not yet 30. The Revolution was the victory of the 3rd estate:
+      the great working masses in production and trade, over the privileged idle
+      classes of nobles and priests. But the victory of the 3rd estate soon
+      revealed itself as exclusively the victory of the propertied
+      {bourgeoisie}. The {bourgeoisie} developed rapidly during the Revolution
+      through land speculation in confiscated Church estates and through
+      fraudulent army contracts. It was the rule of these swindlers that, under
+      the Directorate, brought France to ruin and gave Napoleon the pretext for
+      his coup d’état."
+  p00016:
+    covers:
+      - p00016
+    based_on: sha256:282d199a80b10ae4c2534c905a6040b25f9b4b59f9130f0c528cc0bd2eb485df
+    revision: 2
+    ai_assisted: true
+    text: "Hence, to Saint-Simon the antagonism between the 3rd Estate and
+      privileged classes took the form of an antagonism between “workers” and
+      “idlers”. The idlers were not only the old privileged classes, but all who
+      lived on income without taking part in production. The workers included
+      not only wage-workers, but manufacturers, merchants, and bankers. The
+      Revolution proved that the idlers could no longer lead. The Reign of
+      Terror seemed to Saint-Simon to prove that the propertyless classes also
+      lacked this capacity. Who then was to command? According to Saint-Simon,
+      science and industry, united by a new religious bond: a mystic “new
+      Christianity”. Science was scholars; industry was the working bourgeois:
+      manufacturers, merchants, and bankers. These bourgeois were intended to
+      become public trustees, yet they were still to hold command over the
+      workers. Bankers especially were called upon to direct social production
+      through credit. This conception fit a time when {modern-industry:sg} in
+      France and the chasm between {bourgeoisie} and {proletariat} were only
+      just emerging. But Saint-Simon stresses above all the lot of the class
+      that is the most numerous and the poorest."
+  p00017:
+    covers:
+      - p00017
+    based_on: sha256:16ef507f04f4cb13614ae7283a5b5950ed7d3e1a3eeece98985e06ab4107b76b
+    revision: 2
+    ai_assisted: true
+    text: Already in his Geneva letters, Saint-Simon lays down the proposition that
+      “all men ought to work”. In the same work he recognizes that the Reign of
+      Terror was the reign of the non-possessing masses.
+  p00018:
+    covers:
+      - p00018
+    based_on: sha256:69e3119791e183e4dbdccf6eb9a9a30eeaa2db5fcaa73869eacbccf47c99f1b3
+    revision: 3
+    ai_assisted: true
+    text: <indent level="1"/>“See,” says he to them, “what happened in France at the
+      time when your comrades held power there; they brought about a famine.”
+      [Saint-Simon, Lettres d’un habitant de Genève, 1803]
+  p00019:
+    covers:
+      - p00019
+    based_on: sha256:b36f3478ad411372e3df2860954685a77e07a0e0196ba76dacaedbdd4a298a11
+    revision: 2
+    ai_assisted: true
+    text: "To recognize the French Revolution in 1802 as a class war between
+      nobility, {bourgeoisie}, and non-possessors was a pregnant discovery. In
+      1816, Saint-Simon declared that politics is the science of production,
+      foretelling that economics would absorb politics. Economic conditions as
+      the basis of political institutions appeared here in embryo. What is
+      plainly expressed is converting political rule over men into the
+      administration of things and direction of production: the “abolition of
+      the state”."
+  p00020:
+    covers:
+      - p00020
+    based_on: sha256:c518627fbebf37607e4ca232195cba45238e91b401e2bb70aa16289bace9e97b
+    revision: 3
+    ai_assisted: true
+    text: Saint-Simon showed the same superiority in 1814 after allies entered
+      Paris, and again in 1815 during the Hundred Days’ War. He proclaimed an
+      alliance of France and England, and then with Germany, as the guarantee
+      for European peace. To preach an alliance with the victors of Waterloo to
+      the French in 1815 required courage and historical foresight.
+  p00021:
+    covers:
+      - p00021
+    based_on: sha256:0643a90e1ba2223ca4a18d135b94ad7c44493cd45c51bef0cdf759a44faba43f
+    revision: 2
+    ai_assisted: true
+    text: While Saint-Simon showed a comprehensive breadth of view, Fourier offered
+      a criticism of existing society that was genuinely French, witty, and
+      thorough. Fourier took the {bourgeoisie} and its eulogists after the
+      Revolution at their word. He laid bare the material and moral misery of
+      the {bourgeoisie:adj} world. He contrasted it with philosophers’ dazzling
+      promises of reason, happiness, and human perfection. Everywhere the most
+      pitiful reality corresponded with high-sounding phrases, and he
+      overwhelmed this fiasco with biting sarcasm.
+  p00022:
+    covers:
+      - p00022
+    based_on: sha256:6df473cf339e760b62c73bd5197eba6c1f0e6aecb1611caf54e9db638825b083
+    revision: 2
+    ai_assisted: true
+    text: Fourier was one of the greatest satirists of all time. He depicted the
+      swindling speculations that blossomed upon the downfall of the Revolution
+      and the shopkeeping spirit of French commerce. Still more masterly is his
+      criticism of the relations between sexes and the position of woman in
+      {bourgeoisie:adj} society. He was the first to declare that in any given
+      society, the degree of woman’s emancipation is the natural measure of
+      general emancipation.
+  p00023:
+    covers:
+      - p00023
+    based_on: sha256:8d7d20a17848bc12b3082b5e73a69cc57ae188b097fec3d0ade497089eff5ae7
+    revision: 2
+    ai_assisted: true
+    text: "Fourier is at his greatest in his conception of the history of society.
+      He divides its course into four stages: savagery, barbarism, the
+      patriarchate, and civilization. This last corresponds to the
+      {bourgeoisie:adj} society that began in the 16th century. He proves that
+      civilization raises every vice of barbarism into a complex, hypocritical
+      form. Civilization moves “in a vicious circle” of contradictions that it
+      cannot solve. Hence, “under civilization poverty is born of superabundance
+      itself” [Théorie de l’unite universelle, 1843, and Le nouveau monde
+      industriel, 1845]."
+  p00024:
+    covers:
+      - p00024
+    based_on: sha256:d3c279b8ec72bba4ca134c4aa074af0b6af0b465256412115dc1bca04ee5a6d5
+    revision: 2
+    ai_assisted: true
+    text: Fourier uses the dialectic method with the same mastery as his
+      contemporary, Hegel. Using dialectics against endless human
+      perfectibility, he argues that every historical phase has a period of
+      ascent and descent, applying this to humanity as a whole. As Kant
+      introduced the ultimate destruction of the Earth into natural science,
+      Fourier introduced the ultimate destruction of the human race into
+      historical science.
+  p00025:
+    covers:
+      - p00025
+    based_on: sha256:d9d52b57dc2d621adbea29b49aa84ee4a6134fb9d7b94f8f5f02730c19952489
+    revision: 3
+    ai_assisted: true
+    text: While the hurricane of the Revolution swept France, in England a quieter
+      but tremendous economic revolution was occurring. Steam and tool-making
+      machinery transformed manufacturing into {modern-industry:sg},
+      revolutionizing the foundation of {bourgeoisie:adj} society. Production
+      entered a stormy period of development. Society split with increasing
+      speed into large {bourgeoisie:persons} and non-possessing
+      {proletariat:pl}. Between them, an unstable mass of artisans and small
+      shopkeepers led a precarious existence.
+  p00026:
+    covers:
+      - p00026
+    based_on: sha256:b22ad2dc10cab388b82be351ed08cbfd1fe5c5e62245bae273b3d1d15b13e499
+    revision: 2
+    ai_assisted: true
+    text: "The new {mode-of-production:sg} was only at the beginning of its ascent.
+      Yet it produced crying social abuses: crowding a homeless population into
+      urban slums, loosening family ties and traditional authority, and
+      frightful overwork of women and children. The working class suffered
+      demoralization, suddenly flung from country to town, from agriculture to
+      {modern-industry:sg}, and from stable conditions into daily insecurity."
+  p00027:
+    covers:
+      - p00027
+    based_on: sha256:e4036cc7cee28f83bf1e32873fae4281af4eed31b56e1663eef84e4e7756f4ea
+    revision: 2
+    ai_assisted: true
+    text: "At this juncture, Robert Owen, a 29-years-old manufacturer, came forward
+      as a reformer. Owen adopted the teaching of materialist philosophers:
+      man’s character is formed by heredity and lifetime environment, especially
+      during childhood development. Where other manufacturers saw only chaos and
+      chances for quick fortunes, Owen saw the opportunity to bring order out of
+      chaos. From 1800 to 1829, he directed the cotton mill at New Lanark in
+      Scotland, managing more than 500 men and turning a population that grew to
+      2,500 into a model colony. Drunkenness, police, magistrates, lawsuits, and
+      poor-relief charity were unknown. He founded infant schools at New Lanark,
+      admitting children at age two. While competitors worked employees 13 or 14
+      hours daily, New Lanark worked only 10 and a half hours. When a cotton
+      crisis stopped work for four months, workers received full wages. The
+      business doubled in value and yielded large profits."
+  p00028:
+    covers:
+      - p00028
+    based_on: sha256:68364574c57e2d8ffb24898d06c6c7aedd595dd1c915901f5e4dc5c6bc783ef9
+    revision: 2
+    ai_assisted: true
+    text: In spite of all this, Owen was not content. The existence he secured for
+      workers was far from worthy of human beings. “The people were slaves at my
+      mercy.” These conditions were far from allowing rational development of
+      character and intellect, much less free exercise of their faculties.
+  p00029:
+    covers:
+      - p00029
+    based_on: sha256:985a25588852c8c9dcff3264f226d5b5a9b56c177daf46bc338db4876af78a63
+    revision: 3
+    ai_assisted: true
+    text: "“And yet, the working part of this population of 2,500 persons was daily
+      producing as much real wealth as 600,000 workers had produced fifty years
+      before. I asked myself: what became of the difference between the wealth
+      consumed by 2,500 persons and that consumed by 600,000?” [3]"
+  p00030:
+    covers:
+      - p00030
+    based_on: sha256:05715b50aaf4e554eddbb0f265c2f95a9ea596ca8c3728004515eb04c2612401
+    revision: 2
+    ai_assisted: true
+    text: The answer was clear. It had been used to pay the proprietors 5 per cent
+      on their laid-out capital, in addition to over £300,000 clear profit. That
+      which held for New Lanark held to a greater extent for all the factories
+      in England.
+  p00031:
+    covers:
+      - p00031
+    based_on: sha256:72b131f0705941c15be45857000dca3954b05cad832b7d2c5b471eda99ea9bce
+    revision: 2
+    ai_assisted: true
+    text: “If this new wealth had not been created by machinery, the wars of Europe,
+      in opposition to Napoleon and to support aristocratic principles, could
+      not have been maintained. And yet this new power was the creation of the
+      working-classes.”
+  p00032:
+    covers:
+      - p00032
+    based_on: sha256:b9d4f68ffc0b83852037cd43b3d003c4456a3204634f3f1bac5ad8aebf1bfea0
+    revision: 2
+    ai_assisted: true
+    text: Note, as cited above, page 22.
+  p00033:
+    covers:
+      - p00033
+    based_on: sha256:a6b2abb43f491e96537072054da8eb4e4888b2952c2460fbe7b3a8047fb1ed71
+    revision: 3
+    ai_assisted: true
+    text: To them, therefore, the fruits of this new power belonged. The newly
+      created gigantic {productive-forces:sg}, up to now used only to enrich
+      individuals and enslave the masses, offered Owen the foundation to
+      reconstruct society. They were destined to become common property, worked
+      for the common good of all.
+  p00034:
+    covers:
+      - p00034
+    based_on: sha256:493590f82d6eeb8da049ed98a675c049166faa7f7d384610a794f46b7a819533
+    revision: 2
+    ai_assisted: true
+    text: Owen’s {communism:sg} was based upon this business foundation, the outcome
+      of commercial calculation. Throughout, it maintained this practical
+      character. In 1823, Owen proposed relieving distress in Ireland by
+      {communism:adj} colonies, with complete estimates of costs, annual
+      expenditure, and probable revenue. His definite plans for the future
+      worked out technical details with practical knowledge, including
+      architectural plans and bird’s-eye views.
+  p00035:
+    covers:
+      - p00035
+    based_on: sha256:61b788deb98278a724684f379676181a9b1b4543cbf3929e556ede22c581b03b
+    revision: 2
+    ai_assisted: true
+    text: "His advance toward {communism:sg} was the turning-point in Owen’s life.
+      As long as he was simply a philanthropist, he received wealth, applause,
+      and honor. He was the most popular man in Europe, and statesmen and
+      princes listened to him. But when he came out with {communism:adj}
+      theories, that changed. Three great obstacles seemed to him to block
+      social reform: {private-property:sg}, religion, and the present form of
+      marriage."
+  p00036:
+    covers:
+      - p00036
+    based_on: sha256:b51b4d1e11bcb81389bacf9719f7886ba9e15ce7fa3284b4ea463ec708871a6f
+    revision: 2
+    ai_assisted: true
+    text: Owen knew that attacking these institutions meant outlawry and loss of
+      social position. Yet he attacked them fearlessly. Banished from official
+      society and ruined by unsuccessful {communism:adj} experiments in America,
+      he turned directly to the working class and worked in their midst for 30
+      years. Every real advance in England on behalf of workers links to Robert
+      Owen. In 1819, after five years’ fighting, he forced through the first law
+      limiting factory labor for women and children. He was president of the
+      first Congress uniting all Trade Unions of England into a single
+      association. As transition measures, he introduced cooperative societies
+      for retail and production, proving that merchants and private
+      manufacturers are socially unnecessary. He also introduced labor bazaars
+      exchanging products through labor-notes based on a single hour of work.
+  p00037:
+    covers:
+      - p00037
+    based_on: sha256:73859cf8785c2ebf1835abb30aa90052e004ee86fa35f6e0ba956c3dd7b8eb74
+    revision: 2
+    ai_assisted: true
+    text: "The Utopians’ mode of thought long governed 19th century socialist ideas
+      in France and England. Early German {communism:sg}, including Weitling’s,
+      followed it. To all these, socialism is the expression of absolute truth,
+      reason, and justice, needing only discovery to conquer the world. Because
+      absolute truth is independent of historical development, its discovery
+      seems a mere accident. Furthermore, absolute truth differs with the
+      founder of each school. Conditioned by subjective understanding, these
+      conflicting absolute truths mutually exclude each other. Hence arose an
+      eclectic, average socialism in France and England: a mish-mash of critical
+      statements and future pictures that excite a minimum of opposition, rubbed
+      smooth like pebbles in a brook."
+  p00038:
+    covers:
+      - p00038
+    based_on: sha256:4e33af8d0a912deef9d005d67f02f053a1e06f485eeabb568fcad6038ae141c3
+    revision: 2
+    ai_assisted: true
+    text: To make a science of socialism, it had first to be placed upon a real,
+      material basis.
+  p00039:
+    covers:
+      - p00039
+    based_on: sha256:b09dfa1f6b4b67b0b65a7fbe5453e6698f1bc3bb38520b1fdf4baa4872b7f457
+    revision: 2
+    ai_assisted: true
+    text: "This is the passage on the French Revolution:<br/><br/>“Thought, the
+      concept of law, all at once made itself felt, and the old scaffolding of
+      wrong could make no stand. A constitution has now been established on this
+      concept of law, and everything must be based upon this. Since the Sun had
+      been in the firmament, the sight had never been seen of man standing upon
+      his head: that is, on the Idea, building reality after this image.
+      Anaxagoras said Reason rules the world. Now for the first time men
+      recognized that the Idea must rule mental reality. This was a magnificent
+      sunrise. All thinking Beings participated in celebrating this day. An
+      enthusiasm of reason pervaded the world, as if reconciliation with the
+      Divine Principle had come.”<br/><br/>Is it not high time to set the
+      Anti-Socialist Law in action against such subversive teachings by
+      Professor Hegel?"
+  p00040:
+    covers:
+      - p00040
+    based_on: sha256:6d217b6c7517f2e42ced393e6a0800d8e6da7071bb1b4b1f8c68c374902cb8e8
+    revision: 2
+    ai_assisted: true
+    text: Engels refers here to the works of utopian Socialists Thomas More in the
+      16th century and Tommaso Campanella in the 17th century. See Code de la
+      nature, Morelly, Paris 1841 and De la législation, Mably, Amsterdam
+      1776.<br/><br/>3. From The Revolution in Mind and Practice, p. 21, a
+      memorial addressed to the “red Republicans, Communists and Socialists of
+      Europe,” sent to the provisional government of France in 1848, and to
+      Queen Victoria.

@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch01
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00003]
+    text: |-
+      In eighteenth-century France, Enlightenment philosophers like Voltaire, Diderot, and Rousseau subjected religion, feudal institutions, and the state to reason.
+
+      They believed that removing feudal privileges would establish an era of universal freedom and equality.
+
+      In practice, this idealized realm of reason established the political supremacy and market rule of the rising capitalist class.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00015]
+    text: |-
+      Claude-Henri de Saint-Simon and Charles Fourier developed early socialist theories in France after the French Revolution.
+
+      Observing the misery and corruption of new commercial society, they designed ideal social schemes from reason rather than class struggle.
+
+      Marx and Engels recognized their brilliant critiques of bourgeois hypocrisy while noting that immature capitalist development limited their theories.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00027]
+    text: |-
+      Robert Owen managed the New Lanark cotton mills in Scotland from 1800 to 1829.
+
+      He reduced work hours, opened the first infant schools, and banned child labor below age ten.
+
+      Owen later sacrificed his fortune to found cooperative villages and trade unions, proving that private capitalists were not socially necessary.
+    ai_assisted: true

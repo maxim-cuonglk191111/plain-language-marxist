@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch02
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00002]
+    text: |-
+      German classical philosophy began with Immanuel Kant in the late eighteenth century and culminated in Georg Wilhelm Friedrich Hegel.
+
+      Kant proposed that the solar system evolved from nebulae, while Hegel revived dialectics as the philosophy of universal development.
+
+      However, Hegel remained an idealist who viewed history as the unfolding of an eternal absolute Idea.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00015]
+    text: |-
+      Hegel viewed historical events as reflections of thought, turning the real world on its head.
+
+      Marx and Engels inverted Hegelian dialectics by demonstrating that human ideas reflect material and economic relations.
+
+      This materialist inversion transformed dialectics from mystical speculation into a scientific method for analysing nature and history.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00024]
+    text: |-
+      Marx solved the central paradox of classical political economy by discovering the secret of surplus value.
+
+      Capitalists buy labour power at its market value, but compel workers to labour beyond necessary reproduction time.
+
+      This unpaid surplus labour creates surplus value, explaining how capital accumulates without violating laws of exchange.
+    ai_assisted: true

@@ -1,0 +1,774 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch03
+language: en
+register: plain
+renderings:
+  p00001:
+    covers:
+      - p00001
+    based_on: sha256:4e1e4ab87465d360f6b39a0eb1f742c8da76ef51bf4df8e157fb21631ed39120
+    revision: 1
+    ai_assisted: true
+    text: III<br/>[Historical Materialism]
+  p00002:
+    covers:
+      - p00002
+    based_on: sha256:a390dd074df9c1cfa0e5660b9c1e083487d3e1c334929a822f7f67e0f88e0a72
+    revision: 1
+    ai_assisted: true
+    text: The materialist conception of history starts from a basic fact. Making the
+      {means-of-subsistence:sg} and trading what is made form the foundation of
+      every social order. In every society throughout history, how wealth is
+      divided and how classes form depend on what is produced, how it is made,
+      and how goods are exchanged. From this viewpoint, the root causes of all
+      social changes and political revolutions do not lie in human ideas or new
+      insights into eternal truth and justice. They lie in changes to the
+      {mode-of-production:pl} and exchange. They belong to economics, not to
+      philosophy. The growing sense that existing institutions are unfair and
+      unreasonable is evidence of deeper change. It shows that production and
+      exchange have changed quietly, so that the old social order no longer fits
+      them <fn ref="1"/>. The means to resolve these problems must therefore
+      already exist inside the new {mode-of-production:pl}. Thinkers do not need
+      to invent these solutions out of pure theory. They must discover them in
+      the real facts of the existing economic system.
+  p00003:
+    covers:
+      - p00003
+    based_on: sha256:bbcb46fdde7c317b2b08c56084d0edde727b0100a0ba5e3c83abbfc8256cb8ba
+    revision: 1
+    ai_assisted: true
+    text: Where does modern socialism stand in relation to this fact?
+  p00004:
+    covers:
+      - p00004
+    based_on: sha256:ecd4ad388a4b07e4b450840ac215f376a8de46354a86c4cd6d83894093e28403
+    revision: 1
+    ai_assisted: true
+    text: Most people now agree that the {bourgeoisie:sg} created modern society.
+      The {bourgeoisie:adj} {mode-of-production:sg}, called capitalism since
+      Marx, could not fit inside the feudal order. Feudalism rested on inherited
+      privilege, local guilds, and hereditary ranks. The {bourgeoisie:sg}
+      smashed feudalism and built the capitalist order upon its ruins. It
+      established free competition, personal freedom, and legal equality for all
+      owners of a {commodity:sg}. From then on, the capitalist
+      {mode-of-production:sg} expanded freely. Steam, machinery, and machine
+      manufacturing turned {manufacture:sg} into {modern-industry:sg}. Under
+      {bourgeoisie:adj} guidance, {productive-forces:sg} grew with unprecedented
+      speed. But just as earlier manufacturing clashed with medieval guild
+      rules, {modern-industry:sg} now clashes with capitalist limits. The new
+      {productive-forces:sg} have outgrown the capitalist system that uses them.
+      This conflict between {productive-forces:sg} and the
+      {mode-of-production:sg} is not an imaginary battle of ideas. It exists in
+      objective reality, outside our minds and beyond the control of those who
+      created it. Modern socialism is simply the reflection of this real
+      conflict in thought. It is mirrored first in the minds of the
+      {proletariat:sg}, who suffer under it.
+  p00005:
+    covers:
+      - p00005
+    based_on: sha256:1e2cbc1b4c40a0c4f6998052dc7ce710aebc71d3dc074cd6232a6d22230961ff
+    revision: 1
+    ai_assisted: true
+    text: What does this conflict actually consist of?
+  p00006:
+    covers:
+      - p00006
+    based_on: sha256:da1f7dd80ed49e9094f96510de7398cd53a6d0ccdb3104edd12503ea1332cb13
+    revision: 1
+    ai_assisted: true
+    text: "Before capitalism, in the Middle Ages, small-scale industry was the
+      general rule. It rested on the {private-property:sg} of producers in their
+      {means-of-production:sg}. In the countryside, small peasants, freemen, or
+      {serf:pl} farmed the land. In towns, guilds organized craft workers. The
+      {instruments-of-production:sg} belonged to single individuals. They were
+      small and limited, designed for one person to use alone. But for this
+      reason, they usually belonged to the worker. Bringing together these
+      scattered {means-of-production:sg}, enlarging them, and turning them into
+      mighty forces was the historic role of capitalism and the
+      {bourgeoisie:sg}. In Capital, Marx showed in detail how this developed
+      since the 15th century through cooperation, {manufacture:sg}, and
+      {modern-industry:sg}. The {bourgeoisie:sg} could not turn these weak tools
+      into mighty {productive-forces:sg} without turning them into social
+      {means-of-production:sg}. Tools for one person became machines that only
+      large groups could run together. Spinning wheels, hand looms, and
+      blacksmiths' hammers gave way to spinning machines, power looms, and steam
+      hammers. Small workshops became huge factories where thousands of workers
+      cooperated. Production changed from separate individual acts into a shared
+      social process. Yarn, cloth, and metal goods became the collective product
+      of many hands. No single worker could say: \"I made that; this is my
+      product.\""
+  p00007:
+    covers:
+      - p00007
+    based_on: sha256:ce27c12545152d75ed0851819cdbf50ebe3e029749728cc419311548010ffe0e
+    revision: 1
+    ai_assisted: true
+    text: "When work divides spontaneously across society without an overall plan,
+      goods take the form of each {commodity:sg}. Producers buy and sell these
+      goods to meet their various needs. This was the case in the Middle Ages,
+      when peasants sold food to craft workers and bought tools in return. The
+      new capitalist {mode-of-production:sg} forced its way into this world of
+      commodity producers. Alongside the unplanned {division-of-labour:sg} in
+      society, planned {division-of-labour:sg} appeared inside the factory.
+      Social production arose right next to individual production. Both groups
+      sold their goods in the same market at similar prices. But planned factory
+      organization proved far more efficient. Factories using combined social
+      labor produced each {commodity:sg} much more cheaply. Small independent
+      producers were ruined across one trade after another. Social production
+      transformed all old methods of work. Yet people did not see its
+      revolutionary nature at first. Instead, they treated it as a convenient
+      way to expand commerce. It made ready use of existing commercial tools:
+      merchant {capital:sg}, craft skills, and {wage-labour:sg}. Because social
+      production arrived as a way to make commodities, old forms of
+      {appropriation:sg} stayed in place and applied to its products."
+  p00008:
+    covers:
+      - p00008
+    based_on: sha256:d56fbf32eb8f72159cc2b0dccaa5bbafa8efbfa0306cbab8cdb0678f379f8533
+    revision: 1
+    ai_assisted: true
+    text: In medieval commodity production, no one questioned who owned the finished
+      product. The individual producer usually owned the raw materials, made the
+      item with his own tools, and relied on his own labor or family. There was
+      no need to ask who had the right of {appropriation:sg}. The product
+      belonged to him naturally, because he had made it himself. Property in the
+      product rested on his own labor. When he hired help, it was minor and
+      rarely paid in simple wages. Guild apprentices and {journeyman:pl} worked
+      mainly to learn the craft and become master craftsmen themselves.
+  p00009:
+    covers:
+      - p00009
+    based_on: sha256:fb219bb7c325418e012c6254b7cec93cdd7c8c9eb6d6ca673ee028ba142f6411
+    revision: 1
+    ai_assisted: true
+    text: Next came the gathering of {means-of-production:sg} and workers into large
+      factories, turning them into social forces. Yet society continued to treat
+      these social tools and goods as if they were private property. Previously,
+      the owner of tools kept the product because he made it himself. Now, the
+      factory owner kept the product even though it was made entirely by the
+      labor of others. Social products were not claimed by the {proletariat:pl}
+      who operated the machines. They were seized by {bourgeoisie:persons}.
+      Production had become social, but {appropriation:sg} remained private. The
+      system applied a rule meant for individual workers to collective labor,
+      even though modern methods had destroyed individual production <fn
+      ref="2"/>!
+  p00010:
+    covers:
+      - p00010
+    based_on: sha256:afaae6af9331c7ba27f45e0ab74872a343de5bf0f8e9b98e09fdadbeb34f7f36
+    revision: 1
+    ai_assisted: true
+    text: This contradiction gives capitalism its special character and contains the
+      seed of every modern social clash. As the capitalist
+      {mode-of-production:sg} conquered industry and reduced individual
+      workshops to a tiny fraction, this clash grew sharper. Social production
+      could no longer fit inside capitalist {appropriation:sg}.
+  p00011:
+    covers:
+      - p00011
+    based_on: sha256:2f6bcc68fe85337cdf7df75a26fbc6dfec401a22edbb09b0cacd06f1e0d2f5c8
+    revision: 1
+    ai_assisted: true
+    text: The earliest {bourgeoisie:persons} found {wage-labour:sg} already
+      existing, but it was rare and temporary. A rural laborer might work for
+      wages for a few days, but he still farmed a small plot to survive. A guild
+      {journeyman:sg} could expect to become a master craftsman. Everything
+      changed once {means-of-production:sg} were concentrated in
+      {bourgeoisie:adj} hands. The tools of the independent craftsman became
+      useless, leaving him no choice but to work for wages. What was once a rare
+      exception became the foundation of all production. Temporary wage work
+      became lifelong wage slavery. This army of {proletariat:pl} grew rapidly
+      as feudal bands dissolved and peasants were driven from their land. A
+      complete split opened between the owners of {means-of-production:sg} and
+      workers who owned only {labour-power:sg}. The contradiction between social
+      production and capitalist {appropriation:sg} took shape as the
+      {class-antagonism:sg} between {proletariat:sg} and {bourgeoisie:sg}.
+  p00012:
+    covers:
+      - p00012
+    based_on: sha256:3cf4267f81fe39fa77bb86de5bf67c9e490d82d8e296d8de1aaddf8d3244c2ae
+    revision: 1
+    ai_assisted: true
+    text: We saw how capitalism entered a world where independent producers were
+      linked only by trade. But whenever society produces commodities, producers
+      lose control over their own social relations. Each person produces for
+      himself with whatever {means-of-production:sg} he may have, trading to
+      satisfy his needs. No one knows how much of his good is entering the
+      market or how much buyers want. No one knows if his {commodity:sg} will
+      find a buyer or even cover costs. Anarchy rules across social production.
+  p00013:
+    covers:
+      - p00013
+    based_on: sha256:1ce58404ad2c9252b4bd8c3b34b2822d28637b9c4bda05599172ade920f31a60
+    revision: 1
+    ai_assisted: true
+    text: Yet commodity production has its own built-in laws that operate through
+      this disorder. These laws appear in exchange, where competition forces
+      itself on individual producers. At first, producers do not understand
+      these laws; they discover them through painful experience. The laws work
+      blindly and against the producers, like unbending natural forces. The
+      product rules the producer.
+  p00014:
+    covers:
+      - p00014
+    based_on: sha256:f12071aa7c0fc32497c6cf7cf8ae41f780852b8cc30f9d5577344a5d83cb6364
+    revision: 1
+    ai_assisted: true
+    text: In the early Middle Ages, production aimed to meet direct personal needs.
+      It satisfied the producer and his household, plus the feudal lord where
+      serfdom existed. Because there was no trade, goods were not commodities.
+      Peasant families made their own clothes, furniture, and
+      {means-of-subsistence:sg}. Only when they produced a surplus beyond family
+      needs and feudal dues did they create each {commodity:sg}. That surplus,
+      thrown into trade, became commodities.
+  p00015:
+    covers:
+      - p00015
+    based_on: sha256:458fcedbcabaa305dd095403af07bc60fc0a11fa05f799968f739986244a1244
+    revision: 1
+    ai_assisted: true
+    text: Town craft workers produced for exchange, but they still met most of their
+      own needs. They kept gardens, grazed livestock on common land, gathered
+      wood, and spun yarn at home. Commodity production was only in its infancy.
+      Trade remained small, markets were narrow, and techniques were fixed.
+      Villages had their communal lands, while towns were protected by closed
+      guilds.
+  p00016:
+    covers:
+      - p00016
+    based_on: sha256:b3ca6d33c5c42cf1ee68eac995c182c25249a177f030574ac1676481f6ea68ca
+    revision: 1
+    ai_assisted: true
+    text: "As commodity production grew and capitalism took hold, hidden economic
+      laws broke into the open. Old guild ties crumbled, turning people into
+      isolated commodity sellers. Social production was ruled by chance and
+      disorder, and this anarchy steadily deepened. The main tool capitalism
+      used to increase this disorder seemed like its exact opposite: tight
+      organization inside each workplace. Wherever organized factories appeared,
+      they destroyed older methods. Industry turned into a battlefield. Global
+      voyages and colonization created new markets, speeding the move from
+      handicrafts to {manufacture:sg}. Local rivalries grew into national
+      struggles, causing the great commercial wars of the 17th and 18th
+      centuries."
+  p00017:
+    covers:
+      - p00017
+    based_on: sha256:4260602efaf781851b8372baf12ecdcdbbf05d4d5e5d0bfe5c8f3b068e592742
+    revision: 1
+    ai_assisted: true
+    text: "With {modern-industry:sg} and the {world-market:sg}, this struggle became
+      universal and fierce. Better machinery or natural conditions decided
+      whether individual {bourgeoisie:persons}, whole industries, or even
+      countries survived. Those who fell behind were destroyed without mercy. It
+      was the Darwinian struggle of individuals for existence, transferred from
+      Nature to society with greater violence. Animal conditions of existence
+      seemed to become the final goal of human progress. The conflict between
+      social production and capitalist {appropriation:sg} now appeared as an
+      antagonism: planned order inside the factory versus complete anarchy
+      across society."
+  p00018:
+    covers:
+      - p00018
+    based_on: sha256:f6717a7f69626218761adbe54e9a97d612c2970adaf8cea588afd71298b5013a
+    revision: 1
+    ai_assisted: true
+    text: The capitalist {mode-of-production:sg} moves within these two built-in
+      contradictions. It cannot escape that "vicious circle" which Fourier
+      discovered. What Fourier could not see was that this circle narrows into a
+      spiral, heading toward a final clash. Market anarchy forces the vast
+      majority into becoming {proletariat:pl}, and these workers will eventually
+      abolish that disorder. At the same time, market disorder turns machine
+      improvement into an iron law. Every {bourgeoisie:person} must constantly
+      upgrade machinery or face bankruptcy.
+  p00019:
+    covers:
+      - p00019
+    based_on: sha256:5a00b81b776db0d0a3727f8f2506435f6e110892b24c236a041150ff0af31903
+    revision: 1
+    ai_assisted: true
+    text: 'Yet better machines make human labor unnecessary. When machines replace
+      hand workers, better machines replace machine workers too. This creates a
+      surplus of {wage-labour:sg} beyond what {capital:sg} needs: an industrial
+      reserve army, as I named it in 1845 <fn ref="3"/>. These unemployed
+      workers are hired during boom times, then dumped onto the street during
+      crashes. They weigh down the {proletariat:sg} in its struggle against
+      {capital:sg}, keeping wages low to suit {bourgeoisie:adj} interests.'
+  p00020:
+    covers:
+      - p00020
+    based_on: sha256:51630c73c5f2675a900911b2a0ae1f233540d82b28913d547cdd32ad29519c11
+    revision: 1
+    ai_assisted: true
+    text: As Marx wrote, machinery becomes the deadliest weapon of {capital:sg}
+      against the {proletariat:sg}. Tools take the {means-of-subsistence:sg}
+      away from the {proletariat:person}. The very product of the worker turns
+      into a tool to enslave him.
+  p00021:
+    covers:
+      - p00021
+    based_on: sha256:886b8e0de29857be095b4d5088c28ab9926987768911dfcf0be02d8b2f68108f
+    revision: 1
+    ai_assisted: true
+    text: Saving costs on machinery becomes reckless waste of {labour-power:sg} and
+      robbery of normal working conditions. In this way, machinery,
+  p00022:
+    covers:
+      - p00022
+    based_on: sha256:3a446fe5a8a5ec1507fbca29bec41ba44a7f8f73186546f3266679590c4db40e
+    revision: 1
+    ai_assisted: true
+    text: '"The most powerful instrument for shortening labor time becomes the
+      surest means for expanding capital value. It places all the time of the
+      worker and his family into the hands of the capitalist." (Marx, Capital,
+      English edition, page 406)'
+  p00023:
+    covers:
+      - p00023
+    based_on: sha256:e6ecf789bcc136bcdc3bfa3fc97a189486fa0463adcd9c49c392c4f1890a2374
+    revision: 1
+    ai_assisted: true
+    text: The overwork of some workers leads directly to the unemployment of others.
+      {modern-industry:sg} hunts worldwide for buyers while pushing domestic
+      workers down to starvation wages, wrecking its own home market.
+  p00024:
+    covers:
+      - p00024
+    based_on: sha256:f4161bca04eff66d9d739eb8992ad5f1bfd1425ecd48e39f157673eab3865a99
+    revision: 1
+    ai_assisted: true
+    text: '"The law balancing surplus population against capital growth binds the
+      worker to capital tighter than Vulcan chained Prometheus to the rock.
+      Accumulating wealth at one pole means accumulating misery, exhausting
+      labor, slavery, ignorance, and mental degradation at the opposite pole,
+      among the class producing its own product in the form of capital." (Marx,
+      Capital, page 661)'
+  p00025:
+    covers:
+      - p00025
+    based_on: sha256:4d0f8aa0902212c0a19ebbe767a0a99b8920f26f5cee12191fb4a560e41d7665
+    revision: 1
+    ai_assisted: true
+    text: Expecting any other distribution of wealth from the capitalist
+      {mode-of-production:sg} is like expecting battery electrodes not to
+      separate water into oxygen and hydrogen while the current runs.
+  p00026:
+    covers:
+      - p00026
+    based_on: sha256:bc1c858a162f3840002510840bd83800bc4bc9fa29dcbe9f8f704c1e56ceb3dc
+    revision: 1
+    ai_assisted: true
+    text: 'Social anarchy forces each {bourgeoisie:person} to improve machinery and
+      expand production endlessly. The immense power of {modern-industry:sg}
+      makes rapid expansion an absolute necessity. But this expansion runs into
+      limits: consumer demand and available markets. Markets expand under slower
+      economic laws and cannot keep pace with surging factory output. A
+      collision is inevitable. Because it cannot be solved without overturning
+      capitalism, this collision repeats periodically. Capitalism has created
+      another "vicious circle".'
+  p00027:
+    covers:
+      - p00027
+    based_on: sha256:86749e2488f6c08babae331ec2aea3f90dbe9bc09198c2f981a63a2b96b61f1a
+    revision: 1
+    ai_assisted: true
+    text: Since the first general crash in 1825, the commercial world has broken
+      down roughly once every 10 years. Trade stops, markets are choked, unsold
+      goods pile up, cash vanishes, and credit dries up. Factories close,
+      leaving masses of {proletariat:pl} lacking {means-of-subsistence:sg}
+      simply because they made too much! Bankruptcies multiply. Stagnation lasts
+      for years while {productive-forces:sg} and goods are wasted. Finally,
+      stocks clear at lowered prices and trade restarts. Recovery moves slowly,
+      speeds to a trot, then a gallop of wild speculation, before crashing into
+      the next ditch of a {commercial-crisis:sg}. Since 1825, this cycle has
+      repeated five times, and in 1877 we face the sixth. Fourier described it
+      accurately as a "crisis from plethora", or a crisis of abundance.
+  p00028:
+    covers:
+      - p00028
+    based_on: sha256:b633fc22b866ea7a44d7732e2641ac5da741d9999857b6b80f07960c8ad9e6c1
+    revision: 1
+    ai_assisted: true
+    text: "In each {commercial-crisis:sg}, the clash between social production and
+      capitalist {appropriation:sg} explodes. The flow of commodities stops,
+      money becomes an obstacle, and market laws turn upside down. The conflict
+      peaks: the {mode-of-production:sg} rebels against the system of exchange."
+  p00029:
+    covers:
+      - p00029
+    based_on: sha256:7d69545659b9ea3d6545da4714ab94ca4df56f1e1d7fb12a8513cc11021c6592
+    revision: 1
+    ai_assisted: true
+    text: During each crisis, ruin crushes small and large {bourgeoisie:persons},
+      concentrating {capital:sg}. Capitalism breaks down beneath the weight of
+      {productive-forces:sg} it created. It cannot turn this huge mass of
+      {means-of-production:sg} into {capital:sg}. Factories stand idle, so the
+      industrial reserve army sits idle too. {means-of-production:sg},
+      {means-of-subsistence:sg}, and willing workers exist in plenty. Yet
+      "abundance becomes the source of distress and want" (Fourier), because
+      goods cannot become {capital:sg}. Under capitalism, tools cannot function
+      unless they can exploit {labour-power:sg} for profit. This barrier
+      prevents workers from using tools to live. Capitalism stands convicted of
+      its inability to manage modern industry. Meanwhile, {productive-forces:sg}
+      demand to be freed from {capital:sg} and treated as collective social
+      tools.
+  p00030:
+    covers:
+      - p00030
+    based_on: sha256:a833f43b7730ea7fa9774d13a6b94714352d4f816f64f52b4b791ebce6393b7d
+    revision: 1
+    ai_assisted: true
+    text: This revolt of {productive-forces:sg} forces the {bourgeoisie:sg} to treat
+      them as social forces as far as capitalism allows. Booms with inflated
+      credit and massive crashes push businesses into joint-stock corporations.
+      Colossal operations like railways are too large for single capitalists.
+      Later, even corporations prove insufficient. Large producers form trusts
+      to regulate output, divide quotas, and fix prices. When downturns break
+      these trusts, they merge into unified monopolies. In 1890, 48 chemical
+      works merged into one English alkali company with 6,000,000 pounds in
+      {capital:sg}.
+  p00031:
+    covers:
+      - p00031
+    based_on: sha256:273069e47821148789f6eaa983ec0e4df690fbf6bd3ca623c34efe43ca2e559f
+    revision: 1
+    ai_assisted: true
+    text: Inside trusts, free competition turns into monopoly, and unplanned
+      capitalism gives way to planned production. While this still enriches
+      {bourgeoisie:persons}, their {exploitation:sg} becomes so blatant that
+      society cannot tolerate it. No nation will submit to open robbery by a
+      small ring of dividend collectors.
+  p00032:
+    covers:
+      - p00032
+    based_on: sha256:6e6750f1a19233c91537d19a632777076186fccfe9392322a7a2b2d67d420cb9
+    revision: 1
+    ai_assisted: true
+    text: 'Eventually, with or without trusts, the State must take charge of
+      production <fn ref="4"/>. This shift begins with large transport and
+      communication networks: posts, telegraphs, and railways.'
+  p00033:
+    covers:
+      - p00033
+    based_on: sha256:d2599f2e5df6f62612a75bfa2cebc791bf6c28b3b96c3261c5cfacd48b19fb12
+    revision: 1
+    ai_assisted: true
+    text: Crises show that the {bourgeoisie:sg} cannot manage modern
+      {productive-forces:sg}. Joint-stock companies, trusts, and State property
+      prove that the {bourgeoisie:sg} is useless for production. Capitalists
+      have no work left except taking dividends and gambling on the Stock
+      Exchange. At first, capitalism displaced {proletariat:pl}; now, it
+      displaces {bourgeoisie:persons}, making them superfluous.
+  p00034:
+    covers:
+      - p00034
+    based_on: sha256:fb6aa04d9a801a7b8664be9b856952a74ebbd8e01a32a533fc0f461550edbadb
+    revision: 1
+    ai_assisted: true
+    text: "Yet corporate monopolies or State-ownership do not remove the capitalist
+      nature of {productive-forces:sg}. The modern State is simply the
+      organization that {bourgeoisie:adj} society uses to protect capitalist
+      rules. Regardless of its form, the modern State remains a capitalist
+      machine: the state of {bourgeoisie:persons}, the ideal embodiment of total
+      national {capital:sg}. The more it takes over industry, the more it
+      becomes the national capitalist and exploits citizens. Workers remain
+      {proletariat:pl} on wages. The capitalist relation is brought to a peak,
+      where it must break. State ownership is not the final solution, but it
+      contains the technical means for it."
+  p00035:
+    covers:
+      - p00035
+    based_on: sha256:d4add0d18d6c6a949f7093ef17d20f3208c2394479732bdf03b610e5bbedde09
+    revision: 1
+    ai_assisted: true
+    text: The real solution lies in recognizing the social nature of
+      {productive-forces:sg}. Society must take collective control of
+      {means-of-production:sg} that have outgrown all other management. Today,
+      the social character of production acts against producers like a
+      destructive force of Nature. Once society takes charge, producers will
+      guide these {productive-forces:sg} consciously. Instead of causing
+      collapse, they will become humanity's greatest engine of abundance.
+  p00036:
+    covers:
+      - p00036
+    based_on: sha256:3cbce5239da13002eafd6e7a5f8a7da934023330ece0467a0d3b87f1238ae90f
+    revision: 1
+    ai_assisted: true
+    text: "Social forces act like nature: blindly and destructively while we fail to
+      understand them. But once we understand their direction, we can bend them
+      to our collective will. This applies directly to modern
+      {productive-forces:sg}. As long as capitalism refuses to grasp their
+      social nature, these forces rule over us and cause devastation."
+  p00037:
+    covers:
+      - p00037
+    based_on: sha256:71d4caf95a2b6f1bad48f597d2962965e72cee97f9b233694526150424ddc91c
+    revision: 1
+    ai_assisted: true
+    text: "Once understood, {productive-forces:sg} in workers' hands turn from cruel
+      masters into useful servants. The difference is like lightning striking
+      versus electricity powering a telegraph. Social anarchy will yield to
+      planned production tailored to the needs of all. Capitalist
+      {appropriation:sg} will be replaced by a new system suited to modern
+      tools: collective ownership of {means-of-production:sg} to maintain
+      industry, and personal distribution of goods for individual life and
+      enjoyment."
+  p00038:
+    covers:
+      - p00038
+    based_on: sha256:9797ce6e25734be3bba223816d82c57f8f46273300db6747e53c3f5edc63bf13
+    revision: 1
+    ai_assisted: true
+    text: By turning the majority into {proletariat:pl}, capitalism creates the
+      force compelled to carry out this {revolution:sg}. By turning large
+      enterprises into State property, it points the way forward. The
+      {proletariat:sg} seizes political power and transforms the
+      {means-of-production:sg} into State property.
+  p00039:
+    covers:
+      - p00039
+    based_on: sha256:c5a198d0d205e5764cc934f146f0c0d31ed34af5d1b3b2660e75e6cdd93aaf23
+    revision: 1
+    ai_assisted: true
+    text: "In doing this, the {proletariat:sg} abolishes itself as a class, ends all
+      {class-antagonism:pl}, and dissolves the State as state. Previous
+      societies needed the State to defend class rule. The ruling class used the
+      state apparatus to hold down the exploited classes in slavery, serfdom, or
+      {wage-labour:sg}. The State claimed to represent whole societies, but it
+      represented only the ruling class of each era:"
+  p00040:
+    covers:
+      - p00040
+    based_on: sha256:d5d12ca187f0d5efb18ce7421da5034dd869459525c32a3e88a2d5a8f48426b9
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>in ancient times, the State of slaveowners;<br/>in the
+      Middle Ages, feudal lords;<br/>in our time, the {bourgeoisie:sg}.
+  p00041:
+    covers:
+      - p00041
+    based_on: sha256:e74c7cf5fe36d0831139b0004d66010381f86769076c05b947d3bfda063851d7
+    revision: 1
+    ai_assisted: true
+    text: When the State finally represents all society, it makes itself
+      unnecessary. With no class to oppress and no brutal struggle for survival
+      under market anarchy, there is nothing left to repress. A special coercive
+      force is no longer needed. The first act in which the State acts for all
+      society, taking control of the {means-of-production:sg}, is its last act
+      as a state. State interference dies out across every field. Governing
+      people gives way to administering goods and production processes. The
+      State is not "abolished". <i>It dies out.</i> This explains why phrases
+      like "a free State" are unscientific, and why anarchist demands to destroy
+      the State overnight are mistaken.
+  p00042:
+    covers:
+      - p00042
+    based_on: sha256:a12f0683f7e1725e860813e344c8127560194f53dc70c37a65a5aafdfa3212b7
+    revision: 1
+    ai_assisted: true
+    text: Ever since capitalism arose, individuals and sects have dreamed of
+      collective ownership of {means-of-production:sg}. But this became possible
+      only when material conditions matured. Class abolition happens not because
+      people realize classes are unfair, but through new economic foundations.
+      Class division was necessary in the past because production was low. When
+      total labor yielded barely enough to survive, nearly everyone had to work
+      constantly. Alongside this majority emerged a ruling class freed from
+      manual labor to govern, conduct State business, develop science, and
+      create art. The {division-of-labour:sg} underlies class division. Yet
+      ruling classes consolidated power through violence, theft, and deceit,
+      turning leadership into harsher {exploitation:sg} of the {proletariat:sg}.
+  p00043:
+    covers:
+      - p00043
+    based_on: sha256:22d2417fa29d8cf9e620e96baa55604e4303a9b7ba422c2bee9442a49ec8f3ce
+    revision: 1
+    ai_assisted: true
+    text: Although class division had historical justification, it applied only
+      while production remained scarce. The expansion of modern
+      {productive-forces:sg} sweeps it away. Ending classes requires historical
+      conditions where any ruling class has become outdated. It requires
+      production developed so far that class rule, cultural monopolies, and
+      private {appropriation:sg} of {means-of-production:sg} become direct
+      barriers to human progress.
+  p00044:
+    covers:
+      - p00044
+    based_on: sha256:8214e3f69fd1cef8f000cc5efde683e333ee0d83600a7e81b5dca4b038774dc0
+    revision: 1
+    ai_assisted: true
+    text: Society has reached that point. The political bankruptcy of the
+      {bourgeoisie:sg} is obvious, while economic bankruptcy repeats regularly
+      every 10 years. In every {commercial-crisis:sg}, society chokes under
+      {productive-forces:sg} it cannot use, while {proletariat:pl} starve
+      because consumers are missing. Breaking capitalist chains on production
+      allows {productive-forces:sg} to expand freely. Social ownership ends
+      artificial restrictions and stops the destruction of goods during crises.
+      It eliminates the luxury waste of ruling classes. For the first time,
+      society can guarantee every person a secure material life and full
+      development of their physical and mental powers <fn ref="5"/>!
+  p00045:
+    covers:
+      - p00045
+    based_on: sha256:acc6c0fd21df095222451e06649e0a9432b53edb15036a1dc066ca471a4b03c1
+    revision: 1
+    ai_assisted: true
+    text: When society takes over the {means-of-production:sg}, commodity production
+      ends, and products no longer rule producers. Planned organization replaces
+      social anarchy. The desperate struggle for individual survival ends.
+      Humanity leaves animal conditions behind and enters truly human life.
+      People master their own social organization, becoming conscious masters of
+      Nature. Social laws that once ruled over humanity like blind natural
+      forces will be understood and controlled. From this point on, humanity
+      consciously makes its own history. It is humanity's leap from the realm of
+      necessity into the realm of freedom.
+  p00046:
+    covers:
+      - p00046
+    based_on: sha256:5bee14fd6d07787eb8d4e0c99833eb808bf640d3de19b6ccae368a2f1926798a
+    revision: 1
+    ai_assisted: true
+    text: Let us briefly summarize this historical development.
+  p00047:
+    covers:
+      - p00047
+    based_on: sha256:021363eb5e97030f38cfbebedf3ec14f7f8a81196cdb23f003f26ee6ccc51f01
+    revision: 1
+    ai_assisted: true
+    text: "I. Medieval Society: Individual production on a small scale.
+      {means-of-production:sg} adapted for individual use, hence primitive and
+      limited. Production served the immediate needs of the producer or feudal
+      lord. Surpluses were traded, so commodity production was only beginning.
+      Yet it already contained the seed of market disorder across society."
+  p00048:
+    covers:
+      - p00048
+    based_on: sha256:fa5d8b2b16941823f12d494a9ee7f903ba6711e451d4f0b0276bfb90f6602af2
+    revision: 1
+    ai_assisted: true
+    text: "II. Capitalist Revolution: Industry transforms through cooperation and
+      {manufacture:sg}. Scattered {means-of-production:sg} gather into large
+      factories, turning into social tools. Yet forms of exchange remain
+      unchanged. Old rules of {appropriation:sg} continue. The
+      {bourgeoisie:person} owns the {means-of-production:sg} and takes the
+      goods, selling them as commodities. Production becomes social, while
+      exchange and {appropriation:sg} remain individual. This fundamental
+      contradiction produces all modern social conflicts."
+  p00049:
+    covers:
+      - p00049
+    based_on: sha256:2e8454603cf6a65090dec798fc3b22a2d15e309b701ea8d88af7590f535c17f9
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>A. Separation of workers from {means-of-production:sg}.
+      Workers condemned to lifelong {wage-labour:sg}. Antagonism between the
+      {proletariat:sg} and the {bourgeoisie:sg}.
+  p00050:
+    covers:
+      - p00050
+    based_on: sha256:11f1a91e546c3cd35067a663287f18e03091a43589c2229398c33b454cf90d06
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>B. Rising power of commodity laws and unchecked
+      competition. Contradiction between organized factories and general social
+      disorder.
+  p00051:
+    covers:
+      - p00051
+    based_on: sha256:45957de35ce070fae92308119f614c821d3d1d7b1792597e44b1b8305f7b978f
+    revision: 1
+    ai_assisted: true
+    text: '<indent level="1"/>C. Constant machine improvements displace workers,
+      creating an industrial reserve army. Competition forces every factory to
+      expand production. Output exceeds market demand, causing
+      {over-production:sg} and mass unemployment. These two forces cannot unite
+      because capitalism blocks them unless goods become {capital:sg}. The
+      contradiction turns absurd: the {mode-of-production:sg} rebels against the
+      exchange system.'
+  p00052:
+    covers:
+      - p00052
+    based_on: sha256:a0579afdbb93ac7d7922b4a2381a36c0f4d3f38c0816b2e01ae8742de0132181
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>D. Capitalists are forced to acknowledge the social
+      character of {productive-forces:sg}. Large communications and factories
+      pass to corporations, trusts, and the State. The {bourgeoisie:sg} becomes
+      useless; salaried employees handle management.
+  p00053:
+    covers:
+      - p00053
+    based_on: sha256:10008d806933aac0cc4f3f11b9840d7814155e423516c84b4dab249948f1f435
+    revision: 1
+    ai_assisted: true
+    text: "III. Proletarian Revolution: Solution of the contradictions. The
+      {proletariat:sg} seizes public power and turns social
+      {means-of-production:sg} into common property. This frees industry from
+      {capital:sg} and allows planned production. Classes become obsolete. As
+      market anarchy disappears, State authority withers away. Humanity masters
+      social organization, masters Nature, and becomes free."
+  p00054:
+    covers:
+      - p00054
+    based_on: sha256:5b721bd7e17009f8fc04578d6235af9d7e8463c6120b762bee6388830a335cef
+    revision: 1
+    ai_assisted: true
+    text: Carrying out universal emancipation is the historical mission of the
+      {proletariat:sg}. Understanding its conditions and teaching the oppressed
+      class its task is the purpose of scientific Socialism.
+  p00055:
+    covers:
+      - p00055
+    based_on: sha256:b58030ba32f7150b9b7a8006c35910a3eed9ab8b6b457d5798be1589c4669c57
+    revision: 1
+    ai_assisted: true
+    text: Mephistopheles in Goethe's Faust.
+  p00056:
+    covers:
+      - p00056
+    based_on: sha256:bf941af578041fdffdb77381bad3020355ca6ee2f6158af38c51a2acc969da4e
+    revision: 1
+    ai_assisted: true
+    text: Although the legal form of {appropriation:sg} stays the same, its
+      character is completely altered. Owning your own product is entirely
+      different from taking someone else's product. {wage-labour:sg} is very
+      ancient and existed beside slavery for centuries. But it could develop
+      into the capitalist {mode-of-production:sg} only when historical
+      conditions matured.
+  p00057:
+    covers:
+      - p00057
+    based_on: sha256:da5bfca7d252efe5f5267391db0c02055a07e95d18b36e6f50f599a91098ec49
+    revision: 1
+    ai_assisted: true
+    text: '"The Conditions of the Working-Class in England," Sonnenschein & Co.,
+      page 84.'
+  p00058:
+    covers:
+      - p00058
+    based_on: sha256:6aa2cc208edea8ed62a7416f005146ad5540780f68a61bff6eb444bb4255b62f
+    revision: 1
+    ai_assisted: true
+    text: I say "have to" because State takeover is progress only when
+      {means-of-production:sg} have outgrown corporate management and state
+      control is economically inevitable. Recently, since Bismarck started
+      nationalizing firms, a fake Socialism appeared that praises all
+      State-ownership as socialist. If state tobacco monopolies were socialist,
+      Napoleon and Metternich would count as socialist founders.<br/><br/>If the
+      Belgian State built railways for revenue, or if Bismarck took over
+      Prussian lines for military transport and government votes, these were not
+      socialist acts. Otherwise, the Royal Maritime Company, the Royal porcelain
+      manufacture, and the army tailors would also count as socialist. Under
+      Frederick William III, an official even proposed state takeover of
+      brothels!
+  p00059:
+    covers:
+      - p00059
+    based_on: sha256:7101512f6b4d3d4cb1cd2e61762a11333673af4420a549f7b018dee0dda2ff01
+    revision: 1
+    ai_assisted: true
+    text: These numbers show the immense power of modern {means-of-production:sg}.
+      According to Mr. Giffen, the total wealth of Great Britain and Ireland
+      amounted in round numbers to:<br/><br/><indent level="1"/>£2,200,000,000
+      in 1814,<br/>£6,100,000,000 in 1865,<br/>£8,500,000,000 in
+      1875.<br/><br/>During the crisis of 1873-78, losses in the German iron
+      industry alone were reported at the second German Industrial Congress
+      (Berlin, February 21, 1878) as 22,750,000 pounds.

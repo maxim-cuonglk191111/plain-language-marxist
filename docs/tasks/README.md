@@ -52,7 +52,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [044](044-render-1859-preface.md) | Plain English rendering of the *1859 Preface* (Marx, Critique of Political Economy) | M3 | Done |
 | [045](045-render-wage-labour-and-capital.md) | Plain English rendering of *Wage Labour and Capital* (Marx, 1849/1891) | M3 | Done |
 | [046](046-render-value-price-and-profit.md) | Plain English rendering of *Value, Price and Profit* (Marx, 1865) | M3 | Done |
-| [047](047-render-socialism-utopian-and-scientific.md) | Plain English rendering of *Socialism: Utopian and Scientific* (Engels, 1880) | M3 | Open |
+| [047](047-render-socialism-utopian-and-scientific.md) | Plain English rendering of *Socialism: Utopian and Scientific* (Engels, 1880) | M3 | Done |
 | [048](048-capital-vol1-source-ingestion.md) | Source ingestion of *Das Kapital*, Vol. I (Marx, 1867) | M3 | Open |
 | [049](049-render-capital-vol1-part1.md) | Plain English rendering of *Das Kapital* Vol. I, Part I: Commodities & Money (Ch. 1–3) | M3 | Open |
 | [050](050-render-capital-vol1-parts2-3.md) | Plain English rendering of *Das Kapital* Vol. I, Parts II & III: Capital & Absolute Surplus-Value (Ch. 4–11) | M3 | Open |

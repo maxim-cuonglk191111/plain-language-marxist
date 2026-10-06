@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:engels:1880:socialism-utopian-scientific:ch03
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00002]
+    text: |-
+      Historical materialism argues that economic production and social exchange form the foundation of all legal, political, and ideological structures.
+
+      Changes in modes of production drive historical transitions, rather than changing moral concepts or philosophical ideals.
+
+      This materialist method enabled Marx and Engels to trace modern socialism to structural contradictions in capitalist industry.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00027]
+    text: |-
+      In 1825, the first general commercial crisis erupted across Britain, repeating periodically roughly every ten years.
+
+      These were crises of overproduction, where commodities became unsaleable while millions of workers lacked food and employment.
+
+      They demonstrated that expanding productive forces had outgrown the capitalist framework of private appropriation.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00041]
+    text: |-
+      Engels famously explains that the state is not abolished by arbitrary decree, but withers away.
+
+      When the proletariat seizes the means of production, it abolishes class distinctions and class rule.
+
+      Government over people is replaced by the administration of things, rendering the coercive state apparatus obsolete.
+    ai_assisted: true

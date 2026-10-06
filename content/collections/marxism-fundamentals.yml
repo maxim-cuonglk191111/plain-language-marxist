@@ -1,0 +1,11 @@
+schema_version: 4
+kind: reading_path
+id: marxism-fundamentals
+title: "Marxism Fundamentals: Road to Capital"
+description: "A primary-source reading path establishing historical materialism and political economy before Capital."
+items:
+  - document:marx:1848:communist-manifesto:ch01
+  - document:marx:1848:communist-manifesto:ch02
+  - document:marx:1848:communist-manifesto:ch04
+  - work:marx:1865:value-price-profit
+rationale: "Suggested pedagogical path for readers who want to understand Das Kapital through Marx and Engels's own writings rather than third-party textbooks. Chapters I, II, and IV of the Manifesto establish the core concepts of class struggle, historical materialism, and the working-class program. Value, Price and Profit provides the essential bridge to political economy by explaining the source of value, wages, and surplus value in plain terms."

@@ -45,5 +45,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [037](037-contributor-workflow-and-authoring-guide.md) | Contributor workflow, root CONTRIBUTING.md, and authoring guide | M2 | Open |
 | [038](038-visual-companion-and-1848-timeline.md) | Visual study companion and 1848 revolutionary timeline (Mermaid) | M1 | Open |
 | [039](039-marx-major-works.md) | Marx's major works first: free editions, order, Project Gutenberg source | M3 | Open |
+| [040](040-marxism-fundamentals-reading-path.md) | Marxism Fundamentals: reading primary sources leading to Das Kapital | M1 | In progress |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

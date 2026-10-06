@@ -6,3 +6,4 @@
 - The sentence-splitting regex `(?<=[.!?])\s+` in `checkRenderings()` fails to split after sentences ending in quotes when punctuation sits inside the closing quote mark.
 - Naming the terminology toggle button "Original" creates a Playwright strict-mode locator collision with the reader layer switch button of the same name, resolved by labeling it "Original (1848)".
 - Running `pnpm e2e` builds Next.js using `e2e/fixture-repo` and writes to `apps/web/out`, overwriting any previous production static export with test fixture data until `pnpm build:site` is re-run.
+- The `plm annotate` CLI command accepts only a single document path argument at a time and errors out if passed multiple paths in a single invocation.

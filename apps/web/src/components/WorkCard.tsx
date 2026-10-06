@@ -1,5 +1,5 @@
 import type { DataIndex } from "@plm/schema";
-import { authorName, chapters, minutes, workPath } from "../lib/reading";
+import { authorName, chapters, groupByParts, minutes, workPath } from "../lib/reading";
 
 type Work = DataIndex["works"][number];
 
@@ -11,6 +11,11 @@ export function WorkCard({
   renderingKey?: string | undefined;
 }) {
   const chapterList = chapters(work, renderingKey);
+  const frontMatter = chapterList.filter((c) => c.isFrontMatter);
+  const bodyChapters = chapterList.filter((c) => !c.isFrontMatter);
+  const hasParts = bodyChapters.some((c) => Boolean(c.part));
+  const parts = groupByParts(bodyChapters);
+
   const totalWords = chapterList.reduce((sum, c) => sum + c.words, 0);
   const totalMinutes = minutes(totalWords);
   const totalDocs = work.documents.length;
@@ -21,10 +26,30 @@ export function WorkCard({
   );
   const isComplete = totalPassages > 0 && coveredPassages === totalPassages;
   const hasPlain = coveredPassages > 0;
+
+  // Prefer first translated body chapter, or first body chapter, or first doc
   const firstDoc =
-    work.documents.find((d) => (d.covered[renderingKey] ?? 0) > 0) ?? work.documents[0];
+    bodyChapters.find(
+      (c) => (work.documents.find((d) => d.path === c.path)?.covered[renderingKey] ?? 0) > 0,
+    ) ??
+    bodyChapters[0] ??
+    chapterList[0];
   const firstChapterPath = firstDoc?.path ?? workPath(work);
   const isSinglePart = totalDocs <= 1;
+
+  const chaptersCount = bodyChapters.length || totalDocs;
+  const prefacesCount = frontMatter.length;
+  const metaChaptersLabel = isSinglePart
+    ? "Single essay / preface"
+    : prefacesCount > 0
+      ? `${chaptersCount} chapters · ${prefacesCount} ${prefacesCount === 1 ? "preface" : "prefaces"}`
+      : `${chaptersCount} chapters`;
+
+  const previewSummaryLabel = isSinglePart
+    ? "Preview part ▾"
+    : prefacesCount > 0
+      ? `Preview ${chaptersCount} chapters & prefaces ▾`
+      : `Preview ${chaptersCount} chapters ▾`;
 
   return (
     <article className="work-card" aria-labelledby={`work-${work.id}`}>
@@ -54,9 +79,7 @@ export function WorkCard({
       </p>
 
       <div className="work-card-meta">
-        <span className="work-card-meta-item">
-          {isSinglePart ? "Single essay / preface" : `${totalDocs} chapters`}
-        </span>
+        <span className="work-card-meta-item">{metaChaptersLabel}</span>
         <span aria-hidden="true">·</span>
         <span className="work-card-meta-item">about {totalMinutes} min read</span>
       </div>
@@ -68,17 +91,44 @@ export function WorkCard({
       </div>
 
       <details className="work-chapters-preview">
-        <summary className="work-chapters-summary">
-          Preview {isSinglePart ? "part" : `${totalDocs} chapters`} ▾
-        </summary>
-        <ol className="work-chapters-list">
-          {chapterList.map((c) => (
-            <li key={c.path}>
-              <a href={c.path}>{c.name.name}</a>
-              <span className="muted">about {minutes(c.words)} min</span>
-            </li>
-          ))}
-        </ol>
+        <summary className="work-chapters-summary">{previewSummaryLabel}</summary>
+        {frontMatter.length > 0 && (
+          <div className="work-preview-group">
+            <h4 className="work-preview-group-title">Prefaces &amp; Front Matter</h4>
+            <ol className="work-chapters-list">
+              {frontMatter.map((c) => (
+                <li key={c.path}>
+                  <a href={c.path}>{c.name.name}</a>
+                  <span className="muted">about {minutes(c.words)} min</span>
+                </li>
+              ))}
+            </ol>
+          </div>
+        )}
+        {hasParts ? (
+          parts.map((part) => (
+            <div key={part.title} className="work-preview-group">
+              <h4 className="work-preview-group-title">{part.title}</h4>
+              <ol className="work-chapters-list">
+                {part.chapters.map((c) => (
+                  <li key={c.path}>
+                    <a href={c.path}>{c.name.name}</a>
+                    <span className="muted">about {minutes(c.words)} min</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          ))
+        ) : (
+          <ol className="work-chapters-list">
+            {(bodyChapters.length > 0 ? bodyChapters : chapterList).map((c) => (
+              <li key={c.path}>
+                <a href={c.path}>{c.name.name}</a>
+                <span className="muted">about {minutes(c.words)} min</span>
+              </li>
+            ))}
+          </ol>
+        )}
       </details>
     </article>
   );

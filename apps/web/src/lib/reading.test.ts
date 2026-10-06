@@ -1,6 +1,14 @@
 import type { DataDocument } from "@plm/schema";
 import { describe, expect, it } from "vitest";
-import { chapterName, countWords, minutes, openingLine, plainOf, sections } from "./reading";
+import {
+  chapterName,
+  countWords,
+  groupByParts,
+  minutes,
+  openingLine,
+  plainOf,
+  sections,
+} from "./reading";
 
 const doc = (
   passages: Partial<DataDocument["passages"][number]>[],
@@ -101,6 +109,73 @@ describe("chapterName", () => {
       name: "Communist Manifesto (Chapter 3)",
       short: "Ch. 2",
     });
+  });
+
+  it("names the Communist Manifesto historical prefaces collection cleanly", () => {
+    const d = doc([{ type: "heading", text: "Preface" }], {
+      id: "document:marx:1848:communist-manifesto:preface",
+    });
+    expect(chapterName(d, 0)).toEqual({
+      name: "Prefaces to Various Editions (1872–1893)",
+      short: "Prefaces",
+    });
+  });
+
+  it("filters Part headings and redundant Preface labels out of chapter sections", () => {
+    const d = doc([
+      { type: "heading", text: "Part I: Commodities and Money" },
+      { type: "heading", text: "Chapter One: Commodities" },
+      { type: "heading", text: "SECTION 1" },
+      { type: "heading", text: "THE TWO FACTORS OF A COMMODITY" },
+    ]);
+    const name = { name: "Chapter One: Commodities", short: "Ch. 1" };
+    expect(sections(d, name).map((s) => s.title)).toEqual([
+      "SECTION 1",
+      "THE TWO FACTORS OF A COMMODITY",
+    ]);
+  });
+});
+
+describe("groupByParts", () => {
+  it("groups chapters into parts in order", () => {
+    const mockChapters = [
+      {
+        path: "/ch01",
+        name: { name: "Ch 1", short: "Ch. 1" },
+        numeral: "1",
+        passages: 10,
+        words: 100,
+        sections: [],
+        opening: "...",
+        part: "Part I",
+      },
+      {
+        path: "/ch02",
+        name: { name: "Ch 2", short: "Ch. 2" },
+        numeral: "2",
+        passages: 10,
+        words: 100,
+        sections: [],
+        opening: "...",
+        part: "Part I",
+      },
+      {
+        path: "/ch04",
+        name: { name: "Ch 4", short: "Ch. 4" },
+        numeral: "4",
+        passages: 10,
+        words: 100,
+        sections: [],
+        opening: "...",
+        part: "Part II",
+      },
+    ];
+    const groups = groupByParts(mockChapters);
+    expect(groups).toHaveLength(2);
+    expect(groups[0]?.title).toBe("Part I");
+    expect(groups[0]?.chapters).toHaveLength(2);
+    expect(groups[1]?.title).toBe("Part II");
+    expect(groups[1]?.chapters).toHaveLength(1);
   });
 });
 

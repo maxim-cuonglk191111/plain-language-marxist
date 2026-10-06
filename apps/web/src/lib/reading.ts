@@ -88,6 +88,12 @@ export type ChapterName = { name: string; short: string };
  * (document titles like "Communist Manifesto (Chapter 2)" are source page titles).
  */
 export function chapterName(doc: DataDocument, ordinal: number): ChapterName {
+  if (doc.id.includes("communist-manifesto") && doc.id.endsWith("preface")) {
+    return {
+      name: "Prefaces to Various Editions (1872–1893)",
+      short: "Prefaces",
+    };
+  }
   const headings = doc.passages.filter((p) => p.type === "heading").map((p) => plainOf(p.text));
 
   const isPref = isFrontMatterDoc(doc);
@@ -149,7 +155,14 @@ export type Section = { id: string; title: string; level: number };
 /** Heading passages inside a chapter, apart from the chapter's own title. */
 export function sections(doc: DataDocument, chapter: ChapterName): Section[] {
   return doc.passages
-    .filter((p) => p.type === "heading" && plainOf(p.text) !== chapter.name)
+    .filter((p) => {
+      if (p.type !== "heading") return false;
+      const text = plainOf(p.text);
+      if (text === chapter.name) return false;
+      if (/^(?:preface|afterword)$/i.test(text.trim())) return false;
+      if (/^Part\s+([IVXLC]+|\d+)\b[:.]?\s*/i.test(text.trim())) return false;
+      return true;
+    })
     .map((p) => ({ id: p.id, title: plainOf(p.text), level: p.level ?? 2 }));
 }
 
@@ -204,8 +217,28 @@ export type ChapterInfo = {
   words: number;
   sections: Section[];
   opening: string;
-  isFrontMatter?: boolean;
+  isFrontMatter?: boolean | undefined;
+  part?: string | undefined;
 };
+
+export type PartGroup = {
+  title: string;
+  chapters: ChapterInfo[];
+};
+
+export function groupByParts(chapterList: readonly ChapterInfo[]): PartGroup[] {
+  const groups: PartGroup[] = [];
+  let currentGroup: PartGroup | null = null;
+  for (const c of chapterList) {
+    const title = c.part ?? "";
+    if (!currentGroup || currentGroup.title !== title) {
+      currentGroup = { title, chapters: [] };
+      groups.push(currentGroup);
+    }
+    currentGroup.chapters.push(c);
+  }
+  return groups;
+}
 
 const chapterCache = new Map<string, ChapterInfo[]>();
 
@@ -215,10 +248,19 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
   const cached = chapterCache.get(key);
   if (cached) return cached;
   let bodyCount = 0;
+  let currentPart: string | undefined = undefined;
   const list = work.documents.map((d) => {
     const doc = getDocument({ ...d, work } as DocumentEntry);
     const isFront = isFrontMatterDoc(doc);
-    if (!isFront) bodyCount += 1;
+    if (!isFront) {
+      bodyCount += 1;
+      const partHeading = doc.passages.find(
+        (p) => p.type === "heading" && /^Part\s+([IVXLC]+|\d+)\b[:.]?\s*/i.test(plainOf(p.text)),
+      );
+      if (partHeading) {
+        currentPart = plainOf(partHeading.text);
+      }
+    }
     const name = chapterName(doc, isFront ? 0 : bodyCount);
     return {
       path: d.path,
@@ -229,6 +271,7 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
       sections: sections(doc, name),
       opening: openingLine(doc, renderingKey),
       isFrontMatter: isFront,
+      part: isFront ? undefined : currentPart,
     };
   });
   chapterCache.set(key, list);

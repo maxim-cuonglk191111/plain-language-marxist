@@ -2,7 +2,7 @@
 
 |                |                                                                |
 | -------------- | -------------------------------------------------------------- |
-| **Status**     | Open                                                           |
+| **Status**     | Done                                                           |
 | **Filed**      | 2026-10-06                                                     |
 | **Owner**      | Unassigned                                                     |
 | **Severity**   | Low (completeness of primary historical documentation)         |

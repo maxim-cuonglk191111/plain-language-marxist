@@ -256,6 +256,19 @@ html[data-theme="black"] .work-status-badge.complete {
   margin-left: 0.4rem;
   font-size: 0.85em;
 }
+.work-preview-group {
+  margin-top: 0.75rem;
+}
+.work-preview-group:first-of-type {
+  margin-top: 0.5rem;
+}
+.work-preview-group-title {
+  margin: 0 0 0.15rem;
+  font: 600 0.78rem/1.3 var(--sans);
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
 
 /* ---------- Reader ---------- */
 .reader {
@@ -1339,6 +1352,20 @@ html[data-layers] .toc-inline {
   font-weight: 600;
   color: var(--fg);
 }
+.toc-chapters > li.toc-part-header {
+  margin: 0.85rem 0 0.2rem;
+  padding: 0.4rem 0 0.15rem;
+  border-top: 1.5px solid var(--rule);
+  font: 700 0.78rem/1.3 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+.toc-chapters > li.toc-part-header:first-child {
+  margin-top: 0;
+  border-top: none;
+  padding-top: 0;
+}
 .toc-sections {
   margin: 0.3rem 0 0.2rem 0.9rem;
   font-size: 0.92em;
@@ -1501,6 +1528,28 @@ html[data-layers] .toc-inline {
 }
 .chapter-list li {
   padding: 0.35rem 0;
+}
+.work-parts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin: 1.5rem 0 2rem;
+}
+.work-part {
+  border-left: 3px solid var(--rule);
+  padding-left: 1.25rem;
+}
+.work-part-header {
+  margin-bottom: 0.5rem;
+}
+.work-part-title {
+  margin: 0 0 0.2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+.work-part-meta {
+  font-size: 0.85rem;
 }
 .small {
   font-size: 0.85rem;

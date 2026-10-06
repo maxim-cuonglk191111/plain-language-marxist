@@ -205,7 +205,12 @@ function DocumentPage({
             current={doc.path}
             workPath={home}
             workTitle={entry.work.title}
-            chapters={work.map((c) => ({ path: c.path, name: c.name.name, sections: c.sections }))}
+            chapters={work.map((c) => ({
+              path: c.path,
+              name: c.name.name,
+              part: c.part,
+              sections: c.sections,
+            }))}
             refs={refWork(entry.work, RENDERING)}
           />
           <LayerSwitch available={{ plain: hasPlain, original: true, context: hasContext }} />
@@ -345,22 +350,35 @@ function TocList({
         <a href={home}>{workTitle}</a>
       </p>
       <ol className="toc-chapters">
-        {list.map((c) => (
-          <li key={c.path} className={c.path === current ? "current" : undefined}>
-            <a href={c.path} aria-current={c.path === current ? "page" : undefined}>
-              {c.name.name}
-            </a>
-            {c.path === current && c.sections.length > 0 && (
-              <ol className="toc-sections">
-                {c.sections.map((s) => (
-                  <li key={s.id} className={`level-${Math.min(s.level, 6)}`}>
-                    <a href={`#${s.id}`}>{s.title}</a>
-                  </li>
-                ))}
-              </ol>
-            )}
-          </li>
-        ))}
+        {list.flatMap((c, idx) => {
+          const prevChapter = list[idx - 1];
+          const showPartHeader = Boolean(c.part && c.part !== prevChapter?.part);
+          const items: React.ReactNode[] = [];
+          if (showPartHeader) {
+            items.push(
+              <li key={`part-${c.part}`} className="toc-part-header">
+                {c.part}
+              </li>,
+            );
+          }
+          items.push(
+            <li key={c.path} className={c.path === current ? "current" : undefined}>
+              <a href={c.path} aria-current={c.path === current ? "page" : undefined}>
+                {c.name.name}
+              </a>
+              {c.path === current && c.sections.length > 0 && (
+                <ol className="toc-sections">
+                  {c.sections.map((s) => (
+                    <li key={s.id} className={`level-${Math.min(s.level, 6)}`}>
+                      <a href={`#${s.id}`}>{s.title}</a>
+                    </li>
+                  ))}
+                </ol>
+              )}
+            </li>,
+          );
+          return items;
+        })}
       </ol>
     </nav>
   );

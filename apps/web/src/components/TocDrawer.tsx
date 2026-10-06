@@ -9,6 +9,7 @@ import { onShortcut } from "./Shortcuts";
 export type TocChapter = {
   path: string;
   name: string;
+  part?: string | undefined;
   sections: { id: string; title: string; level: number }[];
 };
 
@@ -150,9 +151,19 @@ export function TocDrawer({
             <a href={workPath}>{workTitle}</a>
           </p>
           <ol className="toc-chapters">
-            {chapters.map((c) => {
+            {chapters.flatMap((c, idx) => {
               const isCurrent = c.path === current;
-              return (
+              const prevChapter = chapters[idx - 1];
+              const showPartHeader = Boolean(c.part && c.part !== prevChapter?.part);
+              const items: React.ReactNode[] = [];
+              if (showPartHeader) {
+                items.push(
+                  <li key={`part-${c.part}`} className="toc-part-header">
+                    {c.part}
+                  </li>,
+                );
+              }
+              items.push(
                 <li key={c.path} className={isCurrent ? "current" : undefined}>
                   <a href={c.path} aria-current={isCurrent ? "page" : undefined}>
                     {c.name}
@@ -173,8 +184,9 @@ export function TocDrawer({
                       ))}
                     </ol>
                   )}
-                </li>
+                </li>,
               );
+              return items;
             })}
           </ol>
         </div>

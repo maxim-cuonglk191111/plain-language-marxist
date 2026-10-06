@@ -1,0 +1,491 @@
+schema_version: 5
+document: document:marx:1859:critique-of-political-economy:intro
+annotations:
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00005
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00005
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00006
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00007
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 1
+  - passage: p00007
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00007
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 2
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 3
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00007
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00008
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00013
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00013
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00013
+    term: wage-labour
+    match: wage-worker
+    occurrence: 1
+  - passage: p00013
+    term: serf
+    match: serf
+    occurrence: 2
+  - passage: p00013
+    term: wage-labour
+    match: wage-worker
+    occurrence: 2
+  - passage: p00014
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00014
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00014
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00014
+    term: appropriation
+    match: Appropriation
+    occurrence: 1
+  - passage: p00015
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00015
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00026
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00042
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00042
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00043
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00046
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00047
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00047
+    term: wage-labour
+    match: wage-labour
+    occurrence: 2
+  - passage: p00047
+    term: wage-labour
+    match: wage-labour
+    occurrence: 3
+  - passage: p00049
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00049
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00049
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00050
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00051
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00052
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00052
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00052
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00054
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00054
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00054
+    term: mode-of-production
+    match: mode of production
+    occurrence: 3
+  - passage: p00055
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00055
+    term: barbarian
+    match: barbarians
+    occurrence: 1
+  - passage: p00055
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00055
+    term: serf
+    match: serfs
+    occurrence: 1
+  - passage: p00057
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00057
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00058
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00058
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00058
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00062
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00062
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00063
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00063
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00066
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00066
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00066
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00066
+    term: wage-labour
+    match: wage-labour
+    occurrence: 2
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 2
+  - passage: p00066
+    term: division-of-labour
+    match: division of labour
+    occurrence: 3
+  - passage: p00066
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00066
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00066
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2
+  - passage: p00066
+    term: exchange-value
+    match: Exchange-value
+    occurrence: 1
+  - passage: p00066
+    term: exchange-value
+    match: exchange-value
+    occurrence: 3
+  - passage: p00067
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00067
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00068
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00068
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00071
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00071
+    term: barbarian
+    match: barbarians
+    occurrence: 1
+  - passage: p00073
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1
+  - passage: p00073
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00073
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00073
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00073
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 2
+  - passage: p00073
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00074
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00074
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00074
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00074
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00074
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00074
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 5
+  - passage: p00074
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00075
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00075
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00075
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00075
+    term: manufacture
+    match: Manufacture
+    occurrence: 1
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00075
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00075
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00075
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00075
+    term: capital
+    match: capital
+    occurrence: 7
+  - passage: p00076
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00076
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00077
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00077
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00077
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00078
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00080
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00080
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00080
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00080
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00080
+    term: division-of-labour
+    match: division of labour
+    occurrence: 1
+  - passage: p00080
+    term: world-market
+    match: world market
+    occurrence: 1
+  - passage: p00084
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00088
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00088
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1
+  - passage: p00089
+    term: relations-of-production
+    match: relations of production
+    occurrence: 1

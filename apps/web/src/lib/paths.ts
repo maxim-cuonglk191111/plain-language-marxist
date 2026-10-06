@@ -14,15 +14,20 @@ export const NO_PATHS = "_none";
 
 export type ReadingPath = DataIndex["collections"][number] & { kind: "reading_path" };
 
+export interface PathStage {
+  title: string;
+  description?: string | undefined;
+  steps: PathStep[];
+}
+
 export function readingPaths(): ReadingPath[] {
   return getIndex().collections.filter((c): c is ReadingPath => c.kind === "reading_path");
 }
 
-/** A path's items as steps: a work becomes all its chapters, a document one chapter. Unknown items are skipped. */
-export function pathSteps(path: ReadingPath, renderingKey: string): PathStep[] {
+function resolveSteps(items: readonly string[], renderingKey: string): PathStep[] {
   const works = getIndex().works;
   const steps: PathStep[] = [];
-  for (const item of path.items) {
+  for (const item of items) {
     const work = works.find((w) => w.id === item);
     if (work) {
       steps.push({
@@ -52,6 +57,21 @@ export function pathSteps(path: ReadingPath, renderingKey: string): PathStep[] {
     });
   }
   return steps;
+}
+
+/** A path's items as steps: a work becomes all its chapters, a document one chapter. Unknown items are skipped. */
+export function pathSteps(path: ReadingPath, renderingKey: string): PathStep[] {
+  return resolveSteps(path.items, renderingKey);
+}
+
+/** A path's stages with their resolved steps, or null if the path has no stages defined. */
+export function pathStages(path: ReadingPath, renderingKey: string): PathStage[] | null {
+  if (!path.stages || path.stages.length === 0) return null;
+  return path.stages.map((s) => ({
+    title: s.title,
+    ...(s.description ? { description: s.description } : {}),
+    steps: resolveSteps(s.items, renderingKey),
+  }));
 }
 
 export const totalMinutes = (steps: readonly PathStep[]) =>

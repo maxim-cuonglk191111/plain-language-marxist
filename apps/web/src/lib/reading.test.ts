@@ -121,6 +121,16 @@ describe("chapterName", () => {
     });
   });
 
+  it("names the 1857 Introduction cleanly", () => {
+    const d = doc([{ type: "heading", text: "Introduction to a Contribution..." }], {
+      id: "document:marx:1859:critique-of-political-economy:intro",
+    });
+    expect(chapterName(d, 1)).toEqual({
+      name: "Introduction to the Critique of Political Economy (1857)",
+      short: "1857 Intro",
+    });
+  });
+
   it("filters Part headings and redundant Preface labels out of chapter sections", () => {
     const d = doc([
       { type: "heading", text: "Part I: Commodities and Money" },

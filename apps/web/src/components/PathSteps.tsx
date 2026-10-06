@@ -14,6 +14,8 @@ import {
   type PathTicks,
 } from "../lib/pathprogress";
 
+import type { PathStage } from "../lib/paths";
+
 type Local = { ticks: PathTicks; history: History };
 
 /**
@@ -22,7 +24,15 @@ type Local = { ticks: PathTicks; history: History };
  * "Read" tick (from the reading history, or set by hand) and the link becomes
  * "Continue this path", to the first chapter not yet read.
  */
-export function PathSteps({ id, steps }: { id: string; steps: PathStep[] }) {
+export function PathSteps({
+  id,
+  steps,
+  stages,
+}: {
+  id: string;
+  steps: PathStep[];
+  stages?: PathStage[] | null | undefined;
+}) {
   const [local, setLocal] = useState<Local | null>(null);
 
   useEffect(() => {
@@ -67,6 +77,58 @@ export function PathSteps({ id, steps }: { id: string; steps: PathStep[] }) {
       </label>
     );
 
+  const renderStep = (s: PathStep, i: number) => (
+    <li key={`${i}-${s.href}`} className={s.kind === "work" ? "path-step-work" : undefined}>
+      {s.kind === "chapter" ? (
+        <div className="path-row">
+          <div className="path-step-body">
+            <a className="path-step-title" href={s.href}>
+              {s.title}
+            </a>
+            <div className="path-step-meta muted">
+              {s.title !== s.work && <span className="path-step-work-name">{s.work}</span>}
+              {s.title !== s.work && <span aria-hidden="true">·</span>}
+              <span className="path-step-time">about {s.chapters[0]?.minutes ?? 1} min</span>
+            </div>
+          </div>
+          {s.chapters[0] && tick(s.chapters[0])}
+        </div>
+      ) : (
+        <>
+          <div className="path-row">
+            <div className="path-step-body">
+              <a className="path-step-title" href={s.href}>
+                {s.title}
+              </a>
+              <div className="path-step-meta muted">
+                <span>the whole work, {s.chapters.length} chapters</span>
+                <span aria-hidden="true">·</span>
+                <span className="path-step-time">
+                  about {s.chapters.reduce((n, c) => n + c.minutes, 0)} min
+                </span>
+              </div>
+            </div>
+          </div>
+          <ol className="path-chapters">
+            {s.chapters.map((c) => (
+              <li key={c.path} className="path-row">
+                <div className="path-step-body">
+                  <a className="path-step-title" href={c.path}>
+                    {c.title}
+                  </a>
+                  <div className="path-step-meta muted">
+                    <span className="path-step-time">about {c.minutes} min</span>
+                  </div>
+                </div>
+                {tick(c)}
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+    </li>
+  );
+
   return (
     <>
       <div className="work-actions path-actions">
@@ -92,59 +154,35 @@ export function PathSteps({ id, steps }: { id: string; steps: PathStep[] }) {
           </p>
         )}
       </div>
-      <ol className="path-steps">
-        {steps.map((s, i) => (
-          <li key={`${i}-${s.href}`} className={s.kind === "work" ? "path-step-work" : undefined}>
-            {s.kind === "chapter" ? (
-              <div className="path-row">
-                <div className="path-step-body">
-                  <a className="path-step-title" href={s.href}>
-                    {s.title}
-                  </a>
-                  <div className="path-step-meta muted">
-                    {s.title !== s.work && <span className="path-step-work-name">{s.work}</span>}
-                    {s.title !== s.work && <span aria-hidden="true">·</span>}
-                    <span className="path-step-time">about {s.chapters[0]?.minutes ?? 1} min</span>
-                  </div>
-                </div>
-                {s.chapters[0] && tick(s.chapters[0])}
-              </div>
-            ) : (
-              <>
-                <div className="path-row">
-                  <div className="path-step-body">
-                    <a className="path-step-title" href={s.href}>
-                      {s.title}
-                    </a>
-                    <div className="path-step-meta muted">
-                      <span>the whole work, {s.chapters.length} chapters</span>
-                      <span aria-hidden="true">·</span>
-                      <span className="path-step-time">
-                        about {s.chapters.reduce((n, c) => n + c.minutes, 0)} min
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <ol className="path-chapters">
-                  {s.chapters.map((c) => (
-                    <li key={c.path} className="path-row">
-                      <div className="path-step-body">
-                        <a className="path-step-title" href={c.path}>
-                          {c.title}
-                        </a>
-                        <div className="path-step-meta muted">
-                          <span className="path-step-time">about {c.minutes} min</span>
-                        </div>
-                      </div>
-                      {tick(c)}
-                    </li>
-                  ))}
+      {stages && stages.length > 0 ? (
+        <div className="path-stages">
+          {stages.map((st, sIdx) => {
+            let offset = 0;
+            for (let j = 0; j < sIdx; j++) {
+              offset += stages[j]?.steps.length ?? 0;
+            }
+            return (
+              <section
+                key={`${sIdx}-${st.title}`}
+                className="path-stage"
+                aria-labelledby={`stage-heading-${sIdx}`}
+              >
+                <header className="path-stage-header">
+                  <h3 id={`stage-heading-${sIdx}`} className="path-stage-title">
+                    {st.title}
+                  </h3>
+                  {st.description && <p className="path-stage-desc muted">{st.description}</p>}
+                </header>
+                <ol className="path-steps" start={offset + 1}>
+                  {st.steps.map((s, i) => renderStep(s, offset + i))}
                 </ol>
-              </>
-            )}
-          </li>
-        ))}
-      </ol>
+              </section>
+            );
+          })}
+        </div>
+      ) : (
+        <ol className="path-steps">{steps.map((s, i) => renderStep(s, i))}</ol>
+      )}
     </>
   );
 }

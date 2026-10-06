@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { PathSteps } from "../../../components/PathSteps";
 import { DEFAULT_WPM } from "../../../lib/reading";
-import { NO_PATHS, pathSteps, readingPaths, totalMinutes } from "../../../lib/paths";
+import { NO_PATHS, pathStages, pathSteps, readingPaths, totalMinutes } from "../../../lib/paths";
 
 const RENDERING = "en-plain";
 
@@ -37,6 +37,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 export default async function PathPage(props: Props) {
   const path = await load(props);
   const steps = pathSteps(path, RENDERING);
+  const stages = pathStages(path, RENDERING);
   const others = readingPaths().filter((p) => p.id !== path.id);
   return (
     <div className="prose-page path-page">
@@ -53,7 +54,7 @@ export default async function PathPage(props: Props) {
       <h2>
         Steps <span className="muted small">· about {totalMinutes(steps)} min in all</span>
       </h2>
-      <PathSteps id={path.id} steps={steps} />
+      <PathSteps id={path.id} steps={steps} stages={stages} />
       <p className="muted small">
         This is one suggested order, not the only right one: read the steps in any order you like.
         Reading times are for the Plain English at {DEFAULT_WPM} words a minute. A chapter counts as

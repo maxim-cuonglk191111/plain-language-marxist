@@ -263,6 +263,15 @@ export function buildData(options: BuildOptions): BuildResult {
       ...(d.description ? { description: d.description } : {}),
       ...(d.kind === "reading_path" ? { rationale: d.rationale } : {}),
       items: d.kind === "collection" ? d.documents : d.items,
+      ...(d.kind === "reading_path" && d.stages
+        ? {
+            stages: d.stages.map((s) => ({
+              title: s.title,
+              ...(s.description ? { description: s.description } : {}),
+              items: s.items,
+            })),
+          }
+        : {}),
     });
   }
   files.set("index.json", json(DataIndex.parse(index)));

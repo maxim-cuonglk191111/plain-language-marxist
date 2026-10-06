@@ -90,6 +90,43 @@
             ]
           }
         },
+        "stages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "items": {
+                "minItems": 1,
+                "type": "array",
+                "items": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^work:[a-z0-9-]+:\\d{4}:[a-z0-9-]+$"
+                    },
+                    {
+                      "type": "string",
+                      "pattern": "^document:[a-z0-9-]+:\\d{4}:[a-z0-9-]+:[a-z0-9-]+$"
+                    }
+                  ]
+                }
+              }
+            },
+            "required": [
+              "title",
+              "items"
+            ],
+            "additionalProperties": false
+          }
+        },
         "rationale": {
           "type": "string",
           "minLength": 1

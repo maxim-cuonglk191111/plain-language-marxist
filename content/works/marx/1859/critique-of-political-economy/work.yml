@@ -7,7 +7,7 @@ year: 1859
 rights:
   status: PUBLIC_DOMAIN
   attribution: Marxists Internet Archive
-  notes: "Written by Marx in 1859. Marx d. 1883. Public domain across all jurisdictions."
+  notes: Written by Marx in 1859. Marx d. 1883. Public domain across all jurisdictions.
   verified_by: maxim-cuonglk191111
   verified_at: 2026-10-06
-documents: [preface]
+documents: [preface, intro]

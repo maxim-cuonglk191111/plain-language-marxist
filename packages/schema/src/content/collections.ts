@@ -14,6 +14,12 @@ export const CollectionFile = z
   })
   .superRefine((c, ctx) => checkUnique(c.documents, ctx, ["documents"], "document"));
 
+export const ReadingPathStage = z.strictObject({
+  title: z.string().min(1),
+  description: z.string().min(1).optional(),
+  items: z.array(z.union([WorkId, DocumentId])).min(1),
+});
+
 /** content/collections/{id}.yml — always presented as "suggested", never "correct". */
 export const ReadingPathFile = z.strictObject({
   schema_version: SchemaVersion,
@@ -22,6 +28,7 @@ export const ReadingPathFile = z.strictObject({
   title: z.string().min(1),
   description: z.string().min(1).optional(),
   items: z.array(z.union([WorkId, DocumentId])).min(1),
+  stages: z.array(ReadingPathStage).optional(),
   rationale: z.string().min(1),
 });
 

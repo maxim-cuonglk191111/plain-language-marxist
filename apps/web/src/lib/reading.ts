@@ -94,6 +94,12 @@ export function chapterName(doc: DataDocument, ordinal: number): ChapterName {
       short: "Prefaces",
     };
   }
+  if (doc.id.includes("critique-of-political-economy") && doc.id.endsWith("intro")) {
+    return {
+      name: "Introduction to the Critique of Political Economy (1857)",
+      short: "1857 Intro",
+    };
+  }
   const headings = doc.passages.filter((p) => p.type === "heading").map((p) => plainOf(p.text));
 
   const isPref = isFrontMatterDoc(doc);
@@ -160,6 +166,7 @@ export function sections(doc: DataDocument, chapter: ChapterName): Section[] {
       const text = plainOf(p.text);
       if (text === chapter.name) return false;
       if (/^(?:preface|afterword)$/i.test(text.trim())) return false;
+      if (/^Introduction to /i.test(text.trim())) return false;
       if (/^Part\s+([IVXLC]+|\d+)\b[:.]?\s*/i.test(text.trim())) return false;
       return true;
     })

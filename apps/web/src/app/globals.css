@@ -1577,6 +1577,38 @@ html[data-layers] .toc-inline {
 .path-actions p {
   margin: 0.5rem 0 0;
 }
+.path-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin: 1.25rem 0 2rem;
+}
+.path-stage {
+  border-radius: 8px;
+  padding: 1.15rem 1.15rem 0.5rem;
+  border: 1px solid color-mix(in srgb, var(--rule) 70%, transparent);
+  background: color-mix(in srgb, var(--bg) 98%, var(--fg));
+}
+.path-stage-header {
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--rule) 45%, transparent);
+}
+.path-stage-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  color: var(--fg);
+}
+.path-stage-desc {
+  font-size: 0.88rem;
+  line-height: 1.4;
+  margin: 0;
+  color: var(--muted);
+}
+.path-stage .path-steps {
+  margin: 0.5rem 0 0.5rem;
+}
 .path-steps {
   padding-left: 1.4rem;
   margin: 1.25rem 0 2rem;

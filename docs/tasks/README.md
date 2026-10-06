@@ -59,7 +59,9 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [051](051-render-capital-vol1-parts4-6.md) | Plain English rendering of *Das Kapital* Vol. I, Parts IV, V & VI: Relative Surplus-Value & Wages (Ch. 12–22) | M3 | Open |
 | [052](052-render-capital-vol1-parts7-8.md) | Plain English rendering of *Das Kapital* Vol. I, Parts VII & VIII: Accumulation & Primitive Accumulation (Ch. 23–33) | M3 | Open |
 | [053](053-home-library-bookshelf.md) | Home library bookshelf: work cards, aggregated metrics, and scalable catalog UI | M3 | Done |
-| [054](054-capital-volume-1-structure.md) | Support Work Parts hierarchy and front matter navigation (Das Kapital Vol. 1) | M3 | Open |
-| [055](055-manifesto-prefaces-ingestion.md) | Ingest historical prefaces for The Communist Manifesto (1872–1893) | M3 | Open |
+| [054](054-capital-volume-1-structure.md) | Support Work Parts hierarchy and front matter navigation (Das Kapital Vol. 1) | M3 | Done |
+| [055](055-manifesto-prefaces-ingestion.md) | Ingest historical prefaces for The Communist Manifesto (1872–1893) | M3 | Done |
+| [056](056-1857-introduction-ingestion.md) | Ingest 1857 Introduction to the Critique of Political Economy (Einleitung) | M3 | Done |
+| [057](057-reading-path-pedagogical-stages.md) | Restructure reading paths into three pedagogical stages & upgrade Marxism Fundamentals | M3 | Done |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

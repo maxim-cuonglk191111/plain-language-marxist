@@ -48,6 +48,15 @@ export const DataIndex = z.strictObject({
       description: z.string().optional(),
       rationale: z.string().optional(),
       items: z.array(z.string()),
+      stages: z
+        .array(
+          z.strictObject({
+            title: z.string(),
+            description: z.string().optional(),
+            items: z.array(z.string()),
+          }),
+        )
+        .optional(),
     }),
   ),
   terms: z.array(z.strictObject({ term: z.string(), data: z.string() })),

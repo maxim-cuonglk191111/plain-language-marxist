@@ -603,6 +603,15 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
       const known = ref.startsWith("work:") ? workIds.has(ref) : documentIds.has(ref);
       if (!known) report("error", "collection/unknown-ref", c, [field, i], `${ref} does not exist`);
     });
+    if (c.data.kind === "reading_path" && c.data.stages) {
+      c.data.stages.forEach((stage, sIdx) => {
+        stage.items.forEach((ref, i) => {
+          const known = ref.startsWith("work:") ? workIds.has(ref) : documentIds.has(ref);
+          if (!known)
+            report("error", "collection/unknown-ref", c, ["stages", sIdx, "items", i], `${ref} does not exist`);
+        });
+      });
+    }
   }
 
   return issues;

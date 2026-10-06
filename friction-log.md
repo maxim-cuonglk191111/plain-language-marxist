@@ -16,3 +16,4 @@
 - In quotation passages from historical sources, the `plm review` checker flags phrases like "at the disposal of" as hard words, requiring simplification or restatement even when rendering citations.
 - Rapid batch execution of `plm import --via wayback` triggers intermittent archive.org connection resets (`ECONNREFUSED`), requiring progressive retry backoff and slight inter-request pacing.
 - The chapter name extractor in `reading.ts` only matched Roman numerals and Arabic digits, causing English word headings like "Chapter One" in *Das Kapital* to fall back to the raw source title and an ordinal offset by preceding prefaces.
+- On Marxists Internet Archive, the public-domain translation of the 1857 Introduction (*Grundrisse* Einleitung) is hosted under the 1859 *Contribution to the Critique of Political Economy* as Appendix I (`appx1.htm`), rather than under the 1857 *Grundrisse* directory which houses Martin Nicolaus's copyrighted translation.

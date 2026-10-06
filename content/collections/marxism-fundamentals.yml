@@ -2,12 +2,45 @@ schema_version: 5
 kind: reading_path
 id: marxism-fundamentals
 title: "Marxism Fundamentals: Road to Capital"
-description: "A primary-source reading path establishing historical materialism and political economy before Capital."
+description: "A three-stage primary-source reading path establishing revolutionary praxis, core political economy, and dialectical method before Capital."
+stages:
+  - title: "Stage 1: History & Revolutionary Praxis"
+    description: "Foundational texts establishing the historical emergence of the proletariat, class struggle, and the materialist conception of practice."
+    items:
+      - document:engels:1847:principles-of-communism:prin-com
+      - document:marx:1848:communist-manifesto:ch01
+      - document:marx:1848:communist-manifesto:ch02
+      - document:marx:1848:communist-manifesto:ch04
+      - document:marx:1845:theses-on-feuerbach:theses
+  - title: "Stage 2: Core Political Economy Mechanics"
+    description: "Essential concepts of wage labour, capital accumulation, value, and surplus value explained in accessible terms for workers."
+    items:
+      - document:marx:1849:wage-labour-and-capital:ch01
+      - document:marx:1849:wage-labour-and-capital:ch02
+      - document:marx:1849:wage-labour-and-capital:ch03
+      - document:marx:1849:wage-labour-and-capital:ch04
+      - document:marx:1849:wage-labour-and-capital:ch05
+      - document:marx:1849:wage-labour-and-capital:ch06
+      - document:marx:1849:wage-labour-and-capital:ch07
+      - document:marx:1849:wage-labour-and-capital:ch08
+      - document:marx:1849:wage-labour-and-capital:ch09
+      - document:marx:1865:value-price-profit:ch01
+      - document:marx:1865:value-price-profit:ch02
+      - document:marx:1865:value-price-profit:ch03
+  - title: "Stage 3: Historical Materialism & Methodological Ascent to Capital"
+    description: "Systematic consolidation of scientific socialism, the guiding thread of historical materialism, and Marx's dialectical method of ascending from the abstract to the concrete."
+    items:
+      - document:engels:1880:socialism-utopian-scientific:ch01
+      - document:engels:1880:socialism-utopian-scientific:ch02
+      - document:engels:1880:socialism-utopian-scientific:ch03
+      - document:marx:1859:critique-of-political-economy:preface
+      - document:marx:1859:critique-of-political-economy:intro
 items:
   - document:engels:1847:principles-of-communism:prin-com
   - document:marx:1848:communist-manifesto:ch01
   - document:marx:1848:communist-manifesto:ch02
   - document:marx:1848:communist-manifesto:ch04
+  - document:marx:1845:theses-on-feuerbach:theses
   - document:marx:1849:wage-labour-and-capital:ch01
   - document:marx:1849:wage-labour-and-capital:ch02
   - document:marx:1849:wage-labour-and-capital:ch03
@@ -24,5 +57,5 @@ items:
   - document:engels:1880:socialism-utopian-scientific:ch02
   - document:engels:1880:socialism-utopian-scientific:ch03
   - document:marx:1859:critique-of-political-economy:preface
-  - document:marx:1845:theses-on-feuerbach:theses
-rationale: "Suggested pedagogical path for readers who want to understand Das Kapital through Marx and Engels's own writings rather than third-party textbooks. The sequence begins with Engels's accessible catechism in Principles of Communism and the Manifesto's historical sweep (Chapters I, II, IV). It then walks through the core economic mechanics in Wage Labour and Capital and Value, Price and Profit, before consolidating the dialectical method in Socialism: Utopian and Scientific, the foundational 1859 Preface, and the Theses on Feuerbach."
+  - document:marx:1859:critique-of-political-economy:intro
+rationale: "Suggested pedagogical path for readers who want to understand Das Kapital through Marx and Engels's own writings rather than third-party textbooks. The sequence is organized into three progressive stages: Stage 1 introduces the class struggle and materialist praxis through Principles of Communism, the Manifesto, and the Theses on Feuerbach. Stage 2 develops the economic mechanics of commodities, wages, and surplus value in Wage Labour and Capital and Value, Price and Profit. Stage 3 consolidates historical materialism in Socialism: Utopian and Scientific, the foundational 1859 Preface, and the 1857 Introduction, which outlines the ascent from the abstract to the concrete indispensable for reading Capital."

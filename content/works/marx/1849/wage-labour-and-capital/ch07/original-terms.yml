@@ -1,0 +1,71 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch07
+annotations:
+  - passage: p00002
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00002
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00003
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00008
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00011
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00011
+    term: exchange-value
+    match: exchange value
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00013
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00013
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00014
+    term: world-market
+    match: world-market
+    occurrence: 1
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 1

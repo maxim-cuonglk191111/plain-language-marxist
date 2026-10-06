@@ -1,0 +1,13 @@
+schema_version: 4
+id: work:marx:1849:wage-labour-and-capital
+title: Wage Labour and Capital
+short_title: Wage Labour
+authors: [marx]
+year: 1849
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: "Lectures delivered by Marx in 1847, published in Neue Rheinische Zeitung in April 1849. Edited by Engels in 1891. Marx d. 1883, Engels d. 1895. Public domain across all jurisdictions."
+  verified_by: maxim-cuonglk191111
+  verified_at: 2026-10-06
+documents: [ch01, ch02, ch03, ch04, ch05, ch06, ch07, ch08, ch09]

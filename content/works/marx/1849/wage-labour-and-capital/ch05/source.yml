@@ -1,0 +1,100 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch05
+title: Wage Labour and Capital. Chapter 5
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1847/wage-labour/ch05.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260914222255id_/https://www.marxists.org/archive/marx/works/1847/wage-labour/ch05.htm
+  snapshot: ingestion/snapshots/marx/1849/wage-labour-and-capital/ch05/2026-10-06.html
+  snapshot_hash: sha256:655680b89cd4862ffb47b5c80004955ae07589461902f07c923be91bfbd8fd73
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: The Nature and Growth of Capital
+    hash: sha256:168bbb3ab04df799c3853a8a33ef29e963bccfd686a68236f8962d6776493730
+    state: active
+  - id: p00002
+    type: paragraph
+    text: Capital consists of raw materials, instruments of labour, and means of subsistence of all kinds, which are employed in producing new raw materials, new instruments, and new means of subsistence. All these components of capital are created by labour, products of labour, accumulated labour. Accumulated labour that serves as a means to new production is capital.
+    hash: sha256:6ee42dd254eec95d403a2319e7e7ff33d6d37ab72c3b68433e1c212f34d026f3
+    state: active
+  - id: p00003
+    type: paragraph
+    text: So say the economists.
+    hash: sha256:02a6ebe3c93fcf21870a25e447e20a1e7263467b9b7f252b9ae1f0fbf7c581f6
+    state: active
+  - id: p00004
+    type: paragraph
+    text: What is a Negro slave? A man of the black race. The one explanation is worthy of the other.
+    hash: sha256:70206ba8d7272e21fa398a9b290bcd4a3bd9295d679a354803b26542c4c7ae1b
+    state: active
+  - id: p00005
+    type: paragraph
+    text: A Negro is a Negro. Only under certain conditions does he become a slave. A cotton-spinning machine is a machine for spinning cotton. Only under certain conditions does it become capital. Torn away from these conditions, it is as little capital as gold is itself money, or sugar is the price of sugar.
+    hash: sha256:76b3771a3362e045ae947a9984de168a21b6b60be829842b8f97c856b1b1cbdb
+    state: active
+  - id: p00006
+    type: paragraph
+    text: In the process of production, human beings work not only upon nature, but also upon one another. They produce only by working together in a specified manner and reciprocally exchanging their activities. In order to produce, they enter into definite connections and relations to one another, and only within these social connections and relations does their influence upon nature operate – i.e., does production take place.
+    hash: sha256:0c67ffd3399c8de2d29fa827761373ed033f6bea80d8004a35b0ec3906d5f851
+    state: active
+  - id: p00007
+    type: paragraph
+    text: These social relations between the producers, and the conditions under which they exchange their activities and share in the total act of production, will naturally vary according to the character of the means of production. With the discover of a new instrument of warfare, the firearm, the whole internal organization of the army was necessarily altered, the relations within which individuals compose an army and can work as an army were transformed, and the relation of different armies to another was likewise changed.
+    hash: sha256:71aeab53b3a2a19ad510cceb34b22d8d88d0610ad9fd5f9e8b0719cc6eaa5545
+    state: active
+  - id: p00008
+    type: paragraph
+    text: We thus see that the social relations within which individuals produce, the social relations of production, are altered, transformed, with the change and development of the material means of production, of the forces of production. The relations of production in their totality constitute what is called the social relations, society, and, moreover, a society at a definite stage of historical development, a society with peculiar, distinctive characteristics. Ancient society, feudal society, bourgeois (or capitalist) society, are such totalities of relations of production, each of which denotes a particular stage of development in the history of mankind.
+    hash: sha256:a822a5adc36c317c3cace861b9b883bafcec96fa1c46646c1f38b59c7fe67272
+    state: active
+  - id: p00009
+    type: paragraph
+    text: Capital also is a social relation of production. It is a bourgeois relation of production, a relation of production of bourgeois society. The means of subsistence, the instruments of labour, the raw materials, of which capital consists – have they not been produced and accumulated under given social conditions, within definite special relations? Are they not employed for new production, under given special conditions, within definite social relations? And does not just the definite social character stamp the products which serve for new production as capital?
+    hash: sha256:e43e055e11d9f74fbc2f78da07d53a07ca34d58c6391cb804e66688c9f7ca893
+    state: active
+  - id: p00010
+    type: paragraph
+    text: Capital consists not only of means of subsistence, instruments of labour, and raw materials, not only as material products; it consists just as much of exchange values. All products of which it consists are commodities. Capital, consequently, is not only a sum of material products, it is a sum of commodities, of exchange values, of social magnitudes. Capital remains the same whether we put cotton in the place of wool, rice in the place of wheat, steamships in the place of railroads, provided only that the cotton, the rice, the steamships – the body of capital – have the same exchange value, the same price, as the wool, the wheat, the railroads, in which it was previously embodied. The bodily form of capital may transform itself continually, while capital does not suffer the least alteration.
+    hash: sha256:aa487ccf25958092bb599fb3b6b620d7468e916bea57388dc0da16c068b77c7e
+    state: active
+  - id: p00011
+    type: paragraph
+    text: But though every capital is a sum of commodities – i.e., of exchange values – it does not follow that every sum of commodities, of exchange values, is capital.
+    hash: sha256:f804a1da6de47f8784cdcd8a9ef240082a017fa60be1d5dbcdddbaf54e21adfc
+    state: active
+  - id: p00012
+    type: paragraph
+    text: "Every sum of exchange values is an exchange value. Each particular exchange value is a sum of exchange values. For example: a house worth 1,000 pounds is an exchange value of 1,000 pounds: a piece of paper worth one penny is a sum of exchange values of 100 1/100ths of a penny. Products which are exchangeable for others are commodities. The definite proportion in which they are exchangeable forms their exchange value, or, expressed in money, their price. The quantity of these products can have no effect on their character as commodities, as representing an exchange value, as having a certain price. Whether a tree be large or small, it remains a tree. Whether we exchange iron in pennyweights or in hundredweights, for other products, does this alter its character: its being a commodity, or exchange value? According to the quantity, it is a commodity of greater or of lesser value, of higher or of lower price."
+    hash: sha256:3bd696df651306e3d53d0681c566c9cd4bdef8d86eed4520c5e3112996eafda4
+    state: active
+  - id: p00013
+    type: paragraph
+    text: How then does a sum of commodities, of exchange values, become capital?
+    hash: sha256:1f75df48f2e139be82e67e33d76592f2372ca8e637d2682f9c98e9c053775f07
+    state: active
+  - id: p00014
+    type: paragraph
+    text: Thereby, that as an independent social power – i.e., as the power of a part of society – it preserves itself and multiplies by exchange with direct, living labour-power.
+    hash: sha256:44ada4b118fb11a1f1bc0aa987a0f0335a7e104d4cb417ed6b6cdb2e34be7e01
+    state: active
+  - id: p00015
+    type: paragraph
+    text: The existence of a class which possesses nothing but the ability to work is a necessary presupposition of capital.
+    hash: sha256:8e359a12e3e21377e6d24b7b825dbf876695894f047d8b00c7485d175631456e
+    state: active
+  - id: p00016
+    type: paragraph
+    text: It is only the dominion of past, accumulated, materialized labour over immediate living labour that stamps the accumulated labour with the character of capital.
+    hash: sha256:417a51fa8267f86e087a40675ce78879a0eb950199465b9fae2898fb429f20d6
+    state: active
+  - id: p00017
+    type: paragraph
+    text: Capital does not consist in the fact that accumulated labour serves living labour as a means for new production. It consists in the fact that living labour serves accumulated labour as the means of preserving and multiplying its exchange value.
+    hash: sha256:2d697faad374d0d77ec4ac9b9f53e4ab828a22ec8f9a25175178cb9ee4dce715
+    state: active

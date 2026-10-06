@@ -1,0 +1,35 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch04
+annotations:
+  - passage: p00002
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00002
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00002
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00005
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00005
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00006
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 1

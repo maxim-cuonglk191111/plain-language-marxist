@@ -1,0 +1,13 @@
+schema_version: 4
+id: work:engels:1847:principles-of-communism
+title: The Principles of Communism
+short_title: Principles
+authors: [engels]
+year: 1847
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: "Written by Engels in 1847 as a draft programme for the Communist League. First published 1914 by Eduard Bernstein. Marx d. 1883, Engels d. 1895. Public domain across all jurisdictions."
+  verified_by: maxim-cuonglk191111
+  verified_at: 2026-10-06
+documents: [prin-com]

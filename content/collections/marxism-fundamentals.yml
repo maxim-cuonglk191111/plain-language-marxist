@@ -4,10 +4,25 @@ id: marxism-fundamentals
 title: "Marxism Fundamentals: Road to Capital"
 description: "A primary-source reading path establishing historical materialism and political economy before Capital."
 items:
+  - document:engels:1847:principles-of-communism:prin-com
   - document:marx:1848:communist-manifesto:ch01
   - document:marx:1848:communist-manifesto:ch02
   - document:marx:1848:communist-manifesto:ch04
+  - document:marx:1849:wage-labour-and-capital:ch01
+  - document:marx:1849:wage-labour-and-capital:ch02
+  - document:marx:1849:wage-labour-and-capital:ch03
+  - document:marx:1849:wage-labour-and-capital:ch04
+  - document:marx:1849:wage-labour-and-capital:ch05
+  - document:marx:1849:wage-labour-and-capital:ch06
+  - document:marx:1849:wage-labour-and-capital:ch07
+  - document:marx:1849:wage-labour-and-capital:ch08
+  - document:marx:1849:wage-labour-and-capital:ch09
   - document:marx:1865:value-price-profit:ch01
   - document:marx:1865:value-price-profit:ch02
   - document:marx:1865:value-price-profit:ch03
-rationale: "Suggested pedagogical path for readers who want to understand Das Kapital through Marx and Engels's own writings rather than third-party textbooks. Chapters I, II, and IV of the Manifesto establish the core concepts of class struggle, historical materialism, and the working-class program. Value, Price and Profit provides the essential bridge to political economy by explaining the source of value, wages, and surplus value in plain terms."
+  - document:engels:1880:socialism-utopian-scientific:ch01
+  - document:engels:1880:socialism-utopian-scientific:ch02
+  - document:engels:1880:socialism-utopian-scientific:ch03
+  - document:marx:1859:critique-of-political-economy:preface
+  - document:marx:1845:theses-on-feuerbach:theses
+rationale: "Suggested pedagogical path for readers who want to understand Das Kapital through Marx and Engels's own writings rather than third-party textbooks. The sequence begins with Engels's accessible catechism in Principles of Communism and the Manifesto's historical sweep (Chapters I, II, IV). It then walks through the core economic mechanics in Wage Labour and Capital and Value, Price and Profit, before consolidating the dialectical method in Socialism: Utopian and Scientific, the foundational 1859 Preface, and the Theses on Feuerbach."

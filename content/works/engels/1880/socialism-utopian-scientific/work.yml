@@ -1,0 +1,13 @@
+schema_version: 4
+id: work:engels:1880:socialism-utopian-scientific
+title: "Socialism: Utopian and Scientific"
+short_title: Socialism
+authors: [engels]
+year: 1880
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: "Written by Engels in 1880 (extracted from Anti-Dühring). First English edition translated by Edward Aveling, 1892. Engels d. 1895, Aveling d. 1898. Public domain across all jurisdictions."
+  verified_by: maxim-cuonglk191111
+  verified_at: 2026-10-06
+documents: [ch01, ch02, ch03]

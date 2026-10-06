@@ -1,0 +1,395 @@
+schema_version: 4
+document: document:engels:1880:socialism-utopian-scientific:ch01
+annotations:
+  - passage: p00002
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00005
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00005
+    term: burgher
+    match: burghers
+    occurrence: 1
+  - passage: p00005
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00005
+    term: burgher
+    match: burgher
+    occurrence: 1
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00005
+    term: journeyman
+    match: journeyman
+    occurrence: 1
+  - passage: p00005
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00005
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00005
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00005
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00005
+    term: revolution
+    match: Revolution
+    occurrence: 2
+  - passage: p00006
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00006
+    term: communism
+    match: communistic
+    occurrence: 1
+  - passage: p00006
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00006
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00007
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00008
+    term: feudalism
+    match: feudalism
+    occurrence: 1
+  - passage: p00009
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00009
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00009
+    term: revolution
+    match: Revolution
+    occurrence: 2
+  - passage: p00010
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00010
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00010
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00010
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00010
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00010
+    term: feudalism
+    match: feudal
+    occurrence: 3
+  - passage: p00010
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00012
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00012
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00012
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00012
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00012
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 2
+  - passage: p00012
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00012
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00012
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00012
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00012
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00012
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00012
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00012
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00015
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00015
+    term: revolution
+    match: Revolution
+    occurrence: 2
+  - passage: p00015
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00015
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00015
+    term: revolution
+    match: Revolution
+    occurrence: 3
+  - passage: p00016
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00016
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00016
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00016
+    term: modern-industry
+    match: Modern Industry
+    occurrence: 1
+  - passage: p00016
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00016
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00019
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00019
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00019
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00021
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00021
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00021
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00021
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00022
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00022
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00022
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00023
+    term: barbarian
+    match: barbarism
+    occurrence: 1
+  - passage: p00023
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00023
+    term: barbarian
+    match: barbarism
+    occurrence: 2
+  - passage: p00025
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00025
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00025
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00025
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00025
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00025
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00026
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00026
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00027
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00033
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00034
+    term: communism
+    match: communism
+    occurrence: 1
+  - passage: p00034
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00035
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00035
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00035
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00036
+    term: communism
+    match: Communist
+    occurrence: 1
+  - passage: p00036
+    term: communism
+    match: communistic
+    occurrence: 1
+  - passage: p00036
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00037
+    term: communism
+    match: Communism
+    occurrence: 1
+  - passage: p00039
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00040
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00040
+    term: communism
+    match: Communists
+    occurrence: 1

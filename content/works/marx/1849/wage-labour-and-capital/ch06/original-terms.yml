@@ -1,0 +1,243 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch06
+annotations:
+  - passage: p00001
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 3
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 4
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 5
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 6
+  - passage: p00003
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 7
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00004
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00004
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00004
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00004
+    term: wage-labour
+    match: wage-labour
+    occurrence: 2
+  - passage: p00004
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00005
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00006
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00006
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00007
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00007
+    term: exploitation
+    match: exploit
+    occurrence: 2
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00008
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00008
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00009
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00009
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00009
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00010
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00012
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00014
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00016
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00016
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00017
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00017
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00018
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00018
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00019
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00020
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00022
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1

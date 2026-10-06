@@ -1,0 +1,55 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch04
+title: Wage Labour and Capital. Chapter 4
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1847/wage-labour/ch04.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20260611075236id_/https://www.marxists.org/archive/marx/works/1847/wage-labour/ch04.htm
+  snapshot: ingestion/snapshots/marx/1849/wage-labour-and-capital/ch04/2026-10-06.html
+  snapshot_hash: sha256:eb417d2d1b0b4486bdd867a064ec11da0d84a5e55b0de187643f4197fe0bd64c
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 3
+    text: By what are wages determined?
+    hash: sha256:e04f169be1f2e383a55b136472952659c752a14f8333a9fa7b2d585e372cd1e2
+    state: active
+  - id: p00002
+    type: paragraph
+    text: "Now, the same general laws which regulate the price of commodities in general, naturally regulate wages, or the price of labour-power. Wages will now rise, now fall, according to the relation of supply and demand, according as competition shapes itself between the buyers of labour-power, the capitalists, and the sellers of labour-power, the workers. The fluctuations of wages correspond to the fluctuation in the price of commodities in general. But within the limits of these fluctuations the price of labour-power will be determined by the cost of production, by the labour-time necessary for production of this commodity: labour-power."
+    hash: sha256:85bdab697d06aab63d896e29110ca86816b6c71c66266315ff6ad155ea0acaa7
+    state: active
+  - id: p00003
+    type: paragraph
+    text: What, then, is the cost of production of labour-power?
+    hash: sha256:9820bc76fd5faef3373030e88ec5830d6c0096c2af8194bac1f37d8a6c608a62
+    state: active
+  - id: p00004
+    type: paragraph
+    text: It is the cost required for the maintenance of the labourer as a labourer, and for his education and training as a labourer.
+    hash: sha256:3e2d4ddcc5d6f4189b298644af070ba0f131e829a063ed5cc082832f1c84d008
+    state: active
+  - id: p00005
+    type: paragraph
+    text: Therefore, the shorter the time required for training up to a particular sort of work, the smaller is the cost of production of the worker, the lower is the price of his labour-power, his wages. In those branches of industry in which hardly any period of apprenticeship is necessary and the mere bodily existence of the worker is sufficient, the cost of his production is limited almost exclusively to the commodities necessary for keeping him in working condition. The price of his work will therefore be determined by the price of the necessary means of subsistence.
+    hash: sha256:ba1141bf087ad3a4a5eb44b289efa4567b435d9236aeb472765749710787f3e8
+    state: active
+  - id: p00006
+    type: paragraph
+    text: Here, however, there enters another consideration. The manufacturer who calculates his cost of production and, in accordance with it, the price of the product, takes into account the wear and tear of the instruments of labour. If a machine costs him, for example, 1,000 shillings, and this machine is used up in 10 years, he adds 100 shillings annually to the price of the commodities, in order to be able after 10 years to replace the worn-out machine with a new one. In the same manner, the cost of production of simple labour-power must include the cost of propagation, by means of which the race of workers is enabled to multiply itself, and to replace worn-out workers with new ones. The wear and tear of the worker, therefore, is calculated in the same manner as the wear and tear of the machine.
+    hash: sha256:218c4bf89d5fff67a2cae4e4c0c9779e26575be6a0b5ddb077b1afb0131760a6
+    state: active
+  - id: p00007
+    type: paragraph
+    text: Thus, the cost of production of simple labour-power amounts to the cost of the existence and propagation of the worker. The price of this cost of existence and propagation constitutes wages. The wages thus determined are called the minimum of wages. This minimum wage, like the determination of the price of commodities in general by cost of production, does not hold good for the single individual, but only for the race. Individual workers, indeed, millions of workers, do not receive enough to be able to exist and to propagate themselves; but the wages of the whole working class adjust themselves, within the limits of their fluctuations, to this minimum.
+    hash: sha256:e5b56cbb4d3ecd95a5ad77e88a39318961132f2dabd506c4587cb75cea1bee77
+    state: active
+  - id: p00008
+    type: paragraph
+    text: Now that we have come to an understanding in regard to the most general laws which govern wages, as well as the price of every other commodity, we can examine our subject more particularly.
+    hash: sha256:9695f6c4511d3beeacd62478113e7d70aa9c5927a63847c5832442e28be67680
+    state: active

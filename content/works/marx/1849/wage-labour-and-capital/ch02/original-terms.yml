@@ -1,0 +1,123 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch02
+annotations:
+  - passage: p00003
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00003
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00004
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00004
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00004
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00004
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00005
+    term: exchange-value
+    match: exchange value
+    occurrence: 1
+  - passage: p00005
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00005
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00006
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00006
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00008
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00009
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00010
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00010
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00010
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00010
+    term: commodity
+    match: commodity
+    occurrence: 3
+  - passage: p00010
+    term: commodity
+    match: commodity
+    occurrence: 4
+  - passage: p00010
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00010
+    term: serf
+    match: serf
+    occurrence: 2
+  - passage: p00011
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: wage-labour
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 3

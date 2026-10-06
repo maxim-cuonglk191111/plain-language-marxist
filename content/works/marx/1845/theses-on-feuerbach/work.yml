@@ -1,0 +1,13 @@
+schema_version: 4
+id: work:marx:1845:theses-on-feuerbach
+title: Theses on Feuerbach
+short_title: Theses
+authors: [marx]
+year: 1845
+rights:
+  status: PUBLIC_DOMAIN
+  attribution: Marxists Internet Archive
+  notes: "Written by Marx in spring 1845; first published by Engels in 1888 as an appendix to Ludwig Feuerbach. Marx d. 1883, Engels d. 1895. Public domain across all jurisdictions."
+  verified_by: maxim-cuonglk191111
+  verified_at: 2026-10-06
+documents: [theses]

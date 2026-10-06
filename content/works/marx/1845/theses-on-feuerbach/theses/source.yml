@@ -1,0 +1,181 @@
+schema_version: 4
+document: document:marx:1845:theses-on-feuerbach:theses
+title: Theses on Feuerbach
+source:
+  provider: mia
+  url: https://www.marxists.org/archive/marx/works/1845/theses/theses.htm
+  retrieved_at: 2026-10-06
+  via: https://web.archive.org/web/20261003184216id_/https://www.marxists.org/archive/marx/works/1845/theses/theses.htm
+  snapshot: ingestion/snapshots/marx/1845/theses-on-feuerbach/theses/2026-10-06.html
+  snapshot_hash: sha256:0129c207b2e1eff86b08747aeac8b439eb75c5daf2742cbd8414399aa9aa609f
+  parser:
+    name: mia
+    version: 1.1.0
+passages:
+  - id: p00001
+    type: heading
+    level: 1
+    text: Theses On Feuerbach
+    hash: sha256:dd93f12c0d8b0954adc049903d8e7ebc78b2d8e13e3c848641ea8657e8312884
+    state: active
+  - id: p00002
+    type: heading
+    level: 4
+    text: I
+    hash: sha256:a83dd0ccbffe39d071cc317ddf6e97f5c6b1c87af91919271f9fa140b0508c6c
+    state: active
+  - id: p00003
+    type: paragraph
+    text: The chief defect of all hitherto existing materialism – that of Feuerbach included – is that the thing, reality, sensuousness, is conceived only in the form of the <i>object or of contemplation</i>, but not as <i>sensuous human activity, practice</i>, not subjectively. Hence, in contradistinction to materialism, the <i>active</i> side was developed abstractly by idealism – which, of course, does not know real, sensuous activity as such.
+    hash: sha256:4baf2e77e90d6182bdfae6bb10e41d3081b0a2f5acf37ab0fc2f1d4f97c07613
+    state: active
+  - id: p00004
+    type: paragraph
+    text: Feuerbach wants sensuous objects, really distinct from the thought objects, but he does not conceive human activity itself as <i>objective</i> activity. Hence, in The Essence of Christianity, he regards the theoretical attitude as the only genuinely human attitude, while practice is conceived and fixed only in its dirty-judaical manifestation. Hence he does not grasp the significance of “revolutionary”, of “practical-critical”, activity.
+    hash: sha256:22bcc847b7f0d45b3d6100609406210b1a8041cbd3ee25748be89ff4ce1c6f77
+    state: active
+  - id: p00005
+    type: heading
+    level: 4
+    text: II
+    hash: sha256:2e561ff2355c06484efc416619b5b7f7fc055acdb4e5b6db7a4bc0a5016b19e3
+    state: active
+  - id: p00006
+    type: paragraph
+    text: The question whether objective truth can be attributed to human thinking is not a question of theory but is a practical question. Man must prove the truth — i.e. the reality and power, the this-sidedness of his thinking in practice. The dispute over the reality or non-reality of thinking that is isolated from practice is a purely <i>scholastic</i> question.
+    hash: sha256:f821f372170f17ada8fae623d3df4f4490bd637531235eb50110c87905a92dd1
+    state: active
+  - id: p00007
+    type: heading
+    level: 4
+    text: III
+    hash: sha256:399dbc8659309a249da966067c99d646aca9aa7868a5962559b64f15f5e99005
+    state: active
+  - id: p00008
+    type: paragraph
+    text: The materialist doctrine concerning the changing of circumstances and upbringing forgets that circumstances are changed by men and that it is essential to educate the educator himself. This doctrine must, therefore, divide society into two parts, one of which is superior to society.
+    hash: sha256:3265bf2293964b57091cf97974082ad7694a89a2e71b5a2f3e5901953813c31b
+    state: active
+  - id: p00009
+    type: paragraph
+    text: The coincidence of the changing of circumstances and of human activity or self-changing can be conceived and rationally understood only as <i>revolutionary practice</i>.
+    hash: sha256:a63069aec63178c5afc2fee7c4622ebb639d1dbd23e18d8f5b33ecbb1d37ffc0
+    state: active
+  - id: p00010
+    type: heading
+    level: 4
+    text: IV
+    hash: sha256:2c65a48513a36d846e69232a88c404b4d44b99d846cd1fc598b08e95c0a75b9a
+    state: active
+  - id: p00011
+    type: paragraph
+    text: Feuerbach starts out from the fact of religious self-alienation, of the duplication of the world into a religious world and a secular one. His work consists in resolving the religious world into its secular basis.
+    hash: sha256:0bfc265c5d496e0ae695dfe818847b6bf9cf2de697797687a6a4f64040239360
+    state: active
+  - id: p00012
+    type: paragraph
+    text: But that the secular basis detaches itself from itself and establishes itself as an independent realm in the clouds can only be explained by the cleavages and self-contradictions within this secular basis. The latter must, therefore, in itself be both understood in its contradiction and revolutionized in practice. Thus, for instance, after the earthly family is discovered to be the secret of the holy family, the former must then itself be destroyed in theory and in practice.
+    hash: sha256:f499781c85c8fa7589e83f9bcf74e8b19597ca1322ab134b60a1f3f4e7144388
+    state: active
+  - id: p00013
+    type: heading
+    level: 4
+    text: V
+    hash: sha256:de5a6f78116eca62d7fc5ce159d23ae6b889b365a1739ad2cf36f925a140d0cc
+    state: active
+  - id: p00014
+    type: paragraph
+    text: Feuerbach, not satisfied with abstract thinking, wants contemplation; but he does not conceive sensuousness as practical, human-sensuous activity.
+    hash: sha256:e7197b009bb25b45a772e9d1b2afa38c5706457735edda82d762862694b5b026
+    state: active
+  - id: p00015
+    type: heading
+    level: 4
+    text: VI
+    hash: sha256:dc7b94e12cffc1d23c55f1f9bf77857827d2148f12a8f010df361e3b2db05533
+    state: active
+  - id: p00016
+    type: paragraph
+    text: Feuerbach resolves the religious essence into the human essence. But the human essence is no abstraction inherent in each single individual.
+    hash: sha256:718c180e80f63f4d75bc184251c37b581d432378ff222b502a40db197dbc3466
+    state: active
+  - id: p00017
+    type: paragraph
+    text: In its reality it is the ensemble of the social relations.
+    hash: sha256:0e21f06afa343320cc3a92e297683c3990d335fa397a44a3797e3f67021f0c58
+    state: active
+  - id: p00018
+    type: paragraph
+    text: "Feuerbach, who does not enter upon a criticism of this real essence, is consequently compelled:"
+    hash: sha256:624bcb704224454f83b994cbada0fd0b7ac3cd9b6d5579bb33f6d5a57d1dd6c7
+    state: active
+  - id: p00019
+    type: list_item
+    text: To abstract from the historical process and to fix the religious sentiment as something by itself and to presuppose an abstract – isolated – human individual.
+    hash: sha256:8ce9bf6b7a3e6af090da44c6ea29769fab577613550b244b0e0cd388da4ba34a
+    state: active
+  - id: p00020
+    type: list_item
+    text: Essence, therefore, can be comprehended only as “genus”, as an internal, dumb generality which naturally unites the many individuals.
+    hash: sha256:251e9c5229a10094f1a92370359162ae7def3b7b334f3ce1706baa2875a84ced
+    state: active
+  - id: p00021
+    type: heading
+    level: 4
+    text: VII
+    hash: sha256:41bea372966c972f437fa98bac0e5b2d46f7a5f8609bc7fb1eedf1b8c3f055a5
+    state: active
+  - id: p00022
+    type: paragraph
+    text: Feuerbach, consequently, does not see that the “religious sentiment” is itself a social product, and that the abstract individual whom he analyses belongs to a particular form of society.
+    hash: sha256:2e4556c4e4939b5e19c9b889b0bd32e2d25227d88d74e3a42a1484579df859c5
+    state: active
+  - id: p00023
+    type: heading
+    level: 4
+    text: VIII
+    hash: sha256:2e1a3a69796bfe6fab63b81b55ed913f1597459886f62a1d2824fd100eba871c
+    state: active
+  - id: p00024
+    type: paragraph
+    text: All social life is essentially practical. All mysteries which lead theory to mysticism find their rational solution in human practice and in the comprehension of this practice.
+    hash: sha256:67b45deec4ed3d0b79d3c2ee41f447d9e148e5c00fb0586878d6d316d622cf94
+    state: active
+  - id: p00025
+    type: heading
+    level: 4
+    text: IX
+    hash: sha256:5eb1f0f9433a0b6f61dd40a6c4369a77cbeaa0a98402d5b4f1add182dd7f4e23
+    state: active
+  - id: p00026
+    type: paragraph
+    text: The highest point reached by contemplative materialism, that is, materialism which does not comprehend sensuousness as practical activity, is contemplation of single individuals and of civil society.
+    hash: sha256:4fc619b106efcdca4132c6364fe2c62a6591277d5272ae9adf67ba36e6cccede
+    state: active
+  - id: p00027
+    type: heading
+    level: 4
+    text: X
+    hash: sha256:4b68ab3847feda7d6c62c1fbcbeebfa35eab7351ed5e78f4ddadea5df64b8015
+    state: active
+  - id: p00028
+    type: paragraph
+    text: The standpoint of the old materialism is civil society; the standpoint of the new is human society, or social humanity.
+    hash: sha256:4ec10142848f81f2847f9a84643db79c4dd1a4b49c7993bf1da5bfc4440648b9
+    state: active
+  - id: p00029
+    type: heading
+    level: 4
+    text: XI
+    hash: sha256:281317f5a54d671f07e300e15e5ca271bc8a5ecee2acbb642ecf8f0c21f0ceeb
+    state: active
+  - id: p00030
+    type: paragraph
+    text: The philosophers have only interpreted the world, in various ways; the point is to change it.
+    hash: sha256:c9dbf60d7374f121ee599a8bba959d371b9531eaca30a7d840cd0b010d23a140
+    state: active
+  - id: p00031
+    type: paragraph
+    text: Deutsch | 1938 translation of Marx’s original | 2002 translation of Marx’s original | MECW translation of Engels’ 1888 version
+    hash: sha256:7d76ba75626104d7859d013132a67055672f738de4a24c9b395f89d41029c59b
+    state: active

@@ -1,0 +1,1011 @@
+schema_version: 4
+document: document:engels:1880:socialism-utopian-scientific:ch03
+annotations:
+  - passage: p00002
+    term: revolution
+    match: revolutions
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00002
+    term: mode-of-production
+    match: modes of production
+    occurrence: 2
+  - passage: p00002
+    term: mode-of-production
+    match: modes of production
+    occurrence: 3
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00004
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 3
+  - passage: p00004
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00004
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 3
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00004
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00004
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00004
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 4
+  - passage: p00004
+    term: manufacture
+    match: manufacture
+    occurrence: 2
+  - passage: p00004
+    term: feudalism
+    match: feudal
+    occurrence: 3
+  - passage: p00004
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00004
+    term: mode-of-production
+    match: mode of production
+    occurrence: 4
+  - passage: p00004
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00004
+    term: productive-forces
+    match: productive forces
+    occurrence: 3
+  - passage: p00004
+    term: mode-of-production
+    match: modes of production
+    occurrence: 1
+  - passage: p00006
+    term: private-property
+    match: private property
+    occurrence: 1
+  - passage: p00006
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00006
+    term: serf
+    match: serf
+    occurrence: 1
+  - passage: p00006
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00006
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00006
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00006
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00006
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00006
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00006
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00006
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00006
+    term: means-of-production
+    match: means of production
+    occurrence: 5
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00007
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00007
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 4
+  - passage: p00007
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00007
+    term: commodity
+    match: commodities
+    occurrence: 5
+  - passage: p00007
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00008
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00008
+    term: journeyman
+    match: journeymen
+    occurrence: 1
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 5
+  - passage: p00009
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00009
+    term: means-of-production
+    match: means of production
+    occurrence: 6
+  - passage: p00009
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00009
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00009
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00010
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00010
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00010
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00011
+    term: journeyman
+    match: journeyman
+    occurrence: 1
+  - passage: p00011
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00011
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00011
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00011
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00011
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00011
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00011
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00011
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00012
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00012
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00012
+    term: commodity
+    match: commodity
+    occurrence: 2
+  - passage: p00013
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00014
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00014
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00014
+    term: feudalism
+    match: feudal
+    occurrence: 2
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00014
+    term: commodity
+    match: commodities
+    occurrence: 3
+  - passage: p00015
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00016
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodity
+    occurrence: 1
+  - passage: p00016
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00016
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00016
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00017
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00017
+    term: world-market
+    match: world-market
+    occurrence: 1
+  - passage: p00017
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00018
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00018
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00018
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00018
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00019
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00019
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00020
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00020
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00022
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00023
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00024
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00024
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00024
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00024
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00025
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00026
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00026
+    term: modern-industry
+    match: modern industry
+    occurrence: 2
+  - passage: p00026
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00027
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00027
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 2
+  - passage: p00027
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00027
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00028
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00028
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00028
+    term: commodity
+    match: commodities
+    occurrence: 2
+  - passage: p00028
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00029
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00029
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00029
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00029
+    term: means-of-production
+    match: Means of production
+    occurrence: 1
+  - passage: p00029
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00029
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00029
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 4
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 5
+  - passage: p00029
+    term: means-of-production
+    match: means of production
+    occurrence: 4
+  - passage: p00029
+    term: means-of-production
+    match: means of production
+    occurrence: 5
+  - passage: p00029
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00029
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00029
+    term: productive-forces
+    match: productive forces
+    occurrence: 3
+  - passage: p00029
+    term: capital
+    match: capital
+    occurrence: 6
+  - passage: p00030
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 2
+  - passage: p00030
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00030
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00030
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00030
+    term: capital
+    match: capital
+    occurrence: 3
+  - passage: p00031
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00031
+    term: exploitation
+    match: exploitation
+    occurrence: 2
+  - passage: p00033
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00033
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00033
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 2
+  - passage: p00033
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00033
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00034
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00034
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00034
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00034
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00034
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00034
+    term: exploitation
+    match: exploit
+    occurrence: 1
+  - passage: p00034
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00034
+    term: productive-forces
+    match: productive forces
+    occurrence: 3
+  - passage: p00035
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00035
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00035
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00035
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00036
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00036
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00037
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00037
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00037
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00037
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00037
+    term: appropriation
+    match: appropriation
+    occurrence: 3
+  - passage: p00037
+    term: appropriation
+    match: appropriation
+    occurrence: 4
+  - passage: p00037
+    term: means-of-subsistence
+    match: means of subsistence
+    occurrence: 1
+  - passage: p00038
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00038
+    term: proletariat
+    match: proletarians
+    occurrence: 1
+  - passage: p00038
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00038
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00038
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00038
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00038
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00039
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00039
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 1
+  - passage: p00039
+    term: class-antagonism
+    match: class antagonisms
+    occurrence: 2
+  - passage: p00039
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00039
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00040
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00040
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00041
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00042
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00042
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00042
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00042
+    term: exploitation
+    match: exploited
+    occurrence: 1
+  - passage: p00042
+    term: exploitation
+    match: exploitation
+    occurrence: 1
+  - passage: p00043
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00043
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00043
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00044
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00044
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00044
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00044
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00044
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00044
+    term: productive-forces
+    match: productive forces
+    occurrence: 3
+  - passage: p00044
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00045
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00045
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00047
+    term: means-of-production
+    match: Means of production
+    occurrence: 1
+  - passage: p00047
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00047
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00048
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00048
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00048
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00048
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00048
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00048
+    term: means-of-production
+    match: means of production
+    occurrence: 3
+  - passage: p00048
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00048
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00048
+    term: modern-industry
+    match: modern industry
+    occurrence: 1
+  - passage: p00049
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00049
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00049
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00050
+    term: commodity
+    match: commodities
+    occurrence: 1
+  - passage: p00051
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00051
+    term: over-production
+    match: over-production
+    occurrence: 1
+  - passage: p00051
+    term: productive-forces
+    match: productive forces
+    occurrence: 2
+  - passage: p00051
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00051
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00052
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00052
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00053
+    term: proletariat
+    match: Proletarian
+    occurrence: 1
+  - passage: p00053
+    term: revolution
+    match: Revolution
+    occurrence: 1
+  - passage: p00053
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00053
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00053
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00053
+    term: proletariat
+    match: proletariat
+    occurrence: 2
+  - passage: p00053
+    term: means-of-production
+    match: means of production
+    occurrence: 2
+  - passage: p00053
+    term: capital
+    match: capital
+    occurrence: 1
+  - passage: p00054
+    term: proletariat
+    match: proletariat
+    occurrence: 1
+  - passage: p00054
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00054
+    term: proletariat
+    match: proletarian
+    occurrence: 2
+  - passage: p00056
+    term: appropriation
+    match: appropriation
+    occurrence: 1
+  - passage: p00056
+    term: appropriation
+    match: appropriation
+    occurrence: 2
+  - passage: p00056
+    term: mode-of-production
+    match: mode of production
+    occurrence: 1
+  - passage: p00056
+    term: mode-of-production
+    match: mode of production
+    occurrence: 2
+  - passage: p00058
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00058
+    term: productive-forces
+    match: productive forces
+    occurrence: 1
+  - passage: p00058
+    term: manufacture
+    match: manufacture
+    occurrence: 1
+  - passage: p00059
+    term: means-of-production
+    match: means of production
+    occurrence: 1
+  - passage: p00059
+    term: means-of-production
+    match: means of production
+    occurrence: 2

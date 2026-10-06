@@ -1,0 +1,99 @@
+schema_version: 4
+document: document:marx:1849:wage-labour-and-capital:ch01
+annotations:
+  - passage: p00003
+    term: class-struggle
+    match: class struggle
+    occurrence: 1
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 2
+  - passage: p00003
+    term: feudalism
+    match: feudal
+    occurrence: 1
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 1
+  - passage: p00003
+    term: revolution
+    match: revolutionary
+    occurrence: 1
+  - passage: p00003
+    term: class-struggle
+    match: class struggle
+    occurrence: 2
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeoisie
+    occurrence: 1
+  - passage: p00003
+    term: revolution
+    match: revolutionary
+    occurrence: 2
+  - passage: p00003
+    term: class-struggle
+    match: class struggle
+    occurrence: 3
+  - passage: p00003
+    term: revolution
+    match: revolutionary
+    occurrence: 3
+  - passage: p00003
+    term: proletariat
+    match: proletarian
+    occurrence: 1
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 2
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 3
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 3
+  - passage: p00003
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 4
+  - passage: p00003
+    term: class-struggle
+    match: class struggle
+    occurrence: 4
+  - passage: p00003
+    term: revolution
+    match: revolution
+    occurrence: 4
+  - passage: p00004
+    term: class-struggle
+    match: class struggle
+    occurrence: 1
+  - passage: p00006
+    term: wage-labour
+    match: Wage-labour
+    occurrence: 1
+  - passage: p00006
+    term: capital
+    match: Capital
+    occurrence: 1
+  - passage: p00007
+    term: bourgeoisie
+    match: bourgeois
+    occurrence: 1
+  - passage: p00008
+    term: exploitation
+    match: Exploitation
+    occurrence: 1
+  - passage: p00008
+    term: bourgeoisie
+    match: Bourgeois
+    occurrence: 1

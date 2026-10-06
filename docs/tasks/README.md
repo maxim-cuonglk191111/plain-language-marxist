@@ -58,5 +58,6 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [050](050-render-capital-vol1-parts2-3.md) | Plain English rendering of *Das Kapital* Vol. I, Parts II & III: Capital & Absolute Surplus-Value (Ch. 4–11) | M3 | Open |
 | [051](051-render-capital-vol1-parts4-6.md) | Plain English rendering of *Das Kapital* Vol. I, Parts IV, V & VI: Relative Surplus-Value & Wages (Ch. 12–22) | M3 | Open |
 | [052](052-render-capital-vol1-parts7-8.md) | Plain English rendering of *Das Kapital* Vol. I, Parts VII & VIII: Accumulation & Primitive Accumulation (Ch. 23–33) | M3 | Open |
+| [053](053-home-library-bookshelf.md) | Home library bookshelf: work cards, aggregated metrics, and scalable catalog UI | M3 | Open |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

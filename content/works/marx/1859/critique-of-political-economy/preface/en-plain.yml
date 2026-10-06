@@ -1,0 +1,101 @@
+schema_version: 5
+document: document:marx:1859:critique-of-political-economy:preface
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:a6a6808d42113f0b92ffeaeb901a953949679040d129825d474a4064077790f2
+    revision: 2
+    ai_assisted: true
+    text: Preface
+  p00002:
+    covers: [p00002]
+    based_on: sha256:56cbc1904358fb2c93bb11425adae7ac0bd401b627232f508470680265ee89a4
+    revision: 2
+    ai_assisted: true
+    text: "I examine the system of {bourgeoisie:adj} economy in the following order: <i>{capital:sg}, landed property, {wage-labour:sg}; the State, foreign trade, {world-market:sg}.</i>"
+  p00003:
+    covers: [p00003]
+    based_on: sha256:1e18199e471b0d0f2625ca2ad6d955e112a71897f96f0aec53622bd796008729
+    revision: 2
+    ai_assisted: true
+    text: "The economic conditions of existence of the three great classes of modern {bourgeoisie:adj} society are analyzed under the first three headings. The connection between the other three headings is obvious. The first part of the first book, dealing with Capital, contains these chapters: 1. The {commodity:sg}, 2. Money or simple circulation; 3. {Capital:sg} in general. The present volume consists of the first two chapters. All the material lies before me as separate notebooks, written not for publication but for my own self-clarification at different times. Shaping them into a unified work according to this plan will depend on circumstances."
+  p00004:
+    covers: [p00004]
+    based_on: sha256:e5f6a4364dd3356f2b4f6d09d002c1c48188055d51cf5aa6a8fb407b92f774d3
+    revision: 2
+    ai_assisted: true
+    text: I have left out a general introduction that I had drafted. On second thought, giving conclusions ahead of time before proving them would only cause confusion. A reader who truly wants to follow my argument must advance from the specific to the general. A few brief remarks about the course of my economic studies are fitting here.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:fba68a757208e47b03339736254846fe106fca3ab09488cd04da47bce61600a9
+    revision: 2
+    ai_assisted: true
+    text: Although I studied law, I treated it as secondary to philosophy and history. In the years 1842-43, as editor of the <i>Rheinische Zeitung,</i> I first faced the difficult task of having to discuss material economic interests. Debates in the Rhenish Landtag on wood thefts and dividing landed property first turned my attention to economic questions. So did the official attack by Herr von Schaper, then Oberprasident of the Rhine Province, against the <i>Rheinische Zeitung</i> concerning the Moselle peasantry, alongside debates on free trade and tariffs. At that time, when good intentions “to push forward” often replaced real knowledge, an echo of French socialism and {communism:sg} appeared in the <i>Rheinische Zeitung.</i> I criticized this superficial approach. But in a debate with the <i>Allgemeine Augsburger Zeitung,</i> I also admitted that my studies did not yet allow me to judge the content of those French theories. When the publishers of the <i>Rheinische Zeitung</i> thought that a milder editorial line might lift the ban on the newspaper, I eagerly took the chance to leave public life for my study.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:a2cab64e9f8b87cbe423e0bee18f08de1334e3f2594ee56438d9b2b5544d1563
+    revision: 2
+    ai_assisted: true
+    text: The first work I undertook to resolve my doubts was a critical re-examination of the Hegelian philosophy of law. Its introduction appeared in the <i>Deutsch-Franzosische Jahrbucher</i> published in Paris in 1844. My investigation led to the conclusion that legal relations and political forms cannot be understood on their own, or by a supposed general progress of the human mind. Instead, they are rooted in the material conditions of life. Hegel, following English and French thinkers of the eighteenth century, called the whole of these material conditions “civil society”. The anatomy of civil society, however, must be sought in political economy. I began studying political economy in Paris and continued in Brussels, after being expelled from France by M. Guizot. The general conclusion I reached became the guiding thread for all my studies, and can be summarized as follows.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:be8059c346b85c66df2b846dcaf3a7101678f6c6ede61fb0f7060b80cdd0ad74
+    revision: 2
+    ai_assisted: true
+    text: In the social production of their life, people enter into definite relations that are independent of their will. These are {relations-of-production:sg} that correspond to a given stage in the development of their material {productive-forces:sg}. The sum total of these {relations-of-production:sg} forms the economic structure of society. This is the real foundation on which a legal and political superstructure arises, and to which definite forms of social consciousness correspond. The {mode-of-production:sg} of material life conditions the general process of social, political, and intellectual life. It is not the consciousness of people that determines their existence, but on the contrary, their social existence that determines their consciousness. At a certain stage of development, the material {productive-forces:sg} of society come into conflict with the existing {relations-of-production:sg}. In legal terms, this simply means they clash with the property relations inside which they had worked up to then. From forms of development of the {productive-forces:sg}, these relations turn into their chains. Then begins an era of social {revolution:sg}. Changes in the economic foundation lead sooner or later to the transformation of the entire immense superstructure.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:794c8eb5b64721b65eb217e94c0ecd3734dd6fb0d28ed22864506c68513adaab
+    revision: 2
+    ai_assisted: true
+    text: When studying these transformations, we must always make a distinction between two things. First is the material transformation of the economic conditions of production, which can be observed with the precision of natural science. Second are the legal, political, religious, artistic, or philosophical forms — in short, ideological forms — through which people become conscious of this conflict and fight it out. Just as we do not judge an individual by what he thinks of himself, we cannot judge such a period of transformation by its consciousness. On the contrary, this consciousness must be explained from the contradictions of material life, and from the conflict between social {productive-forces:sg} and the {relations-of-production:sg}. No social order is ever destroyed before all the {productive-forces:sg} it can hold have developed. And new, superior {relations-of-production:sg} never replace older ones before the material conditions for their existence have matured inside the old society itself.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:1a59c6d1efe686e8312a62278242af7a90713f8a2651834f17d1e4fd93f40930
+    revision: 2
+    ai_assisted: true
+    text: Humanity therefore sets itself only tasks that it can solve. Closer examination always shows that the problem itself arises only when the material conditions for its solution are already present, or at least being formed. In broad outline, the Asiatic, ancient,<fn ref="A"/> {feudalism:adj}, and modern {bourgeoisie:adj} {mode-of-production:pl} may be seen as progressive eras in the economic development of society. The {bourgeoisie:adj} {mode-of-production:sg} is the last antagonistic form of social production. It is antagonistic not in the sense of individual rivalry, but of an antagonism growing out of the social conditions of life. Yet the {productive-forces:sg} developing inside {bourgeoisie:adj} society also create the material conditions to resolve this antagonism. With this social order, the prehistory of human society comes to an end.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:4e0ca5d0dbd0605d1892375c06bf3cf05f52aa436f911f349adef8bda2b61c43
+    revision: 2
+    ai_assisted: true
+    text: "Frederick Engels had reached the same conclusion by another path, as seen in his <i>Lage der arbeitenden Klasse in England</i>. We had exchanged ideas constantly by letter since his essay in the <i>Deutsch-Französische Jahrbücher,</i> appeared. When he moved to Brussels in the spring of 1845, we decided to work out our view together against German philosophy, settling accounts with our former philosophical conscience. We carried this out as a critique of post-Hegelian philosophy. The manuscript, [The German Ideology], filled two large volumes and had reached publishers in Westphalia when we learned it could not be printed. We abandoned the manuscript to the gnawing criticism of the mice all the more willingly, because we had achieved our main purpose: self-clarification. Among our scattered writings from that period, I will mention only the <i>Manifesto of the Communist Party,</i> written jointly by Engels and myself, and a <i>Discours sur le libre echange,</i> which I published alone. The core points of our view were first outlined in scientific, although polemical, form in my <i>Misere de la philosophie</i>..., a book against Proudhon published in 1847. An essay on <i>Wage-Labour</i> [Wage-Labor and Capital] was based on lectures I gave at the German Workers' Association in Brussels. Its publication was interrupted by the February {Revolution:sg} and my expulsion from Belgium."
+  p00011:
+    covers: [p00011]
+    based_on: sha256:972635bb0d185cd8ae64ec511034ce3198e9f228979e681847ffd0d037debde0
+    revision: 2
+    ai_assisted: true
+    text: Publishing the <i>Neue Rheinische Zeitung</i> in 1848 and 1849 and later events interrupted my economic studies. I could only resume them in London in 1850. The vast historical material in the British Museum, the vantage point London offered for observing {bourgeoisie:adj} society, and the gold discoveries in California and Australia led me to start over from the beginning. These studies led into seemingly distant topics that took up considerable time. Above all, the need to earn a living cut down the time I had. For eight years now, I have written for the <i>New York Tribune,</i> the leading Anglo-American newspaper. This fragmented my work, because I only rarely wrote ordinary news reports. Many of my articles dealt with economic events in Britain and on the continent, forcing me to study practical details outside the core of political economy.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:2abbf6c077371afe177103adda48ff23b77d23574d4750b3713fdf28203331ec
+    revision: 2
+    ai_assisted: true
+    text: "This sketch of my economic studies is meant only to show that my views come from conscientious research over many years. This holds true no matter how they may be judged, and however little they suit the ruling classes. At the entrance to science, as at the entrance to hell, the demand must be made:"
+  p00013:
+    covers: [p00013]
+    based_on: sha256:25a67403c3db623fc4bb75932b82b77105a825ec36605943f73be2067eb44bc9
+    revision: 2
+    ai_assisted: true
+    text: <i>Qui si convien lasciare ogni sospetto<br/>Ogni vilta convien che qui sia morta.<br/></i>
+  p00014:
+    covers: [p00014]
+    based_on: sha256:83d6e0e7e63e5c5d4dccaa329b730d0b59809cad78b860bf165ea990c7a28d3c
+    revision: 2
+    ai_assisted: true
+    text: "[From Dante, Divina Commedia:<br/>Here must all distrust be left;<br/>All cowardice must here be dead.]"
+  p00015:
+    covers: [p00015]
+    based_on: sha256:1c01f751825be1d2ad26fda88a3aaa9979c227d5f87be4f806b42c5f9bb466e9
+    revision: 2
+    ai_assisted: true
+    text: Karl Marx<br/>London, January 1859
+  p00016:
+    covers: [p00016]
+    based_on: sha256:4001e48ccfdf9528aa92bf982064ea95eb9ec5360a37c1c4f3a862ef19b4f342
+    revision: 2
+    ai_assisted: true
+    text: "As a second footnote to the {Communism:adj} Manifesto, Engels wrote in 1888:<br/><br/>In 1847, the history of society before written records was almost completely unknown. Since then, August von Haxthausen (1792-1866) discovered common land ownership in Russia. Georg Ludwig von Maurer proved it was the foundation from which all Teutonic peoples began. Step by step, village communities were found to be the earliest form of society from India to Ireland. The inner structure of this early {communism:adj} society was revealed by Lewis Henry Morgan's (1818-1861) discovery of the true nature of the clan. With the breaking up of these earliest communities, society split into separate, hostile classes. I traced this breaking up in The Origin of the Family, Private Property, and the State, second edition, Stuttgart, 1886.<br/><br/>As research on early history advanced, Marx and Engels updated their descriptions. In the passage above, Marx mentions “Asiatic” {mode-of-production:pl}, drawing on Hegel's framework (The Oriental Realm). They later abandoned the idea of a distinct Asiatic {mode-of-production:sg}. Instead, they kept four primary forms: tribal, ancient, {feudalism:adj}, and capitalist."

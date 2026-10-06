@@ -1,0 +1,45 @@
+schema_version: 5
+document: document:marx:1859:critique-of-political-economy:preface
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00005]
+    text: |-
+      In 1842, Marx became editor of the *Rheinische Zeitung* in Cologne, a radical liberal newspaper backed by Rhenish industrialists.
+
+      Debates on peasant wood collection rights and Moselle wine-growers' poverty forced him to confront economic realities directly for the first time.
+
+      Prussian state censorship banned the paper in March 1843, prompting Marx to leave Germany for Paris to study political economy.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00006]
+    text: |-
+      In Paris in 1843–1844, Marx wrote a critical review of G.W.F. Hegel's philosophy of law.
+
+      He concluded that laws and state forms do not arise from abstract ideas or the human spirit.
+
+      Instead, they grow out of property and class relations within "civil society," which can only be understood through political economy.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00007]
+    text: |-
+      This passage contains the classic summary of historical materialism.
+
+      The economic structure—the relations of production—forms the real foundation, or base, of society.
+
+      Upon this foundation rises a legal and political superstructure, along with corresponding forms of social consciousness.
+
+      When growing productive forces clash with existing property relations, an era of social revolution begins.
+    ai_assisted: true
+  e004:
+    kind: historical_context
+    targets: [p00010]
+    text: |-
+      In Brussels in 1845–1846, Marx and Engels co-wrote *The German Ideology* to clarify their own materialist outlook against post-Hegelian philosophy.
+
+      When publishers backed out, they abandoned the manuscript to the "gnawing criticism of the mice" because they had achieved self-clarification.
+
+      The manuscript was only rediscovered and published in full in 1932 by the Marx-Engels Institute in Moscow.
+    ai_assisted: true

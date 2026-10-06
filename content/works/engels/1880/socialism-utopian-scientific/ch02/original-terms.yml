@@ -93,3 +93,7 @@ annotations:
     term: capital
     match: capital
     occurrence: 2
+  - passage: p00024
+    term: labour-power
+    match: labor power
+    occurrence: 1

@@ -357,3 +357,79 @@ annotations:
     term: appropriation
     match: appropriation
     occurrence: 4
+  - passage: p00002
+    term: wage-labour
+    match: wage-workers
+    occurrence: 1
+  - passage: p00003
+    term: wage-labour
+    match: wage-worker
+    occurrence: 1
+  - passage: p00005
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage-worker
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage-worker
+    occurrence: 2
+  - passage: p00008
+    term: wage-labour
+    match: wage-workers
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage labourer
+    occurrence: 2
+  - passage: p00008
+    term: wage-labour
+    match: wage-labourers
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage-worker
+    occurrence: 3
+  - passage: p00008
+    term: wage-labour
+    match: wage-labourers
+    occurrence: 2
+  - passage: p00008
+    term: wage-labour
+    match: wage labourer
+    occurrence: 3
+  - passage: p00008
+    term: wage-labour
+    match: wage labourer
+    occurrence: 4
+  - passage: p00008
+    term: wage-labour
+    match: wage-workers
+    occurrence: 2
+  - passage: p00008
+    term: wage-labour
+    match: wage-workers
+    occurrence: 3
+  - passage: p00011
+    term: wage-labour
+    match: wage-workers
+    occurrence: 1
+  - passage: p00012
+    term: wage-labour
+    match: wage-worker
+    occurrence: 1
+  - passage: p00017
+    term: relations-of-production
+    match: relation of production
+    occurrence: 1
+  - passage: p00017
+    term: relations-of-production
+    match: relation of production
+    occurrence: 2

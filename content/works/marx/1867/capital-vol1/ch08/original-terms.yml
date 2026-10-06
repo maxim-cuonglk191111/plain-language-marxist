@@ -301,3 +301,87 @@ annotations:
     term: means-of-subsistence
     match: means of subsistence
     occurrence: 1
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00009
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00011
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00011
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00012
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00013
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00014
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 1
+  - passage: p00017
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00018
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00019
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00019
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00019
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00020
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00020
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00020
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00021
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00022
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00022
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00025
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00026
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00026
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2

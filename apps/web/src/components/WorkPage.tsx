@@ -11,7 +11,9 @@ type Work = DataIndex["works"][number];
  */
 export function WorkPage({ work, renderingKey }: { work: Work; renderingKey: string }) {
   const list = chapters(work, renderingKey);
-  const first = list[0]?.path ?? workPath(work);
+  const frontMatter = list.filter((c) => c.isFrontMatter);
+  const bodyChapters = list.filter((c) => !c.isFrontMatter);
+  const first = bodyChapters[0]?.path ?? list[0]?.path ?? workPath(work);
   return (
     <div className="prose-page work-page">
       <p className="work-title">{work.authors.map(authorName).join(" and ")}</p>
@@ -24,9 +26,23 @@ export function WorkPage({ work, renderingKey }: { work: Work; renderingKey: str
         . Original text: {work.rights.attribution}; each chapter links to its source page.
       </p>
       <ContinueReading workPath={workPath(work)} firstChapter={first} />
+      {frontMatter.length > 0 && (
+        <>
+          <h2>Prefaces and Afterwords</h2>
+          <ol className="chapter-list front-matter-list">
+            {frontMatter.map((c) => (
+              <li key={c.path}>
+                <a href={c.path}>{c.name.name}</a>{" "}
+                <span className="muted">about {minutes(c.words)} min</span>{" "}
+                <ChapterStatus path={c.path} />
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
       <h2>Chapters</h2>
       <ol className="chapter-list">
-        {list.map((c) => (
+        {bodyChapters.map((c) => (
           <li key={c.path}>
             <a href={c.path}>{c.name.name}</a>{" "}
             <span className="muted">about {minutes(c.words)} min</span>{" "}

@@ -2,7 +2,10 @@ import type { DataDocument } from "@plm/schema";
 import { describe, expect, it } from "vitest";
 import { chapterName, countWords, minutes, openingLine, plainOf, sections } from "./reading";
 
-const doc = (passages: Partial<DataDocument["passages"][number]>[]): DataDocument => ({
+const doc = (
+  passages: Partial<DataDocument["passages"][number]>[],
+  extra?: Partial<DataDocument>,
+): DataDocument => ({
   version: 1,
   id: "document:x",
   work_id: "work:x",
@@ -14,6 +17,7 @@ const doc = (passages: Partial<DataDocument["passages"][number]>[]): DataDocumen
     retrieved_at: "2026-01-01",
     attribution: "",
   },
+  ...extra,
   passages: passages.map((p, i) => ({
     id: `p${String(i + 1).padStart(5, "0")}`,
     type: "paragraph",
@@ -65,6 +69,31 @@ describe("chapterName", () => {
     expect(vpp(["XIV. The Struggle between Capital and Labour"])).toBe(
       "XIV. The Struggle between Capital and Labour",
     );
+  });
+
+  it("parses word-based chapter headings (e.g. Chapter One)", () => {
+    const d = doc([{ type: "heading", text: "Chapter One: Commodities" }]);
+    expect(chapterName(d, 1)).toEqual({
+      name: "Chapter One: Commodities",
+      short: "Ch. 1",
+    });
+    const d33 = doc([
+      { type: "heading", text: "Chapter Thirty-Three: The Modern Theory of Colonisation" },
+    ]);
+    expect(chapterName(d33, 33)).toEqual({
+      name: "Chapter Thirty-Three: The Modern Theory of Colonisation",
+      short: "Ch. 33",
+    });
+  });
+
+  it("identifies prefaces and afterwords as front matter", () => {
+    const d = doc([{ type: "heading", text: "1867 Preface to the First German Edition" }], {
+      id: "document:marx:1867:capital-vol1:pref-1st",
+    });
+    expect(chapterName(d, 1)).toEqual({
+      name: "1867 Preface to the First German Edition",
+      short: "Preface (1867)",
+    });
   });
 
   it("falls back to the document title and its position", () => {

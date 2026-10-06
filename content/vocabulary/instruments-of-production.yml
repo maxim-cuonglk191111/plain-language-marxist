@@ -1,5 +1,6 @@
 schema_version: 5
 term: instruments-of-production
+aliases: [instrument of production]
 original:
   sg: instruments of production
 definition:

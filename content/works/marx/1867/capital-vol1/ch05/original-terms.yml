@@ -477,3 +477,43 @@ annotations:
     term: commodity
     match: commodities
     occurrence: 3
+  - passage: p00004
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00004
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2
+  - passage: p00004
+    term: exchange-value
+    match: exchange-value
+    occurrence: 3
+  - passage: p00005
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00005
+    term: exchange-value
+    match: exchange-values
+    occurrence: 1
+  - passage: p00006
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00006
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2
+  - passage: p00007
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00033
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00044
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1

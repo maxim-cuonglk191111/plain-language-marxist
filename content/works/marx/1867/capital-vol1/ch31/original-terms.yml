@@ -213,3 +213,31 @@ annotations:
     term: capital
     match: capital
     occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00024
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1
+  - passage: p00024
+    term: wage-labour
+    match: wage labourer
+    occurrence: 2
+  - passage: p00027
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00031
+    term: wage-labour
+    match: wage workers
+    occurrence: 1
+  - passage: p00032
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00045
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1

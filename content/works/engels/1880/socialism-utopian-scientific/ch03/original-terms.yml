@@ -1009,3 +1009,91 @@ annotations:
     term: means-of-production
     match: means of production
     occurrence: 2
+  - passage: p00007
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00007
+    term: division-of-labour
+    match: division of labor
+    occurrence: 2
+  - passage: p00007
+    term: division-of-labour
+    match: division of labor
+    occurrence: 3
+  - passage: p00007
+    term: division-of-labour
+    match: division of labor
+    occurrence: 4
+  - passage: p00007
+    term: wage-labour
+    match: wage-labor
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: wage-labor
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: wage-labor
+    occurrence: 2
+  - passage: p00011
+    term: wage-labour
+    match: wage-worker
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: Wage-labor
+    occurrence: 1
+  - passage: p00011
+    term: wage-labour
+    match: wage-worker
+    occurrence: 2
+  - passage: p00011
+    term: wage-labour
+    match: wage-worker
+    occurrence: 3
+  - passage: p00011
+    term: labour-power
+    match: labor-power
+    occurrence: 1
+  - passage: p00019
+    term: wage-labour
+    match: wage workers
+    occurrence: 1
+  - passage: p00021
+    term: labour-power
+    match: labor-power
+    occurrence: 1
+  - passage: p00026
+    term: productive-forces
+    match: productive force
+    occurrence: 1
+  - passage: p00029
+    term: labour-power
+    match: labor-power
+    occurrence: 1
+  - passage: p00034
+    term: wage-labour
+    match: wage-workers
+    occurrence: 1
+  - passage: p00035
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00039
+    term: wage-labour
+    match: wage-labor
+    occurrence: 1
+  - passage: p00042
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00049
+    term: wage-labour
+    match: wage-labor
+    occurrence: 1
+  - passage: p00056
+    term: wage-labour
+    match: wage-labor
+    occurrence: 1

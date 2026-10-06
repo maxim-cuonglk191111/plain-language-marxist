@@ -53,3 +53,59 @@ annotations:
     term: journeyman
     match: Journeymen
     occurrence: 1
+  - passage: p00003
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00003
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00004
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00004
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00007
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00008
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00008
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00010
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00014
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00020
+    term: labour-power
+    match: labour-power
+    occurrence: 1

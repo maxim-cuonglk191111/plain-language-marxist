@@ -69,3 +69,27 @@ annotations:
     term: capital
     match: capital
     occurrence: 1
+  - passage: p00002
+    term: labour-power
+    match: labor-power
+    occurrence: 1
+  - passage: p00008
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00008
+    term: exchange-value
+    match: exchange values
+    occurrence: 2
+  - passage: p00011
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00012
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00013
+    term: exchange-value
+    match: exchange values
+    occurrence: 1

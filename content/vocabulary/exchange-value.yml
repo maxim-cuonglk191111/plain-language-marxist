@@ -1,5 +1,6 @@
 schema_version: 5
 term: exchange-value
+aliases: [exchange-value, exchange values, exchange-values]
 original:
   sg: exchange value
 definition:

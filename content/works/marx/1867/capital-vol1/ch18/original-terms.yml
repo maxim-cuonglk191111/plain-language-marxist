@@ -73,3 +73,47 @@ annotations:
     term: capital
     match: capital
     occurrence: 1
+  - passage: p00003
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00015
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00015
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00021
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00024
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 4
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 5
+  - passage: p00026
+    term: labour-power
+    match: labour-power
+    occurrence: 6

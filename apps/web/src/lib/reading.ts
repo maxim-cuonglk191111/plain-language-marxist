@@ -29,19 +29,100 @@ export function workPath(work: Work): string {
   return first.slice(0, first.lastIndexOf("/") + 1);
 }
 
+const WORD_NUMBERS: Record<string, number> = {
+  one: 1,
+  two: 2,
+  three: 3,
+  four: 4,
+  five: 5,
+  six: 6,
+  seven: 7,
+  eight: 8,
+  nine: 9,
+  ten: 10,
+  eleven: 11,
+  twelve: 12,
+  thirteen: 13,
+  fourteen: 14,
+  fifteen: 15,
+  sixteen: 16,
+  seventeen: 17,
+  eighteen: 18,
+  nineteen: 19,
+  twenty: 20,
+  thirty: 30,
+  forty: 40,
+  fifty: 50,
+};
+
+function parseWordNumber(s: string): number | null {
+  const parts = s.toLowerCase().split(/[\s-]+/);
+  let sum = 0;
+  for (const p of parts) {
+    const val = WORD_NUMBERS[p];
+    if (val === undefined) return null;
+    sum += val;
+  }
+  return sum > 0 ? sum : null;
+}
+
+export function isFrontMatterDoc(doc: DataDocument): boolean {
+  if (doc.id.includes(":pref-") || doc.id.endsWith(":preface") || doc.id.endsWith(":afterword")) {
+    return true;
+  }
+  const t = doc.title.toLowerCase();
+  if (t.includes("preface") || t.includes("afterword")) {
+    return true;
+  }
+  return doc.passages.some(
+    (p) =>
+      p.type === "heading" &&
+      /^(?:(?:\d{4}\s+)?(?:preface|afterword|introduction)\b)/i.test(plainOf(p.text)),
+  );
+}
+
 export type ChapterName = { name: string; short: string };
 
 /**
- * A chapter's display name, from its "Chapter II. …" heading when it has one
+ * A chapter's display name, from its "Chapter II. …" or "Chapter One: …" heading when it has one
  * (document titles like "Communist Manifesto (Chapter 2)" are source page titles).
  */
 export function chapterName(doc: DataDocument, ordinal: number): ChapterName {
   const headings = doc.passages.filter((p) => p.type === "heading").map((p) => plainOf(p.text));
+
+  const isPref = isFrontMatterDoc(doc);
+  if (isPref) {
+    const prefHeading = headings.find((h) =>
+      /^(?:(?:\d{4}\s+)?(?:preface|afterword|introduction)\b)/i.test(h),
+    );
+    if (prefHeading) {
+      const yearMatch = /\b(1\d{3})\b/.exec(prefHeading);
+      const isAfterword = /afterword/i.test(prefHeading);
+      const kind = isAfterword ? "Afterword" : "Preface";
+      const short = yearMatch ? `${kind} (${yearMatch[1]})` : kind;
+      return { name: prefHeading, short };
+    }
+    const cleanedTitle = doc.title.replace(
+      /^Economic Manuscripts:\s*Capital\s*Vol\.\s*I\s*-\s*/i,
+      "",
+    );
+    return { name: cleanedTitle, short: "Preface" };
+  }
+
   for (const h of headings) {
     const m = /^Chapter\s+([IVXLC]+|\d+)\b\.?\s*(.*)$/i.exec(h);
     if (m) return { name: h, short: `Ch. ${m[1]}` };
+
+    const mw = /^Chapter\s+([a-z]+(?:[\s-][a-z]+)?)\b[:.]?\s*(.*)$/i.exec(h);
+    if (mw) {
+      const num = parseWordNumber(mw[1] ?? "");
+      if (num !== null) return { name: h, short: `Ch. ${num}` };
+    }
   }
-  return { name: sectionsName(headings) ?? doc.title, short: `Ch. ${ordinal}` };
+  return {
+    name: sectionsName(headings) ?? doc.title,
+    short: isPref ? "Preface" : `Ch. ${ordinal}`,
+  };
 }
 
 /**
@@ -123,6 +204,7 @@ export type ChapterInfo = {
   words: number;
   sections: Section[];
   opening: string;
+  isFrontMatter?: boolean;
 };
 
 const chapterCache = new Map<string, ChapterInfo[]>();
@@ -132,9 +214,12 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
   const key = `${work.id}|${renderingKey}`;
   const cached = chapterCache.get(key);
   if (cached) return cached;
-  const list = work.documents.map((d, i) => {
+  let bodyCount = 0;
+  const list = work.documents.map((d) => {
     const doc = getDocument({ ...d, work } as DocumentEntry);
-    const name = chapterName(doc, i + 1);
+    const isFront = isFrontMatterDoc(doc);
+    if (!isFront) bodyCount += 1;
+    const name = chapterName(doc, isFront ? 0 : bodyCount);
     return {
       path: d.path,
       name,
@@ -143,6 +228,7 @@ export function chapters(work: Work, renderingKey: string): ChapterInfo[] {
       words: chapterWords(doc, renderingKey),
       sections: sections(doc, name),
       opening: openingLine(doc, renderingKey),
+      isFrontMatter: isFront,
     };
   });
   chapterCache.set(key, list);

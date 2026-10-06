@@ -205,3 +205,55 @@ annotations:
     term: exchange-value
     match: exchange value
     occurrence: 1
+  - passage: p00008
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00009
+    term: relations-of-production
+    match: relation of production
+    occurrence: 1
+  - passage: p00009
+    term: relations-of-production
+    match: relation of production
+    occurrence: 2
+  - passage: p00009
+    term: relations-of-production
+    match: relation of production
+    occurrence: 3
+  - passage: p00010
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00010
+    term: exchange-value
+    match: exchange values
+    occurrence: 2
+  - passage: p00011
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00011
+    term: exchange-value
+    match: exchange values
+    occurrence: 2
+  - passage: p00012
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00012
+    term: exchange-value
+    match: exchange values
+    occurrence: 2
+  - passage: p00012
+    term: exchange-value
+    match: exchange values
+    occurrence: 3
+  - passage: p00013
+    term: exchange-value
+    match: exchange values
+    occurrence: 1
+  - passage: p00014
+    term: labour-power
+    match: labour-power
+    occurrence: 1

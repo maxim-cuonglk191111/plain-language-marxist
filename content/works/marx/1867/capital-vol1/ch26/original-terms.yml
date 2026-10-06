@@ -197,3 +197,19 @@ annotations:
     term: world-market
     match: world-market
     occurrence: 1
+  - passage: p00005
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00007
+    term: wage-labour
+    match: wage-workers
+    occurrence: 1
+  - passage: p00008
+    term: guild-master
+    match: guild masters
+    occurrence: 1
+  - passage: p00009
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1

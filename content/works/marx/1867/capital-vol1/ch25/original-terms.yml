@@ -1853,3 +1853,59 @@ annotations:
     term: revolution
     match: revolution
     occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage workers
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage workers
+    occurrence: 2
+  - passage: p00009
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00013
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00016
+    term: wage-labour
+    match: wage worker
+    occurrence: 1
+  - passage: p00016
+    term: wage-labour
+    match: wage worker
+    occurrence: 2
+  - passage: p00017
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00041
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00183
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1
+  - passage: p00280
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00286
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00309
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1
+  - passage: p00323
+    term: wage-labour
+    match: wage workers
+    occurrence: 1
+  - passage: p00335
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1

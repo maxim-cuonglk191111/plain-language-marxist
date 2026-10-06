@@ -1857,3 +1857,39 @@ annotations:
     term: commodity
     match: commodity
     occurrence: 1
+  - passage: p00024
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00033
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00033
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2
+  - passage: p00040
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00080
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00083
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00088
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00097
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00101
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1

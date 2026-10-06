@@ -157,3 +157,7 @@ annotations:
     term: modern-industry
     match: modern industry
     occurrence: 1
+  - passage: p00003
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1

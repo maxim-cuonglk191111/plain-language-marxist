@@ -153,3 +153,11 @@ annotations:
     term: feudalism
     match: feudal
     occurrence: 1
+  - passage: p00007
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00008
+    term: productive-forces
+    match: forces of production
+    occurrence: 1

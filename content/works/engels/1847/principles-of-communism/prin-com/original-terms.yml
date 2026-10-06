@@ -1213,3 +1213,91 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00012
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00013
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00033
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 1
+  - passage: p00040
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 1
+  - passage: p00080
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00083
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00085
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00085
+    term: productive-forces
+    match: forces of production
+    occurrence: 2
+  - passage: p00086
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00086
+    term: productive-forces
+    match: forces of production
+    occurrence: 2
+  - passage: p00086
+    term: productive-forces
+    match: forces of production
+    occurrence: 3
+  - passage: p00091
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00116
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00117
+    term: over-production
+    match: overproduction
+    occurrence: 1
+  - passage: p00117
+    term: over-production
+    match: overproduction
+    occurrence: 2
+  - passage: p00120
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00120
+    term: division-of-labour
+    match: division of labor
+    occurrence: 2
+  - passage: p00121
+    term: over-production
+    match: over production
+    occurrence: 1
+  - passage: p00124
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1
+  - passage: p00124
+    term: division-of-labour
+    match: division of labor
+    occurrence: 2
+  - passage: p00126
+    term: productive-forces
+    match: forces of production
+    occurrence: 1
+  - passage: p00126
+    term: division-of-labour
+    match: division of labor
+    occurrence: 1

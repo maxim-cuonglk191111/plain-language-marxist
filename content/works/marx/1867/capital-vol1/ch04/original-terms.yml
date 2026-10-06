@@ -421,3 +421,23 @@ annotations:
     term: capital
     match: Capital
     occurrence: 1
+  - passage: p00018
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00021
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00021
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2
+  - passage: p00022
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00022
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2

@@ -245,3 +245,15 @@ annotations:
     term: feudalism
     match: feudalism
     occurrence: 2
+  - passage: p00002
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labourers
+    occurrence: 2
+  - passage: p00004
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1

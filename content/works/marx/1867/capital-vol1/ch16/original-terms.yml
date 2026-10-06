@@ -169,3 +169,35 @@ annotations:
     term: capital
     match: Capital
     occurrence: 2
+  - passage: p00005
+    term: relations-of-production
+    match: relation of production
+    occurrence: 1
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00008
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00009
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00009
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00029
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00035
+    term: wage-labour
+    match: wage-labourer
+    occurrence: 1
+  - passage: p00037
+    term: wage-labour
+    match: wage labourer
+    occurrence: 1

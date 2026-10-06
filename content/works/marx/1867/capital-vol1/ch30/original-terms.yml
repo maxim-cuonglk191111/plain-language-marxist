@@ -129,3 +129,11 @@ annotations:
     term: manufacture
     match: manufacture
     occurrence: 1
+  - passage: p00002
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00004
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1

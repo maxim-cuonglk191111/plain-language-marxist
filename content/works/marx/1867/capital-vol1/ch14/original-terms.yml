@@ -1209,3 +1209,59 @@ annotations:
     term: division-of-labour
     match: division of labour
     occurrence: 1
+  - passage: p00009
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00017
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00017
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00035
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00035
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00035
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00044
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00044
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00052
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00052
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00052
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00053
+    term: productive-forces
+    match: productive force
+    occurrence: 1
+  - passage: p00066
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00066
+    term: exchange-value
+    match: exchange-value
+    occurrence: 2

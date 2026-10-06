@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import { readHistory } from "../lib/history";
 import { readingLine } from "../lib/position";
-import { parseRef, type RefWork } from "../lib/reference";
+import { chapterNumber, parseRef, type RefWork } from "../lib/reference";
 import { onShortcut } from "./Shortcuts";
 
 export type TocChapter = {
@@ -135,7 +135,7 @@ export function TocDrawer({
                 type="text"
                 autoComplete="off"
                 spellCheck={false}
-                placeholder={`e.g. ${refs.chapters[1]?.numeral ?? "I"}.17`}
+                placeholder={`e.g. ${(refs.chapters.find((c) => !Number.isNaN(chapterNumber(c.numeral))) ?? refs.chapters[0])?.numeral ?? "I"}.17`}
                 aria-describedby="toc-goto-message"
                 aria-invalid={goError ? true : undefined}
                 onInput={() => setGoError("")}

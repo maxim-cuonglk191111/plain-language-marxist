@@ -1105,3 +1105,11 @@ annotations:
     term: bourgeoisie
     match: bourgeoisie
     occurrence: 1
+  - passage: p00023
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1
+  - passage: p00062
+    term: wage-labour
+    match: wage labourers
+    occurrence: 1

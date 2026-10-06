@@ -341,3 +341,127 @@ annotations:
     term: capital
     match: Capital
     occurrence: 1
+  - passage: p00002
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00002
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00003
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00003
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00004
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00004
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00004
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00006
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00010
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00010
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00011
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00012
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00012
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00012
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00012
+    term: labour-power
+    match: labour-power
+    occurrence: 4
+  - passage: p00012
+    term: labour-power
+    match: labour-power
+    occurrence: 5
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 4
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 5
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 6
+  - passage: p00013
+    term: labour-power
+    match: labour-power
+    occurrence: 7
+  - passage: p00016
+    term: exchange-value
+    match: exchange-value
+    occurrence: 1
+  - passage: p00016
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00018
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00019
+    term: labour-power
+    match: labour-power
+    occurrence: 1

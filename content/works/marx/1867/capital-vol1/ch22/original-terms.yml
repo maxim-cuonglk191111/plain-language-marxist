@@ -45,3 +45,19 @@ annotations:
     term: capital
     match: capital
     occurrence: 1
+  - passage: p00002
+    term: labour-power
+    match: labour-power
+    occurrence: 1
+  - passage: p00002
+    term: labour-power
+    match: labour-power
+    occurrence: 2
+  - passage: p00002
+    term: labour-power
+    match: labour-power
+    occurrence: 3
+  - passage: p00005
+    term: labour-power
+    match: labour-power
+    occurrence: 1

@@ -189,3 +189,19 @@ annotations:
     term: wage-labour
     match: wage-labour
     occurrence: 1
+  - passage: p00003
+    term: instruments-of-production
+    match: instrument of production
+    occurrence: 1
+  - passage: p00008
+    term: productive-forces
+    match: force of production
+    occurrence: 1
+  - passage: p00012
+    term: wage-labour
+    match: wage-labourer
+    occurrence: 1
+  - passage: p00021
+    term: productive-forces
+    match: forces of production
+    occurrence: 1

@@ -1,0 +1,977 @@
+schema_version: 5
+document: document:engels:1847:principles-of-communism:prin-com
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:c2e208952d8ca127e0d2c21ca7ddbc1ab5b9fe5a5aaee4e71e9fa1fe07b1ff59
+    revision: 2
+    ai_assisted: true
+    text: The Principles of {Communism:sg}
+  p00002:
+    covers: [p00002]
+    based_on: sha256:bd0cb99690167f942365db7dc14d69a284ed9fe81dcb26793e64ab4d08116d53
+    revision: 2
+    ai_assisted: true
+    text: — 1 —<br/>What is {Communism:sg}?
+  p00003:
+    covers: [p00003]
+    based_on: sha256:c48a15e9e69f75b0f60aa8fc134bad625081ee1034ec8cd6eeb16f9de5ea3242
+    revision: 2
+    ai_assisted: true
+    text: "{Communism:sg} is the teaching about the conditions for liberating the {proletariat:sg}."
+  p00004:
+    covers: [p00004]
+    based_on: sha256:166ce601bcf14edfdc28308cb2b5cc5e3ba24cadfed97771c1ce850ad26f930a
+    revision: 2
+    ai_assisted: true
+    text: — 2 —<br/>What is the {proletariat:sg}?
+  p00005:
+    covers: [p00005]
+    based_on: sha256:2a1f82b7662b4977fb2f2ce73fc53eca4f6c5621d7bbc8123331d510b2dddfec
+    revision: 2
+    ai_assisted: true
+    text: The {proletariat:sg} is the class in society that lives entirely by selling its labor, and does not make profit from any kind of {capital:sg}. Its good and bad fortune, its life and death, and its whole existence depend on the demand for labor. That means it depends on the ups and downs of business, and on wild, unchecked competition. The {proletariat:sg}, or the class of {proletariat:pl}, is, in short, the working class of the 19th century.<fn ref="1"/>
+  p00006:
+    covers: [p00006]
+    based_on: sha256:a39b79c5cde01efdf27c1253f9011939b24590c8cd28910f0c9acaee49ef9462
+    revision: 2
+    ai_assisted: true
+    text: — 3 —<br/>So {Proletariat:pl} have not always existed?
+  p00007:
+    covers: [p00007]
+    based_on: sha256:102e368c2ac5987381133df13acad629eb3423179343c89be04f5ef792b8ed1e
+    revision: 2
+    ai_assisted: true
+    text: No. There have always been poor classes and working classes, and working people have mostly been poor. But there have not always been workers and poor people living under the conditions they face today. In other words, there have not always been {proletariat:pl}, just as there has not always been free, unchecked competition.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:58585738c2a095a2f7387303d15a5bb1ff0eb381b08c29adf261e5a58c2409fb
+    revision: 2
+    ai_assisted: true
+    text: — 4 —<br/>How did the {proletariat:sg} begin?
+  p00009:
+    covers: [p00009]
+    based_on: sha256:3e2d847f3f9f5efb6f2bde9d5dfa0a4816b210702b3f69f4454a99a697357482
+    revision: 2
+    ai_assisted: true
+    text: The {Proletariat:sg} began during the industrial {revolution:sg}, which took place in England in the second half of the 18th century. Since then, this {revolution:sg} has repeated itself in all the civilized countries of the world.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:e00452fb6ef9162a3c862d07d8993712027ca9c0b106ed1ca1a3b00c0f718d5a
+    revision: 2
+    ai_assisted: true
+    text: This industrial {revolution:sg} was started by the invention of the steam engine, various spinning machines, the mechanical loom, and many other mechanical devices. Because these machines were very expensive, only big capitalists could buy them. They changed the whole {mode-of-production:sg} and replaced the earlier workers, because the machines produced cheaper and better {commodity:pl} than workers could make with their slow spinning wheels and hand looms. These machines put industry completely into the hands of big capitalists. They made the workers' few belongings (tools, hand looms, and so on) entirely worthless. As a result, the capitalists soon held everything in their hands, and nothing was left for the workers. This brought the factory system into the textile industry.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:f696843805a5b473e5d87194f6c3f1363e94a7d1645cc6c12b776a6c98eb18c1
+    revision: 2
+    ai_assisted: true
+    text: Once machines and the factory system began, this system spread quickly to all other branches of industry. This happened especially in cloth printing, book printing, pottery, and the metal industries.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:b85fb1b88980b2b4c613aa74cfc30d4e28819468001de4f92750891cb971357a
+    revision: 2
+    ai_assisted: true
+    text: Work was divided more and more among separate workers. A worker who had previously made an entire item now made only one part of it. This division of labor made it possible to produce goods faster and more cheaply. It reduced each worker's task to simple, endlessly repeated mechanical movements, which could be done not only just as well, but much better by a machine. In this way, one industry after another fell under the rule of steam, machines, and the factory system, just as spinning and weaving had done before.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:0a2367115128dcdfcba4329771967047758ad9a1fb5e70ad8bdb330d66b2aeaf
+    revision: 2
+    ai_assisted: true
+    text: At the same time, these industries also fell into the hands of big capitalists, and workers lost whatever independence they still had. Step by step, the factory system took over not only large-scale {manufacture:sg}, but craft workshops as well. Big capitalists increasingly pushed out small master craftspeople by setting up huge workshops, which cut many costs and allowed a detailed division of labor.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:ca5c10108ca94b4ea7e0837f1dc633d58e1715d55e47d6a2a531f4f91d780da1
+    revision: 2
+    ai_assisted: true
+    text: "This is how nearly all work in civilized countries came to be done in factories, and how craft work and {manufacture:sg} were replaced in almost every branch of industry. This process has steadily ruined the old middle class, especially small craftspeople. It has completely changed the condition of the workers. Two new classes have formed and are slowly swallowing up all the others. These classes are:"
+  p00015:
+    covers: [p00015]
+    based_on: sha256:8ebd7459a765bb930d77e7cfe7b442c95bf04d9a7676597ae32ba7ade6f0f030
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(i) The class of big capitalists. In all civilized countries, they already own almost all the {means-of-subsistence:sg}, as well as the tools (machines and factories) and raw materials needed to produce the {means-of-subsistence:sg}. This is the {bourgeoisie:adj} class, or the {bourgeoisie:sg}.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:77ef2cec385321dd669095b960da8dc5040b2cc20f61f3e9a00056988d8a29e1
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(ii) The class of people who own no property at all. They must sell their labor to the {bourgeoisie:sg} to receive, in exchange, the {means-of-subsistence:sg} they need to survive. This is called the class of {proletariat:pl}, or the {proletariat:sg}.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:f2a56c010c0614a13ec75a6320e609ba883dee8027e08942ed5fb7620c4ff035
+    revision: 2
+    ai_assisted: true
+    text: — 5 —<br/>Under what conditions do the {proletariat:pl} sell their labor to the {bourgeoisie:sg}?
+  p00018:
+    covers: [p00018]
+    based_on: sha256:cd1e876086420ee6a36b00a79aae5940a3e9a00cd62fe9a320044f76d3d8fc90
+    revision: 2
+    ai_assisted: true
+    text: Labor is a {commodity:sg}, like any other, and its price is therefore decided by the very same laws that apply to other {commodity:pl}. Under big industry or free competition — as we will see, the two mean the same thing — the average price of a {commodity:sg} is always equal to its cost of production. Therefore, the price of labor is also equal to the cost of producing labor.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:58a57426955bcfa5e276116485e41a0ad10e0bd70f33101ebf7f367890f27a4c
+    revision: 2
+    ai_assisted: true
+    text: The cost of producing labor is precisely the amount of the {means-of-subsistence:sg} needed to keep the worker working and keep the working class from dying out. The worker will therefore receive no more for his labor than is needed for this purpose. In other words, the price of labor, or the wage, will be the lowest minimum needed to stay alive.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:79c9091a944918447cd0acb415dc8dad7ec0f1dc71820e3367c67abbed8ac814
+    revision: 2
+    ai_assisted: true
+    text: However, because business is sometimes better and sometimes worse, the worker sometimes gets more and sometimes gets less for his {commodity:pl}. But the industrialist, taking good times and bad times together, gets on average no more and no less for his {commodity:pl} than they cost to produce. In the same way, the worker receives on average no more and no less than his minimum.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:015e3b9f091db853aaa253e9734a04b446348260fac07dd72e2866ec37e9eef6
+    revision: 2
+    ai_assisted: true
+    text: This economic law of wages works more strictly as big industry takes control of more branches of production.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:a5b67aa37a231d7579e211411c6bc070443c1267cf2c439ea2da69dcf3a306e5
+    revision: 2
+    ai_assisted: true
+    text: — 6 —<br/>What working classes existed before the industrial {revolution:sg}?
+  p00023:
+    covers: [p00023]
+    based_on: sha256:dcf4ed1e776352f82f47806f741a3153637109246700de2b319562851292885f
+    revision: 2
+    ai_assisted: true
+    text: Depending on the different stages of society's development, the working classes have always lived in different conditions, and had different relations to the owning and ruling classes.
+  p00024:
+    covers: [p00024]
+    based_on: sha256:d36d88f5fda09b5bf7432e911a29f319d11bd0844b509ee2c30ed3cb72194d82
+    revision: 2
+    ai_assisted: true
+    text: In ancient times, workers were the slaves of their owners, just as they still are in many backward countries and even in the southern part of the United States.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:920a77b222cc906e5bdaaf3fc50fc8ca5fd105e9266e7cef569c0ebb94c6b6de
+    revision: 2
+    ai_assisted: true
+    text: In the Middle Ages, they were the {serf:pl} of the land-owning nobility, as they still are in Hungary, Poland, and Russia. In the Middle Ages, and right up to the industrial {revolution:sg}, there were also {journeyman:pl} in the cities who worked for {petty-bourgeoisie:adj} masters. Slowly, as {manufacture:sg} developed, these {journeyman:pl} became manufacturing workers who were already employed by larger capitalists.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:35cd02a064eeda2f5c4269f13f47e12cc9ab14e13f9f58f804bf0be5c9f1a074
+    revision: 2
+    ai_assisted: true
+    text: — 7 —<br/>In what way do {proletariat:pl} differ from slaves?
+  p00027:
+    covers: [p00027]
+    based_on: sha256:48598e131a54844bec84443f01b5690a349b5adca864346cd792bbf72bf707ce
+    revision: 2
+    ai_assisted: true
+    text: The slave is sold once and for all; the {proletariat:person} must sell himself daily and hourly.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:789607fa1530a2c4e90f7b2b9a9e73a9dbf621c991826df50da2a1dd390ebe12
+    revision: 2
+    ai_assisted: true
+    text: The individual slave is the property of one master, and his survival is guaranteed, however miserable it may be, because of the master's own interest. The individual {proletariat:person} is, so to speak, the property of the entire {bourgeoisie:adj} class, which buys his labor only when someone needs it. He has no secure existence. Survival is guaranteed only to the working class as a whole.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:50bd5a21394fd00db090a25a166ae4f528a718eaca60b274648f894a94ef0483
+    revision: 2
+    ai_assisted: true
+    text: The slave stands outside competition; the {proletariat:person} is inside it and feels all its ups and downs.
+  p00030:
+    covers: [p00030]
+    based_on: sha256:e279164843e3b352d16e339ee5377649a45978102a6db9b6a57c5e5c2cd5c702
+    revision: 2
+    ai_assisted: true
+    text: The slave counts as an object, not as a member of society. Therefore, the slave can have a better existence than the {proletariat:person}. But the {proletariat:person} belongs to a higher stage of social development and stands at a higher social level than the slave.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:786171729dcb4416b0372e64ff8f9c3fdcea113b0f9130f6b0628443612c0fef
+    revision: 2
+    ai_assisted: true
+    text: The slave frees himself when, out of all the relations of {private-property:sg}, he ends only the relation of slavery, and in this way becomes a {proletariat:person}. The {proletariat:person} can free himself only by abolishing {private-property:sg} altogether.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:8a966a3ecdce0d47966a3435757fa04cf3238800ac418d59485edb79e40e94ee
+    revision: 2
+    ai_assisted: true
+    text: — 8 —<br/>In what way do {proletariat:pl} differ from {serf:pl}?
+  p00033:
+    covers: [p00033]
+    based_on: sha256:bbd7204ad030fc83271c5587e467c5458d44f14b3443c653bd1c41eabac196ed
+    revision: 2
+    ai_assisted: true
+    text: The {serf:sg} owns and uses an instrument of production, a piece of land. In exchange, he hands over a part of his product or performs labor services.
+  p00034:
+    covers: [p00034]
+    based_on: sha256:7996c7b544f9322848d4196db45817d3457b84115415e8295d98ea390e0d3af2
+    revision: 2
+    ai_assisted: true
+    text: The {proletariat:person} works with the {instruments-of-production:sg} of someone else, for that person's account, in exchange for a part of the product.
+  p00035:
+    covers: [p00035]
+    based_on: sha256:099b8dcb4d25b8c360235b9893d830dc614242153a024b91cbd845143fa96d2b
+    revision: 2
+    ai_assisted: true
+    text: The {serf:sg} gives up, while the {proletariat:person} receives. The {serf:sg} has a guaranteed existence, but the {proletariat:person} has not. The {serf:sg} stands outside competition; the {proletariat:person} is inside it.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:5d86ebfdc85cb887c6294e903626fcd332457268df54a88997172ad45b8d1835
+    revision: 2
+    ai_assisted: true
+    text: The {serf:sg} frees himself in one of three ways. Either he runs away to the city and becomes a craft worker there. Or he pays money to his lord instead of products and labor, and in this way becomes a free tenant. Or he overthrows his {feudalism:adj} lord and becomes a property owner himself. In short, by one path or another, he joins the owning class and enters into competition. The {proletariat:person} frees himself by abolishing competition, {private-property:sg}, and all class differences.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:72ea3441c9f82ddab0e180d6fbef0a267300dba5997f138ea7d14fe1ea548e9e
+    revision: 2
+    ai_assisted: true
+    text: — 9 —<br/>In what way do {proletariat:pl} differ from craft workers?
+  p00038:
+    covers: [p00038]
+    based_on: sha256:853459ba84cb6cedded91e95a2f90a159dedf1f6594e4ccd102e31bae4500132
+    revision: 2
+    ai_assisted: true
+    text: In contrast to the {proletariat:person}, the craft worker, who lived almost everywhere in the past century and still exists here and there today, is a {proletariat:person} at most temporarily. His goal is to gain {capital:sg} himself so that he can exploit other workers. He can often reach this goal where guilds still exist, or where leaving guild rules behind has not yet brought factory methods into the crafts, nor led to fierce competition. But as soon as the factory system enters the crafts and competition grows freely, this possibility disappears, and the craft worker becomes more and more a {proletariat:person}. The craft worker therefore frees himself either by becoming a {bourgeoisie:person} and entering the middle class, or by falling into the {proletariat:sg} because of competition (as happens most often today). In that case, he can free himself by joining the {proletariat:adj} movement, that is, the more or less {communism:adj} movement. [2]
+  p00039:
+    covers: [p00039]
+    based_on: sha256:168eebd36edb74e22c0132d92332dcef0cc10bcfe55a651f94cb3ef7177e2e0e
+    revision: 2
+    ai_assisted: true
+    text: — 10 —<br/>In what way do {proletariat:pl} differ from manufacturing workers?
+  p00040:
+    covers: [p00040]
+    based_on: sha256:835168d8ec89cb9c9a3b0a0ea3357e026d2fb626de1a1b1734ad18770da895b0
+    revision: 2
+    ai_assisted: true
+    text: The manufacturing worker of the 16th to the 18th centuries almost always owned an instrument of production. This was his loom, the family spinning wheel, or a small plot of land that he farmed in his spare time. The {proletariat:person} has none of these things.
+  p00041:
+    covers: [p00041]
+    based_on: sha256:25bd9bf1b81cafe2bdfd7a5b53fc802c826d66fb27db4d9ea41e6841342ff7d7
+    revision: 2
+    ai_assisted: true
+    text: The manufacturing worker almost always lives in the countryside, in a family-style relation to his landlord or employer. The {proletariat:person} lives mostly in the city, and his relation to his employer is purely a cash relation.
+  p00042:
+    covers: [p00042]
+    based_on: sha256:ac2e6080930ea68fb3f3d87a29436c7c76231948a0c24ca768d9d7edc5367b18
+    revision: 2
+    ai_assisted: true
+    text: Big industry tears the manufacturing worker out of his family-style relations. He loses whatever property he still owned, and in this way becomes a {proletariat:person}.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:95e4a0e22c00cce6455bd7e16ab834b040026744c6ec4f7ed915fa0bf6bda5b8
+    revision: 1
+    ai_assisted: true
+    text: — 11 —<br/>What were the immediate results of the industrial {revolution:sg}, and of splitting society into {bourgeoisie:sg} and {proletariat:sg}?
+  p00044:
+    covers: [p00044]
+    based_on: sha256:578b75bebb6a60ebef8f8263d8378927356aae7699f4e31084b1cba94fa99bf3
+    revision: 1
+    ai_assisted: true
+    text: First, lower and lower prices for manufactured products, brought about by machine labor, completely destroyed the old system of {manufacture:sg} or industry based on hand work in all countries of the world.
+  p00045:
+    covers: [p00045]
+    based_on: sha256:59f648ba84afc1ee484d7646a74fe47675f60ded1071dae55012cb60a46c1c3e
+    revision: 1
+    ai_assisted: true
+    text: In this way, all semi-{barbarian:adj} countries, which up to now had stood more or less outside historical development, and whose industry was based on {manufacture:sg}, were violently dragged out of their isolation. They bought the cheaper {commodity:pl} of the English, and allowed their own manufacturing workers to be ruined. Countries that had known no progress for thousands of years — for example, India — were completely revolutionized, and even China is now on the way to a {revolution:sg}.
+  p00046:
+    covers: [p00046]
+    based_on: sha256:106ebd4e5d605d583a950b0e44c466d840f9350ef8f9ebdde65f1edba319272e
+    revision: 1
+    ai_assisted: true
+    text: Things have reached the point where a new machine invented in England can take away the livelihood of millions of Chinese workers within a single year.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:0fa0e0b12d4d279b122c5c659e0ad710da2ae2c81cad51a0351495e6b2efffe0
+    revision: 1
+    ai_assisted: true
+    text: In this way, big industry has brought all the peoples of the Earth into contact with one another. It has merged all local markets into one {world-market:sg}, spread civilization and progress everywhere, and ensured that whatever happens in civilized countries will have effects in all other countries.
+  p00048:
+    covers: [p00048]
+    based_on: sha256:7d758faa0eb8f37801043d334b996c8a452d7a514b17d7c70a4efa6d7f279b6b
+    revision: 1
+    ai_assisted: true
+    text: It follows that if workers in England or France now free themselves, this must set off {revolution:pl} in all other countries. These {revolution:pl}, sooner or later, must achieve the liberation of their own working classes.
+  p00049:
+    covers: [p00049]
+    based_on: sha256:bf6cb3c8f9ac234a41aee9e1c793c2412f1c54dd5d5ea0be7d127f31b89f3cac
+    revision: 1
+    ai_assisted: true
+    text: "Second, wherever big industry replaced {manufacture:sg}, the {bourgeoisie:sg} grew in wealth and power to the highest degree, and made itself the first class of the country. As a result, wherever this happened, the {bourgeoisie:sg} took political power into its own hands. It displaced the classes that had ruled up to then: the aristocracy, the guild masters, and their representative, the absolute monarchy."
+  p00050:
+    covers: [p00050]
+    based_on: sha256:6c67a367133568668556f65f4637a9869772b734af0352851af9ac0ba83f714e
+    revision: 1
+    ai_assisted: true
+    text: The {bourgeoisie:sg} wiped out the power of the aristocracy and the nobility by ending the hereditary holding of estates. In other words, it made landed property something that could be bought and sold, and did away with the nobility's special privileges. It destroyed the power of the guild masters by abolishing guilds and craft privileges. In their place, it set up free competition, so that anyone has the right to enter any branch of industry, with the only barrier being a lack of the needed {capital:sg}.
+  p00051:
+    covers: [p00051]
+    based_on: sha256:a01bbd141a6364c0c0bee53b79d7f4e53c69a534640b33925a2f77278e1a2dd7
+    revision: 1
+    ai_assisted: true
+    text: Introducing free competition is a public declaration that from now on, members of society are unequal only to the extent that their amounts of {capital:sg} are unequal. It declares that {capital:sg} is the decisive power, and therefore that the capitalists, the {bourgeoisie:sg}, have become the first class in society.
+  p00052:
+    covers: [p00052]
+    based_on: sha256:10eb3ec8a2c7281528e180d8a2ed39f0c5740722a82a818ad159b9994ee99c86
+    revision: 1
+    ai_assisted: true
+    text: Free competition is necessary for setting up big industry, because it is the only condition of society in which big industry can grow.
+  p00053:
+    covers: [p00053]
+    based_on: sha256:40e836e695203be1cce418059917de9bdf2ad487f721ec692ecef477282f4883
+    revision: 1
+    ai_assisted: true
+    text: After destroying the social power of the nobility and guild masters, the {bourgeoisie:sg} destroyed their political power as well. Having raised itself to the position of first class in society, it proclaimed itself the ruling political class. It did this by introducing the representative system, which rests on {bourgeoisie:adj} equality before the law and the recognition of free competition. In European countries, this takes the form of constitutional monarchy. In these monarchies, only those who own a certain amount of {capital:sg} can vote; that is to say, only members of the {bourgeoisie:sg}. These {bourgeoisie:adj} voters choose the deputies, and these {bourgeoisie:adj} deputies, by using their right to refuse taxes, choose a {bourgeoisie:adj} government.
+  p00054:
+    covers: [p00054]
+    based_on: sha256:54b9ebdeb10fbfcaee3dfb6f8924b0665473bc33cad67956df94cffc3ec1668f
+    revision: 1
+    ai_assisted: true
+    text: Third, everywhere the {proletariat:sg} develops in step with the {bourgeoisie:sg}. As the {bourgeoisie:sg} grows in wealth, the {proletariat:sg} grows in numbers. Because {proletariat:pl} can be employed only by {capital:sg}, and {capital:sg} grows only by employing labor, the growth of the {proletariat:sg} moves at exactly the same pace as the growth of {capital:sg}.
+  p00055:
+    covers: [p00055]
+    based_on: sha256:dc475b94101fd0e6713cca43d11be55d7e953a26673c55d1292e0e14c56b6b9c
+    revision: 1
+    ai_assisted: true
+    text: At the same time, this process gathers members of the {bourgeoisie:sg} and {proletariat:pl} together into great cities, where industry can run most profitably. By gathering huge masses in one place in this way, it gives the {proletariat:pl} an awareness of their own strength.
+  p00056:
+    covers: [p00056]
+    based_on: sha256:321a268d906a883e5e3fe6e5923cd0a5de8533db24d2cead585cffbf6f36cadf
+    revision: 1
+    ai_assisted: true
+    text: Furthermore, the more this process moves forward, and the more labor-saving machines are invented, the greater the pressure big industry puts on wages. As we have seen, wages sink to their lowest minimum, making the condition of the {proletariat:sg} more and more unbearable. The growing anger of the {proletariat:sg} unites with its rising power to prepare a {proletariat:adj} social {revolution:sg}.
+  p00057:
+    covers: [p00057]
+    based_on: sha256:52eb1ac53efc355140448353a5cfe9fc8c42cd316bb07c0186573535d029a124
+    revision: 1
+    ai_assisted: true
+    text: — 12 —<br/>What were the further results of the industrial {revolution:sg}?
+  p00058:
+    covers: [p00058]
+    based_on: sha256:03138087f0eb88539f6797601bf0b3b0c69822a5c13bb7f703ccfb5c985d1277
+    revision: 1
+    ai_assisted: true
+    text: Through the steam engine and other machines, big industry created the means to expand production endlessly, speed it up, and cut costs. With production made so easy, free competition took on extreme forms. Crowds of capitalists rushed into industry, and in a short time, more was produced than was needed.
+  p00059:
+    covers: [p00059]
+    based_on: sha256:be9553324188110917aab899169e79baecf33ad4d11bed7fb359c4798b849a7c
+    revision: 1
+    ai_assisted: true
+    text: As a result, finished {commodity:pl} could not be sold, and a {commercial-crisis:sg} broke out. Factories had to close, factory owners went bankrupt, and workers had no food. Deep misery spread everywhere.
+  p00060:
+    covers: [p00060]
+    based_on: sha256:22f10602e2719fd49a08ea167f6de1a2abba4c5d0f8869e4de64b96f00510205
+    revision: 1
+    ai_assisted: true
+    text: After a while, the unsold goods were bought, factories began running again, wages rose, and business slowly became better than ever.
+  p00061:
+    covers: [p00061]
+    based_on: sha256:b1bd0e66ef1fa9be8b5cf5536a17a4be56530e6815719aa5b7a74e07da3c5749
+    revision: 1
+    ai_assisted: true
+    text: But it was not long before too many {commodity:pl} were produced once again. A new crisis broke out, only to run the exact same course as the one before.
+  p00062:
+    covers: [p00062]
+    based_on: sha256:3649350403cc2d78e813d70668db8526424fba623b04ec21e537ee91df91dafb
+    revision: 1
+    ai_assisted: true
+    text: Ever since the start of the 19th century, industry has swung back and forth between periods of prosperity and periods of crisis. Almost every five to seven years, a new crisis arrived. It always brought extreme hardship for workers, accompanied by general {revolution:adj} unrest and direct danger to the whole social order.
+  p00063:
+    covers: [p00063]
+    based_on: sha256:fe2032ea579b1fe083ea550b30b000cd9c2891f0f4b48c90f646eac1c43ef320
+    revision: 1
+    ai_assisted: true
+    text: — 13 —<br/>What follows from these periodic {commercial-crisis:pl}?
+  p00064:
+    covers: [p00064]
+    based_on: sha256:4abd4cfb9283d4fda5ede058c4322e04ef363c8ea9752a428ec266f494212923
+    revision: 1
+    ai_assisted: true
+    text: "First:"
+  p00065:
+    covers: [p00065]
+    based_on: sha256:e84c796e30893a6aa8fe8d950c94a445ecc7c79d5ca31d0cb60301283744e89e
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>That although big industry created free competition in its earliest stage, it has now outgrown free competition;
+  p00066:
+    covers: [p00066]
+    based_on: sha256:161a5a5b9f71925e2d03df7189a3fb080435ab884b4e2dce20a1dc42bd0bea9e
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>that for big industry, competition and individual production have become a chain that it must and will break;
+  p00067:
+    covers: [p00067]
+    based_on: sha256:3259977c71a002790d6e33b8169ea93c26f8f80fe9b08ea8ef028b765dc8547f
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>that as long as big industry stays on its present footing, it can be maintained only at the cost of general disorder every seven years. Each time, it threatens all of civilization, not only throwing the {proletariat:pl} into misery, but also ruining large parts of the {bourgeoisie:sg};
+  p00068:
+    covers: [p00068]
+    based_on: sha256:d7cf6b1aa506632fff9c72930fca1e8d5cb1e2ceb1e3db873c23f18e58600687
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>therefore, either big industry itself must be given up, which is completely impossible. Or it makes necessary an entirely new social order, where production is directed not by competing industrialists, but by society as a whole under a clear plan that answers everyone's needs.
+  p00069:
+    covers: [p00069]
+    based_on: sha256:ece4db429e81807c5d7db61818ff53a2491204df8e851ca2faf6685a1d50de7a
+    revision: 1
+    ai_assisted: true
+    text: "Second: that big industry and the limitless expansion of production it allows make a new social order possible. In this order, so much will be produced that every member of society can freely develop and use all their abilities."
+  p00070:
+    covers: [p00070]
+    based_on: sha256:c4c9b6b85889da29b1811752ec72992e208cc2ea2de2b04205ae5a1b2ae54863
+    revision: 1
+    ai_assisted: true
+    text: So the very qualities of big industry that produce misery and crises in our present society are the ones that, in a different social order, will end this misery and these destructive depressions.
+  p00071:
+    covers: [p00071]
+    based_on: sha256:e3026e201072d79cf4bebbbabb66ec177eafb77c4979b846538f7dc267c634ea
+    revision: 1
+    ai_assisted: true
+    text: "We see with complete clarity:"
+  p00072:
+    covers: [p00072]
+    based_on: sha256:90c6c8a7775db15a7f5aad7ede79fcf744c7b5344860b314b0b5cb7d157534a8
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>(i) That from now on, all these evils come only from a social order that no longer fits the needs of the real situation; and
+  p00073:
+    covers: [p00073]
+    based_on: sha256:19902b515af94dfca57acd996b67e1a96c63ee5a733d30223f128a6b84c9fa6d
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>(ii) That it is possible, through a new social order, to wipe out these evils completely.
+  p00074:
+    covers: [p00074]
+    based_on: sha256:d3c255725c2711e8b4d51e173f5008434c7047d80e5026b414dea3e94b3abdb8
+    revision: 1
+    ai_assisted: true
+    text: — 14 —<br/>What will this new social order look like?
+  p00075:
+    covers: [p00075]
+    based_on: sha256:4b9f8a6771174180bc78151925c592d6160507910c772a2963c2f8845c8eec9b
+    revision: 1
+    ai_assisted: true
+    text: Above all, it must take the control of industry and all branches of production out of the hands of competing individuals. Instead, it must set up a system in which society as a whole manages all production for the common good, under a shared plan, with every member of society taking part.
+  p00076:
+    covers: [p00076]
+    based_on: sha256:3ef23e78406e3a763891ef1d94d4c08e5373516c593170d990b33407bd157994
+    revision: 1
+    ai_assisted: true
+    text: In other words, it will abolish competition and replace it with association.
+  p00077:
+    covers: [p00077]
+    based_on: sha256:ae22b23f9bba3a5253246ea9c1b13785b1ee2be366432e13bffeefba27fd006d
+    revision: 1
+    ai_assisted: true
+    text: Furthermore, running industry by individuals directly requires {private-property:sg}. Competition is simply the way private owners express their control over industry. It follows that {private-property:sg} cannot be separated from competition and individual management of industry. Therefore, {private-property:sg} must be abolished. In its place must come the common use of all {instruments-of-production:sg}, and the sharing of all products by common agreement; in short, the collective ownership of goods.
+  p00078:
+    covers: [p00078]
+    based_on: sha256:76567b18ff86a9dbd730541746e0f2b722a03d81c27692312cd151df0f92acb7
+    revision: 1
+    ai_assisted: true
+    text: In fact, ending {private-property:sg} is the clearest and shortest way to describe the {revolution:sg} in the whole social order, which industrial development has made necessary. For this reason, {communism:pl} rightly make it their central demand.
+  p00079:
+    covers: [p00079]
+    based_on: sha256:0f65c835829150df8d7a15b8cc927ad78eb0bbc54f07fb1c13e8d9c652dc3fe9
+    revision: 1
+    ai_assisted: true
+    text: — 15 —<br/>Was the abolition of {private-property:sg} not possible at an earlier time?
+  p00080:
+    covers: [p00080]
+    based_on: sha256:ec529c281b01aab92683638bfcbdb69641f261325e46bcd358d9cd6bd257e0bc
+    revision: 1
+    ai_assisted: true
+    text: No. Every change in the social order, every {revolution:sg} in property relations, is the necessary result of new productive forces that no longer fit into the old property relations.
+  p00081:
+    covers: [p00081]
+    based_on: sha256:7c5be0a0928663f4f43388f6fc2635a9779a2f0988d08faa9090d621f315c991
+    revision: 1
+    ai_assisted: true
+    text: "{Private-property:sg} has not always existed."
+  p00082:
+    covers: [p00082]
+    based_on: sha256:b4e7bc60e88e53df1b0a0dbd20ab6d2332e4e86a47728e1a7499d9c6f0748a3e
+    revision: 1
+    ai_assisted: true
+    text: "Toward the end of the Middle Ages, a new {mode-of-production:sg} arose that could not operate under {feudalism:adj} and guild forms of property. This {manufacture:sg}, having outgrown the old property relations, created a new property form: {private-property:sg}. For {manufacture:sg} and the earliest stage of big industry, {private-property:sg} was the only possible property form, and the social order built on it was the only possible social order."
+  p00083:
+    covers: [p00083]
+    based_on: sha256:9990e72dd5d15d37c5ab49c1a997c35e7aac881940e0ae3294d0427e733edf68
+    revision: 1
+    ai_assisted: true
+    text: It is not possible to produce enough for everyone as long as social {capital:sg} and the {productive-forces:sg} cannot create an extra surplus. As long as this is not possible, there must always be a ruling class directing society's {productive-forces:sg}, alongside a poor, oppressed class. How these classes are formed depends on the stage of development.
+  p00084:
+    covers: [p00084]
+    based_on: sha256:5ac7d1e640a56ff5cec35e95990be51bdbe9c8de13421a7341bebf809b583398
+    revision: 1
+    ai_assisted: true
+    text: The farming Middle Ages show us the baron and the {serf:sg}. The cities of the later Middle Ages show us the guild master, the {journeyman:sg}, and the day laborer. The 17th century had its manufacturing workers. The 19th century has big factory owners and {proletariat:pl}.
+  p00085:
+    covers: [p00085]
+    based_on: sha256:55062406361d6789374ba61907955d8ac53fab7e34459bc49d907a7b9616c9ad
+    revision: 1
+    ai_assisted: true
+    text: It is clear that up to now, productive forces have never developed to the point of producing enough for everyone. And {private-property:sg} has now become a chain and an obstacle to their further development.
+  p00086:
+    covers: [p00086]
+    based_on: sha256:b5545b7d36a768bdd2452d40be767281672712f2443890b1eceb482a5f8fbb48
+    revision: 1
+    ai_assisted: true
+    text: Now, however, the rise of big industry has opened a new era. {Capital:sg} and productive forces have expanded to an unprecedented scale, and we now have the means to multiply them without limit in the near future. In addition, productive forces have been concentrated into the hands of a few capitalists. Meanwhile, the great mass of the people are sinking more and more into the {proletariat:sg}. Their condition becomes more miserable and unbearable as the wealth of the {bourgeoisie:sg} grows. Finally, these powerful and easily expanded productive forces have so far outgrown {private-property:sg} and the {bourgeoisie:sg} that they threaten to unleash violent turmoil across the social order at any moment. Under these conditions, abolishing {private-property:sg} has become not only possible, but completely necessary.
+  p00087:
+    covers: [p00087]
+    based_on: sha256:c943fcfe7563c23ffdba7fe42a3fb3bc267a537021dcdf8280a177998dee235b
+    revision: 2
+    ai_assisted: true
+    text: — 16 —<br/>Will the peaceful abolition of {private-property:sg} be possible?
+  p00088:
+    covers: [p00088]
+    based_on: sha256:a34ce176f3a8dd81b1df1ef5ce2193fead956eb41d9b3332a55812dd6404df90
+    revision: 2
+    ai_assisted: true
+    text: It would be desirable if this could happen, and {communism:pl} would certainly be the last to oppose it. {Communism:pl} know only too well that conspiracies are not only useless, but even harmful. They know very well that {revolution:pl} are not made on purpose or by individual choice. Everywhere and always, {revolution:pl} have been the necessary outcome of conditions completely independent of the will and leadership of single {party:pl} or entire classes.
+  p00089:
+    covers: [p00089]
+    based_on: sha256:3149ffcc835bae80b0b16cd80a43c565bc291f0db4494000cf1a1f111ba0c7e2
+    revision: 2
+    ai_assisted: true
+    text: But they also see that the development of the {proletariat:sg} has been violently suppressed in almost every civilized country. In this way, the opponents of {communism:sg} are driving with all their strength toward a {revolution:sg}. If the oppressed {proletariat:sg} is finally pushed into {revolution:sg}, we {communism:pl} will defend the interests of the {proletariat:pl} with deeds, just as we defend them with words today.
+  p00090:
+    covers: [p00090]
+    based_on: sha256:ca72f05fd4e8031b05bb430e0fe0b8fb135052419e65ca9adff96570d4c71849
+    revision: 2
+    ai_assisted: true
+    text: — 17 —<br/>Will it be possible to abolish {private-property:sg} in one stroke?
+  p00091:
+    covers: [p00091]
+    based_on: sha256:ed2d53cae0f9cb63d7731f4eaa718f8abaae7a2018f2bcddcaacbc5f2f363dd2
+    revision: 2
+    ai_assisted: true
+    text: No. Existing productive forces cannot be multiplied in one stroke to the level needed to create a communal society.
+  p00092:
+    covers: [p00092]
+    based_on: sha256:bed4f333202ff621994a84a80ae9282780749ec0110da2bb0ad7c6638d42dad9
+    revision: 2
+    ai_assisted: true
+    text: In all probability, the {proletariat:adj} {revolution:sg} will transform existing society step by step. It will be able to abolish {private-property:sg} only when the {means-of-production:sg} exist in sufficient quantity.
+  p00093:
+    covers: [p00093]
+    based_on: sha256:e628d43b74248555900701b5ba04864f7982f50200bd1b016fcd372992fc2e20
+    revision: 2
+    ai_assisted: true
+    text: — 18 —<br/>What will be the course of this {revolution:sg}?
+  p00094:
+    covers: [p00094]
+    based_on: sha256:8115cfc5b89616de92cf05a6dfa655682acac47f218d269827609b0cf3b1af30
+    revision: 2
+    ai_assisted: true
+    text: First of all, it will establish a democratic constitution, and through this, the direct or indirect rule of the {proletariat:sg}. Direct in England, where {proletariat:pl} already make up the majority of the people. Indirect in France and Germany, where the majority includes not only {proletariat:pl}, but also small peasants and the {petty-bourgeoisie:sg}. These groups are falling into the {proletariat:sg}, and depend more and more on the {proletariat:sg} for all their political interests. They must, therefore, soon adapt to the demands of the {proletariat:sg}. Perhaps this will take a second struggle, but the outcome can only be the victory of the {proletariat:sg}.
+  p00095:
+    covers: [p00095]
+    based_on: sha256:56abbe020e94d0bca2a8aecb9f7d68fba18d9fd9e523ccd4c5ddb6e4ef68ab0d
+    revision: 2
+    ai_assisted: true
+    text: "Democracy would be completely useless to the {proletariat:sg} if it were not used immediately to carry out measures against {private-property:sg}, and to secure the livelihood of the {proletariat:sg}. The main measures, arising as the necessary outcome of existing conditions, are these:"
+  p00096:
+    covers: [p00096]
+    based_on: sha256:20a1da73fbd18f68d35998e0b1e1d325d6d000e7ebc9e30e553fa33659d3b3f4
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(i) Limitation of {private-property:sg} through progressive taxation, heavy inheritance taxes, ending inheritance by relatives like brothers and nephews, forced loans, and similar steps.
+  p00097:
+    covers: [p00097]
+    based_on: sha256:7c09bf5c37e26e88041f0fc56efd82640dfa8760d3a2e0cb76c10bd0ad2fc93c
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(ii) Gradual takeover of landowners, industrialists, railroad magnates, and shipowners, partly through competition from state industry, and partly through direct compensation paid in bonds.
+  p00098:
+    covers: [p00098]
+    based_on: sha256:f1ced26bd8b6a6afc21be14be462799acda8f1128b1d9a06db992ac3ffb1cd97
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(iii) Confiscation of the property of all emigrants and rebels who oppose the majority of the people.
+  p00099:
+    covers: [p00099]
+    based_on: sha256:de5c3f53db66bd5d79edb452e57ae6d868b809a4545de631be947ffac65c006e
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(iv) Organization of work and employment of {proletariat:pl} on public land, and in factories and workshops. Competition among workers is ended. And any factory owners who remain must pay the same high wages as the state.
+  p00100:
+    covers: [p00100]
+    based_on: sha256:92180d901c305c04b924e2d03b7d3df8803008628aca02ec88c8077aefd4b423
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(v) An equal duty for all members of society to work until {private-property:sg} has been completely abolished. Setting up industrial armies, especially for farming.
+  p00101:
+    covers: [p00101]
+    based_on: sha256:f6c5424f69869a2d133a8cfac6f4b37389e6d35218c814894c94a5a3ba872817
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(vi) Centralization of money and credit in the hands of the state through a national bank with state {capital:sg}, and closing all private banks and bankers.
+  p00102:
+    covers: [p00102]
+    based_on: sha256:5ea89b675c78626c3fa794b5498e2ca7d8efc43be08f3b66e4ee09d8b2a58b76
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(vii) Increase in the number of national factories, workshops, railroads, and ships. Bringing new land into farming, and improving land already in use, as the nation gains more {capital:sg} and workers.
+  p00103:
+    covers: [p00103]
+    based_on: sha256:40cced76e2478050a52cdeef64c9d3618fac81094c4dd981a0e71499377733ac
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(viii) Education of all children in public schools at national expense, from the moment they can leave their mother's care. Combining education with factory production.
+  p00104:
+    covers: [p00104]
+    based_on: sha256:55265384b035aef9e138d36109b0540b28f3116408d0280359d70a48bec18493
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(ix) Construction, on public land, of great communal residences for communities of citizens working in both industry and farming. These combine the advantages of city and country life, while avoiding the drawbacks and one-sidedness of each.
+  p00105:
+    covers: [p00105]
+    based_on: sha256:776b156a00d9e5b7e5f2e66cd5c27f1e02ac597f46f1e0ea677f41cf4f9ddee7
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(x) Destruction of all unhealthy and poorly built houses in city districts.
+  p00106:
+    covers: [p00106]
+    based_on: sha256:becbe057c62147875298a2e3970f947bfd7e0ce918a1da1bc7e55c5757d87221
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(xi) Equal inheritance rights for children born inside and outside marriage.
+  p00107:
+    covers: [p00107]
+    based_on: sha256:d8b64e389d38b28d9f2d47e9d1c82c1eb52f88da52ec80bb09a654eb547a5804
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(xii) Concentration of all transportation in the hands of the nation.
+  p00108:
+    covers: [p00108]
+    based_on: sha256:50dab6961913133a6f0a79bf53f6db942946a9b5dd62f8e49d075a1ad2966269
+    revision: 2
+    ai_assisted: true
+    text: Of course, it is impossible to carry out all these measures at once. But one step will always bring others after it. Once the first radical attack on {private-property:sg} begins, the {proletariat:sg} will be forced to push forward. It will gather all {capital:sg}, farming, transport, and trade into the hands of the state. All these measures aim at this goal. They will become possible and take full effect precisely as the {proletariat:sg}, through its labor, multiplies the nation's {productive-forces:sg}.
+  p00109:
+    covers: [p00109]
+    based_on: sha256:6d5eea7f538860c7857612b9c74e135170e93b145f36797c22963132adfada59
+    revision: 2
+    ai_assisted: true
+    text: Finally, when all {capital:sg}, production, and trade are gathered in the hands of the nation, {private-property:sg} will disappear on its own. Money will become unnecessary. Production will expand so greatly, and human beings will change so much, that society can leave behind whatever old economic habits may remain.
+  p00110:
+    covers: [p00110]
+    based_on: sha256:d66283eabd07850b0762f507fb256733cba5315b3d76b863e321de4b550c6d12
+    revision: 2
+    ai_assisted: true
+    text: — 19 —<br/>Will it be possible for this {revolution:sg} to take place in one country alone?
+  p00111:
+    covers: [p00111]
+    based_on: sha256:48227f62c8191c8f4328204d5b0e52a9049cfea9ec54a4068f3680cc6838e5da
+    revision: 2
+    ai_assisted: true
+    text: No. By creating the {world-market:sg}, big industry has already brought all the peoples of the Earth into close connection with one another, especially civilized peoples. No nation is independent of what happens to the others.
+  p00112:
+    covers: [p00112]
+    based_on: sha256:6c95122c3339e89b08715874224484ee68a3a461c2b0a69287cc59523b2c7807
+    revision: 2
+    ai_assisted: true
+    text: Furthermore, it has aligned the social development of civilized countries so closely that in all of them, the {bourgeoisie:sg} and the {proletariat:sg} have become the decisive classes. The struggle between them has become the great struggle of our time. It follows that the {communism:adj} {revolution:sg} will not be merely a national event. It must take place at the same time in all civilized countries — that is to say, at least in England, America, France, and Germany.
+  p00113:
+    covers: [p00113]
+    based_on: sha256:ee4c2e7bb4e2f38da34f8072abdb35d25b594648d3c304fe7dd565f19960578f
+    revision: 2
+    ai_assisted: true
+    text: It will develop faster or slower in each of these countries depending on which has more developed industry, greater wealth, and a larger mass of {productive-forces:sg}. Therefore, it will advance slowest and face the most obstacles in Germany, but most rapidly and with the fewest difficulties in England. It will have a powerful impact on the other countries of the world. It will radically change the path of development they have followed up to now, greatly speeding up its pace.
+  p00114:
+    covers: [p00114]
+    based_on: sha256:6f97b41710d22bf6d5f698b54931852b3d1cca89533bcb97f4f8310ff4ca9e15
+    revision: 2
+    ai_assisted: true
+    text: It is a universal {revolution:sg}, and will therefore have a universal range.
+  p00115:
+    covers: [p00115]
+    based_on: sha256:d56818fbbfb0292cd38b5598fd102fc052c30ca14a8a76f7deb707af5bcc8aa7
+    revision: 2
+    ai_assisted: true
+    text: — 20 —<br/>What will be the results of the final disappearance of {private-property:sg}?
+  p00116:
+    covers: [p00116]
+    based_on: sha256:a9bc75a6105f7efc2a860948199afbb1a20ae4070125b9356c6292c5f1c07914
+    revision: 2
+    ai_assisted: true
+    text: Society will take all productive forces, means of commerce, and the distribution of products out of the hands of private capitalists. It will manage them according to a plan based on available resources and the needs of the whole society. In this way, most important of all, the harmful consequences now connected with big industry will be abolished.
+  p00117:
+    covers: [p00117]
+    based_on: sha256:a7b5e250420afa62f79cd52b1b2a153e620d478b429adc749e89906a47d67f91
+    revision: 2
+    ai_assisted: true
+    text: There will be no more crises. The expanded production — which is overproduction under today's social order and therefore a main cause of misery — will then not even be enough, and must be expanded much further. Instead of creating misery, overproduction will go beyond the basic needs of society to satisfy the needs of everyone. It will create new needs, and at the same time the means to satisfy them. It will become the condition and drive for new progress, without throwing the social order into confusion as past progress has done. Big industry, freed from the pressure of {private-property:sg}, will expand on a vast scale. What we see today will seem as small as {manufacture:sg} seems beside modern big industry. This growth of industry will provide society with enough products to satisfy everyone's needs.
+  p00118:
+    covers: [p00118]
+    based_on: sha256:11aa72fcaa19724502ae960e492e2f2680ed0ab4860f85e2fa3f2e28c068fc2f
+    revision: 2
+    ai_assisted: true
+    text: The same will be true of agriculture, which also suffers from the pressure of {private-property:sg} and is held back by splitting private land into small plots. Here, existing improvements and scientific methods will be put into practice. The resulting leap forward will guarantee society all the agricultural products it needs.
+  p00119:
+    covers: [p00119]
+    based_on: sha256:38f12a25325409cf4c857a9dd952bac85494070a8d0160fb15235ec223b709d9
+    revision: 2
+    ai_assisted: true
+    text: In this way, an abundance of goods will be produced that can satisfy the needs of all members of society.
+  p00120:
+    covers: [p00120]
+    based_on: sha256:c24979e8b7507d51a1e92bf348f5f8bd913a5029575ce517cb2287352360dd0c
+    revision: 2
+    ai_assisted: true
+    text: Splitting society into different, mutually hostile classes will then become unnecessary. In fact, it will be not only unnecessary, but intolerable in the new social order. The existence of classes began with the division of labor, and the division of labor known up to now will completely disappear. Mechanical and chemical processes are not enough by themselves to raise production to this level. The abilities of the people who use these processes must develop to the same degree.
+  p00121:
+    covers: [p00121]
+    based_on: sha256:558cccef74835f06e1da8e705e64ff7e0ddd115c3ebe8ede99556a042b447d1f
+    revision: 2
+    ai_assisted: true
+    text: Peasants and manufacturing workers of the past century changed their whole way of life when they entered big industry, becoming quite different people. In the same way, collective management of production by society as a whole will require and produce an entirely different kind of human being.
+  p00122:
+    covers: [p00122]
+    based_on: sha256:82edded615c5918b425ab63e6d400d92271357bb8daf121f7075bcdef1e4fc2b
+    revision: 2
+    ai_assisted: true
+    text: People will no longer be tied to a single branch of production, chained to it, or exploited by it as they are today. They will no longer develop only <i>one</i> of their abilities at the cost of all others. They will no longer know only <i>one</i> branch, or a small part of one branch, of overall production. Even industry today finds such narrowly trained people less and less useful.
+  p00123:
+    covers: [p00123]
+    based_on: sha256:6e757838d678d90c1278563c4cf4fdd4322db92c504d47712db0209e29a9906d
+    revision: 2
+    ai_assisted: true
+    text: Industry run by society as a whole under a shared plan requires well-rounded people. Their abilities must be developed in a balanced way, allowing them to understand the whole system of production.
+  p00124:
+    covers: [p00124]
+    based_on: sha256:7b54c6a2a93288d036b4076aa7d57068a0c560a847023b7de5ad71ad7a0705f4
+    revision: 2
+    ai_assisted: true
+    text: The old division of labor has already been weakened by machines, and will disappear completely. It made one person a farmer, another a shoemaker, a third a factory worker, and a fourth a stock trader. Education will allow young people to learn the whole system of production quickly, moving from one branch to another according to society's needs or their own inclinations. It will therefore free them from the one-sided character that the division of labor forces on each person today. In this way, {communism:adj} society will enable its members to make full use of their well-rounded abilities. When this happens, classes will necessarily disappear. A society built on a {communism:adj} basis cannot exist with divided social classes, and building such a society provides the very means to abolish class differences.
+  p00125:
+    covers: [p00125]
+    based_on: sha256:7bf557a64bd3f7bc7ba0469b30eabd2bb765805f414506534ef4e8466b12da59
+    revision: 2
+    ai_assisted: true
+    text: From this it follows that the divide between city and country will also disappear. Having the same people manage farming and industry, rather than two separate classes, is a necessary condition of {communism:adj} association, if only for purely practical reasons. Scattering farm workers across the land while crowding industrial workers into huge cities reflects an undeveloped state of both farming and industry, and is already an obstacle to further progress.
+  p00126:
+    covers: [p00126]
+    based_on: sha256:e6816bc30a36c5f4271947e521c45804f0161b0dbec4a3be36713c537891826b
+    revision: 2
+    ai_assisted: true
+    text: These are the main results of abolishing {private-property:sg}. Society will work together under a plan to use its productive forces and expand production to meet everyone's needs. It will end the situation where the needs of some are satisfied at the expense of others. Classes and class conflicts will be completely eliminated. Society will develop the abilities of all its members by ending the old division of labor, combining education with practical work, and sharing the pleasures produced by all. Finally, city and country will be united.
+  p00127:
+    covers: [p00127]
+    based_on: sha256:3850385867cc71c31fe42f34975c5027032f16d2e30440f0b77b5b00d5b8774d
+    revision: 2
+    ai_assisted: true
+    text: — 21 —<br/>What influence will {communism:adj} society have on the family?
+  p00128:
+    covers: [p00128]
+    based_on: sha256:5d5db7aafeb473d30d057aa90e3afdd0d5e2570f1fb4ad12242177645c280662
+    revision: 2
+    ai_assisted: true
+    text: "It will turn the relationship between the sexes into a purely private matter that concerns only the individuals involved, with no reason for society to interfere. It can do this because it abolishes {private-property:sg} and educates children collectively. In this way, it removes the two pillars of traditional marriage: the dependence of the woman on the man, and the dependence of children on parents, both rooted in {private-property:sg}."
+  p00129:
+    covers: [p00129]
+    based_on: sha256:f7d28b21bcfd14911181e1b100b505158b1e7c3cd5ae542c930265353b0a40f7
+    revision: 2
+    ai_assisted: true
+    text: This is the answer to the loud complaints of narrow-minded moralists against the “community of women”. A community of women belongs entirely to {bourgeoisie:adj} society, and today finds its complete expression in prostitution. But prostitution is based on {private-property:sg}, and falls when property falls. Therefore, instead of introducing a community of women, {communism:adj} society in fact abolishes it.
+  p00130:
+    covers: [p00130]
+    based_on: sha256:92273b22871937d8af3b9529e13d11ddebf5fa3946fdbc3daf1453de0c249b03
+    revision: 2
+    ai_assisted: true
+    text: — 22 —<br/>What will be the attitude of {communism:sg} toward existing nationalities?
+  p00131:
+    covers: [p00131]
+    based_on: sha256:33461b71e31f8c5d8d785b4eeda657ef0e7531b5479a1da958e631ec7dc58e9b
+    revision: 2
+    ai_assisted: true
+    text: The nationalities of the peoples who unite on the principle of community will be forced to blend together, and in this way dissolve themselves. In the same way, the various social ranks and class divisions must disappear when their foundation, {private-property:sg}, is abolished.<fn ref="3"/>
+  p00132:
+    covers: [p00132]
+    based_on: sha256:738a8b85a1aefe1c8a6512fd565603f0ea222975acd5d9049d69f1a49c104992
+    revision: 2
+    ai_assisted: true
+    text: — 23 —<br/>What will be its attitude toward existing religions?
+  p00133:
+    covers: [p00133]
+    based_on: sha256:5613f3c717318e27982e6e8ec31099704d2c7a3211b3d717760e47dec335d2d7
+    revision: 2
+    ai_assisted: true
+    text: All religions up to now have been the expression of historical stages in the development of individual peoples or groups of peoples. But {communism:sg} is the stage of historical development that makes all existing religions unnecessary, bringing about their disappearance.<fn ref="4"/>
+  p00134:
+    covers: [p00134]
+    based_on: sha256:cd14dd6495f2878bbcfc47255152a686b88e7f51422d0815945ad2a6a9449083
+    revision: 2
+    ai_assisted: true
+    text: — 24 —<br/>How do {communism:pl} differ from socialists?
+  p00135:
+    covers: [p00135]
+    based_on: sha256:dc978a68a983934eeec27442f09815f71eb2c891d9b2574ae27038083cc4422b
+    revision: 2
+    ai_assisted: true
+    text: So-called socialists fall into three groups.
+  p00136:
+    covers: [p00136]
+    based_on: sha256:b1cef466863456282289106a95e12c1c800d8803672c93e8735b76074cf96335
+    revision: 2
+    ai_assisted: true
+    text: "[ {Reactionary:adj} Socialists: ]"
+  p00137:
+    covers: [p00137]
+    based_on: sha256:8555bb3f389cfda422ce131aeee6b0b455f8f3e0f45dca1e6914562732eea056
+    revision: 2
+    ai_assisted: true
+    text: The first group consists of supporters of a {feudalism:adj} and family-style society. That society has already been destroyed, and is still being destroyed daily, by big industry, world trade, and their creation, {bourgeoisie:adj} society. Seeing the evils of existing society, this group concludes that {feudalism:adj} and family-style society must be restored, because it was free of such evils. In one way or another, all their proposals aim at this goal.
+  p00138:
+    covers: [p00138]
+    based_on: sha256:6fb08dfc803c25ba7c0338414a59b5641772a950deda4e30a58f3ab8895b1b62
+    revision: 2
+    ai_assisted: true
+    text: "This group of {reactionary:adj} socialists, despite their apparent sympathy and their weeping over the misery of the {proletariat:sg}, is strongly opposed by {communism:pl} for these reasons:"
+  p00139:
+    covers: [p00139]
+    based_on: sha256:94ac5c5ea43e4f11823c4dc414b9c4331d47838870070752433ddcbac7aa487e
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(i) It strives for something that is completely impossible.
+  p00140:
+    covers: [p00140]
+    based_on: sha256:1d25ae16e0ff05430ebeee501bf13b9fec5ad6739531d189c2a56da3e3486118
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(ii) It seeks to restore the rule of the aristocracy, guild masters, small producers, and absolute or {feudalism:adj} monarchs, officials, soldiers, and priests. Such a society was indeed free of the evils of present-day society. But it brought with it at least as many other evils, without offering oppressed workers any prospect of liberation through a {communism:adj} {revolution:sg}.
+  p00141:
+    covers: [p00141]
+    based_on: sha256:2b5e74457600ecb9114186628f7e78fde0e8d1cc9e6c5515e73a935a6b0984ca
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(iii) As soon as the {proletariat:sg} becomes {revolution:adj} and {communism:adj}, these {reactionary:adj} socialists show their true colors by immediately joining with the {bourgeoisie:sg} against the {proletariat:pl}.
+  p00142:
+    covers: [p00142]
+    based_on: sha256:75c249143315993268bafce6858b9877858af24f4c781165c5529d0b48784e46
+    revision: 2
+    ai_assisted: true
+    text: "[ {Bourgeoisie:adj} Socialists: ]"
+  p00143:
+    covers: [p00143]
+    based_on: sha256:93f6127e8022fc81f740f25985b1648edcaafb006f200b801dc682d684cc7ac3
+    revision: 2
+    ai_assisted: true
+    text: The second group consists of supporters of present society who are frightened for its future by the evils it inevitably produces. What they want, therefore, is to keep this society while getting rid of the evils that belong to it.
+  p00144:
+    covers: [p00144]
+    based_on: sha256:f9a29add2ba97b94bb568bac363eac2f30a6e0a3c3c0513ef3d6f01abd3aa618
+    revision: 2
+    ai_assisted: true
+    text: To this end, some propose simple welfare measures. Others offer grand systems of reform which, under the claim of reorganizing society, are actually meant to protect the foundations and survival of existing society.
+  p00145:
+    covers: [p00145]
+    based_on: sha256:8534fefd3301abe3481fa488fadfa9611a642f3d9f3868eb661fb5be35e5c447
+    revision: 2
+    ai_assisted: true
+    text: "{Communism:pl} must fight constantly against these {bourgeoisie:adj} socialists, because they work for the enemies of {communism:pl} and protect the society that {communism:pl} seek to overthrow."
+  p00146:
+    covers: [p00146]
+    based_on: sha256:af1fc03b41ad3aebae0b1c36f107fed9155ed4d0bcfa77ec0ec97864117dd251
+    revision: 2
+    ai_assisted: true
+    text: "[ Democratic Socialists: ]"
+  p00147:
+    covers: [p00147]
+    based_on: sha256:ac88bcff9e4453032953425ff00b95d9f8347764d1e0c884500ce080b47c41e5
+    revision: 2
+    ai_assisted: true
+    text: Finally, the third group consists of democratic socialists. They support some of the same measures {communism:pl} demand, as described in Question 18. However, they see them not as steps leading toward {communism:sg}, but as measures that will be enough by themselves to end the misery and evils of present society.
+  p00148:
+    covers: [p00148]
+    based_on: sha256:296bb758bf3f6651116a1427a50ae5cfdc621bdb98d6eb5a6699da26c9b86292
+    revision: 2
+    ai_assisted: true
+    text: These democratic socialists are either {proletariat:pl} who do not yet fully understand the conditions for freeing their class, or they represent the {petty-bourgeoisie:sg}. Before achieving democracy and the socialist measures that flow from it, that class shares many interests with the {proletariat:sg}.
+  p00149:
+    covers: [p00149]
+    based_on: sha256:5a68ece3e210358338016bd937726782a68e73188a9b518c83d2eb44730c0602
+    revision: 2
+    ai_assisted: true
+    text: It follows that in times of action, {communism:pl} will need an agreement with these democratic socialists, following a shared policy with them as far as possible. This holds provided these socialists do not serve the ruling {bourgeoisie:sg} or attack {communism:pl}.
+  p00150:
+    covers: [p00150]
+    based_on: sha256:c11f48594379b569645032a724299b1b367bedb8e6f56a6d88839b3138a2809e
+    revision: 2
+    ai_assisted: true
+    text: Of course, this cooperation in action does not rule out discussing disagreements between them.
+  p00151:
+    covers: [p00151]
+    based_on: sha256:69243b213f1d0bc9971619057260a728ae80cd6fa5683ce1773ecdd0e823d215
+    revision: 2
+    ai_assisted: true
+    text: — 25 —<br/>What is the attitude of {communism:pl} toward the other political {party:pl} of our time?
+  p00152:
+    covers: [p00152]
+    based_on: sha256:fe0282dc9bfbde68c4a4cb20faea1ca77c688d66f4389b27adec3352f830b466
+    revision: 2
+    ai_assisted: true
+    text: This attitude differs from country to country.
+  p00153:
+    covers: [p00153]
+    based_on: sha256:b89ddd0af9bf2c4dc02c116c4b0e39f0ce1b84aedfc1ba2f8d08123966fbcd99
+    revision: 2
+    ai_assisted: true
+    text: In England, France, and Belgium, where the {bourgeoisie:sg} rules, {communism:pl} still share common interests with various democratic {party:pl}. That shared interest grows stronger as the socialist measures those parties champion come closer to the goals of {communism:pl}. That is, it grows stronger as they represent the interests of the {proletariat:sg} more clearly, and depend more on the {proletariat:sg} for support. In England, for instance, the working-class Chartists are far closer to {communism:pl} than the democratic {petty-bourgeoisie:sg} or the so-called Radicals.
+  p00154:
+    covers: [p00154]
+    based_on: sha256:9c3ec70632a474dfa05f5f2ae8928b80d3f39fc1983afb4cace59791eef405d0
+    revision: 2
+    ai_assisted: true
+    text: "In America, where a democratic constitution is already established, {communism:pl} must join forces with the {party:sg} that will turn this constitution against the {bourgeoisie:sg} and use it for the {proletariat:sg}: namely, the agrarian National Reformers."
+  p00155:
+    covers: [p00155]
+    based_on: sha256:cfcb54ed731092c7937c26631f150b93b26ea3d7f442637a94faf4407090b87a
+    revision: 2
+    ai_assisted: true
+    text: In Switzerland, the Radicals, though a very mixed {party:sg}, are the only group with which {communism:pl} can cooperate. Among these Radicals, the Vaudois and Genevese are the most advanced.
+  p00156:
+    covers: [p00156]
+    based_on: sha256:417e8dca7b7df2d3e877aacec37858bda97704ec6a7a386806ad39c8ce3aa6b8
+    revision: 2
+    ai_assisted: true
+    text: "In Germany, the decisive struggle now ahead is between the {bourgeoisie:sg} and the absolute monarchy. {Communism:pl} cannot enter the decisive fight against the {bourgeoisie:sg} until the {bourgeoisie:sg} holds power. Therefore, {communism:pl} have an interest in helping the {bourgeoisie:sg} gain power as soon as possible, so they can overthrow it all the sooner. Against the governments, therefore, {communism:pl} must always support the radical liberal {party:sg}. But they must avoid the self-deceptions of the {bourgeoisie:sg}, and not believe the enticing promises of benefits a {bourgeoisie:adj} victory allegedly brings the {proletariat:sg}. The only advantages the {proletariat:sg} would gain from a {bourgeoisie:adj} victory consist in:"
+  p00157:
+    covers: [p00157]
+    based_on: sha256:8eddc7df5eda7db6b6551818f991a9a6098654d86248dcb5686eafe0c0b9f9cf
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(i) various concessions that make it easier to unite the {proletariat:sg} into a close, battle-ready, and organized class; and
+  p00158:
+    covers: [p00158]
+    based_on: sha256:b49b549c74c55b36cab8e45ba1bd8ac37120abdcc022d11b1a2f56512e67fe2b
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>(ii) the certainty that on the very day absolute monarchies fall, the struggle between {bourgeoisie:sg} and {proletariat:sg} begins. From that day on, the policy of {communism:pl} will be the same as it is now in countries where the {bourgeoisie:sg} already rules.
+  p00159:
+    covers: [p00159]
+    based_on: sha256:385334b29609d4e8b79d8af650491fd5a36360b1096c2c4bd9c75f656ac4ccde
+    revision: 2
+    ai_assisted: true
+    text: In the name and by mandate of the Congress.
+  p00160:
+    covers: [p00160]
+    based_on: sha256:36f955f5ad991540bfeee9052d6a681be339f48dc2240093e3a03da42d05b1fd
+    revision: 2
+    ai_assisted: true
+    text: In their later writings, Marx and Engels replaced the terms used here with more accurate concepts first introduced by Marx. They used “sale of labour power”, “value of labour power”, and “price of labour power” instead of “sale of labour”, “value of labour”, and “price of labour”.<br/><br/>2. Engels left half a page blank here in the manuscript. The <i>Draft of the Communist Confession of Faith</i> gives the answer shown here for the same question (Number 12).
+  p00161:
+    covers: [p00161]
+    based_on: sha256:63b7566a0cbf234f223b2800406e0b673a0bfbd98ba4224b85bb2201632c6831
+    revision: 2
+    ai_assisted: true
+    text: Engels wrote “unchanged” here, referring to the answer in the June draft under No. 21 shown above.
+  p00162:
+    covers: [p00162]
+    based_on: sha256:6fd037c676998bc12c943acc768a4737465433b45a28b9cfe37ec32801c944af
+    revision: 2
+    ai_assisted: true
+    text: "Similarly, this refers to the answer to Question 23 in the June draft: “All religions which have existed up to now were expressions of historical stages of development of individual peoples or groups of peoples. But {communism:sg} is that stage of historical development which makes all existing religions superfluous and supersedes them.”<br/><br/>5. The Chartists took part in the British workers' political movement from the 1830s to the middle 1850s. Their central demand was the People’s Charter, calling for universal voting rights for all workers. Lenin described Chartism as the world’s “first broad, truly mass and politically organized proletarian revolutionary movement” (Collected Works, Eng. ed., Progress Publishers, Moscow, 1965, Vol. 29, p. 309.) The decline of the Chartist movement came from Britain’s industrial and commercial monopoly, and the bribing of the upper stratum of the working class (“the labour aristocracy”) by the British {bourgeoisie:sg}. Both factors led to opportunist aims in this stratum, seen especially in union leaders refusing to support Chartism.<br/><br/>6. Probably a reference to the National Reform Association, founded in the 1840s by George H. Evans, with headquarters in New York City, which had for its motto, “Vote Yourself a Farm”."

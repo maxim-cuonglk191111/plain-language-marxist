@@ -1,0 +1,43 @@
+schema_version: 5
+document: document:engels:1847:principles-of-communism:prin-com
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00002]
+    text: |-
+      Engels drafted *The Principles of Communism* in late October 1847 as a proposed catechism for the Communist League.
+
+      Soon after, Engels wrote to Marx suggesting they abandon the question-and-answer format in favor of a historical manifesto.
+
+      This draft became the foundation for the *Manifesto of the Communist Party* published in February 1848.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00013]
+    text: |-
+      Before the industrial revolution, craft production was organized in urban guilds where master craftsmen owned their workshops.
+
+      In the seventeenth and eighteenth centuries, division of labor in larger workshops ("manufacture") undermined traditional guilds.
+
+      Steam-powered machinery completed this transformation by turning craft workshops into mechanized factories and workers into wage laborers.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00062]
+    text: |-
+      In 1847, Europe experienced a devastating financial panic and economic depression following bad harvests and speculative railway collapses.
+
+      Engels highlights that early capitalist industrialization produced recurring economic crises roughly every five to seven years.
+
+      These recurring crashes created widespread urban starvation and misery, setting the stage for the 1848 revolutions across Europe.
+    ai_assisted: true
+  e004:
+    kind: historical_context
+    targets: [p00153]
+    text: |-
+      Chartism was Britain's first mass working-class democratic movement, active between 1838 and 1848.
+
+      It rallied millions of workers around the People's Charter, demanding universal male suffrage and secret ballots.
+
+      Engels lived in Manchester in the early 1840s, closely observing the Chartists while researching English industrial conditions.
+    ai_assisted: true

@@ -551,6 +551,12 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
       [["definition", "long"], term.data.definition.long],
       [["not_to_confuse"], term.data.not_to_confuse],
     ];
+    if (term.data.senses) {
+      term.data.senses.forEach((s, idx) => {
+        prose.push([["senses", idx, "short"], s.short]);
+        if (s.long) prose.push([["senses", idx, "long"], s.long]);
+      });
+    }
     for (const [path, text] of prose) {
       const long = text ? longSentences(text) : [];
       if (long.length > 0)
@@ -574,6 +580,19 @@ export function validateRepository(repo: Repository, options: ValidateOptions = 
           ["scoped_defaults", i, "scope"],
           `scope ${s.scope} does not match any work or author yet`,
         );
+    });
+    term.data.senses?.forEach((s, i) => {
+      if (s.scope.startsWith("work:")) {
+        if (!workIds.has(s.scope)) {
+          report(
+            "warning",
+            "term/unknown-scope",
+            term,
+            ["senses", i, "scope"],
+            `scope ${s.scope} does not match any work yet`,
+          );
+        }
+      }
     });
   }
 

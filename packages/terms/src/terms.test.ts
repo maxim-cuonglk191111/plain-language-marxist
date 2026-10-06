@@ -1,9 +1,17 @@
 import type { TermFile } from "@plm/schema";
 import { describe, expect, it } from "vitest";
-import { checkTokens, parseTokens, renderTokens, resolveChoice, usageCounts } from "./index.ts";
+import {
+  checkTokens,
+  parseTokens,
+  renderTokens,
+  resolveChoice,
+  resolveSense,
+  scopeBadge,
+  usageCounts,
+} from "./index.ts";
 
 const bourgeoisie: TermFile = {
-  schema_version: 4,
+  schema_version: 5,
   term: "bourgeoisie",
   original: { sg: "bourgeoisie", adj: "bourgeois" },
   definition: { short: "The class of modern capitalists." },
@@ -154,5 +162,125 @@ describe("usageCounts", () => {
       "capitalist-class": 2,
       "bourgeois-class": 2,
     });
+  });
+});
+
+describe("scopeBadge", () => {
+  it("generates correct labels and kinds for scopes", () => {
+    expect(scopeBadge("work:marx:1848:communist-manifesto")).toEqual({
+      label: "Communist Manifesto (1848)",
+      kind: "work",
+    });
+    expect(scopeBadge("author:lenin")).toEqual({
+      label: "In Lenin",
+      kind: "author",
+    });
+    expect(scopeBadge("period:1844-1848")).toEqual({
+      label: "1844–1848",
+      kind: "period",
+    });
+    expect(scopeBadge("movement:council-communism")).toEqual({
+      label: "Council Communism",
+      kind: "movement",
+    });
+    expect(scopeBadge("unknown")).toEqual({
+      label: "General definition",
+      kind: "general",
+    });
+  });
+});
+
+describe("resolveSense", () => {
+  const partyTerm = {
+    definition: { short: "A political current or organisation." },
+    senses: [
+      {
+        scope: "work:marx:1848:communist-manifesto",
+        short: "A broad class movement, not a rigid cadre party.",
+      },
+      {
+        scope: "author:lenin",
+        short: "The disciplined vanguard organisation of professional revolutionaries.",
+      },
+      {
+        scope: "period:1918-1923",
+        short: "Revolutionary workers council movement period.",
+      },
+      {
+        scope: "movement:council-communism",
+        short: "A bourgeois organ of representation replaced by workers councils.",
+      },
+    ],
+  };
+
+  it("prioritizes work scope first", () => {
+    const res = resolveSense(partyTerm, {
+      workId: "work:marx:1848:communist-manifesto",
+      authors: ["lenin"],
+      year: 1920,
+      movement: "council-communism",
+    });
+    expect(res.current.short).toBe("A broad class movement, not a rigid cadre party.");
+    expect(res.current.badge.label).toBe("Communist Manifesto (1848)");
+    expect(res.current.isScoped).toBe(true);
+    expect(res.others).toHaveLength(3);
+  });
+
+  it("prioritizes author scope second", () => {
+    const res = resolveSense(partyTerm, {
+      authors: ["lenin"],
+      year: 1920,
+      movement: "council-communism",
+    });
+    expect(res.current.short).toBe(
+      "The disciplined vanguard organisation of professional revolutionaries.",
+    );
+    expect(res.current.badge.label).toBe("In Lenin");
+    expect(res.others).toHaveLength(3);
+  });
+
+  it("prioritizes period scope third", () => {
+    const res = resolveSense(partyTerm, {
+      year: 1920,
+      movement: "council-communism",
+    });
+    expect(res.current.short).toBe("Revolutionary workers council movement period.");
+    expect(res.current.badge.label).toBe("1918–1923");
+    expect(res.others).toHaveLength(3);
+  });
+
+  it("prioritizes movement scope fourth", () => {
+    const res = resolveSense(partyTerm, {
+      movement: "council-communism",
+    });
+    expect(res.current.short).toBe(
+      "A bourgeois organ of representation replaced by workers councils.",
+    );
+    expect(res.current.badge.label).toBe("Council Communism");
+    expect(res.others).toHaveLength(3);
+  });
+
+  it("falls back to general definition when no scope matches", () => {
+    const res = resolveSense(partyTerm, {
+      workId: "work:other:1890:other-work",
+      authors: ["other-author"],
+      year: 1890,
+    });
+    expect(res.current.short).toBe("A political current or organisation.");
+    expect(res.current.badge.label).toBe("General definition");
+    expect(res.current.isScoped).toBe(false);
+    expect(res.others).toHaveLength(4);
+  });
+
+  it("returns general definition if term has no senses", () => {
+    const res = resolveSense(
+      { definition: { short: "A baseline definition." } },
+      {
+        workId: "work:marx:1848:communist-manifesto",
+      },
+    );
+    expect(res.current.short).toBe("A baseline definition.");
+    expect(res.current.isScoped).toBe(false);
+    expect(res.others).toHaveLength(0);
   });
 });

@@ -1,14 +1,15 @@
 # Task 034 — Term senses by author, period, and conceptual evolution
 
-|                      |                                                                      |
-| -------------------- | -------------------------------------------------------------------- |
-| **Status**     | Open (ready for implementation once second text/author is staged)    |
-| **Filed**      | 2026-10-05                                                           |
-| **Owner**      | Unassigned                                                           |
-| **Severity**   | High (core semantic requirement for scaling beyond a single text)    |
-| **Milestone**  | M3 (archive growth & multi-author corpus)                            |
+|              |                                                                      |
+| ------------ | -------------------------------------------------------------------- |
+| **Status**   | Done                                                                 |
+| **Filed**    | 2026-10-05                                                           |
+| **Closed**   | 2026-10-06                                                           |
+| **Owner**    | Unassigned                                                           |
+| **Severity** | High (core semantic requirement for scaling beyond a single text)    |
+| **Milestone**| M3 (archive growth & multi-author corpus)                            |
 | **Depends on** | 010 (term system), 022 (term cards), 036 (term clarity)              |
-| **Related**    | 032 B (concordance), 035 (council communism), 038 (visual companion) |
+| **Related**  | 032 B (concordance), 035 (council communism), 038 (visual companion) |
 
 ## Problem
 
@@ -39,7 +40,7 @@ A single static card cannot serve as a dogmatic global dictionary. The cards mus
 Add an optional `senses` array to the term schema:
 
 ```yaml
-schema_version: 4
+schema_version: 5
 term: party
 # Baseline general definition (fallback for general vocabulary index)
 definition:
@@ -94,18 +95,18 @@ The highest-ranking match becomes the primary **"In this text"** definition.
 
 ### 4. Data Contract & Migration
 
-1. Bump `schema_version` to `4` across `packages/schema`.
+1. Bump `schema_version` to `5` across `packages/schema`.
 2. Add migration in `packages/cli/src/commands/migrate.ts`: cards without `senses` pass unchanged; existing `definition` remains valid.
 3. Update `dist/data/v1/terms/{term}.json` contract:
    - Export optional `senses: Array<{ scope: string, short: string, long?: string, sources: Source[] }>`.
 
 ## Acceptance Criteria
 
-- [ ] A term card opened in *Communist Manifesto* displays the 1848 sense first.
-- [ ] When opened in a 20th-century text (e.g. Lenin or Rühle), the card displays that author's specific sense first.
-- [ ] Readers can inspect other historical senses and citations within the card without leaving the reader.
-- [ ] Schema validation enforces:
+- [x] A term card opened in *Communist Manifesto* displays the 1848 sense first.
+- [x] When opened in a 20th-century text (e.g. Lenin or Rühle), the card displays that author's specific sense first.
+- [x] Readers can inspect other historical senses and citations within the card without leaving the reader.
+- [x] Schema validation enforces:
   - `short` length $\le 25$ words per sentence.
   - Every sense must cite at least one verified historical source (`title`, `author`, `year`).
   - Scopes must follow validated formats (`work:...`, `author:...`, `period:...`, `movement:...`).
-- [ ] All existing 47 term files pass validation and `pnpm check`.
+- [x] All existing 47 term files pass validation and `pnpm check`.

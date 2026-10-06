@@ -7,8 +7,28 @@ const Forms = z.record(FormName, z.string().min(1));
 
 export const TermScope = z.union([
   WorkId,
-  z.string().regex(/^author:[a-z0-9-]+$/, "must be work:… or author:{slug}"),
+  z.string().regex(/^author:[a-z0-9-]+$/, "must be author:{slug}"),
+  z.string().regex(/^period:\d{4}(-\d{4})?$/, "must be period:YYYY or period:YYYY-YYYY"),
+  z.string().regex(/^movement:[a-z0-9-]+$/, "must be movement:{slug}"),
 ]);
+
+export const SenseCitation = z.strictObject({
+  title: z.string().min(1),
+  author: z.string().min(1),
+  year: z.number().int(),
+  publication: z.string().min(1).optional(),
+  url: Citation.shape.url,
+  accessed_at: Citation.shape.accessed_at,
+});
+export type SenseCitation = z.infer<typeof SenseCitation>;
+
+export const TermSense = z.strictObject({
+  scope: TermScope,
+  short: z.string().min(1),
+  long: z.string().min(1).optional(),
+  sources: z.array(SenseCitation).min(1, "every sense must cite at least one historical source"),
+});
+export type TermSense = z.infer<typeof TermSense>;
 
 /** content/vocabulary/{term}.yml (SDD §6.1). */
 export const TermFile = z
@@ -24,6 +44,8 @@ export const TermFile = z
       long: z.string().min(1).optional(),
       sources: z.array(Citation).optional(),
     }),
+    /** Scoped senses by author, period, or revolutionary current (task 034, v5). */
+    senses: z.array(TermSense).optional(),
     /** A sentence from a work showing the term in use; `text` must occur in that passage (v2). */
     example: z
       .strictObject({ document: DocumentId, passage: PassageId, text: z.string().min(1) })
@@ -84,6 +106,19 @@ export const TermFile = z
           path: ["scoped_defaults", i, "rendering"],
           message: `"${scoped.rendering}" is not one of the renderings`,
         });
+      }
+    });
+    term.senses?.forEach((sense, idx) => {
+      const sentences = sense.short.split(/(?<=[.!?])\s+/).filter(Boolean);
+      for (const s of sentences) {
+        const words = s.trim().split(/\s+/).filter(Boolean).length;
+        if (words > 25) {
+          ctx.addIssue({
+            code: "custom",
+            path: ["senses", idx, "short"],
+            message: `sentence in sense short definition exceeds 25 words (${words} words)`,
+          });
+        }
       }
     });
   });

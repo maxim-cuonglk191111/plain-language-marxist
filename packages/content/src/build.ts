@@ -221,6 +221,16 @@ export function buildData(options: BuildOptions): BuildResult {
         ...(t.definition.long ? { long: t.definition.long } : {}),
         sources: (t.definition.sources ?? []) as Record<string, string | number>[],
       },
+      ...(t.senses
+        ? {
+            senses: t.senses.map((s) => ({
+              scope: s.scope,
+              short: s.short,
+              ...(s.long ? { long: s.long } : {}),
+              sources: s.sources as Record<string, string | number>[],
+            })),
+          }
+        : {}),
       ...exampleFor(t),
       ...linksFor(t),
       ...(t.not_to_confuse ? { not_to_confuse: t.not_to_confuse } : {}),

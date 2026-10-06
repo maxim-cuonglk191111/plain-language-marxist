@@ -2,7 +2,7 @@ import { z } from "zod";
 import { parseLayout } from "../layout/index.ts";
 
 /** The only content schema version this code reads and writes. Bump together with a plm migrate step. */
-export const SCHEMA_VERSION = 4;
+export const SCHEMA_VERSION = 5;
 export const SchemaVersion = z.literal(SCHEMA_VERSION);
 
 export const Slug = z

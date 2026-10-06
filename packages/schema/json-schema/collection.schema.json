@@ -7,7 +7,7 @@
       "properties": {
         "schema_version": {
           "type": "number",
-          "const": 4
+          "const": 5
         },
         "kind": {
           "type": "string",
@@ -56,7 +56,7 @@
       "properties": {
         "schema_version": {
           "type": "number",
-          "const": 4
+          "const": 5
         },
         "kind": {
           "type": "string",

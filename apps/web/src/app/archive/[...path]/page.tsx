@@ -177,7 +177,7 @@ function DocumentPage({
         <div className="reader-controls">
           <TermCards
             terms={terms}
-            context={{ workId: entry.work.id, authors: entry.work.authors }}
+            context={{ workId: entry.work.id, authors: entry.work.authors, year: entry.work.year }}
             counts={Object.fromEntries(
               [...concordance(RENDERING)].map(([term, list]) => [term, list.length]),
             )}

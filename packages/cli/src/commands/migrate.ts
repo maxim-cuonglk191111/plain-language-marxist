@@ -24,6 +24,9 @@ export const MIGRATIONS: Readonly<Record<number, (text: string) => string>> = {
   // v4 (task 032 D): document directories gain the optional crossrefs.yml ("See also"
   // links between passages). Existing files are valid as they are.
   3: (text) => restamp(text, 4),
+  // v5 (task 034): term files gain the optional senses array for intra-author
+  // and inter-tradition conceptual evolution. Existing files are valid as they are.
+  4: (text) => restamp(text, 5),
 };
 
 /** Content YAML files under the given roots (directories are walked, files taken as-is). */

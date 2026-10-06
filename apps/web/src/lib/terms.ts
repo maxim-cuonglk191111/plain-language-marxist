@@ -6,11 +6,12 @@ export function toTermFile(t: DataTerm): TermFile {
   return {
     // A literal, not SCHEMA_VERSION: importing values from @plm/schema would put zod in the
     // client bundle. `satisfies` makes tsc fail here when the schema version changes.
-    schema_version: 4 satisfies TermFile["schema_version"],
+    schema_version: 5 satisfies TermFile["schema_version"],
     term: t.term,
     ...(t.aliases.length ? { aliases: t.aliases } : {}),
     original: t.original,
     definition: { short: t.definition.short },
+    ...(t.senses ? { senses: t.senses as unknown as TermFile["senses"] } : {}),
     renderings: Object.fromEntries(
       t.renderings.map((r) => [
         r.key,

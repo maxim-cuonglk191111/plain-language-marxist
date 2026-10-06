@@ -5,7 +5,7 @@
   "properties": {
     "schema_version": {
       "type": "number",
-      "const": 4
+      "const": 5
     },
     "term": {
       "type": "string",
@@ -83,6 +83,89 @@
         "short"
       ],
       "additionalProperties": false
+    },
+    "senses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "scope": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^work:[a-z0-9-]+:\\d{4}:[a-z0-9-]+$"
+              },
+              {
+                "type": "string",
+                "pattern": "^author:[a-z0-9-]+$"
+              },
+              {
+                "type": "string",
+                "pattern": "^period:\\d{4}(-\\d{4})?$"
+              },
+              {
+                "type": "string",
+                "pattern": "^movement:[a-z0-9-]+$"
+              }
+            ]
+          },
+          "short": {
+            "type": "string",
+            "minLength": 1
+          },
+          "long": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sources": {
+            "minItems": 1,
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "title": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "author": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "year": {
+                  "type": "integer",
+                  "minimum": -9007199254740991,
+                  "maximum": 9007199254740991
+                },
+                "publication": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "url": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "accessed_at": {
+                  "type": "string",
+                  "format": "date",
+                  "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))$"
+                }
+              },
+              "required": [
+                "title",
+                "author",
+                "year"
+              ],
+              "additionalProperties": false
+            }
+          }
+        },
+        "required": [
+          "scope",
+          "short",
+          "sources"
+        ],
+        "additionalProperties": false
+      }
     },
     "example": {
       "type": "object",
@@ -172,6 +255,14 @@
               {
                 "type": "string",
                 "pattern": "^author:[a-z0-9-]+$"
+              },
+              {
+                "type": "string",
+                "pattern": "^period:\\d{4}(-\\d{4})?$"
+              },
+              {
+                "type": "string",
+                "pattern": "^movement:[a-z0-9-]+$"
               }
             ]
           },

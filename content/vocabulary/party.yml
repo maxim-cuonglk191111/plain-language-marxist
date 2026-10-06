@@ -1,4 +1,4 @@
-schema_version: 4
+schema_version: 5
 term: party
 original:
   sg: party
@@ -9,6 +9,27 @@ definition:
     Today a “party” usually means an organisation that stands in elections. In 1848 the word was used more widely, for any side or tendency in politics.
 
     When the Manifesto speaks of workers organising “into a political party”, it means a class that acts together in politics. The “Communist Party” of the title was the communist movement as a whole, not one fixed organisation.
+senses:
+  - scope: work:marx:1848:communist-manifesto
+    short: A broad class movement or political tendency, not a rigid electoral or cadre party.
+    long: In 1848, Marx and Engels used 'party' to mean the communist movement as a historical current. It was not a single modern party apparatus with membership cards.
+    sources:
+      - title: Manifesto of the Communist Party
+        author: Karl Marx & Frederick Engels
+        year: 1848
+  - scope: author:lenin
+    short: The disciplined vanguard organisation of professional revolutionaries leading the working class.
+    long: In 'What Is To Be Done?' (1902), Lenin argues that spontaneous trade unionism cannot achieve socialism. A centralized, disciplined vanguard party is required instead.
+    sources:
+      - title: What Is To Be Done?
+        author: V. I. Lenin
+        year: 1902
+  - scope: movement:council-communism
+    short: A bourgeois organ of representation that becomes unnecessary when workers govern directly through councils.
+    sources:
+      - title: The Revolution Is Not a Party Matter
+        author: Otto Rühle
+        year: 1920
 example:
   document: document:marx:1848:communist-manifesto:ch01
   passage: p00048

@@ -277,7 +277,7 @@ describe("validate: invariants", () => {
 
 describe("validate: file problems carry line numbers", () => {
   it("reports YAML syntax errors with a line", () => {
-    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 4\nterm: [unclosed\n" });
+    const root = writeFixture(undefined, { [PATHS.term]: "schema_version: 5\nterm: [unclosed\n" });
     const issue = validate(root).find((i) => i.file === PATHS.term);
     expect(issue?.message).toMatch(/^YAML:/);
     expect(issue?.line).toBeGreaterThan(0);
@@ -298,7 +298,7 @@ describe("validate: file problems carry line numbers", () => {
 
     const broken = writeFixture(undefined, {
       "governance.yml":
-        "schema_version: 4\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
+        "schema_version: 5\nbootstrap_mode: true\nmin_account_age_days: 30\nmaintainers: [a]\nreviewers: []\nrules: {}\n",
     });
     const issue = validate(broken).find((i) => i.file === "governance.yml");
     expect(issue?.message).toContain("rules.RENDERING");
@@ -308,7 +308,7 @@ describe("validate: file problems carry line numbers", () => {
     const root = writeFixture(undefined, {
       [`${PATHS.docDir}/notes.txt`]: "scratch",
       "content/vocabulary/wrong-name.yml":
-        "schema_version: 4\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
+        "schema_version: 5\nterm: capital\noriginal: { sg: capital }\ndefinition: { short: x }\nrenderings: { capital: { forms: { sg: capital }, reason: keep } }\ndefault: capital\n",
     });
     const found = codes(root);
     expect(found).toContain("warning layout/unknown-file");

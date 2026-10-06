@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 import { around, originalMarks, plainMarks } from "./concordance";
 
 const term = (slug: string, renderings: TermFile["renderings"], dflt: string): TermFile => ({
-  schema_version: 4,
+  schema_version: 5,
   term: slug,
   original: { sg: slug },
   definition: { short: "x" },

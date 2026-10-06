@@ -190,3 +190,179 @@ export function usageCounts(
   }
   return counts;
 }
+
+/** Context passed when resolving which sense of a term applies to the text being read (task 034). */
+export type SenseResolutionContext = {
+  workId?: string;
+  authors?: readonly string[];
+  year?: number;
+  movement?: string;
+};
+
+export type ScopeBadgeInfo = {
+  label: string;
+  kind: "work" | "author" | "period" | "movement" | "general";
+};
+
+/** Formats a scope string into a human-readable badge label (task 034). */
+export function scopeBadge(scope?: string): ScopeBadgeInfo {
+  if (!scope) return { label: "General definition", kind: "general" };
+  if (scope.startsWith("work:")) {
+    const parts = scope.split(":");
+    const year = parts[2] ?? "";
+    const slug = parts[3] ?? "";
+    const name = slug
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+    return { label: year ? `${name} (${year})` : name, kind: "work" };
+  }
+  if (scope.startsWith("author:")) {
+    const author = scope.slice("author:".length);
+    const name = author.charAt(0).toUpperCase() + author.slice(1);
+    return { label: `In ${name}`, kind: "author" };
+  }
+  if (scope.startsWith("period:")) {
+    const period = scope.slice("period:".length).replace("-", "–");
+    return { label: period, kind: "period" };
+  }
+  if (scope.startsWith("movement:")) {
+    const m = scope.slice("movement:".length);
+    const name = m
+      .split("-")
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(" ");
+    return { label: name, kind: "movement" };
+  }
+  return { label: "General definition", kind: "general" };
+}
+
+export type ScopedSenseData = {
+  scope: string;
+  short: string;
+  long?: string | undefined;
+  sources?: Array<Record<string, unknown>> | undefined;
+};
+
+export type ResolvedSense = {
+  sense?: ScopedSenseData | undefined;
+  badge: ScopeBadgeInfo;
+  short: string;
+  long?: string | undefined;
+  sources?: Array<Record<string, unknown>> | undefined;
+  isScoped: boolean;
+};
+
+/**
+ * Resolves which sense of a term card should be displayed first ("In this text")
+ * based on the resolution hierarchy: Work -> Author -> Period -> Movement -> General (task 034).
+ */
+export function resolveSense(
+  term: {
+    definition: {
+      short: string;
+      long?: string | undefined;
+      sources?: Array<Record<string, unknown>> | undefined;
+    };
+    senses?: ScopedSenseData[] | undefined;
+  },
+  ctx: SenseResolutionContext = {},
+): { current: ResolvedSense; others: ScopedSenseData[] } {
+  const senses = term.senses ?? [];
+  if (senses.length > 0) {
+    // 1. Work scope (work:{author}:{year}:{slug})
+    if (ctx.workId) {
+      const match = senses.find((s) => s.scope === ctx.workId);
+      if (match) {
+        return {
+          current: {
+            sense: match,
+            badge: scopeBadge(match.scope),
+            short: match.short,
+            long: match.long,
+            sources: match.sources,
+            isScoped: true,
+          },
+          others: senses.filter((s) => s !== match),
+        };
+      }
+    }
+    // 2. Author scope (author:{slug})
+    const authors = ctx.authors;
+    if (authors && authors.length > 0) {
+      const match = senses.find(
+        (s) => s.scope.startsWith("author:") && authors.includes(s.scope.slice("author:".length)),
+      );
+      if (match) {
+        return {
+          current: {
+            sense: match,
+            badge: scopeBadge(match.scope),
+            short: match.short,
+            long: match.long,
+            sources: match.sources,
+            isScoped: true,
+          },
+          others: senses.filter((s) => s !== match),
+        };
+      }
+    }
+    // 3. Period scope (period:{start}-{end} or period:{year})
+    const currentYear = ctx.year;
+    if (currentYear !== undefined) {
+      const match = senses.find((s) => {
+        if (!s.scope.startsWith("period:")) return false;
+        const range = s.scope.slice("period:".length);
+        const parts = range.split("-");
+        const startStr = parts[0];
+        const endStr = parts[1];
+        if (!startStr) return false;
+        const start = parseInt(startStr, 10);
+        const end = endStr ? parseInt(endStr, 10) : start;
+        return !isNaN(start) && currentYear >= start && currentYear <= end;
+      });
+      if (match) {
+        return {
+          current: {
+            sense: match,
+            badge: scopeBadge(match.scope),
+            short: match.short,
+            long: match.long,
+            sources: match.sources,
+            isScoped: true,
+          },
+          others: senses.filter((s) => s !== match),
+        };
+      }
+    }
+    // 4. Movement scope (movement:{slug})
+    if (ctx.movement) {
+      const match = senses.find((s) => s.scope === `movement:${ctx.movement}`);
+      if (match) {
+        return {
+          current: {
+            sense: match,
+            badge: scopeBadge(match.scope),
+            short: match.short,
+            long: match.long,
+            sources: match.sources,
+            isScoped: true,
+          },
+          others: senses.filter((s) => s !== match),
+        };
+      }
+    }
+  }
+
+  // 5. Fallback to general definition
+  return {
+    current: {
+      badge: { label: "General definition", kind: "general" },
+      short: term.definition.short,
+      long: term.definition.long,
+      sources: term.definition.sources,
+      isScoped: false,
+    },
+    others: senses,
+  };
+}

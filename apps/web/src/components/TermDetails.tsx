@@ -91,9 +91,18 @@ function MarkedText({
 }
 
 /** The short definition, with its term links. */
-export function TermShort({ term, mode }: { term: DataTerm; mode: TermLinkMode }) {
-  const links = (term.links ?? []).filter((l) => l.field === "short");
-  return <MarkedText text={term.definition.short} links={links} mode={mode} />;
+export function TermShort({
+  term,
+  mode,
+  text,
+}: {
+  term: DataTerm;
+  mode: TermLinkMode;
+  text?: string | undefined;
+}) {
+  const content = text ?? term.definition.short;
+  const links = text ? [] : (term.links ?? []).filter((l) => l.field === "short");
+  return <MarkedText text={content} links={links} mode={mode} />;
 }
 
 /**
@@ -105,17 +114,25 @@ export function TermDetails({
   term,
   open = false,
   mode = { kind: "page" },
+  overrideLong,
 }: {
   term: DataTerm;
-  open?: boolean;
-  mode?: TermLinkMode;
+  open?: boolean | undefined;
+  mode?: TermLinkMode | undefined;
+  overrideLong?: string | undefined;
 }) {
   const links = term.links ?? [];
   const longLinks = links.filter((l) => l.field === "long");
-  const more = term.definition.long
-    ? paragraphs(term.definition.long).map((p) => (
+  const longText = overrideLong !== undefined ? overrideLong : term.definition.long;
+  const more = longText
+    ? paragraphs(longText).map((p) => (
         <p key={p.start}>
-          <MarkedText text={p.text} links={longLinks} offset={p.start} mode={mode} />
+          <MarkedText
+            text={p.text}
+            links={overrideLong !== undefined ? [] : longLinks}
+            offset={p.start}
+            mode={mode}
+          />
         </p>
       ))
     : [];

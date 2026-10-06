@@ -637,6 +637,97 @@ a.term:hover {
   }
 }
 
+/* Term senses and conceptual evolution (task 034) */
+.term-sense-badge {
+  display: inline-block;
+  margin: 0;
+  padding: 0.12rem 0.45rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.2;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--accent) 15%, transparent);
+  color: var(--accent);
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent);
+  vertical-align: middle;
+}
+.term-card-senses {
+  margin: 0.6rem 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.5rem;
+}
+.term-card-senses summary {
+  cursor: pointer;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+  user-select: none;
+}
+.term-senses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+.term-sense-item {
+  border-left: 2px solid var(--rule);
+  padding-left: 0.5rem;
+}
+.term-sense-header {
+  margin: 0 0 0.2rem !important;
+}
+.term-sense-short {
+  margin: 0 !important;
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+/* Vocabulary page historical senses section (task 034) */
+.term-historical-senses {
+  margin: 2rem 0;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.5rem;
+}
+.senses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.sense-card {
+  border: 1px solid var(--rule);
+  border-radius: 0.6rem;
+  padding: 1rem;
+  background: color-mix(in srgb, var(--bg) 95%, var(--fg));
+}
+.sense-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+.sense-scope-code {
+  font-size: 0.75rem;
+  color: var(--muted);
+  font-family: monospace;
+}
+.sense-short {
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+}
+.sense-long {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: color-mix(in srgb, var(--fg) 85%, var(--bg));
+  margin-bottom: 0.5rem;
+}
+.sense-sources {
+  margin-top: 0.5rem;
+  padding-left: 1.2rem;
+  font-size: 0.8rem;
+}
+
 /* ---------- Explanations and badges ---------- */
 .explanation {
   border-left: 3px solid var(--accent);

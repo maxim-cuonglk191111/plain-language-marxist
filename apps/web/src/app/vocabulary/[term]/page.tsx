@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { scopeBadge } from "@plm/terms";
 import { TermDetails, TermShort } from "../../../components/TermDetails";
 import { concordance, type Occurrence } from "../../../lib/concordance";
 import { getIndex, getTerm } from "../../../lib/data";
@@ -48,6 +49,40 @@ export default async function TermPage(props: Props) {
             <li key={i}>{[s["author"], s["title"], s["year"]].filter(Boolean).join(", ")}</li>
           ))}
         </ul>
+      )}
+
+      {term.senses && term.senses.length > 0 && (
+        <section className="term-historical-senses" aria-labelledby="historical-senses">
+          <h2 id="historical-senses">Historical senses &amp; conceptual evolution</h2>
+          <p className="muted">
+            Concepts evolved over time and across revolutionary currents. These scoped senses
+            reflect how different authors, works, and traditions defined and contested this concept.
+          </p>
+          <div className="senses-grid">
+            {term.senses.map((s, i) => {
+              const badge = scopeBadge(s.scope);
+              return (
+                <div key={i} className="sense-card">
+                  <div className="sense-header">
+                    <span className="badge term-sense-badge">{badge.label}</span>
+                    <code className="sense-scope-code">{s.scope}</code>
+                  </div>
+                  <p className="sense-short">{s.short}</p>
+                  {s.long && <p className="sense-long">{s.long}</p>}
+                  {s.sources && s.sources.length > 0 && (
+                    <ul className="sources sense-sources">
+                      {s.sources.map((src, srcIdx) => (
+                        <li key={srcIdx}>
+                          {[src["author"], src["title"], src["year"]].filter(Boolean).join(", ")}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </section>
       )}
 
       <Appears occurrences={concordance(RENDERING).get(term.term) ?? []} />

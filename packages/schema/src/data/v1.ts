@@ -127,6 +127,14 @@ export const DataDocument = z.strictObject({
 });
 export type DataDocument = z.infer<typeof DataDocument>;
 
+export const DataSense = z.strictObject({
+  scope: z.string(),
+  short: z.string(),
+  long: z.string().optional(),
+  sources: z.array(z.record(z.string(), z.union([z.string(), z.number()]))),
+});
+export type DataSense = z.infer<typeof DataSense>;
+
 export const DataTerm = z.strictObject({
   version: z.literal(1),
   term: z.string(),
@@ -137,6 +145,8 @@ export const DataTerm = z.strictObject({
     long: z.string().optional(),
     sources: z.array(z.record(z.string(), z.union([z.string(), z.number()]))),
   }),
+  /** Scoped senses by author, period, or revolutionary current (task 034, v5). */
+  senses: z.array(DataSense).optional(),
   /** Added in v1 for task 022 (optional, so older readers are unaffected). */
   example: z
     .strictObject({ text: z.string(), passage: z.string(), title: z.string(), href: z.string() })

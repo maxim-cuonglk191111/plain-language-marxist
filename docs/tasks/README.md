@@ -39,7 +39,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [031](031-ebook-reader-experience.md) | E-book reader experience: navigation, appearance, immersive reading, highlights, read-aloud | M1 | Done |
 | [032](032-study-reader-features.md) | Study reader features from Bible apps: passage references, concordance, reading paths, quote cards | M1/M3 | Done |
 | [033](033-german-original-layer.md) | Optional German original layer, switched on in Settings | M3 | Open |
-| [034](034-term-senses-by-author.md) | Term senses by author and period | M3 | Open |
+| [034](034-term-senses-by-author.md) | Term senses by author and period | M3 | Done |
 | [035](035-council-communism-first-wave.md) | Council communism and De Leon: rights, first wave, permission requests | M3 | Open |
 | [036](036-term-ui-and-usage-clarity.md) | Term UI and usage count clarity (Default labels, local override, privacy) | M1 | Done |
 | [037](037-contributor-workflow-and-authoring-guide.md) | Contributor workflow, root CONTRIBUTING.md, and authoring guide | M2 | Open |

@@ -1,7 +1,15 @@
 "use client";
 
 import type { DataTerm } from "@plm/schema";
-import { formFor, resolveChoice, type ResolveContext, type TermChoice } from "@plm/terms";
+import {
+  formFor,
+  resolveChoice,
+  resolveSense,
+  scopeBadge,
+  type ResolveContext,
+  type SenseResolutionContext,
+  type TermChoice,
+} from "@plm/terms";
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { toTermFile } from "../lib/terms";
 import { TermDetails, TermShort } from "./TermDetails";
@@ -76,7 +84,7 @@ export function TermCards({
   counts = {},
 }: {
   terms: DataTerm[];
-  context: { workId: string; authors: string[] };
+  context: { workId: string; authors: string[]; year?: number; movement?: string };
   /** How often each term is marked in the texts (task 032 B concordance). */
   counts?: Readonly<Record<string, number>>;
 }) {
@@ -327,6 +335,7 @@ export function TermCards({
               full={stack.length >= MAX_CARDS}
               appears={counts[card.term.term]}
               isOverridden={isOverridden(card.term.term)}
+              context={context}
               onReset={() => resetTerm(card.term.term)}
               onChoose={(choice) =>
                 update({ ...prefs, perTerm: { ...prefs.perTerm, [card.term.term]: choice } })
@@ -357,6 +366,7 @@ function TermCardBody({
   full,
   appears,
   isOverridden,
+  context,
   onReset,
   onChoose,
 }: {
@@ -366,16 +376,25 @@ function TermCardBody({
   full: boolean;
   appears: number | undefined;
   isOverridden: boolean;
+  context: SenseResolutionContext;
   onReset: () => void;
   onChoose: (choice: TermChoice) => void;
 }) {
+  const { current: sense, others } = resolveSense(term, context);
   const shown = term.renderings.find((r) => r.key === choice);
   const original = nameOf(term);
   const choosable = term.renderings.length > 1;
   const mode = { kind: "card", full } as const;
   return (
     <>
-      <p className="term-card-name">{original}</p>
+      <p className="term-card-name">
+        {original}
+        {sense.isScoped && (
+          <span className="badge term-sense-badge" style={{ marginLeft: "0.5rem" }}>
+            {sense.badge.label}
+          </span>
+        )}
+      </p>
       {inPlain && choosable && (
         <p className="term-card-shown">
           Shown here as{" "}
@@ -383,9 +402,45 @@ function TermCardBody({
         </p>
       )}
       <p>
-        <TermShort term={term} mode={mode} />
+        <TermShort term={term} mode={mode} text={sense.isScoped ? sense.short : undefined} />
       </p>
-      <TermDetails term={term} mode={mode} />
+      <TermDetails term={term} mode={mode} overrideLong={sense.isScoped ? sense.long : undefined} />
+      {others.length > 0 && (
+        <details className="term-card-senses">
+          <summary className="term-card-label">
+            Evolution & other traditions ({others.length})
+          </summary>
+          <div className="term-senses-list">
+            {sense.isScoped && (
+              <div className="term-sense-item">
+                <p className="term-sense-header">
+                  <strong>General definition</strong>
+                </p>
+                <p>{term.definition.short}</p>
+              </div>
+            )}
+            {others.map((s, idx) => (
+              <div key={idx} className="term-sense-item">
+                <p className="term-sense-header">
+                  <span className="badge">{scopeBadge(s.scope).label}</span>
+                </p>
+                <p className="small">{s.short}</p>
+                {s.long && <p className="muted small">{s.long}</p>}
+                {s.sources && s.sources.length > 0 && (
+                  <p className="muted small">
+                    Source:{" "}
+                    {s.sources
+                      .map((src) =>
+                        [src["author"], src["title"], src["year"]].filter(Boolean).join(", "),
+                      )
+                      .join("; ")}
+                  </p>
+                )}
+              </div>
+            ))}
+          </div>
+        </details>
+      )}
       {inPlain && shown && choosable && (
         <div className="term-card-why">
           <p className="term-card-label">Why this wording?</p>

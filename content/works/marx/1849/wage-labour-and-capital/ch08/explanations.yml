@@ -1,0 +1,33 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch08
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00003]
+    text: |-
+      Marx illustrates relative impoverishment during an economic boom.
+
+      Even if a worker's wages increase by 5 percent, capitalist profits may jump by 30 percent.
+
+      The worker's share of total social wealth declines, widening the social gulf between classes.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00008]
+    text: |-
+      Marx refutes the bourgeois claim that workers and employers share identical economic interests.
+
+      Higher wages during boom times do not eliminate wage slavery.
+
+      They merely lengthen and soften the "golden chains" binding the proletariat to capitalist rule.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00014]
+    text: |-
+      Marx describes how individual capitalists gain temporary super-profits through new technology.
+
+      By producing goods below the average social cost of production, an innovator can undersell rivals while earning extra profit.
+
+      Once competitors adopt the same technology, market competition drives prices down to the new cost.
+    ai_assisted: true

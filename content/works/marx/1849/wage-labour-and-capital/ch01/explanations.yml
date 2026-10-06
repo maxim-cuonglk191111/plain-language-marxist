@@ -1,0 +1,15 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch01
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00003]
+    text: |-
+      The revolutions of 1848 swept through France, Germany, Austria, Hungary, and Italy.
+
+      In Paris, workers demanded a social republic in February. By June 1848, the conservative military crushed their uprising.
+
+      Marx published these articles in April 1849 in Cologne in the *Neue Rheinische Zeitung*.
+
+      He showed that bourgeois liberals ultimately sided with feudal reactionaries out of fear of the armed proletariat.
+    ai_assisted: true

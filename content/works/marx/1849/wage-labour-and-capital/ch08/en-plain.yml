@@ -1,0 +1,193 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch08
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:89e5c8a877d609a441b723cfa3f9c60a5fc49d194055696f83db75ef3875b72d
+    revision: 2
+    ai_assisted: true
+    text: The Interests of {Capital:sg} and Wage-Labour are diametrically opposed<br/>Effect of growth of productive {Capital:sg} on Wages
+  p00002:
+    covers: [p00002]
+    based_on: sha256:13e4de05cdc0c6ec5da1e4b0e5cacffcb53eb7d0a28a06478a9ffa5cacaf76c2
+    revision: 2
+    ai_assisted: true
+    text: We thus see that, even within the relation of {capital:sg} and {wage-labour:sg}, the interests of {capital:sg} and the interests of {wage-labour:sg} are diametrically opposed.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:c7b9ed247ca254a8faae17befbe33fc5072369178f192c2557d381a1583b484c
+    revision: 2
+    ai_assisted: true
+    text: |
+      Rapid growth of {capital:sg} is synonymous with rapid growth of profits.
+
+      Profits can grow rapidly only when the price of labour—relative wages—falls just as rapidly.
+
+      Relative wages may fall, although real wages rise simultaneously with nominal wages, provided only that real wages do not rise in the same proportion as profits.
+
+      If, for instance, in good business years wages rise 5 per cent while profits rise 30 per cent, the relative wage has not increased, but decreased.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:31067e9de06958811aa3b13905d209a68db7e200c42db52e779c48142cb91464
+    revision: 2
+    ai_assisted: true
+    text: |
+      If, therefore, the worker's income increases with the rapid growth of {capital:sg}, the social chasm dividing the worker from the capitalist widens at the same time.
+
+      The power of {capital:sg} over labour increases, and labour becomes more dependent upon {capital:sg}.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:e33dd960a526704012de6223874dd6867441ce6f11a9951cb831a4a25cde3be9
+    revision: 2
+    ai_assisted: true
+    text: |
+      To say that "the worker has an interest in the rapid growth of capital" means only this: the more speedily the worker increases the capitalist's wealth, the larger are the crumbs that fall to him.
+
+      More workers can be called into existence, and the mass of slaves dependent upon {capital:sg} can be increased.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:338f8a7de933095a5fa00157577bd4b410c9ffd2b0656ea63c7d52ac9582e183
+    revision: 2
+    ai_assisted: true
+    text: |
+      We have thus seen that the most favorable situation for the working class is the most rapid growth of {capital:sg}.
+
+      Yet however much it may improve the worker's material life, it does not abolish the antagonism between his interests and the capitalist's interests.
+
+      Profit and wages remain as before, in inverse proportion.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:e7c6da1c77eb5a58581cc3152db914453af37b34e183d203098f2fb0b029bc90
+    revision: 2
+    ai_assisted: true
+    text: |
+      If {capital:sg} grows rapidly, wages may rise, but the profit of {capital:sg} rises disproportionately faster.
+
+      The material position of the worker has improved, but at the cost of his social position. The social chasm that separates him from the capitalist has widened.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:bf6fb3a9e24748379c649c014122370b58925bfa7dcd42c49bbee73879cfc205
+    revision: 2
+    ai_assisted: true
+    text: |
+      Finally, to say that "the most favorable condition for wage-labour is the fastest possible growth of productive capital" means only one thing.
+
+      The quicker the working class multiplies the hostile power lorded over it, the more favorable are the conditions under which it is permitted to toil anew.
+
+      The working class increases {bourgeoisie:adj} wealth and enlarges the power of {capital:sg}, content to forge the golden chains by which the {bourgeoisie:sg} drags it along.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:ae266aa316dabc687fcc9da1f309571864111240178dd4f7155fa7143ddf53eb
+    revision: 2
+    ai_assisted: true
+    text: |
+      Are the growth of productive {capital:sg} and the rise of wages really so inseparable, as {bourgeoisie:adj} economists maintain?
+
+      We must not believe their mere words. We dare not believe them even when they claim that the fatter {capital:sg} is, the more its slave will be pampered.
+
+      The {bourgeoisie:sg} is too enlightened and keeps its accounts too carefully to share the prejudices of the {feudalism:adj} lord, who made a show of his retinue.
+
+      The conditions of existence of the {bourgeoisie:sg} compel it to attend carefully to bookkeeping. We must therefore examine more closely:
+  p00010:
+    covers: [p00010]
+    based_on: sha256:dbbc30a492d4db3bf599a70a8f04e5e4e87cb6511f516541926a19caf0085722
+    revision: 2
+    ai_assisted: true
+    text: In what manner does the growth of productive {capital:sg} affect wages?
+  p00011:
+    covers: [p00011]
+    based_on: sha256:ad50e7d2ad2f9cf18607137e0f3d28b90ebebcb561960ada6ed58bcc02a4118f
+    revision: 2
+    ai_assisted: true
+    text: |
+      If productive {capital:sg} in {bourgeoisie:adj} society grows as a whole, a more many-sided accumulation of labour takes place.
+
+      Individual capitals increase in number and size. This multiplication of capitals increases competition among capitalists.
+
+      Their growing magnitude provides the means of leading more powerful armies of workers with more gigantic weapons onto the industrial battlefield.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:0efa3f5d8f62fd03aaab873ad8b87bb2be7db309124971e422c0ad50f0fcce69
+    revision: 2
+    ai_assisted: true
+    text: |
+      One capitalist can drive another from the field and take his {capital:sg} only by selling more cheaply.
+
+      To sell more cheaply without ruining himself, he must produce more cheaply—that is, he must increase the {productive-forces:sg} of labour as much as possible.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:eca9b02105794f60f764d430ccea17cec2c90c0152726324e1c2e848fbacbb14
+    revision: 2
+    ai_assisted: true
+    text: |
+      The {productive-forces:sg} of labour are increased above all by greater {division-of-labour:sg} and the constant improvement of machinery.
+
+      The more labour is subdivided and the larger the scale of machinery, the more the cost of production decreases and the more fruitful labour becomes.
+
+      Thus arises among capitalists a universal rivalry to increase the {division-of-labour:sg} and machinery, and to exploit them on the greatest scale.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:27ae6ecd7201881cfb8344b8c3652d309530408aad2e78247c681b9d798d8ff8
+    revision: 2
+    ai_assisted: true
+    text: |
+      Suppose a capitalist introduces greater {division-of-labour:sg}, improved machines, and better use of natural forces.
+
+      He can now produce more {commodity:pl} than his competitors with the same labour. For instance, he produces a whole yard of linen in the time competitors weave half-a-yard. How will this capitalist act?
+  p00015:
+    covers: [p00015]
+    based_on: sha256:37fdbd7b6f0adc5c52e66332657647eb8e8dd9b0cc01e23b63d96914664be207
+    revision: 2
+    ai_assisted: true
+    text: |
+      He could keep selling half-a-yard of linen at the old price. But this would not drive competitors away or enlarge his market, and his need for a market has grown with his productive power.
+
+      The more powerful {means-of-production:sg} enable him to sell more cheaply, but also compel him to sell more wares and capture a greater market for his {commodity:pl}.
+
+      Consequently, this capitalist will sell his linen more cheaply than his competitors.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:0bb9aa502134b136ae999d3f53061c0faddf32b19b8245f38d0ed2bd46b81516
+    revision: 2
+    ai_assisted: true
+    text: |
+      Yet the capitalist will not sell a whole yard as cheaply as competitors sell half-a-yard, although producing a whole yard costs him no more than half-a-yard costs them.
+
+      Otherwise he would make no extra profit, getting back only his cost of production. He might gain more income from larger {capital:sg}, but not a higher rate of profit on his {capital:sg}.
+
+      He attains his goal if he prices his goods only a small percentage below competitors. He drives them off the field and captures part of their market by underselling them.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:8e8503635675be0096a8d7762c06eea8cf6526ddba8ff2a6914c4a498d58629e
+    revision: 2
+    ai_assisted: true
+    text: |
+      Current prices always stand above or below the cost of production, depending on whether the sale of a {commodity:sg} happens in good or bad times.
+
+      Depending on market price, the capitalist using the new {means-of-production:sg} sells at a varying percentage above his real cost of production.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:a09e67609c708f7178c80cd0955ef32bd3446006cb1289338b054948cf9cfded
+    revision: 2
+    ai_assisted: true
+    text: |
+      The privilege of our capitalist does not last long.
+
+      Competing capitalists introduce the same machines and the same {division-of-labour:sg} on the same or greater scale.
+
+      This becomes so universal that the price of linen falls not only below its old cost of production, but below its new cost of production.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:d00866f041538d3c28fbd0d96bf565e84c1555c466c5552af659b836914cf8a8
+    revision: 2
+    ai_assisted: true
+    text: |
+      The capitalists therefore find themselves in the same situation as before introducing the new {means-of-production:sg}.
+
+      If they could previously offer double the product at the old price, they are now forced to furnish double the product for less than the old price.
+
+      At this new cost of production, the battle for the market begins anew.
+
+      More {division-of-labour:sg} and more machinery lead to a still greater scale of production, and competition again brings the same reaction.

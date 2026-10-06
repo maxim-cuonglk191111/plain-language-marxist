@@ -1,0 +1,37 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch02
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00002]
+    text: |-
+      Two shillings a day was a typical wage for an urban English worker in the 1840s.
+
+      Marx distinguishes between time-wages (paid by the day or hour) and piece-wages (paid per yard of cloth or page set).
+
+      Both forms conceal the underlying rate of exploitation.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00003]
+    text: |-
+      In the original 1849 newspaper text, Marx wrote that workers sell their "labour".
+
+      When editing this new edition in 1891, Engels substituted the term "labour-power".
+
+      Classical economists could not explain profit because they believed the capitalist bought labour itself.
+
+      Marx discovered that workers sell their capacity to work, creating more value during the day than their wages cost.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00010]
+    text: |-
+      Marx traces the historical forms of unfree labour.
+
+      The chattel slave was property sold once and for all.
+
+      The medieval serf was tied to the soil and paid tribute in grain or compulsory labour.
+
+      The modern wage-labourer is legally free, but bound to the capitalist class by economic necessity.
+    ai_assisted: true

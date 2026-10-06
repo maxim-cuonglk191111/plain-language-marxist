@@ -1,0 +1,33 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch05
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00005]
+    text: |-
+      Bourgeois economists treat capital as an eternal physical thing, like a machine or a tool.
+
+      Marx demonstrates that physical objects are not naturally capital.
+
+      A spinning machine becomes capital only within social relations where owners purchase wage-labour to extract profit.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00008]
+    text: |-
+      Marx summarizes how societies evolve through history.
+
+      As human technology and productive forces develop, social relations of production change accordingly.
+
+      Ancient slaveholding, medieval feudalism, and modern capitalism represent distinct historical stages of social organization.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00016]
+    text: |-
+      In past societies, living human producers used tools to serve their needs.
+
+      Capitalism reverses this relationship.
+
+      Past labour, embodied in machines and accumulated wealth, now dominates and exploits living workers.
+    ai_assisted: true

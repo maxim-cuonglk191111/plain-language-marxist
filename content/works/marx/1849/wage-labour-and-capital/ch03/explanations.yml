@@ -1,0 +1,33 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch03
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00010]
+    text: |-
+      Classical economists like Adam Smith and David Ricardo taught that market prices fluctuate around a natural price.
+
+      Marx points out that capitalists measure profit against this baseline: the cost of production.
+
+      The cost of production acts as the economic center of gravity for all commodity prices.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00016]
+    text: |-
+      Bourgeois economists treated economic crises and price swings as unfortunate accidents.
+
+      Marx argues that anarchy of production is an essential law of capitalism.
+
+      The law of value asserts itself only through recurring overproduction and commercial devastation.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00018]
+    text: |-
+      Here Marx outlines the labour theory of value that he later formalized in *Das Kapital*.
+
+      The cost of tools and raw materials represents past labour crystallized in earlier products.
+
+      Together with direct living labour, the total necessary labour-time determines the commodity's value.
+    ai_assisted: true

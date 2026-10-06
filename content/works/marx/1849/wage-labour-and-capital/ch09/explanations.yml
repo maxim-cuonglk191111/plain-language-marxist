@@ -1,0 +1,33 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch09
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00010]
+    text: |-
+      Early 19th-century industrialization replaced adult male workers with women and children.
+
+      Machinery simplified physical tasks, allowing factory owners to pay far lower wages.
+
+      Instead of supporting a family, multiple family members had to work simply to survive.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00012]
+    text: |-
+      Marx attacks the "compensation theory" popular among bourgeois economists.
+
+      Economists claimed displaced workers easily found employment in new trades.
+
+      In reality, technological unemployment leaves older workers destitute and swells the industrial reserve army.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00021]
+    text: |-
+      Capitalism regularly faces crises of overproduction unknown in previous historical eras.
+
+      Enterprises produce more commodities than can be profitably sold on the world market.
+
+      Capitalists survive each crisis by destroying accumulated wealth and colonizing remaining global markets.
+    ai_assisted: true

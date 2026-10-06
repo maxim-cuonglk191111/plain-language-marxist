@@ -11,3 +11,4 @@
 - ESLint in this repo is configured without eslint-plugin-react-hooks, so inline comments disabling `react-hooks/exhaustive-deps` fail the linter with an undefined rule error.
 - The capitalized name detector in `checkRenderings()` treats capitalized words following unpunctuated prefixes like `<indent level="1"/>(i) ` as proper names because they lack preceding sentence-boundary punctuation.
 - Under high concurrency on Windows, Vitest tests executing multi-pass repository fixtures and validations (e.g. `packages/cli/src/commands/draft.test.ts`) can exceed the default 5000ms runner timeout, requiring `testTimeout: 15000` in `vitest.config.ts`.
+- In `checkRenderings()`, words following closing quotation marks with space (e.g. `..." But `) are flagged as capitalized names because quotation marks are not matched by the sentence-boundary character class `[.!?:;]`.

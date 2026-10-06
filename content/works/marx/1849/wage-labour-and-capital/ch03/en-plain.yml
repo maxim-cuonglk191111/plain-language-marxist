@@ -1,0 +1,182 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch03
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:35dbf4b6a64630c9906341aadbc6993c41afb70ad379636b93b57e9c6746253e
+    revision: 2
+    ai_assisted: true
+    text: How is the price of a {commodity:sg} determined?
+  p00002:
+    covers: [p00002]
+    based_on: sha256:f15567ed4b5f1bd06c4bba6d29884f5b3929f901b992f9b08bd125b1c1ca8e21
+    revision: 2
+    ai_assisted: true
+    text: By competition between buyers and sellers, and by the relation of demand to supply. The competition that determines the price of a {commodity:sg} is threefold.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:d952c5db642213d341750d090da5fc8dd583a8bbb8be5d7d430497b50920ec53
+    revision: 2
+    ai_assisted: true
+    text: |
+      The same {commodity:sg} is offered for sale by various sellers. Whoever sells {commodity:pl} of the same quality most cheaply will drive other sellers away and secure the biggest market.
+
+      The sellers therefore fight among themselves for sales and markets. Each wishes to sell as much as possible, and if possible to sell alone.
+
+      Each sells cheaper than the others. In this way, competition among sellers forces down the price of the {commodity:pl} they offer.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:1c232eff402e8bf08f365ea151d86d814798be07000a7dba4c947e620c83b85e
+    revision: 2
+    ai_assisted: true
+    text: But there is also competition among buyers. This competition causes the price of offered {commodity:pl} to rise.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:b1b2a9f222f6cb372c3e0ec4e0677b09d67e69491c9cd3a362bc623ca9dca956
+    revision: 2
+    ai_assisted: true
+    text: |
+      Finally, there is competition between buyers and sellers. Buyers wish to buy as cheaply as possible; sellers wish to sell as dearly as possible.
+
+      The result depends on which side has stronger competition. Industry leads two great armies into battle against each other, and each army also fights within its own ranks.
+
+      The army with less internal fighting wins the victory over the opposing side.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:6d1a9cfb8ff6d68b19f8837700a3df0376e02ec6401ca7eee987d0b26e591831
+    revision: 2
+    ai_assisted: true
+    text: |
+      Suppose there are 100 bales of cotton on the market and buyers for 1,000 bales. In this case, demand is 10 times greater than supply.
+
+      Competition among buyers will be very strong. Each tries to get hold of one bale, or if possible all 100 bales.
+
+      This example is not an arbitrary invention. In commercial history, capitalists have joined together during cotton shortages to buy up not 100 bales, but the whole world supply.
+
+      One buyer seeks to drive others away by offering a higher price for the bales. The sellers see the buyers fighting among themselves and therefore are fully assured of selling their whole 100 bales.
+
+      The sellers stop competing to lower prices while buyers race to raise them. Peace returns to the sellers' army. They stand united, waiting calmly, and their demands are limited only by the buyers' limits.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:76d63dee1631ed7f4b63871bddc6aa9a4068b37eb1916dd236aef50bab05c3d4
+    revision: 2
+    ai_assisted: true
+    text: |
+      If the supply of a {commodity:sg} is less than demand, competition among sellers is slight, or there may be none at all among them. As this competition decreases, competition among buyers increases.
+
+      The result is a considerable rise in the prices of {commodity:pl}.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:412ded7f4498a4e9b744073917060b5a74e9a0f1ad154134e03c92552c1573d3
+    revision: 2
+    ai_assisted: true
+    text: |
+      The opposite case happens more frequently. Great excess of supply over demand brings desperate competition among sellers and a lack of buyers.
+
+      This causes forced sales of {commodity:pl} at ridiculously low prices.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:ce3310668cb045a2483da55bbdeb5619bd21f2ee4cda871a9979d3136b9c30ff
+    revision: 2
+    ai_assisted: true
+    text: |
+      But what is a rise or fall in price? What is a high price or a low price?
+
+      A grain of sand looks high under a microscope, and a tower looks low compared with a mountain. And if price is determined by supply and demand, what determines supply and demand themselves?
+  p00010:
+    covers: [p00010]
+    based_on: sha256:13c2bf1f97dfa9fd3242c1e94147ce48d432c80d562b2c7b88ba82e39bc971c0
+    revision: 2
+    ai_assisted: true
+    text: |
+      Let us turn to the first worthy citizen we meet. He will not hesitate for a moment, but like Alexander the Great will cut this knot with his multiplication table.
+
+      He will say to us: "The production of the commodities which I sell has cost me 100 pounds. If out of the sale of these goods I make 110 pounds within the year, that is an honest, sound, reasonable profit. But if in exchange I receive 120 or 130 pounds, that is a higher profit. And if I should get as much as 200 pounds, that would be an extraordinary, enormous profit."
+
+      What serves this citizen as the standard of his profit? The cost of production of his {commodity:pl}.
+
+      If he receives goods that cost less to produce, he has lost. If he receives goods that cost more to produce, he has gained.
+
+      He reckons profit by whether the {exchange-value:sg} of his goods stands above or below his zero mark: the cost of production.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:ef57de126f7126a1333607d09cd6fefc99ea28e258b6b03509bc1315234a7b1b
+    revision: 2
+    ai_assisted: true
+    text: |
+      We have seen how changes in supply and demand cause prices to rise and fall.
+
+      If the price of a {commodity:sg} rises because of failing supply or growing demand, the price of some other {commodity:sg} must have fallen in proportion. The price of a {commodity:sg} only expresses in money the proportion of other {commodity:pl} given for it in exchange.
+
+      If a yard of silk rises from two to three shillings, the price of silver has fallen relative to silk. So have the prices of all {commodity:pl} that remained stationary. A larger quantity of them must be given to buy the same silk.
+
+      What will be the consequence of a rise in the price of a particular {commodity:sg}? A mass of {capital:sg} will rush into that prosperous industry.
+
+      This movement of {capital:sg} continues until profits return to normal, or until overproduction sinks the price below the cost of production.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:cbfd6a73c65318e3ec4f555511e9cef02387c137034e9069e22831e0678345cb
+    revision: 2
+    ai_assisted: true
+    text: |
+      Conversely, if the price of a {commodity:sg} falls below its cost of production, {capital:sg} will be withdrawn from that industry.
+
+      Except in the case of an industry that has become obsolete and is therefore doomed to disappear, this flight of {capital:sg} decreases supply until it matches demand.
+
+      Then the price of the {commodity:sg} rises back to its cost of production. Or supply falls below demand, and its price rises above its cost of production. For the current price of a {commodity:sg} is always either above or below its cost of production.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:e679fab9d839e4d2b6aa9971a919cf737392bd845c1a363e519c8ab35af1a347
+    revision: 2
+    ai_assisted: true
+    text: We see how {capital:sg} continually leaves one industry and enters another. High prices produce excessive immigration, and low prices produce excessive emigration.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:594c66c9d919af63b3220983d3972dd3338bbf8c66cbe4ca102bf680073c3113
+    revision: 2
+    ai_assisted: true
+    text: We could show how not only the supply, but also the demand, is determined by the cost of production. But this would lead us too far from our subject.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:22048de40c4e4aca34b78c2385074f18290fc55a38c61944380dda1637c4b299
+    revision: 2
+    ai_assisted: true
+    text: |
+      We have just seen how fluctuations in supply and demand always bring the price of a {commodity:sg} back to its cost of production.
+
+      The actual price of a {commodity:sg} always stands above or below its cost of production. But the rise and fall balance each other over time.
+
+      If the ebbs and flows of industry are reckoned together, {commodity:pl} are exchanged according to their cost of production. Their price is thus determined by their cost of production.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:9d4f7f47ab343a6a4df4a9ed5737abb6894d4940261e7975d0cd93481e394f0d
+    revision: 2
+    ai_assisted: true
+    text: |
+      The determination of price by cost of production is not to be understood in the sense of the {bourgeoisie:adj} economists.
+
+      The economists say that the average price of {commodity:pl} equals the cost of production, and treat that as the law. The fluctuations they regard as an accident. We might just as well consider the fluctuations as the law, and the determination of price by cost of production as an accident.
+
+      Yet these fluctuations carry frightful devastation and shake {bourgeoisie:adj} society to its foundations like an earthquake. Precisely these fluctuations force price to conform to the cost of production.
+
+      In the totality of this disorderly movement is found its order. In this industrial anarchy, competition balances one extravagance against another.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:bc0c1aeec4a5fe1434d01bdbccc46fac7ab85c91ab89435b80a193047573bf53
+    revision: 2
+    ai_assisted: true
+    text: |
+      We see that the price of a {commodity:sg} is indeed determined by its cost of production. The periods when the price of {commodity:pl} rises above cost of production are balanced by periods when it sinks below cost of production, and vice versa.
+
+      Of course, this does not hold good for a single product, but only for that branch of industry. So also it does not hold good for an individual manufacturer, but only for the whole class of manufacturers.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:d83940242ef54cdc8275b252125882afd93e277e71b83e8cbcb981c5a6f4f3c2
+    revision: 2
+    ai_assisted: true
+    text: |
+      The determination of price by cost of production is the same as the determination of price by the labour-time needed to produce a {commodity:sg}.
+
+      The cost of production consists of two elements. First, raw materials and wear and tear of tools, which are products whose production cost a certain number of workdays, and which therefore represent a certain amount of labour-time. Second, direct labour, which is also measured by its duration.

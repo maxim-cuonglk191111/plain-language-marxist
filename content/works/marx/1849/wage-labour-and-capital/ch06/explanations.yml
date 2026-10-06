@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch06
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00013]
+    text: |-
+      Marx illustrates that human needs are social, not merely biological.
+
+      When overall wealth grows, luxury standards rise for the ruling class.
+
+      Even if a worker's income improves, widening class inequality makes the worker feel relatively poorer and more deprived.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00016]
+    text: |-
+      In the 16th century, Spanish colonial mines flooded Europe with cheap silver and gold.
+
+      This "Price Revolution" drove up commodity prices while wages remained sticky.
+
+      Workers suffered falling real wages, while early capitalists accumulated vast fortunes.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00019]
+    text: |-
+      Marx introduces a vital distinction between nominal, real, and relative wages.
+
+      Nominal wages measure the cash paid to workers.
+
+      Real wages measure the actual goods that money can buy.
+
+      Relative wages measure the workers' share of wealth compared to capitalist profits.
+    ai_assisted: true

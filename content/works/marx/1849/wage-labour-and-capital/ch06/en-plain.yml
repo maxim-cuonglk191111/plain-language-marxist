@@ -1,0 +1,225 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch06
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:026b0cb2fd5f9b4aeaac30e9d1a7dab82f63a547aa4478245e5a36d909a2e4bb
+    revision: 2
+    ai_assisted: true
+    text: Relation of Wage-Labour to {Capital:sg}
+  p00002:
+    covers: [p00002]
+    based_on: sha256:2b1366dae9f79a975b64ecd34a9cd0f23d5c556393ed7dbc0377523695ced13d
+    revision: 2
+    ai_assisted: true
+    text: What happens in the exchange between the capitalist and the wage-worker?
+  p00003:
+    covers: [p00003]
+    based_on: sha256:688bb08bc23e4e3d609d3b9c9dcd58794063205b4e28a257fa4dddf3186be0df
+    revision: 2
+    ai_assisted: true
+    text: |
+      The worker receives {means-of-subsistence:sg} in exchange for his {labour-power:sg}.
+
+      The capitalist receives labour in exchange for his {means-of-subsistence:sg}: the productive activity of the worker. This creative force not only replaces what the worker consumes, but also gives accumulated labour greater value than it had before.
+
+      The worker receives a portion of existing {means-of-subsistence:sg} from the capitalist. What do these {means-of-subsistence:sg} serve him for? For immediate consumption.
+
+      As soon as I consume {means-of-subsistence:sg}, they are lost to me forever, unless I use that time to produce new {means-of-subsistence:sg} by my labour.
+
+      It is this reproductive power that the worker surrenders to the capitalist in exchange for the {means-of-subsistence:sg} he receives. Consequently, he has lost it for himself.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:c345f0c658128d34213143463abadd508d9e9f6bcf6647a864bff31835c410e2
+    revision: 2
+    ai_assisted: true
+    text: |
+      Take an example. For one shilling a worker labours all day in a farmer's fields, bringing the farmer a return of two shillings.
+
+      The farmer not only replaces the value he gave the day-worker, he has doubled it. Therefore, he has consumed the one shilling in a fruitful, productive manner.
+
+      For one shilling he bought the {labour-power:sg} of the day-worker, which produces goods worth twice as much, making two shillings out of one.
+
+      The day-worker, in contrast, receives one shilling for his productive power. He exchanges it for {means-of-subsistence:sg}, which he consumes more or less quickly.
+
+      The one shilling has therefore been consumed in two different ways. It was consumed reproductively for the capitalist, because it brought forth two shillings.
+
+      It was consumed unproductively for the worker, because it was exchanged for {means-of-subsistence:sg} that are lost forever, and whose value he can obtain again only by repeating the same exchange with the farmer.
+
+      {Capital:sg} therefore presupposes {wage-labour:sg}; {wage-labour:sg} presupposes {capital:sg}. They condition each other; each brings the other into existence.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:1d007b5dd2e75ed9dfbd6ce761bac1a9d6a3ee1cd855e6b4378fb1c2f6224392
+    revision: 2
+    ai_assisted: true
+    text: |
+      Does a worker in a cotton factory produce only cotton? No. He produces {capital:sg}.
+
+      He produces values that serve anew to command his work and create new values.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:e25e780562653d370cf7948309dee5515989ef1163dddde444086acb42c24f91
+    revision: 2
+    ai_assisted: true
+    text: |
+      {Capital:sg} can multiply itself only by exchanging itself for {labour-power:sg}, by calling {wage-labour:sg} into life.
+
+      The {labour-power:sg} of the wage-worker can exchange itself for {capital:sg} only by increasing {capital:sg}, by strengthening the very power whose slave it is.
+
+      Increase of {capital:sg}, therefore, is increase of the {proletariat:sg}, of the working class.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:1ae1c38620dbebcfccaefad4027cfe15e1b33f35a2b7370e61df9f8682c5dc45
+    revision: 2
+    ai_assisted: true
+    text: |
+      The {bourgeoisie:sg} and its economists argue that the interest of the capitalist and the worker is the same. And in fact, so they are!
+
+      The worker perishes if {capital:sg} does not keep him busy. {Capital:sg} perishes if it does not exploit {labour-power:sg}, which it must buy in order to exploit.
+
+      The faster productive {capital:sg} increases, the more prosperous industry is. The more the {bourgeoisie:sg} enriches itself, the more workers the capitalist needs, and the dearer the worker sells himself.
+
+      The fastest possible growth of productive {capital:sg} is, therefore, the indispensable condition for a tolerable life for the worker.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:0fcbe12304eed233a507ff6a90a5b16d23ec32ed8b69aae5d0f4ee050db4bd6e
+    revision: 2
+    ai_assisted: true
+    text: |
+      But what is the growth of productive {capital:sg}? It is the growth of the power of accumulated labour over living labour; the growth of the rule of the {bourgeoisie:sg} over the working class.
+
+      When {wage-labour:sg} produces the alien wealth dominating it, the hostile power, {capital:sg}, there flow back to it its {means-of-subsistence:sg}.
+
+      It receives these on condition that it again becomes part of {capital:sg}, the lever that forces {capital:sg} into faster expansion.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:fa2e32119b95198046f07d02e9217c5715a10e162e473c04af9082c560759675
+    revision: 2
+    ai_assisted: true
+    text: |
+      To say that the interests of {capital:sg} and workers are identical means only this: {capital:sg} and {wage-labour:sg} are two sides of the same relation.
+
+      The one conditions the other just as the moneylender and the borrower condition each other.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:88bc5342f8483cab2203fbeafb38e3e1a197827e76a0bd621cbedc887f407318
+    revision: 2
+    ai_assisted: true
+    text: |
+      As long as the wage-worker remains a wage-worker, his lot depends upon {capital:sg}.
+
+      That is what the boasted community of interests between worker and capitalist amounts to.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:87bc40a2956b12a052e63f6e35fe5a818ffdfb649da38067377cd7690bd08271
+    revision: 2
+    ai_assisted: true
+    text: |
+      If {capital:sg} grows, the mass of {wage-labour:sg} grows, and the number of wage-workers increases.
+
+      In short, the rule of {capital:sg} extends over a greater mass of people.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:65f0b417a431582d05e5606568145f73fa44d451f6f5c6287c838ea5f81594f3
+    revision: 2
+    ai_assisted: true
+    text: "Suppose the most favorable case: if productive {capital:sg} grows, the demand for labour grows. It therefore increases the price of {labour-power:sg}, wages."
+  p00013:
+    covers: [p00013]
+    based_on: sha256:2ec4a9c0161c9d361e9f143084f2a7b0e1d4006d87bc005385793a46f1b7c834
+    revision: 2
+    ai_assisted: true
+    text: |
+      A house may be large or small; as long as the surrounding houses are equally small, it satisfies all social needs for a home.
+
+      But if a palace rises beside the little house, the little house shrinks to a hut.
+
+      The little house now shows that its owner has little or no social standing. And however high it may rise in the course of civilization, if the palace grows equally or faster, the occupant of the little house will feel more uncomfortable, dissatisfied, and cramped.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:83901be4a3cf0246c6a457bb521cb7ffb8199255193bc162d4f3df60139d10e6
+    revision: 2
+    ai_assisted: true
+    text: |
+      A noticeable rise in wages presupposes rapid growth of productive {capital:sg}. Rapid growth of productive {capital:sg} brings an equally rapid growth of wealth, luxury, and social pleasures.
+
+      Therefore, although the worker's pleasures have increased, the social satisfaction they provide has fallen compared with the increased pleasures of the capitalist, and compared with the general development of society.
+
+      Our desires and pleasures arise from society; we therefore measure them by society, not by the objects that satisfy them. Because they are social, they are relative.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:e063866dd0b9a3a8958a5691210e95f3f6cbe5eff2f183347fb07e821a117526
+    revision: 2
+    ai_assisted: true
+    text: |
+      Wages are not determined merely by the sum of {commodity:pl} for which they may be exchanged. Other factors enter the problem.
+
+      Workers directly receive a certain sum of money for their {labour-power:sg}. Are wages determined merely by this money price?
+  p00016:
+    covers: [p00016]
+    based_on: sha256:2792b294157a711a2fc9e515a58605dabce24361fa7752a54250803b64d9afd7
+    revision: 2
+    ai_assisted: true
+    text: |
+      In the 16th century, the gold and silver circulating in Europe increased after richer mines were discovered in America.
+
+      The value of gold and silver therefore fell relative to other {commodity:pl}. Workers received the same amount of silver for their {labour-power:sg} as before.
+
+      The money price of their work remained the same, yet their wages had fallen, because the same silver bought fewer {commodity:pl}.
+
+      This was one circumstance that aided the growth of {capital:sg} and the rise of the {bourgeoisie:sg} in the 18th century.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:12cee756e793babe6fb9a3103090074321c5956ae5fee5cf8eb02fb8c44ff592
+    revision: 2
+    ai_assisted: true
+    text: |
+      Take another case. In the winter of 1847, bad harvests caused the price of the most indispensable {means-of-subsistence:sg}, like grain, meat, butter, and cheese, to rise greatly.
+
+      Suppose workers still received the same money for their {labour-power:sg} as before. Did their wages not fall? To be sure.
+
+      For the same money they received less bread and meat. Their wages fell, not because the value of silver was less, but because the value of {means-of-subsistence:sg} had increased.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:c4e50b08383ca4e076b7400a4089d7ea9f66b60cb8b05fa06fca7727f51b147d
+    revision: 2
+    ai_assisted: true
+    text: |
+      Finally, suppose the money price of {labour-power:sg} remained the same, while all agricultural and manufactured {commodity:pl} fell in price because of new machinery or good seasons.
+
+      For the same money, workers could now buy more {commodity:pl}. Their wages have therefore risen, just because their money value did not change.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:6a1c0fe0048155d1be9e2a50abefdde77eb98f0d0a38efbd27c13329f52ec7b7
+    revision: 2
+    ai_assisted: true
+    text: |
+      The money price of {labour-power:sg}, nominal wages, does not therefore match real wages—the amount of {commodity:pl} actually received in exchange.
+
+      When we speak of wages rising or falling, we have to keep in mind not only nominal wages, but also real wages.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:c37e004c382bfc993d8bbc2f8593b261ae7453e335e01cc8ca2f5a4f21e0369e
+    revision: 2
+    ai_assisted: true
+    text: |
+      Yet neither nominal wages nor real wages exhaust what is meant by wages.
+
+      Neither the money received nor the {commodity:pl} bought tells the whole story.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:9beff2af2efd5a9281d68520763cbef5b492537fc6b5cb7e00c1f71bf6ea5be5
+    revision: 2
+    ai_assisted: true
+    text: Wages are determined above all by their relation to the profit of the capitalist. In other words, wages are a proportionate, relative quantity.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:ddffc8ca0f345f7deefea17b07f105e5a834af97268cdec3db5e80d0b0b900b9
+    revision: 2
+    ai_assisted: true
+    text: |
+      Real wages express the price of {labour-power:sg} in relation to the price of {commodity:pl}.
+
+      Relative wages express the share of direct living labour in the newly created value, in relation to the share that falls to accumulated labour, to {capital:sg}.

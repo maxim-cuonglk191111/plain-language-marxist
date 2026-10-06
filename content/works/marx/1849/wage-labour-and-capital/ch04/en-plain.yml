@@ -1,0 +1,81 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch04
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:bb1c4b65d3989d39d5ba6655b056595138e69b2c0a091a5be0e2d662c33e24e1
+    revision: 2
+    ai_assisted: true
+    text: How are wages determined?
+  p00002:
+    covers: [p00002]
+    based_on: sha256:6c69e54195e279119b1ae093fcd364e7eb6951407ebd175c84cc472ed5aae91c
+    revision: 2
+    ai_assisted: true
+    text: |
+      Now, the same general laws that regulate the price of {commodity:pl} in general naturally regulate wages, or the price of {labour-power:sg}.
+
+      Wages rise and fall according to supply and demand, and according to competition between buyers of {labour-power:sg} (capitalists) and sellers of {labour-power:sg} (workers).
+
+      The fluctuations of wages correspond to the fluctuations in the price of {commodity:pl} in general.
+
+      Within these fluctuations, the price of {labour-power:sg} is determined by its cost of production: the labour-time needed to produce this {commodity:sg}, {labour-power:sg}.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:a6df8ca2a988494de970f43c06cc7bc9d4153127c73c938429f812416d0c6cc7
+    revision: 2
+    ai_assisted: true
+    text: What, then, is the cost of production of {labour-power:sg}?
+  p00004:
+    covers: [p00004]
+    based_on: sha256:235d133a1662153022d7871dde77f767848e6b64b79dfb293b72042ee20ce365
+    revision: 2
+    ai_assisted: true
+    text: It is the cost needed to maintain the worker as a worker, and to train him as a worker.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:6a255566b2b443c9f07e1ee5d25f81d0f1deb0ec1681f48fce33447eefee2793
+    revision: 2
+    ai_assisted: true
+    text: |
+      Therefore, the shorter the time needed to learn a job, the smaller is the worker's cost of production, and the lower the price of his {labour-power:sg}, his wages.
+
+      In industries where almost no apprenticeship is needed and mere bodily existence is enough, the cost of production is limited almost exclusively to the {commodity:pl} needed to keep him in working condition.
+
+      The price of his work will therefore be determined by the price of the necessary {means-of-subsistence:sg}.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:12612f7a9a3dd4c388eebecb5262ffbeceedad8345b0484a5a42305594d437d0
+    revision: 2
+    ai_assisted: true
+    text: |
+      Here, however, another consideration enters.
+
+      The manufacturer who calculates his cost of production and the price of the product takes into account the wear and tear of tools.
+
+      Suppose a machine costs him 1,000 shillings and wears out in 10 years. He adds 100 shillings each year to the price of {commodity:pl}. After 10 years he can replace the worn-out machine with a new one.
+
+      In the same way, the cost of production of simple {labour-power:sg} must include the cost of reproduction, by which the race of workers multiplies and replaces worn-out workers with new ones.
+
+      The wear and tear of the worker, therefore, is calculated in the same way as the wear and tear of the machine.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:1847274dce8d81fe38506f8e784a4de3673635ff5b785cdb23dd4c9cdec98c2c
+    revision: 2
+    ai_assisted: true
+    text: |
+      Thus, the cost of production of simple {labour-power:sg} amounts to the cost of the existence and propagation of the worker.
+
+      The price of this cost of existence and propagation constitutes wages. The wages thus determined are called the minimum of wages.
+
+      This minimum wage, like the determination of the price of {commodity:pl} in general by cost of production, does not hold good for the single individual, but only for the race.
+
+      Millions of individual workers do not receive enough to exist and propagate themselves. But the wages of the whole working class adjust themselves, within the limits of fluctuations, to this minimum.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:88e5c702a26ff81ed65826d942d65a9473d4e4b824b8eac1690c146ef07f3346
+    revision: 2
+    ai_assisted: true
+    text: Now that we have understood the general laws that govern wages, as well as the price of every other {commodity:sg}, we can examine our subject more particularly.

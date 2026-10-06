@@ -1,0 +1,268 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch09
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:ba49c51ec2efa6dcab5d7cd69c98e4ae5015afbf634091d34b183255ae8a5848
+    revision: 3
+    ai_assisted: true
+    text: Effect of Capitalist Competition on the Capitalist Class<br/>the Middle Class and the Working Class
+  p00002:
+    covers: [p00002]
+    based_on: sha256:019ae9a6d1361859885415d72215706988241d7ca819e5dfba1144773d303699
+    revision: 3
+    ai_assisted: true
+    text: |
+      We see how the method of production and the {means-of-production:sg} are constantly enlarged and revolutionized.
+
+      {Division-of-labour:sg} necessarily draws after it greater {division-of-labour:sg}, machinery greater machinery, and large-scale work work on an even greater scale.
+
+      This is the law that continually throws capitalist production out of its old ruts. It compels {capital:sg} to strain the {productive-forces:sg} of labour ever more, because it strained them before.
+
+      It grants no respite, and constantly shouts in its ear: March! march! This is the same law that adjusts the price of a {commodity:sg} to its cost of production.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:22de729358784ae886c9c8034e0f45c240c4e340696f20993d4465bfb2b6352c
+    revision: 3
+    ai_assisted: true
+    text: |
+      No matter how powerful the {means-of-production:sg} a capitalist may bring into the field, competition will make their adoption general.
+
+      From that moment, the sole result of the greater productiveness of his {capital:sg} is that he must supply 10, 20, or 100 times as much as before at the same price.
+
+      He must find a market for perhaps 1,000 times as much, to outweigh the lower selling price by a greater quantity of sales.
+
+      A more extensive sale is necessary not only to gain a greater profit, but also to replace the cost of the {means-of-production:sg}, which constantly grows more costly.
+
+      Because this more extensive sale has become a question of life and death not only for him, but also for his rivals, the old struggle must begin again with greater violence.
+
+      The {division-of-labour:sg} and the application of machinery will therefore take a fresh start, and upon an even greater scale.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:4eff55b6d9ef0325a14aa2bfd8d8db397b1f6aae1a6e4d9ea42b41c401cd1674
+    revision: 3
+    ai_assisted: true
+    text: |
+      Whatever the power of the {means-of-production:sg} employed, competition seeks to rob {capital:sg} of the golden fruits of this power by reducing the price of {commodity:pl} to the cost of production.
+
+      Production is cheapened as more can be produced with the same labour. An irresistible law compels still greater cheapening of production, selling ever greater masses of products for smaller prices.
+
+      The capitalist gains nothing more by his efforts than the obligation to supply a greater product in the same labour-time: more difficult conditions for the profitable employment of his {capital:sg}.
+
+      Competition, therefore, constantly pursues him with the law of cost of production, turning every weapon he makes against himself.
+
+      He seeks to get ahead by restlessly introducing further subdivision of labour and new machines, producing more cheaply instead of waiting until the new machines are rendered obsolete by competition.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:c523f555d2f65f4340aedcf90820842b1072327bff6adaab3b5c34da73e5f425
+    revision: 3
+    ai_assisted: true
+    text: |
+      Conceive this feverish struggle in the market of the whole world.
+
+      We can then comprehend how the growth, accumulation, and concentration of {capital:sg} bring a finer division of labour, improved old machines, and new machines.
+
+      This process continues uninterruptedly, with feverish haste, and upon an ever more gigantic scale.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:a5b24490d3d6c603faea71271bb515a3cd59f844a07d8b48a6e2e1f2327cdf53
+    revision: 3
+    ai_assisted: true
+    text: But what effect do these conditions, inseparable from the growth of productive {capital:sg}, have upon the determination of wages?
+  p00007:
+    covers: [p00007]
+    based_on: sha256:ceed49efc14a77baea3b791e6c79dd3c670fdec1810f54f754cd8a6d37e5c20e
+    revision: 3
+    ai_assisted: true
+    text: |
+      The greater {division-of-labour:sg} enables one labourer to accomplish the work of five, 10, or 20 labourers. It therefore increases competition among labourers fivefold, tenfold, or twentyfold.
+
+      The labourers compete not only by selling themselves one cheaper than the other, but by one doing the work of five, 10, or 20.
+
+      They are forced to compete in this manner by the {division-of-labour:sg}, which is introduced and steadily improved by {capital:sg}.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:d2a9dba30e318959f891502805c1a9cb36edef1d19c92fe415c514ddf0915081
+    revision: 3
+    ai_assisted: true
+    text: |
+      Furthermore, to the same degree in which {division-of-labour:sg} increases, labour is simplified.
+
+      The special skill of the labourer becomes worthless. He is transformed into a simple, monotonous force of production, with neither physical nor mental elasticity.
+
+      His work becomes accessible to all; therefore competitors press upon him from all sides.
+
+      Moreover, it must be remembered that the more simple and easily learned the work is, the less is its cost of production, and so much the lower must wages sink. For, like the price of any other {commodity:sg}, they are determined by the cost of production.
+
+      Therefore, in the same manner in which labour becomes more unsatisfactory and more repulsive, do competition increase and wages decrease.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:9b9acd5b0e54e939a22c7661dec53d6df226733f617c472f68001bad74df1dd7
+    revision: 3
+    ai_assisted: true
+    text: |
+      The labourer seeks to maintain the total of his wages for a given time by performing more labour, either by working a great number of hours, or by accomplishing more in the same hours.
+
+      Thus, urged on by want, he himself multiplies the disastrous effects of {division-of-labour:sg}. The result is: the more he works, the less wages he receives.
+
+      The reason is simple: the more he works, the more he competes against his fellow workmen. He compels them to compete against him, and to offer themselves on the same wretched conditions as he does.
+
+      In the last analysis, he competes against himself as a member of the working class.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:3d9447025aab7ad3cd8a5ad5035e917d7758d0db8917455e7ca3d3a3d9748dc9
+    revision: 3
+    ai_assisted: true
+    text: |
+      Machinery produces the same effects, but upon a much larger scale.
+
+      It supplants skilled labourers by unskilled, men by women, and adults by children.
+
+      Where newly introduced, it throws workers upon the streets in great masses. As it becomes more highly developed and more productive, it discards them in additional though smaller numbers.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:6d3e8c769547ff62b2831da5a4d3823462bd3d1e865b62c4c2779ff3debe20fe
+    revision: 3
+    ai_assisted: true
+    text: |
+      We have hastily sketched in broad outlines the industrial war of capitalists among themselves.
+
+      This war has the peculiarity that the battles in it are won less by recruiting than by discharging the army of workers.
+
+      The generals (the capitalists) vie with one another as to who can discharge the greatest number of industrial soldiers.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:26cbd101cc3543253aaf54e1d5def99a54bcaf97bc91edf13aa24d27f938965e
+    revision: 3
+    ai_assisted: true
+    text: |
+      The economists tell us that those labourers who have been rendered superfluous by machinery find new avenues of employment.
+
+      They dare not assert directly that the same labourers that have been discharged find situations in new branches of labour. Facts cry out too loudly against this lie.
+
+      Strictly speaking, they only maintain that new means of employment will be found for other sections of the working class. For example, it will be found for young workers about to enter that branch of industry.
+
+      Of course, this is a great satisfaction to the disabled labourers. There will be no lack of fresh exploitable blood and muscle for the Messrs. Capitalists—the dead may bury their dead.
+
+      This consolation seems intended more for the comfort of capitalists than of labourers. If the whole class of wage-labourers were to be annihilated by machinery, how terrible that would be for {capital:sg}, which without {wage-labour:sg} ceases to be {capital:sg}!
+  p00013:
+    covers: [p00013]
+    based_on: sha256:a05fab9141fbe4ff5502f7c1754e81205633d1a99544beb9b045dd9caa45466c
+    revision: 3
+    ai_assisted: true
+    text: |
+      Suppose that all who are forced out of employment by machinery, and all of the rising generation who were waiting for employment, do actually find some new employment.
+
+      Are we to believe that this new employment will pay as high wages as the one they lost?
+
+      If it did, it would contradict the laws of political economy. We have seen how {modern-industry:sg} always tends to substitute simpler and more subordinate employments for higher and more complex ones.
+
+      How, then, could a mass of workers thrown out of one branch of industry by machinery find refuge in another branch, unless they were to be paid more poorly?
+  p00014:
+    covers: [p00014]
+    based_on: sha256:d57b23a058ba54997bf81884bab756ea7e4c3abeff44021bb8f19772c2579fab
+    revision: 3
+    ai_assisted: true
+    text: |
+      An exception has been claimed for workers employed in the {manufacture:sg} of machinery itself.
+
+      As soon as there is greater demand for machinery, it is said that the number of machines must increase.
+
+      Consequently, also, the {manufacture:sg} of machines must increase, and the employment of workers in machine {manufacture:sg}. And the workers employed in this branch are skilled, even educated workers.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:e8d6c6d3122355c46811ffd4a0a4aeaec8c2fae3e62e8879726526afdae59b6e
+    revision: 3
+    ai_assisted: true
+    text: |
+      Since the year 1840 this assertion, which even before that date was only half-true, has lost all semblance of truth.
+
+      The most diverse machines are now applied to the {manufacture:sg} of machines on as extensive a scale as in the {manufacture:sg} of cotton yarn.
+
+      The labourers employed in machine factories can but play the role of very stupid machines alongside highly ingenious machines.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:2ebf07b67ce3fa8271ace95a6811f84ed709c247d18c25c863f78fdc4d74a698
+    revision: 3
+    ai_assisted: true
+    text: |
+      In place of the man dismissed by the machine, the factory may employ three children and one woman!
+
+      And must not the wages of the man have previously sufficed for the three children and one woman? Must not the minimum wages have sufficed for the preservation and propagation of the race?
+
+      What, then, do these beloved {bourgeoisie:adj} phrases prove?
+
+      Nothing more than that now four times as many workers' lives are used up as previously, in order to obtain the livelihood of one working family.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:36b8284fc763d45d7ba07188decaa0664e3c4be308dbf5f8c6e25a9be543d680
+    revision: 3
+    ai_assisted: true
+    text: |
+      To sum up: the more productive {capital:sg} grows, the more it extends the {division-of-labour:sg} and the application of machinery.
+
+      The more the {division-of-labour:sg} and machinery extend, the more does competition extend among the workers, and the more do their wages shrink together.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:78e0e2d9fb595c5b315b1e98555c5bcaa7249dc3c4d33553f09473bf7147504e
+    revision: 3
+    ai_assisted: true
+    text: |
+      In addition, the working class is also recruited from the higher strata of society.
+
+      A mass of small businessmen and people living upon the interest of their capitals is precipitated into the ranks of the working class. They have nothing else to do than stretch out their arms alongside the arms of the workers.
+
+      Thus the forest of outstretched arms, begging for work, grows ever thicker, while the arms themselves grow ever leaner.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:58c8867e393d3da3faf20540ebb59e18634448b6a9886a7ee5d07e2549f4c5f2
+    revision: 3
+    ai_assisted: true
+    text: |
+      It is evident that the small manufacturer cannot survive in a struggle in which the first condition of success is production upon an ever greater scale.
+
+      It is evident that the small manufacturer cannot at the same time be a big manufacturer.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:a99cb9e0fcb27315ae550e22b2d1bba99c76cdb69ad10a2e7d16126cda0f3e51
+    revision: 3
+    ai_assisted: true
+    text: |
+      Interest on {capital:sg} decreases in the same ratio in which the mass and number of capitals increase; it diminishes with the growth of {capital:sg}.
+
+      Therefore the small capitalist can no longer live on his interest, but must throw himself upon industry by joining the ranks of small manufacturers, in this way increasing the number of candidates for the {proletariat:sg}. All this requires no further explanation.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:037b6bb2bfcf0965d6d9921655f56b406157574551484983d55e3799436546d8
+    revision: 3
+    ai_assisted: true
+    text: |
+      Finally, capitalists are compelled to exploit existing gigantic {means-of-production:sg} on an ever-increasing scale. For this purpose they set in motion all the mainsprings of credit.
+
+      In the same measure, industrial earthquakes increase.
+
+      The commercial world can preserve itself only by sacrificing a portion of its wealth, its products, and even its forces of production, to the gods of the lower world—in short, the crises increase.
+
+      Crises become more frequent and more violent, if for no other reason, than for this alone. As the mass of products grows, and therefore the need for extensive markets, in the same measure the {world-market:sg} shrinks ever more.
+
+      Fewer markets remain to be exploited, since every previous crisis subjected an unconquered or superficially exploited market to world commerce.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:39a043a8a1d665f7c489e9043f62ca1c1524ef85aa3d3b049c0b138d8d42adcd
+    revision: 3
+    ai_assisted: true
+    text: |
+      {Capital:sg} not only lives upon labour.
+
+      Like a master at once distinguished and barbarous, it drags with it into its grave the corpses of its slaves, whole hecatombs of workers who perish in the crises.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:fda296e5a9ae2bef4ab70207cc5d2b9758e848b0d40d90b4f12b841d7cff488b
+    revision: 3
+    ai_assisted: true
+    text: |
+      We thus see that if {capital:sg} grows rapidly, competition among the workers grows with even greater rapidity—that is, the means of employment and subsistence for the working class decrease in proportion even more rapidly.
+
+      This notwithstanding, the rapid growth of {capital:sg} is the most favorable condition for {wage-labour:sg}.

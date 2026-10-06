@@ -1,0 +1,156 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch05
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:35a2423cc7539a9873c1ab5e2910a28c5d69fa68c72cb49fcf9ff4ad08cf8539
+    revision: 3
+    ai_assisted: true
+    text: The Nature and Growth of {Capital:sg}
+  p00002:
+    covers: [p00002]
+    based_on: sha256:c797e24ddd0d1f3be50807356a29fbec03aef2e7df19b1bca8ea775dc75f5d7d
+    revision: 3
+    ai_assisted: true
+    text: |
+      {Capital:sg} consists of raw materials, instruments of labour, and {means-of-subsistence:sg} of all kinds, which are employed in producing new raw materials, new instruments, and new {means-of-subsistence:sg}.
+
+      All these components of {capital:sg} are created by labour, products of labour, accumulated labour.
+
+      Accumulated labour that serves as a means to new production is {capital:sg}.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:da524ae37d6849b845d688ad6626e0020ac5d41be11e41eddabb6cb3ca6f8a2d
+    revision: 3
+    ai_assisted: true
+    text: So say the economists.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:213eb3b1e01d0cac7de4a3521214553361135f621602c168ec267c04a3d593f2
+    revision: 3
+    ai_assisted: true
+    text: What is a Negro slave? A man of the black race. The one explanation is worthy of the other.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:a3ceb494cd14ea3956a5493b49f5654617b2ba9fa33513d63d09c66ad4e779cd
+    revision: 3
+    ai_assisted: true
+    text: |
+      A Negro is a Negro. Only under certain conditions does he become a slave.
+
+      A cotton-spinning machine is a machine for spinning cotton. Only under certain conditions does it become {capital:sg}.
+
+      Torn away from these conditions, it is as little {capital:sg} as gold is in itself money, or sugar is the price of sugar.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:785ffb14360ad8f0e2cc9c30e294352b91d73ab01b72e9d1138c0f564ba5b8c1
+    revision: 3
+    ai_assisted: true
+    text: |
+      In the process of production, human beings work not only upon nature, but also upon one another. They produce only by working together in a specified manner and reciprocally exchanging their activities.
+
+      In order to produce, they enter into definite connections and relations with one another. Only within these social connections and relations does their influence upon nature operate—that is, does production take place.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:59ddba810841ebe721e149fdd90e04267ba90d9e8614a1fee0078902a3278fd8
+    revision: 3
+    ai_assisted: true
+    text: |
+      These social relations between the producers, and the conditions under which they exchange their activities and share in the total act of production, will naturally vary according to the character of the {means-of-production:sg}.
+
+      With the discovery of a new instrument of warfare, the firearm, the whole internal organization of the army was necessarily altered. The relations within which individuals compose an army were transformed, and the relation of different armies to one another was likewise changed.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:85c8a0407ef411c10cf5c641fdd8af694935faef7428dd8c70c87339f6bc705a
+    revision: 3
+    ai_assisted: true
+    text: |
+      We thus see that the social relations within which individuals produce, the social {relations-of-production:sg}, are altered and transformed with the change and development of the material {means-of-production:sg}, of the {productive-forces:sg}.
+
+      The {relations-of-production:sg} in their totality constitute what is called society at a definite stage of historical development: a society with peculiar, distinctive characteristics.
+
+      Ancient society, {feudalism:adj} society, and {bourgeoisie:adj} society are such totalities of {relations-of-production:sg}. Each denotes a particular stage of development in the history of mankind.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:2d5bf77ff5ebfe3f7f58e2c9f0f2d48ad3811d88a456cdfd9b42c9c1cbe36595
+    revision: 3
+    ai_assisted: true
+    text: |
+      {Capital:sg} also is a social relation of production. It is a {bourgeoisie:adj} relation of production, a relation of production of {bourgeoisie:adj} society.
+
+      The {means-of-subsistence:sg}, the instruments of labour, and the raw materials of which {capital:sg} consists—have they not been produced and accumulated under given social conditions, within definite special relations?
+
+      Are they not employed for new production under given special conditions, within definite social relations?
+
+      And does not just the definite social character stamp the products that serve for new production as {capital:sg}?
+  p00010:
+    covers: [p00010]
+    based_on: sha256:337fbaf68e85de78069c13fe176038464134d5146a1a53216432ed23e9d0400a
+    revision: 3
+    ai_assisted: true
+    text: |
+      {Capital:sg} consists not only of {means-of-subsistence:sg}, instruments of labour, and raw materials, not only of material products. It consists just as much of exchange values.
+
+      All products of which it consists are {commodity:pl}.
+
+      {Capital:sg}, consequently, is not only a sum of material products. It is a sum of {commodity:pl}, of exchange values, of social magnitudes.
+
+      {Capital:sg} remains the same whether we put cotton in place of wool, rice in place of wheat, or steamships in place of railroads. It requires only that the bodily form has the same {exchange-value:sg}, the same price.
+
+      The bodily form of {capital:sg} may transform itself continually, while {capital:sg} does not suffer the least alteration.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:facda21d1be767de1613cd4cc494227eef44721e04fd6749f988014954ce3c84
+    revision: 3
+    ai_assisted: true
+    text: Though every {capital:sg} is a sum of {commodity:pl}—i.e., of exchange values—it does not follow that every sum of {commodity:pl}, of exchange values, is {capital:sg}.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:83e9cb969fbf043f26da6076d8f8c8f17878f2a700ccafdd7d658c3940d3e24e
+    revision: 3
+    ai_assisted: true
+    text: |
+      Every sum of exchange values is an exchange value. Each particular exchange value is a sum of exchange values.
+
+      For example: a house worth 1,000 pounds is an exchange value of 1,000 pounds. A piece of paper worth one penny is a sum of exchange values of 100 1/100ths of a penny.
+
+      Products that are exchangeable for others are {commodity:pl}. The definite proportion in which they are exchangeable forms their {exchange-value:sg}, or expressed in money, their price.
+
+      The quantity of these products can have no effect on their character as {commodity:pl}, as representing an {exchange-value:sg}, as having a certain price. Whether a tree be large or small, it remains a tree.
+
+      Whether we exchange iron in pennyweights or in hundredweights for other products, does this alter its character as a {commodity:sg} or an {exchange-value:sg}? According to quantity, it is a {commodity:sg} of greater or lesser value, of higher or lower price.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:d14e70c82ef3f7152648baae43d189ec8fa86ee4c754a65fb9fe1c0a4fb367a4
+    revision: 3
+    ai_assisted: true
+    text: How then does a sum of {commodity:pl}, of exchange values, become {capital:sg}?
+  p00014:
+    covers: [p00014]
+    based_on: sha256:7bf13d8a535913015168bad4deb8e8f9d56aadf7872ceb9d722906653f90fcd9
+    revision: 3
+    ai_assisted: true
+    text: By the fact that, as an independent social power—that is, as the power of a part of society—it preserves and multiplies itself by exchange with direct, living {labour-power:sg}.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:fc9d4a2f274f1b4ce3d4d701238bc9ea40f5140871cdf759dc5d51f293ac3665
+    revision: 3
+    ai_assisted: true
+    text: The existence of a class that possesses nothing but the ability to work is a necessary presupposition of {capital:sg}.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:d35affca47840a1cb0fce711822bc4756369703d8f9cf5b54ba1a932dd16939e
+    revision: 3
+    ai_assisted: true
+    text: It is only the dominion of past, accumulated, materialized labour over immediate living labour that stamps accumulated labour with the character of {capital:sg}.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:42785359305d276f47f53f69fcffeae59df012ec2d4f4735f2e6e8d4b2c89040
+    revision: 3
+    ai_assisted: true
+    text: |
+      {Capital:sg} does not consist in the fact that accumulated labour serves living labour as a means for new production.
+
+      It consists in the fact that living labour serves accumulated labour as the means of preserving and multiplying its {exchange-value:sg}.

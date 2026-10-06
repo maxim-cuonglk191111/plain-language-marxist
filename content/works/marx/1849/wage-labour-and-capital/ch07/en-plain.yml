@@ -1,0 +1,131 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch07
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:b5dc0dd9f949ab644a089e1642979f099fedc5de3d82fb8a9ee4dff28331001e
+    revision: 2
+    ai_assisted: true
+    text: The General Law that Determines the Rise and Fall of Wages and Profits
+  p00002:
+    covers: [p00002]
+    based_on: sha256:a5ca693d71985dfaec24efdaf79172a9fa3fd65331867f121afd43cbed7a1b79
+    revision: 2
+    ai_assisted: true
+    text: |
+      We have said: "Wages are not a share of the worker in the commodities produced by him. Wages are that part of already existing commodities with which the capitalist buys a certain amount of productive labour-power". But the capitalist must replace these wages out of the selling price of the product made by the worker.
+
+      He must replace them so that, as a rule, a surplus remains above his cost of production—that is, he must get a profit.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:d1b85e10d904f894d6ae584352b48f33c067144419642a9748b57077236b7fad
+    revision: 2
+    ai_assisted: true
+    text: "The selling price of the {commodity:pl} produced by the worker is divided, from the capitalist's point of view, into three parts:"
+  p00004:
+    covers: [p00004]
+    based_on: sha256:37156d59cf08518b9ccc4189f258c6be46de88b52d8b15e425dcd18acea3f142
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>First, the replacement of the price of the raw materials advanced by him, along with the wear and tear of tools, machines, and other instruments of labour;
+  p00005:
+    covers: [p00005]
+    based_on: sha256:b6d4bf4b22b033bb155097deb2689a7c0921e2ea11f6443d041239c92a8aada3
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>Second, the replacement of the wages advanced; and
+  p00006:
+    covers: [p00006]
+    based_on: sha256:ba3daa9d4a2d606961df7d726ce07848d709a9be8927ea7e6281ff695eebf954
+    revision: 2
+    ai_assisted: true
+    text: <indent level="1"/>Third, the surplus left over—that is, the profit of the capitalist.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:b52cdf86430c260386eb2dddbfa6945784eacd99d458ed27eb41be44ab9d1a5a
+    revision: 2
+    ai_assisted: true
+    text: |
+      The first part merely replaces previously existing values.
+
+      The replacement of wages and the surplus (the profit of {capital:sg}) come entirely from new value produced by the worker and added to the raw materials.
+
+      In this sense, we can view wages and profit, when comparing them with each other, as shares in the worker's product.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:93efe9b2df9e6f72762a042ffbaa9bfac0e570a63001eb0ea4a15bc652ab119f
+    revision: 2
+    ai_assisted: true
+    text: |
+      Real wages may remain the same, they may even rise, and nevertheless relative wages may fall.
+
+      Suppose all {means-of-subsistence:sg} fall 2/3rds in price, while daily wages fall only 1/3rd—from three to two shillings, for example.
+
+      Although the worker can now get a greater amount of {commodity:pl} with two shillings than before with three, his wages have decreased in proportion to the capitalist's profit.
+
+      The capitalist's profit has increased by one shilling. For a smaller amount of exchange values paid to the worker, the worker must produce more exchange values than before.
+
+      The share of {capital:sg} compared to the share of labour has risen. The division of social wealth has become more unequal. The capitalist commands more labour with the same {capital:sg}. The social position of the worker has been forced down another step below that of the capitalist.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:e1207d1e0ec3d5e6c680dde9eb625705b76d5643a5364e7fae4eb50dc20a0052
+    revision: 2
+    ai_assisted: true
+    text: What, then, is the general law that determines the rise and fall of wages and profit in their reciprocal relation?
+  p00010:
+    covers: [p00010]
+    based_on: sha256:03b413fce037992b0fd383f6369dd005d75e463ad5f32639fc8f0ae814c8ae3e
+    revision: 2
+    ai_assisted: true
+    text: |
+      They stand in inverse proportion to each other.
+
+      The share of profit increases in the same proportion in which the share of labour (wages) falls, and vice versa. Profit rises in the same degree in which wages fall; it falls in the same degree in which wages rise.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:edcfa791fcc6c77310981e9e0d3a33dd048552e2ed48eeeec8678257245f91dd
+    revision: 2
+    ai_assisted: true
+    text: |
+      One might argue that a capitalist can gain by advantageous trade with other capitalists, or from a rise in demand for his {commodity:pl} in new or old markets.
+
+      His profit, therefore, may be multiplied by taking advantage of other capitalists, independently of the rise and fall of wages, or of the {exchange-value:sg} of labour-power.
+
+      Or the profit of the capitalist may also rise through improved tools or new applications of natural forces.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:6f5978b4774f270b120b5f2544481aeae1e6964f09d55b52d95a52633499f682
+    revision: 2
+    ai_assisted: true
+    text: |
+      In the first place, it must be admitted that the result remains the same, although reached in an opposite way.
+
+      Profit has not risen because wages have fallen; rather, wages have fallen because profit has risen.
+
+      With the same amount of another man's labour, the capitalist has bought a larger amount of exchange values without paying more for that labour. The work is paid less in proportion to the net gain it yields to the capitalist.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:098eb04725ce3d04a851d9c3bd5bedb33eb090e1e6a9250c10cd4e1fd35f81bc
+    revision: 2
+    ai_assisted: true
+    text: |
+      In the second place, it must be borne in mind that, despite fluctuations in prices, the average price of every {commodity:sg} is determined by its cost of production.
+
+      Attempts by capitalists to outwit one another necessarily balance out.
+
+      Better machines and new forces of nature make it possible to produce more goods in the same time with the same labour and {capital:sg}, but not a larger amount of exchange values.
+
+      Suppose a spinning machine lets me produce twice as much yarn in an hour: 100 pounds instead of 50 pounds. In the long run, I receive no more {commodity:pl} for this 100 pounds than I did before for 50.
+
+      This happens because the cost of production has fallen by 1/2, or because I can supply double the product at the same cost.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:402a7152a9d54141570551fea9583b59089148bacda17c9c8919e762caee55de
+    revision: 2
+    ai_assisted: true
+    text: |
+      In whatever proportion capitalists of one country or the whole {world-market:sg} divide net revenue among themselves, that revenue consists exclusively of the amount by which accumulated labour grew from direct labour.
+
+      This whole amount, therefore, grows in the same proportion in which labour increases {capital:sg}, that is, in the same proportion in which profit rises compared with wages.

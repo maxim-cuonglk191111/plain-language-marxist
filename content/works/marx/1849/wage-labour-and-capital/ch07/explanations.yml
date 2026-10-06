@@ -1,0 +1,29 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch07
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00004]
+    text: |-
+      This three-part division directly anticipates Marx's mature value formula in *Das Kapital*.
+
+      The three parts correspond to constant capital (materials and depreciation), variable capital (wages), and surplus-value (profit).
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00008]
+    text: |-
+      Marx shows how capitalism can increase exploitation even while living standards improve.
+
+      If cheaper food lowers the value of labour-power, capitalists pay workers less in relative terms while reaping greater profits.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00010]
+    text: |-
+      This is Marx's central law of distribution under capitalism.
+
+      Because new value is created solely by human labour, wages and profits stand in direct conflict.
+
+      Any gain in capitalist profit corresponds to a decline in the working class's relative share.
+    ai_assisted: true

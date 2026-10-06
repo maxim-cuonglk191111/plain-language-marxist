@@ -1,0 +1,81 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch01
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:59cb62153771c518e0b34ca512e6e180c933bb2c44aea847b9872686a79ca5ae
+    revision: 4
+    ai_assisted: true
+    text: Preliminary
+  p00002:
+    covers: [p00002]
+    based_on: sha256:0a31c47de9a51942eeaa35a19e3a72cbc7bd6f21403e3dc0597930e9de898648
+    revision: 4
+    ai_assisted: true
+    text: People from various sides have criticised us for not describing the economic conditions. Those conditions form the material base of present struggles between classes and nations. We have touched on these conditions on purpose only when they forced their way into open political conflict.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:e22a3cd9b0404a0444c95498a67fcaf9464fd62b6c2ef1d46c5d6704321fb067
+    revision: 4
+    ai_assisted: true
+    text: |
+      Above all else, we had to follow the development of the {class-struggle:sg} in our own time. We had to prove from fresh daily facts that defeating the working class in February and March 1848 also defeated its opponents.
+
+      Those opponents included {bourgeoisie:adj} republicans in France, and {bourgeoisie:adj} and peasant classes fighting {feudalism:adj} rule across Europe.
+
+      The victory of the "moderate republic" in France brought down the nations that had responded to the February {revolution:sg} with wars of independence.
+
+      By defeating the {revolution:adj} workers, Europe fell back into its old double slavery, the English-Russian slavery.
+
+      The June fighting in Paris, the fall of Vienna, and the events in Berlin in November 1848 summed up the European {class-struggle:sg} between the {bourgeoisie:sg} and the working class.
+
+      So did the desperate efforts of Poland, Italy, and Hungary, and the starvation of Ireland into submission.
+
+      These events proved that every {revolution:adj} uprising must fail until the {revolution:adj} working class wins, however remote from the {class-struggle:sg} its goal may seem.
+
+      They proved that every social reform must remain a Utopia until {proletariat:adj} {revolution:sg} and {feudalism:adj} counter-{revolution:sg} clash in a world war.
+
+      Belgium and Switzerland were comic pictures in this history. One was the model State of {bourgeoisie:adj} monarchy. The other was the model State of the {bourgeoisie:adj} republic.
+
+      Both are States that flatter themselves that they are free from the {class-struggle:sg} and from European {revolution:sg}.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:77bef434653ff30b2f861f32758e5b5490849f670083e3aa8c82dbcaeaad50e9
+    revision: 4
+    ai_assisted: true
+    text: Our readers have now seen the {class-struggle:sg} of 1848 grow into huge political battles. It is now time to examine more closely the economic conditions themselves. Upon those conditions rest the rule of the capitalist class and the slavery of the workers.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:08f451b69b22977c34bcf7af553d50ed82403a91b7b593d4411ff851903ee88b
+    revision: 4
+    ai_assisted: true
+    text: "We shall present the subject in three great divisions:"
+  p00006:
+    covers: [p00006]
+    based_on: sha256:6147e4c53d080f0035f506147eae3e7c79bf2c4dfcdea3c8577f2113cbe18599
+    revision: 4
+    ai_assisted: true
+    text: <indent level="1"/>The relation of {wage-labour:sg} to {capital:sg}, the slavery of the worker, and the rule of the capitalist.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:4cd8302edcb7a32ece4cdc873c1976d8f0391bf6210ac3c6d044ad8e0f6f79ef
+    revision: 4
+    ai_assisted: true
+    text: <indent level="1"/>The inevitable ruin of the middle classes ({petty-bourgeoisie:adj} class) and the peasants under the present system.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:229b605d08560368dec5d600eed6c199a0833344866bf5a7bac4e0d939aec8a8
+    revision: 4
+    ai_assisted: true
+    text: <indent level="1"/>The commercial defeat and {exploitation:sg} of the {bourgeoisie:adj} classes of European nations by the ruler of the {world-market:sg}, England.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:27ace53568753c5f53772482df0f4b3b8bda06e251906ff347b0e08aebcb7fc4
+    revision: 4
+    ai_assisted: true
+    text: |
+      We shall try to present this as simply and clearly as possible. We do not assume any knowledge of political economy. We want workers to understand us.
+
+      In Germany, people are remarkably confused about the simplest economic relations. This confusion exists among official defenders of the system, socialist miracle-workers, and unrecognised geniuses. We therefore turn to the consideration of the first problem.

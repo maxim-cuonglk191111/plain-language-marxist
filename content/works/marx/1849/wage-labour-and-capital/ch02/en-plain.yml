@@ -1,0 +1,139 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch02
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:a39def0ed18b762fcebb6fba691a561fa69aaf259bbc37ad3693b224ecdae5d3
+    revision: 2
+    ai_assisted: true
+    text: What are Wages?<br/>How are they Determined?
+  p00002:
+    covers: [p00002]
+    based_on: sha256:0045fb96a79f3dc19bab24381784e6e8f17e1b34d3256d885980fd365d74cbad
+    revision: 2
+    ai_assisted: true
+    text: |
+      If you asked several workers: "How much wages do you get?", one might say, "I get two shillings a day", and so on.
+
+      In different industries, workers would name different sums of money paid by employers for a task, such as weaving a yard of linen or setting a page of type.
+
+      Yet they would all agree on one point: wages are the money that the capitalist pays for a period of work or an amount of work.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:f767741d973d3047209242a2a223df6cf9e10055606bcfb36f900676f72ff164
+    revision: 2
+    ai_assisted: true
+    text: |
+      Consequently, it appears that the capitalist buys their labour with money, and that they sell him their labour for money. But this is merely an illusion.
+
+      What they actually sell to the capitalist for money is their {labour-power:sg}. The capitalist buys this {labour-power:sg} for a day, a week, or a month. After buying it, he uses it by having the worker work for that agreed time.
+
+      With the same two shillings, the capitalist could have bought sugar or any other {commodity:sg}. The two shillings that bought 20 pounds of sugar is the price of the 20 pounds of sugar.
+
+      The two shillings that bought 12 hours' use of {labour-power:sg} is the price of 12 hours of labour. {Labour-power:sg}, then, is a {commodity:sg}, no more and no less than sugar. One is measured by the clock, the other by the scales.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:64193df704d24f1ba51ca0525851e82923b7f366ec4d364b90419c96813c25d6
+    revision: 2
+    ai_assisted: true
+    text: |
+      Workers exchange their {commodity:sg}, {labour-power:sg}, for the capitalist's {commodity:sg}, money. This exchange happens at a set rate: so much money for so many hours of {labour-power:sg}.
+
+      For 12 hours of weaving, the worker gets two shillings. And do these two shillings not represent all the other {commodity:pl} that two shillings can buy?
+
+      Therefore, the worker has actually exchanged his {commodity:sg}, {labour-power:sg}, for {commodity:pl} of all kinds, at a set rate. By giving him two shillings, the capitalist gives him meat, clothes, wood, and light in exchange for his day's work.
+
+      The two shillings therefore express the rate at which {labour-power:sg} is exchanged for other {commodity:pl}: the {exchange-value:sg} of {labour-power:sg}.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:235dfc7c26b3ae68c4034c9bed00a4e39a123227528ba83dc2260bb6c44b5782
+    revision: 2
+    ai_assisted: true
+    text: |
+      The {exchange-value:sg} of a {commodity:sg} measured in money is called its price.
+
+      Wages therefore are only a special name for the price of {labour-power:sg}, though people usually call them the price of labour. Wages are the price of this unique {commodity:sg}, which exists only in living human flesh and blood.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:fb8981007d39649d8af98ba565e8f19eeac3e395e49f35744a796d01911213b3
+    revision: 2
+    ai_assisted: true
+    text: |
+      Take a weaver as an example. The capitalist supplies him with the loom and the yarn. The weaver works, and the yarn turns into cloth.
+
+      The capitalist takes the cloth and sells it, say, for 20 shillings. Are the weaver's wages a share of the cloth, of the 20 shillings, or of the product?
+
+      By no means. The weaver receives his wages long before the cloth is sold, and perhaps before it is even woven. The capitalist does not pay wages from future money, but from money already on hand.
+
+      The loom and yarn were supplied by the employer, not made by the weaver. In the same way, the {commodity:pl} the weaver receives for his {commodity:sg}, his {labour-power:sg}, are not his own product.
+
+      The employer might find no buyer for the cloth. The sale might not even cover the weaver's wages. Or the employer might sell it at a huge profit. None of this concerns the weaver.
+
+      With part of his wealth, his {capital:sg}, the capitalist buys the weaver's {labour-power:sg}. He does this just as he bought the yarn and the loom.
+
+      After these purchases, the capitalist produces only with raw materials and tools that belong to him. The weaver is treated like another tool, on a level with the loom. He has no more share in the product or its price than the loom has.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:35a0b45ebbc5d3cca564001fcfb0d14ab44bf584c1b04e0c090fd49be8f2fc0f
+    revision: 2
+    ai_assisted: true
+    text: Wages, therefore, are not a worker's share in the {commodity:pl} he produced. Wages are that part of already existing {commodity:pl} with which the capitalist buys a certain amount of productive {labour-power:sg}.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:e96a19099038c0e26ece190d79ddd90510428e3cd748e220ac062c9a26130b67
+    revision: 2
+    ai_assisted: true
+    text: Consequently, {labour-power:sg} is a {commodity:sg} that its owner, the wage-worker, sells to the capitalist. Why does he sell it? He sells it in order to live.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:efec7a42fe7a51c5cec2e13f4b1a4ef700746115ae50ad3adba12af4dc52f747
+    revision: 2
+    ai_assisted: true
+    text: |
+      Using {labour-power:sg} is the active expression of the worker's life. He sells this life-activity to another person to secure the necessary means of life. His life-activity, therefore, is only a means to keep himself alive. He works so that he may keep alive.
+
+      He does not count the work itself as part of his life; it is rather a sacrifice of his life. It is a {commodity:sg} he has auctioned off to someone else. The product of his activity, therefore, is not the aim of his activity.
+
+      What he produces for himself is not the silk he weaves, not the gold he draws from the mine, and not the palace he builds. What he produces for himself is wages. Silk, gold, and palaces turn for him into a cotton jacket, copper coins, and a basement room.
+
+      For 12 hours a worker weaves, spins, drills, builds, shovels, or breaks stone. Does he view these 12 hours as living his life? Quite the contrary.
+
+      Life begins for him when this activity stops: at the table, in the tavern, in bed. The 12 hours of work have no meaning for him as weaving or spinning, but only as earnings that let him sit at a table, visit the tavern, and sleep in a bed.
+
+      If a silkworm spun silk to prolong its life as a caterpillar, it would be a true wage-worker.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:419e657fe88fc251e12344271390412d6068adbb29f84e0aa89d69d869c1e2ff
+    revision: 2
+    ai_assisted: true
+    text: |
+      {Labour-power:sg} was not always a {commodity:sg}. Labour was not always {wage-labour:sg}, or free labour.
+
+      The slave did not sell his {labour-power:sg} to the owner, any more than an ox sells labour to a farmer. The slave, with his {labour-power:sg}, was sold once and for all. He is a {commodity:sg} that passes from one owner to another. He himself is a {commodity:sg}, but his {labour-power:sg} is not his own {commodity:sg}.
+
+      The {serf:sg} sells only a portion of his {labour-power:sg}. It is not he who receives wages from the landlord; rather, the landlord receives dues from him. The {serf:sg} belongs to the land and brings fruit to the lord of the land.
+
+      The free worker, on the other hand, sells his very self in pieces. He auctions off eight, 10, 12, or 15 hours of his life every day to the highest bidder: the owner of raw materials, tools, and food—the capitalist.
+
+      The worker belongs neither to an owner nor to the soil. But eight, 10, 12, or 15 hours of his daily life belong to whoever buys them.
+
+      The worker leaves the capitalist whenever he chooses, and the capitalist dismisses him when he no longer gets any use, or not the needed use, out of him.
+
+      Yet the worker, whose only income is the sale of his {labour-power:sg}, cannot leave the capitalist class as a whole, unless he gives up his own life. He does not belong to this or that capitalist, but to the capitalist class. It is up to him to find a buyer in that class.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:a4a037e70e7691c799392b242180d81abe994ce2cd6bc7e3c3f1ef410dcf8751
+    revision: 2
+    ai_assisted: true
+    text: Before looking more closely at the relation of {capital:sg} to {wage-labour:sg}, we will briefly state the main conditions that determine wages.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:6fff1ad43be580b2d6b21d040ffdbc4964010e4a4162fc6f51f4f710d6149122
+    revision: 2
+    ai_assisted: true
+    text: |
+      Wages, as we have seen, are the price of a certain {commodity:sg}, {labour-power:sg}. Wages, therefore, are determined by the same laws that determine the price of every other {commodity:sg}.
+
+      The question then is: How is the price of a {commodity:sg} determined?

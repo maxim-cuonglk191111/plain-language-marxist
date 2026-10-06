@@ -1,0 +1,33 @@
+schema_version: 5
+document: document:marx:1849:wage-labour-and-capital:ch04
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00005]
+    text: |-
+      Marx explains why skilled and unskilled workers receive different wages.
+
+      Skilled jobs require time and money for education and apprenticeships.
+
+      Unskilled industrial jobs require little preparation, so the cost of production of unskilled labour-power is much lower.
+    ai_assisted: true
+  e002:
+    kind: historical_context
+    targets: [p00006]
+    text: |-
+      Capitalists treat living workers like factory machinery.
+
+      Just as machines suffer mechanical wear and tear, human workers wear out through intense physical labour.
+
+      Wages must cover the cost of raising children so new workers can replace those who break down or die.
+    ai_assisted: true
+  e003:
+    kind: historical_context
+    targets: [p00007]
+    text: |-
+      Marx does not mean a government-mandated minimum wage.
+
+      He means the economic baseline needed to keep the working class alive from one generation to the next.
+
+      Individual workers often fall below this baseline into extreme poverty and early death.
+    ai_assisted: true

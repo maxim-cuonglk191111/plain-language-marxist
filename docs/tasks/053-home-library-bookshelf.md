@@ -2,7 +2,7 @@
 
 |              |                                                                       |
 | ------------ | --------------------------------------------------------------------- |
-| **Status**   | Open                                                                  |
+| **Status**   | Done                                                                  |
 | **Filed**    | 2026-10-06                                                            |
 | **Owner**    | Unassigned                                                            |
 | **Severity** | High (core UI/UX & scalability bottleneck for multi-work library)     |
@@ -61,9 +61,9 @@ Replace the flat `ul.library > li > ul` with a modern card grid:
 
 ## Acceptance Criteria
 
-- [ ] Homepage `/` displays works as curated Work Cards instead of an uncollapsed list of all chapters.
-- [ ] Each card shows aggregated metadata: chapter count, total estimated reading time, and Plain English status.
-- [ ] Chapter list is tucked inside a clean, collapsed `<details>` preview per card.
-- [ ] Works link seamlessly to their dedicated `WorkPage` and first chapter.
-- [ ] Responsive across mobile and desktop.
-- [ ] `pnpm check` and `pnpm e2e` pass 100%.
+- [x] Homepage `/` displays works as curated Work Cards instead of an uncollapsed list of all chapters.
+- [x] Each card shows aggregated metadata: chapter count, total estimated reading time, and Plain English status.
+- [x] Chapter list is tucked inside a clean, collapsed `<details>` preview per card.
+- [x] Works link seamlessly to their dedicated `WorkPage` and first chapter.
+- [x] Responsive across mobile and desktop.
+- [x] `pnpm check` and `pnpm e2e` pass 100%.

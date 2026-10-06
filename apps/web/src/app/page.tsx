@@ -1,7 +1,7 @@
 import { ContinueShelf } from "../components/WorkProgress";
+import { WorkCard } from "../components/WorkCard";
 import { getIndex } from "../lib/data";
 import { readingPaths } from "../lib/paths";
-import { authorName, workPath } from "../lib/reading";
 
 export default function Home() {
   const index = getIndex();
@@ -41,32 +41,14 @@ export default function Home() {
           </p>
         </section>
       )}
-      <h2>Library</h2>
-      <ul className="library">
-        {index.works.map((work) => (
-          <li key={work.id}>
-            <h3>
-              <a href={workPath(work)}>{work.title}</a>
-            </h3>
-            <p className="byline">
-              {work.authors.map(authorName).join(" and ")}, {work.year}
-              {work.translation
-                ? ` · translated by ${work.translation.translator}, ${work.translation.year}`
-                : ""}
-            </p>
-            <ul>
-              {work.documents.map((doc) => (
-                <li key={doc.id}>
-                  <a href={doc.path}>{doc.title}</a>{" "}
-                  <span className="coverage">
-                    {doc.covered["en-plain"] ?? 0} of {doc.passages} passages in plain English
-                  </span>
-                </li>
-              ))}
-            </ul>
-          </li>
-        ))}
-      </ul>
+      <section aria-labelledby="library-title">
+        <h2 id="library-title">Library</h2>
+        <div className="library-grid">
+          {index.works.map((work) => (
+            <WorkCard key={work.id} work={work} />
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

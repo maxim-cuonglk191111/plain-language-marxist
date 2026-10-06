@@ -1,0 +1,395 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch02
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:71d437383d766622e79b60e35170832a497d25949e82da877fc2b9fcc0cdccc6
+    revision: 1
+    ai_assisted: true
+    text: VI. Value and Labour
+  p00002:
+    covers: [p00002]
+    based_on: sha256:236bc1ecdebbfb8e22e691e5a2e33217cca8e75c734a44f696a0fa4cb74cfd2e
+    revision: 1
+    ai_assisted: true
+    text: "Citizens, I have now arrived at a point where I must enter upon the real development of the question. I cannot promise to do this in a very satisfactory way, because to do so I should be obliged to go over the whole field of political economy. I can, as the French would say, but “effleurer la question,” touch upon the main points. The first question we have to put is: what is the <i>value</i> of a {commodity:sg}? How is it determined?"
+  p00003:
+    covers: [p00003]
+    based_on: sha256:b60ee28d2c8798088784d1e79918ce3c59af4bb012689e17a35dc44335d20cb9
+    revision: 1
+    ai_assisted: true
+    text: "At first sight it would seem that the value of a {commodity:sg} is a thing quite <i>relative</i>, and not to be settled without considering one commodity in its relations to all other commodities. In fact, in speaking of the value, the {exchange-value:sg} of a commodity, we mean the proportional quantities in which it exchanges with all other commodities. But then arises the question: how are the proportions in which commodities exchange with each other regulated? We know from experience that these proportions vary infinitely. Taking one single commodity, wheat, for instance, we shall find that a quarter of wheat exchanges in almost countless variations of proportion with different commodities. Yet, <i>its value remaining always the same</i>, whether expressed in silk, gold, or any other commodity, it must be something distinct from, and independent of, these <i>different rates of exchange</i> with different articles. It must be possible to express, in a very different form, these various equations with various commodities."
+  p00004:
+    covers: [p00004]
+    based_on: sha256:635066795d4f3f5f6238df90ae2aec73d8a5f5999a2725e5cf35456bd0fcc5a8
+    revision: 1
+    ai_assisted: true
+    text: If a quarter of wheat exchanges with iron in a certain proportion, their values are expressed in each other. This means wheat and iron are equal to <i>some third thing</i>, which is neither wheat nor iron. Both express the same magnitude in two different shapes. Either the wheat or the iron must, therefore, be reducible to this third thing as their common measure.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:ae9a71fda5c7b09b7bc1f8cf2b8b603d64eeaf71fe14dd7f5dc489cdfc1be549
+    revision: 1
+    ai_assisted: true
+    text: To make this point clear, consider a simple geometrical example. How do we compare the areas of triangles of all forms and sizes, or compare triangles with rectangles? We reduce the area of any triangle to an expression quite different from its visible shape. We find that the area of a triangle equals half its base multiplied by its height. We can then compare all triangles and rectilinear figures, because all can be resolved into triangles.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:8fd7bc1b8d86f4cd003206a84f77885aead4d8b3925a124df5fae24406c22d10
+    revision: 1
+    ai_assisted: true
+    text: The same mode of procedure must obtain with the values of commodities. We must be able to reduce all of them to an expression common to all, and distinguishing them only by the proportions in which they contain that identical measure.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:3b672d0454ac41871aefb46cf4838329c47c44caae1687304d292ea207869e4f
+    revision: 1
+    ai_assisted: true
+    text: "The <i>exchangeable values</i> of commodities are only <i>social functions</i> of those things, having nothing to do with their <i>natural</i> qualities. We must first ask: what is the common <i>social substance</i> of all commodities? It is <i>labour</i>. To produce a {commodity:sg} a certain amount of labour must be bestowed upon it, or worked up in it. And I say not only <i>labour</i>, but <i>social labour</i>. A man who produces an article for his own immediate use, to consume it himself, creates a <i>product</i>, but not a <i>commodity</i>. As a self-sustaining producer he has nothing to do with society. But to produce a <i>commodity</i>, a man must not only produce an article satisfying some <i>social</i> want, but his labour itself must form part and parcel of the total sum of labour expended by society. It must be subordinate to the <i>{division-of-labour:sg} within society</i>. It is nothing without the other divisions of labour, and on its part is required to <i>integrate</i> them."
+  p00008:
+    covers: [p00008]
+    based_on: sha256:566613b3422e28c312fe1f8d2aeacf1156d8034bee0cefaeed383e5e9d133e6b
+    revision: 1
+    ai_assisted: true
+    text: If we consider <i>commodities as values</i>, we consider them exclusively under the single aspect of <i>realized, fixed</i>, or <i>crystallized social labour</i>. In this respect they can <i>differ</i> only by representing greater or smaller quantities of labour. A greater amount of labour may be worked up in a silken handkerchief than in a brick. How does one measure <i>quantities of labour</i>? By the <i>time the labour lasts</i>, measuring labour by the hour or the day. All sorts of labour are reduced to average or simple labour as their unit. A {commodity:sg} has <i>a value</i>, because it is a <i>crystallization of social labour</i>. The greatness of its value depends upon the relative mass of labour necessary for its production. The <i>relative values of commodities</i> are determined by the <i>quantities of labour realized and fixed in them</i>. Quantities of commodities that can be produced in the <i>same time of labour</i> are <i>equal</i>.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:b088cf9884e740a3460d6b05de3750250597ffb61dbb6f1e753c54ad70a16f18
+    revision: 1
+    ai_assisted: true
+    text: Does there exist a vast difference between determining values by <i>wages</i>, and determining them by the <i>quantities of labour</i> necessary for production? Reward for labour and quantity of labour are completely different things. Suppose equal quantities of labour are fixed in a quarter of wheat and an ounce of gold. I use this example because Benjamin Franklin used it in his 1721 essay, <i>A Modest Enquiry into the Nature and Necessity of a Paper Currency</i>. There Franklin became one of the first to discover the true nature of value.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:8e7e5bd5d8504a24d4ad11387ef6482b08e4dd874ab5c10b455f40256eca08d0
+    revision: 1
+    ai_assisted: true
+    text: Suppose a quarter of wheat and an ounce of gold are equal values because they crystallize equal amounts of average labour. In determining their relative values, do we refer to the wages of the farm labourer and the miner? Not at all. We leave it indeterminate how their labour was paid, or whether {wage-labour:sg} was employed. Wages may be unequal, or deviate in any proportion from the value of products. Wages are limited by the values of products, but the values of products are not limited by wages. Determining values of commodities by the <i>quantities of labour fixed in them</i> is completely different from determining values by <i>wages</i>. That second method is mere circular reasoning. This point will become clearer as our inquiry advances.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:628ca2e91eb4841fa534c759084153332bb0e10abb58ecb1efdd12f0c2b87d53
+    revision: 1
+    ai_assisted: true
+    text: In calculating the exchangeable value of a {commodity:sg}, we must add the labour previously worked up in raw materials, tools, machinery, and buildings. Cotton yarn crystallizes labour added during spinning, labour in the raw cotton, coal and oil, and labour in the steam-engine and spindles. {instruments-of-production:sg} serve repeatedly during production. If they were used up at once, their whole value would transfer immediately to the product. But as a spindle wears out gradually, we calculate its average wear and tear per day. In this way we calculate how much value the spindle transfers to yarn spun daily.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:fa5af4d620704a0910b2baffca7d7b205b318b5b04b007bc217f61f1688e3f50
+    revision: 1
+    ai_assisted: true
+    text: It might seem that the lazier or clumsier a man is, the more valuable his {commodity:sg}, because he takes longer to produce it. This would be a sad mistake. I used the qualification “<i>social</i> labour”. Saying that value is determined by the <i>quantity of labour</i> crystallized in a commodity means <i>the quantity of labour necessary</i> for its production in a given state of society. This requires average conditions of production, with average intensity and skill. When the power-loom competed with the hand-loom in England, weaving time was cut in half. The hand-loom weaver now worked eighteen hours daily, yet his product represented only ten hours of socially necessary labour. His product of twenty hours had no more value than his former product of ten hours.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:83d9ad2a49a46b5465bbfe1130b76e3186460f4e81d7e038b1e280c93bb5f1f7
+    revision: 1
+    ai_assisted: true
+    text: Socially necessary labour regulates the exchangeable values of commodities. Therefore, every increase in the labour needed to produce a {commodity:sg} raises its value, and every decrease lowers it.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:55bd7dd8a4ea45aa8abf5dcda5327c9b9db63dcc7b53a96f9d742a883d8c85be
+    revision: 1
+    ai_assisted: true
+    text: The quantity of labour necessary for producing a {commodity:sg} changes continuously with changes in the productive powers of labour. Higher productive powers finish more produce in a given time; lower powers finish less. If population requires farming less fertile soils, agricultural produce requires more labour, and its value rises. With modern {means-of-production:sg}, a spinner converts far more cotton into yarn each day than with a spinning wheel. Every pound of cotton absorbs vastly less spinning labour than before. Therefore, the value added to each pound of cotton decreases greatly, and the value of yarn falls accordingly.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:5e76b56099a47b1331d0c89c4bcb936ee18fdd9917e06d9cac78d6c91bb6b261
+    revision: 1
+    ai_assisted: true
+    text: "Apart from natural energies and acquired abilities of different peoples, the productive powers of labour depend principally: —"
+  p00016:
+    covers: [p00016]
+    based_on: sha256:f0565717816e1366c4fdd10e91f9b83fbc02c0a393a1ec0ef0164ea1cf81f7e8
+    revision: 1
+    ai_assisted: true
+    text: Firstly. Upon the <i>natural</i> conditions of labour, such as fertility of soil, mines, and so forth.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:eb88d7c5a55f530e0e6fc421e84ef9a5e9da30ccc07906f7f12dd0e17060d99d
+    revision: 1
+    ai_assisted: true
+    text: Secondly. Upon the improvement of the <i>social powers of labour</i>. These derive from large-scale production, concentration of {capital:sg}, division of labour, machinery, chemical methods, and faster transport. Science enlists natural forces into the service of labour, developing its cooperative character. The greater the productive powers of labour, the less labour is bestowed upon produce, and the smaller its value.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:7bdff07252329ad406ede57fcf80f23a03e6b5a20aef7ddd6cee941e411c5b3c
+    revision: 1
+    ai_assisted: true
+    text: <i>The values of commodities are directly as the times of labour employed in their production, and are inversely as the productive powers of the labour employed.</i>
+  p00019:
+    covers: [p00019]
+    based_on: sha256:f941ff8ce633112beb975d265fb69783a0c08e6639f233b9956c9efb926004bb
+    revision: 1
+    ai_assisted: true
+    text: Having till now spoken of <i>value</i>, I shall add a few words about <i>price</i>, which is a peculiar form assumed by value.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:13ef7fd70fdfcc9547f8f0a21b24f700d34c3f57a0644b8430130215ffaf66ca
+    revision: 1
+    ai_assisted: true
+    text: Price is the <i>monetary expression of value</i>. The values of commodities in England are expressed in gold prices, while on the Continent they are mainly expressed in silver prices. The value of gold or silver is regulated by the quantity of labour necessary for getting them. Converting value into price gives the values of all commodities an independent and uniform form. It expresses them as quantities of equal social labour. Because price is the monetary expression of value, Adam Smith called it <i>natural price</i>, and French physiocrats called it “<i>prix necessaire</i>”.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:b452a11734d94b2abac8132a1b05e25741d79a3880b584b9391554676e5ad5ea
+    revision: 1
+    ai_assisted: true
+    text: What is the relation between <i>natural prices</i> and <i>market prices</i>? The market price is the same for all commodities of the same kind. It expresses the average social labour necessary to supply the market under average conditions of production.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:c0dca96886b3dbcbb1a50eca57d501a59f7fe5e7ccb0488744b203f7741894a7
+    revision: 1
+    ai_assisted: true
+    text: "So far the market price of a {commodity:sg} coincides with its value. Oscillations of market prices above or below value depend on supply and demand. As Adam Smith says:"
+  p00023:
+    covers: [p00023]
+    based_on: sha256:a3d6e1e6755a0c34a60f639bd00f4390353caf49ae911d45f121e61225c2e9f5
+    revision: 1
+    ai_assisted: true
+    text: “The natural price is the central price to which the prices of commodities are continually gravitating. Different accidents may sometimes keep them suspended a good deal above it, and sometimes force them down even somewhat below it. But whatever may be the obstacles which hinder them from settling in this center of repose and continuance, they are constantly tending towards it.”
+  p00024:
+    covers: [p00024]
+    based_on: sha256:45c427aac0813df5701b906f45b0e7951f9584f5915b684b4791a4a21bafd2bf
+    revision: 1
+    ai_assisted: true
+    text: If supply and demand balance each other, market prices correspond with natural prices or values. Consider market prices over longer periods, as Thomas Tooke did in his <i>History of Prices</i>. You will find that fluctuations compensate each other. Ups and downs balance out, so that commodities sell on average at their natural values.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:dd260c635fdc56ac898e9ddf75f3951c1fb7c7c0c968c245f324ef86c2a80f90
+    revision: 1
+    ai_assisted: true
+    text: If commodities sell on average at their values, profits cannot spring from selling goods above their value. What a man constantly wins as a seller he would lose as a buyer. Selling goods too dear to someone who took your money cannot enrich you. To explain profits, you must assume that commodities are on average <i>sold at their real values</i>. Profits are derived from selling commodities at their values, in proportion to the labour realized in them. If you cannot explain profit this way, you cannot explain it at all. Scientific truth is always a paradox when judged by everyday appearance.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:f62bdbb75f4d885737c0ffccf1d9b69343d37031e928a1576e3b57c5c96b96f6
+    revision: 1
+    ai_assisted: true
+    text: VII. Labour Power
+  p00027:
+    covers: [p00027]
+    based_on: sha256:8fa0bfbc6be01a37a96eab043f13d6abf23b4347e68dd60eaba17092da88fcb0
+    revision: 1
+    ai_assisted: true
+    text: Having analyzed value in general, we must examine the specific <i>value of labour</i>. Here again we face a seeming paradox. Workers believe that what they sell daily is their Labour, and that Labour has a price and value. However, there exists no such thing as the <i>value of labour</i> in the common meaning of the word. If value is the necessary labour in a commodity, what is the value of a ten hours working day? Ten hours' labour.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:742d4fc832b25d4e31658763da834a86f251ac0c4d261191b3a6f44a95ae6cef
+    revision: 1
+    ai_assisted: true
+    text: Saying the value of a ten hours working day equals ten hours' labour is nonsensical circularity. Once we discover the true meaning of “<i>value of labour</i>”, we can explain this confusing phrase. In astronomy, discovering the true movement of celestial bodies explains their apparent movements.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:e10910d09e0374796a40b1dcbd21e8ed1fef8fc1c91a3b458214f0007531726a
+    revision: 1
+    ai_assisted: true
+    text: What the worker sells is not directly his <i>labour</i>, but his <i>{labour-power:sg}</i>, which he temporarily makes over to the capitalist. Under English and Continental laws, a maximum time is fixed for selling labour-power. If allowed to sell it for his lifetime, he would become a lifelong slave.
+  p00030:
+    covers: [p00030]
+    based_on: sha256:8612701a73481af65461edc8bf1991630d03529052604591845ebe1cad36f9c5
+    revision: 1
+    ai_assisted: true
+    text: "Thomas Hobbes in his <i>Leviathan</i> touched upon this truth overlooked by later thinkers. He wrote: “<i>the value or worth of a man</i> is, as in all other things, his <i>price</i>: that is so much as would be given for the <i>use of his power</i>”. From this starting point, we can determine the value of {labour-power:sg}."
+  p00031:
+    covers: [p00031]
+    based_on: sha256:cdfc48f35d34ebd26b97d33a1054b5ee8ac0524ebb16f987e5420e62ed6b7c0c
+    revision: 1
+    ai_assisted: true
+    text: Why do buyers possess land, machinery, and {means-of-subsistence:sg}, while sellers have only labour-power to sell? Economists call this “<i>previous accumulation</i>”, but it should be called <i>original expropriation</i>. Historical processes decomposed the original union between the worker and his instruments of labour. Once established, this separation reproduces itself on a growing scale until a revolution in the {mode-of-production:sg} restores that union in a new form.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:5f2bd026623e4d1bdc875b7dd7c501a8afc25f8e879c38416ee20b89abce0c6a
+    revision: 1
+    ai_assisted: true
+    text: What, then, is the <i>value of {labour-power:sg}</i>?
+  p00033:
+    covers: [p00033]
+    based_on: sha256:5619b4474c929be26a2f695ecd5f270878cc17c49246dab54acbbd19e37869bc
+    revision: 1
+    ai_assisted: true
+    text: Like every other {commodity:sg}, its value is determined by the labour necessary to produce it. A certain mass of necessities must be consumed to maintain the worker's life. Beside necessities for his own maintenance, the worker needs goods to rear children. These children must replace him on the labour market and perpetuate the working class. Skill and training require additional costs. The value of different labour-powers differs with their cost of production. Demanding equal wages under the wages system is like demanding freedom under slavery. The <i>value of {labour-power:sg}</i> is determined by the <i>value of {means-of-subsistence:sg}</i> needed to maintain and perpetuate the labourer.
+  p00034:
+    covers: [p00034]
+    based_on: sha256:04fd508e30122383f41037e8dfd4a43cf3cf646b94190ab2bb7fccd2eaa3f69d
+    revision: 1
+    ai_assisted: true
+    text: VIII. Production of Surplus Value
+  p00035:
+    covers: [p00035]
+    based_on: sha256:baaeae8a7fdd73427c80eb8e20a07932ab4662cbb4c5702adc29e5f27a2f5b27
+    revision: 1
+    ai_assisted: true
+    text: Suppose the daily necessities of a worker require six hours of average labour to produce. Suppose six hours of labour equal 3 shillings in gold. Then 3 shillings is the daily value of that man's {labour-power:sg}. By working six hours daily, he reproduces his daily maintenance.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:0126c1ab89959989fd26521fea88318bb69e1c3b9f80a3a42bf4e3c64bc92a73
+    revision: 1
+    ai_assisted: true
+    text: Our man must sell his {labour-power:sg} to a capitalist. If he sells it at 3 shillings daily, he sells it at its value. Suppose him to be a spinner. In six hours he adds 3 shillings of value to the cotton, replacing his wages. But in that case, no surplus value goes to the capitalist.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:c5c1c2014113dbe2ee47a4bc8c800e20d88c7219cb79af1e76b2122094d8d1af
+    revision: 1
+    ai_assisted: true
+    text: By buying {labour-power:sg}, the capitalist acquires the right to use that commodity for the whole working day. You use labour-power by making the worker work, just as you use a machine by running it.
+  p00038:
+    covers: [p00038]
+    based_on: sha256:b31ec659910060e9d2fa5cf5ec680bf2d5a1581089453b68ced85496a83b0b5e
+    revision: 1
+    ai_assisted: true
+    text: The value of {labour-power:sg} is distinct from its exercise, just as horse food is distinct from the hours a horse carries a rider. The spinner needs six hours of work to reproduce his 3 shillings wage. But the capitalist makes him work twelve hours daily. Over and above the six necessary hours, the worker performs six hours of <i>surplus labour</i>. This surplus labour produces <i>surplus value</i>. The capitalist advances 3 shillings, and receives a product containing twelve hours of labour, worth 6 shillings. One half pays wages anew, and the other half forms surplus value for which the capitalist pays nothing.
+  p00039:
+    covers: [p00039]
+    based_on: sha256:e82b3e4dee29db459718e9ce3814a281868130a8b546ba625fee556d2b5ea8f1
+    revision: 1
+    ai_assisted: true
+    text: The <i>rate of surplus value</i> depends on the ratio between necessary labour time and the surplus labour performed for the capitalist. It depends on how far the working day is prolonged beyond necessary labour time.
+  p00040:
+    covers: [p00040]
+    based_on: sha256:6b02c9538d321d0ba831803bad7f90b7db536fce4c1044d8dd2b9303abdeafbc
+    revision: 1
+    ai_assisted: true
+    text: IX. Value of Labour
+  p00041:
+    covers: [p00041]
+    based_on: sha256:2462dd64d175fb59a4d5ac3a1abaaf5783c79c987b5c47a34a9ae3b51cad2e62
+    revision: 1
+    ai_assisted: true
+    text: What is called the “value of labour” is really the value of {labour-power:sg}. Because the worker receives wages after working, the price of labour-power appears as the price of labour itself. Suppose the price of his {labour-power:sg} is 3 shillings, representing six hours of labour. If he works twelve hours, he views those 3 shillings as the value of twelve hours, although twelve hours produce 6 shillings in value.
+  p00042:
+    covers: [p00042]
+    based_on: sha256:45ed8c887fe7250391a571415db3e16d72a8939d9f71c4761bb8d7144e62cea1
+    revision: 1
+    ai_assisted: true
+    text: Firstly. The price of {labour-power:sg} takes the false appearance of the price of labour itself.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:58468b6da67c219dab870437809d77453c6b41f323a0ade68435408b45edd926
+    revision: 1
+    ai_assisted: true
+    text: Secondly. Only one part of the worker's daily labour is <i>paid</i>, while the other part is <i>unpaid</i>. That unpaid labour forms the fund from which <i>surplus value</i> or <i>profit</i> arises. Yet it seems as if all his labour was paid.
+  p00044:
+    covers: [p00044]
+    based_on: sha256:2e5fc22e7a7931a88516bf39e5ed3ddd02b50d308869ed5653d78061117f5ddc
+    revision: 1
+    ai_assisted: true
+    text: This false appearance distinguishes {wage-labour:sg} from other historical forms of labour. Under wage labour, even unpaid labour appears paid. With the slave, even that part of labour which maintains his life appears unpaid. Because no purchase occurs, all slave labour seems given for nothing.
+  p00045:
+    covers: [p00045]
+    based_on: sha256:e5ab2d7890cff9e5f55701b4d5b0b8d951369c1bfec9b4c6e29eeebd53925af7
+    revision: 1
+    ai_assisted: true
+    text: Take the peasant {serf:sg} in Eastern Europe. He worked three days on his own field, and three days on his lord's estate. Here paid and unpaid labour were visibly separated in time and space. Liberals expressed moral indignation at forcing a man to work for nothing.
+  p00046:
+    covers: [p00046]
+    based_on: sha256:a96288a4520a6ef4afe6df90608d6cb205bc09aa0393dd2da5a3cca884b3e7a9
+    revision: 1
+    ai_assisted: true
+    text: In reality, both cases are the same. A man may work three days for himself and three days on his lord's estate. Or he may work six hours for himself and six hours for his employer in a factory. In the factory, contract and wages conceal the unpaid labour.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:083a4f7dcc0b2c761a49ec790220e871a65d2075f2c794c9bb6541621df16552
+    revision: 1
+    ai_assisted: true
+    text: When I use the phrase “value of labour”, I use it only as popular slang for “value of {labour-power:sg}”.
+  p00048:
+    covers: [p00048]
+    based_on: sha256:d520b0230c5c45a836b36ab02f0055400e23d3945333262511a139d92bd0af15
+    revision: 1
+    ai_assisted: true
+    text: X. Profit is Made by Selling a Commodity at its Value
+  p00049:
+    covers: [p00049]
+    based_on: sha256:3b1905a073226915193ce3a5d330c6be9a679b5dfc9365b8399feaf7de957aee
+    revision: 1
+    ai_assisted: true
+    text: Suppose twelve hours of labour equal 6 shillings, and the value of {labour-power:sg} is 3 shillings for six hours. If raw materials and machinery contain twenty-four hours of labour, their value is 12 shillings. Adding twelve hours of labour creates a total value of 18 shillings. Wages paid are only 3 shillings, leaving six hours of unpaid surplus labour. By selling the {commodity:sg} at its real value of 18 shillings, the capitalist pockets 3 shillings of surplus value. He makes his profit by selling the commodity at its value.
+  p00050:
+    covers: [p00050]
+    based_on: sha256:9d353d18e5ca9b4f6a9535b5e84dcfe29a25ac80a2ad6663fc16cd58b99d3870
+    revision: 1
+    ai_assisted: true
+    text: The value of a {commodity:sg} contains both paid labour and unpaid labour. By selling it at its value, the capitalist sells it at a profit. He sells what cost him wages, and also what cost him nothing, though it cost the worker labour. The cost of a commodity to the capitalist and its real cost are different things.
+  p00051:
+    covers: [p00051]
+    based_on: sha256:fc3edd88c4f79eddaf4e6e4830ef3c4daff90811d049f1fbbf06c739a8a9f77d
+    revision: 1
+    ai_assisted: true
+    text: Normal and average profits are made by selling commodities not above, but at their real values.
+  p00052:
+    covers: [p00052]
+    based_on: sha256:78e7918bf106d9770213cc2dd15e1512c87557e71340bba71e4cd106c9b93136
+    revision: 1
+    ai_assisted: true
+    text: XI. The Different Parts into which Surplus Value is Decomposed
+  p00053:
+    covers: [p00053]
+    based_on: sha256:1061635bbd602d52a865b08942250f8e4d5d07367ca7d9139da2e04fa6fe22ef
+    revision: 1
+    ai_assisted: true
+    text: The surplus value realized from unpaid labour I call profit. The employing capitalist does not keep all of this profit. The landlord claims rent, and the money-lender claims interest. There remains to the employing capitalist only industrial or commercial profit.
+  p00054:
+    covers: [p00054]
+    based_on: sha256:674302b2f30acfefa3d1778b4a6b6d1b94380b9066e7f36afcb4eb3b0e16229b
+    revision: 1
+    ai_assisted: true
+    text: The laws dividing surplus value among these three classes lie beyond our subject.
+  p00055:
+    covers: [p00055]
+    based_on: sha256:892d631f6406450ad46946674ce2d26e23ad7ee29b17040d04f90edb3b22dc7c
+    revision: 1
+    ai_assisted: true
+    text: Rent, interest, and industrial profit are merely different names for parts of the surplus value in the {commodity:sg}. They are derived from unpaid labour alone. Neither land nor {capital:sg} creates them. Land and capital merely allow their owners to claim shares of extracted surplus value.
+  p00056:
+    covers: [p00056]
+    based_on: sha256:e7cdc126e4996a7c1ecb151e20ffd535151d12a05a3cd759f234ecf680b05c9a
+    revision: 1
+    ai_assisted: true
+    text: The employing capitalist immediately extracts this surplus value from the labourer. Upon this relation the whole wages system hinges. Some citizens were wrong to treat this relation between employer and wage labourer as secondary. A rise of prices may affect the capitalist, landlord, and tax-gatherer unequally, but the extraction of surplus value remains fundamental.
+  p00057:
+    covers: [p00057]
+    based_on: sha256:5a624fc659757090e4e26a7cccb768ca59e1e4511174e8b79d510513d52bf0f8
+    revision: 1
+    ai_assisted: true
+    text: Another consequence follows from what has been stated.
+  p00058:
+    covers: [p00058]
+    based_on: sha256:ca6b0e930523d7d64214e1ef4bff7ba12feae9473d1ecb94cdd22f2a50c5139f
+    revision: 1
+    ai_assisted: true
+    text: "The value of {means-of-production:sg} used up forms no revenue, but replaces capital. Surplus value contained in the {commodity:sg} resolves itself into parts bearing three different names: profit, interest, and rent."
+  p00059:
+    covers: [p00059]
+    based_on: sha256:fc8c4fc972fbad5658fb16a144536b97eed669f2617e4810b75df853c365f3fc
+    revision: 1
+    ai_assisted: true
+    text: It is false to say that commodity value is formed by adding these three independent values together.
+  p00060:
+    covers: [p00060]
+    based_on: sha256:b385e62a6130ba3ce4516ce0e9220fd8be75edf3652531bfbe2ca39054617532
+    revision: 1
+    ai_assisted: true
+    text: If twelve hours of labour include six hours of unpaid labour, that surplus labour adds 3 shillings of surplus value. These 3 shillings constitute the entire fund divided among capitalist, landlord, and money-lender. Popular economics mistakenly confuses decomposing a given value with building value by adding arbitrary parts.
+  p00061:
+    covers: [p00061]
+    based_on: sha256:5df407bfcd28ea2ceae2a9679cc6e6bf7887fc8476772187312f01c7f8fce7b4
+    revision: 1
+    ai_assisted: true
+    text: Total profit of 100 Pounds is the absolute amount of profit. The ratio of those 100 Pounds to capital advanced is the <i>rate of profit</i>.
+  p00062:
+    covers: [p00062]
+    based_on: sha256:ef95905f914c331cafffee8b231eedd59b760aac4afbd68322968596ea8467a0
+    revision: 1
+    ai_assisted: true
+    text: Suppose 100 Pounds is advanced in wages, and surplus value created is 100 Pounds. Measured against wages, the rate of profit is one hundred percent.
+  p00063:
+    covers: [p00063]
+    based_on: sha256:6ed8bdfda72e8d75952b09967b6d922454bfb84f2f599499890300ccd24c55a2
+    revision: 1
+    ai_assisted: true
+    text: Now consider total capital advanced, say 500 Pounds. If 400 Pounds represents raw materials and machinery, the rate of profit is twenty percent. Profit of 100 is one-fifth of total capital advanced.
+  p00064:
+    covers: [p00064]
+    based_on: sha256:b28a9adc03f208c034cc2a3cbb2ae666747b4e51ad83c58b0ec1f5bb3a9601de
+    revision: 1
+    ai_assisted: true
+    text: The first mode of expressing the profit rate shows the real degree of the {exploitation:sg} of labour. The second mode is useful for concealing the unpaid labour extracted by capital.
+  p00065:
+    covers: [p00065]
+    based_on: sha256:2753b178a308a398045e4ac83ee42b39becc0c00bde0a35a60f9e7dd142eecad
+    revision: 1
+    ai_assisted: true
+    text: In my remaining remarks, I use the word <i>profit</i> for the total surplus value extracted by the capitalist. When using the term <i>rate of profit</i>, I measure profits against capital advanced in wages.

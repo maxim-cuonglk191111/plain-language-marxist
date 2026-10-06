@@ -1,0 +1,29 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch02
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00029]
+    text: |-
+      Marx distinguishes between labour and labour-power. Workers sell their capacity to work for a fixed time, not the actual labour performed.
+
+      The capitalist uses this capacity to extract surplus labour beyond the hours needed to reproduce the worker's wage.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00031]
+    text: |-
+      Classical economists treated initial wealth as personal savings. Marx calls this original expropriation.
+
+      Violent historical processes, such as land enclosures, separated direct producers from their means of production.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00046]
+    text: |-
+      Feudal serfs worked several days on their own plots and other days on their lord's land.
+
+      Under capitalism, the money wage conceals this division, making all working hours appear paid.
+    ai_assisted: true

@@ -1,0 +1,35 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch01
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00004]
+    text: |-
+      John Weston was an Owenite carpenter and member of the General Council of the First International.
+
+      In 1865, Weston argued that wage increases were futile because capitalists would simply raise commodity prices.
+
+      Marx delivered this lecture to arm the International with a scientific defence of trade union struggles.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00024]
+    text: |-
+      The Ten Hours Act of 1847 limited the factory working day for women and young people in Britain.
+
+      Economist Nassau Senior claimed capitalists made their entire profit during the twelfth hour of labour.
+
+      Despite dire bourgeois predictions, shorter hours led to higher wages, increased employment, and cheaper commodities.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00051]
+    text: |-
+      In 1817, David Ricardo published his Principles of Political Economy and Taxation.
+
+      Ricardo proved that rising wages do not raise commodity prices across the board.
+
+      Instead, a general rise in wages causes a fall in the capitalist rate of profit.
+    ai_assisted: true

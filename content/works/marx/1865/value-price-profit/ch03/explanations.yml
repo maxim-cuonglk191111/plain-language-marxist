@@ -1,0 +1,29 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch03
+explanations:
+  e001:
+    kind: historical_context
+    targets: [p00013]
+    text: |-
+      During the wars against the French Revolution, British employers extended the working day to fourteen or eighteen hours.
+
+      A 1765 pamphlet proposed workhouses as "Houses of Terror" enforcing twelve hours of daily child labour.
+    ai_assisted: true
+
+  e002:
+    kind: historical_context
+    targets: [p00036]
+    text: |-
+      As industry develops, capitalists invest more in machinery and raw materials than in wages.
+
+      This changing composition of capital means employment grows much slower than total capital accumulation.
+    ai_assisted: true
+
+  e003:
+    kind: historical_context
+    targets: [p00039]
+    text: |-
+      Marx argues that unions must look beyond defensive wage disputes.
+
+      Instead of demanding a fair wage, the working class must organise for the total abolition of the wages system.
+    ai_assisted: true

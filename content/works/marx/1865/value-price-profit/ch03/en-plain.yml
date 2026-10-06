@@ -1,0 +1,263 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch03
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:a2dd56cd81d908911ca7c10e7cd129ff2846314eff104997af70a351b62dfcd7
+    revision: 2
+    ai_assisted: true
+    text: XII. General Relation of Profits, Wages, and Prices
+  p00002:
+    covers: [p00002]
+    based_on: sha256:d66464c318105226eb8bfe36375456088f79c5624623d9e163f6ff866b4a407f
+    revision: 2
+    ai_assisted: true
+    text: Deduct from the value of a {commodity:sg} the value replacing raw materials and other {means-of-production:sg} used upon it, which represents <i>past</i> labour. The remainder of its value resolves into the labour added by the worker <i>last</i> employed. If that worker works twelve hours daily, and twelve hours of average labour crystallize in six shillings of gold, this additional value of six shillings is the <i>only</i> value his labour created. This given value is the only fund from which worker and capitalist draw their shares. It is the only value divided into wages and profits. This total value will not be altered by the proportions in which it is divided between the two parties. Nothing changes if you substitute twelve million working days for one worker.
+  p00003:
+    covers: [p00003]
+    based_on: sha256:afce7c186abaa4e66f6660cb2deb808928d88512894dcf2a0e24e29359fb35e0
+    revision: 2
+    ai_assisted: true
+    text: Since capitalist and worker divide this limited value, the more one gets, the less the other gets. Whenever a quantity is given, one part increases as the other decreases. If wages change, profits change in the opposite direction. If wages fall, profits rise; if wages rise, profits fall. If the worker receives three shillings, half the value created, the rate of profit is 100 percent, because the capitalist also receives three shillings. If the worker receives two shillings, working one third of the day for himself, the capitalist gets four shillings, and the profit rate is 200 per cent. If the worker receives four shillings, the capitalist receives two, and the profit rate sinks to 50 percent. All these variations do not affect the value of the commodity. A general rise of wages results in a fall of the general rate of profit, but does not affect values.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:3e5ec6f367a9eb084c493c1658160c22b3d0a1d5e5b7bd197fd65c5c773f7ab5
+    revision: 2
+    ai_assisted: true
+    text: Values of commodities are determined by total quantities of labour fixed in them, not by the division into paid and unpaid labour. But the value of single commodities does not remain constant. The mass of commodities produced in a given time depends upon the <i>productive power</i> of labour, not upon its length. A working day of twelve hours may produce twelve pounds of yarn with higher productivity, or only two pounds with lower productivity. If twelve hours equal six shillings, twelve pounds of yarn cost six shillings in the first case, and two pounds cost six shillings in the second. One pound of yarn costs sixpence in one case, and three shillings in the other. The price difference results entirely from productivity. One hour of labour is realized in one pound of yarn with higher productivity, while six hours are realized with lower productivity. The price of a pound of yarn is only sixpence, although wages are relatively high and the profit rate low. It is three shillings in the other case, although wages are low and the profit rate high. High-priced labour produces cheap commodities, and low-priced labour produces dear commodities, in accordance with the general law of value.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:a3b0d5d298672dcc7d66ee8c6ef62ec9cef53fe0b7f0a4fd9347add9a0f9ec36
+    revision: 2
+    ai_assisted: true
+    text: XIII. Main Cases of Attempts at Raising Wages or Resisting their Fall
+  p00006:
+    covers: [p00006]
+    based_on: sha256:e8468329df1ca0a8d04309d76f7f928519892c4b70396ee1d3a7d7e771e4a39f
+    revision: 2
+    ai_assisted: true
+    text: Let us now consider the main cases in which a rise of wages is attempted or a wage cut resisted.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:4e529933ec96ca0dc65adf570d265a049d481f1d2f0284ca171225e8f1da6a38
+    revision: 2
+    ai_assisted: true
+    text: 1. We have seen that the <i>value of {labour-power:sg}</i>, or the <i>value of labour</i>, is determined by the value of necessities required to produce it.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:37c373978f4cc8eb85f3f115c70ee1d9d20585fa81c84b6f14c7ac0c61f6d254
+    revision: 2
+    ai_assisted: true
+    text: Suppose the daily necessities of a worker represent six hours of labour, equal to three shillings. If the working day is twelve hours, the capitalist pays him three shillings, half the day is unpaid labour, and the profit rate is 100 percent. Now suppose that due to lower productivity, necessities rise from three to four shillings. The value of labour rises by one third, or 33 1/3 percent. Eight hours are now required to reproduce the worker's maintenance. Surplus labour sinks from six hours to four, and the profit rate falls from 100 to 50 percent. In demanding higher wages, the worker only insists on getting the increased value of his labour. If wages did not rise to compensate for dearer necessities, the price of labour would sink below its value, and the worker's living standard would deteriorate.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:ee3e0408bccb56b122e08a85a22854a32fb93d844683bf3aa75fbbefa456f5c0
+    revision: 2
+    ai_assisted: true
+    text: A change might also occur in the opposite direction. Increased productivity might reduce the cost of daily necessities from three to two shillings, requiring only four hours of labour instead of six. With two shillings the worker could buy as many necessities as before. The value of labour would have fallen, but it would command the same goods. Profits would rise from three to four shillings, and the profit rate from 100 to 200 percent. Although the worker's absolute living standard remained the same, his <i>relative</i> wages and social position compared to the capitalist would be lowered. In resisting this reduction of relative wages, he tries to share in the increased productivity of his own labour. After the abolition of the Corn Laws, English factory lords reduced wages ten per cent. Workers resisted, and the ten per cent lost was afterwards regained.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:ea20fd5dca9f5104461fb2a2498a65baed80f8b4430545c326fcac0b934a67f7
+    revision: 2
+    ai_assisted: true
+    text: 2. The value of necessities and labour might remain the same, while their money prices change due to a change in the value of money. If richer mines allow two ounces of gold to be produced with the labour formerly needed for one ounce, the value of gold falls by half, or fifty per cent. All commodities and labour are then expressed in twice their former money prices. Twelve hours of labour, formerly six shillings, are now expressed in twelve shillings. If the worker's wages remain three shillings instead of rising to six, the money price of his labour equals only half its real value, and his standard of life deteriorates fearfully.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:2e93d6eb061850a3f08b59ced074b8feda8d790727f9a3139785804f90ffab95
+    revision: 2
+    ai_assisted: true
+    text: Nothing would have changed except the money names of those values. Saying the worker should not demand a proportionate wage rise means he must be content to be paid with names instead of things. Whenever money depreciates, capitalists seize the chance to defraud the worker. Economists state that new gold discoveries have depreciated precious metals, explaining simultaneous demands for higher wages across the Continent.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:9755d12a5a44668c94ddff774888576d696504f0edffd02eda3699d32556a367
+    revision: 2
+    ai_assisted: true
+    text: 3. We have supposed the working day has fixed limits. But the working day has no constant limits. Capital constantly tends to stretch it to its physical maximum to increase surplus labour and profit. The more capital prolongs the working day, the more unpaid labour it appropriates.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:5128898dd5fb3b292b51c2360ca81a80262253b65f787b53e528d15a65319bb7
+    revision: 2
+    ai_assisted: true
+    text: During the seventeenth and eighteenth centuries, ten hours was the normal working day across England. During the anti-Jacobin war, capital prolonged the working day to twelve, fourteen, and eighteen hours. Thomas Malthus declared in an 1815 pamphlet that this abuse attacked the life of the nation at its source. In 1765, an anonymous author published <i>An Essay On Trade</i>, proposing workhouses as “Houses of Terror” with twelve hours of daily work. By 1832, capitalists and ministers declared twelve hours necessary labour for children under twelve years.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:f5a53e4907484ef0fe9ba3f653f3a81c35b1ec363cfa8a1513112c53a9a490b1
+    revision: 2
+    ai_assisted: true
+    text: The worker sells {labour-power:sg} to maintain it, not to destroy it. Selling it at its weekly value assumes it will not suffer two weeks' wear and tear in one week. A machine worth 1000 Pounds used up in ten years adds 100 Pounds yearly; used up in five years it adds 200 Pounds yearly. But man decays faster under overwork than a machine.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:9e83318eb1513869136d3130fddf31576f8c05f2cfa3eba431a8baec00d3b297
+    revision: 2
+    ai_assisted: true
+    text: Working men who fight to shorten the working day or check overwork fulfill a duty to themselves and their race. They set limits to the tyrannical usurpations of {capital:sg}. Time is the room of human development. A man whose whole life is absorbed by labour for the capitalist is less than a beast of burden. He is a mere machine for producing foreign wealth, broken in body and brutalized in mind.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:f812878ea6787413c611b5f47a2e7154e160b1163e17d718f4342f5e843e1d1e
+    revision: 2
+    ai_assisted: true
+    text: In prolonging the working day, the capitalist may pay higher wages and still lower the value of labour if pay does not match the extra labour extracted. Statisticians boast that average family wages in Lancashire have risen. They forget that wives and children are now thrown under the wheels of capital, and higher family pay does not match the extra surplus labour extracted.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:c4603561c03ccb3f6f03e4c45698df2cea51e58d64a6753dcc8097a8971ae868
+    revision: 2
+    ai_assisted: true
+    text: Even with a fixed working day under Factory Acts, higher wages may be needed if the intensity of labour increases. Speeding up machinery forces a worker to expend as much energy in one hour as he formerly did in two. If intensity increases too much, ten hours become as ruinous as twelve hours were before. Workers who struggle for higher wages resist this depreciation of their labour.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:52e48523c8d2e02e67f29553b2db359e1862fb76a8f3f0a6774ca53e44d177dc
+    revision: 2
+    ai_assisted: true
+    text: 4. Capitalist production moves through periodical cycles of quiescence, growing animation, prosperity, overtrade, crisis, and stagnation. Market prices and profits follow these phases.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:2137a8776a5d2913b8fd1df9a3b7e43ef16ab4814e3f9f2d57fd1f816560363e
+    revision: 2
+    ai_assisted: true
+    text: Taking the average of the industrial cycle, market prices of commodities are regulated by their values. In crises and stagnation, wages are lowered. If the worker did not battle for wage increases during prosperous phases, he would not even receive his average wages over the cycle. Under capitalism, labour is a {commodity:sg} and must pass through these fluctuations to fetch an average price equal to its value.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:5f3f9154e4ba0150d4b052fb6ee61e2ef8974b8a374e8a47c472f8c81a23c3ea
+    revision: 2
+    ai_assisted: true
+    text: It is absurd to treat labour as a {commodity:sg} while exempting it from the laws regulating commodity prices. A slave receives fixed maintenance; a wage labourer does not. The worker must win wage rises in good times to compensate for wage cuts in bad times. If he accepted the capitalist's will as economic law, he would share the slave's miseries without the slave's security.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:d2a4d4e7ad52aadcb26852d6560bccbbaae142573ea58c41ad1f2860341a30c6
+    revision: 2
+    ai_assisted: true
+    text: 5. In ninety-nine cases out of a hundred, struggles for higher wages are reactions against previous actions of {capital:sg}. They follow changes in productivity, money values, the length or intensity of the working day, and industrial cycles. Treating wage struggles in isolation from these causes rests on false premises and leads to false conclusions.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:0af6fbc34c1498d7600e6f2314ec2598f3a82039a7ce6ed3d2968cbd02da1100
+    revision: 2
+    ai_assisted: true
+    text: XIV. The Struggle Between Capital and Labour and its Results
+  p00023:
+    covers: [p00023]
+    based_on: sha256:969c49b520b23946783a39a03b1d9656560016e109decb733b25f5bcd36c4e8e
+    revision: 2
+    ai_assisted: true
+    text: 1. Resistance against wage cuts and struggles for wage increases are inseparable from the wages system. Since labour is treated as a {commodity:sg}, and since a general wage rise reduces profits without raising commodity prices, how far can labour succeed in this struggle?
+  p00024:
+    covers: [p00024]
+    based_on: sha256:6af9c4c8292d63377f4f3dbc3998768946ccce870248350e042add26feed423e
+    revision: 2
+    ai_assisted: true
+    text: In the long run, the market price of labour adapts itself to its value. On average, the worker receives the value of his {labour-power:sg}, determined by the labour needed to produce his necessities.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:a0fbfaa3a75c0168a1c2877966d77afefca8873521838ef1c91ad22a80e57ade
+    revision: 2
+    ai_assisted: true
+    text: "Yet the value of {labour-power:sg} has unique features. It contains two elements: one physical, the other historical and social. Its ultimate limit is determined by physical necessities indispensable for living and reproducing. The working day is also limited by the physical strength of the worker."
+  p00026:
+    covers: [p00026]
+    based_on: sha256:0d961ea8a099ec91dbe1eb87ce9a7eb9e5239a7dfd481b46bc7f16bb31e1260c
+    revision: 2
+    ai_assisted: true
+    text: This limit is elastic. Besides physical needs, the value of labour is determined by a traditional standard of life in each country. This standard satisfies social wants created by history and custom. As William Thomas Thornton shows in his work on over-population, English agricultural wages still differ according to how districts emerged from {serf:sg} conditions.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:86c2408962db82aa420f497226c704c67021112670dce0601fd91195ab61a45e
+    revision: 2
+    ai_assisted: true
+    text: This historical element may be contracted until only the physical minimum remains. During the anti-Jacobin war, George Rose defended tax privileges while farmers depressed farm wages below the physical minimum, using Poor Laws to make up the rest. This converted wage workers into paupers and slaves.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:72d0d4468be2e899079521546b92f62fa79111157e08894481f7551d2fa2f3c8
+    revision: 2
+    ai_assisted: true
+    text: Comparing standard wages across countries and historical periods shows that the value of labour is a variable magnitude.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:b64bce40cbadfffd21abd5c9fc21d3d766b1dcd123b6e58b3a9569c8163b6f33
+    revision: 2
+    ai_assisted: true
+    text: Average rates of profit change in a similar way.
+  p00030:
+    covers: [p00030]
+    based_on: sha256:5dfbf466203fc9854a260b4f18a192e8060b4aefc3b89e1a8b9770cccaaa6887
+    revision: 2
+    ai_assisted: true
+    text: No law determines a minimum rate of profit. We cannot fix a minimum for profits because, while wages have a physical minimum, they have no fixed maximum.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:3d414b80d6a6d59c849014a371688d992eb0bd5243521297c486a4b2b6465acf
+    revision: 2
+    ai_assisted: true
+    text: With a given working day, the maximum of profit corresponds to the physical minimum of wages. With given wages, the maximum of profit corresponds to the maximum physical prolongation of the working day. Between these limits, actual profit is settled only by the continuous struggle between {capital:sg} and labour.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:dff049c737f4facb02ad9f306254d64da91e4522bbab0006e2c04432d9b5a925
+    revision: 2
+    ai_assisted: true
+    text: The outcome resolves into a question of the respective powers of the combatants.
+  p00033:
+    covers: [p00033]
+    based_on: sha256:9639647aad41b351cc7f55c10b841c6781a29f9041999f45f925b7b8f10ffa2a
+    revision: 2
+    ai_assisted: true
+    text: 2. Limitation of the working day in England was settled only through legislative interference. Without continuous pressure from working men, that interference would never have occurred. Private bargaining between workers and capitalists could never achieve it. This necessity of general political action proves that in purely economic struggles, capital is the stronger side.
+  p00034:
+    covers: [p00034]
+    based_on: sha256:3efbdd8d4da17263dd8a0e230726fe0b2b4ad914d46a2195ed17dbb3d823da67
+    revision: 2
+    ai_assisted: true
+    text: In colonial countries, supply and demand favours the worker. In the United States, wages are relatively high because workers continually become independent, self-sustaining farmers. Wage labour there is often temporary. To counter this, the British government adopted Wakefield's colonization theory, putting an artificially high price on land to prevent workers from acquiring farms too quickly.
+  p00035:
+    covers: [p00035]
+    based_on: sha256:1a8763b307711e37b2469635cb33876547ca70273c834a7f5603c9546f4a1255
+    revision: 2
+    ai_assisted: true
+    text: In old civilized countries, capital dominates the entire process of production. In England between 1849 and 1859, farm wages rose. Farmers could not raise wheat prices, so they introduced machinery, consolidated farms, and made farm labour redundant. David Ricardo noted that machinery competes constantly with labour, and is introduced when wages reach a certain height. Machine development makes common labour redundant and depreciates skilled labour.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:9ac9d1086795dfa06d53dd2113272a66016ae251fafc5946b0d0e107128ec0a1
+    revision: 2
+    ai_assisted: true
+    text: With the development of productivity, capital accumulation accelerates. Adam Smith inferred that rapid accumulation must favour workers by creating a growing demand for labour. But alongside accumulation, a progressive change takes place in the composition of {capital:sg}. Fixed capital and {means-of-production:sg} increase far faster than capital laid out in wages. This law was noted by John Barton, Ricardo, Sismondi, Richard Jones, and others.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:b0ca20b720e0e8c16c84df9d0a7a4fe70363059f228be0e862a6b6481e2c109b
+    revision: 2
+    ai_assisted: true
+    text: If capital originally divides equally between machinery and wages, doubling capital doubles the demand for labour. But if 500 of a capital of 600 is laid out in machinery and only 100 in wages, capital must increase from 600 to 3,600 to double the demand for workers. As industry advances, demand for labour increases in a constantly diminishing ratio compared to capital accumulation.
+  p00038:
+    covers: [p00038]
+    based_on: sha256:80613108d87bc27e4a45c03bfa04a89260f0f1e03c0591477e6753cff9dbdb2b
+    revision: 2
+    ai_assisted: true
+    text: Modern industry turns the scale in favour of the capitalist, and the general tendency of capitalist production is to push the value of labour toward its minimum limit. Should the working class therefore renounce resistance against capital? If workers surrendered, they would be degraded to broken wretches past salvation. Everyday wage struggles are inseparable from the wages system. By giving way cowardly in daily conflicts, workers would disqualify themselves from initiating any larger movement.
+  p00039:
+    covers: [p00039]
+    based_on: sha256:e1c116b16dfac060b90a32f81abb462080e3dde0847dd32bb1dc95ea6b058e03
+    revision: 2
+    ai_assisted: true
+    text: "At the same time, the working class must not exaggerate the ultimate results of these struggles. They are fighting effects, not causes; applying palliatives, not curing the malady. They must not be absorbed entirely in these unavoidable guerrilla fights. Capitalism creates both the material conditions and the social forms for a reconstruction of society. Instead of the {conservative:adj} motto: “<i>A fair day's wage for a fair day's work!</i>” they ought to inscribe on their banner the {revolution:adj} watchword: “<i>Abolition of the wages system!</i>”"
+  p00040:
+    covers: [p00040]
+    based_on: sha256:2e232eccdea55ea3011184e96cf92ff90a18393a73e48e6d19824420a6a5f210
+    revision: 2
+    ai_assisted: true
+    text: "After this long exposition, I propose the following resolutions:"
+  p00041:
+    covers: [p00041]
+    based_on: sha256:96eb96c7fdd74936821bdd1f02fe602cac01e9b1b9b891cb7f4b5a2dabebff58
+    revision: 2
+    ai_assisted: true
+    text: <i>Firstly.</i> A general rise in the rate of wages would result in a fall of the general rate of profit, but, broadly speaking, not affect the prices of commodities.
+  p00042:
+    covers: [p00042]
+    based_on: sha256:0787167913919e640190726d8c9d2f3eef716f13020765029c947979d13cea47
+    revision: 2
+    ai_assisted: true
+    text: <i>Secondly.</i> The general tendency of capitalist production is not to raise, but to sink the average standard of wages.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:397a89448105fa05beb58bd0be698d6701e15555050a2bcdceabf31d549c5906
+    revision: 2
+    ai_assisted: true
+    text: <i>Thirdly.</i> Trades Unions work well as centers of resistance against the encroachments of {capital:sg}. They fail partially from an injudicious use of their power. They fail generally from limiting themselves to a guerrilla war against the effects of the existing system. Instead, they should use their organized forces as a lever for the final emancipation of the working class, that is to say the ultimate abolition of the wages system.

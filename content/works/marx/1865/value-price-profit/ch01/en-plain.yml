@@ -1,0 +1,311 @@
+schema_version: 5
+document: document:marx:1865:value-price-profit:ch01
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:59cb62153771c518e0b34ca512e6e180c933bb2c44aea847b9872686a79ca5ae
+    revision: 4
+    ai_assisted: true
+    text: Preliminary
+  p00002:
+    covers: [p00002]
+    based_on: sha256:d684cb694d73490e1d303fcf62785d901f349021b9636ee900928a27520a5e23
+    revision: 4
+    ai_assisted: true
+    text: CITIZENS,
+  p00003:
+    covers: [p00003]
+    based_on: sha256:3385965686f34f293a624c3b97036d81e2902e06d0d38ea506f4064a42b998eb
+    revision: 4
+    ai_assisted: true
+    text: Before entering into the main subject, allow me to make a few preliminary remarks. Across the Continent today, there is a real wave of strikes and a general demand for higher wages. This question will come up at our Congress. You, as leaders of the International Association, should have settled convictions on this paramount question. For my own part, I considered it therefore my duty to enter fully into the matter, even if it severely tests your patience.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:3ed4d4484d4665ae1bf7fd0a624ac4744d432d7f251196bbf5ed79069495fd2f
+    revision: 4
+    ai_assisted: true
+    text: I have another preliminary remark regarding Citizen Weston. He has not only proposed to you, but has publicly defended views that he knows are very unpopular with the working class, believing he acts in their interest. We must all highly honour such an exhibition of moral courage. My paper will be direct and unvarnished. Even so, I hope he will find that I agree with the sound idea behind his arguments, though in their current form I cannot but consider them theoretically false and practically dangerous.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:252d7c574d0e76e4326d48a5b8b8f8ed744fb5282ceafd8364785a5c275fdd86
+    revision: 4
+    ai_assisted: true
+    text: I shall now at once proceed to the business before us.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:8bd62bc731aaed88258a6cd9560aa99c285cd3cd33fe8c8ce663077af776be65
+    revision: 4
+    ai_assisted: true
+    text: I. Production and Wages
+  p00007:
+    covers: [p00007]
+    based_on: sha256:e703a412c14873df37fee3cbc298792d467978e85bb90a92ff7efab2adbf0407
+    revision: 4
+    ai_assisted: true
+    text: Citizen Weston's argument rested, in fact, on two premises. First, that the amount of national production is a fixed thing, a constant quantity that never changes. Second, that the amount of real wages, measured by the quantity of {commodity:pl} they can buy, is also a fixed amount.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:91dd95176ad8b51dc7756956a0195064d350b699e1ffef64245546b85258d9f7
+    revision: 4
+    ai_assisted: true
+    text: His first assertion is evidently erroneous. Year after year, both the value and the mass of production increase. The {productive-forces:sg} of national labour increase, and the amount of money needed to circulate this growing output continuously changes. What is true across different years is also true for every average day of the year. Total national production changes continuously. It is not constant, but variable. Even apart from population changes, it must vary because the accumulation of {capital:sg} and the productive powers of labour change continuously. It is perfectly true that a sudden rise in wages today would not immediately change total production. It would proceed from the existing state of things. But if national production was variable before wages rose, it will continue to be variable and not fixed after wages rise.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:2829575154b0716f38ebb3787ed4dfc1fd0ce933a5b23627f7cd41106f763859
+    revision: 4
+    ai_assisted: true
+    text: Suppose, however, that national production were constant instead of variable. Even then, what our friend Weston considers a logical conclusion would still remain an unproven assertion. If I have a given number, say eight, that total limit does not stop its parts from changing their relative shares. If profits were six and wages two, wages might increase to six and profits decrease to two, while the total remains eight. A fixed total of production does not by any means prove a fixed amount of wages. How then does our friend Weston prove this fixity? By asserting it.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:b83562b361a6fee5950df26bb07c23538558b412b471a67e3a332409086e2874
+    revision: 4
+    ai_assisted: true
+    text: Even if we concede him his assertion, it cuts both ways, while he presses it in only one direction. If wages are a constant magnitude, they can neither increase nor decrease. If workers act foolishly by enforcing a temporary rise in wages, capitalists act no less foolishly by enforcing a temporary fall in wages. Our friend Weston does not deny that under certain circumstances workers <i>can</i> enforce a wage increase, but because he thinks wages are naturally fixed, he claims a reaction must follow. On the other hand, he knows also that capitalists can enforce wage cuts, and continuously try to enforce them. If wages are constant, a reaction ought to follow a wage cut not less than a wage rise. Workers who react against lowering wages therefore act rightly. They act rightly in enforcing <i>a rise of wages</i>, because every <i>reaction</i> against lowering wages is an <i>action</i> for raising wages. Under Citizen Weston's own principle of the constancy of wages, workers ought therefore under certain circumstances to combine and struggle for higher wages. If he denies this conclusion, he must give up the premise from which it flows. He must not say that wages are a constant quantity, but that although they cannot rise, they can and must fall whenever {capital:sg} pleases. If the capitalist decides to feed you potatoes instead of meat, and oats instead of wheat, you must accept his will as a law of political economy. If wages are higher in the United States than in England, you must explain this difference by the will of the American capitalist compared to the English capitalist. That method would certainly simplify the study of economic phenomena, but only by reducing science to personal desires.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:1e27a699a587357f8f8f5e7765ca8ce8cf9e6c654d4194b674dc0c5cbd0657bd
+    revision: 4
+    ai_assisted: true
+    text: Even then, we might ask <i>why</i> the will of the American capitalist differs from the will of the English capitalist? To answer that question, you must go beyond the domain of <i>will</i>. Someone may tell me that God wills one thing in France and another in England. If I ask him to explain this duality of will, he might have the brass to answer that God wills to have one will in France and another in England. But our friend Weston is certainly the last man to make an argument of such complete negation of all reasoning.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:995c6a821c96622cf1ad01137815b3f2aa1cd47c40dee0715ae418f688b18842
+    revision: 4
+    ai_assisted: true
+    text: The <i>will</i> of the capitalist is certainly to take as much as possible. What we have to do is not to talk about his <i>will</i>, but to enquire into his <i>power</i>, the <i>limits of that power</i>, and the <i>character of those limits</i>.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:4c789ae2c8d16b7a27f0f33927e1b96743d8a572b0201375ef45983c109f40d7
+    revision: 4
+    ai_assisted: true
+    text: II. Production, Wages, Profits
+  p00014:
+    covers: [p00014]
+    based_on: sha256:162a0d265a6ec0c03b07ebb14e492f9f8eb7f53de9f5e8870f21a7416bdcda31
+    revision: 4
+    ai_assisted: true
+    text: The address Citizen Weston read to us might have been compressed into a nutshell.
+  p00015:
+    covers: [p00015]
+    based_on: sha256:a8661f8ecdc6a84de36d0e29b8f89bfb5d2783a447bc38d49a99b173d55fb450
+    revision: 4
+    ai_assisted: true
+    text: All his reasoning amounted to this. If the working class forces capitalists to pay five shillings instead of four shillings in money wages, the capitalist will return four shillings' worth of commodities instead of five shillings' worth. Workers would pay five shillings for what they bought before for four shillings. But why is this the case? Why does the capitalist return only four shillings' worth for five shillings? Because the amount of wages is fixed. But why is it fixed at four shillings' worth of {commodity:pl}? Why not at three, two, or any other sum? If an economic law fixes wages beyond the will of capitalist and worker, Citizen Weston had to state that law and prove it. He ought moreover to have proved that actual wages always correspond exactly to that necessary amount. On the other hand, if the limit of wages rests on the <i>mere will</i> of the capitalist, it is an arbitrary limit. There is nothing necessary in it. What may be changed <i>by</i> the will of the capitalist may therefore be changed <i>against</i> his will.
+  p00016:
+    covers: [p00016]
+    based_on: sha256:5cede98c7cff641216065aff5cecde97708a52e7d6575ea81c7ead38d9cd7089
+    revision: 4
+    ai_assisted: true
+    text: Citizen Weston illustrated his theory by telling you that if a bowl contains a certain quantity of soup for a number of persons, bigger spoons will produce no increase in the amount of soup. He must allow me to find this illustration rather foolish. It reminds me of the simile employed by Menenius Agrippa. When Roman {plebeian:pl} struck against Roman {patrician:pl}, Agrippa told them that the patrician belly fed the plebeian members of the body politic. Agrippa failed to show that you feed the members of one man by filling the belly of another. Citizen Weston, on his part, has forgotten that the bowl from which workers eat is filled with the whole produce of national labour. What prevents them fetching more out of it is neither the narrowness of the bowl nor the scantiness of its contents, but only the smallness of their spoons.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:a518467dcc63a66bc4b1110e2c21cb61c47daec77e06d739b185c0ae9de41070
+    revision: 4
+    ai_assisted: true
+    text: By what contrivance is the capitalist enabled to return four shillings' worth for five shillings? By raising the price of the {commodity:sg} he sells. Now, do the prices of {commodity:pl} depend on the mere will of the capitalist? Or are, on the contrary, certain circumstances wanted to give effect to that will? If not, the incessant fluctuations of market prices become an insoluble riddle.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:3108ebce9d13deea273a9170cb1ace69dca54c8c1e870fee9bc8fb10907fc16e
+    revision: 4
+    ai_assisted: true
+    text: Suppose that no change has taken place in the productive power of labour, the amount of {capital:sg} employed, or the value of money, but <i>only a change in the rate of wages</i>. How could that <i>rise of wages</i> affect the <i>prices of commodities</i>? Only by affecting the actual proportion between the demand for and the supply of those commodities.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:932ad916a3311f0f24706555f7a33e11ff65ca3eb93d9261b4f7a97e9516808c
+    revision: 4
+    ai_assisted: true
+    text: It is perfectly true that the working class spends its income upon basic {means-of-subsistence:sg}. A general rise in wages would therefore produce a rise in demand for and market prices of necessary goods. Capitalists who produce necessary goods would be compensated for higher wages by rising market prices. But how with other capitalists who do <i>not</i> produce necessities? You must not fancy them a small body. A member of the House of Commons recently stated that one-fifth or one-seventh of the population consumes two-thirds of national produce. Therefore, an immense proportion consists of luxuries or is exchanged for luxuries. An immense amount of necessities is also wasted on luxury servants and horses, a waste that becomes limited when prices of necessities rise.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:6586077c909268640fd71d93db6196807cd742f103fe88b701da58abc5c3a0a2
+    revision: 4
+    ai_assisted: true
+    text: Well, what would be the position of capitalists who do <i>not</i> produce necessities? For the fall in the rate of profit caused by higher wages, they could not compensate themselves by a rise in the price of their commodities, because demand would not have increased. Their income would have decreased, and from this decreased income they would have to pay more for higher-priced necessities. Having diminished income, they would spend less upon luxuries, and therefore their mutual demand for luxuries would diminish. Consequent upon this diminished demand, the prices of their commodities would fall. In these branches of industry, therefore, the rate of profit would fall, not only in proportion to higher wages, but in compound ratio to dearer necessities and cheaper luxuries.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:0c0777a278e18336f3078d02bb512368e364f8c8af4cce0b2315b6f60db484f6
+    revision: 4
+    ai_assisted: true
+    text: What would be the consequence of this difference in profit rates for capitals employed in different branches of industry? Why, the consequence that generally obtains whenever the average rate of profit differs across spheres of production. {capital:sg} and labour would transfer from less remunerative branches to more remunerative branches. This process of transfer would go on until supply rose to meet increased demand in one department, and sank in other departments according to decreased demand. This change effected, the general rate of profit would again be equalized in the different branches. As the whole derangement originally arose from a mere shift in supply and demand, the cause ceasing, the effect would cease, and PRICES would return to their former level and equilibrium. Instead of being limited to some branches, the fall in the rate of profit consequent upon the rise of wages would have become general. Total production would not change, but that given amount of production would have changed its form. A greater part would exist as necessities, and a lesser part as luxuries. Or a lesser part would be exchanged for foreign luxuries, and a greater part for foreign necessities. The general rise in wages would therefore, after a temporary disturbance of market prices, only result in a general fall in the rate of profit without any permanent change in the prices of {commodity:pl}. If I am told that I assume all surplus wages are spent upon necessities, I answer that I have made the assumption most advantageous to the opinion of Citizen Weston. If surplus wages were spent upon articles formerly not consumed by workers, the real increase of their purchasing power would need no proof. Being derived only from an advance of wages, that increase of their purchasing power must exactly correspond to the decrease of the purchasing power of capitalists. The aggregate demand for commodities would therefore not increase, but the constituent parts of that demand would change. Increasing demand on one side would be counterbalanced by decreasing demand on the other side. Thus aggregate demand remaining stationary, no change whatever could take place in market prices of commodities. Either surplus wages are spent equally on all articles, and capitalist demand contracts as worker demand expands, or surplus wages are spent on certain articles whose market prices temporarily rise. Capital and labour then move until supply meets demand, and prices subside to their former level. On both suppositions, the general rise in the rate of wages ultimately results in nothing else but a general fall in the rate of profit.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:85a6a4883a109e14ad0ff27e19236cfbb641950a2fef33f2ee69818da845ca24
+    revision: 4
+    ai_assisted: true
+    text: To stir up your powers of imagination, Citizen Weston requested you to think of the difficulties that a general rise of English agricultural wages from 9 shillings to 18 shillings would produce. Think, he exclaimed, of the immense rise in demand for necessities and the consequent fearful rise in their prices! Yet average wages of American agricultural labourers amount to more than double those of English agricultural labourers. Farm prices are also lower in the United States than in the United Kingdom under the same general relations of capital and labour. Why, then, does our friend ring this alarm bell? Simply to shift the real question before us. A sudden rise from 9 shillings to 18 shillings would be a sudden rise to the amount of 100 percent. We are not discussing whether the general rate of wages in England could be suddenly increased by 100 percent. The magnitude of the rise in every practical instance must depend on given circumstances. We have only to inquire how a general rise in wages, even if restricted to 1 percent, will act.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:651e46b66bef22e8cad9ee1f918e6d0232d8758cb76a5fefb2dce4b7fb866674
+    revision: 4
+    ai_assisted: true
+    text: Dismissing friend Weston's fancy rise of 100 percent, I propose calling your attention to the real rise of wages that took place in Great Britain from 1849 to 1859.
+  p00024:
+    covers: [p00024]
+    based_on: sha256:d0ed4111371a062dd418a0c8f1414f320d8e50a6eb4d390d1f27a52c4ed2ba5e
+    revision: 4
+    ai_assisted: true
+    text: You are all aware of the Ten Hours Bill, or rather Ten-and-a-half Hours Bill, introduced since 1848. This was one of the greatest economic changes we have witnessed in Great Britain. It was a sudden and compulsory rise of wages in the leading industrial branches by which England dominates the markets of the world. Dr. Ure, Professor Senior, and all other official economic mouthpieces of the middle class proved, upon stronger grounds than Weston's, that it would sound the death-knell of English industry. (Marx notes that the aristocracy was the upper class of Great Britain, while capitalists composed the middle class.) They proved that it was a rise of wages based upon a diminution of labour employed. They asserted that the twelfth hour was the only hour from which the capitalist derived his profit. They threatened decreased accumulation, rise of prices, loss of markets, and ultimate ruin. In fact, they declared Maximillian Robespierre's Maximum Laws to be a small affair compared to it. Well, what was the result? Factory operatives received higher money wages despite the curtailing of the working day, factory hands employed increased greatly, product prices fell continuously, productivity developed marvelously, and foreign markets expanded progressively. In Manchester, at the 1860 meeting of the Society for the Advancement of Science, Mr. W. Newman made a public confession. He confessed that he, Dr. Ure, Senior, and all other official propounders of economic science had been wrong, while the instinct of the people had been right. I mention Mr. W. Newman, not Professor Francis Newman, because he edited Thomas Tooke's <i>History Of Prices</i>, tracing prices from 1793 to 1856. If Citizen Weston's idea of a fixed amount of wages and fixed production were correct, Professor Senior's forebodings would have been right. Robert Owen, who introduced shorter hours in his New Lanark factory in 1816, would also have been wrong.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:c069ba0100fb02f0b9575f81c5e27da5152411e635d68944c2c682e4e3e18c28
+    revision: 4
+    ai_assisted: true
+    text: In the very same period during which the Ten Hours Bill and the rise of wages following it occurred, there took place in Great Britain a general rise in agricultural wages. Although it is not required for my immediate purpose, in order not to mislead you, I shall make some preliminary remarks.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:a5204700dd3bcddb1a8b94a18f87f38929214533a3c6830bcb04ba320a2ebe2f
+    revision: 4
+    ai_assisted: true
+    text: "If a man got 2 shillings weekly wages, and if his wages rose to 4 shillings, the rate of wages would have risen by 100 per cent. This would seem a magnificent thing, although the actual amount of wages, 4 shillings weekly, would still remain a starvation pittance. You must not, therefore, allow yourselves to be carried away by high-sounding percentages in the rate of wages. You must always ask: what was the original amount?"
+  p00027:
+    covers: [p00027]
+    based_on: sha256:03b1c6ee6b1b6d0ab238893d20a13d56c05af5bdb156f7c86ae7f53d8bd94849
+    revision: 4
+    ai_assisted: true
+    text: Moreover, suppose there were ten men receiving 2 shillings each per week, five men receiving 5 shillings each, and five men receiving 11 shillings each weekly. The twenty men together would receive 100 shillings, or 5 Pounds, weekly. If a rise of 20 per cent upon the aggregate sum of their weekly wages took place, there would be an advance from 5 Pounds to 6 Pounds. Taking the average, we might say that the general rate of wages had risen by 20 per cent. Yet the wages of the ten men remained stationary, the wages of five men rose from 5 shillings to 6 shillings only, and the other five from 55 shillings to 70 shillings. One half of the men would not have improved their position at all, one quarter would have improved it imperceptibly, and only one quarter would have bettered it really. Still, reckoning by the average, total wages of those twenty men increased by 25 per cent. As far as the aggregate capital that employs them is concerned, it would be the same as if all had equally shared in the average rise. In agricultural labour, standard wages differed greatly between counties of England and Scotland, so the rise affected them very unequally.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:7dd4f53add61bf707e4cfd2e4403f73c5bd9c1da21c38e7fdc0e9523073e87b9
+    revision: 4
+    ai_assisted: true
+    text: Lastly, during this period counteracting influences were at work, such as new taxes from the Russian war and the demolition of dwelling-houses of agricultural labourers. Having premised so much, I proceed to state that from 1849 to 1859 there took place a rise of about 40 percent in the average rate of agricultural wages of Great Britain. I refer you to the paper read in 1860 by Mr. John C. Morton at the London Society of Arts on “The Forces used in Agriculture,” based on returns from about one hundred farmers in twelve Scotch and thirty-five English counties.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:3d15940195b28bfd799a07b501b567544e4c5dbb997589b2664b5e53ac9e6398
+    revision: 4
+    ai_assisted: true
+    text: According to Citizen Weston's opinion, there ought to have occurred a tremendous rise in the prices of agricultural produce during the period 1849 to 1859. But what is the fact? Despite the Russian war and consecutive unfavourable harvests from 1854 to 1856, the average price of wheat, which is the leading agricultural produce of England, fell. It fell from about 3 Pounds per quarter for the years 1838 to 1848 to about 2 Pounds 10 Shillings per quarter for the years 1849 to 1859. This constitutes a fall in the price of wheat of more than 16 percent simultaneously with an average rise of agricultural wages of 40 percent. During the same period, comparing 1859 with 1849, there was also a decrease of official extreme poverty from 934,419 to 860,470, a difference of 73,949 persons.
+  p00030:
+    covers: [p00030]
+    based_on: sha256:19d4db25349a125550de3200e51e11524e9155d60923690256c91c2581895e27
+    revision: 4
+    ai_assisted: true
+    text: It might be said that, consequent upon the abolition of the Corn Laws, imports of foreign corn more than doubled from 1849 to 1859 compared to 1838 to 1848. And what of that? From Citizen Weston's standpoint, this immense demand upon foreign markets must have sent up agricultural prices there to a frightful height. What was the fact? Apart from some years of failing harvests, a ruinous fall in the price of corn formed a standing theme of complaint in France. The Americans were compelled to burn their surplus produce. And Russia, according to Mr. Urquhart, prompted the Civil War in the United States because Russian exports were crippled by Yankee competition in the markets of Europe.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:d81e3cb1f1aff80c3775ad0f2bf2e35ec79dcf69857be021daa72813695b0f24
+    revision: 4
+    ai_assisted: true
+    text: Reduced to its abstract form, Citizen Weston's argument claims that every rise in demand can never increase the supply of articles, but can only enhance their money prices. Now common observation shows that an increased demand will in some instances leave market prices of commodities altogether unchanged, and in other instances cause a temporary rise followed by an increased supply and lower prices. Whether the rise of demand springs from surplus wages or from any other cause does not change the problem. His argument had therefore no peculiar bearing upon the subject we treat. It only expressed his difficulty in accounting for the laws by which an increase of demand produces an increase of supply instead of an ultimate rise of market prices.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:0fa4d054d2f22d31c2cb21ace8654ae9a0fd25a3a75459939148f8f008092183
+    revision: 4
+    ai_assisted: true
+    text: III. Wages and Currency
+  p00033:
+    covers: [p00033]
+    based_on: sha256:c2d6624973176b05cb410aa62837d3905a6c9b0edaa150079305682de56ce9fd
+    revision: 4
+    ai_assisted: true
+    text: "On the second day of the debate our friend Weston clothed his old assertions in new forms. He said: consequent upon a general rise in money wages, more currency will be wanted to pay the same wages. The currency being fixed, how can you pay increased money wages with this fixed currency? First the difficulty arose from the fixed amount of commodities accruing to the working man despite his increase of money wages; now it arises from increased money wages despite a fixed amount of currency. If you reject his original dogma, this secondary grievance will disappear. However, I shall show that this currency question has nothing at all to do with the subject before us."
+  p00034:
+    covers: [p00034]
+    based_on: sha256:fbd0d44d4fc968834531d8e9a89a8c87447d0ef3c81154a837b351588db6236b
+    revision: 4
+    ai_assisted: true
+    text: In England the mechanism of payments is much more perfected than in any other country of Europe. Thanks to the extent and concentration of the banking system, much less currency is wanted to circulate the same amount of values. For example, the English factory operative pays his wages weekly to the shopkeeper, who sends them weekly to the banker, who returns them weekly to the manufacturer, who pays them to his working men. By this contrivance the yearly wages of an operative, say of 52 Pounds, may be paid by one single Sovereign turning round every week in the same circle. In Scotland the mechanism is even more perfected, while in some English agricultural districts much more currency is wanted to circulate a much smaller amount of values.
+  p00035:
+    covers: [p00035]
+    based_on: sha256:4cdac6bac819a061a39722d1e8ab5fee35333241d4bb99e09b9f6b95d12c2809
+    revision: 4
+    ai_assisted: true
+    text: If you cross the Channel you will find that money wages are much lower than in England, but are circulated in Germany, Italy, Switzerland, and France by a much larger amount of currency. The same Sovereign is not so quickly returned to the industrial capitalist. Therefore, instead of one Sovereign circulating 52 Pounds yearly, you want perhaps three Sovereigns to circulate yearly wages to the amount of 25 Pounds. Thus low money wages may require a much larger currency than high money wages. This is in fact a technical point, quite foreign to our subject.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:aaf0785cd0f164e7159fdfcf694e78d44388d022d52d38f095143c104997cac1
+    revision: 4
+    ai_assisted: true
+    text: According to the best calculations, the yearly income of the working class of this country may be estimated at 250,000,000 Pounds, circulated by about 3 million Pounds. Suppose a rise of wages of 50 per cent to take place. Then four and a half millions of currency would be wanted instead of three millions. As workers spend much in silver and copper tokens, a rise of money wages by 50 per cent would at most require about 1 million additional Sovereigns. That million, now dormant in cellars of the Bank of England or private bankers, would circulate. Even this expense might be spared if friction arose from the want of currency. Bank-notes circulate among dealers, while metallic coin circulates in retail trade. Gold coin also circulates for odd sums under 5 Pounds. If 2 Pound, 3 Pound, or 4 Pound notes were issued tomorrow, gold would at once flow into wage circulation without the addition of a single Sovereign. An additional bill circulation, as occurred in Lancashire, produces the same effect.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:150c85e7ccb8f29574998503487922e1cbcef45a2284136f5891962f8c825daa
+    revision: 4
+    ai_assisted: true
+    text: Weston claimed that a 100 per cent wage rise would cause soaring prices and require an impossible currency. If so, a general fall in wages must produce the same effect in the opposite direction. Well! The years 1858 to 1860 were the most prosperous for the cotton industry, and in 1860 wages stood higher than ever before. The American crisis came, and aggregate wages were suddenly reduced to about one-fourth of their former amount. This would have been in the opposite direction a rise of 400 per cent, or a fall of 75 per cent, equal to a change of 15 shillings from 20 to 5 shillings. Did the price of wheat fall? It rose from the annual average of 47 shillings 8d per quarter during 1858–1860 to 55 shillings 10d per quarter during 1861–1863. As to currency, there were coined in the mint in 1861 8,673,323 Pounds, against 3,378,792 Pounds in 1860. That is to say, 5,294,440 Pounds more were coined in 1861 than in 1860. Bank-note circulation in 1861 was less by 1,319,000 Pounds than in 1860. Take this off. There remains still a surplus of currency for 1861 of 3,975,440 Pounds, or about 4,000,000 Pounds, while bullion reserves in the Bank of England decreased. This completely refutes Citizen Weston's views.
+  p00038:
+    covers: [p00038]
+    based_on: sha256:f275f5bedf11a29f29fb9cc4ce6d623602e9d8b4b342cffab75a3f20fad3cab4
+    revision: 4
+    ai_assisted: true
+    text: Compare the year 1862 with 1842. Apart from the immense increase in commodities circulated, railway capital alone reached 320,000,000 Pounds in England and Wales in 1862. Still, aggregate currency in 1862 and 1842 was pretty nearly equal. Modern commerce shows a tendency to diminish currency through bills, cheques, and clearing houses. From our friend Weston's standpoint this is an unsolvable riddle. The dogma of a fixed currency is a monstrous error, incompatible with our everyday movement.
+  p00039:
+    covers: [p00039]
+    based_on: sha256:b0340fb6eda4bd813bc872f0efe1d0e3a3a4e763fdd7268823508ffed12da8f5
+    revision: 4
+    ai_assisted: true
+    text: IV. Supply and Demand
+  p00040:
+    covers: [p00040]
+    based_on: sha256:5ffc809a39d0670c966492eab4b9da6b1e4a40bcbd08c1812e93fefb6d70e4e9
+    revision: 4
+    ai_assisted: true
+    text: Our friend Weston repeated his original dogma in a new form, claiming that a contraction of currency resulting from higher wages would produce a diminution of {capital:sg}. He cited the Latin proverb that “<i>repetitio est mater studiorum</i>,” meaning repetition is the mother of study. Having already dealt with his currency crotchet, I consider it useless to enter upon his imaginary mishaps. I shall proceed to at once reduce his dogma to its simplest theoretical form.
+  p00041:
+    covers: [p00041]
+    based_on: sha256:d345d6761a03ed3e11cebf488c00048188dec09a1f4f10068deed32e85a2816a
+    revision: 4
+    ai_assisted: true
+    text: "The uncritical way in which he has treated his subject will become evident from one single remark. He pleads against high wages as the result of a wage rise. Now, I ask him: what are high wages and what are low wages? Why constitute 5 shillings weekly low, and 20 shillings weekly high wages? If 5 is low compared with 20, 20 is still lower compared with 200. A lecturer on the thermometer must explain the freezing-point and boiling-point by natural laws, not personal fancy. Now in regard to wages and profits, Citizen Weston has failed to deduce standard points from economic laws. He satisfies himself with popular terms of low and high as having a fixed meaning, although wages can only be high or low compared with an objective standard."
+  p00042:
+    covers: [p00042]
+    based_on: sha256:c824fae4927850e78b191edc4b4d03c29e9d398141b9116ce1fe7e4afebc1033
+    revision: 4
+    ai_assisted: true
+    text: He will be unable to tell me why a certain amount of money is given for a certain amount of labour. If he should answer me, “This was settled by the law of supply and demand,” I should ask him by what law supply and demand are themselves regulated. If you accept supply and demand as the law regulating wages, it is childish to declaim against a rise of wages. According to the supreme law you appeal to, a periodical rise of wages is quite as necessary and legitimate as a periodical fall of wages. If you do not accept supply and demand, why is a certain amount of money given for a certain amount of labour?
+  p00043:
+    covers: [p00043]
+    based_on: sha256:8ea4e582c52c6b4e9bab467d4e464ce1d32b6bcb8b25a152b13d8c03d21422b0
+    revision: 4
+    ai_assisted: true
+    text: You would be altogether mistaken in fancying that the value of labour or any other {commodity:sg} is ultimately fixed by supply and demand. Supply and demand regulate nothing but temporary fluctuations of market prices. They explain why the market price of a commodity rises above or sinks below its value, but they can never account for value itself. When supply and demand equilibrate each other, they cease to act. At that moment the market price coincides with its real value, the standard price round which market prices oscillate. In inquiring into the nature of VALUE, we have therefore nothing to do with temporary effects of supply and demand.
+  p00044:
+    covers: [p00044]
+    based_on: sha256:d1a575d8cd2ffcc9807a0d85d7326070d7c492fccaf8c430165aac51294ed427
+    revision: 4
+    ai_assisted: true
+    text: V. Wages and Prices
+  p00045:
+    covers: [p00045]
+    based_on: sha256:ef9ffc4fef1cbea5a621bb265f08978211a3003498bec76b3dbe783068f18093
+    revision: 4
+    ai_assisted: true
+    text: "Reduced to their simplest theoretical expression, all our friend's arguments resolve into this one dogma: “<i>The prices of commodities are determined or regulated by wages.</i>”"
+  p00046:
+    covers: [p00046]
+    based_on: sha256:b77dc11a79137da6c912e199f3882ed29998767204a656b3aafed4487fd49a5f
+    revision: 4
+    ai_assisted: true
+    text: Practical observation bears witness against this exploded fallacy. English factory operatives, miners, and shipbuilders, whose labour is relatively high-priced, undersell other nations through the cheapness of their produce. Meanwhile, the English agricultural labourer, whose labour is relatively low-priced, is undersold by almost every nation because of the dearness of his produce. On an average, high-priced labour produces low-priced commodities, and low-priced labour produces high-priced commodities. This proves that prices of {commodity:pl} are not ruled by the prices of labour.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:cf8fb4650491f38b706fc09511fb9945fd27c24f6f565b9e62faed45457a4365
+    revision: 4
+    ai_assisted: true
+    text: "It might be denied that Citizen Weston put forward the dogma: “<i>The prices of commodities are determined or regulated by wages.</i>” In point of fact, he never formulated it directly. He said that profit and rent also form constituent parts of prices, because prices must pay wages, profits, and rents. But how in his idea are prices formed? First by wages. Then an additional percentage is added for the capitalist, and another percentage for the landlord. Suppose wages employed in producing a commodity to be 10. If the rate of profit was 100 per cent, the capitalist adds 10 to wages. If the rate of rent was also 100 per cent upon wages, there would be added 10 more, making an aggregate price of 30. But such a determination of prices would simply be their determination by wages. If wages rose to 20, the price of the commodity would rise to 60. Older economists who propounded that wages regulate prices treated profit and rent as mere additional percentages upon wages. None of them could reduce the limits of those percentages to any economic law. Competition can equalize different rates of profit in different trades to an average level, but it can never determine the level itself."
+  p00048:
+    covers: [p00048]
+    based_on: sha256:43597fbe1e36af7254277c5637b11cbae7035560f7805e130cfc8a68de8b19a5
+    revision: 4
+    ai_assisted: true
+    text: What do we mean by saying that prices of commodities are determined by wages? Wages being the price of labour, we mean that prices of {commodity:pl} are regulated by the price of labour. As “price” is exchangeable value expressed in money, the proposition means that “the value of commodities is determined by the value of labour,” or that “the value of labour is the general measure of value.”
+  p00049:
+    covers: [p00049]
+    based_on: sha256:921188cf76973d96a73ccefc9d63469bba1a7c06e43edc47ed36a3b521c664c7
+    revision: 4
+    ai_assisted: true
+    text: But how, then, is the “value of labour” itself determined? Here we come to a standstill. First Weston told us that wages regulate prices of commodities, and that when wages rise prices must rise. Then he turned round to show that a rise of wages will be no good because prices of commodities had risen, and wages are measured by the commodities upon which they are spent. Thus we begin by saying that the value of labour determines the value of commodities, and we wind up by saying that the value of commodities determines the value of labour. Thus we move to and fro in a vicious circle, and arrive at no conclusion at all.
+  p00050:
+    covers: [p00050]
+    based_on: sha256:1ead19ba384900fb3d4e16a9c3804c0131ee55322c9281d761f46bed705dd581
+    revision: 4
+    ai_assisted: true
+    text: On the whole, making the value of one {commodity:sg} the general measure and regulator of value only shifts the difficulty, since we determine one value by another which itself needs to be determined.
+  p00051:
+    covers: [p00051]
+    based_on: sha256:cb4b38bb4cca535618540df4fef35caaf5e7bc6e359c9dec2d6cb8b6eb51e1f6
+    revision: 4
+    ai_assisted: true
+    text: The dogma that “wages determine the price of commodities” comes to this, that “value is determined by value,” meaning that in fact we know nothing about value. It was the great merit of Ricardo that in his 1817 work on political economy, he fundamentally destroyed the worn-out fallacy that “wages determine prices”. Adam Smith and his French predecessors had spurned this fallacy in their scientific researches, although they reproduced it in their more vulgarizing chapters.

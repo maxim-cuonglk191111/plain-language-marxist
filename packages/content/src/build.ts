@@ -272,6 +272,14 @@ export function buildData(options: BuildOptions): BuildResult {
             })),
           }
         : {}),
+      ...(d.kind === "reading_path" && d.faq
+        ? {
+            faq: d.faq.map((f) => ({
+              q: f.q,
+              a: f.a,
+            })),
+          }
+        : {}),
     });
   }
   files.set("index.json", json(DataIndex.parse(index)));

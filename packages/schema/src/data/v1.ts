@@ -57,6 +57,14 @@ export const DataIndex = z.strictObject({
           }),
         )
         .optional(),
+      faq: z
+        .array(
+          z.strictObject({
+            q: z.string(),
+            a: z.string(),
+          }),
+        )
+        .optional(),
     }),
   ),
   terms: z.array(z.strictObject({ term: z.string(), data: z.string() })),

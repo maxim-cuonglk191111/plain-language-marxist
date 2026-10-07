@@ -20,6 +20,11 @@ export const ReadingPathStage = z.strictObject({
   items: z.array(z.union([WorkId, DocumentId])).min(1),
 });
 
+export const ReadingPathFaq = z.strictObject({
+  q: z.string().min(1),
+  a: z.string().min(1),
+});
+
 /** content/collections/{id}.yml — always presented as "suggested", never "correct". */
 export const ReadingPathFile = z.strictObject({
   schema_version: SchemaVersion,
@@ -30,6 +35,7 @@ export const ReadingPathFile = z.strictObject({
   items: z.array(z.union([WorkId, DocumentId])).min(1),
   stages: z.array(ReadingPathStage).optional(),
   rationale: z.string().min(1),
+  faq: z.array(ReadingPathFaq).optional(),
 });
 
 export const CollectionsEntry = z.discriminatedUnion("kind", [CollectionFile, ReadingPathFile]);

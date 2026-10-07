@@ -50,6 +50,18 @@ export default async function PathPage(props: Props) {
       <section className="path-rationale" aria-labelledby="why-title">
         <h2 id="why-title">Who suggests this order, and why</h2>
         <p>{path.rationale}</p>
+        {path.faq && path.faq.length > 0 && (
+          <div className="path-faq" aria-label="Frequently asked questions about this reading path">
+            {path.faq.map((item, i) => (
+              <details key={i} className="path-faq-item">
+                <summary className="path-faq-q">{item.q}</summary>
+                <div className="path-faq-a">
+                  <p>{item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        )}
       </section>
       <h2>
         Steps <span className="muted small">· about {totalMinutes(steps)} min in all</span>

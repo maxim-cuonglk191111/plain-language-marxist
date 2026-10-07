@@ -9,6 +9,7 @@ import { LayerSwitch } from "../../../components/LayerSwitch";
 import { ReadAloud } from "../../../components/ReadAloud";
 import { ReadingAids } from "../../../components/ReadingAids";
 import { ReadingProgress } from "../../../components/ReadingProgress";
+import { ReaderSettings } from "../../../components/ReaderSettings";
 import { SearchHighlight } from "../../../components/SearchHighlight";
 import { TermCards } from "../../../components/TermCards";
 import { TocDrawer } from "../../../components/TocDrawer";
@@ -223,6 +224,7 @@ function DocumentPage({
           )}
           <ReadAloud next={next?.path ?? null} />
           <FocusToggle />
+          <ReaderSettings />
         </div>
         <ReadingProgress
           path={doc.path}

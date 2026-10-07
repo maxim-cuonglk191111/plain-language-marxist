@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import { ReaderSettings } from "../components/ReaderSettings";
 import { Shortcuts } from "../components/Shortcuts";
 import { siteUrl } from "../lib/data";
 import { readingPaths } from "../lib/paths";
@@ -33,7 +32,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             <a href="/vocabulary/">Vocabulary</a>
             <a href="/search/">Search</a>
             <a href="/notes/">Notes</a>
-            <ReaderSettings />
           </nav>
         </header>
         <main id="main">{children}</main>

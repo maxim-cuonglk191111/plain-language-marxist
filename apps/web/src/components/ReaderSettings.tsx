@@ -163,17 +163,71 @@ export function ReaderSettings() {
     [],
   );
 
+  const sectionChoices = (keys: (keyof ReaderPrefs)[]) =>
+    CHOICES.filter((c) => keys.includes(c.key) && (c.key !== "screen" || "wakeLock" in navigator));
+
+  const typographyKeys: (keyof ReaderPrefs)[] = [
+    "theme",
+    "font",
+    "leading",
+    "width",
+    "margins",
+    "para",
+    "align",
+  ];
+  const aidKeys: (keyof ReaderPrefs)[] = ["aid", "terms", "numbers", "screen"];
+  const preferenceKeys: (keyof ReaderPrefs)[] = ["wpm", "shortcuts"];
+
+  const renderFieldset = (c: Choice) => (
+    <fieldset key={c.key} aria-describedby={c.hint ? `pref-${c.key}-hint` : undefined}>
+      <legend>{c.label}</legend>
+      <div className="choices">
+        {Object.entries(c.options).map(([value, label]) => (
+          <label key={value}>
+            <input
+              type="radio"
+              name={`pref-${c.key}`}
+              value={value}
+              checked={String(prefs[c.key]) === value}
+              onChange={() => set(c.key, value)}
+            />
+            <span>{label}</span>
+          </label>
+        ))}
+      </div>
+      {c.hint && (
+        <p id={`pref-${c.key}-hint`} className="settings-hint">
+          {c.hint}
+        </p>
+      )}
+    </fieldset>
+  );
+
   return (
     <div className="settings">
       <button
         ref={toggle}
         type="button"
-        className="settings-toggle"
+        className="bar-button settings-toggle"
         aria-expanded={open}
         aria-controls="reader-settings"
+        title="Settings (s)"
         onClick={() => setOpen(!open)}
       >
-        Settings
+        <svg
+          className="bar-icon"
+          aria-hidden="true"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+          <circle cx="12" cy="12" r="3" />
+        </svg>
+        <span className="bar-text">Settings</span>
       </button>
       {open && (
         <div
@@ -183,6 +237,18 @@ export function ReaderSettings() {
           role="region"
           aria-label="Reading settings"
         >
+          <div className="settings-head">
+            <h3 className="settings-title">Reading Settings</h3>
+            <button
+              type="button"
+              className="settings-close"
+              aria-label="Close settings"
+              onClick={() => setOpen(false)}
+            >
+              ×
+            </button>
+          </div>
+
           {/* Live preview: the same rules as the reader, in miniature. */}
           <div className="settings-preview" aria-label="Preview" role="group">
             <div className="layer-plain">
@@ -201,45 +267,62 @@ export function ReaderSettings() {
             </div>
           </div>
 
-          <div className="settings-size">
-            <label htmlFor="pref-size">
-              Text size <output htmlFor="pref-size">{prefs.size} px</output>
-            </label>
-            <input
-              id="pref-size"
-              type="range"
-              min={SIZE_MIN}
-              max={SIZE_MAX}
-              step={1}
-              value={prefs.size}
-              onChange={(e) => set("size", e.target.value)}
-            />
+          <div className="settings-section">
+            <h4 className="settings-section-title">Typography & Display</h4>
+            <div className="settings-size">
+              <label htmlFor="pref-size">
+                <span>Text size</span>
+                <output htmlFor="pref-size">{prefs.size} px</output>
+              </label>
+              <div className="settings-size-controls">
+                <button
+                  type="button"
+                  className="size-step-btn"
+                  title="Smaller text"
+                  aria-label="Smaller text"
+                  onClick={() => set("size", Math.max(SIZE_MIN, prefs.size - 1))}
+                  disabled={prefs.size <= SIZE_MIN}
+                >
+                  A−
+                </button>
+                <input
+                  id="pref-size"
+                  type="range"
+                  min={SIZE_MIN}
+                  max={SIZE_MAX}
+                  step={1}
+                  value={prefs.size}
+                  onChange={(e) => set("size", e.target.value)}
+                />
+                <button
+                  type="button"
+                  className="size-step-btn"
+                  title="Larger text"
+                  aria-label="Larger text"
+                  onClick={() => set("size", Math.min(SIZE_MAX, prefs.size + 1))}
+                  disabled={prefs.size >= SIZE_MAX}
+                >
+                  A+
+                </button>
+              </div>
+            </div>
+            <div className="settings-grid">
+              {sectionChoices(typographyKeys).map(renderFieldset)}
+            </div>
           </div>
 
-          {CHOICES.filter((c) => c.key !== "screen" || "wakeLock" in navigator).map((c) => (
-            <fieldset key={c.key} aria-describedby={c.hint ? `pref-${c.key}-hint` : undefined}>
-              <legend>{c.label}</legend>
-              <div className="choices">
-                {Object.entries(c.options).map(([value, label]) => (
-                  <label key={value}>
-                    <input
-                      type="radio"
-                      name={`pref-${c.key}`}
-                      value={value}
-                      checked={String(prefs[c.key]) === value}
-                      onChange={() => set(c.key, value)}
-                    />
-                    {label}
-                  </label>
-                ))}
-              </div>
-              {c.hint && (
-                <p id={`pref-${c.key}-hint`} className="settings-hint">
-                  {c.hint}
-                </p>
-              )}
-            </fieldset>
-          ))}
+          <div className="settings-section">
+            <h4 className="settings-section-title">Reading Aids & Focus</h4>
+            <div className="settings-grid">{sectionChoices(aidKeys).map(renderFieldset)}</div>
+          </div>
+
+          <div className="settings-section">
+            <h4 className="settings-section-title">Pacing & Shortcuts</h4>
+            <div className="settings-grid">
+              {sectionChoices(preferenceKeys).map(renderFieldset)}
+            </div>
+          </div>
+
           <p className="settings-foot">
             <button type="button" className="link-button" onClick={() => save(DEFAULT_PREFS)}>
               Reset to defaults

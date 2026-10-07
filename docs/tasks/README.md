@@ -63,6 +63,7 @@ Design reference: [`docs/architecture/SDD.md`](../architecture/SDD.md)
 | [055](055-manifesto-prefaces-ingestion.md) | Ingest historical prefaces for The Communist Manifesto (1872–1893) | M3 | Done |
 | [056](056-1857-introduction-ingestion.md) | Ingest 1857 Introduction to the Critique of Political Economy (Einleitung) | M3 | Done |
 | [057](057-reading-path-pedagogical-stages.md) | Restructure reading paths into three pedagogical stages & upgrade Marxism Fundamentals | M3 | Done |
-| [058](058-render-1857-introduction.md) | Plain English rendering of the *1857 Introduction* (Marx, Critique of Political Economy) | M3 | Open |
+| [058](058-render-1857-introduction.md) | Plain English rendering of the *1857 Introduction* (Marx, Critique of Political Economy) | M3 | Done |
+| [059](059-render-manifesto-prefaces.md) | Plain English rendering of the *Communist Manifesto Prefaces* (Marx & Engels, 1872–1893) | M3 | Done |
 
 Tasks for M2 (community contributions) will be filed once M1 is underway.

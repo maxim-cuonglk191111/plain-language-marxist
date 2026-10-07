@@ -1,0 +1,876 @@
+schema_version: 5
+document: document:marx:1859:critique-of-political-economy:intro
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:d31dcc482c2e42fdbc7acba2674c02b6e53051328a956c221bd032bfa344d127
+    revision: 1
+    ai_assisted: true
+    text: Introduction to a Contribution to the Critique of Political Economy
+  p00002:
+    covers: [p00002]
+    based_on: sha256:18f48a31ae26b0f376e7aae62274934d9a609e99610e6c574d9bc37b6f591ec4
+    revision: 1
+    ai_assisted: true
+    text: I. PRODUCTION, CONSUMPTION, DISTRIBUTION, EXCHANGE (CIRCULATION)
+  p00003:
+    covers: [p00003]
+    based_on: sha256:a4eb429427c2f6695cd56bab3382d9afbcea0847f96f191e7e1198c82cd580a1
+    revision: 1
+    ai_assisted: true
+    text: 1. PRODUCTION
+  p00004:
+    covers: [p00004]
+    based_on: sha256:e0a5661f7cad89da911bf3fcdf2db1d5fc41b65e1938dec14642b8861771ddd1
+    revision: 1
+    ai_assisted: true
+    text: (a) To begin with, the question under discussion is material production.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:1e5bc45e1b9eece5db282d5686730f87374260607c846f820c907f73a6908d9a
+    revision: 1
+    ai_assisted: true
+    text: |
+      Individuals producing in society—and therefore socially determined production by individuals—is of course our point of departure. The solitary hunter or fisherman, who serves Adam Smith and Ricardo as a starting point, belongs to the unimaginative fantasies of 18th-century Robinson Crusoe stories. Rousseau’s social contract, which links naturally independent subjects through an agreement, is no less of an illusion. It is the aesthetic illusion of small and large Robinson stories.
+
+      On the contrary, it anticipated {bourgeoisie:adj} society, which began evolving in the sixteenth century and made giant strides toward maturity in the eighteenth. In this society of free competition, the individual seems freed from natural ties that made him an appurtenance of a limited human group in earlier eras. The eighteenth-century prophets, on whose shoulders Smith and Ricardo stood, saw this individual as an ideal belonging to the past. They saw him not as a historical result, but as the starting point of history; not as something evolving historically, but posited by nature. This delusion has been typical of every new era up to now. Steuart, who regarded things more from a historical standpoint, avoided this naive view.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:30eebc1d6f9c3390a87b0248af5c21c6e93dd48e50e44a325d2e0ee4e7c6a039
+    revision: 1
+    ai_assisted: true
+    text: |
+      The further back we trace history, the more the producing individual appears dependent and part of a larger whole. At first, he is part of the family and tribe in a natural way. Later, he is part of various community forms arising from tribal conflict and union. Only in the eighteenth century, in {bourgeoisie:adj} society, do various forms of social texture confront the individual as mere means for private ends, as external necessity. Yet the era that produces this standpoint of the solitary individual is precisely the period of the most highly developed social relations so far.
+
+      Man is a political animal in the most literal sense. He is not only a social animal, but an animal that can individualize himself only within society. Production by a solitary individual outside society is preposterous. It is as absurd as developing speech without people living and talking together. There is no need to dwell on this point further. It would not need mentioning if Bastiat, Carey, and Proudhon had not reintroduced this nonsense into modern political economy.
+  p00007:
+    covers: [p00007]
+    based_on: sha256:6c176d7fdb4f8d02f6ad6132caa9e7a92b2db1c619fafd77b6912deb81c52d10
+    revision: 1
+    ai_assisted: true
+    text: |
+      When we speak of production, we always mean production at a definite stage of social development by individuals in society. It might seem that we must either trace historical development or state from the start that we examine modern {bourgeoisie:adj} production, our real subject. Yet all periods of production share common features and categories.
+
+      Production in general is an abstraction, but a sensible one because it emphasizes common elements and avoids repetition. Yet this general concept is a compound of divergent categories. Some elements belong to all eras; others to a few. The most modern and most ancient periods share certain categories. But although languages have common laws, their divergence from common features constitutes their development.
+
+      We must distinguish definitions applying to production in general so we do not overlook essential differences. Modern economists fail to see this when they try to prove the eternal harmony of existing relations. For instance, no production is possible without an {instruments-of-production:sg}, even if it is only the hand. Nor is it possible without accumulated past labour. {Capital:sg} is, among other things, an {instruments-of-production:sg} and past labour. Therefore, economists claim {capital:sg} is an eternal relation of nature—provided one omits precisely the specific factors that turn an {instruments-of-production:sg} into {capital:sg}. The whole history of the {relations-of-production:sg} appears as a falsification brought about by government.
+  p00008:
+    covers: [p00008]
+    based_on: sha256:b77e65b460c1f11e0c58ddf7907e0942fb7027dea908c82fcf7004a6aadc1b3b
+    revision: 1
+    ai_assisted: true
+    text: Just as there is no production in general, there is no general production. Production is always a particular branch, like agriculture, cattle-breeding, or {manufacture:sg}, or it is the totality of production. Political economy is not technology. The relation of general categories to particular forms of production will be explained later.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:0957073566301614e76939863ff2463730c324b07686296d5051164df66c93a4
+    revision: 1
+    ai_assisted: true
+    text: Finally, production is always carried on by a definite social body in a wider or narrower totality of productive spheres. The relation of academic presentation to the actual process does not belong here either. Production in general. Particular branches of production. Totality of production.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:bceef21ca08680a937874eb20141c8c6db0a0b664ca1005287479b501cda08fb
+    revision: 1
+    ai_assisted: true
+    text: "It is fashionable to preface economic works with a general part dealing with the general conditions of all production, as John Stuart Mill does. This general part purports to cover:"
+  p00011:
+    covers: [p00011]
+    based_on: sha256:5ad58d8b87ea084f290726ca53e67090942024d0c2aa23362bbd39e5ca000337
+    revision: 1
+    ai_assisted: true
+    text: 1. Conditions without which production cannot occur. This means indicating the essential factors for any production. But as we shall see, this amounts to a few simple definitions expanded into trivial tautologies.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:640135b22d3902bd28323a26e9b7a7ada68f919c2b907cd27d67c6ce28385648
+    revision: 1
+    ai_assisted: true
+    text: 2. Conditions that promote production more or less, as in Adam Smith's progressive and stagnant states of society. To give this scientific value, research into the degree of productivity at various periods would have to be conducted. That investigation lies outside the subject and belongs under competition and accumulation. In general, it amounts to the statement that an industrial nation reaches highest productivity at the height of its historical development. Or that certain climates, fertile soil, and natural circumstances favor production. This again amounts to saying that producing wealth grows easier as its subjective and objective elements become available.
+  p00013:
+    covers: [p00013]
+    based_on: sha256:d70f64ef019c1ab20da3ce958da2fc77ac351fcab2168d19578b349e7fd0d8a1
+    revision: 1
+    ai_assisted: true
+    text: |
+      Economists are not really concerned with this in their general part. Instead, they try to present production as governed by eternal natural laws independent of history. At the same time, they smuggle in {bourgeoisie:adj} relations as irrefutable natural laws of society in the abstract. That is the real purpose of the procedure.
+
+      By contrast, they treat distribution as arbitrary, subject to human choice. Yet whatever the mode of distribution in different societies, it is always possible to emphasize common aspects and confuse historical differences. Slaves, {serf:pl}, and wage-workers all receive enough food to exist in their condition. Conquerors living on tribute, officials on taxes, landlords on rent, and monks on alms all receive shares under different laws.
+
+      The two main factors economists include here are property and its legal protection.
+  p00014:
+    covers: [p00014]
+    based_on: sha256:d7cabc31b2c5fbd95c55e22e8094f434e6cddadc55d2d21f99c6e87ed946297c
+    revision: 1
+    ai_assisted: true
+    text: "Regarding the first factor: production is always {appropriation:sg} of nature by an individual within and with the help of a definite social form. In that sense, saying property ({appropriation:sg}) is a condition of production is a tautology. But it is ridiculous to leap from this to a distinct form like {private-property:sg}. History shows that common property is the original form. Saying that where no property exists there can be no production simply means that {appropriation:sg} which appropriates nothing is a contradiction."
+  p00015:
+    covers: [p00015]
+    based_on: sha256:319c31f3e666007199f2dfb29cd6ae87a50c64625ba36c6e2c14bcd7acb91788
+    revision: 1
+    ai_assisted: true
+    text: "Regarding the second factor: safeguarding what has been acquired. Each {mode-of-production:sg} produces its specific legal relations and political forms. {bourgeoisie:adj} economists merely notice that production proceeds more smoothly with modern police than under club-law. They forget that club-law is also law, and the right of the stronger survives in their constitutional state in another form."
+  p00016:
+    covers: [p00016]
+    based_on: sha256:21d3c460def9eb73fdb2d86df52a4072597fe980a50a8decdf11b5458137590f
+    revision: 1
+    ai_assisted: true
+    text: While social conditions appropriate to a particular stage of production are either evolving or dissolving, disturbances naturally occur in production.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:9be92903692b2ec7a2ca624f6bd9e887ffe84e04bf2ef508162cdc98d4c1224e
+    revision: 1
+    ai_assisted: true
+    text: "To recapitulate: categories common to all stages of production are general abstractions established by reasoning. But the so-called general conditions of all production are abstract ideas that do not define any actual historical stage of production."
+  p00018:
+    covers: [p00018]
+    based_on: sha256:b979fb84d3c4ca87db53b447a6e398255791cecba1283d2b66aea29249d16115
+    revision: 1
+    ai_assisted: true
+    text: 2. THE GENERAL RELATION OF PRODUCTION TO DISTRIBUTION, EXCHANGE, AND CONSUMPTION
+  p00019:
+    covers: [p00019]
+    based_on: sha256:2fadbe0b03e6a96aecae711fc285dc6f2e5b6ff7f2fd9823f33e65e387857f36
+    revision: 1
+    ai_assisted: true
+    text: Before starting upon a further analysis of production, it is necessary to consider the various sections that economists place alongside it.
+  p00020:
+    covers: [p00020]
+    based_on: sha256:125b5f30446bc37f1e5e2fc39e8e8e8812667fda28e1d2540abf1e3970c5c972
+    revision: 1
+    ai_assisted: true
+    text: |
+      The obvious conception is this: in production, members of society appropriate and shape natural products for human requirements. Distribution determines the proportion of products accruing to the individual. Exchange supplies him with the specific products into which he wants to convert his share. Finally, in consumption the products become objects of direct use and enjoyment.
+
+      Production appears as the point of departure, consumption as the goal, and distribution and exchange as the middle. Distribution is actuated by society, while exchange is actuated by individuals. In production persons acquire an objective aspect, and in consumption objects acquire a subjective aspect. In distribution society mediates between production and consumption; in exchange this mediation occurs through random decisions of individuals.
+  p00021:
+    covers: [p00021]
+    based_on: sha256:5fd6d566eefdc27de3cee3de43176d22d722d400721ced6c18ea3120a276a9b4
+    revision: 1
+    ai_assisted: true
+    text: Distribution determines the proportion of products accruing to the individual. Exchange determines the products in which the individual claims to make up the share assigned to him by distribution.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:87d0e09b898910424eeb9727e4acaa756ee77293289f5051d7ea0109bdd126b7
+    revision: 1
+    ai_assisted: true
+    text: |
+      Production, distribution, exchange, and consumption thus form a neat logical sequence. Production represents the general, distribution and exchange the particular, and consumption the individual case that completes the whole.
+
+      Yet this is a very superficial sequence. Production is determined by general laws of nature. Distribution is determined by social chance, though it can influence production. Exchange is a formal social movement between the two. Finally, consumption as the end goal lies outside economics, except as it reacts back upon the starting point and starts the cycle again.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:3ca87a0bc8b0e5e63850c5f74d0ea8f878ea684b157cd257791f27df9511735f
+    revision: 1
+    ai_assisted: true
+    text: Opponents of the economists accuse them of crudely separating interconnected elements. But these opponents argue from the same standpoint or an even shallower one, whether they come from inside or outside political economy.
+  p00024:
+    covers: [p00024]
+    based_on: sha256:f92b22ed9938f4cfb1f6c0246a8aa6d88d7ef9c3d3014359a0ba5c8cf5b2e5b4
+    revision: 1
+    ai_assisted: true
+    text: |
+      Nothing is more common than the complaint that economists treat production too much as an end in itself, and that distribution matters just as much. This complaint accepts the economists' view that distribution is an independent sphere alongside production.
+
+      Another complaint is that the elements are not viewed as a single whole. It is as if this division were forced from textbooks into real life, rather than from real life into textbooks. And it is as if the task were reconciling abstract concepts rather than resolving real conditions.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:ff29fdd59f291d6e81b7ff1fdcae00fe57c52ab9ea442be2d24e6a60f7a1b576
+    revision: 1
+    ai_assisted: true
+    text: a. [Production and Consumption]
+  p00026:
+    covers: [p00026]
+    based_on: sha256:80343b54afbd66e031d73538ffe40bb7bef9e0e0d14b52da1424f67093bb8b56
+    revision: 1
+    ai_assisted: true
+    text: |
+      Production is at the same time consumption as well. It is consumption in two ways: subjective and objective.
+
+      First, the individual expends personal energy while producing. He uses up his powers in production just as living beings consume energy in reproduction.
+
+      Second, it is consumption of the {means-of-production}. Tools and machines wear out, and materials like fuel break down into simpler parts. Raw materials are absorbed and lose their original shape.
+
+      Every stage of production is thus also an act of consumption. Economists admit this. They call productive consumption both production that is identical with consumption, and consumption that occurs directly during production. This identity matches Spinoza's statement: <i>To define is to negate</i>.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:12abe49032f7fc83886f9a507344502c9a443a318dee110c1c77aa6d57c5a39a
+    revision: 1
+    ai_assisted: true
+    text: Economists introduce this idea of productive consumption only to separate consumption identical with production from consumption in the proper sense. They see real consumption as the destructive opposite of production. Let us therefore examine consumption itself.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:4b5e8e0d59e809057c877f30ca6274c2fdd1cc4c50c9baf8385fb1eb0d580dad
+    revision: 1
+    ai_assisted: true
+    text: |
+      Consumption is also production, just as a growing plant consumes natural elements and chemicals. A person produces his own body through eating, which is a form of consumption. The same applies to any consumption that produces some human capacity. This is consumptive production.
+
+      Yet political economy says this type of production is a second stage arising from destroying the first product. In the first stage, the producer creates an object. In the second, the object develops the person.
+
+      Therefore, this consumptive production is essentially different from production itself, even though they form a direct unit. Their immediate unity does not cancel their clear difference.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:0ecbe9604463ef03e182c681d863a24c1929ec0bf28e61d104543da2f60e7be6
+    revision: 1
+    ai_assisted: true
+    text: |
+      Production is thus at the same time consumption, and consumption is at the same time production. Each is directly its opposite.
+
+      At the same time, a mediating movement occurs between them. Production leads to consumption by providing its material; without production, consumption would have no object.
+
+      Yet consumption also leads to production by providing the subject for whom products are made. A product receives its final completion only in consumption. A railway that carries no passengers is only a potential railway, not an actual one. Without production there is no consumption, but without consumption there is no production either, because production would then be pointless.
+
+      Consumption produces production in two ways:
+  p00030:
+    covers: [p00030]
+    based_on: sha256:5f30a34fc43a530d012779e68f64831950e20262364af8ab3874d3c0109ebc05
+    revision: 1
+    ai_assisted: true
+    text: |
+      1. A product becomes a real product only through consumption. For example, a dress becomes a real dress only when worn. An empty house is not truly a lived-in house. A product proves itself a product, rather than a mere object of nature, only when consumed.
+
+      Consumption gives the product its finishing touch by consuming it. A product is a product not merely as materialized work, but as an object for an active person.
+  p00031:
+    covers: [p00031]
+    based_on: sha256:578e233d822b46015d2bf38adcca17f81379ba16fb261000028a9861b3a96c91
+    revision: 1
+    ai_assisted: true
+    text: |
+      2. Consumption creates the need for new production. It provides the inner purpose and reason for production, which is its necessary condition. Consumption provides the motive to produce, and it provides the goal that guides production.
+
+      Externally, production supplies the object of consumption. Internally, consumption sets up the object of production as an idea, a need, and a purpose. Consumption creates the object subjectively before production makes it real. There is no production without need, and consumption recreates need.
+  p00032:
+    covers: [p00032]
+    based_on: sha256:ade624bbf7d2a408305def3701fc3a78c78efcd3749240966e3eb18f8323edf6
+    revision: 1
+    ai_assisted: true
+    text: "This relation is matched on the side of production:"
+  p00033:
+    covers: [p00033]
+    based_on: sha256:ab1602f37c4a8539fd9814897f578acb25cbf9c384642030e4ed41e0beae8a2e
+    revision: 1
+    ai_assisted: true
+    text: 1. Production supplies the material object of consumption. Consumption without an object cannot exist. In this sense, production creates consumption.
+  p00034:
+    covers: [p00034]
+    based_on: sha256:1d931082c26b098be2a983210b71f674ad8bdf074f4ecdfed6468fe2e6fcb6f6
+    revision: 1
+    ai_assisted: true
+    text: |
+      2. Production provides not only the object, but also the specific manner and finish of consumption. Just as consumption finishes the product, production shapes consumption.
+
+      The object is not just any object, but a specific item that must be consumed in a specific way determined by production. Hunger is hunger. But hunger satisfied by cooked meat eaten with knife and fork is different from hunger that tears raw meat with hands and teeth.
+
+      Production therefore produces not only the object of consumption, but also the way people consume it. It produces the consumer.
+  p00035:
+    covers: [p00035]
+    based_on: sha256:9c2e00735c6502518c1f69a9f300b5855bef8453861d8df63f0cecffe0da40e5
+    revision: 1
+    ai_assisted: true
+    text: |
+      3. Production provides not only the material to satisfy a need, but also the need for that material. When consumption rises above primitive crudeness, the desire itself is sparked by the object.
+
+      Seeing the object creates the desire for it. A work of art creates an audience with taste that can enjoy beauty. The same is true of any other product. Production thus creates an object for the person, and creates a person for the object.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:851d4a2dd93f19f7c072edfe09d6fea742aabe12579f2c4c57393e63b7c48a4b
+    revision: 1
+    ai_assisted: true
+    text: |
+      Production therefore produces consumption in three ways:
+      1. It provides the material for consumption.
+      2. It determines the way to consume.
+      3. It creates in the consumer the need for the product.
+
+      It creates the object, the mode, and the desire to consume. Likewise, consumption prepares the producer by creating the demand that guides his work.
+  p00037:
+    covers: [p00037]
+    based_on: sha256:963922ae9d67065781a60ff60af7bf118228ee021e206b0daee392ac13fd8133
+    revision: 1
+    ai_assisted: true
+    text: "The identity of production and consumption has three aspects:"
+  p00038:
+    covers: [p00038]
+    based_on: sha256:f5d5288224b460943d9731b701870f99669102f3f1fb07475a1716e1fd5564ed
+    revision: 1
+    ai_assisted: true
+    text: |
+      1. <i>Direct identity</i>: Production is consumption, and consumption is production. Consumptive production and productive consumption.
+
+      Economists call both productive consumption, but they make a distinction. They treat the first as reproduction, and the second as productive consumption. Studies of the first focus on productive and unproductive labour. Studies of the second focus on productive and non-productive consumption.
+  p00039:
+    covers: [p00039]
+    based_on: sha256:c761768ac1a59f5d6796ae4b8bee671dea65fc7998ad88f339ccd2bebb2612a2
+    revision: 1
+    ai_assisted: true
+    text: |
+      2. Each acts as a means for the other and depends on the other. People call this mutual dependence. They need each other, but they still remain separate.
+
+      Production provides the external material for consumption. Consumption provides the internal need and goal for production. There is no consumption without production, and no production without consumption. This claim appears in many forms in political economy.
+  p00040:
+    covers: [p00040]
+    based_on: sha256:0cefe6b8be1c330507836021fae52b46ed93729d47b167bbaecebb558488ac27
+    revision: 1
+    ai_assisted: true
+    text: |
+      3. Production is not only consumption, and consumption is not only production. Nor is each merely a means for the other.
+
+      Rather, each creates the other by completing itself. Each creates itself as the other. Only consumption completes the product by using it up and ending its separate physical form.
+
+      Moreover, repeated consumption turns abilities developed in production into permanent skills. Consumption is thus the final act that makes the product a product and makes the producer a producer.
+
+      On the other hand, production creates consumption by creating a specific way of consuming. By offering tempting products, it creates the desire to consume them.
+  p00041:
+    covers: [p00041]
+    based_on: sha256:5e46ca827f384b8a8c525444d9608b747768c67931576af8908923c437801573
+    revision: 1
+    ai_assisted: true
+    text: Economists explain this third identity in various ways when discussing supply and demand, objects and needs, and natural needs compared to social needs.
+  p00042:
+    covers: [p00042]
+    based_on: sha256:ecfa9fe5e1573a1f24cc0fa9b52fa2060f0a4400caeeeddc0c50cf8ed748d1be
+    revision: 1
+    ai_assisted: true
+    text: |
+      After this, nothing is easier for a Hegelian than to declare that production and consumption are identical. Socialist writers and dry economists like Say have done this. For instance, Say declared that for a whole nation, production is identical with consumption.
+
+      Storch proved that Say was wrong. A nation does not consume all its products; it must also set aside {means-of-production} and fixed {capital}.
+
+      It is also wrong to treat society as a single person, which is speculative thinking. For a single person, production and consumption are phases of one act.
+
+      The essential point is that production and consumption are phases of one process in which production is the decisive starting point. Consumption is an inner part of productive activity. But production is where actual realization begins, making it the decisive act.
+
+      An individual produces an object and returns to his starting point by consuming it. But he returns as a productive person who reproduces himself. Consumption is thus a phase of production.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:1e50655fc8cb11662d4d41685412369433a992160361b1538b460fabb5a4b0b8
+    revision: 1
+    ai_assisted: true
+    text: |
+      In society, however, the producer's link to the finished product is indirect. Getting the product back depends on his social relations with others. He does not gain it immediately.
+
+      Direct {appropriation} is not his aim when producing in society. <i>Distribution</i> steps between the producer and the products, using social rules to determine his share.
+  p00044:
+    covers: [p00044]
+    based_on: sha256:174990f962efeb3271e2b3a6c52abe1de7849e2808f5e69ff942ddce07538aef
+    revision: 1
+    ai_assisted: true
+    text: Is distribution therefore an independent sphere alongside and outside production?
+  p00045:
+    covers: [p00045]
+    based_on: sha256:83a27212d3243af91ecaef914ce568205befdf3a356db67bbce5ee73bb898cea
+    revision: 1
+    ai_assisted: true
+    text: b. [Production and Distribution]
+  p00046:
+    covers: [p00046]
+    based_on: sha256:643871ebcdf65498a322cd675175dc9e65b78b723040895d0ad1751d36d9c6b9
+    revision: 1
+    ai_assisted: true
+    text: |
+      When reading standard economics books, one notices at once that everything is listed twice. Rent, wages, interest, and profit appear under distribution. Land, labour, and {capital} appear under production.
+
+      {Capital} is clearly counted twice: first as a factor of production, and second as a source of income in distribution. Interest and profit also appear in production, because they are ways {capital} grows.
+
+      As forms of distribution, interest and profit require {capital} as a factor of production. They are ways {capital} reproduces itself.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:ddf1651b71d58ba349dd0ac61b0cde2d1a1d3cbf05a76a9cb00f7bb64c444322
+    revision: 1
+    ai_assisted: true
+    text: |
+      Wages represent {wage-labour}, which is examined in another section. Labour as a factor of production appears here as a form of distribution.
+
+      If labour were not organized as {wage-labour}, its share would not take the form of wages, as seen in slavery.
+
+      Finally, rent requires large landed estates and large-scale farming as factors of production, not mere land in general. Just as wages do not assume labour in general, rent does not assume land in general.
+
+      The forms of distribution are simply the reverse side of the factors of production. A person who takes part in production as a wage-worker receives his share as wages. The structure of distribution is determined entirely by the structure of production.
+
+      Distribution is a result of production in both content and form. Only the results of production can be distributed. And how people take part in production determines how they share in distribution. It is an illusion to put land under production and rent under distribution.
+  p00048:
+    covers: [p00048]
+    based_on: sha256:8951ff810b2dbf24449296ff1e2ea3006f4297774f878044aaaab7f487378d48
+    revision: 1
+    ai_assisted: true
+    text: Economists like Ricardo are accused of paying attention only to production. Yet they treat distribution as the true subject of economics. They recognized that forms of distribution show how factors of production operate in a given society.
+  p00049:
+    covers: [p00049]
+    based_on: sha256:502e6649bdeaf6ef38ef09047a2a736212d3741712ef5da636a943b82c32eb78
+    revision: 1
+    ai_assisted: true
+    text: To the individual, distribution appears as a social rule that decides his place in production before he even begins. An individual born without {capital} or land must work for wages because of social distribution. But this dependence itself results from {capital} and landed property existing as separate factors of production.
+  p00050:
+    covers: [p00050]
+    based_on: sha256:4f5d54c18ea9df517b5010b8dbd5e7754fee9b63120057ae4ffe35fec679789b
+    revision: 1
+    ai_assisted: true
+    text: |
+      When looking at whole societies, distribution also seems to come before production.
+
+      A conqueror may divide land among his soldiers, imposing a new form of property and shaping production. Or he may turn the people into slaves, making slave labor the basis of production.
+
+      During a {revolution}, a nation may break up large estates into small plots, changing production through new distribution. Or laws may keep land within certain families, turning work into a hereditary caste system.
+
+      In all these historical cases, distribution seems to determine production rather than the other way around.
+  p00051:
+    covers: [p00051]
+    based_on: sha256:2d14d67d0d4fa08defe8926f967e13d64f0c184fea5fab3b03422218c4bfc37c
+    revision: 1
+    ai_assisted: true
+    text: |
+      On the surface, distribution looks like the distribution of finished products. This makes it seem independent of production.
+
+      Yet before it distributes products, distribution is:
+      1. The distribution of {means-of-production}.
+      2. The distribution of members of society among different kinds of work, placing them into definite {relations-of-production:sg}.
+
+      The distribution of products is merely a result of this prior distribution within production itself. To study production apart from this distribution is empty abstraction.
+
+      Ricardo sought to understand modern production, and for that reason declared distribution to be the true subject of economics. Economists who call production an eternal truth and limit history to distribution show only their shallow thinking.
+  p00052:
+    covers: [p00052]
+    based_on: sha256:8385f70a6b7185b1dbf407ea16154a1f1ece5ea31eb58d331bb7a117b6fcdcfe
+    revision: 1
+    ai_assisted: true
+    text: |
+      How distribution relates to production clearly belongs inside the study of production.
+
+      Some argue that because production begins with a given distribution of {means-of-production}, distribution comes first. But production creates its own prerequisites.
+
+      These conditions may appear natural at first. In the course of production, however, they become historical products. What was a starting condition for one era is the historical result of an earlier era.
+
+      Production changes these conditions constantly. For example, using machinery changed the distribution of {means-of-production} and products. Modern large-scale land ownership was created by modern trade and {modern-industry}, and by applying industry to agriculture.
+  p00053:
+    covers: [p00053]
+    based_on: sha256:50fb054ffca35f87d05d72b9fed56b12c8afd41c47d6bb2c155639a54e31cfa3
+    revision: 1
+    ai_assisted: true
+    text: "These questions boil down to this: what role do general historical conditions play in production, and how does production relate to historical development as a whole? This question belongs to the analysis of production itself."
+  p00054:
+    covers: [p00054]
+    based_on: sha256:0f53d57690e8261b84bdc05888c0aa0f9bbf40380a15fa22c0638d56ead45bdc
+    revision: 1
+    ai_assisted: true
+    text: |
+      In simple terms, conquests lead to one of three results:
+      1. The conqueror imposes his own {mode-of-production} on the conquered people, as the English did in Ireland and parts of India.
+      2. The conqueror leaves the old {mode-of-production} in place and settles for tribute, like the Turks and Romans.
+      3. The two systems interact and merge into a new synthesis, as occurred in the Germanic conquests.
+
+      In every case, the {mode-of-production} determines the new form of distribution. Even when distribution seems to come first, it is the result of a specific historical form of production.
+  p00055:
+    covers: [p00055]
+    based_on: sha256:e92e01704ad2e31e24078188fdef6a5068c731156f3c6c59a5b60a12a7562a34
+    revision: 1
+    ai_assisted: true
+    text: |
+      For example, the Mongols who devastated Russia acted according to their {mode-of-production}, cattle-breeding, which requires vast open grasslands.
+
+      The Germanic {barbarian:pl}, whose {mode-of-production} was farming with {serf:pl}, lived scattered across the countryside. They adapted easily to Roman provinces because concentrated land ownership had already destroyed earlier peasant relations there.
+  p00056:
+    covers: [p00056]
+    based_on: sha256:94567ca9fed675a472e2e66fa5acf5883ecc7ab15382a28f03f95729514bf0d1
+    revision: 1
+    ai_assisted: true
+    text: People often say that in certain eras societies lived by plunder. But to plunder, there must be something to plunder, which requires production. And the way people plunder depends on how they produce. A nation of stock speculators cannot be robbed like a tribe of cowherds.
+  p00057:
+    covers: [p00057]
+    based_on: sha256:667430f68b6f47c2fd91c22c8eaf55adfa20a925a1c36b770366c8de540dce28
+    revision: 1
+    ai_assisted: true
+    text: People can steal the {means-of-production} directly by capturing slaves. But the capturing country must have a structure of production that can use slave labor. Otherwise, it must develop a {mode-of-production} suited to slavery, as in South America.
+  p00058:
+    covers: [p00058]
+    based_on: sha256:c08713d864f8ac053d76fdd6ca8e4315c09371690f08337699ba4be5615c4119
+    revision: 1
+    ai_assisted: true
+    text: |
+      Laws can keep a specific {means-of-production}, such as land, in certain families. Such laws matter economically only when large estates fit the social {mode-of-production}, as in Britain.
+
+      In France, small farming continued despite large estates, so the {revolution} divided them into small plots. Yet can laws keep land divided forever? Land tends to concentrate again despite such laws. How laws preserve distribution and affect production must be studied separately.
+  p00059:
+    covers: [p00059]
+    based_on: sha256:156d15368864a0ec98241918765447280269c33e635e06ad8a71c71490bd1b38
+    revision: 1
+    ai_assisted: true
+    text: c. Lastly, Exchange and Circulation
+  p00060:
+    covers: [p00060]
+    based_on: sha256:498b8ed458c899ba79cbaf4138c1dcc30793b7c5f0e7e229c14050f682034e1c
+    revision: 1
+    ai_assisted: true
+    text: Circulation is merely a particular phase of exchange, or exchange viewed in its totality.
+  p00061:
+    covers: [p00061]
+    based_on: sha256:295300cfd9a68196d9437eb943ab0569eb51902eccef8a71144de76e266c8516
+    revision: 1
+    ai_assisted: true
+    text: <i>Exchange</i> is simply an intermediate phase between production and distribution on one hand, and consumption on the other. Because distribution is determined by production, and consumption is itself an aspect of production, production also includes exchange as one of its moments.
+  p00062:
+    covers: [p00062]
+    based_on: sha256:85d094965768aed0a3d4e6920af728d9730bf69f7caf8817b3a312bb8138b32f
+    revision: 1
+    ai_assisted: true
+    text: |
+      First, the exchange of activities and abilities inside production is a direct and essential part of production.
+
+      Second, the exchange of products needed to complete a finished product for consumption is also part of production. In this sense, exchange is included within the concept of production.
+
+      Third, what people call exchange between dealers is determined entirely by production, both in its structure and as a productive activity.
+
+      Exchange seems to stand apart from production only at the final stage, when finished products are exchanged for direct consumption. But even here:
+      1. No exchange is possible without the {division-of-labour}, whether natural or historical.
+      2. Private exchange requires private production.
+      3. The intensity, spread, and nature of exchange are determined by the development of production, as seen in trade between town and country.
+
+      Every form of exchange is therefore either directly included in production or determined by it.
+  p00063:
+    covers: [p00063]
+    based_on: sha256:ae9d9f864e5b9d52064c4be0345a34033ebf24935b28c1649e7e4be10ce3439b
+    revision: 1
+    ai_assisted: true
+    text: |
+      The conclusion is not that production, distribution, exchange, and consumption are identical. Rather, they are parts of a single whole, different aspects of one unit.
+
+      Production is the decisive phase, over its own opposite aspects and over all the other phases. The process always begins again from production.
+
+      Exchange and consumption cannot be decisive, and the same is true of the distribution of products. The distribution of the factors of production, on the other hand, is a phase of production itself.
+
+      A specific {mode-of-production} determines specific forms of consumption, distribution, and exchange, and <i>the specific relations between these different phases</i>.
+
+      Production in <i>the narrow sense</i> is also affected by the other aspects. When the market widens, production grows and becomes more varied. Production changes when distribution changes, such as when {capital} concentrates or when population shifts between town and country. Production is also shaped by consumption needs.
+
+      These various aspects interact constantly, as in any organic whole.
+  p00064:
+    covers: [p00064]
+    based_on: sha256:dfe7f7e9aea1593c82185185affb7a12ba40f365170c812002697536744585b7
+    revision: 1
+    ai_assisted: true
+    text: 3. THE METHOD OF POLITICAL ECONOMY
+  p00065:
+    covers: [p00065]
+    based_on: sha256:0766fb451690005e320080964ec8b2831d9753ebe7ef45d73d67e8e588624477
+    revision: 1
+    ai_assisted: true
+    text: When examining a country in political economy, we begin with its population and its division into classes. We also examine town and country, the sea, branches of production, exports and imports, annual production and consumption, and prices.
+  p00066:
+    covers: [p00066]
+    based_on: sha256:38bdcf5508e17e70d3421300e1114223e287ca86090e180e8f3796ef3755389b
+    revision: 1
+    ai_assisted: true
+    text: |
+      It seems right to begin with real and concrete elements, with actual conditions, such as starting with population, the foundation and subject of all social production.
+
+      Yet closer study shows this is wrong. Population is an empty abstraction if we leave out the classes that make it up. These classes are empty words if we do not understand their elements, such as {wage-labour} and {capital}.
+
+      These terms in turn require exchange, the {division-of-labour}, and prices. For instance, {capital} is nothing without {wage-labour}, value, money, and price.
+
+      Starting with population gives only a vague picture of a complex whole. Through analysis, one moves from imaginary concrete concepts to simpler and thinner abstractions, until reaching the simplest definitions.
+
+      From there, one must travel back in the opposite direction until arriving at population again. This time, population is not a vague impression, but a rich totality with many definitions and relations.
+
+      The first path is the historical route taken by early political economy. Seventeenth-century economists began with living reality—population, nations, states—but ended with a few general abstract concepts, like the {division-of-labour}, money, and value.
+
+      Later economic systems began with simple concepts like labour, the {division-of-labour}, need, and {exchange-value}, and advanced to the state, international trade, and the {world-market}.
+
+      This latter approach is the correct scientific method. The concrete is concrete because it combines many definitions, representing the unity of diverse elements.
+
+      In thought, the concrete appears as a result and synthesis, not as the starting point, even though it is the real point of departure in perception and observation.
+
+      The first method reduces rich images to abstract concepts. The second method uses abstract concepts to reproduce the concrete in thought.
+
+      Hegel fell into the illusion of seeing the real world as the result of thought thinking itself, moving by its own power. In truth, moving from the abstract to the concrete is merely the way thought grasps the concrete and reproduces it as a mental concept. It is not how the real world itself develops.
+
+      The simplest economic category, such as {exchange-value}, assumes a population producing under specific conditions, within a family, community, or state. {Exchange-value} can exist only as a one-sided relation within an already existing concrete whole.
+
+      Yet {exchange-value} as an abstract category existed long before modern society. To a philosophical view that treats the thinking mind as the real person and the understood world as the only real world, the development of categories looks like the creation of the world itself.
+
+      The conceptual whole is indeed a product of thinking and understanding. But it does not arise from an independent Idea operating outside observation. It results from working perceptions and images into concepts.
+
+      The concrete subject remains independent and outside the mind. In the theoretical method, society must always remain the real presupposition in our minds.
+  p00067:
+    covers: [p00067]
+    based_on: sha256:de22910cc2de39f54db1926105984fab1ac10e4ad3dd515101ca77c77429ffa5
+    revision: 1
+    ai_assisted: true
+    text: |
+      Do these simple categories also have an independent historical or natural existence before the more concrete ones? That depends.
+
+      Hegel correctly begins his philosophy of law with property, the simplest legal relation. Yet no property exists before the family or master-servant relations, which are far more concrete.
+
+      Families and entire tribes exist that have <i>possession</i> but not <i>property</i>. The simpler category represents a relation of simpler tribal communities. In higher societies, it appears as a relatively simple relation in a more advanced society.
+
+      A concrete foundation is always presupposed. An isolated savage may possess something, but that possession is not a legal relation. Possession did not produce the family historically; possession assumes more concrete social relations.
+
+      Simple categories can express relations in an immature society before more complex categories develop, or subordinate relations in a more advanced society.
+
+      Money existed in history long before {capital}, banks, and {wage-labour}. In this sense, the path of abstract thought, rising from simple to complex concepts, corresponds to actual historical development.
+  p00068:
+    covers: [p00068]
+    based_on: sha256:0164df28004f88dd4ea4d1475c6c6f9d2aa2b244230445dbaf975f684bf80879
+    revision: 1
+    ai_assisted: true
+    text: |
+      On the other hand, immature societies can possess advanced economic forms, like cooperation and developed {division-of-labour}, without money, as in ancient Peru.
+
+      In Slavic communities, money and exchange were unimportant inside the community and occurred only on borders in trade with outsiders. Exchange does not begin inside the community, but between different communities.
+
+      Although money appeared early, it was dominant in antiquity only among specialized trading nations. Even in Greece and Rome, money reached full development only in periods of social breakdown.
+
+      This simple category did not penetrate all economic relations. For example, payments in goods remained the basis of the Roman Empire, and a fully developed monetary system existed only in the army.
+
+      While a simpler category may exist historically before a concrete one, its full development often occurs only in a complex society, whereas a concrete category may develop fully in a simpler society.
+  p00069:
+    covers: [p00069]
+    based_on: sha256:445911abc9cd52ec37bc2b79cb1376557cb5c49370aff7f28b3457ba7f1bdf3c
+    revision: 1
+    ai_assisted: true
+    text: |
+      Labour seems a very simple category. The idea of labour in general is ancient. Yet economically, "labour" in this simple form is as modern as the social relations that created it.
+
+      The Monetary System viewed wealth as an objective thing: money. The Manufacturing or Mercantile System made a great advance by locating wealth in human activity—trade and manufacturing labour. But it still saw wealth as producing money.
+
+      The Physiocrats argued that a specific form of labour—agriculture—creates wealth. They saw wealth not as money, but as products of the earth.
+  p00070:
+    covers: [p00070]
+    based_on: sha256:7b6b6c80bb220faf2c0b824a85676b1c1f508fa7dc44220939d18dc3214661ce
+    revision: 1
+    ai_assisted: true
+    text: |
+      Adam Smith made a huge breakthrough by rejecting all limits on wealth-creating activity. For him, it was labour as such—not just manufacturing, trade, or farming, but all labour.
+
+      The general activity that creates wealth implies general objects of wealth: products as such, or past materialized labour. This step was so difficult that Smith occasionally slipped back into Physiocratic views.
+
+      This might seem to be merely finding an abstract word for human work in all societies. That is true in one sense, but not in another.
+  p00071:
+    covers: [p00071]
+    based_on: sha256:80b352becb0140532830c0fb9c977c4001893ddac123afa7e7270b8044b9c9fe
+    revision: 1
+    ai_assisted: true
+    text: |
+      Treating specific kinds of work as irrelevant assumes a developed system of different kinds of labour, where no single kind rules all others.
+
+      The most general abstractions arise where real variety is greatest, when one quality is shared by many things and is no longer tied to one special form.
+
+      This abstraction of labour is not just a mental summary. In a society where people move easily from one job to another, the specific kind of work is accidental to them.
+
+      Labour has become a practical means to produce wealth in general, rather than a fixed personal identity. This condition is most advanced in the United States, the most modern form of {bourgeoisie:adj} society.
+
+      Here, the abstract idea of "labour as such" becomes a practical reality. The simplest abstraction, which exists in all eras, becomes fully true in practice only in the most modern society.
+
+      One might say that what is a historical product in the United States is a natural trait among Russians, who can turn their hands to many tasks. But there is a huge difference between {barbarian:pl} adaptable to various tasks and civilized people choosing different occupations. In practice, Russian indifference to specific work was tied to stubborn attachment to traditional tasks, broken only from outside.
+  p00072:
+    covers: [p00072]
+    based_on: sha256:a7ad0b7405ea0f25f6dc29ee55cf716e077b858942546486f7c829dc737d2c53
+    revision: 1
+    ai_assisted: true
+    text: The example of labour shows how even the most abstract categories, despite applying to all eras, are products of historical conditions. They retain full validity only for and within those conditions.
+  p00073:
+    covers: [p00073]
+    based_on: sha256:84ab4e0d3f8419fbec083755cf1445ddf48a4d6d79af0f0bcb5635687b5d7b0b
+    revision: 1
+    ai_assisted: true
+    text: |
+      {Bourgeoisie:adj} society is the most developed and complex historical organization of production. The categories that express its relations allow us to understand the structure and {relations-of-production:sg} of earlier societies whose ruins were used to build it.
+
+      Some remnants survive inside {bourgeoisie:adj} society, while other traits that existed only as seeds have developed their full meaning.
+
+      Human anatomy provides a key to ape anatomy. Clues to higher forms in lower species can be understood only after higher forms are known.
+
+      {Bourgeoisie:adj} economy gives a key to the economies of antiquity. But economists fail when they erase historical differences and see {bourgeoisie:adj} relations everywhere. Understanding rent helps us understand feudal tribute and tithes, without treating them as identical.
+  p00074:
+    covers: [p00074]
+    based_on: sha256:7f1e954a513fd1cb0424660ba2dca6f3ce1e0eeb4207cae58de2c0927a05538c
+    revision: 1
+    ai_assisted: true
+    text: |
+      Because {bourgeoisie:adj} society is a contradictory form of development, it contains relations from earlier societies in stunted forms or distortions, like communal property.
+
+      The categories of {bourgeoisie:adj} economics apply to other societies only with caution, because older societies contain them in different forms.
+
+      Historical development generally means that the latest form treats earlier ones as steps toward itself, understanding them one-sidedly. A society rarely criticizes itself, unless it sees itself in decline.
+
+      Christianity understood earlier religions only when its own self-criticism began. Likewise, {bourgeoisie:adj} political economy could understand {feudalism:adj}, ancient, and Eastern economies only when {bourgeoisie:adj} society began to criticize itself.
+
+      Its criticism of earlier systems—especially of {feudalism}, which it fought directly—resembled the criticism Christianity leveled against paganism, or Protestantism against Catholicism.
+  p00075:
+    covers: [p00075]
+    based_on: sha256:5b5e12c3c569a307b2c8eeb2306199ad1381ba1d5b866045fcb2942618979f62
+    revision: 1
+    ai_assisted: true
+    text: |
+      When studying economic categories, we must remember that modern {bourgeoisie:adj} society is already given in reality and in thought. Categories express conditions of existence of this specific society.
+
+      This guides how material should be organized. For example, it seems natural to begin with rent and landed property, because land is the source of life and agriculture was the first stable form of production.
+
+      Yet nothing could be more mistaken. In every society, a particular branch of production determines the rank and importance of all others.
+
+      Its light tinges all other colours, changing their special features. It is like an atmosphere that determines the weight of everything inside it.
+
+      Among pastoral tribes, land ownership is shaped by grazing, taking communal forms as among the Slavs.
+
+      In societies where agriculture dominates, as in antiquity and {feudalism}, even {manufacture} takes on agricultural traits. {Manufacture} either depends entirely on agriculture, as in early Rome, or copies rural organization in the towns, as in the Middle Ages. In medieval times, even {capital} consisted of traditional tools and kept an agrarian character.
+
+      The reverse happens in {bourgeoisie:adj} society. Agriculture becomes a branch of industry, dominated by {capital}. The same applies to rent.
+
+      Where landed property rules, natural ties dominate. Where {capital} rules, socially evolved elements dominate. Rent cannot be understood without {capital}, but {capital} can be understood without rent.
+
+      {Capital} is the dominant economic power in {bourgeoisie:adj} society. It must be both the starting point and the conclusion, explained before landed property. After studying both separately, their connection must be examined.
+  p00076:
+    covers: [p00076]
+    based_on: sha256:8a0c9a691e782f15887182dfc9a6b693a6c33d4582068c50ab41fe1b72a3a043
+    revision: 1
+    ai_assisted: true
+    text: |
+      It would therefore be wrong to present economic categories in the historical order in which they arose. Their sequence is determined by their relation in modern {bourgeoisie:adj} society, which reverses their historical appearance.
+
+      The issue is not their historical order in past societies, nor their sequence as concepts in thought (as Proudhon believed), but their position within modern {bourgeoisie:adj} society.
+  p00077:
+    covers: [p00077]
+    based_on: sha256:75437f691054107bbdb4b4089642252096f45da6deda41e014c246eec64a6834
+    revision: 1
+    ai_assisted: true
+    text: Because agricultural peoples dominated the ancient world, merchant nations like Phoenicians and Carthaginians developed purely as trading peoples. For {capital} appears in merchant or money form where {capital} has not yet become the dominant power in society. Lombards and Jews held that same position in medieval farming societies.
+  p00078:
+    covers: [p00078]
+    based_on: sha256:e813bb434a54bea12071a222c95dc815a41a87cc81294785e1df16280142972f
+    revision: 1
+    ai_assisted: true
+    text: Another example is joint-stock companies, a modern feature of {bourgeoisie:adj} society that also appeared in early times as privileged trade monopolies.
+  p00079:
+    covers: [p00079]
+    based_on: sha256:5905e682ed571cd5d042f82edc02a248c7696907f19e3620bbeb83daa9d9dcdf
+    revision: 1
+    ai_assisted: true
+    text: The idea of national wealth entered seventeenth-century economics as the notion that wealth exists to strengthen the state. Eighteenth-century writers still kept this idea. It was a hypocritical way to proclaim wealth as the goal of the state, while treating the state as a tool for creating wealth.
+  p00080:
+    covers: [p00080]
+    based_on: sha256:7a16a7d9fdd85f5c28d644724328005d20af5d0229f6dcf6035f568966a3afdc
+    revision: 1
+    ai_assisted: true
+    text: |
+      The material should be arranged as follows:
+      1. General abstract categories that apply in some degree to all social forms, as explained earlier.
+      2. Categories forming the inner structure of {bourgeoisie:adj} society and its main classes: {capital}, {wage-labour}, landed property, and their relations. Town and country. The three great classes and exchange between them. Circulation. The credit system.
+      3. The state as the summary of {bourgeoisie:adj} society: its relation to itself, unproductive classes, taxes, national debt, public credit, population, colonies, and emigration.
+      4. International conditions of production: international {division-of-labour}, international exchange, exports and imports, and exchange rates.
+      5. The {world-market} and economic crises.
+  p00081:
+    covers: [p00081]
+    based_on: sha256:09344509605486fbf1f6133c2a0e07389bc98c9ede07bed44d0d59d77afe12ec
+    revision: 1
+    ai_assisted: true
+    text: 4. PRODUCTION
+  p00082:
+    covers: [p00082]
+    based_on: sha256:0043e64ce9efeb4b89608c6d11780eb470f04b21df25b4b57b37e2c1c80a2400
+    revision: 1
+    ai_assisted: true
+    text: <indent level="1"/>Means of Production and Conditions of Production. Conditions of Production and Communication. Political Forms and Forms of Cognition in Relation to the Conditions of Production and Communication. Legal Relations. Family Relations
+  p00083:
+    covers: [p00083]
+    based_on: sha256:e9b26eb76e5e4ee992b119bb1e2092d6301606e8dc96768da1a8aa474a6ae353
+    revision: 1
+    ai_assisted: true
+    text: "Notes on points that must be mentioned and not forgotten:"
+  p00084:
+    covers: [p00084]
+    based_on: sha256:cf20bc80612748c34baef506b76db67beeb703a8f4ed7449305bd75aca029161
+    revision: 1
+    ai_assisted: true
+    text: 1. <i>War</i> develops certain features earlier than peace. War and armies developed economic forms like {wage-labour} and machinery earlier than civil society did. The link between productive power and communication is especially clear in the army.
+  p00085:
+    covers: [p00085]
+    based_on: sha256:7374367e3c735f1d9d69c43ad3a703c8a84661d1cf528743c6f663d96920c174
+    revision: 1
+    ai_assisted: true
+    text: "2. <i>The relation between past idealist history and realist history.</i> In particular, the history of civilization, and the old history of religion and states. This includes different kinds of past history writing: objective, subjective, and philosophical."
+  p00086:
+    covers: [p00086]
+    based_on: sha256:d4d652ef10fdf869791356c1dc218271cfd9c21cd664ca8433cdbcd192cf066c
+    revision: 1
+    ai_assisted: true
+    text: 3. <i>Secondary and tertiary conditions</i>, derived and transferred conditions of production. The influence of international relations.
+  p00087:
+    covers: [p00087]
+    based_on: sha256:b88b45cdc89503447c5f6940ee754d2adb3c1375bed29b10436898e5e955ac71
+    revision: 1
+    ai_assisted: true
+    text: 4. <i>Objections to the materialism of this view; relation to natural materialism.</i>
+  p00088:
+    covers: [p00088]
+    based_on: sha256:4a36bb6382b7f8d6400923cb80b29d3b8f00a9d613c105098e7280d7cf5e3a77
+    revision: 1
+    ai_assisted: true
+    text: 5. <i>Dialectics of productive forces ({means-of-production}) and {relations-of-production:sg}.</i> The limits of this dialectical link must be defined, without erasing real differences.
+  p00089:
+    covers: [p00089]
+    based_on: sha256:f89a8e0b819fd2cb8a650c7418ba24bc8a3c5e6542b5da3b65a9d1d6bc6782d3
+    revision: 1
+    ai_assisted: true
+    text: |
+      6. <i>The uneven development of material production and areas like art.</i> Progress should not be understood in the usual abstract way. Modern art illustrates this. This unevenness is even more visible in social relations, like education and the relation between the United States and Europe.
+
+      The difficult point is how {relations-of-production:sg} as legal relations share in this uneven development, such as Roman civil law in relation to modern production.
+  p00090:
+    covers: [p00090]
+    based_on: sha256:81ac538a2423bb620d44420e85b8175cba8aecceb2a033942b60af80d030a75d
+    revision: 1
+    ai_assisted: true
+    text: 7. <i>This development appears necessary, but chance plays a role.</i> How freedom and chance fit in. The influence of means of communication. World history did not always exist; history as world history is a historical result.
+  p00091:
+    covers: [p00091]
+    based_on: sha256:2e1eadd6aac9b4d319d10b56ed64b82a7066885cfbf56dd27e67cae6a822fe53
+    revision: 1
+    ai_assisted: true
+    text: 8. <i>The starting point is naturally given factors</i>, both subjective and objective, such as tribes and races.
+  p00092:
+    covers: [p00092]
+    based_on: sha256:55f5314664084de8362e9fe6affb96eeba567b4687869278c9a6b48a36850ece
+    revision: 1
+    ai_assisted: true
+    text: |
+      In art, certain high points do not correspond to the general development of society or its material foundation. Consider the Greeks compared with modern nations, or Shakespeare.
+
+      Certain art forms, like the epic, can never be produced in their classic form once artistic production as such begins. Important artistic creations are possible only at an early stage of artistic development.
+
+      If this is true for branches of art within art itself, it is not surprising that art as a whole develops unevenly compared to society. The difficulty lies only in stating these contradictions; once examined closely, they are easily explained.
+  p00093:
+    covers: [p00093]
+    based_on: sha256:f625c2aa42b7629c4e8a0a197b8722c7723676a8a45fcb023c11a452b9ab5463
+    revision: 1
+    ai_assisted: true
+    text: |
+      Consider Greek art and Shakespeare in relation to our time. Greek mythology was the material and foundation of Greek art.
+
+      Can the Greek view of nature and society survive in an age of spinning machines, railways, locomotives, and electric telegraphs? What is Vulcan compared with modern factories, Jupiter compared with the lightning rod, or Hermes compared with the Credit Mobilier?
+
+      Mythology masters and shapes nature through the imagination; it disappears when humanity wins real control over nature. What happens to the goddess of fame beside Printing House Square?
+
+      Greek art requires Greek mythology—nature and society shaped by the popular imagination. Egyptian mythology could never have produced Greek art. But it requires a society that allows a mythical view of nature, not one that demands imagination free from myth.
+  p00094:
+    covers: [p00094]
+    based_on: sha256:807a4fa7027c9bea800602000e483b6fb03e2a2c2579f3db67c0f010509f6e7b
+    revision: 1
+    ai_assisted: true
+    text: "From another angle: is Achilles possible with gunpowder and bullets? Is the Iliad possible with printing presses and steam printing? Do not singing, storytelling, and the epic muse vanish before the printing press, destroying the conditions for epic poetry?"
+  p00095:
+    covers: [p00095]
+    based_on: sha256:da1ef3eab2416356bc4dbdaf9d23221139403efeecb75c7fa504c6b5da931ef6
+    revision: 1
+    ai_assisted: true
+    text: The difficulty is not understanding why Greek art and epic poetry belong to an early stage of social development. The difficulty is that they still give us aesthetic pleasure and stand as an unattainable standard.
+  p00096:
+    covers: [p00096]
+    based_on: sha256:4573cab1b358e460af86cf906d498296adf67e210f54f0610eaa125f095c9575
+    revision: 1
+    ai_assisted: true
+    text: |
+      An adult cannot become a child again without becoming childish. But does not the innocence of the child give him joy, and does he not strive to reproduce the child's truth on a higher level? Does not the child represent the natural truth of its era?
+
+      Why should not humanity's historical childhood, at its most beautiful moment, exert an eternal charm as an era that will never return?
+
+      There are ill-bred children and precocious children. Many ancient peoples were like that. The Greeks were normal children.
+
+      The charm their art holds for us does not contradict the undeveloped society in which it grew. Rather, that charm is inseparable from the fact that the immature social conditions that produced it can never return.

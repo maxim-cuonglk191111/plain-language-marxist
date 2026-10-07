@@ -1,0 +1,421 @@
+schema_version: 5
+document: document:marx:1848:communist-manifesto:preface
+language: en
+register: plain
+renderings:
+  p00001:
+    covers: [p00001]
+    based_on: sha256:a6a6808d42113f0b92ffeaeb901a953949679040d129825d474a4064077790f2
+    revision: 2
+    ai_assisted: true
+    text: Preface
+  p00002:
+    covers: [p00002]
+    based_on: sha256:3e057f1cee1b012a4821a43bc4b08f52fffa5d3db7d2201acfe6f6375c5f6f6b
+    revision: 2
+    ai_assisted: true
+    text: The 1872 German Edition
+  p00003:
+    covers: [p00003]
+    based_on: sha256:c804faaea1d8bf8cd6cd7b2fdac793c89293311165d92d569f88b4e1958bed6e
+    revision: 2
+    ai_assisted: true
+    text: The {communism:adj} League was an international association of workers. Under conditions at the time, it could only be a secret one. At its Congress held in London in November 1847, the League commissioned us to write a detailed theoretical and practical program for the Party. That was how this Manifesto came about. Its manuscript went to London to be printed a few weeks before the French Revolution of February 1848. First published in German, it has been reprinted in that language in at least twelve different editions in Germany, England, and America. Miss Helen Macfarlane translated it into English for the first time in 1850 in the <i>Red Republican</i> in London. In 1871, at least three different English translations appeared in America. A French version came out in Paris shortly before the June insurrection of 1848, and recently in <i>Le Socialiste</i> of New York. A new translation is being prepared. A Polish version appeared in London shortly after the first German edition. A Russian translation was published in Geneva in the sixties. <fn ref="A"/> It was also translated into Danish soon after it first appeared.
+  p00004:
+    covers: [p00004]
+    based_on: sha256:951847afd3595b387f3584c7d1f9ac68b7a47afb5559bf3b9aba8a6ddabc726e
+    revision: 2
+    ai_assisted: true
+    text: |
+      Things have changed greatly over the last twenty-five years. Yet the general principles in this Manifesto remain, on the whole, as correct today as ever. Here and there, some detail might be improved. The practical application of the principles will depend, as the Manifesto itself states, everywhere and at all times on existing historical conditions. For that reason, we place no special stress on the {revolution:adj} measures proposed at the end of Section II. Today, that passage would be worded very differently in many respects.
+
+      Modern Industry has made gigantic strides since 1848. The organization of the working class has improved and expanded alongside it. Working people gained practical experience, first in the February Revolution and then still more in the Paris Commune. There, the {proletariat:sg} held political power for two whole months for the first time. Because of this, parts of this program have become antiquated.
+
+      The Commune proved one thing especially: “the working class cannot simply lay hold of the ready-made state machinery, and wield it for its own purposes.” (See <i>The Civil War in France: Address of the General Council of the International Working Men’s Association</i>, 1871, where this point is developed further.) Further, the criticism of socialist literature is deficient in relation to the present time, because it comes down only to 1847. The remarks on the relation of Communists to various opposition parties in Section IV are also antiquated in practice, although still correct in principle. The political situation has changed completely. The progress of history has swept most of those political parties from the earth.
+  p00005:
+    covers: [p00005]
+    based_on: sha256:f5105e9474db41b693940f52724f63bc0d24db27d23050da9c54d79b3e35f131
+    revision: 2
+    ai_assisted: true
+    text: However, the Manifesto has become a historical document that we no longer have any right to alter. A later edition may perhaps appear with an introduction bridging the gap from 1847 to the present day. But this reprint was too unexpected to leave us time for that.
+  p00006:
+    covers: [p00006]
+    based_on: sha256:18fa7e922d3f339d55b6d91c83cbe9b21d30e9606c4946b932ba5e55201ef0f1
+    revision: 2
+    ai_assisted: true
+    text: Karl Marx &amp; Frederick Engels<br/>June 24, 1872, London
+  p00007:
+    covers: [p00007]
+    based_on: sha256:a3f77c8ee62d87356577e02f8b695c2c7762d86816c785d965ec88230cab70cc
+    revision: 2
+    ai_assisted: true
+    text: The 1882 Russian Edition
+  p00008:
+    covers: [p00008]
+    based_on: sha256:c1009fa51a3c56205708f81a69e5cbdc2ee6c712dd34b31f14b40612930ceff2
+    revision: 2
+    ai_assisted: true
+    text: Bakunin translated the first Russian edition of the Manifesto of the {communism:adj} Party. <fn ref="A"/> It was published early in the sixties by the printing office of the <i>Kolokol</i> [Free Russian Printing House]. At that time, the West could see in it only a literary curiosity. Such a view would be impossible today.
+  p00009:
+    covers: [p00009]
+    based_on: sha256:d613a1ed685f140166fe1dfae820c7f255b5fdd5cd70bcecb9b828a9eba278ee
+    revision: 2
+    ai_assisted: true
+    text: The last section shows most clearly how narrow a field the {proletariat:adj} movement then occupied in December 1847. That section covers the position of Communists toward the various opposition parties in various countries. Precisely Russia and the United States are missing here. At that time, Russia was the last great reserve of all European reaction. The United States absorbed the surplus {proletariat:adj} forces of Europe through immigration. Both countries provided Europe with raw materials, and both were markets for selling its industrial goods. Both were, therefore, pillars of the existing European system in one way or another.
+  p00010:
+    covers: [p00010]
+    based_on: sha256:01e77ed08e2ac4a1f7684c9ec97ceab6daf5af740dcd8b0d9ecfcc0aed14637d
+    revision: 2
+    ai_assisted: true
+    text: How very different today! Precisely European immigration fitted North American production for gigantic agriculture. Its competition is shaking the very foundations of European landed property, both large and small. At the same time, it enabled the United States to exploit its huge industrial resources. It did so with an energy and scale that must soon break the industrial monopoly of Western Europe, especially England. Both circumstances react in a {revolution:adj} manner upon America itself. Step by step, small and middle-sized farms succumb to the competition of giant farms. At the same time, a mass industrial {proletariat:sg} and a fabulous concentration of capital funds are developing for the first time.
+  p00011:
+    covers: [p00011]
+    based_on: sha256:f5de1599c175c3fe37314a3900e53fd6d5a9fc31f822865c36233ca592ec3af2
+    revision: 2
+    ai_assisted: true
+    text: And now Russia! During the Revolution of 1848-9, European princes and the European {bourgeoisie:persons} found their only salvation from the awakening {proletariat:sg} in Russian intervention. The Tsar was proclaimed the chief of European reaction. Today, he is a prisoner of war of the revolution in Gatchina. <fn ref="B"/> Russia now forms the vanguard of {revolution:adj} action in Europe.
+  p00012:
+    covers: [p00012]
+    based_on: sha256:2454c5d32811cf9c6b4173aa18b8d9ae36caed23f877ca03cf13f04bc4efdcfc
+    revision: 2
+    ai_assisted: true
+    text: "The {communism:adj} Manifesto aimed to proclaim the inevitable breaking up of modern {bourgeoisie:adj} property. But in Russia, things are different. Face-to-face with rapid capitalist swindles and newly developing {bourgeoisie:adj} property, peasants still own more than half the land in common. Now the question is: can the Russian <i>obshchina</i> pass directly to the higher form of Communist common ownership? Or, on the contrary, must it first pass through the same breaking up that marked the historical evolution of the West?"
+  p00013:
+    covers: [p00013]
+    based_on: sha256:d9989a45bede1b971c35a98fbbdcc25035f83544c205c7d4fd5326a790b31315
+    revision: 2
+    ai_assisted: true
+    text: "The only answer possible today is this: If the Russian Revolution becomes the signal for a {proletariat:adj} revolution in the West, so that each complements the other, the present Russian common ownership of land may serve as the starting point for a communist development."
+  p00014:
+    covers: [p00014]
+    based_on: sha256:d6c2694ce8907182ed77cb4072d72d600aceacffbf038629be06eb72ef421006
+    revision: 2
+    ai_assisted: true
+    text: Karl Marx &amp; Frederick Engels<br/>January 21, 1882, London
+  p00015:
+    covers: [p00015]
+    based_on: sha256:dc30aca3d505fb38eb43e1ec125184c5390dd51da209cd1a8a34f7ea7ec21d20
+    revision: 1
+    ai_assisted: true
+    text: The 1883 German Edition
+  p00016:
+    covers: [p00016]
+    based_on: sha256:8d27a4d24209a13b19e14e9cdfbb8f3e0c2f972cd124d7bbb89a43149412b706
+    revision: 1
+    ai_assisted: true
+    text: I must sign the preface to this edition alone, alas. Marx—the man to whom the whole working class of Europe and America owes more than to anyone else—rests in Highgate Cemetery. The first grass is already growing over his grave. Since his death, revising or supplementing the Manifesto is even more out of the question. But I consider it all the more necessary to state the following explicitly once again.
+  p00017:
+    covers: [p00017]
+    based_on: sha256:0a9fffb1aaac63b3ad586c4b2cfbbdae5a157d0c58f14d72e60b03b726accfe9
+    revision: 1
+    ai_assisted: true
+    text: |
+      The basic thought running through the Manifesto belongs solely and exclusively to Marx. That thought is this: in every historical epoch, economic production and the social structure arising from it form the foundation for political and intellectual history. Ever since the breaking up of primeval common land ownership, all history has been a history of class struggles. It has been a history of struggles between exploited and exploiting, dominated and dominating classes across social evolution.
+
+      Now, this struggle has reached a stage where the exploited and oppressed class, the {proletariat:sg}, cannot free itself from the ruling class, the {bourgeoisie:sg}, without forever freeing society as a whole from all exploitation, oppression, and class struggles.
+  p00018:
+    covers: [p00018]
+    based_on: sha256:3f11a377ed7136ba9e19938667f9ec9ef0c5b3afb5441dc854491347a0fab54d
+    revision: 1
+    ai_assisted: true
+    text: I have often said this before. But right now it is necessary that it also stand at the head of the Manifesto itself.
+  p00019:
+    covers: [p00019]
+    based_on: sha256:42961cfd4ccd4918800d99465bfa5b8a98db08e16137291d3f21cce121bfeda6
+    revision: 1
+    ai_assisted: true
+    text: Frederick Engels<br/>June 28, 1883, London
+  p00020:
+    covers: [p00020]
+    based_on: sha256:b2cc1720f0d126abf4debcf4b65e8592fb05818cb6dd401c33c35b417f0eb2b9
+    revision: 1
+    ai_assisted: true
+    text: The 1888 English Edition
+  p00021:
+    covers: [p00021]
+    based_on: sha256:f80132b0d8721937964cce7397c79960b766ad0aafbb2c689c441e7c3c782b65
+    revision: 1
+    ai_assisted: true
+    text: The Manifesto was published as the platform of the {communism:adj} League. This was an association of workers, first purely German, and later international. Under Continental political conditions before 1848, it was unavoidably a secret society. At a Congress of the League in November 1847, Marx and Engels were commissioned to draft a complete theoretical and practical {party:sg} program. Written in German in January 1848, the manuscript went to the printer in London a few weeks before the French Revolution of February 24. A French translation appeared in Paris shortly before the June insurrection of 1848. Helen Macfarlane made the first English translation for George Julian Harney's <i>Red Republican</i> in London in 1850. Danish and Polish editions had also been published.
+  p00022:
+    covers: [p00022]
+    based_on: sha256:b0da659f87e9b7af058b210508c478d0b8de633158a37c6edcf5833ed6bbca46
+    revision: 1
+    ai_assisted: true
+    text: |
+      The defeat of the Parisian workers in June 1848—the first great battle between {proletariat:sg} and {bourgeoisie:sg}—pushed the social and political goals of European workers into the background. The struggle for power again took place solely between different sections of the propertied class. The working class was reduced to a fight for political breathing room, acting as the extreme wing of middle-class Radicals. Wherever independent {proletariat:adj} movements showed life, authorities hunted them down without mercy.
+
+      Prussian police hunted down the Central Board of the {communism:adj} League in Cologne. Members were arrested and tried in October 1852 after eighteen months in prison. This celebrated Cologne Communist Trial lasted from October 4 to November 12. Seven prisoners were sentenced to prison terms in a fortress, lasting from three to six years. Immediately after sentencing, the remaining members formally dissolved the League. The Manifesto seemed doomed to be forgotten.
+  p00023:
+    covers: [p00023]
+    based_on: sha256:dd1ddb22523602b2f137990964f30e877200e77e8f61ee0717c17f6391ce5913
+    revision: 1
+    ai_assisted: true
+    text: When European workers regained enough strength for another attack on the ruling classes, the International Working Men’s Association arose. But this association aimed to unite all militant workers of Europe and America into one body. Therefore, it could not immediately proclaim the principles in the Manifesto. The International needed a program broad enough for English trade unions, French, Belgian, Italian, and Spanish Proudhonists, and German Lassalleans. <fn ref="2"/>
+  p00024:
+    covers: [p00024]
+    based_on: sha256:7d10b86836addb8c743b21c4b676cb703da9d223200f753445b50789f249055a
+    revision: 1
+    ai_assisted: true
+    text: |
+      Marx drafted this program to the satisfaction of all parties. He trusted completely in the intellectual development of the working class through combined action and discussion. The events and vicissitudes of the struggle against {capital:sg}, defeats even more than victories, showed people that their favorite remedies were not enough. They prepared the way for deeper insight into the real conditions for working-class emancipation.
+
+      Marx was right. When the International broke up in 1874, it left the workers very different from how it found them in 1864. Proudhonism in France and Lassalleanism in Germany were dying out. Even conservative English trade unions were advancing toward the point where their president could say in Swansea: “Continental socialism has lost its terror for us.” In fact, the principles of the Manifesto had made considerable headway among workers in all countries.
+  p00025:
+    covers: [p00025]
+    based_on: sha256:68e8521f094d793e943f0f66ae0ede0f846e835d7889e044850d3756589d61e9
+    revision: 1
+    ai_assisted: true
+    text: Thus the Manifesto came to the front again. Since 1850, the German text had been reprinted several times in Switzerland, England, and America. In 1872, it was translated into English in New York and published in <i>Woodhull and Claflin’s Weekly</i>. A French version in <i>Le Socialiste</i> came from this English text. Since then, at least two more English translations appeared in America, and one was reprinted in England. Bakunin's Russian translation was published at Herzen's <i>Kolokol</i> office in Geneva around 1863. A second Russian translation by Vera Zasulich appeared in Geneva in 1882. A new Danish edition came out in Copenhagen in 1885, and a fresh French translation in Paris in 1886. A Spanish version was published in Madrid in 1886. German reprints are too numerous to count, with at least twelve in all. An Armenian translation in Constantinople was stopped because the publisher feared using Marx's name. The history of the Manifesto reflects the history of the modern working-class movement. Today it is the most widespread, international product of socialist literature, a common platform recognized by millions of workers from Siberia to California.
+  p00026:
+    covers: [p00026]
+    based_on: sha256:29c9155d3718d1876ed674d5ab533154b0cda740565d6e3ecc716e6f33f177ef
+    revision: 1
+    ai_assisted: true
+    text: |
+      Yet, when it was written, we could not have called it a <i>socialist</i> manifesto. In 1847, two kinds of people were called Socialists. On the one hand were followers of utopian systems: Owenites in England and Fourierists in France, both reduced to small dying sects. On the other hand were social quacks who claimed to heal social grievances without endangering {capital:sg} and profit. Both groups stood outside the labor movement and looked to educated classes for support.
+
+      Any section of the working class that demanded total social change called itself Communist. It was a rough, instinctive {communism:sg}, but it touched the core point. It produced the utopian {communism:sg} of Cabet in France and Weitling in Germany. Thus, in 1847, socialism was a middle-class movement, while {communism:sg} was a working-class movement. Socialism was respectable on the Continent; {communism:sg} was the opposite. Since our view from the beginning was that “the emancipation of the workers must be the act of the working class itself,” there was no doubt which name we had to take. We have never thought of renouncing it since.
+  p00027:
+    covers: [p00027]
+    based_on: sha256:d78aa34393f0c83bc0223cfadc31399799b6cfd6fa1879bb7dc63adfa6a09d86
+    revision: 1
+    ai_assisted: true
+    text: |
+      Since the Manifesto was our joint work, I must state that its fundamental proposition belongs to Marx. That proposition is: in every historical epoch, the prevailing mode of economic production and exchange forms the basis of that epoch's political and intellectual history. Ever since primitive tribal society holding land in common broke up, all history has been a history of class struggles between exploiting and exploited, ruling and oppressed classes.
+
+      The history of these struggles forms a series of developments. Today, a stage is reached where the exploited and oppressed class, the {proletariat:sg}, cannot win freedom from the ruling class, the {bourgeoisie:sg}, without at the same time freeing society as a whole from all exploitation, oppression, and class struggles forever.
+  p00028:
+    covers: [p00028]
+    based_on: sha256:abcaf4f42e919b978992d001c3f44008e6a8335ee96b8a087dd44d36fc87eb42
+    revision: 1
+    ai_assisted: true
+    text: This proposition is destined to do for history what Darwin's theory did for biology. We had both been approaching it for some years before 1845. My <i>Condition of the Working Class in England</i> shows how far I had progressed toward it independently. But when I met Marx in Brussels in spring 1845, he had already worked it out and explained it to me clearly.
+  p00029:
+    covers: [p00029]
+    based_on: sha256:31ed604158f86cf934dddea83c99d79fc1867ffac03e238fc74f44628ff62843
+    revision: 1
+    ai_assisted: true
+    text: "From our joint preface to the German edition of 1872, I quote the following:"
+  p00030:
+    covers: [p00030]
+    based_on: sha256:2bbf865129ee47fdebfac7c09afa2d8e2a2fe5120ab58fa481205cc1e1756c93
+    revision: 1
+    ai_assisted: true
+    text: "“However much that state of things may have altered during the last twenty-five years, the general principles laid down in the Manifesto are, on the whole, as correct today as ever. Here and there, some detail might be improved. The practical application of the principles will depend, as the Manifesto itself states, everywhere and at all times, on the historical conditions for the time being existing, and, for that reason, no special stress is laid on the revolutionary measures proposed at the end of Section II. That passage would, in many respects, be very differently worded today. In view of the gigantic strides of Modern Industry since 1848, and of the accompanying improved and extended organization of the working class, in view of the practical experience gained, first in the February Revolution, and then, still more, in the Paris Commune, where the proletariat for the first time held political power for two whole months, this programme has in some details been antiquated. One thing especially was proved by the Commune, viz., that 'the working class cannot simply lay hold of ready-made state machinery, and wield it for its own purposes.' (See <i>The Civil War in France: Address of the General Council of the International Working Men’s Association</i>, 1871, where this point is further developed.) Further, it is self-evident that the criticism of socialist literature is deficient in relation to the present time, because it comes down only to 1847; also that the remarks on the relation of the Communists to the various opposition parties (Section IV), although, in principle still correct, yet in practice are antiquated, because the political situation has been entirely changed, and the progress of history has swept from off the Earth the greater portion of the political parties there enumerated.”"
+  p00031:
+    covers: [p00031]
+    based_on: sha256:772458bc50fe3b756cb03ae5a80fb75fc8894bce82bb78be5838bf3d8e0d8a55
+    revision: 1
+    ai_assisted: true
+    text: “But then, the Manifesto has become a historical document which we have no longer any right to alter.”
+  p00032:
+    covers: [p00032]
+    based_on: sha256:56fff014b13bf0e67cc16bb3c7b6fffc8771f41ad822a2b9724ed2b2bb0e504e
+    revision: 1
+    ai_assisted: true
+    text: The present translation is by Mr Samuel Moore, the translator of the greater portion of Marx's <i>Capital</i>. We have revised it together, and I have added a few notes explanatory of historical allusions.
+  p00033:
+    covers: [p00033]
+    based_on: sha256:49d556e56ad702bfb75ec58cd8640a88828c00379a333e86164c1c26df0fc247
+    revision: 1
+    ai_assisted: true
+    text: Frederick Engels<br/>January 30, 1888, London
+  p00034:
+    covers: [p00034]
+    based_on: sha256:e3d2901b4be8dc3991b29ecdeec73d120b070564a0307248c3b7ddc9ea1b904b
+    revision: 1
+    ai_assisted: true
+    text: The 1890 German Edition
+  p00035:
+    covers: [p00035]
+    based_on: sha256:fb156b0951c0177d8b4d41abcef8f949d2ad4f1bd8a645adf9d26983bd272391
+    revision: 1
+    ai_assisted: true
+    text: Since the first German preface was written, a new German edition of the Manifesto has again become necessary. Much has also happened to the Manifesto that should be recorded here.
+  p00036:
+    covers: [p00036]
+    based_on: sha256:77a0a66d7b065be7d1761c6954f3b5da1a310ec44d2f4d6e97ff6e8168daa5e6
+    revision: 1
+    ai_assisted: true
+    text: "A second Russian translation—by Vera Zasulich—appeared in Geneva in 1882. The preface to that edition was written by Marx and myself. Unfortunately, the German manuscript has gone astray. I must translate back from Russian, which will by no means improve the text. It reads:"
+  p00037:
+    covers: [p00037]
+    based_on: sha256:0634cf87e9bd055e58b567272e82f79626909f60d3ecbcefa02e98e581f42a65
+    revision: 1
+    ai_assisted: true
+    text: "[Reprint of the 1882 Russian Edition]"
+  p00038:
+    covers: [p00038]
+    based_on: sha256:d130376f5dda37179c16a1a577b84ce5a0b17d80741ff6730283a3b679e05a44
+    revision: 1
+    ai_assisted: true
+    text: "At about the same date, a new Polish version appeared in Geneva: <i>Manifest Kommunistyczny</i>."
+  p00039:
+    covers: [p00039]
+    based_on: sha256:3adf543b33972c006080f3de1a8a8b0eb06fe2ffd4b93ffb0153906bac4f0db1
+    revision: 1
+    ai_assisted: true
+    text: Furthermore, a new Danish translation appeared in Copenhagen in 1885. Unfortunately, it is not complete. Essential passages seem to have caused difficulties for the translator and were omitted. There are also signs of carelessness. With more care, the translator could have produced an excellent piece of work.
+  p00040:
+    covers: [p00040]
+    based_on: sha256:192a37fba165ccdfd8fe97116d2ed2d8a8ff30db7a406e0ad88897761619a013
+    revision: 1
+    ai_assisted: true
+    text: A new French version appeared in 1886 in <i>Le Socialiste</i> of Paris. It is the best translation published so far.
+  p00041:
+    covers: [p00041]
+    based_on: sha256:79d6756c16093978f75bbd3ac0b10b8adaf9d3029e8e1dbc812d9c85eeecf362
+    revision: 1
+    ai_assisted: true
+    text: "From this French text, a Spanish version was published the same year in Madrid in <i>El Socialista</i>. It was then reissued as a pamphlet: <i>Manifiesto del Partido Comunista</i>."
+  p00042:
+    covers: [p00042]
+    based_on: sha256:f27bd02b0daa2c445e0fe7d6f326d914011824613814a980bd153bad9be215c5
+    revision: 1
+    ai_assisted: true
+    text: In 1887, an Armenian translation was offered to a publisher in Constantinople. But the publisher lacked the courage to print Marx's name. He asked the translator to claim authorship instead, which the translator declined.
+  p00043:
+    covers: [p00043]
+    based_on: sha256:1673042c3aa8b0ceb35f0eeb2eeb445016f660ae9c4601463e3ca581b269afbc
+    revision: 1
+    ai_assisted: true
+    text: After inaccurate American translations were repeatedly reprinted in England, an authentic version appeared in 1888. My friend Samuel Moore produced it, and we reviewed it together before printing. It is titled <i>Manifesto of the Communist Party</i>. I added some of its notes to this edition.
+  p00044:
+    covers: [p00044]
+    based_on: sha256:1f1e597ddd3accdb4c8c88e8f2a22604b1ed05892d611e20dd849821c2bf0b04
+    revision: 1
+    ai_assisted: true
+    text: The Manifesto has had a history of its own. When it first appeared, the small vanguard of scientific socialism greeted it with enthusiasm. But it was soon forced into the background after the defeat of Parisian workers in June 1848. It was finally outlawed when Cologne Communists were convicted in November 1852. With the retreat of the workers' movement after the February Revolution, the Manifesto also receded into the background.
+  p00045:
+    covers: [p00045]
+    based_on: sha256:6ed343f506788ef82c625920678c617afbc9e29dc942bc9eb6ddc92b0427928f
+    revision: 1
+    ai_assisted: true
+    text: When European workers regained strength for a new attack on the ruling classes, the International Working Men’s Association arose. It aimed to unite all militant workers of Europe and America into one army. Therefore, it could not start from the principles of the Manifesto. It needed a program open to English trade unions, Proudhonists in France, Belgium, Italy, and Spain, and Lassalleans in Germany. Marx drafted this program with mastery admitted by all parties, including anarchists. For the final victory of the Manifesto's ideas, Marx relied entirely on the intellectual development of workers through joint action and discussion. Defeats even more than victories showed fighters that their old panaceas failed. They prepared the way for understanding the real conditions of working-class emancipation. Marx was right. The working class of 1874 was very different from that of 1864. Proudhonism and Lassalleanism were dying out. Even conservative English trade unions were advancing toward socialism. The history of the Manifesto reflects the modern labor movement since 1848. Today it is the most widely circulated socialist work in the world.
+  p00046:
+    covers: [p00046]
+    based_on: sha256:775c911509a55c06fd0e5b3d62a17ccc45c5e2ffd1a028a7d082e66eebd1d8d9
+    revision: 1
+    ai_assisted: true
+    text: Nevertheless, when it appeared, we could not have called it a <i>socialist</i> manifesto. In 1847, socialists meant followers of utopian sects or social quacks seeking patchwork reform without hurting {capital:sg}. Both stood outside the labor movement and looked to educated classes. The section of workers demanding radical reconstruction called itself {communism:adj}. It was a rough, instinctive movement, but strong enough to build utopian systems like Cabet's in France and Weitling's in Germany. In 1847, socialism meant a middle-class movement, while {communism:sg} was a working-class movement. Socialism was respectable; {communism:sg} was not. Since our conviction was that “the emancipation of the workers must be the task of the working class itself,” we had no doubt which name to choose.
+  p00047:
+    covers: [p00047]
+    based_on: sha256:3cb5257662e280cad83437cf3bca7c88b965fe2ee758c7f3806e049a78b3311a
+    revision: 1
+    ai_assisted: true
+    text: “Working men of all countries, unite!” Few voices answered when we proclaimed these words forty-two years ago before the Paris Revolution. But on September 28, 1864, workers of Western Europe joined hands in the International Working Men’s Association. That union lives stronger than ever today. As I write these lines, European and American workers are reviewing their fighting forces, mobilized as one army under one flag for the legal eight-hour working day. Today's spectacle will open the eyes of capitalists and landlords everywhere to the fact that workers of all countries are united indeed.
+  p00048:
+    covers: [p00048]
+    based_on: sha256:de4a1419a9cc2d3fd0042e309ab8b93acebcce31d2447e73bc6e75aa0e56b334
+    revision: 1
+    ai_assisted: true
+    text: If only Marx were still by my side to see this with his own eyes!
+  p00049:
+    covers: [p00049]
+    based_on: sha256:5512cf557ec92ab83efef4bc56ada9218cb30d09285c02259643be69040a0bab
+    revision: 1
+    ai_assisted: true
+    text: Frederick Engels<br/>May 1, 1890, London
+  p00050:
+    covers: [p00050]
+    based_on: sha256:6771db36f77be3c725b5a197de834d169e2b74ad5cd16718c163c4614c1d11ee
+    revision: 1
+    ai_assisted: true
+    text: The 1892 Polish Edition
+  p00051:
+    covers: [p00051]
+    based_on: sha256:88915acc6d616787f66e1922906b2059ddf42d888b0240a5294f0cf056ebb678
+    revision: 1
+    ai_assisted: true
+    text: The need for a new Polish edition of the {communism:adj} Manifesto prompts several reflections.
+  p00052:
+    covers: [p00052]
+    based_on: sha256:b5d262bd6bd625eed5175ed50df180442a4a968b85090c0535240558f4206881
+    revision: 1
+    ai_assisted: true
+    text: First of all, the Manifesto has become an index of large-scale industry across Europe. As large-scale industry grows in a country, workers demand clarity about their position in relation to the owning classes. The socialist movement spreads among them, and demand for the Manifesto rises. Thus, the number of copies circulated in a language measures both the labor movement and the development of large-scale industry in that country.
+  p00053:
+    covers: [p00053]
+    based_on: sha256:4c47b8589c6da48729d5a8ce6c2dbe938fb779f3289263c3998ccd983b1f12c3
+    revision: 1
+    ai_assisted: true
+    text: The new Polish edition indicates real progress in Polish industry. Over the past ten years, Polish industry has concentrated into a compact area. It enjoys the advantages and disadvantages of such concentration. Competing Russian manufacturers acknowledged those advantages by demanding protective tariffs against Poland. The disadvantages for manufacturers and the Russian government appear in the rapid spread of socialist ideas among Polish workers and growing demand for the Manifesto.
+  p00054:
+    covers: [p00054]
+    based_on: sha256:1677ba13ba685eba8641a2713c45feafd88d86eabc7e62dc32bb5f93a114510d
+    revision: 1
+    ai_assisted: true
+    text: The rapid growth of Polish industry proves the vitality of the Polish people and guarantees their national restoration. Restoring an independent and strong Poland concerns all of us. Honest international cooperation in Europe is possible only if each nation is master in its own house. The Revolution of 1848 secured independence for Italy, Germany, and Hungary through Bonaparte and Bismarck. But Poland, which had done more for the revolution since 1792 than all three combined, was abandoned to Russian forces in 1863. The nobility could not regain Polish independence, and the {bourgeoisie:sg} is indifferent to it. Yet independence is necessary for European cooperation. Only the young Polish {proletariat:sg} can win it, and in their hands it is secure. Workers across Europe need Polish independence as much as Polish workers do.
+  p00055:
+    covers: [p00055]
+    based_on: sha256:45f29e68e0482df17879bafe5edc4b03da0f8ea10e6908ecd12d453127e658db
+    revision: 1
+    ai_assisted: true
+    text: F. Engels<br/>London, June 11, 1892
+  p00056:
+    covers: [p00056]
+    based_on: sha256:e45e59307f3cee1ac95409628d7a0de5110f2cc9f00bb343a1c66b1a15be7e35
+    revision: 1
+    ai_assisted: true
+    text: The 1893 Italian Edition
+  p00057:
+    covers: [p00057]
+    based_on: sha256:fb1a5921e1972fd0ef4db07def99238f93f0507852d6fb5908c5b3172fff5277
+    revision: 1
+    ai_assisted: true
+    text: Publication of the Manifesto coincided with March 18, 1848, the day of revolution in Milan and Berlin. Those armed uprisings occurred in two nations long weakened by division and foreign rule. Italy was subject to Austria, while Germany suffered under the Tsar. The events of March 18, 1848, freed both nations from this disgrace. If they were reconstituted between 1848 and 1871, it was because the men who suppressed the revolution were its executors in spite of themselves.
+  p00058:
+    covers: [p00058]
+    based_on: sha256:e36bb0e0477961250617141979a528e133e3cda0c3c00da2d8b2dd492b081fce
+    revision: 1
+    ai_assisted: true
+    text: Everywhere, that revolution was the work of the working class. Workers built the barricades and paid with their blood. Only Paris workers aimed consciously to overthrow the {bourgeoisie:adj} regime. But neither economic progress nor intellectual development among French workers was ready for social reconstruction. In the end, the capitalist class reaped the fruits of revolution. In Italy, Germany, and Austria, workers merely helped the {bourgeoisie:sg} to power. Yet {bourgeoisie:adj} rule requires national independence. Thus the Revolution of 1848 brought unity and autonomy to Italy, Germany, and Hungary. Poland will follow in turn.
+  p00059:
+    covers: [p00059]
+    based_on: sha256:2a5599de3b74c25b4669eeb4563e7aca9f24a8ec30af1fb0e2c30422b84cc6fb
+    revision: 1
+    ai_assisted: true
+    text: Although the Revolution of 1848 was not a socialist revolution, it prepared the ground for one. By expanding large-scale industry over forty-five years, the {bourgeoisie:adj} regime created a powerful {proletariat:sg}. It produced its own gravediggers. Without restoring national independence to each country, international unity among workers is impossible. Genuine cooperation requires free nations working toward common aims.
+  p00060:
+    covers: [p00060]
+    based_on: sha256:bcc7da3b316c9f5b6e02ed7681b84585124ead922b033f26d0ffe82ec0fa2ffc
+    revision: 1
+    ai_assisted: true
+    text: The battles of 1848 were not fought in vain. Nor were the forty-five years since then wasted. The fruits are ripening. I hope this Italian translation will mark the victory of the Italian {proletariat:sg}, just as the original marked international revolution.
+  p00061:
+    covers: [p00061]
+    based_on: sha256:6a5f82eca426bfed537ed9223165419ca36341b54babaf43ed8b3d891b189a43
+    revision: 1
+    ai_assisted: true
+    text: The Manifesto does full justice to the {revolution:adj} role played by capitalism in the past. Italy was the first capitalist nation. The close of the feudal Middle Ages and the opening of modern capitalism are marked by Dante, the last poet of the Middle Ages and the first of modern times. Today, a new era approaches. Will Italy give us a new Dante to mark the birth of this {proletariat:adj} era?
+  p00062:
+    covers: [p00062]
+    based_on: sha256:465b895ea70b5d37be599edd754dafc9d8b5b7fa2098d1da12f28ea26fc30a4b
+    revision: 1
+    ai_assisted: true
+    text: Frederick Engels<br/>London, February 1, 1893
+  p00063:
+    covers: [p00063]
+    based_on: sha256:7a7d9edd17649b66b38fb61fbd049c72ee52fa5744bc7b9cdca61b1b45b7df2c
+    revision: 1
+    ai_assisted: true
+    text: “This proposition,” I wrote in the preface to the English translation, “which is destined to do for history what Darwin's theory did for biology, we both approached before 1845. My <i>Condition of the Working Class in England</i> shows how far I progressed toward it independently. When I met Marx in Brussels in spring 1845, he had it worked out and explained it clearly.” [Note by Engels to the German edition of 1890]
+  p00064:
+    covers: [p00064]
+    based_on: sha256:26cddfae8fe57e0fb3950edfd49991afc01e48badaf6b1d31d738618c639c5c2
+    revision: 1
+    ai_assisted: true
+    text: Lassalle personally always acknowledged himself to be a disciple of Marx, and stood on the ground of the Manifesto. But in his public agitation from 1862 to 1864, he did not go beyond demanding cooperative workshops supported by state credit.
+  p00065:
+    covers: [p00065]
+    based_on: sha256:44ceed2318cc6a03db2c2a6d6e7e1b30f59d69109f277a5d4117c038ca6eeb50
+    revision: 1
+    ai_assisted: true
+    text: The first Russian translation of the Manifesto was made by Bakunin. Although he was an opponent of Marx and Engels in the labor movement, he saw the great {revolution:adj} importance of the Manifesto. Published in Geneva in 1869, Bakunin's translation was not completely accurate. Plekhanov's translation replaced it in 1882, with a preface written by Marx and Engels.
+  p00066:
+    covers: [p00066]
+    based_on: sha256:082fa43c82f8dc417e550cab58b98891932c216ca14dd6d315c038e57d40559b
+    revision: 1
+    ai_assisted: true
+    text: A reference to events in Russia after members of Narodnaya Volya assassinated Emperor Alexander II on March 1, 1881. His successor, Alexander III, stayed in Gatchina for fear of further attacks.
